@@ -1,0 +1,8 @@
+*.csproj.user
+*.suo
+[Bb]in/
+[Oo]bj/
+[Hh]elp/
+
+/Sandcastle/ProductionTools/
+/SHFB/Source/packages/
