@@ -67,10 +67,6 @@
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
     <CppCommentsFixup>False</CppCommentsFixup>
     <CleanIntermediates>True</CleanIntermediates>
-    <SccProjectName>SAK</SccProjectName>
-    <SccProvider>SAK</SccProvider>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccLocalPath>SAK</SccLocalPath>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->

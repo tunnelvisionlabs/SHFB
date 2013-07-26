@@ -10,24 +10,6 @@ EndProject
 Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "SandcastleTools", "SandcastleTools\SandcastleTools.shfbproj", "{16E6EFF1-928E-4130-AA59-C493E35F5DD8}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs01
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = SandcastleBuilder\\SandcastleBuilder.shfbproj
-		SccProjectName1 = SandcastleBuilder
-		SccLocalPath1 = SandcastleBuilder
-		SccProjectUniqueName2 = SandcastleMAMLGuide\\MAMLGuide.shfbproj
-		SccProjectName2 = SandcastleMAMLGuide
-		SccLocalPath2 = SandcastleMAMLGuide
-		SccProjectUniqueName3 = XMLCommentsGuide\\XMLCommentsGuide.shfbproj
-		SccProjectName3 = XMLCommentsGuide
-		SccLocalPath3 = XMLCommentsGuide
-		SccProjectUniqueName4 = SandcastleTools\\SandcastleTools.shfbproj
-		SccProjectName4 = SandcastleTools
-		SccLocalPath4 = SandcastleTools
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

@@ -15,10 +15,6 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseCodebase>true</UseCodebase>
     <ApplicationIcon>Resources\Package.ico</ApplicationIcon>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup>
     <!-- These are needed to properly build the project and item templates and include them in the VSIX

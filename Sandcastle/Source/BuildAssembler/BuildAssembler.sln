@@ -23,30 +23,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildComponentTargets", "BuildComponentTargets\BuildComponentTargets.csproj", "{84F8BE08-B5A3-4E5E-BC99-8E5C2351EF62}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 7
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs01
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ..\\CommandLine\\CommandLine.csproj
-		SccProjectName1 = ../CommandLine
-		SccLocalPath1 = ..\\CommandLine
-		SccProjectUniqueName2 = BuildAssembler\\BuildAssembler.csproj
-		SccProjectName2 = BuildAssembler
-		SccLocalPath2 = BuildAssembler
-		SccProjectUniqueName3 = BuildAssemblerLibrary\\BuildAssemblerLibrary.csproj
-		SccProjectName3 = BuildAssemblerLibrary
-		SccLocalPath3 = BuildAssemblerLibrary
-		SccProjectUniqueName4 = BuildComponents\\BuildComponents.csproj
-		SccProjectName4 = BuildComponents
-		SccLocalPath4 = BuildComponents
-		SccProjectUniqueName5 = SyntaxComponents\\SyntaxComponents.csproj
-		SccProjectName5 = SyntaxComponents
-		SccLocalPath5 = SyntaxComponents
-		SccProjectUniqueName6 = BuildComponentTargets\\BuildComponentTargets.csproj
-		SccProjectName6 = BuildComponentTargets
-		SccLocalPath6 = BuildComponentTargets
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
