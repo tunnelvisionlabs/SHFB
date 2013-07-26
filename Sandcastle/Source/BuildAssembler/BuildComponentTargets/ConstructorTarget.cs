@@ -13,10 +13,10 @@ using System.Collections.Generic;
 namespace Microsoft.Ddue.Tools.Targets
 {
     /// <summary>
-    /// This represents a property target
+    /// This represents a constructor target
     /// </summary>
     [Serializable]
-    public class PropertyTarget : ProcedureTarget
+    public sealed class ConstructorTarget : MemberTarget
     {
         #region Properties
         //=====================================================================
@@ -25,21 +25,18 @@ namespace Microsoft.Ddue.Tools.Targets
         /// This read-only property returns an enumerable list of parameters if any
         /// </summary>
         public IList<Parameter> Parameters { get; private set; }
-
-        /// <summary>
-        /// This read-only property returns the return type
-        /// </summary>
-        public TypeReference ReturnType { get; private set; }
-
         #endregion
 
         #region Constructor
         //=====================================================================
 
-        internal PropertyTarget(IList<Parameter> parameters, TypeReference returnType)
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="parameters">The list of constructor parameters if any</param>
+        public ConstructorTarget(IList<Parameter> parameters)
         {
-            this.Parameters = parameters;
-            this.ReturnType = returnType;
+            this.Parameters = (parameters ?? new List<Parameter>());
         }
         #endregion
     }

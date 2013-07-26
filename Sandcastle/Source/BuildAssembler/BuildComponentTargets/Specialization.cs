@@ -13,18 +13,24 @@ using System.Collections.Generic;
 namespace Microsoft.Ddue.Tools.Targets
 {
     /// <summary>
-    /// This represents a constructor target
+    /// This represents a specialization
     /// </summary>
     [Serializable]
-    public class ConstructorTarget : MemberTarget
+    public sealed class Specialization
     {
         #region Properties
         //=====================================================================
 
         /// <summary>
-        /// This read-only property returns an enumerable list of parameters if any
+        /// This read-only property returns the template type
         /// </summary>
-        public IList<Parameter> Parameters { get; private set; }
+        public SimpleTypeReference TemplateType { get; private set; }
+
+        /// <summary>
+        /// This read-only property returns the arguments
+        /// </summary>
+        public IList<TypeReference> Arguments { get; private set; }
+
         #endregion
 
         #region Constructor
@@ -33,10 +39,18 @@ namespace Microsoft.Ddue.Tools.Targets
         /// <summary>
         /// Constructor
         /// </summary>
-        /// <param name="parameters">The list of constructor parameters if any</param>
-        internal ConstructorTarget(IList<Parameter> parameters)
+        /// <param name="templateType">The template type</param>
+        /// <param name="arguments">The arguments</param>
+        public Specialization(SimpleTypeReference templateType, IList<TypeReference> arguments)
         {
-            this.Parameters = (parameters ?? new List<Parameter>());
+            if(templateType == null)
+                throw new ArgumentNullException("templateType");
+
+            if(arguments == null)
+                throw new ArgumentNullException("arguments");
+
+            this.TemplateType = templateType;
+            this.Arguments = arguments;
         }
         #endregion
     }

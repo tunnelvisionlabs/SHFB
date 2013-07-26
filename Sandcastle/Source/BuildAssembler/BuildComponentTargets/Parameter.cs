@@ -12,29 +12,39 @@ using System;
 namespace Microsoft.Ddue.Tools.Targets
 {
     /// <summary>
-    /// This represents a member target
+    /// This represents a parameter
     /// </summary>
     [Serializable]
-    public class MemberTarget : Target
+    public sealed class Parameter
     {
         #region Properties
         //=====================================================================
 
         /// <summary>
-        /// This is used to get or set the name
+        /// This read-only property returns the parameter name
         /// </summary>
-        public string Name { get; internal set; }
+        public string Name { get; private set; }
 
         /// <summary>
-        /// This is used to get or set the containing type
+        /// This read-only property returns the paramter type
         /// </summary>
-        public TypeReference ContainingType { get; internal set; }
+        public TypeReference ParameterType { get; private set; }
+
+        #endregion
+
+        #region Constructor
+        //=====================================================================
 
         /// <summary>
-        /// This is used to get or set the overload ID if applicable
+        /// Constructor
         /// </summary>
-        public string OverloadId { get; internal set; }
-
+        /// <param name="name">The parameter name</param>
+        /// <param name="type">The parameter type</param>
+        public Parameter(string name, TypeReference type)
+        {
+            this.Name = name;
+            this.ParameterType = type;
+        }
         #endregion
     }
 }

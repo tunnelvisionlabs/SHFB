@@ -24,17 +24,17 @@ namespace Microsoft.Ddue.Tools.Targets
         /// <summary>
         /// This is used to get or set the target's member ID
         /// </summary>
-        public string Id { get; internal set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// This is used to get or set the target's container
         /// </summary>
-        public string Container { get; internal set; }
+        public string Container { get; set; }
 
         /// <summary>
         /// This is used to get or set the target's reference topic filename
         /// </summary>
-        public string File { get; internal set; }
+        public string File { get; set; }
         #endregion
 
         #region Methods

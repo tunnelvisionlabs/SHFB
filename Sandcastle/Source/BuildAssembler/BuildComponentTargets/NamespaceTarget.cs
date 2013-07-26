@@ -8,28 +8,22 @@
 // 12/30/2012 - EFW - Cleaned up the code and marked the class as serializable
 
 using System;
-using System.Collections.Generic;
 
 namespace Microsoft.Ddue.Tools.Targets
 {
     /// <summary>
-    /// This represents a specialization
+    /// This represents a namespace target
     /// </summary>
     [Serializable]
-    public class Specialization
+    public sealed class NamespaceTarget : Target
     {
         #region Properties
         //=====================================================================
 
         /// <summary>
-        /// This read-only property returns the template type
+        /// This read-only property returns the namespace name
         /// </summary>
-        public SimpleTypeReference TemplateType { get; private set; }
-
-        /// <summary>
-        /// This read-only property returns the arguments
-        /// </summary>
-        public IList<TypeReference> Arguments { get; private set; }
+        public string Name { get; private set; }
 
         #endregion
 
@@ -39,18 +33,10 @@ namespace Microsoft.Ddue.Tools.Targets
         /// <summary>
         /// Constructor
         /// </summary>
-        /// <param name="templateType">The template type</param>
-        /// <param name="arguments">The arguments</param>
-        internal Specialization(SimpleTypeReference templateType, IList<TypeReference> arguments)
+        /// <param name="name">The namespace name</param>
+        public NamespaceTarget(string name)
         {
-            if(templateType == null)
-                throw new ArgumentNullException("templateType");
-
-            if(arguments == null)
-                throw new ArgumentNullException("arguments");
-
-            this.TemplateType = templateType;
-            this.Arguments = arguments;
+            this.Name = name;
         }
         #endregion
     }

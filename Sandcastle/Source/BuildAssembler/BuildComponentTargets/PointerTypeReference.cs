@@ -15,7 +15,7 @@ namespace Microsoft.Ddue.Tools.Targets
     /// This represents a pointer type reference
     /// </summary>
     [Serializable]
-    public class PointerTypeReference : TypeReference
+    public sealed class PointerTypeReference : TypeReference
     {
         #region Properties
         //=====================================================================
@@ -33,7 +33,7 @@ namespace Microsoft.Ddue.Tools.Targets
         /// Constructor
         /// </summary>
         /// <param name="pointedToType">The pointed to type</param>
-        internal PointerTypeReference(TypeReference pointedToType)
+        public PointerTypeReference(TypeReference pointedToType)
         {
             if(pointedToType == null)
                 throw new ArgumentNullException("pointedToType");

@@ -12,32 +12,29 @@ using System;
 namespace Microsoft.Ddue.Tools.Targets
 {
     /// <summary>
-    /// This represents a namespace reference
+    /// This represents a member target
     /// </summary>
     [Serializable]
-    public class NamespaceReference : Reference
+    public class MemberTarget : Target
     {
         #region Properties
         //=====================================================================
 
         /// <summary>
-        /// This read-only property returns the namespace ID
+        /// This is used to get or set the name
         /// </summary>
-        public string Id { get; private set; }
-
-        #endregion
-
-        #region Constructor
-        //=====================================================================
+        public string Name { get; set; }
 
         /// <summary>
-        /// Constructor
+        /// This is used to get or set the containing type
         /// </summary>
-        /// <param name="id">The namespace ID</param>
-        internal NamespaceReference(string id)
-        {
-            this.Id = id;
-        }
+        public TypeReference ContainingType { get; set; }
+
+        /// <summary>
+        /// This is used to get or set the overload ID if applicable
+        /// </summary>
+        public string OverloadId { get; set; }
+
         #endregion
     }
 }

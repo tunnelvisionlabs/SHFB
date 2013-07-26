@@ -12,23 +12,23 @@ using System;
 namespace Microsoft.Ddue.Tools.Targets
 {
     /// <summary>
-    /// This represents a specialized member reference
+    /// This represents a method template type reference
     /// </summary>
     [Serializable]
-    public class SpecializedMemberReference : MemberReference
+    public sealed class MethodTemplateTypeReference : TemplateTypeReference
     {
         #region Properties
         //=====================================================================
 
         /// <summary>
-        /// This read-only property returns the template member
+        /// This read-only property returns the template method
         /// </summary>
-        public SimpleMemberReference TemplateMember { get; private set; }
+        public MemberReference TemplateMethod { get; private set; }
 
         /// <summary>
-        /// This read-only property returns the specialized type
+        /// This read only property returns the position
         /// </summary>
-        public SpecializedTypeReference SpecializedType { get; private set; }
+        public int Position { get; private set; }
         #endregion
 
         #region Constructor
@@ -37,19 +37,12 @@ namespace Microsoft.Ddue.Tools.Targets
         /// <summary>
         /// Constructor
         /// </summary>
-        /// <param name="templateMember"></param>
-        /// <param name="specializedType"></param>
-        internal SpecializedMemberReference(SimpleMemberReference templateMember,
-          SpecializedTypeReference specializedType)
+        /// <param name="template">The template method</param>
+        /// <param name="position">The position</param>
+        public MethodTemplateTypeReference(MemberReference template, int position)
         {
-            if(templateMember == null)
-                throw new ArgumentNullException("templateMember");
-
-            if(specializedType == null)
-                throw new ArgumentNullException("specializedType");
-
-            this.TemplateMember = templateMember;
-            this.SpecializedType = specializedType;
+            this.TemplateMethod = template;
+            this.Position = position;
         }
         #endregion
     }

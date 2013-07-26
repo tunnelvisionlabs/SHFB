@@ -15,7 +15,7 @@ namespace Microsoft.Ddue.Tools.Targets
     /// This represents a named template type reference
     /// </summary>
     [Serializable]
-    public class NamedTemplateTypeReference : TemplateTypeReference
+    public sealed class NamedTemplateTypeReference : TemplateTypeReference
     {
         #region Properties
         //=====================================================================

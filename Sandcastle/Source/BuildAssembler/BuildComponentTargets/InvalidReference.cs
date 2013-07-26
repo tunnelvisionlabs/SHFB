@@ -12,23 +12,18 @@ using System;
 namespace Microsoft.Ddue.Tools.Targets
 {
     /// <summary>
-    /// This represents an array type reference
+    /// This represents an invalid reference
     /// </summary>
     [Serializable]
-    public class ArrayTypeReference : TypeReference
+    public sealed class InvalidReference : Reference
     {
         #region Properties
         //=====================================================================
 
         /// <summary>
-        /// This read-only property returns the element type
+        /// This read-only property returns the ID
         /// </summary>
-        public TypeReference ElementType { get; private set; }
-
-        /// <summary>
-        /// This read-only property returns the array rank
-        /// </summary>
-        public int Rank { get; private set; }
+        public string Id { get; private set; }
 
         #endregion
 
@@ -38,18 +33,10 @@ namespace Microsoft.Ddue.Tools.Targets
         /// <summary>
         /// Constructor
         /// </summary>
-        /// <param name="elementType">The element type</param>
-        /// <param name="rank">The array rank</param>
-        internal ArrayTypeReference(TypeReference elementType, int rank)
+        /// <param name="id">The invalid reference ID</param>
+        public InvalidReference(string id)
         {
-            if(elementType == null)
-                throw new ArgumentNullException("elementType");
-
-            if(rank <= 0)
-                throw new ArgumentOutOfRangeException("rank");
-
-            this.ElementType = elementType;
-            this.Rank = rank;
+            this.Id = id;
         }
         #endregion
     }

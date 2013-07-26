@@ -8,38 +8,38 @@
 // 12/30/2012 - EFW - Cleaned up the code and marked the class as serializable
 
 using System;
+using System.Collections.Generic;
 
 namespace Microsoft.Ddue.Tools.Targets
 {
     /// <summary>
-    /// This represents a reference type reference
+    /// This represents a type target
     /// </summary>
     [Serializable]
-    public class ReferenceTypeReference : TypeReference
+    public class TypeTarget : Target
     {
         #region Properties
         //=====================================================================
 
         /// <summary>
-        /// This read-only property returns the referred to type
+        /// This is used to get or set the name
         /// </summary>
-        public TypeReference ReferredToType { get; private set; }
-        #endregion
-
-        #region Constructor
-        //=====================================================================
+        public string Name { get; set; }
 
         /// <summary>
-        /// Constructor
+        /// This is used to get or set the containing namespace
         /// </summary>
-        /// <param name="referredToType">The referred to type</param>
-        internal ReferenceTypeReference(TypeReference referredToType)
-        {
-            if(referredToType == null)
-                throw new ArgumentNullException("referredToType");
+        public NamespaceReference ContainingNamespace { get; set; }
 
-            this.ReferredToType = referredToType;
-        }
+        /// <summary>
+        /// This is used to get or set the containing type
+        /// </summary>
+        public SimpleTypeReference ContainingType { get; set; }
+
+        /// <summary>
+        /// This is used to get or set the templates
+        /// </summary>
+        public IList<string> Templates { get; set; }
         #endregion
     }
 }

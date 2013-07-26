@@ -8,22 +8,28 @@
 // 12/30/2012 - EFW - Cleaned up the code and marked the class as serializable
 
 using System;
+using System.Collections.Generic;
 
 namespace Microsoft.Ddue.Tools.Targets
 {
     /// <summary>
-    /// This represents a simple member reference
+    /// This represents a property target
     /// </summary>
     [Serializable]
-    public class SimpleMemberReference : MemberReference
+    public sealed class PropertyTarget : ProcedureTarget
     {
         #region Properties
         //=====================================================================
 
         /// <summary>
-        /// This read-only property returns the member ID
+        /// This read-only property returns an enumerable list of parameters if any
         /// </summary>
-        public string Id { get; private set; }
+        public IList<Parameter> Parameters { get; private set; }
+
+        /// <summary>
+        /// This read-only property returns the return type
+        /// </summary>
+        public TypeReference ReturnType { get; private set; }
 
         #endregion
 
@@ -33,13 +39,12 @@ namespace Microsoft.Ddue.Tools.Targets
         /// <summary>
         /// Constructor
         /// </summary>
-        /// <param name="id">The member ID</param>
-        internal SimpleMemberReference(string id)
+        /// <param name="parameters">The property parameters</param>
+        /// <param name="returnType">The property return type</param>
+        public PropertyTarget(IList<Parameter> parameters, TypeReference returnType)
         {
-            if(id == null)
-                throw new ArgumentNullException("id");
-
-            this.Id = id;
+            this.Parameters = parameters;
+            this.ReturnType = returnType;
         }
         #endregion
     }
