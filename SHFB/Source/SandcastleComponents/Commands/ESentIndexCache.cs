@@ -2,7 +2,7 @@
 // System  : Sandcastle Help File Builder Components
 // File    : ESentIndexCache.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 01/31/2013
+// Updated : 02/28/2013
 // Compiler: Microsoft Visual C#
 //
 // This is a version of the InMemoryIndexCache that adds the ability to store index information in one or more
@@ -15,7 +15,7 @@
 //
 // Version     Date     Who  Comments
 // ==============================================================================================================
-// 1.9.7.0  01/20/2012  EFW  Created the code
+// 1.9.7.0  01/20/2013  EFW  Created the code
 //===============================================================================================================
 
 using System;
@@ -31,7 +31,7 @@ using Microsoft.Ddue.Tools.Commands;
 
 using Microsoft.Isam.Esent.Collections.Generic;
 
-namespace SandcastleBuilder.Components
+namespace SandcastleBuilder.Components.Commands
 {
     /// <summary>
     /// This is a version of the <c>InMemoryIndexCache</c> that adds the ability to store index information in
@@ -122,6 +122,32 @@ namespace SandcastleBuilder.Components
                 base.AddDocuments(configuration);
             else
                 esentCaches.Insert(0, this.CreateCache(configuration));
+        }
+
+        /// <summary>
+        /// Report the cache usage for the build
+        /// </summary>
+        public override void ReportCacheStatistics()
+        {
+            int flushCount = 0, currentCount = 0, cacheSize = 0;
+
+            // Get the highest local cache flush count and current count
+            foreach(var c in esentCaches)
+            {
+                cacheSize = c.LocalCacheSize;   // These are all the same
+
+                if(c.LocalCacheFlushCount > flushCount)
+                    flushCount = c.LocalCacheFlushCount;
+
+                if(c.CurrentLocalCacheCount > currentCount)
+                    currentCount = c.CurrentLocalCacheCount;
+            }
+
+            this.Component.WriteMessage(MessageLevel.Diagnostic, "\"{0}\" highest ESent local cache flush " +
+                "count: {1}.  Highest ESent current local cache usage: {2} of {3}.", base.Name, flushCount,
+                currentCount, cacheSize);
+
+            base.ReportCacheStatistics();
         }
 
         /// <inheritdoc />
@@ -235,9 +261,9 @@ namespace SandcastleBuilder.Components
             if(filesToLoad != 0)
             {
                 // The time estimate is a ballpark figure and depends on the system
-                base.Component.WriteMessage(MessageLevel.Diagnostic, "{0} target files need to be added to the " +
-                    "ESent index cache database.  Indexing them will take about {1:N0} minute(s), please be " +
-                    "patient.  Cache location: {2}", filesToLoad, filesToLoad / 60.0, cachePath);
+                base.Component.WriteMessage(MessageLevel.Diagnostic, "{0} files need to be added to the ESent " +
+                    "index cache database.  Indexing them will take about {1:N0} minute(s), please be " +
+                    "patient.  Cache location: {2}", filesToLoad, Math.Ceiling(filesToLoad / 60.0), cachePath);
 
                 // Limit the degree of parallelism or it overwhelms the ESent version store
                 Parallel.ForEach(Directory.EnumerateFiles(directoryPart, filePart,
