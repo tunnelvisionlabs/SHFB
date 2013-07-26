@@ -1,405 +1,326 @@
-// Copyright © Microsoft Corporation.
-// This source file is subject to the Microsoft Permissive License.
-// See http://www.microsoft.com/resources/sharedsource/licensingbasics/sharedsourcelicenses.mspx.
-// All other rights reserved.
+//===============================================================================================================
+// System  : Sandcastle Help File Builder Components
+// File    : IntelliSenseComponent.cs
+// Author  : Eric Woodruff  (Eric@EWoodruff.us)
+// Updated : 12/21/2012
+// Note    : Copyright 2007-2012, Eric Woodruff, All rights reserved
+// Compiler: Microsoft Visual C#
+//
+// This file contains a build component that is used to extract the XML comments into files that can be used for
+// IntelliSense.  Only the basic set of tags needed for IntelliSense are exported and only for documented API
+// members.  This is based on the Microsoft IntelliSense build component.
+//
+// This code is published under the Microsoft Public License (Ms-PL).  A copy of the license should be
+// distributed with the code.  It can also be found at the project website: http://SHFB.CodePlex.com.  This
+// notice, the author's name, and all copyright notices must remain intact in all applications, documentation,
+// and source files.
+//
+// Version     Date     Who  Comments
+// ==============================================================================================================
+// 1.6.0.1  10/09/2007  EFW  Created the code
+// 1.6.0.7  03/24/2008  EFW  Updated it to handle multiple assembly references
+// 1.8.0.3  07/04/2009  EFW  Add parameter to Dispose() to match base class
+// 2.7.3.0  12/21/2012  EFW  Replaced the Microsoft IntelliSense build component with my version
+//===============================================================================================================
 
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Diagnostics;
 using System.IO;
+using System.Reflection;
+using System.Windows.Forms;
 using System.Xml;
 using System.Xml.XPath;
 
+using Microsoft.Ddue.Tools.UI;
+
 namespace Microsoft.Ddue.Tools
 {
-
-    public class IntellisenseComponent : BuildComponent
+    /// <summary>
+    /// This build component is used to generate IntelliSense files based on the documented APIs.
+    /// </summary>
+    /// <remarks>Only the basic set of tags needed for IntelliSense are exported and only for documented API
+    /// members.  This is based on the  Microsoft IntelliSense build component.  That version only works with
+    /// Microsoft-specific XML comments files and does not work with general XML comments files created by the
+    /// compilers.</remarks>
+    /// <example>
+    /// <code lang="xml" title="Example configuration">
+    /// &lt;!-- IntelliSense component configuration.  This must appear
+    ///      before the TransformComponent. --&gt;
+    /// &lt;component type="Microsoft.Ddue.Tools.IntelliSenseComponent"
+    ///   assembly="%DXROOT%\ProductionTools\BuildComponents.dll"&gt;
+    ///  &lt;!-- Output options (optional)
+    ///       Attributes:
+    ///          Include Namespaces (false by default)
+    ///          Namespaces filename ("Namespaces" if not specified or empty)
+    ///          Directory (current folder if not specified or empty) --&gt;
+    ///  &lt;output includeNamespaces="false" namespacesFile="Namespaces"
+    ///      folder="C:\ProjectDocs\" /&gt;
+    /// &lt;/component&gt;
+    /// </code>
+    /// </example>
+    public class IntelliSenseComponent : BuildComponent
     {
+        #region Private data members
+        //=====================================================================
 
-        public IntellisenseComponent(BuildAssembler assembler, XPathNavigator configuration)
-            : base(assembler, configuration)
+        private bool includeNamespaces;
+        private string outputFolder, namespacesFilename;
+
+        private XPathExpression assemblyExpression;
+        private XPathExpression subgroupExpression;
+        private XPathExpression elementsExpression;
+
+        private XPathExpression summaryExpression;
+        private XPathExpression paramExpression;
+        private XPathExpression typeparamExpression;
+        private XPathExpression returnsExpression;
+        private XPathExpression exceptionExpression;
+
+        private Dictionary<string, XmlWriter> writers;
+        #endregion
+
+        #region Constructor
+        //=====================================================================
+
+        /// <summary>
+        /// Constructor.
+        /// </summary>
+        /// <param name="assembler">A reference to the build assembler.</param>
+        /// <param name="configuration">The configuration information</param>
+        public IntelliSenseComponent(BuildAssembler assembler, XPathNavigator configuration) :
+          base(assembler, configuration)
         {
+            XPathNavigator nav;
+            string attrValue;
 
-            XPathNavigator output_node = configuration.SelectSingleNode("output");
-            if(output_node != null)
+            Assembly asm = Assembly.GetExecutingAssembly();
+            FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(asm.Location);
+
+            base.WriteMessage(MessageLevel.Info, "\r\n    [{0}, version {1}]\r\n    IntelliSense Component. " +
+                "Copyright \xA9 2006-2012, Eric Woodruff, All Rights Reserved.\r\n    http://SHFB.CodePlex.com",
+                fvi.ProductName, fvi.ProductVersion);
+
+            outputFolder = String.Empty;
+            namespacesFilename = "Namespaces";
+
+            // Assembly names are compared case insensitively
+            this.writers = new Dictionary<string, XmlWriter>(StringComparer.OrdinalIgnoreCase);
+
+            assemblyExpression = XPathExpression.Compile("/document/reference/containers/library/@assembly");
+            subgroupExpression = XPathExpression.Compile("string(/document/reference/apidata/@subgroup)");
+            elementsExpression = XPathExpression.Compile("/document/reference/elements/element");
+
+            summaryExpression = XPathExpression.Compile("summary");
+            paramExpression = XPathExpression.Compile("param");
+            typeparamExpression = XPathExpression.Compile("typeparam");
+            returnsExpression = XPathExpression.Compile("returns");
+            exceptionExpression = XPathExpression.Compile("exception");
+
+            nav = configuration.SelectSingleNode("output");
+
+            if(nav != null)
             {
+                attrValue = nav.GetAttribute("includeNamespaces", String.Empty);
 
-                string directory_value = output_node.GetAttribute("directory", String.Empty);
-                if(!String.IsNullOrEmpty(directory_value))
+                if(!String.IsNullOrEmpty(attrValue) && !Boolean.TryParse(attrValue, out includeNamespaces))
+                    throw new ConfigurationErrorsException("You must specify a Boolean value for the <output> " +
+                        "'includeNamespaces' attribute.");
+
+                attrValue = nav.GetAttribute("folder", String.Empty);
+
+                if(!String.IsNullOrEmpty(attrValue))
                 {
-                    directory = Environment.ExpandEnvironmentVariables(directory_value);
-                    if(!Directory.Exists(directory))
-                        WriteMessage(MessageLevel.Error, String.Format("The output directory '{0}' does not exist.", directory));
+                    outputFolder = Environment.ExpandEnvironmentVariables(attrValue);
+
+                    if(!Directory.Exists(outputFolder))
+                        Directory.CreateDirectory(outputFolder);
                 }
+
+                attrValue = nav.GetAttribute("namespacesFile", String.Empty);
+
+                if(!String.IsNullOrEmpty(attrValue))
+                    namespacesFilename = attrValue;
             }
-
-            // a way to get additional information into the intellisense file
-            XPathNodeIterator input_nodes = configuration.Select("input");
-            foreach(XPathNavigator input_node in input_nodes)
-            {
-                string file_value = input_node.GetAttribute("file", String.Empty);
-                if(!String.IsNullOrEmpty(file_value))
-                {
-                    string file = Environment.ExpandEnvironmentVariables(file_value);
-                    ReadInputFile(file);
-                }
-            }
-
-            context.AddNamespace("ddue", "http://ddue.schemas.microsoft.com/authoring/2003/5");
-
-            summaryExpression.SetContext(context);
-            memberSummaryExpression.SetContext(context);
-            returnsExpression.SetContext(context);
-            parametersExpression.SetContext(context);
-            parameterNameExpression.SetContext(context);
-            templatesExpression.SetContext(context);
-            templateNameExpression.SetContext(context);
-            exceptionExpression.SetContext(context);
-            exceptionCrefExpression.SetContext(context);
         }
+        #endregion
 
-        // input content store
+        #region Apply the component
+        //=====================================================================
 
-        private void ReadInputFile(string file)
+        /// <summary>
+        /// This is implemented to extract the IntelliSense comments.
+        /// </summary>
+        /// <param name="document">The XML document with which to work.</param>
+        /// <param name="key">The key (member name) of the item being documented.</param>
+        public override void Apply(XmlDocument document, string key)
         {
-            try
-            {
-                XPathDocument document = new XPathDocument(file);
+            XPathNavigator navComments;
 
-                XPathNodeIterator member_nodes = document.CreateNavigator().Select("/metadata/topic[@id]");
-                foreach(XPathNavigator member_node in member_nodes)
-                {
-                    string id = member_node.GetAttribute("id", String.Empty);
-                    content[id] = member_node.Clone();
-                }
-
-                WriteMessage(MessageLevel.Info, String.Format("Read {0} input content nodes.", member_nodes.Count));
-
-            }
-            catch(XmlException e)
-            {
-                WriteMessage(MessageLevel.Error, String.Format("The input file '{0}' is not a well-formed XML file. The error message is: {1}", file, e.Message));
-            }
-            catch(IOException e)
-            {
-                WriteMessage(MessageLevel.Error, String.Format("An error occured while attempting to access the fileThe input file '{0}'. The error message is: {1}", file, e.Message));
-            }
-
-
-        }
-        private Dictionary<string, XPathNavigator> content = new Dictionary<string, XPathNavigator>();
-
-        // the action of the component
-
-        public override void Apply(XmlDocument document, string id)
-        {
-
-            // only generate intellisense if id corresponds to an allowed intellisense ID
-            if(id.Length < 2)
-                return;
-            if(id[1] != ':')
-                return;
-            if(!((id[0] == 'T') || (id[0] == 'M') || (id[0] == 'P') || (id[0] == 'F') || (id[0] == 'E') || (id[0] == 'N')))
+            // Don't bother if there is nothing to add
+            if(key[1] != ':' || ((key[0] == 'R' || key[0] == 'N') && !includeNamespaces))
                 return;
 
-            XPathNavigator root = document.CreateNavigator().SelectSingleNode("/document/comments");
+            navComments = document.CreateNavigator().SelectSingleNode("/document/comments");
 
-            string assembly;
-
-            if((string)root.Evaluate(groupExpression) == "namespace")
-            {
-                // get the assembly for the namespace
-                //assembly = (string) root.Evaluate(namespaceAssemblyExpression);
-                // Assign general name for namespace assemblies since they do not belong to any specific assembly
-                assembly = "namespaces";
-            }
+            // Project and namespace comments go in a separate file.  A member may appear in multiple assemblies
+            // so write its comments out to each one.
+            if(key[0] == 'R' || key[0] == 'N')
+                this.WriteComments(key, namespacesFilename, navComments);
             else
-            {
-                // get the assembly for the API
-                assembly = (string)root.Evaluate(assemblyExpression);
-            }
+                foreach(XPathNavigator asmName in navComments.Select(assemblyExpression))
+                    this.WriteComments(key, asmName.Value, navComments);
+        }
 
-            if(String.IsNullOrEmpty(assembly))
+        /// <summary>
+        /// Write the comments to the assembly's XML comments file
+        /// </summary>
+        /// <param name="key">The key (member name) of the item being documented.</param>
+        /// <param name="filename">The assembly filename</param>
+        /// <param name="navComments">The comments XPath navigator</param>
+        private void WriteComments(string key, string filename, XPathNavigator navComments)
+        {
+            XmlWriter writer;
+            XPathNavigator navTag;
+            XPathNodeIterator iterator;
+            string fullPath;
+
+            if(String.IsNullOrEmpty(filename))
                 return;
 
-            // try/catch block for capturing errors
             try
             {
-
-                // get the writer for the assembly
-                XmlWriter writer;
-                if(!writers.TryGetValue(assembly, out writer))
+                if(!writers.TryGetValue(filename, out writer))
                 {
-
-                    // create a writer for the assembly
-                    string name = Path.Combine(directory, assembly + ".xml");
-                    // Console.WriteLine("creating {0}", name);
-
+                    fullPath = Path.Combine(outputFolder, filename + ".xml");
                     XmlWriterSettings settings = new XmlWriterSettings();
                     settings.Indent = true;
 
                     try
                     {
-                        writer = XmlWriter.Create(name, settings);
+                        writer = XmlWriter.Create(fullPath, settings);
                     }
-                    catch(IOException e)
+                    catch(IOException ioEx)
                     {
-                        base.WriteMessage(id, MessageLevel.Error, "An access error occured while attempting to " +
-                            "create the intellisense output file '{0}'. The error message is: {1}", name,
-                            e.Message);
+                        base.WriteMessage(key, MessageLevel.Error, "An access error occured while attempting " +
+                            "to create the IntelliSense output file '{0}'. The error message is: {1}", fullPath,
+                            ioEx.Message);
                     }
 
-                    writers.Add(assembly, writer);
+                    writers.Add(filename, writer);
 
-                    // write out the initial data
                     writer.WriteStartDocument();
                     writer.WriteStartElement("doc");
-                    //do not generate assembly nodes for namespace topics
-                    if((string)root.Evaluate(groupExpression) != "namespace")
-                    {
-                        writer.WriteStartElement("assembly");
-                        writer.WriteElementString("name", assembly);
-                        writer.WriteEndElement();
-                    }
+                    writer.WriteStartElement("assembly");
+                    writer.WriteElementString("name", filename);
+                    writer.WriteEndElement();
                     writer.WriteStartElement("members");
                 }
 
                 writer.WriteStartElement("member");
-                writer.WriteAttributeString("name", id);
+                writer.WriteAttributeString("name", key);
 
-                // summary
-                WriteSummary(root, summaryExpression, writer);
+                navTag = navComments.SelectSingleNode(summaryExpression);
 
-                // return value
-                XPathNavigator returns = root.SelectSingleNode(returnsExpression);
-                if(returns != null)
-                {
-                    writer.WriteStartElement("returns");
+                if(navTag != null)
+                    writer.WriteNode(navTag, true);
 
-                    XmlReader reader = returns.ReadSubtree();
-                    CopyContent(reader, writer);
-                    reader.Close();
+                iterator = navComments.Select(paramExpression);
 
-                    writer.WriteEndElement();
-                }
+                foreach(XPathNavigator nav in iterator)
+                    writer.WriteNode(nav, true);
 
-                // parameters
-                XPathNodeIterator parameters = root.Select(parametersExpression);
-                foreach(XPathNavigator parameter in parameters)
-                {
+                iterator = navComments.Select(typeparamExpression);
 
-                    string name = (string)parameter.Evaluate(parameterNameExpression);
+                foreach(XPathNavigator nav in iterator)
+                    writer.WriteNode(nav, true);
 
-                    XmlReader reader = parameter.ReadSubtree();
+                navTag = navComments.SelectSingleNode(returnsExpression);
 
-                    writer.WriteStartElement("param");
-                    writer.WriteAttributeString("name", name);
-                    CopyContent(reader, writer);
-                    writer.WriteEndElement();
+                if(navTag != null)
+                    writer.WriteNode(navTag, true);
 
-                    reader.Close();
-                }
+                iterator = navComments.Select(exceptionExpression);
 
-                // templates
-                XPathNodeIterator templates = root.Select(templatesExpression);
-                foreach(XPathNavigator template in templates)
-                {
-
-                    string name = (string)template.Evaluate(templateNameExpression);
-
-                    XmlReader reader = template.ReadSubtree();
-
-                    writer.WriteStartElement("typeparam");
-                    writer.WriteAttributeString("name", name);
-                    CopyContent(reader, writer);
-                    writer.WriteEndElement();
-
-                    reader.Close();
-                }
-
-                // exceptions
-                XPathNodeIterator exceptions = root.Select(exceptionExpression);
-                foreach(XPathNavigator exception in exceptions)
-                {
-
-                    string exceptionCref = (string)exception.Evaluate(exceptionCrefExpression);
-
-                    XmlReader reader = exception.ReadSubtree();
-
-                    writer.WriteStartElement("exception");
-                    writer.WriteAttributeString("cref", exceptionCref);
-                    CopyContent(reader, writer);
-                    writer.WriteEndElement();
-
-                    reader.Close();
-                }
-
-                // stored contents
-                XPathNavigator input;
-                if(content.TryGetValue(id, out input))
-                {
-                    XPathNodeIterator input_nodes = input.SelectChildren(XPathNodeType.Element);
-                    foreach(XPathNavigator input_node in input_nodes)
-                    {
-                        input_node.WriteSubtree(writer);
-                    }
-                }
+                foreach(XPathNavigator nav in iterator)
+                    writer.WriteNode(nav, true);
 
                 writer.WriteFullEndElement();
 
-                // enumeration members
-                string subgroup = (string)root.Evaluate(subgroupExpression);
-                if(subgroup == "enumeration")
+                // Write out enumeration members?
+                if((string)navComments.Evaluate(subgroupExpression) == "enumeration")
                 {
+                    iterator = (XPathNodeIterator)navComments.Evaluate(elementsExpression);
 
-                    XPathNodeIterator elements = (XPathNodeIterator)root.Evaluate(elementsExpression);
-                    foreach(XPathNavigator element in elements)
+                    foreach(XPathNavigator nav in iterator)
                     {
-
-                        string api = (string)element.GetAttribute("api", string.Empty);
+                        string attribute = nav.GetAttribute("api", String.Empty);
                         writer.WriteStartElement("member");
-                        writer.WriteAttributeString("name", api);
+                        writer.WriteAttributeString("name", attribute);
 
-                        //summary
-                        WriteSummary(element, memberSummaryExpression, writer);
+                        navTag = nav.SelectSingleNode(summaryExpression);
+
+                        if(navTag != null)
+                            writer.WriteNode(navTag, true);
 
                         writer.WriteFullEndElement();
                     }
                 }
-
-
             }
-            catch(IOException e)
+            catch(IOException ioEx)
             {
-                WriteMessage(id, MessageLevel.Error, "An access error occured while attempting to write " +
-                    "intellisense data. The error message is: {0}", e.Message);
+                base.WriteMessage(key, MessageLevel.Error, "An access error occured while attempting to write " +
+                    "IntelliSense data. The error message is: {0}", ioEx.Message);
             }
-            catch(XmlException e)
+            catch(XmlException xmlEx)
             {
-                WriteMessage(id, MessageLevel.Error, "Intellisense data was not valid XML. The error " +
-                    "message is: {0}", e.Message);
+                base.WriteMessage(key, MessageLevel.Error, "IntelliSense data was not valid XML. The error " +
+                    "message is: {0}", xmlEx.Message);
             }
         }
+        #endregion
 
+        #region Dispose of the component
+        //=====================================================================
+
+        /// <summary>
+        /// Write out closing tags and close all open XML writers when disposed.
+        /// </summary>
+        /// <param name="disposing">Pass true to dispose of the managed and unmanaged resources or false to just
+        /// dispose of the unmanaged resources.</param>
         protected override void Dispose(bool disposing)
         {
             if(disposing)
-            {
                 foreach(XmlWriter writer in writers.Values)
                 {
                     writer.WriteEndDocument();
                     writer.Close();
                 }
-            }
+
             base.Dispose(disposing);
         }
+        #endregion
 
-        private void WriteSummary(XPathNavigator node, XPathExpression expression, XmlWriter writer)
+        #region Static configuration method for use with SHFB
+        //=====================================================================
+
+        /// <summary>
+        /// This static method is used by the Sandcastle Help File Builder to let the component perform its own
+        /// configuration.
+        /// </summary>
+        /// <param name="currentConfig">The current configuration XML fragment</param>
+        /// <returns>A string containing the new configuration XML fragment</returns>
+        public static string ConfigureComponent(string currentConfig)
         {
-            XPathNavigator summary = node.SelectSingleNode(expression);
-            if(summary != null)
+            using(IntelliSenseConfigDlg dlg = new IntelliSenseConfigDlg(currentConfig))
             {
-                writer.WriteStartElement("summary");
-
-                XmlReader reader = summary.ReadSubtree();
-                CopyContent(reader, writer);
-                reader.Close();
-
-                writer.WriteEndElement();
+                if(dlg.ShowDialog() == DialogResult.OK)
+                    currentConfig = dlg.Configuration;
             }
-            else
-            {
-                // Console.WriteLine("no summary");
-            }
+
+            return currentConfig;
         }
-
-        private void CopyContent(XmlReader reader, XmlWriter writer)
-        {
-            reader.MoveToContent();
-            while(true)
-            {
-
-                //Console.WriteLine("{0} {1}", reader.ReadState, reader.NodeType);
-
-                if(reader.NodeType == XmlNodeType.Text)
-                {
-                    writer.WriteString(reader.ReadString());
-                }
-                else if(reader.NodeType == XmlNodeType.Element)
-                {
-                    //Console.WriteLine(reader.LocalName);
-                    if(reader.LocalName == "codeEntityReference")
-                    {
-                        writer.WriteStartElement("see");
-                        writer.WriteAttributeString("cref", reader.ReadElementString());
-                        writer.WriteEndElement();
-                    }
-                    else if(reader.LocalName == "parameterReference")
-                    {
-                        writer.WriteStartElement("paramref");
-                        writer.WriteAttributeString("name", reader.ReadElementString());
-                        writer.WriteEndElement();
-                    }
-                    else if(reader.LocalName == "link")
-                    {
-                        string displayText = reader.ReadElementString();
-                        if(displayText.StartsWith("GTMT#"))
-                        {
-                            writer.WriteString(displayText.Substring(displayText.IndexOf("#") + 1));
-                        }
-                        else
-                        {
-                            writer.WriteString(displayText);
-                        }
-                    }
-                    else
-                    {
-                        reader.Read();
-                    }
-                }
-                else
-                {
-                    if(!reader.Read())
-                        break;
-                }
-
-            }
-
-        }
-
-        private string directory = String.Empty;
-
-        private Dictionary<string, XmlWriter> writers = new Dictionary<string, XmlWriter>();
-
-        private XPathExpression assemblyExpression = XPathExpression.Compile("string(/document/reference/containers/library/@assembly)");
-
-        private XPathExpression namespaceAssemblyExpression = XPathExpression.Compile("string(/document/reference/elements/element/containers/library/@assembly)");
-
-        private XPathExpression summaryExpression = XPathExpression.Compile("ddue:dduexml/ddue:summary");
-
-        private XPathExpression returnsExpression = XPathExpression.Compile("ddue:dduexml/ddue:returnValue");
-
-        private XPathExpression parametersExpression = XPathExpression.Compile("ddue:dduexml/ddue:parameters/ddue:parameter/ddue:content");
-
-        private XPathExpression parameterNameExpression = XPathExpression.Compile("string(../ddue:parameterReference)");
-
-        private XPathExpression templatesExpression = XPathExpression.Compile("ddue:dduexml/ddue:genericParameters/ddue:genericParameter/ddue:content");
-
-        private XPathExpression templateNameExpression = XPathExpression.Compile("string(../ddue:parameterReference)");
-
-        private XPathExpression exceptionExpression = XPathExpression.Compile("ddue:dduexml/ddue:exceptions/ddue:exception/ddue:content");
-
-        private XPathExpression exceptionCrefExpression = XPathExpression.Compile("string(../ddue:codeEntityReference)");
-
-        private XPathExpression subgroupExpression = XPathExpression.Compile("string(/document/reference/apidata/@subgroup)");
-
-        private XPathExpression groupExpression = XPathExpression.Compile("string(/document/reference/apidata/@group)");
-
-        private XPathExpression elementsExpression = XPathExpression.Compile("/document/reference/elements/element");
-
-        private XPathExpression memberSummaryExpression = XPathExpression.Compile("ddue:summary");
-
-        private XmlNamespaceManager context = new CustomContext();
-
+        #endregion
     }
-
 }
