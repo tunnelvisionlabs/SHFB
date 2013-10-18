@@ -1,8 +1,15 @@
+# User-specific files
 *.csproj.user
 *.suo
+*.shfbproj_*
+
+# Generated output
 [Bb]in/
 [Oo]bj/
 [Hh]elp/
 
 /Sandcastle/ProductionTools/
 /SHFB/Source/packages/
+
+# Solution uses NuGet Package Restore
+/packages/
