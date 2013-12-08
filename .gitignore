@@ -8,6 +8,11 @@
 [Oo]bj/
 [Hh]elp/
 
+# Profiling data and performance sessions
+*.vspx
+*.vsp
+*.psess
+
 /Sandcastle/ProductionTools/
 /SHFB/Source/packages/
 
