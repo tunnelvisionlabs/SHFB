@@ -1,5 +1,6 @@
 # User-specific files
 *.csproj.user
+*.wixproj.user
 *.suo
 *.shfbproj_*
 
