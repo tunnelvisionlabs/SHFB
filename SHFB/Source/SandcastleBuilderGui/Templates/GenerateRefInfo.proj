@@ -9,7 +9,6 @@
 	<PropertyGroup>
 		<TargetFrameworkIdentifier>{@TargetFrameworkIdentifier}</TargetFrameworkIdentifier>
 		<TargetFrameworkVersion>v{@FrameworkVersionShort}</TargetFrameworkVersion>
-		<DocInternals>{@DocInternals}</DocInternals>
 		<AddXamlSyntaxData>{@AddXamlSyntaxData}</AddXamlSyntaxData>
 		<SandcastlePath>{@SandcastlePath}</SandcastlePath>
 		<WorkingFolder>{@HtmlEncWorkingFolder}</WorkingFolder>
@@ -38,13 +37,11 @@
 
 	<!-- The Generate Ref Info target -->
 	<Target Name="GenerateRefInfo">
-		<!-- Run MRefBuilder.  Reference build items are added to this template by
-         the build process.  The ResolveReferences dependency target will
-         resolve them to absolute paths that can be passed to MRefBuilder
-         using the /dep command line option.  Assembly build items are added
-         by the build process to define the assemblies to reflect. -->
+		<!-- Run MRefBuilder.  Reference build items are added to this template by the build process.  The
+				 ResolveReferences dependency target will resolve them to absolute paths that can be passed to
+				 MRefBuilder using the /dep command line option.  Assembly build items are added by the build
+				 process to define the assemblies to reflect. -->
 		<SandcastleBuilder.Utils.MSBuild.MRefBuilder
-      DocumentInternals="$(DocInternals)"
       SandcastlePath="$(SandcastlePath)"
       WorkingFolder="$(WorkingFolder)"
       Assemblies="@(Assembly)"
@@ -61,8 +58,7 @@
       OutputFile="reflection.org" />
 	</Target>
 
-	<!-- The following targets may be overridden or replaced to perform
-       additional processing. -->
+	<!-- The following targets may be overridden or replaced to perform additional processing. -->
 	<Target Name="BeforeGenerateRefInfo" />
 	<Target Name="AfterGenerateRefInfo" />
 </Project>

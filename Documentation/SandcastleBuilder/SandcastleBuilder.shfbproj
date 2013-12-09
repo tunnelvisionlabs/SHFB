@@ -8,7 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{dea33d54-a820-4458-85eb-8c52ff13508d}</ProjectGuid>
-    <SHFBSchemaVersion>1.9.5.0</SHFBSchemaVersion>
+    <SHFBSchemaVersion>1.9.9.0</SHFBSchemaVersion>
     <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual
          Studio adds them anyway -->
     <AssemblyName>Documentation</AssemblyName>
@@ -19,7 +19,7 @@
     <HtmlHelpName>SandcastleBuilder</HtmlHelpName>
     <ProjectSummary>Sandcastle Help File Builder.  Written by Eric Woodruff %28&amp;lt%3ba href=&amp;quot%3bmailto:Eric%40EWoodruff.us%3fSubject=Sandcastle Help File Builder&amp;quot%3b&amp;gt%3bEric%40EWoodruff.us&amp;lt%3b/a&amp;gt%3b%29.  For the latest version visit &amp;lt%3ba href=&amp;quot%3bhttp://SHFB.CodePlex.com&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bhttp://SHFB.CodePlex.com&amp;lt%3b/a&amp;gt%3b.</ProjectSummary>
     <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, Namespace, TypeParameter, AutoDocumentDispose</MissingTags>
-    <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Protected, SealedProtected</VisibleItems>
+    <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected</VisibleItems>
     <HtmlHelp1xCompilerPath>
     </HtmlHelp1xCompilerPath>
     <HtmlHelp2xCompilerPath>
@@ -37,7 +37,7 @@
     <FeedbackEMailAddress>Eric%40EWoodruff.us</FeedbackEMailAddress>
     <PresentationStyle>VS2005</PresentationStyle>
     <SyntaxFilters>CSharp, VisualBasic</SyntaxFilters>
-    <HelpFileVersion>1.9.7.0</HelpFileVersion>
+    <HelpFileVersion>1.9.8.0</HelpFileVersion>
     <ComponentConfigurations>
     </ComponentConfigurations>
     <DocumentationSources>
@@ -151,6 +151,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Win32' ">
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="Content\VersionHistory\v1.8tov1.9.3.4" />
     <Folder Include="Content\VisualStudio" />
     <Folder Include="Content\VersionHistory\v1.0to1.7\" />
     <Folder Include="Content\GettingStarted\ProjectConverters\" />
@@ -187,6 +188,9 @@
     <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0074.aml" />
     <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0075.aml" />
     <None Include="Content\GettingStarted\AttachedPropsEvents.aml" />
+    <None Include="Content\GettingStarted\ContentFileEditors.aml" />
+    <None Include="Content\GettingStarted\GeneralPreferences.aml" />
+    <None Include="Content\GettingStarted\SpellCheckerOptions.aml" />
     <None Include="Content\PresentationStyleWalkthrough.aml" />
     <None Include="Content\PropertiesWindow\ComponentConfigs.aml" />
     <None Include="Content\PropertiesWindow\PlugInConfigs.aml" />
@@ -194,21 +198,28 @@
     <None Include="Content\PropertiesWindow\TransformComponentArgs.aml" />
     <None Include="Content\PropertiesWindow\UserDefinedProps.aml" />
     <None Include="Content\TopicPreviewerWindow.aml" />
-    <None Include="Content\VersionHistory\v1.9.3.1.aml" />
-    <None Include="Content\VersionHistory\v1.9.3.2.aml" />
-    <None Include="Content\VersionHistory\v1.9.3.3.aml" />
-    <None Include="Content\VersionHistory\v1.9.3.4.aml" />
+    <None Include="Content\VersionHistory\v1.8tov1.9.3.4\v1.8.0.0.aml" />
+    <None Include="Content\VersionHistory\v1.8tov1.9.3.4\v1.8.0.1.aml" />
+    <None Include="Content\VersionHistory\v1.8tov1.9.3.4\v1.8.0.2.aml" />
+    <None Include="Content\VersionHistory\v1.8tov1.9.3.4\v1.8.0.3.aml" />
+    <None Include="Content\VersionHistory\v1.8tov1.9.3.4\v1.9.1.0.aml" />
+    <None Include="Content\VersionHistory\v1.8tov1.9.3.4\v1.9.3.0.aml" />
+    <None Include="Content\VersionHistory\v1.8tov1.9.3.4\v1.9.3.1.aml" />
+    <None Include="Content\VersionHistory\v1.8tov1.9.3.4\v1.9.3.2.aml" />
+    <None Include="Content\VersionHistory\v1.8tov1.9.3.4\v1.9.3.3.aml" />
+    <None Include="Content\VersionHistory\v1.8tov1.9.3.4\v1.9.3.4.aml" />
+    <None Include="Content\VersionHistory\v1.8tov1.9.3.4\v1.8tov1.9.3.4.aml" />
     <None Include="Content\VersionHistory\v1.9.4.0.aml" />
     <None Include="Content\VersionHistory\v1.9.5.0.aml" />
     <None Include="Content\VersionHistory\v1.9.6.0.aml" />
     <None Include="Content\VersionHistory\v1.9.7.0.aml" />
+    <None Include="Content\VersionHistory\v1.9.8.0.aml" />
     <None Include="Content\VisualStudio\ItemFileTemplates.aml" />
     <None Include="Content\VisualStudio\FeatureComparison.aml" />
     <None Include="Content\VisualStudio\VisualStudioTextEditor.aml" />
     <None Include="Content\VisualStudio\VisualStudioPackage.aml" />
     <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0070.aml" />
     <None Include="Content\PlugIns\WildcardReferencesPlugIn.aml" />
-    <None Include="Content\VersionHistory\v1.9.3.0.aml" />
     <None Include="Content\PropertiesWindow\HelpLibraryManagerLauncher.aml" />
     <None Include="Content\AddConceptContent\ConceptContent\ContentPlacement.aml" />
     <None Include="Content\AddConceptContent\AddContent\DeprecatedFeatures.aml" />
@@ -218,7 +229,6 @@
     <None Include="Content\PropertiesWindow\MSHelpViewerProps.aml" />
     <None Include="Content\PropertiesWindow\MSHelp2Props.aml" />
     <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0069.aml" />
-    <None Include="Content\VersionHistory\v1.9.1.0.aml" />
     <None Include="Content\VersionHistory\v1.0to1.7\v1.0to1.7.aml" />
     <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0068.aml" />
     <None Include="Content\ResourceItemEditorWindow.aml" />
@@ -229,7 +239,6 @@
     <None Include="Content\TextEditorWindow.aml" />
     <None Include="Content\EntityReferencesWindow.aml" />
     <None Include="Content\PlugIns\XPathReflectionFileFilterPlugIn.aml" />
-    <None Include="Content\VersionHistory\v1.8.0.1.aml" />
     <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0065.aml" />
     <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0064.aml" />
     <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0025.aml" />
@@ -284,7 +293,6 @@
     <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0012.aml" />
     <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0009.aml" />
     <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0008.aml" />
-    <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0027.aml" />
     <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0060.aml" />
     <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0026.aml" />
     <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0059.aml" />
@@ -318,7 +326,6 @@
     <None Include="Content\ErrorsAndWarnings\Converters\CVT0003.aml" />
     <None Include="Content\ErrorsAndWarnings\Converters\CVT0002.aml" />
     <None Include="Content\GettingStarted\ProjectConverters\ProjectConverters.aml" />
-    <None Include="Content\VersionHistory\v1.8.0.0.aml" />
     <None Include="Content\VersionHistory\v1.0to1.7\v1.0.0.0.aml" />
     <None Include="Content\VersionHistory\v1.0to1.7\v1.0.0.1.aml" />
     <None Include="Content\VersionHistory\v1.0to1.7\v1.1.0.0.aml" />
@@ -444,8 +451,6 @@
     <None Include="Content\ErrorsAndWarnings\BuildEngine\BE0066.aml" />
     <None Include="Content\PlugIns\BibliographySupport.aml" />
     <None Include="Content\PlugIns\AssemblyBindingRedirection.aml" />
-    <None Include="Content\VersionHistory\v1.8.0.2.aml" />
-    <None Include="Content\VersionHistory\v1.8.0.3.aml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icons\Sandcastle.jpg">

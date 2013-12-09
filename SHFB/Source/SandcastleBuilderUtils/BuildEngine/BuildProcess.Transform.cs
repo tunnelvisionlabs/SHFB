@@ -2,7 +2,7 @@
 // System  : Sandcastle Help File Builder Utilities
 // File    : BuildProcess.Transform.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 03/12/2013
+// Updated : 12/06/2013
 // Note    : Copyright 2006-2013, Eric Woodruff, All rights reserved
 // Compiler: Microsoft Visual C#
 //
@@ -43,6 +43,7 @@
 //                           property.  Added Support for XAML configuration files.
 // 1.9.5.0  09/10/2012  EFW  Updated to use the new framework definition file for the .NET Framework versions
 // 1.9.6.0  10/25/2012  EFW  Updated to use the new presentation style definition files
+// 1.9.9.0  11/29/2013  EFW  Added support for the new MRefBuilder visibility settings
 //===============================================================================================================
 
 using System;
@@ -323,6 +324,10 @@ namespace SandcastleBuilder.Utils.BuildEngine
                         String.Format(CultureInfo.InvariantCulture, "{0}={1}", p.Key, p.Value)));
                     break;
 
+                case "namingmethod":
+                    replaceWith = project.NamingMethod.ToString();
+                    break;
+
                 case "toctransformation":
                     replaceWith = presentationStyle.ResolvePath(
                         presentationStyle.IntermediateTocTransformation.TransformationFilename);
@@ -339,10 +344,6 @@ namespace SandcastleBuilder.Utils.BuildEngine
 
                 case "hxcomppath":
                     replaceWith = hxcompFolder;
-                    break;
-
-                case "docinternals":
-                    replaceWith = (project.DocumentInternals || project.DocumentPrivates) ? "true" : "false";
                     break;
 
                 case "disablecodeblockcomponent":
@@ -678,6 +679,58 @@ namespace SandcastleBuilder.Utils.BuildEngine
                     replaceWith = project.ShowMissingIncludeTargets.ToString().ToLowerInvariant();
                     break;
 
+                case "documentattributes":
+                    replaceWith = project.DocumentAttributes.ToString().ToLowerInvariant();
+                    break;
+
+                case "documentexplicitinterfaceimplementations":
+                    replaceWith = project.DocumentExplicitInterfaceImplementations.ToString().ToLowerInvariant();
+                    break;
+
+                case "documentinheritedmembers":
+                    replaceWith = project.DocumentInheritedMembers.ToString().ToLowerInvariant();
+                    break;
+
+                case "documentinheritedframeworkmembers":
+                    replaceWith = project.DocumentInheritedFrameworkMembers.ToString().ToLowerInvariant();
+                    break;
+
+                case "documentinheritedframeworkinternalmembers":
+                    replaceWith = project.DocumentInheritedFrameworkInternalMembers.ToString().ToLowerInvariant();
+                    break;
+
+                case "documentinheritedframeworkprivatemembers":
+                    replaceWith = project.DocumentInheritedFrameworkPrivateMembers.ToString().ToLowerInvariant();
+                    break;
+
+                case "documentinternals":
+                    replaceWith = project.DocumentInternals.ToString().ToLowerInvariant();
+                    break;
+
+                case "documentprivates":
+                    replaceWith = project.DocumentPrivates.ToString().ToLowerInvariant();
+                    break;
+
+                case "documentprivatefields":
+                    replaceWith = project.DocumentPrivateFields.ToString().ToLowerInvariant();
+                    break;
+
+                case "documentprotected":
+                    replaceWith = project.DocumentProtected.ToString().ToLowerInvariant();
+                    break;
+
+                case "documentsealedprotected":
+                    replaceWith = project.DocumentSealedProtected.ToString().ToLowerInvariant();
+                    break;
+
+                case "documentprotectedinternalasprotected":
+                    replaceWith = project.DocumentProtectedInternalAsProtected.ToString().ToLowerInvariant();
+                    break;
+
+                case "documentnopiatypes":
+                    replaceWith = project.DocumentNoPIATypes.ToString().ToLowerInvariant();
+                    break;
+
                 case "apifilter":
                     // In a partial build used to get API info for the API
                     // filter designer, we won't apply the filter.
@@ -963,7 +1016,8 @@ namespace SandcastleBuilder.Utils.BuildEngine
                     if(String.IsNullOrEmpty(replaceWith) || replaceWith[0] == '%')
                         replaceWith = "DefaultUser";
 
-                    replaceWith = (project.Filename + "_" + replaceWith).GetHashCode().ToString("X");
+                    replaceWith = (project.Filename + "_" + replaceWith).GetHashCode().ToString("X",
+                        CultureInfo.InvariantCulture);
                     break;
 
                 default:

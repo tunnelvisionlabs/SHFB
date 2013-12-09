@@ -2,8 +2,8 @@
 // System  : Sandcastle Help File Builder
 // File    : MainForm.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 10/28/2012
-// Note    : Copyright 2006-2012, Eric Woodruff, All rights reserved
+// Updated : 11/22/2013
+// Note    : Copyright 2006-2013, Eric Woodruff, All rights reserved
 // Compiler: Microsoft Visual C#
 //
 // This file contains the main form for the application.
@@ -81,8 +81,9 @@ namespace SandcastleBuilder.Gui
         private EntityReferenceWindow entityReferencesWindow;
         private PreviewTopicWindow previewWindow;
         private FileSystemWatcher fsw;
-        private List<string> changedFiles;
+        private HashSet<string> changedFiles;
         private bool checkingForChangedFiles;
+        private string excludedOutputFolder, excludedWorkingFolder;
 
         private static MainForm mainForm;
         #endregion
@@ -158,9 +159,8 @@ namespace SandcastleBuilder.Gui
         /// <summary>
         /// Constructor
         /// </summary>
-        /// <param name="projectToLoad">A default project file to load.  If
-        /// not specified, the most recently used project is loaded if there
-        /// is one.</param>
+        /// <param name="projectToLoad">A default project file to load.  If not specified, the most recently used
+        /// project is loaded if there is one.</param>
         public MainForm(string projectToLoad)
         {
             mainForm = this;
@@ -171,7 +171,7 @@ namespace SandcastleBuilder.Gui
                 return;
 
             // We are only going to monitor for file changes.  We won't handle moves, deletes, or renames.
-            changedFiles = new List<string>();
+            changedFiles = new HashSet<string>();
             fsw = new FileSystemWatcher();
             fsw.NotifyFilter = NotifyFilters.LastWrite;
             fsw.IncludeSubdirectories = true;
@@ -191,17 +191,15 @@ namespace SandcastleBuilder.Gui
                 if(File.Exists(projectToLoad))
                     MainForm.UpdateMruList(projectToLoad);
                 else
-                    MessageBox.Show("Unable to find project: " + projectToLoad,
-                        Constants.AppName, MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
+                    MessageBox.Show("Unable to find project: " + projectToLoad, Constants.AppName,
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             // Set the status label to use for status bar text
             StatusBarTextProvider.ApplicationStatusBar = tsslStatusText;
 
-            // Define the status label and progress bar too.  This allows
-            // easy access to those items from anywhere within the
-            // application.
+            // Define the status label and progress bar too.  This allows easy access to those items from
+            // anywhere within the application.
             StatusBarTextProvider.StatusLabel = tsslProgressNote;
             StatusBarTextProvider.ProgressBar = tspbProgressBar;
         }
@@ -225,14 +223,20 @@ namespace SandcastleBuilder.Gui
 
             if(persistString == typeof(OutputWindow).FullName)
             {
-                outputWindow = new OutputWindow();
+                if(outputWindow == null)
+                    outputWindow = new OutputWindow();
+
                 return outputWindow;
             }
 
             if(persistString == typeof(EntityReferenceWindow).FullName)
             {
-                entityReferencesWindow = new EntityReferenceWindow();
-                entityReferencesWindow.CurrentProject = project;
+                if(entityReferencesWindow == null)
+                {
+                    entityReferencesWindow = new EntityReferenceWindow();
+                    entityReferencesWindow.CurrentProject = project;
+                }
+
                 return entityReferencesWindow;
             }
 
@@ -253,8 +257,7 @@ namespace SandcastleBuilder.Gui
         /// Create a new project instance and connect it to the UI
         /// </summary>
         /// <param name="projectName">The project filename</param>
-        /// <param name="mustExist">True if it must exist or false if it is
-        /// a new, unnamed project</param>
+        /// <param name="mustExist">True if it must exist or false if it is a new, unnamed project</param>
         private void CreateProject(string projectName, bool mustExist)
         {
             List<string> values;
@@ -317,7 +320,9 @@ namespace SandcastleBuilder.Gui
                 {
                     Cursor.Current = Cursors.WaitCursor;
                     dockPanel.SuspendLayout(true);
-                    projectExplorer.DockPanel = projectProperties.DockPanel = null;
+
+                    projectExplorer.DockPanel = null;
+                    projectProperties.DockPanel = null;
 
                     if(outputWindow != null)
                         outputWindow.DockPanel = null;
@@ -326,14 +331,23 @@ namespace SandcastleBuilder.Gui
                         entityReferencesWindow.DockPanel = null;
 
                     if(previewWindow != null)
-                        previewWindow.DockPanel = null;
+                    {
+                        previewWindow.Dispose();
+                        previewWindow = null;
+                    }
 
                     dockPanel.LoadFromXml(project.Filename + WindowStateSuffix, DeserializeState);
-                    dockPanel.ResumeLayout(true, true);
+                }
+                catch(InvalidOperationException )
+                {
+                    // Ignore errors if the content settings don't load
+                    miViewProjectExplorer_Click(this, EventArgs.Empty);
+                    miViewProjectProperties_Click(this, EventArgs.Empty);
                 }
                 finally
                 {
                     Cursor.Current = Cursors.Default;
+                    dockPanel.ResumeLayout(true, true);
                 }
             }
             else
@@ -432,8 +446,7 @@ namespace SandcastleBuilder.Gui
                 miClearOutput_Click(this, EventArgs.Empty);
                 this.KillWebServer();
 
-                // Dispose of the preview window to get rid of its temporary project and build files.
-                // It also doesn't make much sense to save its state.
+                // Dispose of the preview window as it doesn't make much sense to save its state
                 if(previewWindow != null)
                 {
                     previewWindow.Dispose();
@@ -451,10 +464,24 @@ namespace SandcastleBuilder.Gui
 
                 if(projectExplorer.CurrentProject != null && Settings.Default.PerUserProjectState)
                 {
+                    // If hidden, unhide it so that DockPanel can write to it.  We'll hide it again afterwards.
+                    bool isHidden = (File.Exists(projectExplorer.CurrentProject.Filename + WindowStateSuffix) &&
+                      (File.GetAttributes(projectExplorer.CurrentProject.Filename +
+                        WindowStateSuffix) & FileAttributes.Hidden) != 0);
+
                     try
                     {
                         Cursor.Current = Cursors.WaitCursor;
+
+                        if(isHidden)
+                            File.SetAttributes(projectExplorer.CurrentProject.Filename + WindowStateSuffix,
+                                FileAttributes.Normal);
+
                         dockPanel.SaveAsXml(projectExplorer.CurrentProject.Filename + WindowStateSuffix);
+
+                        if(isHidden)
+                            File.SetAttributes(projectExplorer.CurrentProject.Filename + WindowStateSuffix,
+                                FileAttributes.Hidden);
                     }
                     finally
                     {
@@ -509,28 +536,34 @@ namespace SandcastleBuilder.Gui
             if(project == null)
                 this.Text = Constants.AppName;
             else
-                this.Text = String.Format(CultureInfo.CurrentCulture,
-                    "{0}{1} - {2}",
+                this.Text = String.Format(CultureInfo.CurrentCulture, "{0}{1} - {2}",
                     Path.GetFileNameWithoutExtension(project.Filename),
                     (project.IsDirty) ? "*" : String.Empty, Constants.AppName);
         }
 
         /// <summary>
-        /// This is used to enable or disable the UI elements for the
-        /// build process
+        /// This is used to enable or disable the UI elements for the build process
         /// </summary>
-        /// <param name="enabled">True to enable the UI, false to disable
-        /// it</param>
+        /// <param name="enabled">True to enable the UI, false to disable it</param>
         private void SetUIEnabledState(bool enabled)
         {
+            // These are always enabled even when building
+            HashSet<string> alwaysEnabledIds = new HashSet<string>(new[] { miExit.Name,
+                miViewProjectExplorer.Name, miViewProjectProperties.Name, miViewOutput.Name, miHelp.Name,
+                miFaq.Name, miAbout.Name, tsbProjectExplorer.Name, tsbProjectProperties.Name, tsbViewOutput.Name,
+                tsbFaq.Name });
+
             foreach(ToolStripMenuItem item in mnuMain.Items)
                 foreach(ToolStripItem subItem in item.DropDownItems)
-                    subItem.Enabled = enabled;
+                    if(!alwaysEnabledIds.Contains(subItem.Name))
+                        subItem.Enabled = enabled;
 
             foreach(ToolStripItem item in tsbMain.Items)
-                item.Enabled = enabled;
+                if(!alwaysEnabledIds.Contains(item.Name))
+                    item.Enabled = enabled;
 
-            projectExplorer.Enabled = projectProperties.Enabled = enabled;
+            projectExplorer.Enabled = enabled;
+            projectProperties.SetEnabledState(enabled);
 
             if(outputWindow == null)
                 miClearOutput_Click(miClearOutput, EventArgs.Empty);
@@ -539,10 +572,6 @@ namespace SandcastleBuilder.Gui
 
             // The Cancel Build options are the inverse of the value
             miCancelBuild.Enabled = tsbCancelBuild.Enabled = !enabled;
-
-            // These are always enabled even when building
-            miHelp.Enabled = miFaq.Enabled = miAbout.Enabled = miExit.Enabled =
-                tsbFaq.Enabled = tsbAbout.Enabled = true;
         }
 
         /// <summary>
@@ -607,21 +636,19 @@ namespace SandcastleBuilder.Gui
             projectExplorer = new ProjectExplorerWindow();
             projectProperties = new ProjectPropertiesWindow();
 
-            // Set the current directory to My Documents so that people don't
-            // save stuff in the SHFB folder by default.
+            // Set the current directory to My Documents so that people don't save stuff in the SHFB folder by
+            // default.
             try
             {
                 Directory.SetCurrentDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments));
             }
             catch
             {
-                // This doesn't always work if they use a mapped network drive
-                // for My Documents.  In that case, just ignore the failure and
-                // stay put.
+                // This doesn't always work if they use a mapped network drive for My Documents.  In that case,
+                // just ignore the failure and stay put.
             }
 
-            // If not starting out minimized, attempt to load the last used
-            // window size and position.
+            // If not starting out minimized, attempt to load the last used window size and position
             if(this.WindowState != FormWindowState.Minimized)
             {
                 WINDOWPLACEMENT wp = (WINDOWPLACEMENT)Settings.Default.WindowPlacement;
@@ -650,8 +677,8 @@ namespace SandcastleBuilder.Gui
                 }
             }
 
-            // If not restored or something when wrong and the project explorer
-            // doesn't have a dock panel, show them by default.
+            // If not restored or something when wrong and the project explorer doesn't have a dock panel, show
+            // them by default.
             if(projectExplorer.DockPanel == null)
             {
                 projectExplorer.Show(dockPanel);
@@ -661,30 +688,26 @@ namespace SandcastleBuilder.Gui
             
             try
             {
-                // Check for the SHFBROOT environment variable.  It may not be
-                // present yet if a reboot hasn't occurred after installation.
-                // In such cases, set it to the proper folder for this process
-                // so that projects can be loaded and built.
+                // Check for the SHFBROOT environment variable.  It may not be present yet if a reboot hasn't
+                // occurred after installation.  In such cases, set it to the proper folder for this process so
+                // that projects can be loaded and built.
                 if(Environment.GetEnvironmentVariable("SHFBROOT") == null)
                 {
                     string shfbRootPath = Path.GetDirectoryName(
                         Assembly.GetExecutingAssembly().Location);
 
-                    MessageBox.Show("The SHFBROOT system environment variable was not " +
-                        "found.  This variable is usually created during installation " +
-                        "and may require a reboot.  It has been defined temporarily " +
-                        "for this process as:\n\nSHFBROOT=" + shfbRootPath,
-                        Constants.AppName, MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
+                    MessageBox.Show("The SHFBROOT system environment variable was not found.  This variable " +
+                        "is usually created during installation and may require a reboot.  It has been defined " +
+                        "temporarily for this process as:\n\nSHFBROOT=" + shfbRootPath, Constants.AppName,
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     Environment.SetEnvironmentVariable("SHFBROOT", shfbRootPath);
                 }
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Unable to detect or set SHFBROOT environment " +
-                    "variable.  Reason: " + ex.Message, Constants.AppName,
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Unable to detect or set SHFBROOT environment variable.  Reason: " + ex.Message,
+                    Constants.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             // Create the MRU on first use
@@ -695,11 +718,9 @@ namespace SandcastleBuilder.Gui
             }
             else
             {
-                // Get rid of projects that no longer exist or that are not
-                // compatible
+                // Get rid of projects that no longer exist or that are not compatible
                 while(idx < mruList.Count)
-                    if(!File.Exists(mruList[idx]) || mruList[idx].EndsWith(
-                      ".shfb", StringComparison.OrdinalIgnoreCase))
+                    if(!File.Exists(mruList[idx]) || mruList[idx].EndsWith(".shfb", StringComparison.OrdinalIgnoreCase))
                         mruList.RemoveAt(idx);
                     else
                         idx++;
@@ -717,23 +738,19 @@ namespace SandcastleBuilder.Gui
 
                         if(pex.Message.IndexOf("<project>", StringComparison.Ordinal) != -1)
                         {
-                            MessageBox.Show("The project file format is invalid.  " +
-                                "If this project was created with an earlier " +
-                                "version of the Sandcastle Help File Builder, " +
-                                "use the File | New Project from Other Format " +
-                                "option to convert it to the latest project file " +
-                                "format.", Constants.AppName,
-                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("The project file format is invalid.  If this project was created " +
+                                "with an earlier version of the Sandcastle Help File Builder, use the File | " +
+                                "New Project from Other Format option to convert it to the latest project file " +
+                                "format.", Constants.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
-                            MessageBox.Show(pex.Message, Constants.AppName,
-                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(pex.Message, Constants.AppName, MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
                     }
                     catch(Exception ex)
                     {
                         System.Diagnostics.Debug.Write(ex);
-                        MessageBox.Show(ex.Message, Constants.AppName,
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(ex.Message, Constants.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
             }
         }
@@ -774,9 +791,6 @@ namespace SandcastleBuilder.Gui
                     }
                 }
 
-            if(!e.Cancel && previewWindow != null)
-                e.Cancel = !previewWindow.CanClose;
-
             if(!e.Cancel)
             {
                 // Save the current window size and position if possible
@@ -815,10 +829,24 @@ namespace SandcastleBuilder.Gui
                 // Save per user project state if wanted
                 if(projectExplorer.CurrentProject != null && Settings.Default.PerUserProjectState)
                 {
+                    // If hidden, unhide it so that DockPanel can write to it.  We'll hide it again afterwards.
+                    bool isHidden = (File.Exists(projectExplorer.CurrentProject.Filename + WindowStateSuffix) &&
+                      (File.GetAttributes(projectExplorer.CurrentProject.Filename +
+                        WindowStateSuffix) & FileAttributes.Hidden) != 0);
+
                     try
                     {
                         Cursor.Current = Cursors.WaitCursor;
+
+                        if(isHidden)
+                            File.SetAttributes(projectExplorer.CurrentProject.Filename + WindowStateSuffix,
+                                FileAttributes.Normal);
+
                         dockPanel.SaveAsXml(projectExplorer.CurrentProject.Filename + WindowStateSuffix);
+
+                        if(isHidden)
+                            File.SetAttributes(projectExplorer.CurrentProject.Filename + WindowStateSuffix,
+                                FileAttributes.Hidden);
                     }
                     finally
                     {
@@ -873,9 +901,8 @@ namespace SandcastleBuilder.Gui
         //=====================================================================
 
         /// <summary>
-        /// This updates the state of the form when the project is modified.
-        /// It also updates the Sandcastle path in the component configuration
-        /// form.
+        /// This updates the state of the form when the project is modified.  It also updates the Sandcastle path
+        /// in the component configuration form.
         /// </summary>
         /// <param name="sender">The sender of the event</param>
         /// <param name="e">The event arguments</param>
@@ -899,21 +926,18 @@ namespace SandcastleBuilder.Gui
         }
 
         /// <summary>
-        /// This is called by the build process thread to update the main
-        /// window with the current build step.
+        /// This is called by the build process thread to update the main window with the current build step
         /// </summary>
         /// <param name="sender">The sender of the event</param>
         /// <param name="e">The event arguments</param>
-        private void buildProcess_BuildStepChanged(object sender,
-          BuildProgressEventArgs e)
+        private void buildProcess_BuildStepChanged(object sender, BuildProgressEventArgs e)
         {
             if(this.InvokeRequired)
             {
                 // Ignore it if we've already shut down or it hasn't
                 // completed yet.
                 if(!this.IsDisposed)
-                    this.Invoke(new EventHandler<BuildProgressEventArgs>(
-                        buildProcess_BuildStepChanged),
+                    this.Invoke(new EventHandler<BuildProgressEventArgs>(buildProcess_BuildStepChanged),
                         new object[] { sender, e });
             }
             else
@@ -930,28 +954,25 @@ namespace SandcastleBuilder.Gui
                     buildThread = null;
                     buildProcess = null;
 
-                    if(e.BuildStep == BuildStep.Completed &&
-                      Settings.Default.OpenHelpAfterBuild)
+                    if(e.BuildStep == BuildStep.Completed && Settings.Default.OpenHelpAfterBuild)
                         miViewHelpFile.PerformClick();
                 }
             }
         }
 
         /// <summary>
-        /// This is called by the build process thread to update the main
-        /// window with information about its progress.
+        /// This is called by the build process thread to update the main window with information about its
+        /// progress.
         /// </summary>
         /// <param name="sender">The sender of the event</param>
         /// <param name="e">The event arguments</param>
-        private void buildProcess_BuildProgress(object sender,
-          BuildProgressEventArgs e)
+        private void buildProcess_BuildProgress(object sender, BuildProgressEventArgs e)
         {
             if(this.InvokeRequired)
             {
                 // Ignore it if we've already shut down
                 if(!this.IsDisposed)
-                    this.Invoke(new EventHandler<BuildProgressEventArgs>(
-                        buildProcess_BuildProgress),
+                    this.Invoke(new EventHandler<BuildProgressEventArgs>(buildProcess_BuildProgress),
                         new object[] { sender, e });
             }
             else
@@ -959,12 +980,10 @@ namespace SandcastleBuilder.Gui
                 if(e.BuildStep < BuildStep.Completed)
                     StatusBarTextProvider.UpdateProgress((int)e.BuildStep);
 
-                if(Settings.Default.VerboseLogging ||
-                  e.BuildStep == BuildStep.Failed)
+                if(Settings.Default.VerboseLogging || e.BuildStep == BuildStep.Failed)
                     outputWindow.AppendText(e.Message);
             }
         }
-
 
         /// <summary>
         /// Start a new help project
@@ -999,8 +1018,7 @@ namespace SandcastleBuilder.Gui
                     catch(Exception ex)
                     {
                         System.Diagnostics.Debug.Write(ex);
-                        MessageBox.Show(ex.Message, Constants.AppName,
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(ex.Message, Constants.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     finally
                     {
@@ -1010,8 +1028,8 @@ namespace SandcastleBuilder.Gui
         }
 
         /// <summary>
-        /// Create a new project from a project file that is in a different
-        /// format (i.e. SHFB 1.7.0.0 or earlier or NDoc 1.x)
+        /// Create a new project from a project file that is in a different format (i.e. SHFB 1.7.0.0 or earlier
+        /// or NDoc 1.x)
         /// </summary>
         /// <param name="sender">The sender of the event</param>
         /// <param name="e">The event arguments</param>
@@ -1138,8 +1156,7 @@ namespace SandcastleBuilder.Gui
                 foreach(string project in mruList)
                 {
                     miProject = new ToolStripMenuItem();
-                    miProject.Text = String.Format(CultureInfo.CurrentCulture,
-                        "&{0} {1}", idx++, project);
+                    miProject.Text = String.Format(CultureInfo.CurrentCulture, "&{0} {1}", idx++, project);
                     miProject.Click += new EventHandler(miProject_Click);
                     miRecentProjects.DropDownItems.Add(miProject);
                 }
@@ -1204,8 +1221,7 @@ namespace SandcastleBuilder.Gui
         private void tcbConfig_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(project != null)
-                Settings.Default.LastConfig = project.Configuration =
-                    (string)tcbConfig.SelectedItem;
+                Settings.Default.LastConfig = project.Configuration = (string)tcbConfig.SelectedItem;
         }
 
         /// <summary>
@@ -1216,8 +1232,7 @@ namespace SandcastleBuilder.Gui
         private void tcbPlatform_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(project != null)
-                Settings.Default.LastPlatform = project.Platform =
-                    (string)tcbPlatform.SelectedItem;
+                Settings.Default.LastPlatform = project.Platform = (string)tcbPlatform.SelectedItem;
         }
 
         /// <summary>
@@ -1235,18 +1250,12 @@ namespace SandcastleBuilder.Gui
             Application.DoEvents();
 
             buildProcess = new BuildProcess(project);
-            buildProcess.BuildStepChanged +=
-                new EventHandler<BuildProgressEventArgs>(
-                    buildProcess_BuildStepChanged);
-            buildProcess.BuildProgress +=
-                new EventHandler<BuildProgressEventArgs>(
-                    buildProcess_BuildProgress);
+            buildProcess.BuildStepChanged += buildProcess_BuildStepChanged;
+            buildProcess.BuildProgress += buildProcess_BuildProgress;
 
-            StatusBarTextProvider.InitializeProgressBar(0,
-                (int)BuildStep.Completed, "Building help file");
+            StatusBarTextProvider.InitializeProgressBar(0, (int)BuildStep.Completed, "Building help file");
 
-            buildThread = new Thread(new ThreadStart(
-                buildProcess.Build));
+            buildThread = new Thread(new ThreadStart(buildProcess.Build));
             buildThread.Name = "Help file builder thread";
             buildThread.IsBackground = true;
             buildThread.Start();
@@ -1311,31 +1320,30 @@ namespace SandcastleBuilder.Gui
         }
 
         /// <summary>
-        /// Clean the output and working folders by deleting all files from
-        /// them.
+        /// Clean the output and working folders by deleting all files from them
         /// </summary>
         /// <param name="sender">The sender of the event</param>
         /// <param name="e">The event arguments</param>
         private void miCleanOutput_Click(object sender, EventArgs e)
         {
             StringBuilder sb = new StringBuilder(1024);
-            string projectFolder, outputFolder;
+            string projectFolder, outputFolder = project.OutputPath;
 
-            // Make sure we start out in the project's output folder in case the output folder
-            // is relative to it.
+            // Make sure we start out in the project's output folder in case the output folder is relative to it
             projectFolder = Path.GetDirectoryName(Path.GetFullPath(project.Filename));
             Directory.SetCurrentDirectory(projectFolder);
 
-            outputFolder = Path.GetFullPath(project.OutputPath);
+            // If the output path contains MSBuild variables, get the evaluated value from the project
+            if(outputFolder.IndexOf("$(", StringComparison.Ordinal) != -1)
+                outputFolder = project.MSBuildProject.GetProperty("OutputPath").EvaluatedValue;
+
+            outputFolder = Path.GetFullPath(outputFolder);
 
             // If the folder doesn't exist, don't bother
-            if(Directory.Exists(outputFolder) &&
-              MessageBox.Show(String.Format(CultureInfo.CurrentCulture,
-                  "This will delete all files from the output folder '{0}' " +
-                  "including any not created by the help file builder.  " +
-                  "Do you want to continue?", outputFolder), Constants.AppName,
-                  MessageBoxButtons.YesNo, MessageBoxIcon.Question,
-                  MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            if(Directory.Exists(outputFolder) && MessageBox.Show(String.Format(CultureInfo.CurrentCulture,
+              "This will delete all files from the output folder '{0}' including any not created by the help " +
+              "file builder.  Do you want to continue?", outputFolder), Constants.AppName,
+              MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 try
                 {
@@ -1415,7 +1423,7 @@ namespace SandcastleBuilder.Gui
         /// Modify user preferences that are unrelated to the project
         /// </summary>
         /// <param name="sender">The sender of the event</param>
-        /// <param name="e">The event argumenst</param>
+        /// <param name="e">The event arguments</param>
         private void miUserPreferences_Click(object sender, EventArgs e)
         {
             using(UserPreferencesDlg dlg = new UserPreferencesDlg())
@@ -1431,11 +1439,10 @@ namespace SandcastleBuilder.Gui
         }
 
         /// <summary>
-        /// Enable or disable the viewing options based on the current
-        /// project's help file format setting
+        /// Enable or disable the viewing options based on the current project's help file format setting
         /// </summary>
         /// <param name="sender">The sender of the event</param>
-        /// <param name="e">The event argumenst</param>
+        /// <param name="e">The event arguments</param>
         private void ctxViewHelpMenu_Opening(object sender, CancelEventArgs e)
         {
             miViewHtmlHelp1.Enabled = ((project.HelpFileFormat & HelpFileFormat.HtmlHelp1) != 0);
@@ -1447,8 +1454,7 @@ namespace SandcastleBuilder.Gui
         }
 
         /// <summary>
-        /// View the help file produced by the last build.  Pick the first
-        /// available format.
+        /// View the help file produced by the last build.  Pick the first available format
         /// </summary>
         /// <param name="sender">The sender of the event</param>
         /// <param name="e">The event arguments</param>
@@ -1470,18 +1476,20 @@ namespace SandcastleBuilder.Gui
         }
 
         /// <summary>
-        /// View the last build HTML Help 1 file, MS Help 2 file, or website
-        /// Index.aspx/Index.html page.
+        /// View the last build HTML Help 1 file, MS Help 2 file, or website Index.aspx/Index.html page
         /// </summary>
         /// <param name="sender">The sender of the event</param>
         /// <param name="e">The event arguments</param>
         private void miViewBuiltHelpFile_Click(object sender, EventArgs e)
         {
-            // Make sure we start out in the project's output folder in case the output folder
-            // is relative to it.
+            // Make sure we start out in the project's output folder in case the output folder is relative to it
             Directory.SetCurrentDirectory(Path.GetDirectoryName(Path.GetFullPath(project.Filename)));
 
             string outputPath = project.OutputPath, help2Viewer = Settings.Default.HTMLHelp2ViewerPath;
+
+            // If the output path contains MSBuild variables, get the evaluated value from the project
+            if(outputPath.IndexOf("$(", StringComparison.Ordinal) != -1)
+                outputPath = project.MSBuildProject.GetProperty("OutputPath").EvaluatedValue;
 
             if(String.IsNullOrEmpty(outputPath))
                 outputPath = Directory.GetCurrentDirectory();
@@ -1507,6 +1515,25 @@ namespace SandcastleBuilder.Gui
                 else
                     outputPath += "Index.html";
 
+            // If there are substitution tags present, have a go at resolving them
+            if(outputPath.IndexOf("{@", StringComparison.Ordinal) != -1)
+            {
+                try
+                {
+                    var bp = new BuildProcess(project);
+                    outputPath = bp.TransformText(outputPath);
+                }
+                catch
+                {
+                    // Ignore errors
+                    MessageBox.Show("The help filename appears to contain substitution tags but they could " +
+                        "not be resolved to determine the actual file to open for viewing.  Building " +
+                        "website output and viewing it can be used to work around this issue.",
+                        Constants.AppName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+            }
+
             if(!File.Exists(outputPath))
             {
                 MessageBox.Show("A copy of the help file does not appear to exist yet.  It may need to be built.",
@@ -1530,8 +1557,8 @@ namespace SandcastleBuilder.Gui
         }
 
         /// <summary>
-        /// Launch the MS Help Viewer to view a Microsoft Help Viewer file.  This
-        /// will optionally install it first.
+        /// Launch the MS Help Viewer to view a Microsoft Help Viewer file.  This will optionally install it
+        /// first.
         /// </summary>
         /// <param name="sender">The sender of the event</param>
         /// <param name="e">The event arguments</param>
@@ -1544,8 +1571,7 @@ namespace SandcastleBuilder.Gui
         }
 
         /// <summary>
-        /// Launch the ASP.NET Development Web Server to view the website
-        /// output (Index.aspx).
+        /// Launch the ASP.NET Development Web Server to view the website output (Index.aspx)
         /// </summary>
         /// <param name="sender">The sender of the event</param>
         /// <param name="e">The event arguments</param>
@@ -1555,8 +1581,7 @@ namespace SandcastleBuilder.Gui
             FilePath webServerPath = new FilePath(null);
             string path;
 
-            // Make sure we start out in the project's output folder
-            // in case the output folder is relative to it.
+            // Make sure we start out in the project's output folder in case the output folder is relative to it
             Directory.SetCurrentDirectory(Path.GetDirectoryName(Path.GetFullPath(project.Filename)));
 
             string outputPath = project.OutputPath;
@@ -1591,26 +1616,27 @@ namespace SandcastleBuilder.Gui
 
                     if(Directory.Exists(path))
                     {
-                        webServerPath.Path = Directory.EnumerateFiles(path, "WebDev.WebServer20.exe",
+                        webServerPath.Path = Directory.EnumerateFiles(path, "WebDev.WebServer40.exe",
                             SearchOption.AllDirectories).FirstOrDefault();
 
+                        // Fall back to the .NET 2.0/3.5 version?
                         if(!File.Exists(webServerPath))
-                            webServerPath.Path = Directory.EnumerateFiles(path, "WebDev.WebServer40.exe",
+                            webServerPath.Path = Directory.EnumerateFiles(path, "WebDev.WebServer20.exe",
                                 SearchOption.AllDirectories).FirstOrDefault();
                     }
 
                     if(!File.Exists(webServerPath))
                     {
-                        path = Environment.ExpandEnvironmentVariables(@"%ProgramFiles(x86)%\" +
-                            @"Common Files\Microsoft Shared\DevServer");
+                        path = Environment.ExpandEnvironmentVariables(@"%ProgramFiles(x86)%\Common Files\" +
+                            @"Microsoft Shared\DevServer");
 
                         if(Directory.Exists(path))
                         {
-                           webServerPath.Path = Directory.EnumerateFiles(path, "WebDev.WebServer20.exe",
+                           webServerPath.Path = Directory.EnumerateFiles(path, "WebDev.WebServer40.exe",
                                 SearchOption.AllDirectories).LastOrDefault();
 
                            if(!File.Exists(webServerPath))
-                               webServerPath.Path = Directory.EnumerateFiles(path, "WebDev.WebServer40.exe",
+                               webServerPath.Path = Directory.EnumerateFiles(path, "WebDev.WebServer20.exe",
                                    SearchOption.AllDirectories).FirstOrDefault();
                         }
                     }
@@ -1637,12 +1663,11 @@ namespace SandcastleBuilder.Gui
                     webServer.WaitForInputIdle(30000);
                 }
 
-                // This form's handle is used to keep the URL unique in case
-                // multiple copies of SHFB are running so that each can view
-                // website output.
+                // This form's handle is used to keep the URL unique in case multiple copies of SHFB are running
+                // so that each can view website output.
                 outputPath = String.Format(CultureInfo.InvariantCulture,
-                    "http://localhost:{0}/SHFBOutput_{1}/Index.aspx",
-                    Settings.Default.ASPNETDevServerPort, this.Handle);
+                    "http://localhost:{0}/SHFBOutput_{1}/Index.aspx", Settings.Default.ASPNETDevServerPort,
+                    this.Handle);
 
                 System.Diagnostics.Process.Start(outputPath);
             }
@@ -1650,9 +1675,8 @@ namespace SandcastleBuilder.Gui
             {
                 System.Diagnostics.Debug.WriteLine(ex.ToString());
                 MessageBox.Show(String.Format(CultureInfo.CurrentCulture,
-                    "Unable to open ASP.NET website '{0}'\r\nReason: {1}",
-                    outputPath, ex.Message), Constants.AppName,
-                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    "Unable to open ASP.NET website '{0}'\r\nReason: {1}", outputPath, ex.Message),
+                    Constants.AppName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -1694,8 +1718,7 @@ namespace SandcastleBuilder.Gui
         /// <param name="e">The event arguments</param>
         private void miOpenHelpAfterBuild_Click(object sender, EventArgs e)
         {
-            Settings.Default.OpenHelpAfterBuild =
-                !Settings.Default.OpenHelpAfterBuild;
+            Settings.Default.OpenHelpAfterBuild = !Settings.Default.OpenHelpAfterBuild;
         }
         #endregion
 
@@ -1955,8 +1978,8 @@ namespace SandcastleBuilder.Gui
                 previewWindow.PreviewTopic(project, (fileItem == null) ? null : fileItem.FullPath);
                 previewWindow.Activate();
 
-                // When the state is restored and it's a document pane, it
-                // doesn't always become the active pane unless this is called.
+                // When the state is restored and it's a document pane, it doesn't always become the active pane
+                // unless this is called.
                 previewWindow.Show(dockPanel, previewWindow.DockState);
             }
             finally
@@ -1978,6 +2001,44 @@ namespace SandcastleBuilder.Gui
         {
             if(project != null && fsw != null && !checkingForChangedFiles)
             {
+                // Ignore the output and working folders defined in the current build process or project.  This
+                // greatly reduces the number of changed files tracked when a build is in progress.
+                if(buildProcess != null)
+                {
+                    try
+                    {
+                        excludedOutputFolder = buildProcess.OutputFolder;
+                        excludedWorkingFolder = buildProcess.WorkingFolder;
+                    }
+                    catch
+                    {
+                        // If things are timed just right, it may be possible for the build to complete and be
+                        // disposed of before we access the properties.  However, the chances of that are slim
+                        // so we'll ignore any errors.
+                        excludedOutputFolder = excludedWorkingFolder = "??";
+                    }
+                }
+                else
+                {
+                    excludedOutputFolder = project.OutputPath;
+
+                    if(String.IsNullOrEmpty(excludedOutputFolder))
+                        excludedOutputFolder = Path.Combine(Path.GetDirectoryName(project.Filename), "Help");
+                    else
+                        excludedOutputFolder = Path.GetFullPath(excludedOutputFolder);
+
+                    if(project.WorkingPath.Path.Length == 0)
+                        excludedWorkingFolder = Path.Combine(excludedOutputFolder, "Working");
+                    else
+                        excludedWorkingFolder = project.WorkingPath;
+                }
+
+                if(excludedOutputFolder.EndsWith("\\", StringComparison.Ordinal))
+                    excludedOutputFolder = excludedOutputFolder.Substring(0, excludedOutputFolder.Length - 1);
+
+                if(excludedWorkingFolder.EndsWith("\\", StringComparison.Ordinal))
+                    excludedWorkingFolder = excludedWorkingFolder.Substring(0, excludedWorkingFolder.Length - 1);
+
                 fsw.Path = Path.GetDirectoryName(project.Filename);
                 fsw.EnableRaisingEvents = true;
             }
@@ -2058,13 +2119,15 @@ namespace SandcastleBuilder.Gui
         }
 
         /// <summary>
-        /// Note changes to the file system
+        /// Note changes to the file system excluding files in the project's output and working folders that we
+        /// don't care about.
         /// </summary>
         /// <param name="sender">The sender of the event</param>
         /// <param name="e">The event arguments</param>
         private void fsw_OnChanged(object sender, FileSystemEventArgs e)
         {
-            if(!changedFiles.Contains(e.FullPath))
+            if(!e.FullPath.StartsWith(excludedOutputFolder, StringComparison.OrdinalIgnoreCase) &&
+              !e.FullPath.StartsWith(excludedWorkingFolder, StringComparison.OrdinalIgnoreCase))
                 changedFiles.Add(e.FullPath);
         }
         #endregion

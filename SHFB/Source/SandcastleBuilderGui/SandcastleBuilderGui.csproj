@@ -1049,6 +1049,7 @@
     </Content>
     <Content Include="Templates\MRefBuilder.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Templates\Help2x.HxC">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -1082,6 +1083,7 @@
     </Content>
     <Content Include="Web\FillNode.aspx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Web\Index.aspx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

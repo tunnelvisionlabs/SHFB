@@ -40,7 +40,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>..\..\ProductionTools\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;WHIDBEY;WHIDBEYwithGenericsAndIEqualityComparer</DefineConstants>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -48,8 +48,9 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE;WHIDBEY;WHIDBEYwithGenericsAndIEqualityComparer</DefineConstants>
+    <OutputPath>..\..\ProductionTools\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -62,11 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CCI\AssemblyCache.cs" />
-    <Compile Include="CCI\DoubleVisitor.cs" />
     <Compile Include="CCI\Duplicator.cs" />
     <Compile Include="CCI\ExceptionStrings.cs" />
-    <Compile Include="CCI\FastFileIO.cs" />
-    <Compile Include="CCI\ILGenerator.cs" />
     <Compile Include="CCI\ListTemplate.cs" />
     <Compile Include="CCI\MemoryMappedFile.cs" />
     <Compile Include="CCI\Metadata.cs" />
@@ -78,8 +76,6 @@
     <Compile Include="CCI\StandardVisitor.cs" />
     <Compile Include="CCI\SystemTypes.cs" />
     <Compile Include="CCI\Unstacker.cs" />
-    <Compile Include="CCI\Updater.cs" />
-    <Compile Include="CCI\Writer.cs" />
     <Compile Include="ExtensionMethodAddIn.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -95,26 +91,19 @@
     <Compile Include="MRefWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\AssemblyInfoShared.cs" />
-    <Compile Include="Reflection\AllDocumentedFilter.cs" />
-    <Compile Include="Reflection\AllTopicFilter.cs" />
     <Compile Include="Reflection\ApiFilter.cs" />
     <Compile Include="Reflection\ApiNamer.cs" />
     <Compile Include="Reflection\ApiVisitor.cs" />
     <Compile Include="Reflection\AssemblyReferenceEventArgs.cs" />
     <Compile Include="Reflection\AssemblyResolver.cs" />
     <Compile Include="Reflection\BindingRedirectSettings.cs" />
-    <Compile Include="Reflection\ExternalDocumentedFilter.cs" />
-    <Compile Include="Reflection\ExternalFilter.cs" />
-    <Compile Include="Reflection\ExternalTopicFilter.cs" />
     <Compile Include="Reflection\MemberFilter.cs" />
     <Compile Include="Reflection\NamespaceFilter.cs" />
-    <Compile Include="Reflection\NoFilter.cs" />
     <Compile Include="Reflection\OrcasNamer.cs" />
     <Compile Include="Reflection\Reflection.cs" />
     <Compile Include="Reflection\RootFilter.cs" />
-    <Compile Include="Reflection\TestResolver.cs" />
     <Compile Include="Reflection\TypeFilter.cs" />
-    <Compile Include="Reflection\WhidbeyNamer.cs" />
+    <Compile Include="Reflection\VisibleItems.cs" />
     <Compile Include="XamlAttachedMembersAddIn.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -125,6 +114,7 @@
     </None>
     <None Include="MRefBuilder.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>

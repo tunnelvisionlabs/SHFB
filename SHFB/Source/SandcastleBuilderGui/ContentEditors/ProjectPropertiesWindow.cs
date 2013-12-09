@@ -2,7 +2,7 @@
 // System  : Sandcastle Help File Builder
 // File    : ProjectPropertiesWindow.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 03/07/2013
+// Updated : 09/27/2013
 // Note    : Copyright 2008-2013, Eric Woodruff, All rights reserved
 // Compiler: Microsoft Visual C#
 //
@@ -75,7 +75,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             InitializeComponent();
 
             // Ensure that the file and folder path user controls are known by the base property page class
-            if(!BasePropertyPage.CustomControls.ContainsKey(typeof(SandcastleBuilder.Utils.Controls.FilePathUserControl).Name))
+            if(!BasePropertyPage.CustomControls.ContainsKey(typeof(SandcastleBuilder.Utils.Controls.FilePathUserControl).FullName))
             {
                 BasePropertyPage.CustomControls.Add(typeof(SandcastleBuilder.Utils.Controls.FilePathUserControl).FullName,
                     "PersistablePath");
@@ -274,6 +274,17 @@ namespace SandcastleBuilder.Gui.ContentEditors
         {
             if(currentProject != null)
                 tvPropertyPages_AfterSelect(this, new TreeViewEventArgs(tvPropertyPages.SelectedNode));
+        }
+
+        /// <summary>
+        /// Set the enabled state of the property page container
+        /// </summary>
+        /// <param name="enabled">True to enable the property pages, false to disable them</param>
+        /// <remarks>This allows the property pages to be disabled during a build but still allows you to
+        /// flip through them to see the active options.</remarks>
+        public void SetEnabledState(bool enabled)
+        {
+            pnlPropertyPages.Enabled = enabled;
         }
 
         /// <summary>

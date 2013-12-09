@@ -2,7 +2,7 @@
 // System  : Sandcastle Help File Builder Plug-Ins
 // File    : AdditionalReferenceLinksPlugIn.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 03/29/2013
+// Updated : 12/04/2013
 // Note    : Copyright 2008-2013, Eric Woodruff, All rights reserved
 // Compiler: Microsoft Visual C#
 //
@@ -145,7 +145,7 @@ namespace SandcastleBuilder.PlugIns
                 if(executionPoints == null)
                     executionPoints = new ExecutionPointCollection
                     {
-                        new ExecutionPoint(BuildStep.ApplyVisibilityProperties, ExecutionBehaviors.After),
+                        new ExecutionPoint(BuildStep.GenerateNamespaceSummaries, ExecutionBehaviors.Before),
                         new ExecutionPoint(BuildStep.GenerateInheritedDocumentation, ExecutionBehaviors.Before),
                         new ExecutionPoint(BuildStep.CreateBuildAssemblerConfigs, ExecutionBehaviors.Before),
                         new ExecutionPoint(BuildStep.MergeCustomConfigs, ExecutionBehaviors.After),
@@ -214,7 +214,7 @@ namespace SandcastleBuilder.PlugIns
             string workingPath, configFilename;
             bool success;
 
-            if(context.BuildStep == BuildStep.ApplyVisibilityProperties)
+            if(context.BuildStep == BuildStep.GenerateNamespaceSummaries)
             {
                 // Merge the additional reference links information
                 builder.ReportProgress("Performing partial builds on additional targets' projects");
@@ -222,20 +222,29 @@ namespace SandcastleBuilder.PlugIns
                 // Build each of the projects
                 foreach(ReferenceLinkSettings vs in otherLinks)
                 {
-                    using(SandcastleProject project = new SandcastleProject(vs.HelpFileProject, true))
+                    using(SandcastleProject tempProject = new SandcastleProject(vs.HelpFileProject, true))
                     {
-                        // We'll use a working folder below the current project's working folder
-                        workingPath = builder.WorkingFolder + vs.HelpFileProject.GetHashCode().ToString("X",
-                            CultureInfo.InvariantCulture) + "\\";
+                        // This looks odd but is necessary.  If we are in Visual Studio, the above constructor
+                        // may return an instance that uses an underlying MSBuild project loaded in Visual
+                        // Studio.  Since the BuildProject() method modifies the project, those changes are
+                        // propagated to the Visual Studio copy which we do not want to happen.  As such, we use
+                        // this constructor to clone the MSBuild project XML thus avoiding modifications to the
+                        // original project.
+                        using(SandcastleProject project = new SandcastleProject(tempProject))
+                        {
+                            // We'll use a working folder below the current project's working folder
+                            workingPath = builder.WorkingFolder + vs.HelpFileProject.GetHashCode().ToString("X",
+                                CultureInfo.InvariantCulture) + "\\";
 
-                        success = this.BuildProject(project, workingPath);
+                            success = this.BuildProject(project, workingPath);
 
-                        // Switch back to the original folder for the current project
-                        Directory.SetCurrentDirectory(builder.ProjectFolder);
+                            // Switch back to the original folder for the current project
+                            Directory.SetCurrentDirectory(builder.ProjectFolder);
 
-                        if(!success)
-                            throw new BuilderException("ARL0003", "Unable to build " +
-                                "additional target project: " + project.Filename);
+                            if(!success)
+                                throw new BuilderException("ARL0003", "Unable to build additional target " +
+                                    "project: " + project.Filename);
+                        }
                     }
 
                     // Save the reflection file location as we need it later
@@ -243,11 +252,10 @@ namespace SandcastleBuilder.PlugIns
 
                     sb.AppendFormat("\"{0}ProductionTools\\XslTransform\" " +
                         "/xsl:\"{0}ProductionTransforms\\ApplyVSDocModel.xsl\"," +
-                        "\"{0}ProductionTransforms\\AddGuidFilenames.xsl\" " +
+                        "\"{0}ProductionTransforms\\AddFilenames.xsl\" " +
                         "\"{1}reflection.org\" /out:\"{1}reflection.xml\" " +
                         "/arg:IncludeAllMembersTopic=true " +
-                        "/arg:IncludeInheritedOverloadTopics=true\r\n",
-                        builder.SandcastleFolder, workingPath);
+                        "/arg:IncludeInheritedOverloadTopics=true\r\n", builder.SandcastleFolder, workingPath);
                 }
 
                 // Run the Transform step on the reflection.org files.  This adds some stuff the build
@@ -453,7 +461,7 @@ namespace SandcastleBuilder.PlugIns
         //=====================================================================
 
         /// <summary>
-        /// This handles garbage collection to ensure proper disposal of the plug-in if not done explicity with
+        /// This handles garbage collection to ensure proper disposal of the plug-in if not done explicitly with
         /// <see cref="Dispose()"/>.
         /// </summary>
         ~AdditionalReferenceLinksPlugIn()
