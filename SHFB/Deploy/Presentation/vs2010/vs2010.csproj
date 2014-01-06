@@ -57,7 +57,6 @@
     <Content Include="Branding\branding.xml" />
     <Content Include="Branding\branding.xslt" />
     <Content Include="Branding\dev10.manifest" />
-    <Content Include="Branding\dev10.mshc" />
     <Content Include="Branding\favicon.ico" />
     <Content Include="Branding\ps-body.xslt" />
     <Content Include="Branding\ps-codesnippet.xslt" />
@@ -184,6 +183,103 @@
     <Content Include="transforms\xpathFunctions.xsl" />
   </ItemGroup>
   <ItemGroup>
+    <MshcZip Include="Branding\dev10\body.xslt" />
+    <MshcZip Include="Branding\dev10\codesnippet-cs-CZ.xslt" />
+    <MshcZip Include="Branding\dev10\codesnippet-de-DE.xslt" />
+    <MshcZip Include="Branding\dev10\codesnippet-en-US.xslt" />
+    <MshcZip Include="Branding\dev10\codesnippet-es-ES.xslt" />
+    <MshcZip Include="Branding\dev10\codesnippet-fr-FR.xslt" />
+    <MshcZip Include="Branding\dev10\codesnippet-it-IT.xslt" />
+    <MshcZip Include="Branding\dev10\codesnippet-ja-JP.xslt" />
+    <MshcZip Include="Branding\dev10\codesnippet-ko-KR.xslt" />
+    <MshcZip Include="Branding\dev10\codesnippet-pl-PL.xslt" />
+    <MshcZip Include="Branding\dev10\codesnippet-pt-BR.xslt" />
+    <MshcZip Include="Branding\dev10\codesnippet-ru-RU.xslt" />
+    <MshcZip Include="Branding\dev10\codesnippet-tr-TR.xslt" />
+    <MshcZip Include="Branding\dev10\codesnippet-zh-CN.xslt" />
+    <MshcZip Include="Branding\dev10\codesnippet-zh-TW.xslt" />
+    <MshcZip Include="Branding\dev10\CodeSnippet.xslt" />
+    <MshcZip Include="Branding\dev10\head.xslt" />
+    <MshcZip Include="Branding\dev10\Identity.xslt" />
+    <MshcZip Include="Branding\dev10\index-cs-CZ.xslt" />
+    <MshcZip Include="Branding\dev10\index-de-DE.xslt" />
+    <MshcZip Include="Branding\dev10\index-en-US.xslt" />
+    <MshcZip Include="Branding\dev10\index-es-ES.xslt" />
+    <MshcZip Include="Branding\dev10\index-fr-FR.xslt" />
+    <MshcZip Include="Branding\dev10\index-it-IT.xslt" />
+    <MshcZip Include="Branding\dev10\index-ja-JP.xslt" />
+    <MshcZip Include="Branding\dev10\index-ko-KR.xslt" />
+    <MshcZip Include="Branding\dev10\index-pl-PL.xslt" />
+    <MshcZip Include="Branding\dev10\index-pt-BR.xslt" />
+    <MshcZip Include="Branding\dev10\index-ru-RU.xslt" />
+    <MshcZip Include="Branding\dev10\index-tr-TR.xslt" />
+    <MshcZip Include="Branding\dev10\index-zh-CN.xslt" />
+    <MshcZip Include="Branding\dev10\index-zh-TW.xslt" />
+    <MshcZip Include="Branding\dev10\index.xslt" />
+    <MshcZip Include="Branding\dev10\instrumentedlink-cs-CZ.xslt" />
+    <MshcZip Include="Branding\dev10\instrumentedlink-de-DE.xslt" />
+    <MshcZip Include="Branding\dev10\instrumentedlink-en-US.xslt" />
+    <MshcZip Include="Branding\dev10\instrumentedlink-es-ES.xslt" />
+    <MshcZip Include="Branding\dev10\instrumentedlink-fr-FR.xslt" />
+    <MshcZip Include="Branding\dev10\instrumentedlink-it-IT.xslt" />
+    <MshcZip Include="Branding\dev10\instrumentedlink-ja-JP.xslt" />
+    <MshcZip Include="Branding\dev10\instrumentedlink-ko-KR.xslt" />
+    <MshcZip Include="Branding\dev10\instrumentedlink-pl-PL.xslt" />
+    <MshcZip Include="Branding\dev10\instrumentedlink-pt-BR.xslt" />
+    <MshcZip Include="Branding\dev10\instrumentedlink-ru-RU.xslt" />
+    <MshcZip Include="Branding\dev10\instrumentedlink-tr-TR.xslt" />
+    <MshcZip Include="Branding\dev10\instrumentedlink-zh-CN.xslt" />
+    <MshcZip Include="Branding\dev10\instrumentedlink-zh-TW.xslt" />
+    <MshcZip Include="Branding\dev10\InstrumentedLink.xslt" />
+    <MshcZip Include="Branding\dev10\LanguageSpecificText.xslt" />
+    <MshcZip Include="Branding\dev10\MultiViewTable-cs-CZ.xslt" />
+    <MshcZip Include="Branding\dev10\MultiViewTable-de-DE.xslt" />
+    <MshcZip Include="Branding\dev10\MultiViewTable-en-US.xslt" />
+    <MshcZip Include="Branding\dev10\MultiViewTable-es-ES.xslt" />
+    <MshcZip Include="Branding\dev10\MultiViewTable-fr-FR.xslt" />
+    <MshcZip Include="Branding\dev10\MultiViewTable-it-IT.xslt" />
+    <MshcZip Include="Branding\dev10\MultiViewTable-ja-JP.xslt" />
+    <MshcZip Include="Branding\dev10\MultiViewTable-ko-KR.xslt" />
+    <MshcZip Include="Branding\dev10\MultiViewTable-pl-PL.xslt" />
+    <MshcZip Include="Branding\dev10\MultiViewTable-pt-BR.xslt" />
+    <MshcZip Include="Branding\dev10\MultiViewTable-ru-RU.xslt" />
+    <MshcZip Include="Branding\dev10\MultiViewTable-tr-TR.xslt" />
+    <MshcZip Include="Branding\dev10\MultiViewTable-zh-CN.xslt" />
+    <MshcZip Include="Branding\dev10\MultiViewTable-zh-TW.xslt" />
+    <MshcZip Include="Branding\dev10\MultiViewTable.xslt" />
+    <MshcZip Include="Branding\dev10\search-cs-CZ.xslt" />
+    <MshcZip Include="Branding\dev10\search-de-DE.xslt" />
+    <MshcZip Include="Branding\dev10\search-en-US.xslt" />
+    <MshcZip Include="Branding\dev10\search-es-ES.xslt" />
+    <MshcZip Include="Branding\dev10\search-fr-FR.xslt" />
+    <MshcZip Include="Branding\dev10\search-it-IT.xslt" />
+    <MshcZip Include="Branding\dev10\search-ja-JP.xslt" />
+    <MshcZip Include="Branding\dev10\search-ko-KR.xslt" />
+    <MshcZip Include="Branding\dev10\search-pl-PL.xslt" />
+    <MshcZip Include="Branding\dev10\search-pt-BR.xslt" />
+    <MshcZip Include="Branding\dev10\search-ru-RU.xslt" />
+    <MshcZip Include="Branding\dev10\search-tr-TR.xslt" />
+    <MshcZip Include="Branding\dev10\search-zh-CN.xslt" />
+    <MshcZip Include="Branding\dev10\search-zh-TW.xslt" />
+    <MshcZip Include="Branding\dev10\search.xslt" />
+    <MshcZip Include="Branding\dev10\toc-cs-CZ.xslt" />
+    <MshcZip Include="Branding\dev10\toc-de-DE.xslt" />
+    <MshcZip Include="Branding\dev10\toc-en-US.xslt" />
+    <MshcZip Include="Branding\dev10\toc-es-ES.xslt" />
+    <MshcZip Include="Branding\dev10\toc-fr-FR.xslt" />
+    <MshcZip Include="Branding\dev10\toc-it-IT.xslt" />
+    <MshcZip Include="Branding\dev10\toc-ja-JP.xslt" />
+    <MshcZip Include="Branding\dev10\toc-ko-KR.xslt" />
+    <MshcZip Include="Branding\dev10\toc-pl-PL.xslt" />
+    <MshcZip Include="Branding\dev10\toc-pt-BR.xslt" />
+    <MshcZip Include="Branding\dev10\toc-ru-RU.xslt" />
+    <MshcZip Include="Branding\dev10\toc-tr-TR.xslt" />
+    <MshcZip Include="Branding\dev10\toc-zh-CN.xslt" />
+    <MshcZip Include="Branding\dev10\toc-zh-TW.xslt" />
+    <MshcZip Include="Branding\dev10\toc.xslt" />
+    <MshcZip Include="Branding\dev10\[Content_Types].xml" />
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -194,4 +290,81 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <UsingTask TaskName="MshcZipMetadata" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
+    <ParameterGroup>
+      <SourceItems ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />
+      <OutputFile ParameterType="System.String" Output="true" />
+    </ParameterGroup>
+    <Task>
+      <Code Type="Fragment" Language="cs"><![CDATA[
+        foreach (var sourceItem in SourceItems)
+        {
+          Log.LogMessage("RelativeDir: {0}", sourceItem.GetMetadata("RelativeDir"));
+          Log.LogMessage("OutputFile: {0}", sourceItem.GetMetadata("RelativeDir").TrimEnd('/', '\\') + ".mshc");
+          OutputFile = sourceItem.GetMetadata("RelativeDir").TrimEnd('/', '\\') + ".mshc";
+        }
+        ]]></Code>
+    </Task>
+  </UsingTask>
+  <UsingTask TaskName="ZipFiles" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
+    <ParameterGroup>
+      <InputFileNames ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />
+      <OutputFileName ParameterType="System.String" Required="true" />
+      <OverwriteExistingFile ParameterType="System.Boolean" Required="false" />
+    </ParameterGroup>
+    <Task>
+      <Reference Include="System.IO.Compression" />
+      <Using Namespace="System.IO.Compression" />
+      <Code Type="Fragment" Language="cs"><![CDATA[
+        const int BufferSize = 64 * 1024;
+ 
+        var buffer = new byte[BufferSize];
+        var fileMode = OverwriteExistingFile ? FileMode.Create : FileMode.CreateNew;
+ 
+        using (var outputFileStream = new FileStream(OutputFileName, fileMode))
+        {
+          using (var archive = new ZipArchive(outputFileStream, ZipArchiveMode.Create))
+          {
+            foreach (var inputFileName in InputFileNames.Select(f => f.ItemSpec))
+            {
+              var archiveEntry = archive.CreateEntry(Path.GetFileName(inputFileName));
+ 
+              using (var fs = new FileStream(inputFileName, FileMode.Open))
+              {
+                using (var zipStream = archiveEntry.Open())
+                {
+                  int bytesRead = -1;
+                  while ((bytesRead = fs.Read(buffer, 0, BufferSize)) > 0)
+                  {
+                    zipStream.Write(buffer, 0, bytesRead);
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]]></Code>
+    </Task>
+  </UsingTask>
+  <Target Name="UpdateMshcZipMetadata" Outputs="%(MshcZip.RelativeDir)">
+    <MshcZipMetadata SourceItems="%(MshcZip.RelativeDir)">
+      <Output TaskParameter="OutputFile" PropertyName="_TempOutputFile" />
+    </MshcZipMetadata>
+    <ItemGroup>
+      <MshcZip Condition="'%(MshcZip.RelativeDir)' == '%(RelativeDir)'">
+        <OutputFile>$(_TempOutputFile)</OutputFile>
+      </MshcZip>
+    </ItemGroup>
+    <!-- Clear the temporary property -->
+    <PropertyGroup>
+      <_TempOutputFiles>
+      </_TempOutputFiles>
+    </PropertyGroup>
+  </Target>
+  <Target Name="CompressMshcZip" DependsOnTargets="UpdateMshcZipMetadata" Outputs="@(MshcZip->'%(OutputFile)')">
+    <MakeDir Directories="@(MshcZip->'%(RelativeDir)')" />
+    <ZipFiles InputFileNames="@(MshcZip)" OutputFileName="%(OutputFile)" OverwriteExistingFile="true" />
+  </Target>
+  <Target Name="BeforeBuild" DependsOnTargets="CompressMshcZip">
+  </Target>
 </Project>
