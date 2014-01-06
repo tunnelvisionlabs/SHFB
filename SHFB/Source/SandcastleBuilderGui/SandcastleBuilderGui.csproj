@@ -43,29 +43,20 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\Deploy\</OutputPath>
     <DefineConstants>TRACE;DEBUG;STANDALONEGUI</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\SandcastleBuilderGUI.xml</DocumentationFile>
+    <DocumentationFile>..\..\Deploy\SandcastleBuilderGUI.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\Deploy\</OutputPath>
     <DefineConstants>TRACE;STANDALONEGUI</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\SandcastleBuilderGUI.xml</DocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseNoDoc|AnyCPU' ">
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE;STANDALONEGUI</DefineConstants>
-    <DocumentationFile>bin\Release\SandcastleBuilderGUI.xml</DocumentationFile>
-    <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>..\..\Deploy\SandcastleBuilderGUI.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ICSharpCode.TextEditor, Version=3.2.1.6466, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a, processorArchitecture=MSIL">
@@ -79,6 +70,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -206,9 +198,6 @@
       <Link>PropertyPages\VisibilityPropertiesPageControl.designer.cs</Link>
       <DependentUpon>VisibilityPropertiesPageControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\SandcastleBuilderUtils\Properties\AssemblyInfoShared.cs">
-      <Link>Properties\AssemblyInfoShared.cs</Link>
-    </Compile>
     <Compile Include="AboutDlg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -331,6 +320,7 @@
     <Compile Include="PromptToSaveDlg.Designer.cs">
       <DependentUpon>PromptToSaveDlg.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfoShared.cs" />
     <Compile Include="PropertyPages\BasePropertyPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -604,6 +594,10 @@
     <ProjectReference Include="..\SandcastleBuilderWPF\SandcastleBuilderWPF.csproj">
       <Project>{D3B06405-3435-4329-9233-2DF1BF5028AA}</Project>
       <Name>SandcastleBuilderWPF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SandcastleCore\Sandcastle.Core.csproj">
+      <Project>{399E78F8-4954-409E-991A-37DA9D0579CC}</Project>
+      <Name>Sandcastle.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

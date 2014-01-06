@@ -2,7 +2,7 @@
 // System  : Sandcastle Help File Builder Utilities
 // File    : PresentationStyleSettings.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 11/30/2013
+// Updated : 12/16/2013
 // Note    : Copyright 2012-2013, Eric Woodruff, All rights reserved
 // Compiler: Microsoft Visual C#
 //
@@ -75,10 +75,10 @@ namespace SandcastleBuilder.Utils.PresentationStyle
         public HelpFileFormat HelpFileFormats { get; private set; }
 
         /// <summary>
-        /// This read-only property returns whether or not namespace logical grouping is supported by the
-        /// presentation style.
+        /// This read-only property returns whether or not namespace grouping is supported by the presentation
+        /// style.
         /// </summary>
-        public bool NamespaceGroupingSupported { get; private set; }
+        public bool SupportsNamespaceGrouping { get; private set; }
 
         /// <summary>
         /// This read-only property returns an enumerable list of help content file locations
@@ -163,7 +163,7 @@ namespace SandcastleBuilder.Utils.PresentationStyle
                 toc = style.Descendants("IntermediateTOCTransformation").FirstOrDefault(),
                 conceptual = style.Descendants("ConceptualBuildConfiguration").FirstOrDefault(),
                 reference = style.Descendants("ReferenceBuildConfiguration").FirstOrDefault(),
-                nsGroupingSupported = style.Descendants("NamespaceGroupingSupported").FirstOrDefault();
+                supportsNamespaceGrouping = style.Descendants("SupportsNamespaceGrouping").FirstOrDefault();
 
             if(resourceItems == null)
                 throw new InvalidOperationException("ResourceItems element is missing");
@@ -195,8 +195,8 @@ namespace SandcastleBuilder.Utils.PresentationStyle
                 IntermediateTocTransformation = new TransformationFile(toc),
                 ConceptualBuildConfiguration = conceptual.Attribute("File").Value,
                 ReferenceBuildConfiguration = reference.Attribute("File").Value,
-                NamespaceGroupingSupported = nsGroupingSupported != null && Convert.ToBoolean(
-                    nsGroupingSupported.Value, CultureInfo.InvariantCulture)
+                SupportsNamespaceGrouping = supportsNamespaceGrouping != null && Convert.ToBoolean(
+                    supportsNamespaceGrouping.Value, CultureInfo.InvariantCulture)
             };
 
             foreach(var format in style.Descendants("SupportedFormats").Descendants("Format"))
@@ -258,9 +258,9 @@ namespace SandcastleBuilder.Utils.PresentationStyle
         }
 
         /// <summary>
-        /// This is used to resolve environment variable in a path with the added step of resolving
-        /// <c>%DXROOT%</c> and <c>%SHFBROOT%</c> to the paths found by the build component manager if they
-        /// do not resolve automatically.
+        /// This is used to resolve environment variables in a path with the added step of resolving
+        /// <c>%SHFBROOT%</c> to the path found by the build component manager if it does not resolve
+        /// automatically.
         /// </summary>
         /// <param name="path">The path in which to resolve an environment variable</param>
         /// <returns>The resolved path value</returns>
@@ -268,12 +268,7 @@ namespace SandcastleBuilder.Utils.PresentationStyle
         {
             path = Environment.ExpandEnvironmentVariables(path);
 
-            if(!String.IsNullOrEmpty(BuildComponentManager.SandcastlePath) && path.IndexOf("%DXROOT%",
-              StringComparison.Ordinal) != -1)
-                path = path.Replace("%DXROOT%", FolderPath.TerminatePath(BuildComponentManager.SandcastlePath));
-
-            if(!String.IsNullOrEmpty(BuildComponentManager.HelpFileBuilderFolder) && path.IndexOf("%SHFBROOT%",
-              StringComparison.Ordinal) != -1)
+            if(path.IndexOf("%SHFBROOT%", StringComparison.Ordinal) != -1)
                 path = path.Replace("%SHFBROOT%", FolderPath.TerminatePath(BuildComponentManager.HelpFileBuilderFolder));
 
             return path;

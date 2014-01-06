@@ -2,7 +2,7 @@
 // System  : Sandcastle Help File Builder Utilities
 // File    : BuildComponentManager.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 02/26/2013
+// Updated : 12/27/2013
 // Note    : Copyright 2007-2013, Eric Woodruff, All rights reserved
 // Compiler: Microsoft Visual C#
 //
@@ -21,61 +21,39 @@
 // 1.8.0.3  07/04/2009  EFW  Merged build component and plug-in folder
 // 1.8.0.3  11/10/2009  EFW  Added support for custom syntax filter components
 // 1.8.0.4  03/07/2010  EFW  Added support for SHFBCOMPONENTROOT
+// -------  12/17/2013  EFW  Removed the SandcastlePath property and all references to it.  Updated to use MEF
+//                           to load plug-ins.
+//          12/20/2013  EFW  Updated to use MEF to load the syntax filters and removed support for
+//                           SHFBCOMPONENTROOT.
+//          12/26/2013  EFW  Updated to use MEF to load BuildAssembler build components
 //===============================================================================================================
 
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
+using System.ComponentModel.Composition.Hosting;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using System.Text.RegularExpressions;
-using System.Xml.XPath;
 
-using SandcastleBuilder.Utils.BuildEngine;
+using Sandcastle.Core.BuildAssembler.SyntaxGenerator;
 
-// All classes go in the SandcastleBuilder.Utils.BuildComponent namespace
 namespace SandcastleBuilder.Utils.BuildComponent
 {
     /// <summary>
-    /// This class is used to manage the set of third party build components
-    /// including language syntax filters.
+    /// This class is used to manage the set of third party build components including language syntax filters.
     /// </summary>
     public static class BuildComponentManager
     {
         #region Private data members
         //=====================================================================
 
-        private static Dictionary<string, BuildComponentInfo> buildComponents;
-        private static Dictionary<string, SyntaxFilterInfo> syntaxFilters;
-        private static string sandcastlePath, shfbFolder, buildComponentsFolder;
+        private static string shfbFolder, buildComponentsFolder;
 
-        private static Regex reMatchPath = new Regex(@"[A-Z]:\\.[^;]+\\Sandcastle(?=\\Prod)",
-            RegexOptions.IgnoreCase);
-        private static Regex reMatchShfbFolder = new Regex("{@SHFBFolder}", RegexOptions.IgnoreCase);
-        private static Regex reMatchCompFolder = new Regex("{@ComponentsFolder}", RegexOptions.IgnoreCase);
-        private static Regex reMatchSandcastleFolder = new Regex("{@SandcastlePath}", RegexOptions.IgnoreCase);
         #endregion
 
         #region Properties
         //=====================================================================
-
-        /// <summary>
-        /// This is used to set a path that overrides the location specified in the <c>SHFBCOMPONENTROOT</c>
-        /// environment variable during the search for component locations.
-        /// </summary>
-        public static string ComponentRoot { get; set; }
-
-        /// <summary>
-        /// This read-only property returns the default syntax filter setting
-        /// </summary>
-        /// <value>This returns "Standard" to add the standard C#, VB.NET and
-        /// C++ syntax filter to each API topic.</value>
-        public static string DefaultSyntaxFilter
-        {
-            get { return "Standard"; }
-        }
 
         /// <summary>
         /// This read-only property returns the path to the Sandcastle Help File builder assemblies
@@ -90,7 +68,7 @@ namespace SandcastleBuilder.Utils.BuildComponent
         }
 
         /// <summary>
-        /// This read-only property returns the build components folder
+        /// This read-only property returns the common application data build components folder
         /// </summary>
         public static string BuildComponentsFolder
         {
@@ -102,96 +80,31 @@ namespace SandcastleBuilder.Utils.BuildComponent
         }
 
         /// <summary>
-        /// This is used to set or get the Sandcastle installation folder
+        /// This read-only property returns the default syntax filter setting
         /// </summary>
-        public static string SandcastlePath
+        /// <value>This returns "Standard" to add the standard C#, VB.NET and C++ syntax filter to each API
+        /// topic.</value>
+        public static string DefaultSyntaxFilter
         {
-            get
-            {
-                // Figure out where Sandcastle is if not specified
-                if(String.IsNullOrEmpty(sandcastlePath))
-                {
-                    // Try to find it based on the DXROOT environment variable
-                    sandcastlePath = Environment.GetEnvironmentVariable("DXROOT");
-
-                    if(String.IsNullOrEmpty(sandcastlePath) || !sandcastlePath.Contains(@"\Sandcastle"))
-                        sandcastlePath = String.Empty;
-
-                    if(sandcastlePath.Length == 0)
-                    {
-                        // Search for it in the PATH environment variable
-                        Match m = reMatchPath.Match(Environment.GetEnvironmentVariable("PATH"));
-
-                        // If not found in the path, search all fixed drives
-                        if(m.Success)
-                            sandcastlePath = m.Value;
-                        else
-                            sandcastlePath = BuildProcess.FindOnFixedDrives(@"\Sandcastle");
-                    }
-                }
-                else
-                    if(!File.Exists(Path.Combine(sandcastlePath, @"ProductionTools\MRefBuilder.exe")))
-                        sandcastlePath = String.Empty;
-
-                return sandcastlePath;
-            }
-            set
-            {
-                if(String.IsNullOrEmpty(value))
-                    sandcastlePath = null;
-                else
-                    sandcastlePath = value;
-            }
-        }
-
-        /// <summary>
-        /// This returns a dictionary containing the loaded build component
-        /// information.
-        /// </summary>
-        /// <value>The dictionary keys are the component IDs.</value>
-        public static Dictionary<string, BuildComponentInfo> BuildComponents
-        {
-            get
-            {
-                if(buildComponents == null || buildComponents.Count == 0)
-                    LoadBuildComponents();
-
-                return buildComponents;
-            }
-        }
-
-        /// <summary>
-        /// This returns a dictionary containing the loaded language syntax
-        /// filter build component information.
-        /// </summary>
-        /// <value>The dictionary keys are the syntax filter IDs.</value>
-        public static Dictionary<string, SyntaxFilterInfo> SyntaxFilters
-        {
-            get
-            {
-                if(syntaxFilters == null || syntaxFilters.Count == 0)
-                    LoadSyntaxFilters();
-
-                return syntaxFilters;
-            }
+            get { return "Standard"; }
         }
         #endregion
 
-        #region Private helper methods
+        #region General component methods
         //=====================================================================
 
         /// <summary>
-        /// Set the paths used to find component configuration files and
-        /// assemblies.
+        /// Set the paths used to find component configuration files and assemblies
         /// </summary>
         private static void SetPaths()
         {
             if(shfbFolder == null)
             {
-                shfbFolder = Environment.ExpandEnvironmentVariables("%SHFBROOT%");
+                // Try for SHFBROOT first (the VSPackage needs it)
+                shfbFolder = Environment.GetEnvironmentVariable("SHFBROOT");
 
-                // If SHFBROOT isn't defined, use the executing assembly's folder
-                if(String.IsNullOrEmpty(shfbFolder) || shfbFolder[0] == '%')
+                // If not, use the executing assembly's folder
+                if(String.IsNullOrWhiteSpace(shfbFolder))
                     shfbFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
                 if(!shfbFolder.EndsWith(@"\", StringComparison.Ordinal))
@@ -207,158 +120,146 @@ namespace SandcastleBuilder.Utils.BuildComponent
         }
 
         /// <summary>
-        /// Load the build components found in the Components and Plug-Ins
-        /// folder and its subfolders.
+        /// This is used to return a composition container filled with the available build components (SHFB
+        /// plug-ins, MRefBuilder add-ins, and BuildAssembler components and syntax generators).
         /// </summary>
-        private static void LoadBuildComponents()
+        /// <param name="currentProject">The current project or null to ignore the current project.</param>
+        /// <remarks>The following folders are searched in the following order.  If the given folder has not been
+        /// specified or does not exist, it is ignored.
+        /// 
+        /// <list type="number">
+        ///     <item><c>SHFBROOT</c> - The root Sandcastle Help File Builder installation folder.  Assemblies in
+        /// the root help file builder folder always have the highest precedence.  Unfortunately, this is a side
+        /// effect of how MEF uses directory catalogs.  It always searches the executing assembly's folder for
+        /// components in addition to the given folder.  Subfolders are searched last (see below).</item>
+        ///     <item>Current project <c>ComponentPath</c> or project folder - This allows for project-specific
+        /// build components.  If the project's <c>ComponentPath</c> property is set, that folder is searched.
+        /// If not, the project's folder is searched instead.</item>
+        ///     <item>Common application data folder - The help file builder's common application data folder
+        /// where third-party build components are typically installed.</item>
+        ///     <item>Subfolders under <c>SHFBROOT</c> - Subfolders under the Sandcastle Help File Builder
+        /// installation folder.  This allows for XCOPY deployments that keep everything together.</item>
+        /// </list>
+        /// 
+        /// All folders and their subfolders are search recursively for assemblies (*.dll).  There may be
+        /// duplicate component IDs across the assemblies found.  Only the first component for a unique
+        /// ID will be used.  As such, assemblies in a folder with a higher search precedence can override
+        /// copies in folders lower in the search order.</remarks>
+        public static CompositionContainer GetComponentContainer(SandcastleProject currentProject)
         {
-            List<string> allFiles = new List<string>();
-            XPathDocument configFile;
-            XPathNavigator navConfig;
-            BuildComponentInfo info;
-            string componentPath;
+            FolderPath projectFolder = new FolderPath(null),
+                componentsFolder = new FolderPath(BuildComponentManager.BuildComponentsFolder, null),
+                helpFileBuilderFolder = new FolderPath(BuildComponentManager.HelpFileBuilderFolder, null);
 
-            SetPaths();
+            if(currentProject != null)
+                if(currentProject.ComponentPath.Path.Length != 0)
+                    projectFolder = currentProject.ComponentPath;
+                else
+                    projectFolder = new FolderPath(Path.GetDirectoryName(currentProject.Filename), null);
 
-            buildComponents = new Dictionary<string, BuildComponentInfo>();
+            // Create an aggregate catalog that combines directory catalogs for all of the possible component
+            // locations.
+            var catalog = new AggregateCatalog();
 
-            // Give precedence to components in the optional SHFBCOMPONENTROOT environment variable folder.
-            // However, if specified, the ComponentRoot property value will override it.
-            componentPath = Environment.ExpandEnvironmentVariables("%SHFBCOMPONENTROOT%");
+            if(projectFolder.Path.Length != 0 && Directory.Exists(projectFolder))
+                AddDirectoryCatalogs(catalog, projectFolder);
 
-            if(!String.IsNullOrEmpty(ComponentRoot))
-                componentPath = ComponentRoot;
+            if(componentsFolder.Path.Length != 0 && Directory.Exists(componentsFolder))
+                AddDirectoryCatalogs(catalog, componentsFolder);
 
-            if(!String.IsNullOrEmpty(componentPath) && Directory.Exists(componentPath))
-                allFiles.AddRange(Directory.EnumerateFiles(componentPath, "*.components",
-                    SearchOption.AllDirectories));
+            // As noted in the comments above, the root SHFB folder is always searched first due to how MEF
+            // uses directory catalogs.  This will add components from subfolders beneath it too.
+            AddDirectoryCatalogs(catalog, helpFileBuilderFolder);
 
-            // Add the standard component config file and any third-party component config files in the
-            // installation folder.  This allows for XCOPY deployments of SHFB to build servers.
-            allFiles.AddRange(Directory.EnumerateFiles(HelpFileBuilderFolder, "*.components",
-                SearchOption.AllDirectories));
-
-            // Finally, check the common app data build components folder
-            if(Directory.Exists(BuildComponentsFolder))
-                allFiles.AddRange(Directory.EnumerateFiles(BuildComponentsFolder, "*.components",
-                    SearchOption.AllDirectories));
-
-            foreach(string file in allFiles)
-            {
-                configFile = new XPathDocument(file);
-                navConfig = configFile.CreateNavigator();
-
-                foreach(XPathNavigator component in navConfig.Select("components/component"))
-                {
-                    info = new BuildComponentInfo(component);
-
-                    // Ignore components with duplicate IDs
-                    if(!buildComponents.ContainsKey(info.Id))
-                        buildComponents.Add(info.Id, info);
-                }
-            }
+            return new CompositionContainer(catalog);
         }
 
         /// <summary>
-        /// Load the syntax filter information found in the Components and
-        /// Plug-Ins folder and its subfolders.
+        /// This adds a directory catalog to the given aggregate catalog for the given folder and all of its
+        /// subfolders recursively.
         /// </summary>
-        private static void LoadSyntaxFilters()
+        /// <param name="catalog">The aggregate catalog to which the directory catalogs are added</param>
+        /// <param name="folder">The root folder to search.  It and all subfolders recursively will be added
+        /// to the aggregate catalog if they contain assemblies.</param>
+        private static void AddDirectoryCatalogs(AggregateCatalog catalog, string folder)
         {
-            List<string> allFiles = new List<string>();
-            XPathDocument configFile;
-            XPathNavigator navConfig;
-            SyntaxFilterInfo info;
-            string id;
+            if(Directory.EnumerateFiles(folder, "*.dll").Any())
+                catalog.Catalogs.Add(new DirectoryCatalog(folder));
 
-            SetPaths();
-
-            syntaxFilters = new Dictionary<string, SyntaxFilterInfo>();
-
-            if(Directory.Exists(BuildComponentsFolder))
-                allFiles.AddRange(Directory.EnumerateFiles(BuildComponentsFolder, "*.filters",
-                    SearchOption.AllDirectories));
-
-            // Add the standard syntax filter config file and any third-party component config files in the
-            // installation folder too.  This allows for XCOPY deployments of SHFB to build servers.
-            allFiles.AddRange(Directory.EnumerateFiles(HelpFileBuilderFolder, "*.filters",
-                SearchOption.AllDirectories));
-
-            foreach(string file in allFiles)
-            {
-                configFile = new XPathDocument(file);
-                navConfig = configFile.CreateNavigator();
-
-                foreach(XPathNavigator filter in navConfig.Select("syntaxFilters/filter"))
-                {
-                    info = new SyntaxFilterInfo(filter);
-
-                    // The dictionary stores the keys in lowercase so as to match keys without regard to the case
-                    // entered in the project property.
-                    id = info.Id.ToLowerInvariant();
-
-                    // Ignore components with duplicate IDs
-                    if(!syntaxFilters.ContainsKey(id))
-                        syntaxFilters.Add(id, info);
-                }
-            }
+            foreach(string subfolder in Directory.EnumerateDirectories(folder, "*", SearchOption.AllDirectories))
+                if(Directory.EnumerateFiles(subfolder, "*.dll").Any())
+                    catalog.Catalogs.Add(new DirectoryCatalog(subfolder));
         }
         #endregion
 
-        #region Public methods
+        #region Syntax filter methods
         //=====================================================================
 
         /// <summary>
-        /// This is used to resolve replacement tags and environment variables
-        /// in a build component's assembly path and return the actual path
-        /// to it.
+        /// This is used to convert the given set of comma-separated syntax filter IDs to a set of recognized
+        /// filter IDs.
         /// </summary>
-        /// <param name="path">The path to resolve</param>
-        /// <returns>The actual absolute path to the assembly</returns>
-        public static string ResolveComponentPath(string path)
+        /// <param name="allFilters">The list of all available syntax filter generators</param>
+        /// <param name="filterIds">A comma-separated list of syntax filter IDs to convert</param>
+        /// <returns>The validated and recognized set of syntax filter IDs.  If possible, the value is condensed
+        /// to one of a set of combination values such as None, All, AllButUsage, or Standard.</returns>
+        public static string ToRecognizedSyntaxFilterIds(IEnumerable<ISyntaxGeneratorMetadata> allFilters,
+          string filterIds)
         {
-            if(String.IsNullOrEmpty(HelpFileBuilderFolder))
-                LoadBuildComponents();
+            var definedFilters = SyntaxFiltersFrom(allFilters, filterIds);
 
-            path = reMatchShfbFolder.Replace(path, HelpFileBuilderFolder);
-            path = reMatchCompFolder.Replace(path, BuildComponentsFolder);
-            path = reMatchSandcastleFolder.Replace(path, SandcastlePath);
+            // Convert to None, All, AllButUsage, or Standard?  If not, then convert to the list of defined
+            // filters that we know about.
+            int definedCount = definedFilters.Count();
 
-            return Environment.ExpandEnvironmentVariables(path);
+            if(definedCount == 0)
+                filterIds = "None";
+            else
+                if(definedCount == allFilters.Count())
+                    filterIds = "All";
+                else
+                    if(definedCount == allFilters.Count(af => af.Id.IndexOf("usage",
+                      StringComparison.OrdinalIgnoreCase) == -1))
+                        filterIds = "AllButUsage";
+                    else
+                        if(definedCount == 3 && (definedFilters.All(df => df.Id == "CSharp" ||
+                          df.Id == "VisualBasic" || df.Id == "CPlusPlus")))
+                            filterIds = "Standard";
+                        else
+                            filterIds = String.Join(", ", definedFilters.Select(f => f.Id).ToArray());
+
+            return filterIds;
         }
 
         /// <summary>
-        /// This is used to return a collection of syntax filters based on
-        /// the comma-separated list of IDs passed to the method.
+        /// This is used to return a collection of syntax filters based on the comma-separated list of IDs passed
+        /// to the method.
         /// </summary>
-        /// <param name="filterIds">A comma-separated list of syntax filter
-        /// ID values</param>
-        /// <returns>A collection containing <see cref="SyntaxFilterInfo" />
-        /// entries for each syntax filter ID found.</returns>
-        /// <remarks>The following special IDs are also recognized: None = No
-        /// filters, All = all filters, AllButUsage = All but syntax filters
-        /// with "Usage" in their ID (i.e. VisualBasicUsage), Standard = C#,
+        /// <param name="allFilters">The list of all available syntax filter generators</param>
+        /// <param name="filterIds">A comma-separated list of syntax filter ID values.</param>
+        /// <returns>An enumerable list of <see cref="ISyntaxGeneratorMetadata" /> representing the syntax
+        /// filters found.</returns>
+        /// <remarks>The following special IDs are also recognized: None = No filters, All = all filters,
+        /// AllButUsage = All but syntax filters with "Usage" in their ID (i.e. VisualBasicUsage), Standard = C#,
         /// VB.NET, and C++ only.</remarks>
-        public static Collection<SyntaxFilterInfo> SyntaxFiltersFrom(string filterIds)
+        public static IEnumerable<ISyntaxGeneratorMetadata> SyntaxFiltersFrom(
+          IEnumerable<ISyntaxGeneratorMetadata> allFilters, string filterIds)
         {
-            List<SyntaxFilterInfo> filters = new List<SyntaxFilterInfo>();
-            SyntaxFilterInfo info;
+            var filters = new List<ISyntaxGeneratorMetadata>();
             string syntaxId;
-
-            if(syntaxFilters == null || syntaxFilters.Count == 0)
-                LoadSyntaxFilters();
 
             if(filterIds == null)
                 filterIds = String.Empty;
 
-            foreach(string id in filterIds.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+            foreach(string id in filterIds.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries))
             {
                 // IDs are matched in lowercase
-                syntaxId = id.Trim().ToLowerInvariant();
+                syntaxId = id.ToLowerInvariant();
 
                 // Translate from some common alternate names if necessary
-                foreach(var sf in syntaxFilters.Values)
-                    if(sf.AlternateNames.Contains(syntaxId))
+                foreach(var sf in allFilters)
+                    if(sf.AlternateIds.ToLowerInvariant().Split(new[] { ',', ' ' },
+                      StringSplitOptions.RemoveEmptyEntries).Contains(syntaxId))
                     {
                         syntaxId = sf.Id.ToLowerInvariant();
                         break;
@@ -367,89 +268,83 @@ namespace SandcastleBuilder.Utils.BuildComponent
                 if(syntaxId.Length == 0)
                     syntaxId = "none";
 
-                // Handle special cases for backward compatibility.  These
-                // were defined when SyntaxFilters was an enumerated type.
+                // Handle special cases for backward compatibility.  These were defined when SyntaxFilters was
+                // an enumerated type.
                 switch(syntaxId)
                 {
                     case "none":    // No syntax filters
                         break;
 
                     case "all":     // All filters
-                        foreach(SyntaxFilterInfo i in syntaxFilters.Values)
-                            filters.Add(i);
+                        filters.AddRange(allFilters);
                         break;
 
                     case "allbutusage":     // All but usage filters
-                        foreach(string sfId in syntaxFilters.Keys)
-                            if(sfId.IndexOf("usage", StringComparison.Ordinal) == -1)
-                                filters.Add(syntaxFilters[sfId]);
+                        filters.AddRange(allFilters.Where(sf => sf.Id.IndexOf("usage",
+                            StringComparison.Ordinal) == -1));
                         break;
 
                     case "standard":    // Standard syntax filters
-                        if(syntaxFilters.TryGetValue("csharp", out info))
-                            filters.Add(info);
-
-                        if(syntaxFilters.TryGetValue("visualbasic", out info))
-                            filters.Add(info);
-
-                        if(syntaxFilters.TryGetValue("cplusplus", out info))
-                            filters.Add(info);
+                        filters.AddRange(allFilters.Where(sf =>
+                            sf.Id.Equals("CSharp", StringComparison.OrdinalIgnoreCase) ||
+                            sf.Id.Equals("VisualBasic", StringComparison.OrdinalIgnoreCase) ||
+                            sf.Id.Equals("CPlusPlus", StringComparison.OrdinalIgnoreCase)));
                         break;
 
                     default:
                         // Unknown filter IDs and ones already there are ignored
-                        if(syntaxFilters.TryGetValue(syntaxId, out info))
-                            if(!filters.Any(f => f.Id == info.Id))
-                                filters.Add(info);
+                        var found = allFilters.FirstOrDefault(f => f.Id.Equals(syntaxId,
+                            StringComparison.OrdinalIgnoreCase));
+
+                        if(found != null && !filters.Contains(found))
+                            filters.Add(found);
                         break;
                 }
             }
 
-            filters.Sort((x, y) =>
-                {
-                    if(x.SortOrder == y.SortOrder)
-                        return String.Compare(x.Id, y.Id, StringComparison.OrdinalIgnoreCase);
-
-                    return (x.SortOrder < y.SortOrder) ? -1 : 1;
-                });
-
-            return new Collection<SyntaxFilterInfo>(filters);
+            return filters.OrderBy(sf => sf.SortOrder).ThenBy(sf => sf.Id);
         }
 
         /// <summary>
-        /// This returns the syntax generator XML elements to insert into a
-        /// BuildAssembler configuration file for the comma-separated list of
-        /// syntax filter IDs.
+        /// This returns the syntax generator XML elements to insert into a BuildAssembler configuration file for
+        /// the comma-separated list of syntax filter IDs.
         /// </summary>
-        /// <param name="filterIds">A comma-separated list of syntax filter
-        /// ID values</param>
-        /// <returns>A string containing the generator XML elements for the
-        /// specified syntax filter IDs.</returns>
-        public static string SyntaxFilterGeneratorsFrom(string filterIds)
+        /// <param name="allFilters">The list of all available syntax filter generators</param>
+        /// <param name="filterIds">A comma-separated list of syntax filter ID values.</param>
+        /// <returns>A string containing the generator XML elements for the specified syntax filter IDs.</returns>
+        public static string SyntaxFilterGeneratorsFrom(IEnumerable<ISyntaxGeneratorMetadata> allFilters,
+          string filterIds)
         {
             StringBuilder sb = new StringBuilder(1024);
 
-            foreach(SyntaxFilterInfo info in SyntaxFiltersFrom(filterIds))
-                sb.AppendFormat("{0}\r\n", info.GeneratorXml);
+            foreach(var generator in SyntaxFiltersFrom(allFilters, filterIds))
+                if(!String.IsNullOrWhiteSpace(generator.DefaultConfiguration))
+                {
+                    sb.AppendFormat("<generator id=\"{0}\" name=\"{1}\">{2}</generator>\r\n", generator.Id,
+                        generator.LanguageElementName, generator.DefaultConfiguration);
+                }
+                else
+                    sb.AppendFormat("<generator id=\"{0}\" name=\"{1}\" />\r\n", generator.Id,
+                        generator.LanguageElementName);
 
             return sb.ToString();
         }
 
         /// <summary>
-        /// This returns the syntax language XML elements to insert into a
-        /// BuildAssembler configuration file for the comma-separated list of
-        /// syntax filter IDs.
+        /// This returns the syntax language XML elements to insert into a BuildAssembler configuration file for
+        /// the comma-separated list of syntax filter IDs.
         /// </summary>
-        /// <param name="filterIds">A comma-separated list of syntax filter
-        /// ID values</param>
-        /// <returns>A string containing the language XML elements for the
-        /// specified syntax filter IDs.</returns>
-        public static string SyntaxFilterLanguagesFrom(string filterIds)
+        /// <param name="allFilters">The list of all available syntax filter generators</param>
+        /// <param name="filterIds">A comma-separated list of syntax filter ID values.</param>
+        /// <returns>A string containing the language XML elements for the specified syntax filter IDs.</returns>
+        public static string SyntaxFilterLanguagesFrom(IEnumerable<ISyntaxGeneratorMetadata> allFilters,
+          string filterIds)
         {
             StringBuilder sb = new StringBuilder(1024);
 
-            foreach(SyntaxFilterInfo info in SyntaxFiltersFrom(filterIds))
-                sb.AppendFormat("{0}\r\n", info.LanguageXml);
+            foreach(var generator in SyntaxFiltersFrom(allFilters, filterIds))
+                sb.AppendFormat("<language name=\"{0}\" style=\"{1}\" />\r\n",
+                    generator.LanguageElementName, generator.KeywordStyleParameter);
 
             return sb.ToString();
         }

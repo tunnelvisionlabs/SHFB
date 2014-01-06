@@ -2,7 +2,7 @@
 // System  : Sandcastle Help File Builder Utilities
 // File    : TopicCollection.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 02/26/2013
+// Updated : 12/17/2013
 // Note    : Copyright 2008-2013, Eric Woodruff, All rights reserved
 // Compiler: Microsoft Visual C#
 //
@@ -34,6 +34,7 @@ using System.Xml;
 
 using Microsoft.Build.Evaluation;
 
+using SandcastleBuilder.Utils.BuildComponent;
 using SandcastleBuilder.Utils.BuildEngine;
 
 namespace SandcastleBuilder.Utils.ConceptualContent
@@ -501,7 +502,7 @@ namespace SandcastleBuilder.Utils.ConceptualContent
                     var rn = builder.ReferencedNamespaces;
 
                     foreach(string ns in t.TopicFile.GetReferencedNamespaces(Path.Combine(
-                      builder.SandcastleFolder, @"Data\Reflection")))
+                      BuildComponentManager.HelpFileBuilderFolder, @"Data\Reflection")))
                         rn.Add(ns);
                 }
                 else

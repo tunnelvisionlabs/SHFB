@@ -12,7 +12,7 @@
 			 
 			 Values in the form "{@Name}" will be replaced at build time with the named project property value or
 			 replacement tag value by the build engine. -->
-	<PresentationStyle ID="VS2005" Title="VS2005" BasePath="%DXROOT%\Presentation\VS2005">
+	<PresentationStyle ID="VS2005" Title="VS2005" BasePath="Presentation\VS2005">
 		<!-- This provides a description of the presentation style -->
 		<Description>This is the style used by Visual Studio 2005 and Visual Studio 2008.</Description>
 
@@ -29,7 +29,7 @@
 
 		<!-- This is used to indicate whether or not the presentation style supports the namespace grouping option
 		     used to logically group namespaces with a common root name.  The default if omitted is false. -->
-		<NamespaceGroupingSupported>false</NamespaceGroupingSupported>
+		<SupportsNamespaceGrouping>true</SupportsNamespaceGrouping>
 
 		<!-- This defines the content from the presentation style that should be embedded in the compiled help file. -->
 		<HelpContent>
@@ -47,12 +47,13 @@
 
 			<!-- The Formats attribute can be used to limit which help file formats the files apply to.  Specify one or
 					 more of the help file formats above separated by commas.  If omitted, the files will apply to all help
-					 file formats.  The BasePath attribute can be used to override the presentation style base path and
-					 copy the files from a different location.  The TemplateFiles attribute can be used to have the
-					 Sandcastle Help File builder resolve substitution tags within files ending with on of the given
-					 extensions.  The extensions should be separated by semi-colons.  If omitted, the files are copied to
-					 the destination as-is.  This entry copies the help file builder version of the website template files
-					 when building website output. -->
+					 file formats.  A BasePath attribute can be used to override the presentation style base path and
+					 copy the files from a different location.  For example, adding BasePath="%SHFBROOT%" in a custom
+					 presentation style file would copy the standard web content from the Sandcastle Help File Builder.
+					 The TemplateFiles attribute can be used to have the Sandcastle Help File builder resolve substitution
+					 tags within files ending with on of the given extensions.  The extensions should be separated by
+					 semi-colons.  If omitted, the files are copied to the destination as-is.  This entry copies the help
+					 file builder version of the website template files when building website output. -->
 			<Files Formats="Website" BasePath="%SHFBROOT%" Source="Web\*.*" Destination=".\"
 				TemplateFiles=".aspx;.html;.htm;.php" />
 		</HelpContent>
@@ -69,7 +70,7 @@
 		<!-- This defines the document model XSL transformation to use on the reflection data to prepare it for
 				 use with BuildAssembler in order to generate topics.  The File attribute specifies the path to the
 				 XSL transformation. -->
-		<DocumentModelTransformation File="%DXROOT%\ProductionTransforms\ApplyVSDocModel.xsl">
+		<DocumentModelTransformation File="%SHFBROOT%\ProductionTransforms\ApplyVSDocModel.xsl">
 			<!-- These can be used to define parameters passed to the XSL transformation to define how it should
 					 affect the transformed reflection data. -->
 			<Parameter Name="IncludeAllMembersTopic" Value="true" />
@@ -80,7 +81,7 @@
 		<!-- This defines the XSL transformation to use on the reflection data to generate the intermediate table of
 				 contents XML file used by help formats that require a table of contents.  As above, parameter elements
 				 can be specified if necessary to define any parameters required by the transformation file. -->
-		<IntermediateTOCTransformation File="%DXROOT%\ProductionTransforms\CreateVSToc.xsl" />
+		<IntermediateTOCTransformation File="%SHFBROOT%\ProductionTransforms\CreateVSToc.xsl" />
 
 		<!-- This defines the BuildAssembler configuration file to use for conceptual content builds. -->
 		<ConceptualBuildConfiguration File="%SHFBROOT%\Templates\Conceptual.config" />
@@ -129,7 +130,7 @@ or center.  If not specified, the default is left."/>
 		</TransformComponentArguments>
 	</PresentationStyle>
 
-	<PresentationStyle ID="VS2010" Title="VS2010" BasePath="%DXROOT%\Presentation\VS2010">
+	<PresentationStyle ID="VS2010" Title="VS2010" BasePath="Presentation\VS2010">
 		<Description>This is the style used by Visual Studio 2010 and later in the Microsoft Help Viewer.</Description>
 
 		<SupportedFormats>
@@ -139,7 +140,7 @@ or center.  If not specified, the default is left."/>
 			<Format Type="Website" />
 		</SupportedFormats>
 
-		<NamespaceGroupingSupported>false</NamespaceGroupingSupported>
+		<SupportsNamespaceGrouping>true</SupportsNamespaceGrouping>
 
 		<HelpContent>
 			<Files Source="icons\*.*" />
@@ -153,13 +154,13 @@ or center.  If not specified, the default is left."/>
 			<ToolResourceItems Path="%SHFBROOT%\SharedContent" />
 		</ResourceItems>
 
-		<DocumentModelTransformation File="%DXROOT%\ProductionTransforms\ApplyVSDocModel.xsl">
+		<DocumentModelTransformation File="%SHFBROOT%\ProductionTransforms\ApplyVSDocModel.xsl">
 			<Parameter Name="IncludeAllMembersTopic" Value="true" />
 			<Parameter Name="IncludeInheritedOverloadTopics" Value="false" />
 			<Parameter Name="project" Value="{@ProjectNodeIDOptional}" />
 		</DocumentModelTransformation>
 
-		<IntermediateTOCTransformation File="%DXROOT%\ProductionTransforms\CreateVSToc.xsl" />
+		<IntermediateTOCTransformation File="%SHFBROOT%\ProductionTransforms\CreateVSToc.xsl" />
 
 		<ConceptualBuildConfiguration File="%SHFBROOT%\Templates\Conceptual.config" />
 
@@ -187,7 +188,7 @@ or center.  If not specified, the default is left."/>
 		</TransformComponentArguments>
 	</PresentationStyle>
 
-	<PresentationStyle ID="Hana" Title="Hana (Deprecated)" BasePath="%DXROOT%\Presentation\Hana">
+	<PresentationStyle ID="Hana" Title="Hana (Deprecated)" BasePath="Presentation\Hana">
 		<Description>This style has been deprecated and is no longer supported.  It was an experimental style that
 was never used in production by Microsoft.</Description>
 
@@ -197,8 +198,6 @@ was never used in production by Microsoft.</Description>
 			<Format Type="MSHelp2" />
 			<Format Type="Website" />
 		</SupportedFormats>
-
-		<NamespaceGroupingSupported>false</NamespaceGroupingSupported>
 
 		<HelpContent>
 			<Files Source="icons\*.*" />
@@ -212,13 +211,13 @@ was never used in production by Microsoft.</Description>
 			<ToolResourceItems Path="%SHFBROOT%\SharedContent" />
 		</ResourceItems>
 
-		<DocumentModelTransformation File="%DXROOT%\ProductionTransforms\ApplyVSDocModel.xsl">
+		<DocumentModelTransformation File="%SHFBROOT%\ProductionTransforms\ApplyVSDocModel.xsl">
 			<Parameter Name="IncludeAllMembersTopic" Value="false" />
 			<Parameter Name="IncludeInheritedOverloadTopics" Value="false" />
 			<Parameter Name="project" Value="{@ProjectNodeIDOptional}" />
 		</DocumentModelTransformation>
 
-		<IntermediateTOCTransformation File="%DXROOT%\ProductionTransforms\CreateVSToc.xsl" />
+		<IntermediateTOCTransformation File="%SHFBROOT%\ProductionTransforms\CreateVSToc.xsl" />
 
 		<ConceptualBuildConfiguration File="%SHFBROOT%\Templates\Conceptual.config" />
 
@@ -246,7 +245,7 @@ or center.  If not specified, the default is left."/>
 		</TransformComponentArguments>
 	</PresentationStyle>
 
-	<PresentationStyle ID="Prototype" Title="Prototype (Deprecated)" BasePath="%DXROOT%\Presentation\Prototype">
+	<PresentationStyle ID="Prototype" Title="Prototype (Deprecated)" BasePath="Presentation\Prototype">
 		<Description>This style has been deprecated and is no longer supported.  It was the first style provided with
 Sandcastle.</Description>
 
@@ -256,8 +255,6 @@ Sandcastle.</Description>
 			<Format Type="MSHelp2" />
 			<Format Type="Website" />
 		</SupportedFormats>
-
-		<NamespaceGroupingSupported>false</NamespaceGroupingSupported>
 
 		<HelpContent>
 			<Files Source="icons\*.*" />
@@ -271,13 +268,13 @@ Sandcastle.</Description>
 			<ToolResourceItems Path="%SHFBROOT%\SharedContent" />
 		</ResourceItems>
 
-		<DocumentModelTransformation File="%DXROOT%\ProductionTransforms\ApplyPrototypeDocModel.xsl">
+		<DocumentModelTransformation File="%SHFBROOT%\ProductionTransforms\ApplyPrototypeDocModel.xsl">
 			<!-- This presentation style requires a project node ID in order to generate the root namespaces node
 					 which is used to generate the root namespaces topic page. -->
 			<Parameter Name="project" Value="{@ProjectNodeIDRequired}" />
 		</DocumentModelTransformation>
 
-		<IntermediateTOCTransformation File="%DXROOT%\ProductionTransforms\CreatePrototypeToc.xsl">
+		<IntermediateTOCTransformation File="%SHFBROOT%\ProductionTransforms\CreatePrototypeToc.xsl">
 			<Parameter Name="rootNamespaceContainer" Value="{@RootNamespaceContainer}" />
 		</IntermediateTOCTransformation>
 

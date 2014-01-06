@@ -2,7 +2,7 @@
 // System  : Sandcastle Help File Builder Components
 // File    : MultiFormatOutputComponent.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 12/22/2012
+// Updated : 12/26/2013
 // Note    : Copyright 2010-2012, Eric Woodruff, All rights reserved
 // Compiler: Microsoft Visual C#
 //
@@ -17,6 +17,7 @@
 // Version     Date     Who  Comments
 // ==============================================================================================================
 // 1.9.0.0  06/06/2010  EFW  Created the code
+// -------  12/26/2013  EFW  Updated the build component to be discoverable via MEF
 //===============================================================================================================
 
 using System;
@@ -28,7 +29,8 @@ using System.Reflection;
 using System.Xml;
 using System.Xml.XPath;
 
-using Microsoft.Ddue.Tools;
+using Sandcastle.Core.BuildAssembler;
+using Sandcastle.Core.BuildAssembler.BuildComponent;
 
 namespace SandcastleBuilder.Components
 {
@@ -43,12 +45,29 @@ namespace SandcastleBuilder.Components
     ///     source="..\..\SHFB\Source\SandcastleBuilderGUI\Templates\VS2005.config"
     ///     region="Multi-format output component" />
     /// </example>
-    public class MultiFormatOutputComponent : BuildComponent
+    public class MultiFormatOutputComponent : BuildComponentCore
     {
+        #region Build component factory for MEF
+        //=====================================================================
+
+        /// <summary>
+        /// This is used to create a new instance of the build component
+        /// </summary>
+        [BuildComponentExport("Multi-format Output Component")]
+        public sealed class Factory : BuildComponentFactory
+        {
+            /// <inheritdoc />
+            public override BuildComponentCore Create()
+            {
+                return new MultiFormatOutputComponent(base.BuildAssembler);
+            }
+        }
+        #endregion
+
         #region Private data members
         //=====================================================================
 
-        private Dictionary<string, IEnumerable<BuildComponent>> formatComponents;
+        private Dictionary<string, IEnumerable<BuildComponentCore>> formatComponents;
         #endregion
 
         #region Constructor
@@ -57,10 +76,17 @@ namespace SandcastleBuilder.Components
         /// <summary>
         /// Constructor
         /// </summary>
-        /// <param name="assembler">A reference to the build assembler.</param>
-        /// <param name="configuration">The configuration information</param>
-        public MultiFormatOutputComponent(BuildAssembler assembler, XPathNavigator configuration) :
-          base(assembler, configuration)
+        /// <param name="buildAssembler">A reference to the build assembler</param>
+        protected MultiFormatOutputComponent(BuildAssemblerCore buildAssembler) : base(buildAssembler)
+        {
+        }
+        #endregion
+
+        #region Method overrides
+        //=====================================================================
+
+        /// <inheritdoc />
+        public override void Initialize(XPathNavigator configuration)
         {
             Assembly asm = Assembly.GetExecutingAssembly();
             FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(asm.Location);
@@ -70,10 +96,10 @@ namespace SandcastleBuilder.Components
             string format;
 
             base.WriteMessage(MessageLevel.Info, String.Format(CultureInfo.InvariantCulture,
-                "\r\n    [{0}, version {1}]\r\n    Multi-Format Output Component. {2}\r\n    http://SHFB.CodePlex.com",
+                "[{0}, version {1}]\r\n    Multi-Format Output Component. {2}\r\n    http://SHFB.CodePlex.com",
                 fvi.ProductName, fvi.ProductVersion, fvi.LegalCopyright));
 
-            formatComponents = new Dictionary<string, IEnumerable<BuildComponent>>();
+            formatComponents = new Dictionary<string, IEnumerable<BuildComponentCore>>();
 
             // Get the requested formats
             nav = configuration.SelectSingleNode("build");
@@ -105,10 +131,6 @@ namespace SandcastleBuilder.Components
                 }
             }
         }
-        #endregion
-
-        #region Apply the component
-        //=====================================================================
 
         /// <summary>
         /// This is implemented to execute each set of components for the requested output formats.
@@ -123,25 +145,17 @@ namespace SandcastleBuilder.Components
             {
                 clone = (XmlDocument)document.Clone();
 
-                foreach(BuildComponent component in formatComponents[format])
+                foreach(var component in formatComponents[format])
                     component.Apply(clone, key);
             }
         }
-        #endregion
 
-        #region Dispose of the component
-        //=====================================================================
-
-        /// <summary>
-        /// Dispose of the nested components
-        /// </summary>
-        /// <param name="disposing">Pass true to dispose of the managed and unmanaged resources or false to just
-        /// dispose of the unmanaged resources.</param>
+        /// <inheritdoc />
         protected override void Dispose(bool disposing)
         {
             if(disposing)
-                foreach(IEnumerable<BuildComponent> list in formatComponents.Values)
-                    foreach(BuildComponent component in list)
+                foreach(var list in formatComponents.Values)
+                    foreach(var component in list)
                         component.Dispose();
 
             base.Dispose(disposing);

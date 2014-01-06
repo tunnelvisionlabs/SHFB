@@ -2,8 +2,8 @@
 // System  : Sandcastle Help File Builder WPF Controls
 // File    : BuildLogViewerControl.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 11/18/2012
-// Note    : Copyright 2012, Eric Woodruff, All rights reserved
+// Updated : 12/29/2013
+// Note    : Copyright 2012-2013, Eric Woodruff, All rights reserved
 // Compiler: Microsoft Visual C#
 //
 // This file contains the class used to view the build log content.
@@ -28,6 +28,8 @@ using System.Xml.Xsl;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+
+using SandcastleBuilder.Utils.BuildComponent;
 
 namespace SandcastleBuilder.WPF.UserControls
 {
@@ -147,8 +149,9 @@ namespace SandcastleBuilder.WPF.UserControls
                 XslCompiledTransform xslTransform = new XslCompiledTransform();
                 XsltSettings settings = new XsltSettings(true, true);
 
-                xslTransform.Load(XmlReader.Create(Path.Combine(Environment.ExpandEnvironmentVariables("%SHFBROOT%"),
-                    @"Templates\TransformBuildLog.xsl"), readerSettings), settings, new XmlUrlResolver());
+                xslTransform.Load(XmlReader.Create(Path.Combine(Path.GetDirectoryName(
+                    BuildComponentManager.HelpFileBuilderFolder), @"Templates\TransformBuildLog.xsl"),
+                    readerSettings), settings, new XmlUrlResolver());
 
                 XsltArgumentList argList = new XsltArgumentList();
                 argList.AddParam("filterOn", String.Empty, filtered ? "true" : "false");

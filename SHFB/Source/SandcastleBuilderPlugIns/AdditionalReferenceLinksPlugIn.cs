@@ -2,7 +2,7 @@
 // System  : Sandcastle Help File Builder Plug-Ins
 // File    : AdditionalReferenceLinksPlugIn.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 12/04/2013
+// Updated : 12/27/2013
 // Note    : Copyright 2008-2013, Eric Woodruff, All rights reserved
 // Compiler: Microsoft Visual C#
 //
@@ -22,23 +22,21 @@
 // 1.9.0.0  06/07/2010  EFW  Added support for multi-format build output
 // 1.9.7.0  01/01/2013  EFW  Updated for use with the new cached build components.  Added code to insert the
 //                           reflection file names into the GenerateInheritedDocs tool configuration file.
+// -------  12/17/2013  EFW  Updated to use MEF for the plug-ins
 //===============================================================================================================
 
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.XPath;
 
 using SandcastleBuilder.Utils;
+using SandcastleBuilder.Utils.BuildComponent;
 using SandcastleBuilder.Utils.BuildEngine;
-using SandcastleBuilder.Utils.PlugIn;
 
 namespace SandcastleBuilder.PlugIns
 {
@@ -47,12 +45,17 @@ namespace SandcastleBuilder.PlugIns
     /// Data</b> and <b>Resolve Reference Links</b> build components so that links can be created to other third
     /// party help in Help 2/MS Help Viewer collections or additional online MSDN content.
     /// </summary>
-    public class AdditionalReferenceLinksPlugIn : IPlugIn
+    [HelpFileBuilderPlugInExport("Additional Reference Links", IsConfigurable = true,
+      Version = AssemblyInfo.Version, Copyright = AssemblyInfo.Copyright,
+      Description = "This plug-in is used to add additional reference link targets to the Reflection Index " +
+        "Data and Resolve Reference Links build component so that links can be created to other third " +
+        "party help in a Help 2 collection, MS Help Viewer collection, or additional online MSDN content.")]
+    public sealed class AdditionalReferenceLinksPlugIn : IPlugIn
     {
         #region Private data members
         //=====================================================================
 
-        private ExecutionPointCollection executionPoints;
+        private List<ExecutionPoint> executionPoints;
 
         private BuildProcess builder;
         private BuildStep lastBuildStep;
@@ -65,90 +68,20 @@ namespace SandcastleBuilder.PlugIns
         //=====================================================================
 
         /// <summary>
-        /// This read-only property returns a friendly name for the plug-in
-        /// </summary>
-        public string Name
-        {
-            get { return "Additional Reference Links"; }
-        }
-
-        /// <summary>
-        /// This read-only property returns the version of the plug-in
-        /// </summary>
-        public Version Version
-        {
-            get
-            {
-                // Use the assembly version
-                Assembly asm = Assembly.GetExecutingAssembly();
-                FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(asm.Location);
-
-                return new Version(fvi.ProductVersion);
-            }
-        }
-
-        /// <summary>
-        /// This read-only property returns the copyright information for the plug-in
-        /// </summary>
-        public string Copyright
-        {
-            get
-            {
-                // Use the assembly copyright
-                Assembly asm = Assembly.GetExecutingAssembly();
-                AssemblyCopyrightAttribute copyright = (AssemblyCopyrightAttribute)Attribute.GetCustomAttribute(
-                    asm, typeof(AssemblyCopyrightAttribute));
-
-                return copyright.Copyright;
-            }
-        }
-
-        /// <summary>
-        /// This read-only property returns a brief description of the plug-in
-        /// </summary>
-        public string Description
-        {
-            get
-            {
-                return "This plug-in is used to add additional reference link targets to the Reflection Index " +
-                    "Data and Resolve Reference Links build component so that links can be created to other " +
-                    "third party help in a Help 2 collection, MS Help Viewer collection, or additional online " +
-                    "MSDN content.";
-            }
-        }
-
-        /// <summary>
-        /// This plug-in supports configuration
-        /// </summary>
-        /// <seealso cref="ConfigurePlugIn"/>
-        public bool SupportsConfiguration
-        {
-            get { return true; }
-        }
-
-        /// <summary>
-        /// This plug-in does not run in partial builds
-        /// </summary>
-        public bool RunsInPartialBuild
-        {
-            get { return false; }
-        }
-
-        /// <summary>
         /// This read-only property returns a collection of execution points that define when the plug-in should
         /// be invoked during the build process.
         /// </summary>
-        public ExecutionPointCollection ExecutionPoints
+        public IEnumerable<ExecutionPoint> ExecutionPoints
         {
             get
             {
                 if(executionPoints == null)
-                    executionPoints = new ExecutionPointCollection
+                    executionPoints = new List<ExecutionPoint>
                     {
                         new ExecutionPoint(BuildStep.GenerateNamespaceSummaries, ExecutionBehaviors.Before),
                         new ExecutionPoint(BuildStep.GenerateInheritedDocumentation, ExecutionBehaviors.Before),
                         new ExecutionPoint(BuildStep.CreateBuildAssemblerConfigs, ExecutionBehaviors.Before),
-                        new ExecutionPoint(BuildStep.MergeCustomConfigs, ExecutionBehaviors.After),
+                        new ExecutionPoint(BuildStep.MergeCustomConfigs, ExecutionBehaviors.After)
                     };
 
                 return executionPoints;
@@ -188,7 +121,10 @@ namespace SandcastleBuilder.PlugIns
             builder = buildProcess;
             otherLinks = new ReferenceLinkSettingsCollection();
 
-            builder.ReportProgress("{0} Version {1}\r\n{2}", this.Name, this.Version, this.Copyright);
+            var metadata = (HelpFileBuilderPlugInExportAttribute)this.GetType().GetCustomAttributes(
+                typeof(HelpFileBuilderPlugInExportAttribute), false).First();
+
+            builder.ReportProgress("{0} Version {1}\r\n{2}", metadata.Id, metadata.Version, metadata.Copyright);
 
             root = configuration.SelectSingleNode("configuration");
 
@@ -208,9 +144,8 @@ namespace SandcastleBuilder.PlugIns
         /// This method is used to execute the plug-in during the build process
         /// </summary>
         /// <param name="context">The current execution context</param>
-        public void Execute(Utils.PlugIn.ExecutionContext context)
+        public void Execute(ExecutionContext context)
         {
-            StringBuilder sb = new StringBuilder(1024);
             string workingPath, configFilename;
             bool success;
 
@@ -249,27 +184,8 @@ namespace SandcastleBuilder.PlugIns
 
                     // Save the reflection file location as we need it later
                     vs.ReflectionFilename = workingPath + "reflection.xml";
-
-                    sb.AppendFormat("\"{0}ProductionTools\\XslTransform\" " +
-                        "/xsl:\"{0}ProductionTransforms\\ApplyVSDocModel.xsl\"," +
-                        "\"{0}ProductionTransforms\\AddFilenames.xsl\" " +
-                        "\"{1}reflection.org\" /out:\"{1}reflection.xml\" " +
-                        "/arg:IncludeAllMembersTopic=true " +
-                        "/arg:IncludeInheritedOverloadTopics=true\r\n", builder.SandcastleFolder, workingPath);
                 }
 
-                // Run the Transform step on the reflection.org files.  This adds some stuff the build
-                // components need.
-                sb.Insert(0, "@ECHO OFF\r\n");
-                workingPath = builder.WorkingFolder + "TransformReferences.bat";
-
-                using(StreamWriter sw = new StreamWriter(workingPath))
-                {
-                    sw.Write(sb.ToString());
-                }
-
-                builder.ReportProgress("\r\nTransforming reference reflection files...");
-                builder.RunProcess(workingPath, null);
                 return;
             }
 
@@ -286,8 +202,8 @@ namespace SandcastleBuilder.PlugIns
                 var rn = builder.ReferencedNamespaces;
 
                 HashSet<string> validNamespaces = new HashSet<string>(Directory.EnumerateFiles(Path.Combine(
-                  builder.SandcastleFolder, @"Data\Reflection"), "*.xml", SearchOption.AllDirectories).Select(
-                  f => Path.GetFileNameWithoutExtension(f)));
+                  BuildComponentManager.HelpFileBuilderFolder, @"Data\Reflection"), "*.xml",
+                  SearchOption.AllDirectories).Select(f => Path.GetFileNameWithoutExtension(f)));
 
                 foreach(ReferenceLinkSettings vs in otherLinks)
                     if(!String.IsNullOrEmpty(vs.ReflectionFilename))
@@ -367,7 +283,7 @@ namespace SandcastleBuilder.PlugIns
                 // type but we only need the first one.  This only appears in the reference build's configuration
                 // file.
                 component = configFile.SelectSingleNode("configuration/dduetools/builder/components/component[" +
-                    "@type='Microsoft.Ddue.Tools.CopyFromIndexComponent']/index");
+                    "@id='Copy From Index Component']/index");
 
                 // If not found, try for the cached version
                 if(component == null)
@@ -397,13 +313,7 @@ namespace SandcastleBuilder.PlugIns
             }
 
             // Add them to the Resolve Reference Links component
-            matchingComponents = configFile.SelectNodes(
-                "//component[@type='Microsoft.Ddue.Tools.ResolveReferenceLinksComponent2']");
-
-            // If not found, try for the cached version
-            if(matchingComponents.Count == 0)
-                matchingComponents = configFile.SelectNodes("//component[starts-with(@id, " +
-                    "'Resolve Reference Links ')]");
+            matchingComponents = configFile.SelectNodes("//component[starts-with(@id, 'Resolve Reference Links')]");
 
             if(matchingComponents.Count == 0)
                 throw new BuilderException("ARL0005", "Unable to locate Resolve Reference Links component in " +
@@ -461,32 +371,12 @@ namespace SandcastleBuilder.PlugIns
         //=====================================================================
 
         /// <summary>
-        /// This handles garbage collection to ensure proper disposal of the plug-in if not done explicitly with
-        /// <see cref="Dispose()"/>.
-        /// </summary>
-        ~AdditionalReferenceLinksPlugIn()
-        {
-            this.Dispose(false);
-        }
-
-        /// <summary>
         /// This implements the Dispose() interface to properly dispose of the plug-in object.
         /// </summary>
-        /// <overloads>There are two overloads for this method.</overloads>
         public void Dispose()
         {
-            this.Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-
-        /// <summary>
-        /// This can be overridden by derived classes to add their own disposal code if necessary.
-        /// </summary>
-        /// <param name="disposing">Pass true to dispose of the managed and unmanaged resources or false to just
-        /// dispose of the unmanaged resources.</param>
-        protected virtual void Dispose(bool disposing)
-        {
             // Nothing to dispose of in this one
+            GC.SuppressFinalize(this);
         }
         #endregion
 
@@ -510,7 +400,6 @@ namespace SandcastleBuilder.PlugIns
             try
             {
                 // For the plug-in, we'll override some project settings
-                project.SandcastlePath = new FolderPath(builder.SandcastleFolder, true, project);
                 project.HtmlHelp1xCompilerPath = new FolderPath(builder.Help1CompilerFolder, true, project);
                 project.HtmlHelp2xCompilerPath = new FolderPath(builder.Help2CompilerFolder, true, project);
                 project.WorkingPath = new FolderPath(workingPath, true, project);
@@ -526,7 +415,9 @@ namespace SandcastleBuilder.PlugIns
                 if(!String.IsNullOrEmpty(outDir) && outDir != @".\")
                     project.MSBuildOutDir = outDir;
 
-                buildProcess = new BuildProcess(project, true);
+                // Run the partial build through the transformation step as we need the document model
+                // applied and filenames added.
+                buildProcess = new BuildProcess(project, PartialBuildType.TransformReflectionInfo);
 
                 buildProcess.BuildStepChanged += buildProcess_BuildStepChanged;
 
