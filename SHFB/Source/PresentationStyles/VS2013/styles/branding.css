@@ -732,181 +732,229 @@ pre.ideCScode
 	display: block;
 }
 
-.OH_CodeSnippetContainer
+.codeSnippetContainer
 {
+	min-width: 260px;
 	clear: both;
-	margin-top: 10px;
-	line-height: normal;
 }
 
-.OH_CodeSnippetContainerTabs
+.codeSnippetContainerTabs
 {
-	position: relative;
-	top: 5px;
-	_top: 3px;
-	float: left;
-	background-color: Transparent;
 	vertical-align: middle;
-	cursor: default;
-	margin: 0px;
-	padding: 0px;
-	z-index: 2;
+	height: 23px;
+	position: relative;
+	z-index: 1;
 }
 
-.OH_CodeSnippetContainerTab, .OH_CodeSnippetContainerTabLeft, .OH_CodeSnippetContainerTabRight, .OH_CodeSnippetContainerTabFirst, .OH_CodeSnippetContainerTabActive, .OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabActiveNotFirst, .OH_CodeSnippetContainerTabDisabled, .OH_CodeSnippetContainerTabLeftDisabled, .OH_CodeSnippetContainerTabRightDisabled, .OH_CodeSnippetContainerTabDisabledNotFirst, .OH_CodeSnippetContainerTabSolo
+.codeSnippetContainerTab
 {
+	font-family: 'Segoe UI','Lucida Grande',Verdana,Arial,Helvetica,sans-serif!important;
+	font-size: 12px;
+	font-style: normal!important;
+	height: 22px;
 	float: left;
-	font-size: 0.8em; /*10pt*/
-	margin: 0px;
-	padding: 0px;
-	_padding-top: 2px;
-	height: 20px;
+	width: auto;
+	padding: 0 15px 0 15px;
+	vertical-align: baseline;
+	color: #2a2a2a;
 }
 
-.OH_CodeSnippetContainerTab, .OH_CodeSnippetContainerTabFirst, .OH_CodeSnippetContainerTabActive, .OH_CodeSnippetContainerTabActiveNotFirst, .OH_CodeSnippetContainerTabDisabled, .OH_CodeSnippetContainerTabDisabledNotFirst, .OH_CodeSnippetContainerTabSolo
+.codeSnippetContainerTabActive
 {
-	border-top: solid 1px #bbbbbb;
-}
-
-.OH_CodeSnippetContainerTab, .OH_CodeSnippetContainerTabLeft, .OH_CodeSnippetContainerTabRight, .OH_CodeSnippetContainerTabFirst, .OH_CodeSnippetContainerTabDisabled, .OH_CodeSnippetContainerTabLeftDisabled, .OH_CodeSnippetContainerTabRightDisabled, .OH_CodeSnippetContainerTabDisabledNotFirst
-{
-	border-bottom: solid 2px #d0d2d2;
-}
-
-.OH_CodeSnippetContainerTab, .OH_CodeSnippetContainerTabActiveNotFirst, .OH_CodeSnippetContainerTabDisabledNotFirst
-{
-	border-left: solid 1px #bbbbbb;
-}
-
-.OH_CodeSnippetContainerTab, .OH_CodeSnippetContainerTabLeft, .OH_CodeSnippetContainerTabRight, .OH_CodeSnippetContainerTabFirst
-{
-	background-color: #eff5ff;
-}
-
-.OH_CodeSnippetContainerTabDisabled, .OH_CodeSnippetContainerTabLeftDisabled, .OH_CodeSnippetContainerTabRightDisabled, .OH_CodeSnippetContainerTabDisabledNotFirst
-{
-	background-color: #f5f5f5;
-}
-
-.OH_CodeSnippetContainerTabActive, .OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabActiveNotFirst, .OH_CodeSnippetContainerTabSolo
-{
-	background-color: white;
-	font-weight: bold;
-}
-
-.OH_CodeSnippetContainerTab a, .OH_CodeSnippetContainerTab a:link, .OH_CodeSnippetContainerTab a:visited, .OH_CodeSnippetContainerTab a:active, .OH_CodeSnippetContainerTab a:hover, .OH_CodeSnippetContainerTabFirst a, .OH_CodeSnippetContainerTabFirst a:link, .OH_CodeSnippetContainerTabFirst a:visited, .OH_CodeSnippetContainerTabFirst a:active, .OH_CodeSnippetContainerTabFirst a:hover
-{
-	padding: 0px 5px 0px 5px;
-	color: #1364c4;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-.OH_CodeSnippetContainerTabSolo a, .OH_CodeSnippetContainerTabSolo a:link, .OH_CodeSnippetContainerTabSolo a:visited, .OH_CodeSnippetContainerTabSolo a:active, .OH_CodeSnippetContainerTabSolo a:hover
-{
-	padding: 0px 5px 0px 5px;
-	color: #1364c4;
-	text-decoration: none;
-}
-
-.OH_CodeSnippetContainerTab a:link, .OH_CodeSnippetContainerTab a:visited, .OH_CodeSnippetContainerTabFirst a:link, .OH_CodeSnippetContainerTabFirst a:visited, .OH_CodeSnippetContainerTabSolo a:link, .OH_CodeSnippetContainerTabSolo a:visited
-{
-	color: #1364c4;
-}
-
-.OH_CodeSnippetContainerTab a:active, .OH_CodeSnippetContainerTab a:hover, .OH_CodeSnippetContainerTabFirst a:active, .OH_CodeSnippetContainerTabFirst a:hover
-{
-	color: #250c58;
-}
-
-.OH_CodeSnippetContainerTabActive a, .OH_CodeSnippetContainerTabActive a:link, .OH_CodeSnippetContainerTabActive a:visited, .OH_CodeSnippetContainerTabActive a:active, .OH_CodeSnippetContainerTabActive a:hover, .OH_CodeSnippetContainerTabActiveNotFirst a, .OH_CodeSnippetContainerTabActiveNotFirst a:link, .OH_CodeSnippetContainerTabActiveNotFirst a:visited, .OH_CodeSnippetContainerTabActiveNotFirst a:active, .OH_CodeSnippetContainerTabActiveNotFirst a:hover
-{
-	padding: 0px 5px 0px 5px;
-	background-color: white;
-	color: #250c58;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-.OH_CodeSnippetContainerTabDisabled a, .OH_CodeSnippetContainerTabDisabledNotFirst a
-{
-	padding: 0px 5px 0px 5px;
-	color: #a8a8a8;
-	text-decoration: none;
-}
-
-.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft, .OH_CodeSnippetContainerTabLeftDisabled, .OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight, .OH_CodeSnippetContainerTabRightDisabled
-{
-	width: 5px;
+	font-family: 'Segoe UI','Lucida Grande',Verdana,Arial,Helvetica,sans-serif!important;
+	font-size: 12px;
+	font-style: normal!important;
+	height: 22px;
 	float: left;
+	width: auto;
+	padding: 0 15px 0 15px;
+	vertical-align: baseline;
+	color: #707070;
+	background: #f8f8f8;
+	border-top: solid 1px #939393;
+	border-left: solid 1px #939393;
+	border-right: solid 1px #939393;
 }
 
-.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft, .OH_CodeSnippetContainerTabLeftDisabled
+.codeSnippetContainerTabPhantom
 {
-	/*  background-image: url(tabLeftBG.gif); Added by script */
-	background-repeat: no-repeat;
+	font-family: 'Segoe UI','Lucida Grande',Verdana,Arial,Helvetica,sans-serif!important;
+	font-size: 12px;
+	font-style: normal!important;
+	height: 22px;
+	float: left;
+	width: auto;
+	padding: 0 15px 0 15px;
+	vertical-align: baseline;
+	color: #c2c2c2;
+	background: #f8f8f8;
+	border-top: solid 1px #f8f8f8;
+	border-left: solid 1px #f8f8f8;
+	border-right: solid 1px #f8f8f8;
 }
 
-.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight, .OH_CodeSnippetContainerTabRightDisabled
+.codeSnippetContainerTabSingle
 {
-	/*  background-image: url(tabRightBG.gif); Added by script */
-	background-repeat: no-repeat;
+	font-family: 'Segoe UI','Lucida Grande',Verdana,Arial,Helvetica,sans-serif!important;
+	font-size: 12px;
+	font-style: normal!important;
+	height: 22px;
+	float: left;
+	width: auto;
+	padding: 0 8px 0 8px;
+	vertical-align: baseline;
+	color: #707070;
+	top: 14px;
+	left: 7px;
+	position: relative;
+	background-color: #fff;
 }
 
-.OH_CodeSnippetToolBar
+.codeSnippetContainerTab a, .codeSnippetContainerTab a:link, .codeSnippetContainerTab a:visited, .codeSnippetContainerTab a:active
 {
-	width: 100%;
-	height: 1em;
-	border-top: solid 3px #e5e5e5;
+	color: #2a2a2a;
+	text-decoration: none;
+	position: relative;
+	top: 2px;
 }
 
-.OH_CodeSnippetToolBarText
+.codeSnippetContainerTabActive a, .codeSnippetContainerTabActive a:link, .codeSnippetContainerTabActive a:visited, .codeSnippetContainerTabActive a:active
+{
+	color: #707070;
+	text-decoration: none;
+	position: relative;
+	top: 2px;
+}
+
+.codeSnippetContainerTabPhantom a, .codeSnippetContainerTabPhantom a:link, .codeSnippetContainerTabPhantom a:visited, .codeSnippetContainerTabPhantom a:active
+{
+	color: #8b8b8b!important;
+	text-decoration: none;
+	position: relative;
+	top: 2px;
+}
+
+.codeSnippetContainerTabSingle a, .codeSnippetContainerTabSingle a:link, .codeSnippetContainerTabSingle a:visited, .codeSnippetContainerTabSingle a:active
+{
+	color: #707070;
+	text-decoration: none;
+	position: relative;
+	top: 2px;
+}
+
+.codeSnippetContainerTab a:hover
+{
+	color: #707070;
+	position: relative;
+	top: 2px;
+}
+
+.codeSnippetContainerTabActive a:hover
+{
+	color: #707070;
+	position: relative;
+	top: 2px;
+}
+
+.codeSnippetContainerTabPhantom a:hover
+{
+	color: #c2c2c2;
+	position: relative;
+	top: 2px;
+}
+
+.codeSnippetContainerTabSingle a:hover
+{
+	color: #707070;
+	position: relative;
+	top: 2px;
+}
+
+.codeSnippetContainerCodeContainer
+{
+	border-left: solid 1px #939393;
+	border-bottom: solid 1px #939393;
+	border-right: solid 1px #939393;
+	border-top: solid 1px #939393;
+	clear: both;
+	margin-bottom: 12px;
+	position: relative;
+	top: -1px;
+}
+
+.codeSnippetToolBar
+{
+	width: auto;
+	height: auto;
+}
+
+.codeSnippetToolBarText
 {
 	float: right;
+	top: -8px;
 	position: relative;
-	background-color: white;
-	z-index: 100;
+	background-color: #fff;
 	width: auto;
-	margin-right: 13px;
-	top: -13px;
+	padding-left: 0;
+	padding-right: 0;
+	height: 0;
+	vertical-align: top;
 }
 
-.OH_CodeSnippetToolBarText a:link, .OH_CodeSnippetToolBarText a:visited, .OH_CodeSnippetToolBarText a:active, .OH_CodeSnippetToolBarText a:hover
+.codeSnippetToolBarText a:link, .codeSnippetToolBarText a:visited, .codeSnippetToolBarText a:active
 {
-	font-size: 0.8em; /*10pt*/
-	padding-left: 3px;
-	padding-right: 3px;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-family: 'Segoe UI','Lucida Grande',Verdana,Arial,Helvetica,sans-serif!important;
+	font-size: 10px;
+	font-style: normal!important;
+	color: #2a2a2a;
 	text-decoration: none;
+	background-color: #fff;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
-.OH_CodeSnippetToolBarText a:link, .OH_CodeSnippetToolBarText a:visited, .OH_CodeSnippetToolBarText a:active
+.codeSnippetToolBarText a:hover
 {
-	color: #1364c4;
+	color: #707070;
 }
 
-.OH_CodeSnippetToolBarText a:hover
+.codeSnippetContainerCode
 {
-	color: #e66a38;
+	width: auto;
+	margin: 0;
+	padding-right: 21px;
+	padding-left: 21px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-.OH_CodeSnippetContainerCodeCollection
+.codeSnippetContainerCode div
 {
-	border-left: solid 1px #e5e5e5;
-	border-right: solid 1px #e5e5e5;
-	border-bottom: solid 3px #e5e5e5;
-	clear: both;
-	margin: 0px;
-	margin-bottom: 5px;
-	width: 99%;
+	padding: 0;
+	margin: 0;
 }
 
-.OH_CodeSnippetContainerCode
+.codeSnippetContainerCode pre
 {
-	width: 100%;
-	border-right-width: 0px;
-	margin: 0px;
-	padding: 0px;
-	padding-left: 19px;
+	padding: 5px;
+	margin: 0;
+	font-family: Consolas,Courier,monospace!important;
+	font-style: normal;
+	font-weight: normal;
+	overflow: auto;
+	word-wrap: normal;
+}
+
+.OH_outerDiv a, .OH_outerDiv a:link, .OH_outerDiv a:visited
+{
+	color: #1382ce;
+}
+
+.OH_outerDiv a:hover, .OH_outerDiv a:active
+{
+	color: #00bcf2;
 }
 
 .OH_MultiViewContainerPanel

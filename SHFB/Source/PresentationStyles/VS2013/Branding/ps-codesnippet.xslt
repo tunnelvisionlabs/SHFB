@@ -91,10 +91,10 @@
       <xsl:attribute name="id">
         <xsl:value-of select="$owner-id"/>
       </xsl:attribute>
-      <xsl:attribute name="class">OH_CodeSnippetContainer</xsl:attribute>
+      <xsl:attribute name="class">codeSnippetContainer</xsl:attribute>
 
       <xsl:element name="div" namespace="{$xhtml}">
-        <xsl:attribute name="class">OH_CodeSnippetContainerTabs</xsl:attribute>
+        <xsl:attribute name="class">codeSnippetContainerTabs</xsl:attribute>
         <xsl:attribute name="id">
           <xsl:value-of select="concat($owner-id, '_tabs')"/>
         </xsl:attribute>
@@ -114,30 +114,17 @@
             <xsl:choose>
               <xsl:when test="$langLower and not(contains($langLower, 'other')) and not(contains($langLower, 'none'))">
                 <xsl:element name="div" namespace="{$xhtml}">
-                  <xsl:attribute name="class">OH_CodeSnippetContainerTabLeft</xsl:attribute>
-                  <xsl:attribute name="id">
-                    <xsl:value-of select="concat($owner-id, '_tabimgleft')"/>
-                  </xsl:attribute>
-                  <xsl:value-of select="''"></xsl:value-of>
-                </xsl:element>
-                <xsl:element name="div" namespace="{$xhtml}">
                   <xsl:attribute name="id">
                     <xsl:value-of select="concat($owner-id, '_tab1')"/>
                   </xsl:attribute>
-                  <xsl:attribute name="class">OH_CodeSnippetContainerTabSolo</xsl:attribute>
+                  <xsl:attribute name="class">codeSnippetContainerTabSingle</xsl:attribute>
+                  <xsl:attribute name="dir">ltr</xsl:attribute>
                   <xsl:attribute name="EnableCopyCode">
                     <xsl:value-of select="$snippets[1]/@EnableCopyCode"/>
                   </xsl:attribute>
                   <xsl:element name="a">
                     <xsl:value-of select="$uselang"/>
                   </xsl:element>
-                </xsl:element>
-                <xsl:element name="div" namespace="{$xhtml}">
-                  <xsl:attribute name="class">OH_CodeSnippetContainerTabRight</xsl:attribute>
-                  <xsl:attribute name="id">
-                    <xsl:value-of select="concat($owner-id, '_tabimgright')"/>
-                  </xsl:attribute>
-                  <xsl:value-of select="''"></xsl:value-of>
                 </xsl:element>
               </xsl:when>
               <xsl:otherwise>
@@ -146,13 +133,6 @@
             </xsl:choose>
           </xsl:when>
           <xsl:otherwise>
-            <xsl:element name="div" namespace="{$xhtml}">
-              <xsl:attribute name="class">OH_CodeSnippetContainerTabLeftActive</xsl:attribute>
-              <xsl:attribute name="id">
-                <xsl:value-of select="concat($owner-id, '_tabimgleft')"/>
-              </xsl:attribute>
-              <xsl:value-of select="''"></xsl:value-of>
-            </xsl:element>
             <xsl:if test="$showLanTabs">
               <xsl:for-each select="msxsl:node-set($uniqueLangTabsSet)/value">
                 <xsl:variable name="uselang" select="."/>
@@ -218,25 +198,26 @@
                   <xsl:attribute name="class">
                     <xsl:choose>
                       <xsl:when test="($uniqueLangIndex=1 or $uniqueLangTabsSetCount=1) and $pos&lt;=$uniqueLangTabsSetCount">
-                        <xsl:text>OH_CodeSnippetContainerTabActive</xsl:text>
+                        <xsl:text>codeSnippetContainerTabActive</xsl:text>
                       </xsl:when>
                       <xsl:otherwise>
                         <xsl:choose>
                           <xsl:when test="($snippets[$pos]/text() or $snippets[$pos]/child::node()/text()) and $majorLang='true'">
-                            <xsl:text>OH_CodeSnippetContainerTab</xsl:text>
+                            <xsl:text>codeSnippetContainerTab</xsl:text>
                           </xsl:when>
                           <xsl:otherwise>
                             <xsl:if test="$uniqueLangIndex=1">
-                              <xsl:text>OH_CodeSnippetContainerTabDisabled</xsl:text>
+                              <xsl:text>codeSnippetContainerTabPhantom</xsl:text>
                             </xsl:if>
                             <xsl:if test="$uniqueLangIndex!=1">
-                              <xsl:text>OH_CodeSnippetContainerTabDisabledNotFirst</xsl:text>
+                              <xsl:text>codeSnippetContainerTabPhantom</xsl:text>
                             </xsl:if>
                           </xsl:otherwise>
                         </xsl:choose>
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:attribute>
+                  <xsl:attribute name="dir">ltr</xsl:attribute>
                   <xsl:attribute name="EnableCopyCode">
                     <xsl:value-of select="$snippets[1]/@EnableCopyCode"/>
                   </xsl:attribute>
@@ -279,23 +260,6 @@
                 </xsl:element>
               </xsl:for-each>
             </xsl:if>
-
-            <xsl:element name="div" namespace="{$xhtml}">
-              <xsl:attribute name="class">
-                <xsl:choose>
-                  <xsl:when test="$uniqueLangTabsSetCount=1">
-                    <xsl:text>OH_CodeSnippetContainerTabRightActive</xsl:text>
-                  </xsl:when>
-                  <xsl:otherwise>
-                    <xsl:text>OH_CodeSnippetContainerTabRight</xsl:text>
-                  </xsl:otherwise>
-                </xsl:choose>
-              </xsl:attribute>
-              <xsl:attribute name="id">
-                <xsl:value-of select="concat($owner-id, '_tabimgright')"/>
-              </xsl:attribute>
-              <xsl:value-of select="''"></xsl:value-of>
-            </xsl:element>
           </xsl:otherwise>
         </xsl:choose>
       </xsl:element>
@@ -304,12 +268,12 @@
         <xsl:attribute name="id">
           <xsl:value-of select="concat($owner-id, '_codecollection')"/>
         </xsl:attribute>
-        <xsl:attribute name="class">OH_CodeSnippetContainerCodeCollection</xsl:attribute>
+        <xsl:attribute name="class">codeSnippetContainerCodeContainer</xsl:attribute>
         <xsl:element name="div" namespace="{$xhtml}">
-          <xsl:attribute name="class">OH_CodeSnippetToolBar</xsl:attribute>
+          <xsl:attribute name="class">codeSnippetToolBar</xsl:attribute>
 
           <xsl:element name="div" namespace="{$xhtml}">
-            <xsl:attribute name="class">OH_CodeSnippetToolBarText</xsl:attribute>
+            <xsl:attribute name="class">codeSnippetToolBarText</xsl:attribute>
             <xsl:if test="$unrecognized='true'">
               <xsl:call-template name="code-snippet-menu">
                 <xsl:with-param name="id" select="$owner-id"/>
@@ -668,7 +632,7 @@
 			<xsl:attribute name="id">
 				<xsl:value-of select="$id"/>
 			</xsl:attribute>
-			<xsl:attribute name="class">OH_CodeSnippetContainerCode</xsl:attribute>
+			<xsl:attribute name="class">codeSnippetContainerCode</xsl:attribute>
 			<xsl:attribute name="style">
 				<xsl:choose>
 					<xsl:when test="$plainCode='true'">

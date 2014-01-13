@@ -49,16 +49,6 @@
       <!-- resource-based styles -->
       <xsl:element name="style" namespace="{$xhtml}">
         <xsl:attribute name="type">text/css</xsl:attribute>
-        <xsl:text>.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled {background-image: url('</xsl:text>
-        <xsl:call-template name="ms-xhelp">
-          <xsl:with-param name="ref" select="'tabLeftBG.gif'"/>
-        </xsl:call-template>
-        <xsl:text>')}</xsl:text>
-        <xsl:text>.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled {background-image: url('</xsl:text>
-        <xsl:call-template name="ms-xhelp">
-          <xsl:with-param name="ref" select="'tabRightBG.gif'"/>
-        </xsl:call-template>
-        <xsl:text>')}</xsl:text>
         <xsl:text>.OH_footer { background-image: url('</xsl:text>
         <xsl:call-template name="ms-xhelp">
           <xsl:with-param name="ref" select="'footer_slice.gif'"/>

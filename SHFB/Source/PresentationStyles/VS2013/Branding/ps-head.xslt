@@ -113,8 +113,6 @@
 	<xsl:template name="head-style-urls">
 		<xsl:element name="style" namespace="{$xhtml}">
 			<xsl:attribute name="type">text/css</xsl:attribute>
-			<xsl:text>.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { }</xsl:text>
-			<xsl:text>.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { }</xsl:text>
 			<xsl:text>.OH_footer { }</xsl:text>
 		</xsl:element>
 	</xsl:template>

@@ -69,23 +69,6 @@ function onLoad()
 
                                 var selectorText = rule.selectorText.toLowerCase();
 
-                                // The selector text may show up grouped or individually for these
-                                if(selectorText == ".oh_codesnippetcontainertableftactive, .oh_codesnippetcontainertableft, .oh_codesnippetcontainertableftdisabled" ||
-                                  selectorText == ".oh_codesnippetcontainertableftactive" ||
-                                  selectorText == ".oh_codesnippetcontainertableft" ||
-                                  selectorText == ".oh_codesnippetcontainertableftdisabled")
-                                {
-                                    rule.style.backgroundImage = "url(" + iconPath.replace("favicon.ico", "tabLeftBG.gif") + ")";
-                                }
-
-                                if(selectorText == ".oh_codesnippetcontainertabrightactive, .oh_codesnippetcontainertabright, .oh_codesnippetcontainertabrightdisabled" ||
-                                  selectorText == ".oh_codesnippetcontainertabrightactive" ||
-                                  selectorText == ".oh_codesnippetcontainertabright" ||
-                                  selectorText == ".oh_codesnippetcontainertabrightdisabled")
-                                {
-                                    rule.style.backgroundImage = "url(" + iconPath.replace("favicon.ico", "tabRightBG.gif") + ")";
-                                }
-
                                 if(selectorText == ".oh_footer")
                                 {
                                     rule.style.backgroundImage = "url(" + iconPath.replace("favicon.ico", "footer_slice.gif") + ")";
@@ -161,32 +144,24 @@ function onLoad()
           j++;
       }
       if (j == 6) {
-          if (document.getElementById(snippetIdSets[i] + "_tab1").className.indexOf("OH_CodeSnippetContainerTabDisabled") != -1) {
+          if (document.getElementById(snippetIdSets[i] + "_tab1").className.indexOf("codeSnippetContainerTabPhantom") != -1) {
               // Select the first non-disabled tab
               var j = 2;
               while (j < 6) {
                   var tab = document.getElementById(snippetIdSets[i] + "_tab" + j);
-                  if (tab.className.indexOf("OH_CodeSnippetContainerTabDisabled") == -1) {
-                      tab.className = "OH_CodeSnippetContainerTabActiveNotFirst";
+                  if (tab.className.indexOf("codeSnippetContainerTabPhantom") == -1) {
+                      tab.className = "codeSnippetContainerTabActive";
                       document.getElementById(snippetIdSets[i] + '_code_Div' + j).style.display = 'block';
                       break;
                   }
                   j++;
               }
-
-              // disable left most img if first tab disabled
-              document.getElementById(snippetIdSets[i] + "_tabimgleft").className = "OH_CodeSnippetContainerTabLeftDisabled";
           }
       }
       else {
           setCurrentLang(snippetIdSets[i], lang, index, _tempSnippetCount, false);
       }
      
-      }
-      if (document.getElementById(snippetIdSets[i] + "_tab4").className.indexOf("OH_CodeSnippetContainerTabDisabled") != -1)
-      {
-        // disable right most img if last tab disabled
-        document.getElementById(snippetIdSets[i] + "_tabimgright").className = "OH_CodeSnippetContainerTabRightDisabled";
       }
 
       i++;
@@ -488,10 +463,10 @@ function setCurrentLang(objid, lang, index, snippetCount, setLangSpecText)
         var tabtemp = document.getElementById(objid + "_tab" + i);
         if (tabtemp != null)
         {
-          if (tabtemp.className == "OH_CodeSnippetContainerTabActive")
-            tabtemp.className = "OH_CodeSnippetContainerTabFirst";
-          if (tabtemp.className == "OH_CodeSnippetContainerTabActiveNotFirst")
-            tabtemp.className = "OH_CodeSnippetContainerTab";
+          if (tabtemp.className == "codeSnippetContainerTabActive")
+            tabtemp.className = "codeSnippetContainerTab";
+          if (tabtemp.className == "codeSnippetContainerTabActive")
+            tabtemp.className = "codeSnippetContainerTab";
         }
         var codetemp = document.getElementById(objid + "_code_Div" + i);
         if (codetemp != null)
@@ -501,9 +476,9 @@ function setCurrentLang(objid, lang, index, snippetCount, setLangSpecText)
         }
         i++;
       }
-      document.getElementById(objid + "_tab" + index).className = "OH_CodeSnippetContainerTabActive";
+      document.getElementById(objid + "_tab" + index).className = "codeSnippetContainerTabActive";
       if (index != 1)
-        document.getElementById(objid + "_tab" + index).className = "OH_CodeSnippetContainerTabActiveNotFirst";
+        document.getElementById(objid + "_tab" + index).className = "codeSnippetContainerTabActive";
 
       if (viewPlain == false) document.getElementById(objid + '_code_Div' + index).style.display = 'block';
       else document.getElementById(objid + '_code_Plain_Div' + index).style.display = 'block';
@@ -511,19 +486,19 @@ function setCurrentLang(objid, lang, index, snippetCount, setLangSpecText)
       // change the css of the first/last image div according the current selected tab
       // if the first tab is selected
       if (index == 1)
-        document.getElementById(objid + "_tabs").firstChild.className = "OH_CodeSnippetContainerTabLeftActive";
+        document.getElementById(objid + "_tabs").firstChild.className = "codeSnippetContainerTabActive";
       else
       {
-        if (document.getElementById(objid + "_tabs").firstChild.className != "OH_CodeSnippetContainerTabLeftDisabled")
-          document.getElementById(objid + "_tabs").firstChild.className = "OH_CodeSnippetContainerTabLeft";
+        if (document.getElementById(objid + "_tabs").firstChild.className != "codeSnippetContainerTabPhantom")
+          document.getElementById(objid + "_tabs").firstChild.className = "codeSnippetContainerTab";
       }
       // if the last tab is selected
       if (index == snippetCount)
-        document.getElementById(objid + "_tabs").lastChild.className = "OH_CodeSnippetContainerTabRightActive";
+        document.getElementById(objid + "_tabs").lastChild.className = "codeSnippetContainerTabActive";
       else
       {
-        if (document.getElementById(objid + "_tabs").lastChild.className != "OH_CodeSnippetContainerTabRightDisabled")
-          document.getElementById(objid + "_tabs").lastChild.className = "OH_CodeSnippetContainerTabRight";
+        if (document.getElementById(objid + "_tabs").lastChild.className != "codeSnippetContainerTabPhantom")
+          document.getElementById(objid + "_tabs").lastChild.className = "codeSnippetContainerTab";
       }
 
       // show copy code button if EnableCopyCode is set to true (and not in Chrome)
