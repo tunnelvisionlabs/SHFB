@@ -58,31 +58,13 @@ div.OH_outerContent table
 {
 	width: 100%;
 	border-collapse: collapse;
-	border-color: #bbb;
-	border-width: 1px;
-	border-style: solid;
 }
 
 div.OH_outerContent table th
 {
-	border-color: #bbb;
-	border-width: 1px;
-	border-style: solid;
-	height: 21px;
-	text-align: left;
-	color: #000;
-	padding: 4px;
-	font-style: normal;
-	font-weight: normal;
-	background-color: rgb(229,229,229);
-}
-
-div.OH_outerContent table td
-{
-	border-color: #bbb;
-	border-width: 1px;
-	border-style: solid;
-	margin: 1px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 21px;
 }
 
 div.OH_outerContent table.TitleTable
@@ -402,36 +384,16 @@ div#mainSection
 div.OH_outerContent div#mainSection table
 {
 	border-collapse: collapse;
-	border: 1px solid #bbbbbb;
 	margin-bottom: 5px;
 	margin-top: 5px;
 	margin-right: 13px;
 	padding: 0px;
-	width: auto;
-}
-
-div.OH_outerContent div#mainSection table th
-{
-	font-family: Segoe UI, Verdana, Arial;
-	font-size: 0.85em; /*10pt*/
-	border: 1px solid #bbbbbb;
-	color: #000000;
-	background-color: #e5e5e5;
-	padding-left: 13px;
-	padding-right: 13px;
-	vertical-align: middle;
-	text-align: left;
 }
 
 div.OH_outerContent div#mainSection table td
 {
 	font-family: Segoe UI, Verdana, Arial;
 	font-size: 0.85em; /*10pt*/
-	border: 1px solid #bbbbbb;
-	color: #000000;
-	padding: 5px;
-	overflow: visible;
-	vertical-align: top;
 }
 
 div.OH_outerContent div#mainSection table td p
@@ -1146,16 +1108,6 @@ span.OH_mtps-th
 	border-spacing: 0;
 }
 
-.members td
-{
-	border: 1px solid #DDDDDD;
-}
-
-.members th
-{
-	background: #CCCCCC none repeat scroll 0 0;
-}
-
 .OH_disclaimer
 {
 	background: #ffdbdb;
@@ -1680,6 +1632,23 @@ span.bibliographyPublisher
 sup.citation a:link a:visited a:active
 {
 	text-decoration: none;
+}
+
+th
+{
+	background-color: #ededed;
+	color: #636363;
+	text-align: left;
+}
+
+td, th
+{
+	border-bottom: 1px solid #dbdbdb;
+	margin: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 8px;
+	padding-left: 8px;
 }
 
 /* Supports XLinks */
