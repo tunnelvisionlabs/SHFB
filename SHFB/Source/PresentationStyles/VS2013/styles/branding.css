@@ -594,21 +594,6 @@ div.clsNote
 	z-index: 100;
 }
 
-.OH_CollapsibleArea_HrDiv
-{
-	padding-top: 18px;
-}
-
-.OH_CollapsibleArea_Hr
-{
-	margin-left: 4px;
-	color: #e5e5e5;
-	border-top-style: none;
-	border-bottom: #e5e5e5 1px solid;
-	border-right-style: none;
-	border-left-style: none;
-}
-
 .OH_RegionToggle
 {
 	line-height: 0px;

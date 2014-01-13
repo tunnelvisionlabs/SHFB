@@ -27,15 +27,6 @@
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:element>
-			<xsl:element name="div"
-									 namespace="{$xhtml}">
-				<xsl:attribute name="class">OH_CollapsibleArea_HrDiv</xsl:attribute>
-				<xsl:element name="hr"
-										 namespace="{$xhtml}">
-					<xsl:attribute name="class">OH_CollapsibleArea_Hr</xsl:attribute>
-				</xsl:element>
-				<xsl:value-of select="''"/>
-			</xsl:element>
 		</xsl:element>
 		<xsl:element name="div"
 								 namespace="{$xhtml}">
