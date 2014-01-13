@@ -2,7 +2,7 @@
 
   <!-- note text -->
   <item id="notDocumented">This API is not documented.</item>
-  <item id="preliminaryText">This API is preliminary and subject to change.</item>
+  <item id="preliminaryText">[This documentation is preliminary and is subject to change.]</item>
 	
 	<!-- main window stuff -->
 	<item id="productTitle">.NET Framework Class Library</item>
