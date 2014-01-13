@@ -61,7 +61,7 @@ namespace Sandcastle.PresentationStyles
             this.DocumentModelTransformation = new TransformationFile(
                 @"%SHFBROOT%\ProductionTransforms\ApplyVSDocModel.xsl", new Dictionary<string, string>
                 {
-                    { "IncludeAllMembersTopic", "true" },
+                    { "IncludeAllMembersTopic", "false" },
                     { "IncludeInheritedOverloadTopics", "false" },
                     { "project", "{@ProjectNodeIDOptional}" }
                 });
