@@ -272,16 +272,15 @@ h3
 h4.subHeading
 {
 	margin-top: 10px;
-	font-size: 1em; /*12pt*/
 }
 
 h4.subHeading, .subHeading
 {
-	font-size: 0.85em; /*10pt*/
-	font-family: Segoe UI, Verdana, Arial;
-	font-weight: bold;
+	font: 100 1.429em 'Segoe UI Light', 'Segoe UI', Helvetica, Garuda, Arial, sans-serif;
+	color: #404142;
 	margin: 0px;
 }
+
 dl
 {
 	margin: 0 0 10px;
@@ -566,10 +565,8 @@ div.clsNote
 
 .OH_regiontitle
 {
-	font-size: 1.3em; /*15pt*/
-	font-family: Segoe UI, Verdana, Arial;
-	font-weight: bold;
-	color: #250c58;
+	font: 100 22px 'Segoe UI Light', 'Segoe UI', Helvetica, Garuda, Arial, sans-serif !important;
+	color: #000;
 	float: left;
 	background-color: #FFFFFF;
 	margin-top: 13px;
