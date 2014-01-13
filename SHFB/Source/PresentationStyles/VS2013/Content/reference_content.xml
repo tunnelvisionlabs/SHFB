@@ -233,8 +233,8 @@
 	<item id="boilerplate_obsoleteShort"><span class="obsolete">Obsolete.</span></item>
 	<item id="boilerplate_obsoleteLong"><span class="obsolete">This API is obsolete.</span></item>
 	<item id="boilerplate_obsoleteNonobsoleteAlternative">The non-obsolete alternative is {0}.</item>
-  <item id="boilerplate_obsoleteRed"><font color="red"><strong>Obsolete. </strong></font></item>
-  <item id="boilerplate_obsolete"><font color="red"><strong>Note: This API is now obsolete.</strong></font></item>
+  <item id="boilerplate_obsoleteBold"><strong>Obsolete. </strong></item>
+  <item id="boilerplate_obsolete"><strong>Note: This API is now obsolete.</strong></item>
 
 	<!-- Group and SubGroup text -->
 	<item id="text_classLower">class</item>
@@ -528,7 +528,7 @@
 	<item id="obsoleteShort"><include item="boilerplate_obsoleteShort"/></item>
 	<item id="obsoleteLong"><include item="boilerplate_obsoleteLong"/></item>
 	<item id="nonobsoleteAlternative"><include item="boilerplate_obsoleteNonobsoleteAlternative"><parameter>{0}</parameter></include></item>
-  <item id="obsoleteRed"><include item="boilerplate_obsoleteRed"/></item>
+  <item id="obsoleteRed"><include item="boilerplate_obsoleteBold"/></item>
   <item id="ObsoleteBoilerPlate"><include item="boilerplate_obsolete"/></item>
 	<item id="classLower"><include item="text_classLower"/></item>
   <item id="delegateLower"><include item="text_delegateLower"/></item>

@@ -1149,7 +1149,7 @@
 			<td>
 				<xsl:if test="attributes/attribute/type[@api='T:System.ObsoleteAttribute']">
 					<xsl:text> </xsl:text>
-					<include item="boilerplate_obsoleteRed"/>
+					<include item="boilerplate_obsoleteBold"/>
 				</xsl:if>
 				<xsl:call-template name="t_getElementDescription"/>
 			</td>
@@ -1223,7 +1223,7 @@
 			<td>
 				<xsl:if test="attributes/attribute/type[@api='T:System.ObsoleteAttribute']">
 					<xsl:text> </xsl:text>
-					<include item="boilerplate_obsoleteRed"/>
+					<include item="boilerplate_obsoleteBold"/>
 				</xsl:if>
 				<xsl:call-template name="t_getEnumMemberDescription"/>
 			</td>
@@ -1249,7 +1249,7 @@
 
 				<xsl:if test="attributes/attribute/type[@api='T:System.ObsoleteAttribute']">
 					<xsl:text> </xsl:text>
-					<include item="boilerplate_obsoleteRed"/>
+					<include item="boilerplate_obsoleteBold"/>
 				</xsl:if>
 				<xsl:call-template name="t_getElementDescription"/>
 			</td>
@@ -1418,7 +1418,7 @@
 				<td>
 					<xsl:if test="attributes/attribute/type[@api='T:System.ObsoleteAttribute']">
 						<xsl:text> </xsl:text>
-						<include item="boilerplate_obsoleteRed"/>
+						<include item="boilerplate_obsoleteBold"/>
 					</xsl:if>
 					<xsl:if test="topicdata[@subgroup='overload'] or @overload='true'">
 						<include item="Overloaded"/>

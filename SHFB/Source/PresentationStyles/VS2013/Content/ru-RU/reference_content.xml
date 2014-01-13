@@ -233,8 +233,8 @@
 	<item id="boilerplate_obsoleteShort"><span class="obsolete">Устаревшее.</span></item>
 	<item id="boilerplate_obsoleteLong"><span class="obsolete">Данный API устарел.</span></item>
 	<item id="boilerplate_obsoleteNonobsoleteAlternative">Поддерживаемый аналог: {0}.</item>
-  <item id="boilerplate_obsoleteRed"><font color="red"><strong>Устарело. </strong></font></item>
-  <item id="boilerplate_obsolete"><font color="red"><strong>Примечание: Данный API устарел.</strong></font></item>
+  <item id="boilerplate_obsoleteBold"><strong>Устарело. </strong></item>
+  <item id="boilerplate_obsolete"><strong>Примечание: Данный API устарел.</strong></item>
 
 	<!-- Group and SubGroup text -->
 	<item id="text_classLower">класс</item>
@@ -528,7 +528,7 @@
 	<item id="obsoleteShort"><include item="boilerplate_obsoleteShort"/></item>
 	<item id="obsoleteLong"><include item="boilerplate_obsoleteLong"/></item>
 	<item id="nonobsoleteAlternative"><include item="boilerplate_obsoleteNonobsoleteAlternative"><parameter>{0}</parameter></include></item>
-  <item id="obsoleteRed"><include item="boilerplate_obsoleteRed"/></item>
+  <item id="obsoleteRed"><include item="boilerplate_obsoleteBold"/></item>
   <item id="ObsoleteBoilerPlate"><include item="boilerplate_obsolete"/></item>
 	<item id="classLower"><include item="text_classLower"/></item>
   <item id="delegateLower"><include item="text_delegateLower"/></item>
