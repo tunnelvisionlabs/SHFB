@@ -1202,14 +1202,14 @@
                     if (this.IsMultiLineTagStart(sourceLine) && !multiLine)
                     {
                         multiLine = true;
-                        output.Append("<span style=\"color:blue;\"><b>" + System.Web.HttpUtility.HtmlEncode(sourceLine));
+                        output.Append("<span style=\"color:blue;\"><strong>" + System.Web.HttpUtility.HtmlEncode(sourceLine));
                     }
                     else
                     {
                         if (this.IsMultiLineTagEnd(sourceLine) && multiLine)
                         {
                             multiLine = false;
-                            output.Append(System.Web.HttpUtility.HtmlEncode(sourceLine) + "</b></span>");
+                            output.Append(System.Web.HttpUtility.HtmlEncode(sourceLine) + "</strong></span>");
                         }
                         else
                         {
@@ -1279,7 +1279,7 @@
 
             // Colorize <%@ <type>
             searchExpr = "(?i)" + "(?<a>(&lt;%@))" + "(?<b>(.*))" + "(?<c>(%&gt;))";
-            replaceExpr = "<span style=\"color:blue;\"><b>${a}${b}${c}</b></span>";
+            replaceExpr = "<span style=\"color:blue;\"><strong>${a}${b}${c}</strong></span>";
 
             if (Regex.IsMatch(sourceLine, searchExpr))
             {
@@ -1288,7 +1288,7 @@
 
             // Colorize <%# <type>
             searchExpr = "(?i)" + "(?<a>(&lt;%#))" + "(?<b>(.*))" + "(?<c>(%&gt;))";
-            replaceExpr = "${a}" + "<span style=\"color:red;\"><b>" + "${b}" + "</b></span>" + "${c}";
+            replaceExpr = "${a}" + "<span style=\"color:red;\"><strong>" + "${b}" + "</strong></span>" + "${c}";
 
             if (Regex.IsMatch(sourceLine, searchExpr))
             {
@@ -1306,7 +1306,7 @@
 
             // Colorize asp:|template for runat=server tags <type>
             searchExpr = "(?i)(?<a>&lt;/?)(?<b>(asp:|template|property|IBuySpy:).*)(?<c>&gt;)?";
-            replaceExpr = "${a}<span style=\"color:blue;\"><b>${b}</b></span>${c}";
+            replaceExpr = "${a}<span style=\"color:blue;\"><strong>${b}</strong></span>${c}";
 
             if (Regex.IsMatch(sourceLine, searchExpr))
             {
