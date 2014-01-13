@@ -1402,9 +1402,9 @@
 	<xsl:template match="ddue:legacyItalic"
 								name="t_ddue_legacyItalic">
 		<xsl:if test="normalize-space(.)">
-			<i>
+			<em>
 				<xsl:apply-templates />
-			</i>
+			</em>
 		</xsl:if>
 	</xsl:template>
 

@@ -775,9 +775,9 @@
 									<xsl:if test="@description">
 										<tr style="border-bottom: 0px none;">
 											<td style="border-bottom: 0px none;">
-												<i>
+												<em>
 													<xsl:text>Description: </xsl:text>
-												</i>
+												</em>
 											</td>
 											<td style="border-bottom: 0px none;">
 												<xsl:value-of select="@description"/>
@@ -787,9 +787,9 @@
 									<xsl:if test="@inheritedFrom">
 										<tr style="border-bottom: 0px none;">
 											<td style="border-bottom: 0px none;">
-												<i>
+												<em>
 													<xsl:text>Inherited From: </xsl:text>
-												</i>
+												</em>
 											</td>
 											<td style="border-bottom: 0px none;">
 												<referenceLink target="{@inheritedFrom}">
@@ -801,9 +801,9 @@
 									<xsl:if test="@exception">
 										<tr style="border-bottom: 0px none;">
 											<td style="border-bottom: 0px none;">
-												<i>
+												<em>
 													<xsl:text>Exception: </xsl:text>
-												</i>
+												</em>
 											</td>
 											<td style="border-bottom: 0px none;">
 												<referenceLink target="{@exception}"
