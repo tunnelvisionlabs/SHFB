@@ -96,15 +96,15 @@
   <item id="devlang_Python">Python</item>
 
   <!-- language keywords -->
-  <item id="devlang_nullKeyword">a null reference (<span class="keyword">Nothing</span> in Visual Basic)</item>
-  <item id="devlang_staticKeyword"><span class="keyword">static</span> (<span class="keyword">Shared</span> in Visual Basic)</item>
-  <item id="devlang_virtualKeyword"><span class="keyword">virtual</span> (<span class="keyword">Overridable</span> in Visual Basic)</item>
-  <item id="devlang_trueKeyword"><span class="keyword">true</span> (<span class="keyword">True</span> in Visual Basic)</item>
-  <item id="devlang_falseKeyword"><span class="keyword">false</span> (<span class="keyword">False</span> in Visual Basic)</item>
-  <item id="devlang_abstractKeyword"><span class="keyword">abstract</span> (<span class="keyword">MustInherit</span> in Visual Basic)</item>
-  <item id="devlang_asyncKeyword"><span class="keyword">async</span> (<span class="keyword">Async</span> in Visual Basic)</item>
-  <item id="devlang_awaitKeyword"><span class="keyword">await</span> (<span class="keyword">Await</span> in Visual Basic)</item>
-  <item id="devlang_asyncAwaitKeyword"><span class="keyword">async</span>/<span class="keyword">await</span> (<span class="keyword">Async</span>/<span class="keyword">Await</span> in Visual Basic)</item>
+  <item id="devlang_nullKeyword">a null reference (<span class="input">Nothing</span> in Visual Basic)</item>
+  <item id="devlang_staticKeyword"><span class="input">static</span> (<span class="input">Shared</span> in Visual Basic)</item>
+  <item id="devlang_virtualKeyword"><span class="input">virtual</span> (<span class="input">Overridable</span> in Visual Basic)</item>
+  <item id="devlang_trueKeyword"><span class="input">true</span> (<span class="input">True</span> in Visual Basic)</item>
+  <item id="devlang_falseKeyword"><span class="input">false</span> (<span class="input">False</span> in Visual Basic)</item>
+  <item id="devlang_abstractKeyword"><span class="input">abstract</span> (<span class="input">MustInherit</span> in Visual Basic)</item>
+  <item id="devlang_asyncKeyword"><span class="input">async</span> (<span class="input">Async</span> in Visual Basic)</item>
+  <item id="devlang_awaitKeyword"><span class="input">await</span> (<span class="input">Await</span> in Visual Basic)</item>
+  <item id="devlang_asyncAwaitKeyword"><span class="input">async</span>/<span class="input">await</span> (<span class="input">Async</span>/<span class="input">Await</span> in Visual Basic)</item>
 
   <!-- transforms insert K Index Technology qualifiers based on a conceptual topic's //metadata/attribute[@name='DocSet'] value />-->
 	<!-- If you add new docset values, the item/@id must = "meta_kIndexTechTag_" + the lower-case DocSet name. -->

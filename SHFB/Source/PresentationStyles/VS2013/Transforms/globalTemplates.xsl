@@ -259,7 +259,7 @@
 							 select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
-				<span class="keyword">
+				<span class="input">
 					<span class="languageSpecificText">
 						<span class="cs">null</span>
 						<span class="vb">Nothing</span>
@@ -282,7 +282,7 @@
 							 select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
-				<span class="keyword">
+				<span class="input">
 					<span class="languageSpecificText">
 						<span class="cs">static</span>
 						<span class="vb">Shared</span>
@@ -305,7 +305,7 @@
 							 select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
-				<span class="keyword">
+				<span class="input">
 					<span class="languageSpecificText">
 						<span class="cs">virtual</span>
 						<span class="vb">Overridable</span>
@@ -328,7 +328,7 @@
 							 select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
-				<span class="keyword">
+				<span class="input">
 					<span class="languageSpecificText">
 						<span class="cs">true</span>
 						<span class="vb">True</span>
@@ -351,7 +351,7 @@
 							 select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
-				<span class="keyword">
+				<span class="input">
 					<span class="languageSpecificText">
 						<span class="cs">false</span>
 						<span class="vb">False</span>
@@ -374,7 +374,7 @@
 							 select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
-				<span class="keyword">
+				<span class="input">
 					<span class="languageSpecificText">
 						<span class="cs">abstract</span>
 						<span class="vb">MustInherit</span>
@@ -393,7 +393,7 @@
 	</xsl:template>
 
 	<xsl:template name="t_inKeyword">
-		<span class="keyword">
+		<span class="input">
 			<span class="languageSpecificText">
 				<span class="cs">in</span>
 				<span class="vb">In</span>
@@ -405,7 +405,7 @@
 	</xsl:template>
 
 	<xsl:template name="t_outKeyword">
-		<span class="keyword">
+		<span class="input">
 			<span class="languageSpecificText">
 				<span class="cs">out</span>
 				<span class="vb">Out</span>
@@ -421,7 +421,7 @@
 							 select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
-				<span class="keyword">
+				<span class="input">
 					<span class="languageSpecificText">
 						<span class="cs">async</span>
 						<span class="vb">Async</span>
@@ -444,7 +444,7 @@
 							 select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
-				<span class="keyword">
+				<span class="input">
 					<span class="languageSpecificText">
 						<span class="cs">await</span>
 						<span class="vb">Await</span>
@@ -467,7 +467,7 @@
 							 select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
-				<span class="keyword">
+				<span class="input">
 					<span class="languageSpecificText">
 						<span class="cs">async</span>
 						<span class="vb">Async</span>
@@ -475,7 +475,7 @@
 						<span class="fs">async</span>
 						<span class="nu">async</span>
 					</span>
-				</span>/<span class="keyword">
+				</span>/<span class="input">
 					<span class="languageSpecificText">
 						<span class="cs">await</span>
 						<span class="vb">Await</span>
