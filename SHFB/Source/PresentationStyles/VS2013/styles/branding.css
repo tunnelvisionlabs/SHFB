@@ -216,6 +216,8 @@ h1
 	font-size: 2em; /*24pt*/
 	font-weight: 400;
 	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
 }
 
 h1.heading
@@ -224,6 +226,12 @@ h1.heading
 	font-family: Segoe UI, Verdana, Arial;
 	font-weight: bold;
 	line-height: 120%;
+}
+
+h1.title
+{
+	color: #68217a;
+	font: 100 33px/1.167 'Segoe UI Light', 'Segoe UI', Helvetica, Garuda, Arial, sans-serif;
 }
 
 h2
@@ -435,18 +443,6 @@ div.OH_outerContent div#mainSection table table td
 .media img
 {
 	vertical-align: top;
-}
-
-.HeaderCaptionText, .title
-{
-	color: #000000;
-	font-family: Segoe UI, Verdana, Arial;
-	font-size: 1.9em; /*24pt*/
-	font-style: normal;
-	font-variant: normal;
-	font-weight: bold;
-	line-height: normal;
-	margin: 0pt 0pt 10px;
 }
 
 div#mainBody div.alert, div#mainBody div.code
@@ -1361,9 +1357,8 @@ td.nsrBottom
 }
 span.code, span.command
 {
-	font-size: 105%;
-	color: #000066;
-	font-family: Monospace, Courier New, Courier;
+	color: #006400;
+	font-family: Consolas, Courier, monospace;
 }
 span.ui
 {
@@ -1439,6 +1434,30 @@ span.introStyle
 .OH_TocResize img
 {
 	border: none;
+}
+
+.ux-header
+{
+	clear: both;
+	font-family: 'Segoe UI', Helvetica, Garuda, Arial, sans-serif;
+}
+
+.ux-header, .ux-header a
+{
+	text-decoration: none;
+}
+
+.header-top-bar
+{
+	background: #68217a;
+}
+
+.header-top-bar
+{
+	height: 31px;
+	line-height: 31px;
+	padding-left: 9px;
+	color: #fff;
 }
 
 /* Various *******************************************************************/

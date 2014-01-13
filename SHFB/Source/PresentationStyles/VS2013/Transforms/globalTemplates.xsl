@@ -597,47 +597,18 @@
 	<xsl:template name="t_bodyTitle">
 		<xsl:variable name="placementLC" select="translate($logoPlacement, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')"/>
 		<xsl:variable name="alignmentLC" select="translate($logoAlignment, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')"/>
-		<table class="TitleTable">
-			<xsl:if test="normalize-space($logoFile) and $placementLC = 'above'">
-				<tr>
-					<td colspan="2" class="OH_tdLogoColumnAbove">
-						<xsl:attribute name="align">
-							<xsl:choose>
-								<xsl:when test="normalize-space($alignmentLC)">
-									<xsl:value-of select="$alignmentLC"/>
-								</xsl:when>
-								<xsl:otherwise>
-									<xsl:text>left</xsl:text>
-								</xsl:otherwise>
-							</xsl:choose>
-						</xsl:attribute>
-						<xsl:call-template name="logoImage" />
-					</td>
-				</tr>
-			</xsl:if>
-			<tr>
-				<xsl:if test="normalize-space($logoFile) and $placementLC = 'left'">
-					<td class="OH_tdLogoColumn">
-						<xsl:call-template name="logoImage" />
-					</td>
-				</xsl:if>
-				<td class="OH_tdTitleColumn">
-					<include item="boilerplate_pageTitle">
-						<parameter>
-							<xsl:call-template name="t_topicTitleDecorated"/>
-						</parameter>
-					</include>
-				</td>
-				<td class="OH_tdRunningTitleColumn">
-					<xsl:call-template name="t_runningHeader" />
-				</td>
-				<xsl:if test="normalize-space($logoFile) and $placementLC = 'right'">
-					<td class="OH_tdLogoColumn">
-						<xsl:call-template name="logoImage" />
-					</td>
-				</xsl:if>
-			</tr>
-		</table>
+		<header class="ux-header">
+			<div class="header-top-bar">
+				<xsl:call-template name="t_runningHeader" />
+			</div>
+		</header>
+		<h1 class="title">
+			<include item="boilerplate_pageTitle">
+				<parameter>
+					<xsl:call-template name="t_topicTitleDecorated"/>
+				</parameter>
+			</include>
+		</h1>
 	</xsl:template>
 
 	<xsl:template name="logoImage">
