@@ -263,20 +263,6 @@ h4.subHeading, .subHeading
 	margin: 0px;
 }
 
-dl
-{
-	margin: 0 0 10px;
-	padding: 0 0 0 1px;
-}
-dt
-{
-	font-style: normal;
-	margin: 0px;
-}
-dd
-{
-	margin-left: 13px;
-}
 li
 {
 	margin-bottom: 3px;
