@@ -512,11 +512,6 @@ div#mainBody div.alert
 	padding-bottom: 0.82em; /*9px*/
 }
 
-span.selflink
-{
-	font-weight: bold;
-}
-
 div.preliminary
 {
 	margin-top: 1em;
