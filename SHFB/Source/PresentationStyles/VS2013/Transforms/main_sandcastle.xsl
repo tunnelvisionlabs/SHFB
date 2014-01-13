@@ -421,26 +421,29 @@
 
 	<xsl:template match="templates"
 								name="t_templates">
-		<xsl:call-template name="t_putSectionInclude">
-			<xsl:with-param name="p_titleInclude"
-											select="'title_templates'"/>
-			<xsl:with-param name="p_content">
-				<dl>
-					<xsl:for-each select="template">
-						<xsl:variable name="templateName"
-													select="@name"/>
-						<dt>
-							<span class="parameter">
-								<xsl:value-of select="$templateName"/>
-							</span>
-						</dt>
-						<dd>
-							<xsl:apply-templates select="/document/comments/typeparam[@name=$templateName]"/>
-						</dd>
-					</xsl:for-each>
-				</dl>
-			</xsl:with-param>
-		</xsl:call-template>
+		<div id="genericParameters">
+			<xsl:call-template name="t_putSubSection">
+				<xsl:with-param name="p_title">
+					<include item="title_templates"/>
+				</xsl:with-param>
+				<xsl:with-param name="p_content">
+					<dl>
+						<xsl:for-each select="template">
+							<xsl:variable name="templateName"
+														select="@name"/>
+							<dt>
+								<span class="parameter">
+									<xsl:value-of select="$templateName"/>
+								</span>
+							</dt>
+							<dd>
+								<xsl:apply-templates select="/document/comments/typeparam[@name=$templateName]"/>
+							</dd>
+						</xsl:for-each>
+					</dl>
+				</xsl:with-param>
+			</xsl:call-template>
+		</div>
 	</xsl:template>
 
 	<!-- ======================================================================================== -->
