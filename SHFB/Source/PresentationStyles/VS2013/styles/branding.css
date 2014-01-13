@@ -13,7 +13,7 @@ body
 {
 	font-family: Segoe UI, Verdana, Arial;
 	font-size: 0.85em; /*10pt*/
-	color: #000;
+	color: #666;
 	margin: 0px;
 	padding: 0px;
 	min-width: 600px;
@@ -867,6 +867,7 @@ pre.ideCScode
 	padding-left: 21px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #000;
 }
 
 .codeSnippetContainerCode div
