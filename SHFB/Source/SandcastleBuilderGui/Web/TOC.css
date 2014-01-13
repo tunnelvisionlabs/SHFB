@@ -13,8 +13,8 @@
 
 body
 {
-    font-family: verdana, arial, sans-serif;
-    font-size: 8.5pt;
+    font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+    font-size: 0.85em;
     background-color: #6699CC;
     color: White;
 	overflow: hidden;
@@ -46,7 +46,7 @@ img.TOCLink
 
 a.SelectedNode, a.UnselectedNode
 {
-	color: black;
+	color: #1382ce;
     text-decoration: none;
 	padding: 1px 3px 1px 3px;
     white-space: nowrap;
@@ -54,22 +54,19 @@ a.SelectedNode, a.UnselectedNode
 
 a.SelectedNode
 {
-	background-color: #ffffff;
-    border: solid 1px #999999;
-	padding: 0px 2px 0px 2px;
+	color: #68217a;
 }
 
-a.UnselectedNode:hover, a.SelectedNode:hover
+a.UnselectedNode:hover, a.UnselectedNode:active
 {
-    background-color: #cccccc;
-    border: solid 1px #999999;
-	padding: 0px 2px 0px 2px;
+	background-color: #fff;
+	color: #00bcf2;
 }
 
 .Visible
 {
     display: block;
-    margin-left: 2em;
+    margin-left: 14px;
 }
 
 .Hidden
@@ -79,7 +76,7 @@ a.UnselectedNode:hover, a.SelectedNode:hover
 
 .Tree
 {
-	background-color: #f0f0f0;
+	background-color: #fff;
 	color: Black;
     width: 300px;
 	overflow: auto;
