@@ -30,6 +30,14 @@
 		/document/comments/conceptualLink |
 		/document/reference/elements/element/overloads//seealso) > 0)  or
     ($g_apiTopicGroup='type' or $g_apiTopicGroup='member' or $g_apiTopicGroup='list'))"/>
+	<xsl:variable name="g_hasReferenceLinks"
+		select="boolean((count(/document/comments//seealso[not(ancestor::overloads) and not(@href)] |
+		/document/reference/elements/element/overloads//seealso[not(@href)]) > 0)  or
+    ($g_apiTopicGroup='type' or $g_apiTopicGroup='member' or $g_apiTopicGroup='list'))"/>
+	<xsl:variable name="g_hasOtherResourcesLinks"
+		select="boolean((count(/document/comments//seealso[not(ancestor::overloads) and @href] |
+		/document/comments/conceptualLink |
+		/document/reference/elements/element/overloads//seealso[@href]) > 0))"/>
 
 	<!-- ============================================================================================
 	Body
@@ -833,21 +841,47 @@
 			<xsl:call-template name="t_putSectionInclude">
 				<xsl:with-param name="p_titleInclude" select="'title_relatedTopics'"/>
 				<xsl:with-param name="p_content">
-					<xsl:call-template name="t_autogenSeeAlsoLinks"/>
-					<xsl:for-each select="/document/comments//seealso[not(ancestor::overloads)] | /document/reference/elements/element/overloads//seealso">
-						<div class="seeAlsoStyle">
-							<xsl:apply-templates select=".">
-								<xsl:with-param name="displaySeeAlso"
-																select="true()"/>
-							</xsl:apply-templates>
-						</div>
-					</xsl:for-each>
-					<!-- Copy conceptualLink elements as-is -->
-					<xsl:for-each select="/document/comments/conceptualLink">
-						<div class="seeAlsoStyle">
-							<xsl:copy-of select="."/>
-						</div>
-					</xsl:for-each>
+					<xsl:if test="$g_hasReferenceLinks">
+						<xsl:call-template name="t_putSubSection">
+							<xsl:with-param name="p_title">
+								<include item="title_referenceLinks"/>
+							</xsl:with-param>
+							<xsl:with-param name="p_content">
+								<xsl:call-template name="t_autogenSeeAlsoLinks"/>
+								<xsl:for-each select="/document/comments//seealso[not(ancestor::overloads) and not(@href)] | /document/reference/elements/element/overloads//seealso[not(@href)]">
+									<div class="seeAlsoStyle">
+										<xsl:apply-templates select=".">
+											<xsl:with-param name="displaySeeAlso"
+																			select="true()"/>
+										</xsl:apply-templates>
+									</div>
+								</xsl:for-each>
+							</xsl:with-param>
+						</xsl:call-template>
+					</xsl:if>
+					<xsl:if test="$g_hasOtherResourcesLinks">
+						<xsl:call-template name="t_putSubSection">
+							<xsl:with-param name="p_title">
+								<include item="title_otherResources"/>
+							</xsl:with-param>
+							<xsl:with-param name="p_content">
+								<xsl:for-each select="/document/comments//seealso[not(ancestor::overloads) and @href] | /document/reference/elements/element/overloads//seealso[@href]">
+									<div class="seeAlsoStyle">
+										<xsl:apply-templates select=".">
+											<xsl:with-param name="displaySeeAlso"
+																			select="true()"/>
+										</xsl:apply-templates>
+									</div>
+								</xsl:for-each>
+								<!-- Copy conceptualLink elements as-is -->
+								<xsl:for-each select="/document/comments/conceptualLink">
+									<div class="seeAlsoStyle">
+										<xsl:copy-of select="."/>
+									</div>
+								</xsl:for-each>
+							</xsl:with-param>
+						</xsl:call-template>
+					</xsl:if>
 				</xsl:with-param>
 			</xsl:call-template>
 		</xsl:if>

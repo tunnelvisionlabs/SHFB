@@ -142,6 +142,8 @@
 	<item id="title_versions">Versionsinformation</item>
 	<item id="title_platforms">Plattformen</item>
 	<item id="title_relatedTopics">Siehe auch</item>
+	<item id="title_referenceLinks">Referenz</item>
+	<item id="title_otherResources">Weitere Ressourcen</item>
 	<item id="title_extensionUsage">Verwendungshinweise</item>
 	<item id="text_extensionUsage">In Visual Basic und C# können Sie diese Methode als Instanzmethode eines beliebigen Objektes vom Typ {0} aufrufen. Wenn Sie die Instanzmethodensyntax beim Methodenaufruf anwenden, lassen Sie den ersten Parameter weg. Für weitere Informationen siehe <a href="http://msdn.microsoft.com/en-us/library/bb384936.aspx" target="_blank">Extension Methods (Visual Basic)</a> or <a href="http://msdn.microsoft.com/en-us/library/bb383977.aspx" target="_blank">Erweiterungsmethoden (C# Programmierhandbuch)</a>.</item>
 

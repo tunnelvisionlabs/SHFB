@@ -13,6 +13,8 @@
 	<item id="title_requirements">Требования</item>
 	<item id="title_relatedSections">Связанные разделы</item>
 	<item id="title_relatedTopics">См. также</item>
+	<item id="title_referenceLinks">Reference</item>
+	<item id="title_otherResources">Other Resources</item>
 	<item id="title_syntax">Синтаксис</item>
 	<item id="title_parameters">Параметры</item>
 	<item id="title_returnValue">Возвращаемое значение</item>
