@@ -1476,10 +1476,6 @@ span.placeholder
 {
 	font-style: italic;
 }
-span.keyword
-{
-	font-weight: bold;
-}
 span.typeparameter
 {
 	font-style: italic;
@@ -1489,7 +1485,7 @@ span.identifier
 }
 span.keyword
 {
-	color: #871f78;
+	color: blue;
 }
 span.parameter
 {
@@ -1497,7 +1493,7 @@ span.parameter
 }
 span.literal, span.literalValue
 {
-	color: maroon;
+	color: #a31515;
 }
 span.comment
 {
