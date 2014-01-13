@@ -308,13 +308,12 @@ ol ul, ul ol
 p
 {
 	margin: 0;
-	margin-top: 12px;
-	margin-bottom: 12px;
+	padding-bottom: 15px;
+	line-height: 18px;
 }
-div.section p
+table p
 {
-	margin-bottom: 15px;
-	margin-top: 0;
+	padding-bottom: 0;
 }
 ul
 {
@@ -388,11 +387,6 @@ div.OH_outerContent div#mainSection table td
 {
 	font-family: Segoe UI, Verdana, Arial;
 	font-size: 0.85em; /*10pt*/
-}
-
-div.OH_outerContent div#mainSection table td p
-{
-	padding: 5px;
 }
 
 div.OH_outerContent div#mainSection table td.imageCell
