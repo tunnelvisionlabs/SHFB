@@ -3,20 +3,42 @@
 *.wixproj.user
 *.suo
 *.shfbproj_*
+StyleCop.Cache
 
 # Generated output
 [Bb]in/
 [Oo]bj/
 [Hh]elp/
-/SHFB/Deploy/Presentation/vs2010/Branding/dev10.mshc
+/SHFB/Deploy/*.exe
+/SHFB/Deploy/*.pdb
+/SHFB/Deploy/*.config
+/SHFB/Deploy/*.dll
+/SHFB/Deploy/*.xml
+/SHFB/Deploy/*.exe.manifest
+/SHFB/Deploy/*.targets
+/SHFB/Deploy/*.presentation
+/SHFB/Deploy/Colorizer/
+/SHFB/Deploy/ConceptualTemplates/
+/SHFB/Deploy/Data/Reflection/
+/SHFB/Deploy/Extras/
+/SHFB/Deploy/ItemTemplates/
+/SHFB/Deploy/PresentationStyles/
+/SHFB/Deploy/ProductionTransforms/
+/SHFB/Deploy/SharedContent/
+/SHFB/Deploy/Spelling/
+/SHFB/Deploy/Templates/
+/SHFB/Deploy/Web/
+/Deployment/InstallResources/
+
+# Produced by the WiX heat tool for local comparison to the actual setup wxs
+/SHFB/Source/Setup/Temp/DeploymentFiles.wxs
+
 
 # Profiling data and performance sessions
 *.vspx
 *.vsp
 *.psess
 
-/Sandcastle/ProductionTools/
-/SHFB/Source/packages/
-
 # Solution uses NuGet Package Restore
 /packages/
+/SHFB/Source/packages/
