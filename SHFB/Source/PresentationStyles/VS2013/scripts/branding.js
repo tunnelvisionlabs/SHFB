@@ -465,8 +465,6 @@ function setCurrentLang(objid, lang, index, snippetCount, setLangSpecText)
         {
           if (tabtemp.className == "codeSnippetContainerTabActive")
             tabtemp.className = "codeSnippetContainerTab";
-          if (tabtemp.className == "codeSnippetContainerTabActive")
-            tabtemp.className = "codeSnippetContainerTab";
         }
         var codetemp = document.getElementById(objid + "_code_Div" + i);
         if (codetemp != null)
@@ -477,29 +475,9 @@ function setCurrentLang(objid, lang, index, snippetCount, setLangSpecText)
         i++;
       }
       document.getElementById(objid + "_tab" + index).className = "codeSnippetContainerTabActive";
-      if (index != 1)
-        document.getElementById(objid + "_tab" + index).className = "codeSnippetContainerTabActive";
 
       if (viewPlain == false) document.getElementById(objid + '_code_Div' + index).style.display = 'block';
       else document.getElementById(objid + '_code_Plain_Div' + index).style.display = 'block';
-
-      // change the css of the first/last image div according the current selected tab
-      // if the first tab is selected
-      if (index == 1)
-        document.getElementById(objid + "_tabs").firstChild.className = "codeSnippetContainerTabActive";
-      else
-      {
-        if (document.getElementById(objid + "_tabs").firstChild.className != "codeSnippetContainerTabPhantom")
-          document.getElementById(objid + "_tabs").firstChild.className = "codeSnippetContainerTab";
-      }
-      // if the last tab is selected
-      if (index == snippetCount)
-        document.getElementById(objid + "_tabs").lastChild.className = "codeSnippetContainerTabActive";
-      else
-      {
-        if (document.getElementById(objid + "_tabs").lastChild.className != "codeSnippetContainerTabPhantom")
-          document.getElementById(objid + "_tabs").lastChild.className = "codeSnippetContainerTab";
-      }
 
       // show copy code button if EnableCopyCode is set to true (and not in Chrome)
       if (document.getElementById(objid + "_tab" + index).getAttribute("EnableCopyCode") == "true"
