@@ -783,9 +783,9 @@
 	<!-- To customize the starter set of grouped code languages, update this list -->
 	<xsl:variable name="groupedLanguages">
 		<value>C#</value>
-		<value>Visual Basic</value>
 		<value>Visual C++</value>
 		<value>F#</value>
+		<value>Visual Basic</value>
 	</xsl:variable>
 	<!-- To customize the code languages that should NOT be grouped, update this list -->
 	<xsl:variable name="separateLanguages">
