@@ -29,6 +29,7 @@ StyleCop.Cache
 /SHFB/Deploy/Templates/
 /SHFB/Deploy/Web/
 /Deployment/InstallResources/
+/Deployment/SandcastleInstaller.exe
 
 # Produced by the WiX heat tool for local comparison to the actual setup wxs
 /SHFB/Source/Setup/Temp/DeploymentFiles.wxs
