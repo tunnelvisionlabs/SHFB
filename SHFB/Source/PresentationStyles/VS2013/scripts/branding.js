@@ -750,36 +750,7 @@ function Toggle(item)
                 dataType: "xml",
                 success: function (data)
                 {
-                    var childLevel = +$(item).parent().attr("data-toclevel") + 1;
-                    var childTocLevel = childLevel >= 2 ? 2 : childLevel;
-                    var elements = data.getElementsByTagName("HelpTOCNode");
-
-                    var isRoot = true;
-                    if (data.getElementsByTagName("HelpTOC").length == 0)
-                    {
-                        // the first node is the root node of this group, don't show it again
-                        isRoot = false;
-                    }
-
-                    for (var i = elements.length - 1; i > 0 || (isRoot && i == 0); i--)
-                    {
-                        var hasChildren = elements[i].getAttribute("HasChildren");
-                        var childId = elements[i].getAttribute("Url");
-                        childId = childId.substring(5, childId.lastIndexOf("."));
-                        var childTitle = elements[i].getAttribute("Title");
-                        var expander = "<span class=\"toc_empty\"></span>";
-                        if (hasChildren)
-                        {
-                            expander = "<a class=\"toc_collapsed\" onclick=\"javascript: Toggle(this);\" href=\"#\"></a>";
-                        }
-                        var text = "<div class=\"toclevel" + childTocLevel + "\" data-toclevel=\"" + childLevel + "\" style=\"padding-left: " + (childLevel * 13) + "px;\">" +
-                            expander + "<a data-tochassubtree=\"" + hasChildren + "\" href=\"" + childId + ".htm\" " +
-                            "title=\"" + childTitle + "\" tocid=\"" + childId + "\">" + childTitle + "</a></div>";
-
-                        $(item).parent().after(text);
-                    }
-
-                    $(item).parent().attr("data-childrenloaded", true);
+                    BuildChildren($(item).parent(), data);
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown)
                 {
@@ -787,6 +758,71 @@ function Toggle(item)
             });
         }
     }
+}
+
+function BuildChildren(tocDiv, data)
+{
+    var childLevel = +tocDiv.attr("data-toclevel") + 1;
+    var childTocLevel = childLevel >= 2 ? 2 : childLevel;
+    var elements = data.getElementsByTagName("HelpTOCNode");
+
+    var isRoot = true;
+    if (data.getElementsByTagName("HelpTOC").length == 0)
+    {
+        // the first node is the root node of this group, don't show it again
+        isRoot = false;
+    }
+
+    for (var i = elements.length - 1; i > 0 || (isRoot && i == 0); i--)
+    {
+        var childId = elements[i].getAttribute("Url");
+        childId = childId.substring(5, childId.lastIndexOf("."));
+
+        var existingItem = null;
+        tocDiv.nextAll().each(function () {
+            if (!existingItem && $(this).children().last("a").attr("tocid") == childId) {
+                existingItem = $(this);
+            }
+        });
+
+        if (existingItem != null) {
+            // first move the children of the existing item
+            var existingChildLevel = +existingItem.attr("data-toclevel");
+            var doneMoving = false;
+            var inserter = tocDiv;
+            existingItem.nextAll().each(function () {
+                if (!doneMoving && +$(this).attr("data-toclevel") > existingChildLevel) {
+                    inserter.after($(this));
+                    inserter = $(this);
+                    $(this).attr("data-toclevel", +$(this).attr("data-toclevel") + childLevel - existingChildLevel);
+                    $(this).css("padding-left", (+$(this).attr("data-toclevel") * 13) + "px");
+                }
+                else {
+                    doneMoving = true;
+                }
+            });
+
+            // now move the existing item itself
+            tocDiv.after(existingItem);
+            existingItem.attr("data-toclevel", childLevel);
+            existingItem.css("padding-left", (childLevel * 13) + "px");
+        }
+        else {
+            var hasChildren = elements[i].getAttribute("HasChildren");
+            var childTitle = elements[i].getAttribute("Title");
+            var expander = "<span class=\"toc_empty\"></span>";
+            if (hasChildren) {
+                expander = "<a class=\"toc_collapsed\" onclick=\"javascript: Toggle(this);\" href=\"#\"></a>";
+            }
+            var text = "<div class=\"toclevel" + childTocLevel + "\" data-toclevel=\"" + childLevel + "\" style=\"padding-left: " + (childLevel * 13) + "px;\">" +
+            expander + "<a data-tochassubtree=\"" + hasChildren + "\" href=\"" + childId + ".htm\" " +
+            "title=\"" + childTitle + "\" tocid=\"" + childId + "\">" + childTitle + "</a></div>";
+
+            tocDiv.after(text);
+        }
+    }
+
+    tocDiv.attr("data-childrenloaded", true);
 }
 
 function Collapse(tocDiv)
