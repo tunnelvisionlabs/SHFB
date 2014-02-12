@@ -22,6 +22,7 @@
 				<xsl:attribute name="class">OH_outerDiv</xsl:attribute>
 				<xsl:element name="div" namespace="{$xhtml}">
 					<xsl:attribute name="class">OH_outerContent</xsl:attribute>
+					<xsl:attribute name="id">OuterContent</xsl:attribute>
 					<xsl:apply-templates select="node()"/>
 				</xsl:element>
 			</xsl:element>

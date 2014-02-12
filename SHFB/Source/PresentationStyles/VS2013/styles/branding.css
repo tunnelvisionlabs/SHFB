@@ -505,7 +505,6 @@ div.clsNote
 {
 	font: 100 22px 'Segoe UI Light', 'Segoe UI', Helvetica, Garuda, Arial, sans-serif !important;
 	color: #000;
-	float: left;
 	background-color: #FFFFFF;
 	padding-top: 20px;
 	padding-bottom: 5px;
@@ -650,7 +649,6 @@ pre.ideCScode
 .codeSnippetContainer
 {
 	min-width: 260px;
-	clear: both;
 }
 
 .codeSnippetContainerTabs
@@ -791,7 +789,6 @@ pre.ideCScode
 	border-bottom: solid 1px #939393;
 	border-right: solid 1px #939393;
 	border-top: solid 1px #939393;
-	clear: both;
 	margin-bottom: 12px;
 	position: relative;
 	top: -1px;
@@ -1118,7 +1115,6 @@ span.OH_mtps-th
 	_margin-right: -4px;
 	background-color: White;
 	overflow: hidden;
-	border-bottom: solid 1px #bbbbbb;
 	border-right: 1px solid #bbb;
 }
 
@@ -1129,7 +1125,6 @@ span.OH_mtps-th
 
 .OH_outerContent
 {
-	_width: 99.9%;
 	overflow: visible;
 	border-left: 1px solid #bbb;
 }
@@ -1307,11 +1302,6 @@ div.OH_siblingTocLinks a:visited
 	padding: 0px 5px 0px 5px;
 }
 
-.OH_clear
-{
-	clear: both;
-}
-
 div.OH_outerContent div#mainSection table.OH_borderlessTable, div.OH_outerContent div#mainSection table.OH_borderlessTable tr, div.OH_outerContent div#mainSection table.OH_borderlessTable td
 {
 	border: 0;
@@ -1428,11 +1418,11 @@ span.introStyle
 .OH_TocResize img
 {
 	border: none;
+	margin-left: 5px;
 }
 
 .ux-header
 {
-	clear: both;
 	font-family: 'Segoe UI', Helvetica, Garuda, Arial, sans-serif;
 }
 
@@ -1452,6 +1442,52 @@ span.introStyle
 	line-height: 31px;
 	padding-left: 9px;
 	color: #fff;
+}
+
+/* Lightweight TOC */
+
+div#LeftNav a.toc_expanded
+{
+	float: left;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url('../Expanded.gif') no-repeat scroll center;
+}
+
+div#LeftNav a.toc_collapsed
+{
+	float: left;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url('../Collapsed.gif') no-repeat scroll center;
+}
+
+div#LeftNav div.current a, div#LeftNav div.current a:hover, div#LeftNav div.current a:active, div#LeftNav div.current a:visited
+{
+	color: #68217a;
+}
+
+div#tocnav > div
+{
+	margin-bottom: 5px;
+}
+
+div#tocnav > div > a
+{
+	display: block;
+	overflow: hidden;
+}
+
+div#tocnav > div > span.toc_empty
+{
+	background: none;
+	outline: none;
+	float: left;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
 }
 
 /* Various *******************************************************************/

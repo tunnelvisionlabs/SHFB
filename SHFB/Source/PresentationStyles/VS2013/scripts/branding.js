@@ -700,6 +700,8 @@ function resizeToc()
     var tocWidth = 280 + ((tocPosition - 1) * 100);
     toc.style.width = tocWidth + "px";
 
+    document.getElementById("OuterContent").style.marginLeft = tocWidth + "px";
+
     // Position images
     if (document.all) tocWidth -= 1;
     document.getElementById("TocResize").style.left = tocWidth + "px";
@@ -724,4 +726,115 @@ function preventEventBubbling(e)
   }
 }
 
+function Toggle(item)
+{
+    var isExpanded = $(item).hasClass("toc_expanded");
+    $(item).toggleClass("toc_expanded toc_collapsed");
+    if (isExpanded)
+    {
+        Collapse($(item).parent());
+    }
+    else
+    {
+        var childrenLoaded = $(item).parent().attr("data-childrenloaded");
+        if (childrenLoaded)
+        {
+            Expand($(item).parent());
+        }
+        else
+        {
+            var tocid = $(item).next().attr("tocid");
+            $.ajax({
+                url: "../toc/" + tocid + ".xml",
+                async: true,
+                dataType: "xml",
+                success: function (data)
+                {
+                    var childLevel = +$(item).parent().attr("data-toclevel") + 1;
+                    var childTocLevel = childLevel >= 2 ? 2 : childLevel;
+                    var elements = data.getElementsByTagName("HelpTOCNode");
 
+                    var isRoot = true;
+                    if (data.getElementsByTagName("HelpTOC").length == 0)
+                    {
+                        // the first node is the root node of this group, don't show it again
+                        isRoot = false;
+                    }
+
+                    for (var i = elements.length - 1; i > 0 || (isRoot && i == 0); i--)
+                    {
+                        var hasChildren = elements[i].getAttribute("HasChildren");
+                        var childId = elements[i].getAttribute("Url");
+                        childId = childId.substring(5, childId.lastIndexOf("."));
+                        var childTitle = elements[i].getAttribute("Title");
+                        var expander = "<span class=\"toc_empty\"></span>";
+                        if (hasChildren)
+                        {
+                            expander = "<a class=\"toc_collapsed\" onclick=\"javascript: Toggle(this);\" href=\"#\"></a>";
+                        }
+                        var text = "<div class=\"toclevel" + childTocLevel + "\" data-toclevel=\"" + childLevel + "\" style=\"padding-left: " + (childLevel * 13) + "px;\">" +
+                            expander + "<a data-tochassubtree=\"" + hasChildren + "\" href=\"" + childId + ".htm\" " +
+                            "title=\"" + childTitle + "\" tocid=\"" + childId + "\">" + childTitle + "</a></div>";
+
+                        $(item).parent().after(text);
+                    }
+
+                    $(item).parent().attr("data-childrenloaded", true);
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown)
+                {
+                }
+            });
+        }
+    }
+}
+
+function Collapse(tocDiv)
+{
+    // hide all the TOC elements after item, until we reach one with a data-toclevel less than or equal to the current item's value
+    var tocLevel = +tocDiv.attr("data-toclevel");
+    var done = false;
+    tocDiv.nextAll().each(function ()
+    {
+        if (!done && +$(this).attr("data-toclevel") > tocLevel)
+        {
+            $(this).hide();
+        }
+        else
+        {
+            done = true;
+        }
+    });
+}
+
+function Expand(tocDiv)
+{
+    // show all the TOC elements after item, until we reach one with a data-toclevel less than or equal to the current item's value
+    var tocLevel = +tocDiv.attr("data-toclevel");
+    var done = false;
+    tocDiv.nextAll().each(function ()
+    {
+        if (done)
+        {
+            return;
+        }
+
+        var childTocLevel = +$(this).attr("data-toclevel");
+        if (childTocLevel == tocLevel + 1)
+        {
+            $(this).show();
+            if ($(this).children("a").first().hasClass("toc_expanded"))
+            {
+                Expand($(this));
+            }
+        }
+        else if (childTocLevel > tocLevel + 1)
+        {
+            // ignore this node, handled by recursive calls
+        }
+        else
+        {
+            done = true;
+        }
+    });
+}
