@@ -83,24 +83,6 @@ function onLoad()
         finally {}
     }
 
-    // This compensates for a bug in the default transforms that changes <br/> to <br></br> in SelfBranded content
-    try
-    {
-        var brTags = document.getElementsByTagName("br")
-
-        for(var idx = 0; idx < brTags.length; idx++)
-        {
-            var brTag = brTags[idx];
-            var brNext = brTag.nextSibling;
-
-            if(brNext)
-                if(brNext.tagName != undefined && brNext.tagName.toLowerCase() == "br")
-                    brNext.parentElement.removeChild (brNext);
-        }
-    }
-    catch (e) { }
-    finally {}
-
   var lang = GetCookie("CodeSnippetContainerLang", "C#");
   var currentLang = getDevLangFromCodeSnippet(lang);
 
