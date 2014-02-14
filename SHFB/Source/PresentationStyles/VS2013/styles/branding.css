@@ -1409,16 +1409,19 @@ span.introStyle
 .OH_TocResize
 {
 	position: absolute;
-	top: 86px;
-	left: 279px;
+	top: 66px;
+	left: 280px;
 	width: 5px;
 	height: 20px;
-	cursor: pointer;
+	min-height: 3351px;
+	padding-right: 5px;
 }
 .OH_TocResize img
 {
 	border: none;
-	margin-left: 5px;
+	padding-left: 5px;
+	cursor: pointer;
+	margin-top: 20px;
 }
 
 .ux-header

@@ -5,7 +5,7 @@ var allLanguageTagSets = new Array();
 // we stored the ids of code snippets of same pages so that we can do interaction between them when tab are selected
 var snippetIdSets = new Array();
 var isSearchPage = false;
-// Width of TOC: 1 (280px), 2 (480px), 3 (680px)
+// Width of TOC: 0 (0px), 1 (280px), 2 (480px), 3 (680px)
 var tocPosition = 1;
 
 function onLoad()
@@ -678,14 +678,14 @@ function SearchTextboxKeyUp(e)
 function onIncreaseToc()
 {
   tocPosition++;
-  if (tocPosition > 3) tocPosition = 1;
+  if (tocPosition > 3) tocPosition = 0;
   resizeToc();
   SetCookie("TocPosition", tocPosition);
 }
 
 function onResetToc()
 {
-  tocPosition = 1;
+  tocPosition = 0;
   resizeToc();
   SetCookie("TocPosition", tocPosition);
 }
@@ -697,7 +697,7 @@ function resizeToc()
   {
     // Set TOC width
     // Positions: 1 (280px) 2 (380px) 3 (480px)
-    var tocWidth = 280 + ((tocPosition - 1) * 100);
+    var tocWidth = tocPosition == 0 ? 0 : 280 + ((tocPosition - 1) * 100);
     toc.style.width = tocWidth + "px";
 
     document.getElementById("OuterContent").style.marginLeft = tocWidth + "px";
@@ -873,4 +873,9 @@ function Expand(tocDiv)
             done = true;
         }
     });
+}
+
+function DocumentReady() {
+    // once dragging the TOC resize bar is implemented, it is hooked up here
+    //$("#TocResize").css("cursor", "e-resize");
 }

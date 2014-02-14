@@ -179,8 +179,8 @@
                         new XAttribute("id", "LeftNav"),
                         tocnav);
 
-                string resizeIncreaseTooltip = "Click to expand";
-                string resizeResetTooltip = "Click to reset";
+                string resizeIncreaseTooltip = "Expand";
+                string resizeResetTooltip = "Minimize";
                 XElement resizeUi =
                     new XElement("div",
                         new XAttribute("id", "TocResize"),
