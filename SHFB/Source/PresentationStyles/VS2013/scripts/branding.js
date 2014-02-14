@@ -34,55 +34,6 @@ function onLoad()
     catch (e) { }
     finally {}
 
-    if(iconPath)
-    {
-        try
-        {
-            var styleSheetEnum = document.styleSheets;
-            var styleSheet;
-            var ruleNdx;
-            var rule;
-
-            for(var idx = 0; idx < styleSheetEnum.length; idx++)
-            {
-                styleSheet = styleSheetEnum[idx];
-
-                // Ignore sheets at ms-help Urls
-                if(styleSheet.href != null && styleSheet.href.substr(0,8) == "ms-help:")
-                    continue;
-
-                // Ignore errors (Help Viewer 2).  styleSheet.rules is inaccessible due to security restrictions
-                // for all stylesheets not defined within the page.
-                try
-                {
-                    // Get sheet rules
-                    var rules = styleSheet.rules;
-
-                    if(rules == null)
-                        rules = styleSheet.cssRules;
-
-                    if(rules != null)
-                        if(rules.length != 0)
-                            for(ruleNdx = 0; ruleNdx != rules.length; ruleNdx++)
-                            {
-                                rule = rules.item(ruleNdx);
-
-                                var selectorText = rule.selectorText.toLowerCase();
-
-                                if(selectorText == ".oh_footer")
-                                {
-                                    rule.style.backgroundImage = "url(" + iconPath.replace("favicon.ico", "footer_slice.gif") + ")";
-                                }
-                            }
-                }
-                catch (e) { }
-                finally {}
-            }
-        }
-        catch (e) { }
-        finally {}
-    }
-
   var lang = GetCookie("CodeSnippetContainerLang", "C#");
   var currentLang = getDevLangFromCodeSnippet(lang);
 
@@ -704,7 +655,8 @@ function resizeToc()
 
     // Position images
     if (document.all) tocWidth -= 1;
-    document.getElementById("TocResize").style.left = tocWidth + "px";
+    var outerDivPaddingLeft = 20;
+    document.getElementById("TocResize").style.left = (tocWidth + outerDivPaddingLeft) + "px";
 
     // Hide/show increase TOC width image
     document.getElementById("ResizeImageIncrease").style.display = (tocPosition == 3) ? "none" : "";

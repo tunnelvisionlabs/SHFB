@@ -218,12 +218,19 @@
                 string initialStyle = " style=\"margin-left: 280px;\"";
                 outputFile = outputFile.Replace(outerContentId, outerContentId + initialStyle);
 
+                string outerDivClass = " class=\"OH_outerDiv\"";
+                initialStyle = " style=\"padding: 35px 20px 0 20px;\"";
+                outputFile = outputFile.Replace(outerDivClass, outerDivClass + initialStyle);
+
                 // jquery
                 if (outputFile.IndexOf("/jquery-") < 0)
                 {
                     string jqueryScript = @"<script src=""//code.jquery.com/jquery-1.11.0.min.js""></script>";
                     outputFile = outputFile.Replace("</body>", jqueryScript + "</body>");
                 }
+
+                string script = "<script type=\"text/javascript\">$(document).ready(function () {DocumentReady();});</script>";
+                outputFile = outputFile.Replace("</body>", script + "</body>");
 
                 File.WriteAllText(path, outputFile, Encoding.UTF8);
             }

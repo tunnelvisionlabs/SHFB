@@ -1121,6 +1121,8 @@ span.OH_mtps-th
 .OH_outerDiv
 {
 	background-color: #ffffff;
+	/* padding is set by LightweightTocPlugin when necessary. */
+	/*padding: 35px 20px 0 20px;*/
 }
 
 .OH_outerContent
@@ -1133,11 +1135,9 @@ span.OH_mtps-th
 {
 	clear: both;
 	border-top: solid 1px #bbb;
-	padding: 0px 10px 5px 10px;
-	/*  background-image: url(footer_slice.gif); Added by script */
-	background-position: top;
-	background-repeat: repeat-x;
+	padding: 20px 20px 56px 20px;
 }
+
 .OH_feedbacklink
 {
 	font-family: Segoe UI, Verdana, Arial;
@@ -1410,7 +1410,7 @@ span.introStyle
 {
 	position: absolute;
 	top: 66px;
-	left: 280px;
+	left: 300px;
 	width: 5px;
 	height: 20px;
 	min-height: 3351px;

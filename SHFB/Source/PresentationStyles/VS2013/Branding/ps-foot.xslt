@@ -55,16 +55,18 @@
 								 namespace="{$xhtml}">
 			<xsl:attribute name="id">OH_footer</xsl:attribute>
 			<xsl:attribute name="class">OH_footer</xsl:attribute>
-			<xsl:element name="p"
-									 namespace="{$xhtml}">
-				<xsl:apply-templates select="$ft_footerText"/>
-				<xsl:if test="normalize-space($ft_copyrightLink)=''">
-					<xsl:if test="normalize-space($ft_footerText)!=''">
-						<xsl:text>&#160;</xsl:text>
+			<xsl:if test="normalize-space($ft_footerText)!='' or normalize-space($ft_copyrightLink)=''">
+				<xsl:element name="p"
+										 namespace="{$xhtml}">
+					<xsl:apply-templates select="$ft_footerText"/>
+					<xsl:if test="normalize-space($ft_copyrightLink)=''">
+						<xsl:if test="normalize-space($ft_footerText)!=''">
+							<xsl:text>&#160;</xsl:text>
+						</xsl:if>
+						<xsl:copy-of select="$ft_copyrightInfo" />
 					</xsl:if>
-					<xsl:copy-of select="$ft_copyrightInfo" />
-				</xsl:if>
-			</xsl:element>
+				</xsl:element>
+			</xsl:if>
 			<xsl:if test="normalize-space($ft_copyrightLink)!=''">
 				<xsl:element name="p"
 										 namespace="{$xhtml}">

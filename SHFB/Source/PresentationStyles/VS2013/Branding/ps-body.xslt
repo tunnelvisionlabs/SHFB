@@ -18,12 +18,13 @@
 			</xsl:if>
 			<xsl:apply-templates select="@*"/>
 
+			<xsl:apply-templates select="xhtml:header"/>
 			<xsl:element name="div" namespace="{$xhtml}">
 				<xsl:attribute name="class">OH_outerDiv</xsl:attribute>
 				<xsl:element name="div" namespace="{$xhtml}">
 					<xsl:attribute name="class">OH_outerContent</xsl:attribute>
 					<xsl:attribute name="id">OuterContent</xsl:attribute>
-					<xsl:apply-templates select="node()"/>
+					<xsl:apply-templates select="node()[not(self::xhtml:header)]"/>
 				</xsl:element>
 			</xsl:element>
 			<xsl:call-template name="footer"/>
