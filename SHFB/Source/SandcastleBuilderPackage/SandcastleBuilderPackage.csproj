@@ -48,6 +48,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.CoreUtility, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Editor, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Language.Intellisense, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.OLE.Interop" />
     <Reference Include="Microsoft.VisualStudio.Shell.Interop" />
     <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0" />
@@ -166,6 +167,11 @@
     <Compile Include="Editors\SiteMapEditorPane.cs" />
     <Compile Include="Editors\TokenEditorFactory.cs" />
     <Compile Include="Editors\TokenEditorPane.cs" />
+    <Compile Include="IntelliSense\AugmentedCompletionSet.cs" />
+    <Compile Include="IntelliSense\CompletionDisplayTextComparer.cs" />
+    <Compile Include="IntelliSense\CSharpDocumentationCompletionSource.cs" />
+    <Compile Include="IntelliSense\CSharpDocumentationCompletionSourceProvider.cs" />
+    <Compile Include="IntelliSense\CustomCompletion.cs" />
     <Compile Include="PropertyPages\TransformArgumentsPageControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
