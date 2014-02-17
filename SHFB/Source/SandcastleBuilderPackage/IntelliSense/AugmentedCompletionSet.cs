@@ -138,37 +138,61 @@ namespace SandcastleBuilder.Package.IntelliSense
 
         /// <inheritdoc/>
         /// <remarks>
-        /// This method calls <see cref="SelectBestMatch"/> on each of the underlying completion
-        /// sets, and then calls the base implementation for the current instance. A future
-        /// implementation might provide a special interface that allows selecting a best match
-        /// across multiple source <see cref="CompletionSet"/> instances, but for now we must
-        /// rely on the default algorithm operating on the merged collections.
+        /// This method first checks the <see cref="CompletionSet.SelectionStatus"/> property to
+        /// determine if a <see cref="Completion"/> has been manually selected. This condition is
+        /// identified by <em>all</em> of the following conditions being true.
         ///
-        /// <para>After the base calls are made, the <see cref="CompletionSet.SelectionStatus"/>
-        /// is checked for the current collection and each of the source collections. If exactly
-        /// one of the results has the <see cref="CompletionSelectionStatus.IsUnique"/> property
-        /// set to <see langword="true"/>, and that completion set also has
-        /// <see cref="CompletionSelectionStatus.IsSelected"/> set to <see langword="true"/>,
-        /// the <see cref="CompletionSet.SelectionStatus"/> for the augmented completion set is
-        /// set to match the result from that collection. This special handling ensures that the
-        /// behavior of the <strong>Enter</strong> key is preserved for completion items created
-        /// by the C# language service.</para>
+        /// <list type="bullet">
+        /// <item><see cref="CompletionSelectionStatus.Completion"/> is not <see langword="null"/>.</item>
+        /// <item><see cref="CompletionSelectionStatus.IsSelected"/> is <see langword="true"/>.</item>
+        /// <item><see cref="CompletionSelectionStatus.IsUnique"/> is <see langword="true"/>.</item>
+        /// <item><see cref="CompletionSet.SelectionStatus"/> is not equal to the
+        /// <see cref="CompletionSet.SelectionStatus"/> value for either of the underlying completion
+        /// sets; i.e. it was explicitly set for the augmented completion set.</item>
+        /// </list>
+        ///
+        /// <para>Next, this method ensures that the last typed character is actually a letter.
+        /// This test prevents <see cref="SelectBestMatch"/> from changing the current selection
+        /// when the user types a non-letter character to commit the selection, such as <c>&lt;</c>,
+        /// <c>/</c>, or <c>"</c>. When a non-letter character is typed, the augmented set
+        /// assumes that the correct selection was made during a previous call to
+        /// <see cref="SelectBestMatch"/>.</para>
+        ///
+        /// <para>This method calls <see cref="SelectBestMatch"/> on each of the underlying completion
+        /// sets. If these calls result in a <em>single</em> unique selection, that selection is
+        /// assigned to the <see cref="CompletionSet.SelectionStatus"/> property. Otherwise, the base
+        /// implementation is called to determine the best selection from the augmented completion
+        /// set.</para>
+        ///
+        /// <note type="note">A future implementation might provide a special interface that allows
+        /// selecting a best match across multiple source <see cref="CompletionSet"/> instances, but
+        /// for now we must rely on the default algorithm operating on the merged collections.</note>
         /// </remarks>
         public override void SelectBestMatch()
         {
-            _source.SelectBestMatch();
-            _secondSource.SelectBestMatch();
-            base.SelectBestMatch();
+            // don't overwrite manually selected results
+            if (SelectionStatus != null && SelectionStatus.Completion != null && SelectionStatus.IsSelected && SelectionStatus.IsUnique)
+            {
+                if (SelectionStatus != _source.SelectionStatus && SelectionStatus != _secondSource.SelectionStatus)
+                    return;
+            }
 
-            if (SelectionStatus != null && SelectionStatus.IsUnique)
+            // if the typed character wasn't a letter, ignore this request (fixes handling of /, >, and other characters triggering a completion)
+            string completionText = ApplicableTo.GetText(ApplicableTo.TextBuffer.CurrentSnapshot);
+            if (completionText.Length > 0 && !char.IsLetter(completionText[completionText.Length - 1]))
                 return;
 
-            bool firstUnique = _source.SelectionStatus != null && _source.SelectionStatus.IsUnique;
-            bool secondUnique = _secondSource.SelectionStatus != null && _secondSource.SelectionStatus.IsUnique;
+            _source.SelectBestMatch();
+            _secondSource.SelectBestMatch();
+
+            bool firstUnique = _source.SelectionStatus != null && _source.SelectionStatus.IsUnique && !_secondSource.SelectionStatus.IsSelected;
+            bool secondUnique = _secondSource.SelectionStatus != null && _secondSource.SelectionStatus.IsUnique && !_source.SelectionStatus.IsSelected;
             if (firstUnique && !secondUnique && _source.SelectionStatus.IsSelected)
                 this.SelectionStatus = _source.SelectionStatus;
             else if (secondUnique && !firstUnique && _secondSource.SelectionStatus.IsSelected)
                 this.SelectionStatus = _secondSource.SelectionStatus;
+            else
+                base.SelectBestMatch();
         }
 
         /// <inheritdoc/>
