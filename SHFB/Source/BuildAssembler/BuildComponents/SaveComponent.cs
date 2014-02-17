@@ -104,6 +104,7 @@ namespace Microsoft.Ddue.Tools
                 outputMethod = XmlOutputMethod.AutoDetect;
                 break;
 
+            case "":
             case null:
                 break;
 
@@ -112,7 +113,7 @@ namespace Microsoft.Ddue.Tools
                     "save component.");
             }
 
-            if (outputMethod != null)
+            if (!string.IsNullOrEmpty(outputMethod))
             {
                 var propertyInfo = typeof(XmlWriterSettings).GetProperty("OutputMethod", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
                 propertyInfo.SetValue(settings, outputMethod.Value, null);
