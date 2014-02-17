@@ -108,7 +108,7 @@ namespace SandcastleBuilder.Package.IntelliSense
             Completion[] completions =
                 {
                     // custom tags implemented by sandcastle
-                    new CustomCompletion(session, "event", prefix + "event cref=\"|\">", "This element is used to list events that can be raised by a type's member.", iconSource, ""),
+                    new CustomCompletion(session, "event", prefix + "event cref=\"|\"", "This element is used to list events that can be raised by a type's member.", iconSource, ""),
                     new Completion("preliminary", prefix + "preliminary/>", "This element is used to indicate that a particular type or member is preliminary and is subject to change.", iconSource, ""),
                     new Completion("threadsafety", prefix + "threadsafety static=\"true\" instance=\"false\"/>", "This element is used to indicate whether or not a class or structure's static and instance members are safe for use in multi-threaded scenarios.", iconSource, ""),
                     new Completion("note", prefix + "note type=\"note\">", "This element is used to create a note-like section within a topic to draw attention to some important information.", iconSource, ""),
