@@ -51,6 +51,9 @@ namespace SandcastleBuilder.Package.IntelliSense
         /// <inheritdoc/>
         public void Commit()
         {
+            if (!_session.SelectedCompletionSet.SelectionStatus.IsSelected)
+                return;
+
             ITrackingSpan applicableTo = _session.SelectedCompletionSet.ApplicableTo;
             using (ITextEdit edit = applicableTo.TextBuffer.CreateEdit())
             {
