@@ -46,16 +46,6 @@
         </xsl:attribute>
       </xsl:element>
 
-      <!-- resource-based styles -->
-      <xsl:element name="style" namespace="{$xhtml}">
-        <xsl:attribute name="type">text/css</xsl:attribute>
-        <xsl:text>.OH_footer { background-image: url('</xsl:text>
-        <xsl:call-template name="ms-xhelp">
-          <xsl:with-param name="ref" select="'footer_slice.gif'"/>
-        </xsl:call-template>
-        <xsl:text>'); background-position:top; background-repeat:repeat-x}</xsl:text>
-      </xsl:element>
-
       <xsl:element name="script" namespace="{$xhtml}">
         <xsl:attribute name="src">
           <xsl:call-template name="ms-xhelp">

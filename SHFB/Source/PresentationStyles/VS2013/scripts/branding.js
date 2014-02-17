@@ -5,7 +5,7 @@ var allLanguageTagSets = new Array();
 // we stored the ids of code snippets of same pages so that we can do interaction between them when tab are selected
 var snippetIdSets = new Array();
 var isSearchPage = false;
-// Width of TOC: 1 (280px), 2 (480px), 3 (680px)
+// Width of TOC: 0 (0px), 1 (280px), 2 (480px), 3 (680px)
 var tocPosition = 1;
 
 function onLoad()
@@ -33,55 +33,6 @@ function onLoad()
     }
     catch (e) { }
     finally {}
-
-    if(iconPath)
-    {
-        try
-        {
-            var styleSheetEnum = document.styleSheets;
-            var styleSheet;
-            var ruleNdx;
-            var rule;
-
-            for(var idx = 0; idx < styleSheetEnum.length; idx++)
-            {
-                styleSheet = styleSheetEnum[idx];
-
-                // Ignore sheets at ms-help Urls
-                if(styleSheet.href != null && styleSheet.href.substr(0,8) == "ms-help:")
-                    continue;
-
-                // Ignore errors (Help Viewer 2).  styleSheet.rules is inaccessible due to security restrictions
-                // for all stylesheets not defined within the page.
-                try
-                {
-                    // Get sheet rules
-                    var rules = styleSheet.rules;
-
-                    if(rules == null)
-                        rules = styleSheet.cssRules;
-
-                    if(rules != null)
-                        if(rules.length != 0)
-                            for(ruleNdx = 0; ruleNdx != rules.length; ruleNdx++)
-                            {
-                                rule = rules.item(ruleNdx);
-
-                                var selectorText = rule.selectorText.toLowerCase();
-
-                                if(selectorText == ".oh_footer")
-                                {
-                                    rule.style.backgroundImage = "url(" + iconPath.replace("favicon.ico", "footer_slice.gif") + ")";
-                                }
-                            }
-                }
-                catch (e) { }
-                finally {}
-            }
-        }
-        catch (e) { }
-        finally {}
-    }
 
   var lang = GetCookie("CodeSnippetContainerLang", "C#");
   var currentLang = getDevLangFromCodeSnippet(lang);
@@ -678,14 +629,14 @@ function SearchTextboxKeyUp(e)
 function onIncreaseToc()
 {
   tocPosition++;
-  if (tocPosition > 3) tocPosition = 1;
+  if (tocPosition > 3) tocPosition = 0;
   resizeToc();
   SetCookie("TocPosition", tocPosition);
 }
 
 function onResetToc()
 {
-  tocPosition = 1;
+  tocPosition = 0;
   resizeToc();
   SetCookie("TocPosition", tocPosition);
 }
@@ -697,12 +648,15 @@ function resizeToc()
   {
     // Set TOC width
     // Positions: 1 (280px) 2 (380px) 3 (480px)
-    var tocWidth = 280 + ((tocPosition - 1) * 100);
+    var tocWidth = tocPosition == 0 ? 0 : 280 + ((tocPosition - 1) * 100);
     toc.style.width = tocWidth + "px";
+
+    document.getElementById("OuterContent").style.marginLeft = tocWidth + "px";
 
     // Position images
     if (document.all) tocWidth -= 1;
-    document.getElementById("TocResize").style.left = tocWidth + "px";
+    var outerDivPaddingLeft = 20;
+    document.getElementById("TocResize").style.left = (tocWidth + outerDivPaddingLeft) + "px";
 
     // Hide/show increase TOC width image
     document.getElementById("ResizeImageIncrease").style.display = (tocPosition == 3) ? "none" : "";
@@ -724,4 +678,156 @@ function preventEventBubbling(e)
   }
 }
 
+function Toggle(item)
+{
+    var isExpanded = $(item).hasClass("toc_expanded");
+    $(item).toggleClass("toc_expanded toc_collapsed");
+    if (isExpanded)
+    {
+        Collapse($(item).parent());
+    }
+    else
+    {
+        var childrenLoaded = $(item).parent().attr("data-childrenloaded");
+        if (childrenLoaded)
+        {
+            Expand($(item).parent());
+        }
+        else
+        {
+            var tocid = $(item).next().attr("tocid");
+            $.ajax({
+                url: "../toc/" + tocid + ".xml",
+                async: true,
+                dataType: "xml",
+                success: function (data)
+                {
+                    BuildChildren($(item).parent(), data);
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown)
+                {
+                }
+            });
+        }
+    }
+}
 
+function BuildChildren(tocDiv, data)
+{
+    var childLevel = +tocDiv.attr("data-toclevel") + 1;
+    var childTocLevel = childLevel >= 2 ? 2 : childLevel;
+    var elements = data.getElementsByTagName("HelpTOCNode");
+
+    var isRoot = true;
+    if (data.getElementsByTagName("HelpTOC").length == 0)
+    {
+        // the first node is the root node of this group, don't show it again
+        isRoot = false;
+    }
+
+    for (var i = elements.length - 1; i > 0 || (isRoot && i == 0); i--)
+    {
+        var childId = elements[i].getAttribute("Url");
+        childId = childId.substring(5, childId.lastIndexOf("."));
+
+        var existingItem = null;
+        tocDiv.nextAll().each(function () {
+            if (!existingItem && $(this).children().last("a").attr("tocid") == childId) {
+                existingItem = $(this);
+            }
+        });
+
+        if (existingItem != null) {
+            // first move the children of the existing item
+            var existingChildLevel = +existingItem.attr("data-toclevel");
+            var doneMoving = false;
+            var inserter = tocDiv;
+            existingItem.nextAll().each(function () {
+                if (!doneMoving && +$(this).attr("data-toclevel") > existingChildLevel) {
+                    inserter.after($(this));
+                    inserter = $(this);
+                    $(this).attr("data-toclevel", +$(this).attr("data-toclevel") + childLevel - existingChildLevel);
+                    $(this).css("padding-left", (+$(this).attr("data-toclevel") * 13) + "px");
+                }
+                else {
+                    doneMoving = true;
+                }
+            });
+
+            // now move the existing item itself
+            tocDiv.after(existingItem);
+            existingItem.attr("data-toclevel", childLevel);
+            existingItem.css("padding-left", (childLevel * 13) + "px");
+        }
+        else {
+            var hasChildren = elements[i].getAttribute("HasChildren");
+            var childTitle = elements[i].getAttribute("Title");
+            var expander = "<span class=\"toc_empty\"></span>";
+            if (hasChildren) {
+                expander = "<a class=\"toc_collapsed\" onclick=\"javascript: Toggle(this);\" href=\"#\"></a>";
+            }
+            var text = "<div class=\"toclevel" + childTocLevel + "\" data-toclevel=\"" + childLevel + "\" style=\"padding-left: " + (childLevel * 13) + "px;\">" +
+            expander + "<a data-tochassubtree=\"" + hasChildren + "\" href=\"" + childId + ".htm\" " +
+            "title=\"" + childTitle + "\" tocid=\"" + childId + "\">" + childTitle + "</a></div>";
+
+            tocDiv.after(text);
+        }
+    }
+
+    tocDiv.attr("data-childrenloaded", true);
+}
+
+function Collapse(tocDiv)
+{
+    // hide all the TOC elements after item, until we reach one with a data-toclevel less than or equal to the current item's value
+    var tocLevel = +tocDiv.attr("data-toclevel");
+    var done = false;
+    tocDiv.nextAll().each(function ()
+    {
+        if (!done && +$(this).attr("data-toclevel") > tocLevel)
+        {
+            $(this).hide();
+        }
+        else
+        {
+            done = true;
+        }
+    });
+}
+
+function Expand(tocDiv)
+{
+    // show all the TOC elements after item, until we reach one with a data-toclevel less than or equal to the current item's value
+    var tocLevel = +tocDiv.attr("data-toclevel");
+    var done = false;
+    tocDiv.nextAll().each(function ()
+    {
+        if (done)
+        {
+            return;
+        }
+
+        var childTocLevel = +$(this).attr("data-toclevel");
+        if (childTocLevel == tocLevel + 1)
+        {
+            $(this).show();
+            if ($(this).children("a").first().hasClass("toc_expanded"))
+            {
+                Expand($(this));
+            }
+        }
+        else if (childTocLevel > tocLevel + 1)
+        {
+            // ignore this node, handled by recursive calls
+        }
+        else
+        {
+            done = true;
+        }
+    });
+}
+
+function DocumentReady() {
+    // once dragging the TOC resize bar is implemented, it is hooked up here
+    //$("#TocResize").css("cursor", "e-resize");
+}

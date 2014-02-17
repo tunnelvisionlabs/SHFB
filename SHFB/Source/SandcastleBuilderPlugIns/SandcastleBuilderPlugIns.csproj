@@ -130,6 +130,7 @@
       <DependentUpon>HierarchicalTocConfigDlg.cs</DependentUpon>
     </Compile>
     <Compile Include="HierarchicalTocPlugIn.cs" />
+    <Compile Include="LightweightTocPlugIn.cs" />
     <Compile Include="ReferenceLinkSettings.cs" />
     <Compile Include="ReferenceLinkSettingsCollection.cs" />
     <Compile Include="ScriptSharpPlugIn.cs" />

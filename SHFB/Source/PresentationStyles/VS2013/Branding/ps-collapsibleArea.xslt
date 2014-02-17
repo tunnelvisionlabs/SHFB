@@ -28,11 +28,6 @@
 				</xsl:choose>
 			</xsl:element>
 		</xsl:element>
-		<xsl:element name="div"
-								 namespace="{$xhtml}">
-			<xsl:attribute name="class">OH_clear</xsl:attribute>
-			<xsl:text> </xsl:text>
-		</xsl:element>
 		<xsl:apply-templates select="node()"/>
 	</xsl:template>
 

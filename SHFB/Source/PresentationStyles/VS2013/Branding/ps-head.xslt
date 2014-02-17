@@ -17,9 +17,6 @@
 		<xsl:copy>
 			<xsl:call-template name="head-favicon"/>
 
-			<!-- NOTE: These MUST appear INLINE and BEFORE the Branding.css file or the script will not find them. -->
-			<xsl:call-template name="head-style-urls"/>
-
 			<xsl:call-template name="head-stylesheet"/>
 			<xsl:if test="$downscale-browser">
 				<xsl:call-template name="head-styles-external"/>
@@ -105,15 +102,6 @@
         			</xsl:otherwise>
         		</xsl:choose>
 			</xsl:attribute>
-		</xsl:element>
-	</xsl:template>
-
-	<!-- Hack to fix up the background image URLs in Help Viewer 2.  See onLoad() in Branding.js.
- 	     NOTE: These MUST appear INLINE and BEFORE the Branding.css file or the script will not find them. -->
-	<xsl:template name="head-style-urls">
-		<xsl:element name="style" namespace="{$xhtml}">
-			<xsl:attribute name="type">text/css</xsl:attribute>
-			<xsl:text>.OH_footer { }</xsl:text>
 		</xsl:element>
 	</xsl:template>
 

@@ -77,8 +77,8 @@
 				<link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
 			</head>
 			<body class="primary-mtps-offline-document">
+				<xsl:call-template name="t_bodyTitle"/>
 				<div class="topic">
-					<xsl:call-template name="t_bodyTitle"/>
 					<xsl:call-template name="t_bodyMain"/>
 				</div>
 			</body>
