@@ -14,6 +14,11 @@
 		<xsl:element name="div"
 								 namespace="{$xhtml}">
 			<xsl:attribute name="class">OH_CollapsibleAreaRegion</xsl:attribute>
+			<xsl:if test="xhtml:xml/xhtml:string[@id='Id']">
+				<xsl:attribute name="id">
+					<xsl:value-of select="xhtml:xml/xhtml:string[@id='Id']"/>
+				</xsl:attribute>
+			</xsl:if>
 			<xsl:element name="div"
 									 namespace="{$xhtml}">
 				<xsl:attribute name="class">OH_regiontitle</xsl:attribute>

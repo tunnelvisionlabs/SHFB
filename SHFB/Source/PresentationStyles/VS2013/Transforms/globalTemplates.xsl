@@ -773,6 +773,7 @@
 		<xsl:param name="p_content" />
 		<xsl:param name="p_toplink"
 							 select="false()" />
+		<xsl:param name="p_sectionId" select="''" />
 
 		<xsl:element name="mtps:CollapsibleArea">
 			<xsl:attribute name="runat">
@@ -787,6 +788,14 @@
 					</xsl:attribute>
 					<include item="{$p_titleInclude}"/>
 				</xsl:element>
+				<xsl:if test="normalize-space($p_sectionId) != ''">
+					<xsl:element name="string">
+						<xsl:attribute name="id">
+							<xsl:value-of select="'Id'" />
+						</xsl:attribute>
+						<xsl:value-of select="$p_sectionId"/>
+					</xsl:element>
+				</xsl:if>
 			</xsl:element>
 
 			<xsl:copy-of select="$p_content" />

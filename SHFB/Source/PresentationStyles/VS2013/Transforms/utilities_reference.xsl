@@ -1723,12 +1723,104 @@
 	Inheritance hierarchy
 	============================================================================================= -->
 
-	<xsl:template match="family"
-								name="t_family">
+	<xsl:template match="family" name="t_family">
 
 		<xsl:call-template name="t_putSectionInclude">
 			<xsl:with-param name="p_titleInclude"
 											select="'title_family'"/>
+			<xsl:with-param name="p_content">
+				<xsl:variable name="ancestorCount"
+											select="count(ancestors/*)"/>
+				<xsl:variable name="childCount"
+											select="count(descendents/*)"/>
+
+				<xsl:for-each select="ancestors/type">
+					<xsl:sort select="position()"
+										data-type="number"
+										order="descending"/>
+					<!-- <xsl:sort select="@api"/> -->
+
+					<xsl:call-template name="t_putIndent">
+						<xsl:with-param name="p_count"
+														select="position()"/>
+					</xsl:call-template>
+
+					<xsl:apply-templates select="self::type"
+															 mode="link">
+						<xsl:with-param name="qualified"
+														select="true()"/>
+					</xsl:apply-templates>
+
+					<br/>
+				</xsl:for-each>
+
+				<xsl:call-template name="t_putIndent">
+					<xsl:with-param name="p_count"
+													select="$ancestorCount + 1"/>
+				</xsl:call-template>
+				<referenceLink target="{$key}"
+											 qualified="true"/>
+				<br/>
+
+				<xsl:choose>
+					<xsl:when test="descendents/@derivedTypes">
+						<xsl:call-template name="t_putIndent">
+							<xsl:with-param name="p_count"
+															select="$ancestorCount + 2"/>
+						</xsl:call-template>
+						<referenceLink target="{descendents/@derivedTypes}"
+													 qualified="true">
+							<include item="derivedClasses"/>
+						</referenceLink>
+					</xsl:when>
+					<xsl:when test="count(descendents/type) > 6">
+						<xsl:call-template name="t_putIndent">
+							<xsl:with-param name="p_count"
+															select="$ancestorCount + 2"/>
+						</xsl:call-template>
+						<xsl:element name="a">
+							<xsl:attribute name="href">
+								<xsl:value-of select="'#inheritanceContinued'" />
+							</xsl:attribute>
+							<include item="inheritanceContinued"/>
+						</xsl:element>
+					</xsl:when>
+					<xsl:otherwise>
+
+						<xsl:for-each select="descendents/type">
+							<xsl:sort select="@api"/>
+
+							<xsl:if test="not(self::type/@api=preceding-sibling::*/self::type/@api)">
+								<xsl:call-template name="t_putIndent">
+									<xsl:with-param name="p_count"
+																	select="$ancestorCount + 2"/>
+								</xsl:call-template>
+
+								<xsl:apply-templates select="self::type"
+																		 mode="link">
+									<xsl:with-param name="qualified"
+																	select="true()"/>
+								</xsl:apply-templates>
+
+								<br/>
+							</xsl:if>
+						</xsl:for-each>
+					</xsl:otherwise>
+				</xsl:choose>
+
+			</xsl:with-param>
+		</xsl:call-template>
+	</xsl:template>
+
+	<xsl:template match="family"
+								name="t_familyContinued"
+								mode="inheritanceContinued">
+
+		<xsl:call-template name="t_putSectionInclude">
+			<xsl:with-param name="p_titleInclude"
+											select="'title_family'"/>
+			<xsl:with-param name="p_sectionId"
+											select="'inheritanceContinued'"/>
 			<xsl:with-param name="p_content">
 				<xsl:variable name="ancestorCount"
 											select="count(ancestors/*)"/>
