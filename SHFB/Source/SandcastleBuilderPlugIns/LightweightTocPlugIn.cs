@@ -101,8 +101,6 @@
                 string uri = null;
                 if (copy.Attribute("Url") != null)
                     uri = copy.Attribute("Url").Value;
-                else if (copy.Attribute("Id") != null)
-                    uri = copy.Attribute("Id").Value;
                 else
                     uri = "roottoc.html";
 
@@ -121,7 +119,7 @@
                     }
                 }
 
-                if (copy.Attribute("Url") == null && copy.Attribute("Id") == null)
+                if (copy.Attribute("Url") == null)
                     continue;
 
                 // generate the lightweight TOC pane
@@ -317,7 +315,13 @@
         {
             int paddingLeft = level * 13;
             string glyphClass = expanded ? "toc_expanded" : "toc_collapsed";
-            string file = Path.GetFileName(ancestor.Attribute("Url").Value);
+
+            string file;
+            if (ancestor.Attribute("Url") != null)
+                file = Path.GetFileName(ancestor.Attribute("Url").Value);
+            else
+                file = "#";
+
             string tocTitle = ancestor.Attribute("Title").Value;
 
             XElement result =
@@ -333,7 +337,7 @@
                         new XAttribute("data-tochassubtree", "true"),
                         new XAttribute("href", file),
                         new XAttribute("title", tocTitle),
-                        new XAttribute("tocid", Path.GetFileNameWithoutExtension(ancestor.Attribute("Url").Value)),
+                        new XAttribute("tocid", Path.GetFileNameWithoutExtension(file)),
                         new XText(tocTitle)));
 
             if (expanded)
@@ -345,9 +349,20 @@
         private XElement[] GenerateTocSiblings(XElement current, XElement sibling, int level, bool showSiblings)
         {
             int paddingLeft = 13 * level;
-            string targetId = sibling.Attribute("Url").Value;
-            string currentId = current.Attribute("Url").Value;
-            string file = Path.GetFileName(sibling.Attribute("Url").Value);
+
+            string targetId;
+            if (sibling.Attribute("Url") != null)
+                targetId = sibling.Attribute("Url").Value;
+            else
+                targetId = "#";
+
+            string currentId;
+            if (current.Attribute("Url") != null)
+                currentId = current.Attribute("Url").Value;
+            else
+                currentId = "#";
+
+            string file = Path.GetFileName(targetId);
             string tocTitle = sibling.Attribute("Title").Value;
             string styleClassSuffix = (targetId == currentId) ? " current" : string.Empty;
 
@@ -382,7 +397,7 @@
                         new XAttribute("data-tochassubtree", sibling.HasElements),
                         new XAttribute("href", file),
                         new XAttribute("title", tocTitle),
-                        new XAttribute("tocid", Path.GetFileNameWithoutExtension(sibling.Attribute("Url").Value)),
+                        new XAttribute("tocid", Path.GetFileNameWithoutExtension(targetId)),
                         new XText(tocTitle)));
 
             if (sibling.HasElements && targetId == currentId)
@@ -395,7 +410,14 @@
         {
             int level = 2;
             int paddingLeft = 26;
-            string file = Path.GetFileName(child.Attribute("Url").Value);
+
+            // some items in the TOC do not have actual pages associated with them
+            string file;
+            if (child.Attribute("Url") != null)
+                file = Path.GetFileName(child.Attribute("Url").Value);
+            else
+                file = "#";
+
             string tocTitle = child.Attribute("Title").Value;
 
             XElement glyphElement;
@@ -424,7 +446,7 @@
                         new XAttribute("data-tochassubtree", child.HasElements),
                         new XAttribute("href", file),
                         new XAttribute("title", tocTitle),
-                        new XAttribute("tocid", Path.GetFileNameWithoutExtension(child.Attribute("Url").Value)),
+                        new XAttribute("tocid", Path.GetFileNameWithoutExtension(file)),
                         new XText(tocTitle)));
 
             return new[] { result };
