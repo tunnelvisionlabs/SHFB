@@ -147,6 +147,9 @@
 	<item id="title_extensionUsage">Verwendungshinweise</item>
 	<item id="text_extensionUsage">In Visual Basic und C# können Sie diese Methode als Instanzmethode eines beliebigen Objektes vom Typ {0} aufrufen. Wenn Sie die Instanzmethodensyntax beim Methodenaufruf anwenden, lassen Sie den ersten Parameter weg. Für weitere Informationen siehe <a href="http://msdn.microsoft.com/en-us/library/bb384936.aspx" target="_blank">Extension Methods (Visual Basic)</a> or <a href="http://msdn.microsoft.com/en-us/library/bb383977.aspx" target="_blank">Erweiterungsmethoden (C# Programmierhandbuch)</a>.</item>
 
+	<!-- Inheritance Hierarchy -->
+	<item id="inheritanceContinued">More...</item>
+
 	<!-- table headers -->
 	<item id="header_namespaceName">Namensraum</item>
 	<item id="header_namespaceDescription">Beschreibung</item>

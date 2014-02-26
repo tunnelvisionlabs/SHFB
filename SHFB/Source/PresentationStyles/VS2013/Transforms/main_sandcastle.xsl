@@ -128,6 +128,11 @@
 		<!-- see also -->
 		<xsl:call-template name="t_putSeeAlsoSection"/>
 
+		<!-- inheritance continued -->
+		<xsl:if test="count(/document/reference/family/descendents/type) > 6">
+			<xsl:apply-templates select="/document/reference/family" mode="inheritanceContinued"/>
+		</xsl:if>
+
 	</xsl:template>
 
 	<!-- ============================================================================================
