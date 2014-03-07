@@ -712,6 +712,12 @@ function Toggle(item)
     }
 }
 
+function htmlEncode(value) {
+    //create an in-memory div, set it's inner text(which jQuery automatically encodes)
+    //then grab the encoded contents back out.  The div never exists on the page.
+    return $('<div/>').text(value).html();
+}
+
 function BuildChildren(tocDiv, data)
 {
     var childLevel = +tocDiv.attr("data-toclevel") + 1;
@@ -761,7 +767,7 @@ function BuildChildren(tocDiv, data)
         }
         else {
             var hasChildren = elements[i].getAttribute("HasChildren");
-            var childTitle = elements[i].getAttribute("Title");
+            var childTitle = htmlEncode(elements[i].getAttribute("Title"));
             var expander = "<span class=\"toc_empty\"></span>";
             if (hasChildren) {
                 expander = "<a class=\"toc_collapsed\" onclick=\"javascript: Toggle(this);\" href=\"#\"></a>";
