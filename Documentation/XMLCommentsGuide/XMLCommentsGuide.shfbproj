@@ -86,6 +86,9 @@
           </deploymentLocation>
         </configuration>
       </PlugInConfig>
+      <PlugInConfig id="Lightweight TOC" enabled="True">
+        <configuration />
+      </PlugInConfig>
     </PlugInConfigurations>
     <BuildLogFile />
     <HtmlHelp1xCompilerPath />

@@ -80,6 +80,9 @@
           </deploymentLocation>
         </configuration>
       </PlugInConfig>
+      <PlugInConfig id="Lightweight TOC" enabled="True">
+        <configuration />
+      </PlugInConfig>
     </PlugInConfigurations>
     <SyntaxFilters>Standard</SyntaxFilters>
     <SdkLinkTarget>Blank</SdkLinkTarget>

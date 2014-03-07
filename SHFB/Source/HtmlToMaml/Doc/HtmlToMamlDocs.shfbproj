@@ -67,6 +67,9 @@
           </deploymentLocation>
         </configuration>
       </PlugInConfig>
+      <PlugInConfig id="Lightweight TOC" enabled="True">
+        <configuration />
+      </PlugInConfig>
     </PlugInConfigurations>
     <FrameworkVersion>.NET Framework 4.0</FrameworkVersion>
     <HelpFileVersion>1.0.0.2</HelpFileVersion>

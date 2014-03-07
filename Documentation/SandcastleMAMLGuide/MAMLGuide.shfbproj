@@ -75,6 +75,9 @@
           </deploymentLocation>
         </configuration>
       </PlugInConfig>
+      <PlugInConfig id="Lightweight TOC" enabled="True">
+        <configuration />
+      </PlugInConfig>
     </PlugInConfigurations>
     <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
     <ProductTitle>Sandcastle MAML Guide</ProductTitle>

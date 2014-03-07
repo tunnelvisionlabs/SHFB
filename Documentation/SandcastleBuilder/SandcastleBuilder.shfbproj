@@ -124,6 +124,9 @@
           </deploymentLocation>
         </configuration>
       </PlugInConfig>
+      <PlugInConfig id="Lightweight TOC" enabled="True">
+        <configuration />
+      </PlugInConfig>
     </PlugInConfigurations>
     <Preliminary>False</Preliminary>
     <HelpAttributes>
