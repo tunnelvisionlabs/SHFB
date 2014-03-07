@@ -734,7 +734,16 @@ function BuildChildren(tocDiv, data)
     for (var i = elements.length - 1; i > 0 || (isRoot && i == 0); i--)
     {
         var childId = elements[i].getAttribute("Url");
-        childId = childId.substring(5, childId.lastIndexOf("."));
+        if (childId != null && childId.length > 5)
+        {
+            // the Url attribute has the form "html/{childId}.htm"
+            childId = childId.substring(5, childId.lastIndexOf("."));
+        }
+        else
+        {
+            // the Id attribute is in raw form
+            childId = elements[i].getAttribute("Id");
+        }
 
         var existingItem = null;
         tocDiv.nextAll().each(function () {
