@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="8a03d507-cc40-4eb1-bca7-2fe3275a2d3b" Title="TocEntry Methods" Url="html/2e4863ad-6eb1-5fae-9776-34302e3921e4.htm">
+  <HelpTOCNode Title="Clone Method " Url="html/17a80508-273d-231b-b07d-1fe39349b9cd.htm" />
+  <HelpTOCNode Title="CompareTo Method " Url="html/a4e6009d-6f17-61ec-e18f-aef5f4b751a5.htm" />
+  <HelpTOCNode Title="ContainsMatch Method " Url="html/b0a93979-0b75-b448-3586-83eba0796d43.htm" />
+  <HelpTOCNode Title="Equals Method " Url="html/06b5f9f6-6624-c94d-9992-0c0c6c241825.htm" />
+  <HelpTOCNode Title="GetHashCode Method " Url="html/d259dce6-e539-974d-6c2b-9529efef326b.htm" />
+  <HelpTOCNode Title="LoadSiteMapNode Method " Url="html/8570fcb0-ad50-8b53-907f-1794290103e6.htm" />
+  <HelpTOCNode Title="OnPropertyChanged Method " Url="html/01b501cd-82ee-131e-f576-f6fad9e9be77.htm" />
+  <HelpTOCNode Title="ResetSortOrder Method " Url="html/d9d3aee3-e328-360c-53e0-f7042b140441.htm" />
+  <HelpTOCNode Title="SaveAsSiteMapNode Method " Url="html/73f5bd91-5c42-3655-78cd-d176a4a5c6a0.htm" />
+  <HelpTOCNode Title="ToAnchor Method " Url="html/0240b9c5-38e6-221c-8153-6cec4dfd4f98.htm" />
+  <HelpTOCNode Id="a25ed904-c17a-4c51-9f64-a6d54e1172e6" Title="ToString Method " Url="html/7c470849-63e2-8d3d-5d8c-099cc1e46ff3.htm" HasChildren="true" />
+</HelpTOCNode>

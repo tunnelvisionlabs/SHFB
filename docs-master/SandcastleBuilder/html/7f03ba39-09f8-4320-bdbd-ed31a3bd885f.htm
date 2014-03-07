@@ -1,0 +1,332 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="SHORTCUT ICON" href="./../icons/favicon.ico"><link rel="stylesheet" type="text/css" href="./../styles/branding.css"><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css"><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Code Block Component</title><meta name="Language" content="en-us"><meta name="System.Keywords" content="build components, code block component"><meta name="System.Keywords" content="CodeBlockComponent, configuration options"><meta name="Microsoft.Help.Id" content="7f03ba39-09f8-4320-bdbd-ed31a3bd885f"><meta name="Description" content="The Code Block Component is used to extend the functionality of the XML comments <code> tag. It provides the following features:"><meta name="Microsoft.Help.ContentType" content="Concepts"><meta name="BrandingAware" content="'true'"><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css"><link type="text/css" rel="stylesheet" href="./../styles/highlight.css"><script type="text/javascript" src="../scripts/highlight.js"><!----></script><meta name="SelfBranded" content="true"></head><body onload="onLoad()" class="primary-mtps-offline-document"><header class="ux-header"><div class="header-top-bar">Sandcastle Help File Builder Documentation</div></header><div class="OH_outerDiv" style="padding: 35px 20px 0 20px;"><div class="OH_leftNav" id="LeftNav">
+  <div id="tocnav">
+    <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;"><a class="toc_collapsed" onclick="javascript: Toggle(this);" href="#"></a><a data-tochassubtree="true" href="bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" title="Sandcastle Help File Builder" tocid="roottoc">Sandcastle Help File Builder</a></div><div class="toclevel1" data-toclevel="1" style="padding-left: 13px;" data-childrenloaded="true"><a class="toc_expanded" onclick="javascript: Toggle(this);" href="#"></a><a data-tochassubtree="true" href="8dcbb69b-7a1a-4049-8e6b-2bf344efbbc9.htm" title="Custom Build Components" tocid="8dcbb69b-7a1a-4049-8e6b-2bf344efbbc9">Custom Build Components</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="dcc9f938-0d5e-4010-bbfe-fd64168a443b.htm" title="API Token Resolution Component" tocid="dcc9f938-0d5e-4010-bbfe-fd64168a443b">API Token Resolution Component</a></div><div class="toclevel2 current" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="7f03ba39-09f8-4320-bdbd-ed31a3bd885f.htm" title="Code Block Component" tocid="7f03ba39-09f8-4320-bdbd-ed31a3bd885f">Code Block Component</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="5d546511-6aec-455a-ba09-9daffb124c6d.htm" title="IntelliSense Component" tocid="5d546511-6aec-455a-ba09-9daffb124c6d">IntelliSense Component</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="92a6e678-48fb-4e6c-a7e5-34f264b01212.htm" title="Multi-Format Output Component" tocid="92a6e678-48fb-4e6c-a7e5-34f264b01212">Multi-Format Output Component</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px;"><a class="toc_collapsed" onclick="javascript: Toggle(this);" href="#"></a><a data-tochassubtree="true" href="3a1c4bf1-8ecf-4ab3-8010-277bed8d3819.htm" title="Data Caching Build Components" tocid="3a1c4bf1-8ecf-4ab3-8010-277bed8d3819">Data Caching Build Components</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="e6d18448-2459-46f1-bbdc-a7db415f2bda.htm" title="Creating a BuildAssembler Build Component" tocid="e6d18448-2459-46f1-bbdc-a7db415f2bda">Creating a BuildAssembler Build Component</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="5e80d139-811c-48ed-9b52-dcd8a3f5aef3.htm" title="Creating a Syntax Filter Generator Component" tocid="5e80d139-811c-48ed-9b52-dcd8a3f5aef3">Creating a Syntax Filter Generator Component</a></div></div></div><div id="TocResize" class="OH_TocResize"><img id="ResizeImageIncrease" src="../icons/open.gif" onclick="onIncreaseToc()" alt="Expand" title="Expand"><img id="ResizeImageReset" src="../icons/close.gif" style="display:none" onclick="onResetToc()" alt="Minimize" title="Minimize"></div><div class="OH_outerContent" id="OuterContent" style="margin-left: 280px;"><h1 class="title">Code Block Component</h1><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><div class="introduction"><p>This topic describes the Code Block Component features.</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#Benefits" target="">Usage Benefits</a></li><li class="outlineSectionEntry"><a href="#Attributes" target="">Custom Attributes</a></li><li class="outlineSectionEntry"><a href="#SpecialChars" target="">Literal XML And Other Special Characters</a></li><li class="outlineSectionEntry"><a href="#Nesting" target="">Nested Code Tags</a></li><li class="outlineSectionEntry"><a href="#Configuration" target="">Example Configuration</a></li><li class="outlineSectionEntry"><a href="#seeAlsoSection" target="">See Also</a></li></ul></div><a id="Benefits"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Usage Benefits</div></div><p>The Code Block Component is used to extend the functionality of the XML comments
+<span class="code">&lt;code&gt;</span> tag.  It provides the following features:</p><ul><li>Excess leading whitespace is stripped from the <span class="code">&lt;code&gt;</span> blocks to
+left-align them correctly.</li><li>It adds support for optional line numbering.</li><li>It adds support for optional collapsible regions for code in <span class="code">#region</span> and
+<span class="code">#if/#else/#endif</span> blocks with support for nested collapsible regions.  The C++ and VB.NET
+equivalents are supported too.</li><li>A default title can be added based on the language that the code represents.</li><li>A "Copy" link appears to the right on the title line that allows you to copy the code sample to the
+clipboard.  The code is copied as plain text without the highlighting and line numbers if used.</li><li>It adds support for reading in an external source file or a defined region of an external source
+file so that you can keep code samples in a buildable project to test them for correctness and to do away with
+managing the code samples in the XML comments or include files.</li><li>Support is provided for nested code tags which allows you to merge code from two or more code
+snippets into a single code example.</li><li>Syntax highlighting of code blocks in <span class="code">&lt;code&gt;</span> tags.  Languages
+supported include C#, VB.NET, JScript.NET, C++, J#, C, JavaScript, VBScript, XAML, XML, HTML, SQL script,
+PowerShell script, and Python.  An external configuration file is used so that it is possible to extend the
+colorizer to support other languages. The style sheet is also replaceable. All of the features noted above are
+available whether or not you enable the colorizing feature.  The code colorizer is a modified and extended
+version of the one written by Jonathan de Halleux in the Code Project article <a class="mtps-external-link" href="http://www.codeproject.com/Articles/3767/Multiple-Language-Syntax-Highlighting-Part-2-C-Con" target="_blank">Multiple Language Syntax Highlighting, Part 2: C# Control</a>.  The modified code is available with the source download for
+the help file builder and the build components.</li></ul><a id="Attributes"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Custom Attributes</div></div><p>The following attributes can be added to the <span class="code">&lt;code&gt;</span> tag in XML comments.
+They can be used in any combination with each other with the exception of <span class="code">region</span> and
+<span class="code">removeRegionMarkers</span> which, if used, must be paired with a <span class="code">source</span>
+attribute.  All attribute names and values are case-sensitive.</p><dl class="authored"><dt>The <span class="code">source</span>, <span class="code">region</span>, and
+<span class="code">removeRegionMarkers</span> Attributes
+			</dt><dd>This feature is based on an idea suggested by Morten Nielsen in the MSDN Documentation Forum.  The
+<span class="code">source</span> attribute is used to specify that the code block's content should be read from an
+external source code file.  If used alone, the entire file is used.  The optional <span class="code">region</span>
+attribute can be used to limit the code to a specific section of the file delimited with the named
+<span class="code">#region</span> (<span class="code">#pragma region</span> for C++).  The
+<span class="code">#region</span> and <span class="code">#endregion</span> tags are excluded from the extracted
+section of code.<p>This is not to be confused with the XML comments <span class="code">&lt;include&gt;</span> tag. This
+extension is intended to extract code from actual source files.  This allows you to manage your code examples in
+buildable projects to test them for correctness as a project is developed and altered in the future.  It also
+saves you from managing the code in the XML comments and does not require that the code be HTML encoded as it is
+when written in the comments. The code will be HTML encoded when it is read in for processing.  When used, it is
+assumed that there is no code within the comment tag itself and thus it will always be self-closing.  Here are
+some examples:</p><p>Retrieve all code from an external file and use the VB.NET syntax to color it.  The path is
+relative to the <span class="code">basePath</span> configuration element.  Typically, the base path is the path of
+the documentation project file.  So, if your documentation project is in a subfolder and the code is in the
+parent folder in an <em>Examples</em> subfolder, the path would look like the following example.</p><div id="ID0EFMAIAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EFMAIAAAAA_tabs"><div id="ID0EFMAIAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">XML</a></div></div><div id="ID0EFMAIAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EFMAIAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EFMAIAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EFMAIAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EFMAIAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EFMAIAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EFMAIAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EFMAIAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">code</span> <span class="highlight-xml-attribute-name">source</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"..\Examples\WholeDemo.vb"</span> <span class="highlight-xml-attribute-name">language</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"vbnet"</span> <span class="highlight-xml-bracket">/&gt;</span></pre></div><div id="ID0EFMAIAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>&lt;code source="..\Examples\WholeDemo.vb" language="vbnet" /&gt;</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EFMAIAAAAA');</script><p>Retrieve a specific <span class="code">#region</span> from an external file.</p><div id="ID0EDMAIAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EDMAIAAAAA_tabs"><div id="ID0EDMAIAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">XML</a></div></div><div id="ID0EDMAIAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EDMAIAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EDMAIAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EDMAIAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EDMAIAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EDMAIAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EDMAIAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EDMAIAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">code</span> <span class="highlight-xml-attribute-name">source</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"..\Examples\SeveralExamples.vb"</span> 
+    <span class="highlight-xml-attribute-name">region</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Example 1"</span> <span class="highlight-xml-attribute-name">language</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"vbnet"</span> <span class="highlight-xml-attribute-name">title</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Example #1"</span> <span class="highlight-xml-bracket">/&gt;</span></pre></div><div id="ID0EDMAIAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>&lt;code source="..\Examples\SeveralExamples.vb" 
+    region="Example 1" language="vbnet" title="Example #1" /&gt;</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EDMAIAAAAA');</script><p>Note that VB.NET does not allow <span class="code">#Region</span> and <span class="code">#End Region</span>
+within a method body.  Other file types such as XML, XAML, and SQL script do not understand <span class="code">#region</span>
+statements.  However, if you want to extract a region from a VB.NET method body or a section of another file
+type, you can add the region statements in comments to workaround the limitation.  The component will still find
+it and extract the region.</p><div id="ID0EBMAIAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EBMAIAAAAA_tabs"></div><div id="ID0EBMAIAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EBMAIAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EBMAIAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EBMAIAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EBMAIAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EBMAIAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EBMAIAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EBMAIAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><b xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><u>VB.NET Example</u></b>
+Public Sub SomeMethod()
+    ' #Region "VB.NET Snippet"
+    Dim x As Integer
+
+    For x = 1 To 10
+        Console.WriteLine(x)
+    Next x
+    ' #End Region
+End Sub
+
+<b xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><u>XAML Example</u></b>
+&lt;Style x:Key="SpecialButton" TargetType="{x:Type Button}"&gt;
+  &lt;Style.Triggers&gt;
+    &lt;!-- #region XAML Snippet --&gt;
+    &lt;Trigger Property="Button.IsMouseOver" Value="true"&gt;
+      &lt;Setter Property = "Background" Value="Red"/&gt;
+    &lt;/Trigger&gt;
+    &lt;!-- #endregion --&gt;
+  &lt;/Style.Triggers&gt;
+&lt;/Style&gt;
+
+<b xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><u>SQL Example</u></b>
+-- #region SQL snippet
+Select *
+From   tblName
+Where  LastName = 'SMITH'
+-- #endregion
+
+/* #region Another snippet */
+Select *
+From   tblName
+Where  FirstName = 'JOHN'
+/* #endregion */</pre></div><div id="ID0EBMAIAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>VB.NET Example
+Public Sub SomeMethod()
+    ' #Region "VB.NET Snippet"
+    Dim x As Integer
+
+    For x = 1 To 10
+        Console.WriteLine(x)
+    Next x
+    ' #End Region
+End Sub
+
+XAML Example
+&lt;Style x:Key="SpecialButton" TargetType="{x:Type Button}"&gt;
+  &lt;Style.Triggers&gt;
+    &lt;!-- #region XAML Snippet --&gt;
+    &lt;Trigger Property="Button.IsMouseOver" Value="true"&gt;
+      &lt;Setter Property = "Background" Value="Red"/&gt;
+    &lt;/Trigger&gt;
+    &lt;!-- #endregion --&gt;
+  &lt;/Style.Triggers&gt;
+&lt;/Style&gt;
+
+SQL Example
+-- #region SQL snippet
+Select *
+From   tblName
+Where  LastName = 'SMITH'
+-- #endregion
+
+/* #region Another snippet */
+Select *
+From   tblName
+Where  FirstName = 'JOHN'
+/* #endregion */</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EBMAIAAAAA');</script><p>The <span class="code">removeRegionMarkers</span> attribute can be used to specify whether or not
+region markers within the imported code file or region are removed.  If not specified or set to false, any nested
+region markers are left in the imported code block.  If specified and set to true, nested region markers are
+removed from the imported code.  This is useful for removing nested region markers from larger code samples that
+contain smaller snippets of code used in other examples.  The default setting (false) can be overridden via the
+component configuration.</p></dd><dt>The <span class="code">lang</span> or <span class="code">language</span> Attribute</dt><dd>These attributes allows you to override the default language specified in the component's
+configuration.  Either one will have the same effect.  Any <span class="code">&lt;code&gt;</span> tag without a
+<span class="code">lang</span>/<span class="code">language</span> attribute will use the value specified in the
+component's configuration.  For example, if most or all of your code examples are in C#, you can set the default
+language in the configuration to "cs".  If you have an example in VB.NET, you can add <span class="code">language="vbnet"</span>
+to colorize that example as VB.NET code.  The possible language values in the supplied configuration file are as
+follows:<div class="tableSection"><table><tr><th>Language ID (case-insensitive)</th><th>Language Syntax Used</th></tr><tr><td>cs, C#, CSharp</td><td>C#</td></tr><tr><td>cpp, cpp#, C++, CPlusPlus</td><td>C++</td></tr><tr><td>c</td><td>C</td></tr><tr><td>fs, f#, FSharp, fscript</td><td>F#</td></tr><tr><td>EcmaScript, js, JavaScript</td><td>JavaScript</td></tr><tr><td>jscript, jscript#, jscriptnet, JScript.NET</td><td>JScript.NET</td></tr><tr><td>VB, VB#, vbnet, VB.NET</td><td>VB/VB.NET</td></tr><tr><td>vbs, vbscript</td><td>VBScript</td></tr><tr><td>htm, html, xml, xsl</td><td>XML</td></tr><tr><td>XAML</td><td>XAML</td></tr><tr><td>jsharp, J#</td><td>J#</td></tr><tr><td>sql, sql server, sqlserver</td><td>SQL script</td></tr><tr><td>pshell, powershell, ps1</td><td>PowerShell script</td></tr><tr><td>py, python</td><td>Python</td></tr><tr><td>Anything else (i.e. "none")</td><td>No highlighting</td></tr></table></div><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_caution.gif" alt="Important note"> <strong>Important</strong></th></tr><tr><td><p>The full name "<span class="code">language</span>" should be used for the attribute name rather
+than the abbreviated form "<span class="code">lang</span>".  The reason is that the XSL transformations used by
+the presentation styles expect the full name when they search for the language attribute.  The abbreviated form
+is a legacy syntax that should be avoided.  The code block component will auto-correct the attribute name so that
+it is not missed by the transformations.</p><p>It is recommended that you always specify a language attribute.</p></td></tr></table></div></dd><dt>The <span class="code">numberLines</span> Attribute</dt><dd>This attribute allows you to override the default setting in the component's configuration.  For
+example, if the default setting is false to turn off line numbering, you can add <span class="code">numberLines="true"</span>
+to enable numbering on a specific code example.</dd><dt>The <span class="code">outlining</span> Attribute</dt><dd>This attribute allows you to override the default setting in the component's configuration.  For
+example, if the default setting is false to not add collapsible regions, you can add <span class="code">outlining="true"</span>
+to enable collapsible regions on a specific code example.  Note that if a code block contains no
+<span class="code">#region</span> or <span class="code">#if</span> blocks, outlining is automatically disabled and
+it will not reserve space in the margin for the markers.</dd><dt>The <span class="code">keepSeeTags</span> Attribute</dt><dd>When set to true, this attribute allows you to tell the code colorizer to preserve
+<span class="code">&lt;see&gt;</span> tags within the code so that they can be rendered as clickable links to the
+related topic.  If set to false, the default, any <span class="code">&lt;see&gt;</span> tags within the code will
+be colorized and passed through as literal text.  When using this option, you may find that you need to specify
+inner text for the <span class="code">&lt;see&gt;</span> tag so that the link text appears as you want it.  If the
+self-closing version of the tag is used, Sandcastle will generally set the link text to the name of the item plus
+any parameters if it is a generic type or takes parameters which may not be appropriate within a code sample.</dd><dt>The <span class="code">tabSize</span> Attribute</dt><dd>When the code blocks are formatted, tab characters are replaced with a set number of spaces to
+preserve formatting.  This attribute can be used to override the default setting for a language which is
+specified in the syntax file.  For example, if the default tab size for a language is four, adding
+<span class="code">tabSize="8"</span> will force it to use eight spaces instead.  If set to zero, the syntax file
+setting is used.  This attribute sets the default tab size for unknown languages when used in the component's
+configuration.</dd><dt>The <span class="code">title</span> Attribute</dt><dd>This attribute allows you to add a title that appears before the code block.  An example of its use
+would be to label the example with a description.  If omitted and the <span class="code">defaultTitle</span>
+attribute on the code block component's <span class="code">colorizer</span> element is true, the language name
+will appear for the title.  If it is set to false, no title will appear.  If using default titles and you do not
+want a title on a particular block, set the <span class="code">title</span> attribute to a single space (" ").</dd></dl><a id="SpecialChars"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Literal XML And Other Special Characters</div></div><p>NDoc had an additional <span class="code">escaped</span> attribute that let you enter literal XML in the
+code block without having to HTML encode things like the angle brackets.  An attempt was made to support that
+attribute in the code block component.  However, the XML document as created by Sandcastle and passed to the
+component has all inter-element whitespace and line feeds stripped from it.  As such, it loses all formatting in
+the escaped XML and renders it on a single, unbroken line.  This made the <span class="code">escaped</span>
+attribute useless and it was removed. If you want to include XML or other unencoded information you can do one
+of the following:</p><ul><li>Utilize the <span class="code">source</span> attribute to read it in from an external file instead.</li><li><p>Use a <span class="code">CDATA</span> section to encapsulate the code so that special characters and
+formatting are preserved.  For example:</p><div id="ID0ECABGAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0ECABGAAAAA_tabs"><div id="ID0ECABGAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">CDATA Example</a></div></div><div id="ID0ECABGAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0ECABGAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0ECABGAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0ECABGAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0ECABGAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0ECABGAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0ECABGAAAAA','4')" title="Print">Print</a></div></div><div id="ID0ECABGAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre>/// <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">example</span><span class="highlight-xml-bracket">&gt;</span>
+/// <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">code</span> <span class="highlight-xml-attribute-name">language</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"xml"</span> <span class="highlight-xml-attribute-name">title</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Example Configuration"</span><span class="highlight-xml-bracket">&gt;</span>
+/// <span class="highlight-xml-bracket">&lt;![CDATA[</span><span class="highlight-xml-cdata">
+/// &lt;?xml version="1.0" encoding="utf-8"?&gt;
+/// &lt;config&gt;
+///   &lt;path&gt;C:\Test\&lt;/path&gt;
+///   &lt;filespec mask="*.txt" /&gt;
+/// &lt;/config&gt;</span><span class="highlight-xml-bracket">]]&gt;</span>
+/// <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">code</span><span class="highlight-xml-bracket">&gt;</span>
+/// <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">example</span><span class="highlight-xml-bracket">&gt;</span></pre></div><div id="ID0ECABGAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>/// &lt;example&gt;
+/// &lt;code language="xml" title="Example Configuration"&gt;
+/// &lt;![CDATA[
+/// &lt;?xml version="1.0" encoding="utf-8"?&gt;
+/// &lt;config&gt;
+///   &lt;path&gt;C:\Test\&lt;/path&gt;
+///   &lt;filespec mask="*.txt" /&gt;
+/// &lt;/config&gt;]]&gt;
+/// &lt;/code&gt;
+/// &lt;/example&gt;</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0ECABGAAAAA');</script><p>Be sure to start the example code on a new line after the opening "<span class="code">&lt;![CDATA[</span>"
+tag as shown so that the leading whitespace can be normalized correctly.</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Note"> <strong>Note</strong></th></tr><tr><td>The inclusion of a <span class="code">CDATA</span> tag anywhere in the code comments can cause
+Visual Studio 2005 to lock up when you type an angle bracket within a comment block.  If you are affected by this
+issue, there is a hot fix available at: <a class="mtps-external-link" href="https://connect.microsoft.com/VisualStudio/Downloads/DownloadDetails.aspx?DownloadID=9646" target="_blank">https://connect.microsoft.com/VisualStudio/Downloads/DownloadDetails.aspx?DownloadID=9646</a>.</td></tr></table></div></li></ul><p>Using either of the methods above preserves the formatting and has the same effect as the
+<span class="code">escaped</span> attribute in NDoc.</p><a id="Nesting"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Nested Code Tags</div></div><p>You can import multiple code snippets into one common colorized code block by nesting <span class="code">code</span>
+tags within a parent <span class="code">code</span> tag. On nested <span class="code">code</span> tags, only the
+<span class="code">source</span> and <span class="code">region</span> attributes will be utilized.  All other
+attributes that control colorization of the merged code block will be retrieved from the parent
+<span class="code">code</span> tag.</p><div id="ID0ECEAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0ECEAAAAA_tabs"><div id="ID0ECEAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">Nested Code Tag Example</a></div></div><div id="ID0ECEAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0ECEAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0ECEAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0ECEAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0ECEAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0ECEAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0ECEAAAAA','4')" title="Print">Print</a></div></div><div id="ID0ECEAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">code</span> <span class="highlight-xml-attribute-name">title</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Nested code tag example"</span> <span class="highlight-xml-attribute-name">language</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"VB.NET"</span><span class="highlight-xml-bracket">&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">code</span> <span class="highlight-xml-attribute-name">source</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"..\Class1.vb"</span> <span class="highlight-xml-attribute-name">region</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Snippet #1"</span> <span class="highlight-xml-bracket">/&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">code</span> <span class="highlight-xml-attribute-name">source</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"..\Class1.vb"</span> <span class="highlight-xml-attribute-name">region</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Snippet #2"</span> <span class="highlight-xml-bracket">/&gt;</span> 
+<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">code</span><span class="highlight-xml-bracket">&gt;</span></pre></div><div id="ID0ECEAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>&lt;code title="Nested code tag example" language="VB.NET"&gt; 
+    &lt;code source="..\Class1.vb" region="Snippet #1" /&gt; 
+    &lt;code source="..\Class1.vb" region="Snippet #2" /&gt; 
+&lt;/code&gt;</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0ECEAAAAA');</script><p>Literal code can also be mixed in between the nested <span class="code">code</span> tags. However, there
+are some limitations.  All tags and literal code should be flush left within the parent <span class="code">code</span>
+tag or you will end up with additional spaces before the first line of each nested <span class="code">code</span>
+tag. There may still be additional spaces before the literal code.  This is caused by the indentation included
+when the XML comments file is created by the compiler.  If this is a problem, move the example to an include file
+and remove the excess leading whitespace.  Use an <span class="code">include</span> tag to bring it into the XML
+comments.  When done this way, the compiler preserves the spacing when writing the example out to the XML
+comments file.</p><div id="ID0EAEAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EAEAAAAA_tabs"><div id="ID0EAEAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">Nested Code Tag Example</a></div></div><div id="ID0EAEAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAEAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EAEAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EAEAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EAEAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EAEAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EAEAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EAEAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">code</span> <span class="highlight-xml-attribute-name">title</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Nested code tag example"</span> <span class="highlight-xml-attribute-name">language</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"VB.NET"</span><span class="highlight-xml-bracket">&gt;</span> 
+<span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">code</span> <span class="highlight-xml-attribute-name">source</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"..\Class1.vb"</span> <span class="highlight-xml-attribute-name">region</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Snippet #1"</span> <span class="highlight-xml-bracket">/&gt;</span>
+
+' ... Some stuff happens here ...
+
+<span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">code</span> <span class="highlight-xml-attribute-name">source</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"..\Class1.vb"</span> <span class="highlight-xml-attribute-name">region</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Snippet #2"</span> <span class="highlight-xml-bracket">/&gt;</span> 
+<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">code</span><span class="highlight-xml-bracket">&gt;</span></pre></div><div id="ID0EAEAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>&lt;code title="Nested code tag example" language="VB.NET"&gt; 
+&lt;code source="..\Class1.vb" region="Snippet #1" /&gt;
+
+' ... Some stuff happens here ...
+
+&lt;code source="..\Class1.vb" region="Snippet #2" /&gt; 
+&lt;/code&gt;</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EAEAAAAA');</script><a id="Configuration"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Example Configuration</div></div><p>The following is the default configuration for the code block component. It should be inserted into the
+configuration file just ahead of the <span class="code">TransformComponent</span>.  All attribute names and values
+are case-sensitive.</p><div id="ID0EGCAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EGCAAAAA_tabs"><div id="ID0EGCAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">Example Configuration</a></div></div><div id="ID0EGCAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EGCAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EGCAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EGCAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EGCAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EGCAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EGCAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EGCAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-xml-comment">&lt;!-- Code block component configuration.  This must appear before the
+     TransformComponent. --&gt;</span> 
+<span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">component</span> <span class="highlight-xml-attribute-name">id</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Code Block Component"</span><span class="highlight-xml-bracket">&gt;</span> 
+    <span class="highlight-xml-comment">&lt;!-- Base path for relative filenames in source attributes
+         (optional) --&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">basePath</span> <span class="highlight-xml-attribute-name">value</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"{@HtmlEncProjectFolder}"</span> <span class="highlight-xml-bracket">/&gt;</span> 
+
+    <span class="highlight-xml-comment">&lt;!-- Base output paths for the files (required).  These should match
+         the parent folder of the output path of the HTML files (see each of
+         the SaveComponent instances below). --&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">outputPaths</span><span class="highlight-xml-bracket">&gt;</span>
+        {@HelpFormatOutputPaths}
+    <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">outputPaths</span><span class="highlight-xml-bracket">&gt;</span> 
+
+    <span class="highlight-xml-comment">&lt;!-- Allow missing source files (Optional).  If omitted,
+         it will generate errors if referenced source files
+         are missing. --&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">allowMissingSource</span> <span class="highlight-xml-attribute-name">value</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"false"</span> <span class="highlight-xml-bracket">/&gt;</span> 
+
+    <span class="highlight-xml-comment">&lt;!-- Remove region markers from imported code blocks.  If omitted,
+         region markers in imported code blocks are left alone. --&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">removeRegionMarkers</span> <span class="highlight-xml-attribute-name">value</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"false"</span> <span class="highlight-xml-bracket">/&gt;</span> 
+
+    <span class="highlight-xml-comment">&lt;!-- Code colorizer options (required).
+         Attributes:
+           Language syntax configuration file (required)
+           XSLT style sheet file (required)
+           CSS style sheet file (required)
+           Script file (required)
+           Disabled (optional, leading whitespace normalization only)
+           Default language (optional)
+           Enable line numbering (optional)
+           Enable outlining (optional)
+           Keep XML comment "see" tags within the code (optional)
+           Tab size override (optional, 0 = Use syntax file setting)
+           Use language name as default title (optional) --&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">colorizer</span> <span class="highlight-xml-attribute-name">syntaxFile</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"{@SHFBFolder}Colorizer\highlight.xml"</span> 
+      <span class="highlight-xml-attribute-name">styleFile</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"{@SHFBFolder}Colorizer\highlight.xsl"</span> 
+      <span class="highlight-xml-attribute-name">stylesheet</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"{@SHFBFolder}Colorizer\highlight.css"</span> 
+      <span class="highlight-xml-attribute-name">scriptFile</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"{@SHFBFolder}Colorizer\highlight.js"</span> 
+      <span class="highlight-xml-attribute-name">disabled</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"{@DisableCodeBlockComponent}"</span> <span class="highlight-xml-attribute-name">language</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"cs"</span> <span class="highlight-xml-attribute-name">numberLines</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"false"</span> 
+      <span class="highlight-xml-attribute-name">outlining</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"false"</span> <span class="highlight-xml-attribute-name">keepSeeTags</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"false"</span> <span class="highlight-xml-attribute-name">tabSize</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"0"</span> <span class="highlight-xml-attribute-name">defaultTitle</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"true"</span> <span class="highlight-xml-bracket">/&gt;</span> 
+<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">component</span><span class="highlight-xml-bracket">&gt;</span></pre></div><div id="ID0EGCAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>&lt;!-- Code block component configuration.  This must appear before the
+     TransformComponent. --&gt; 
+&lt;component id="Code Block Component"&gt; 
+    &lt;!-- Base path for relative filenames in source attributes
+         (optional) --&gt; 
+    &lt;basePath value="{@HtmlEncProjectFolder}" /&gt; 
+
+    &lt;!-- Base output paths for the files (required).  These should match
+         the parent folder of the output path of the HTML files (see each of
+         the SaveComponent instances below). --&gt; 
+    &lt;outputPaths&gt;
+        {@HelpFormatOutputPaths}
+    &lt;/outputPaths&gt; 
+
+    &lt;!-- Allow missing source files (Optional).  If omitted,
+         it will generate errors if referenced source files
+         are missing. --&gt; 
+    &lt;allowMissingSource value="false" /&gt; 
+
+    &lt;!-- Remove region markers from imported code blocks.  If omitted,
+         region markers in imported code blocks are left alone. --&gt; 
+    &lt;removeRegionMarkers value="false" /&gt; 
+
+    &lt;!-- Code colorizer options (required).
+         Attributes:
+           Language syntax configuration file (required)
+           XSLT style sheet file (required)
+           CSS style sheet file (required)
+           Script file (required)
+           Disabled (optional, leading whitespace normalization only)
+           Default language (optional)
+           Enable line numbering (optional)
+           Enable outlining (optional)
+           Keep XML comment "see" tags within the code (optional)
+           Tab size override (optional, 0 = Use syntax file setting)
+           Use language name as default title (optional) --&gt; 
+    &lt;colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" 
+      styleFile="{@SHFBFolder}Colorizer\highlight.xsl" 
+      stylesheet="{@SHFBFolder}Colorizer\highlight.css" 
+      scriptFile="{@SHFBFolder}Colorizer\highlight.js" 
+      disabled="{@DisableCodeBlockComponent}" language="cs" numberLines="false" 
+      outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" /&gt; 
+&lt;/component&gt;</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EGCAAAAA');</script><p>The example given above is taken from the Sandcastle Help File Builder's configuration file.  When used
+with it, you may specify the replacement tag <span class="code">{@SHFBFolder}</span> to insert the help file
+builder's folder in the file path and the <span class="code">{@ProjectFolder}</span> replacement tag to specify
+the current project's folder.  These are replaced at build time with the appropriate values.  These replacement
+tags can also be specified in the configuration dialog when configuring project-specific configurations for the
+component from within the help file builder.  If using the component in your own build scripts, replace the tags
+with an actual absolute or relative path.</p><p>The <span class="code">basePath</span> element is optional.  If specified, it defines the base path to
+use for relative paths in the <span class="code">source</span> attributes of code blocks.  If omitted or left
+blank, the current folder at build time is assumed to be the base path.</p><p>The <span class="code">outputPaths</span> element is required.  It defines the output paths to use for
+each help file format in the build.  These will be used when copying the colorizer script and style sheet files.
+The help file builder will fill these in automatically.  If using this with your own build scripts, specify
+one <span class="code">path</span> element for each help file output format being generated with a
+<span class="code">value</span> attribute set to the relative path of the format's output folder (i.e.
+<em>Output\HtmlHelp1</em>).</p><p>The <span class="code">allowMissingSource</span> element is optional.  If omitted, or if specified and
+set to false, any code block that references a source code file or region within a file will generate an error
+and stop the build if the source code file or the region in it cannot be found.  If specified and set to true,
+only warnings will be generated and the build will be allowed to run to completion.  The code blocks with the
+missing information will contain an error message referring you to the log file.  This option can be overridden
+on a case by case basis by adding an <span class="code">allowMissingSource</span> attribute to individual
+<span class="code">code</span> elements in the XML comments.  When set to true on the individual elements, it
+allows them to be missing.  If omitted or set to false, the global setting from this option is inherited.</p><p>The <span class="code">removeRegionMarkers</span> element is option.  If omitted, or if specified and
+set to false, any region markers in imported code blocks are left in the imported code.  If specified and set to
+true, any region markers nested within the imported code file or region are removed.  This is useful for getting
+rid of region markers in code that is used both for a larger example and parts of it that are used in smaller
+snippet examples.  This setting can be overridden by specifying the attribute on individual
+<span class="code">code</span> elements.</p><p>The <span class="code">colorizer</span> element is required along with the <span class="code">syntaxFile</span>,
+<span class="code">styleFile</span>, <span class="code">stylesheet</span>, and <span class="code">scriptFile</span>
+attributes which define the default syntax definition file, the transformation file used by the colorizer,
+the style sheet to use for the colorized code, and the colorized code script file.  The supplied
+<em>highlight.xml</em> file contains the syntax definitions for the languages supported by the
+colorizer.  The supplied <em>highlight.xsl</em> file defines the XSLT transformation used to convert
+the parsed code block into the colorized HTML.  The supplied <em>highlight.css</em> and
+<em>highlight.js</em> files contain the default styles and script used for the colorized code.  All
+other attributes are optional.  If specified, they define the defaults for code blocks that do not specify the
+matching attribute.  The optional <span class="code">defaultTitle</span> attribute specifies whether or not to use
+the language name as the title if a specific title is not supplied.  The optional <span class="code">disabled</span>
+attribute will turn off code colorization if set to true.</p><a name="seeAlsoSection"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="8dcbb69b-7a1a-4049-8e6b-2bf344efbbc9.htm" target="">Custom Build Components</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p><a href="http://SHFB.CodePlex.com" target="_blank">[v2014.2.15.0] Copyright © 2006-2014, Eric Woodruff, All rights reserved (http://SHFB.CodePlex.com)</a></p><div class="OH_feedbacklink"><a href="mailto:Eric@EWoodruff.us?subject=Sandcastle+Help+File+Builder+Documentation+Code+Block+Component+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Eric Woodruff.</div></div><script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript">$(document).ready(function () {DocumentReady();});</script></body></html>

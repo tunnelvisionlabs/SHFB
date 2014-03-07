@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="97d9a1f8-81f5-4b7a-9a0c-bee98cd0f51d" Title="FolderDialogAttribute Constructor " Url="html/0bf3f7df-5c43-5b48-0512-021fd2746480.htm">
+  <HelpTOCNode Title="FolderDialogAttribute Constructor (String)" Url="html/5ad95905-6e67-3b9b-b260-df08bfd45688.htm" />
+  <HelpTOCNode Title="FolderDialogAttribute Constructor (String, Environment.SpecialFolder)" Url="html/3e3ad591-27ff-6529-f688-3f35b50844b7.htm" />
+  <HelpTOCNode Title="FolderDialogAttribute Constructor (String, Boolean, Environment.SpecialFolder, Environment.SpecialFolder)" Url="html/0861fca4-85cb-37c0-60e6-06d33ce7ddd1.htm" />
+</HelpTOCNode>

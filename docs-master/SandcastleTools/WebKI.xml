@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="donate" Url="html/ECE14E8F-CA3D-41CE-8186-B649B6B95B81.htm" />
+  <HelpKINode Title="FAQ" Url="html/69c47b63-55bd-4493-ad05-1068bb0d930f.htm" />
+  <HelpKINode Title="frequently asked questions" Url="html/69c47b63-55bd-4493-ad05-1068bb0d930f.htm" />
+  <HelpKINode Title="Getting started">
+    <HelpKINode Title="enable XML comments" Url="html/1466166B-0BC0-4B0F-ABDC-B5A755EA4ED9.htm" />
+    <HelpKINode Title="installation" Url="html/8A556640-5741-4108-AD6E-D1CAE4D91860.htm" />
+    <HelpKINode Title="Visual Studio projects" Url="html/1466166B-0BC0-4B0F-ABDC-B5A755EA4ED9.htm" />
+    <HelpKINode Title="Visual Studio" Url="html/1466166B-0BC0-4B0F-ABDC-B5A755EA4ED9.htm" />
+    <HelpKINode Title="websites and web projects" Url="html/2D292E99-83FF-4978-B1F8-CF70385C3B4F.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Getting Started" Url="html/6D925E85-3DEA-422D-8F4B-F5995C33BD0F.htm" />
+  <HelpKINode Title="glossary" Url="html/B7E856D9-2576-4527-81AD-2A04F8BFD84B.htm" />
+  <HelpKINode Title="installation" Url="html/8A556640-5741-4108-AD6E-D1CAE4D91860.htm" />
+  <HelpKINode Title="License agreement" Url="html/3367AE66-A888-49A7-9B1E-448D8DDB1544.htm" />
+  <HelpKINode Title="links to resources" Url="html/f11815bb-2226-4a23-b28d-a1e71dfccd40.htm" />
+  <HelpKINode Title="prerequisites" Url="html/8A556640-5741-4108-AD6E-D1CAE4D91860.htm" />
+  <HelpKINode Title="requirements" Url="html/8A556640-5741-4108-AD6E-D1CAE4D91860.htm" />
+  <HelpKINode Title="Sandcastle tools" Url="html/1f2caa70-729b-48e1-9a9c-b612efd2f3b7.htm" />
+  <HelpKINode Title="Sandcastle Tools" Url="html/4be43835-41f2-4fee-9482-f6426d75ab6c.htm" />
+  <HelpKINode Title="support">
+    <HelpKINode Title="donate" Url="html/ECE14E8F-CA3D-41CE-8186-B649B6B95B81.htm" />
+  </HelpKINode>
+  <HelpKINode Title="tools">
+    <HelpKINode Title="general information" Url="html/5a8fa02a-01cd-466e-a2c1-2bb30190cc5a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="tools architecture" Url="html/80c983f4-1a97-473b-b614-2b4d671d50ca.htm" />
+  <HelpKINode Title="version history" Url="html/e0636c2c-3da0-4d5e-9e86-6fb3f0c83eef.htm" />
+  <HelpKINode Title="versions">
+    <HelpKINode Title="2.7.0.0" Url="html/0f2756ce-8089-4902-9ae4-68e593b2ec51.htm" />
+    <HelpKINode Title="2.7.1.0" Url="html/05027d1d-855f-4939-b1d1-09b674be66a0.htm" />
+    <HelpKINode Title="2.7.2.0" Url="html/2df020c8-13c1-46d0-82c3-69b57fd9c484.htm" />
+    <HelpKINode Title="2.7.3.0" Url="html/dacbe260-df28-4ad6-b0ec-b2f6711c6b2d.htm" />
+    <HelpKINode Title="2.7.4.0" Url="html/655dc2f6-9e3c-45b1-8d7f-472ddd6eac1f.htm" />
+    <HelpKINode Title="2014.1.26.0 Beta" Url="html/0fdc9909-5233-4ebb-b9e7-a9e48f662222.htm" />
+    <HelpKINode Title="2014.2.15.0 Beta" Url="html/5bff64cb-768e-452e-b5fd-df84753f3f4a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Welcome" Url="html/55798556-c18a-46bd-8bb6-902c45e5ebbc.htm" />
+  <HelpKINode Title="XML comment tags">
+    <HelpKINode Title="tag reference" Url="html/1466166B-0BC0-4B0F-ABDC-B5A755EA4ED9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="XML comments" Url="html/1466166B-0BC0-4B0F-ABDC-B5A755EA4ED9.htm" />
+</HelpKI>

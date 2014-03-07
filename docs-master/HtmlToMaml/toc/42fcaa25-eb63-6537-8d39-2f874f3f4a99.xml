@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="b96b516e-3b4e-40cf-a412-078e367154ba" Title="FilePath Methods" Url="html/42fcaa25-eb63-6537-8d39-2f874f3f4a99.htm">
+  <HelpTOCNode Title="AbsoluteToRelativePath Method " Url="html/6ef492fc-8e9e-f96f-2382-ce7440cfeeff.htm" />
+  <HelpTOCNode Title="Clone Method " Url="html/6227a2aa-88ca-4848-213f-851149372744.htm" />
+  <HelpTOCNode Title="Equals Method " Url="html/a4c4d0c8-51d9-2d47-ff49-6520a072d433.htm" />
+  <HelpTOCNode Title="GetFullPath Method " Url="html/5bfe1fcc-abce-6e0c-0109-cde8e30dd603.htm" />
+  <HelpTOCNode Title="GetHashCode Method " Url="html/eaba207a-9465-000b-ffe3-cf7ca556cd87.htm" />
+  <HelpTOCNode Title="OnPersistablePathChanged Method " Url="html/03f852b1-af4f-a825-b3d6-380a7f371814.htm" />
+  <HelpTOCNode Title="OnPersistablePathChanging Method " Url="html/aad590f3-049d-d9ec-0398-c113851ed4c2.htm" />
+  <HelpTOCNode Title="RelativeToAbsolutePath Method " Url="html/36d4a607-ca48-8758-60ad-d829a68b27fd.htm" />
+  <HelpTOCNode Title="ToString Method " Url="html/33bc5aea-744b-ab09-e849-81667434866f.htm" />
+</HelpTOCNode>

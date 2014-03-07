@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="c73d5294-61fa-4a9b-907c-aecdae8e550c" Title="Build1xHelpFile Properties" Url="html/6290eb97-7a8e-a518-f380-b67c15e3b399.htm">
+  <HelpTOCNode Title="HelpCompilerFolder Property " Url="html/92e84e5d-ae53-4e3d-f861-e9d0184107ee.htm" />
+  <HelpTOCNode Title="HelpProjectName Property " Url="html/bdc67d57-0601-693f-330f-8674e1f2ab74.htm" />
+  <HelpTOCNode Title="LanguageId Property " Url="html/fdc77c27-ecb3-ee64-9900-e79e3a2b0b71.htm" />
+  <HelpTOCNode Title="LocalizeApp Property " Url="html/b9a18591-a931-bc1f-8439-04ca04427300.htm" />
+  <HelpTOCNode Title="StandardErrorLoggingImportance Property " Url="html/753063c5-c946-51d2-5939-0e0e89897883.htm" />
+  <HelpTOCNode Title="StandardOutputLoggingImportance Property " Url="html/80a31ec2-d95f-c1d3-137f-8ed6002fbe5b.htm" />
+  <HelpTOCNode Title="ToolName Property " Url="html/515a4602-4928-d187-c4ac-164e5196aff8.htm" />
+  <HelpTOCNode Title="WorkingFolder Property " Url="html/282a58f8-bdd8-fbc3-c913-72d257e9a1c0.htm" />
+</HelpTOCNode>

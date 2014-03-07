@@ -1,0 +1,167 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="SHORTCUT ICON" href="./../icons/favicon.ico"><link rel="stylesheet" type="text/css" href="./../styles/branding.css"><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css"><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Item File Templates</title><meta name="Language" content="en-us"><meta name="System.Keywords" content="Visual Studio, custom item file templates"><meta name="System.Keywords" content="Visual Studio, item file templates"><meta name="Microsoft.Help.Id" content="ece3a395-589f-45c3-9f0e-2a25b8b6c537"><meta name="Description" content="Item file templates are supplied for each of the common file types within a help file builder project."><meta name="Microsoft.Help.ContentType" content="Concepts"><meta name="BrandingAware" content="'true'"><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css"><link type="text/css" rel="stylesheet" href="./../styles/highlight.css"><script type="text/javascript" src="../scripts/highlight.js"><!----></script><meta name="SelfBranded" content="true"></head><body onload="onLoad()" class="primary-mtps-offline-document"><header class="ux-header"><div class="header-top-bar">Sandcastle Help File Builder Documentation</div></header><div class="OH_outerDiv" style="padding: 35px 20px 0 20px;"><div class="OH_leftNav" id="LeftNav">
+  <div id="tocnav">
+    <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;"><a class="toc_collapsed" onclick="javascript: Toggle(this);" href="#"></a><a data-tochassubtree="true" href="bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" title="Sandcastle Help File Builder" tocid="roottoc">Sandcastle Help File Builder</a></div><div class="toclevel1" data-toclevel="1" style="padding-left: 13px;" data-childrenloaded="true"><a class="toc_expanded" onclick="javascript: Toggle(this);" href="#"></a><a data-tochassubtree="true" href="b128ad2a-787e-48c7-b946-f6953080c386.htm" title="Visual Studio Integration Package" tocid="b128ad2a-787e-48c7-b946-f6953080c386">Visual Studio Integration Package</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="78507051-0fc0-479b-9d47-78a10398eaf2.htm" title="Feature Comparison and Location" tocid="78507051-0fc0-479b-9d47-78a10398eaf2">Feature Comparison and Location</a></div><div class="toclevel2 current" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="ece3a395-589f-45c3-9f0e-2a25b8b6c537.htm" title="Item File Templates" tocid="ece3a395-589f-45c3-9f0e-2a25b8b6c537">Item File Templates</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="c8258d52-6664-4e96-86cd-6f75a854a69c.htm" title="Component Project Templates" tocid="c8258d52-6664-4e96-86cd-6f75a854a69c">Component Project Templates</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="7cbf7f9b-d456-430a-8f85-9e30ed250cfa.htm" title="Visual Studio Text Editor" tocid="7cbf7f9b-d456-430a-8f85-9e30ed250cfa">Visual Studio Text Editor</a></div></div></div><div id="TocResize" class="OH_TocResize"><img id="ResizeImageIncrease" src="../icons/open.gif" onclick="onIncreaseToc()" alt="Expand" title="Expand"><img id="ResizeImageReset" src="../icons/close.gif" style="display:none" onclick="onResetToc()" alt="Minimize" title="Minimize"></div><div class="OH_outerContent" id="OuterContent" style="margin-left: 280px;"><h1 class="title">Item File Templates</h1><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><div class="introduction"><p>Item file templates are supplied for each of the common file types within a help file builder project.
+This topic covers how to add a file to a project as well as how to create and install your own custom item file
+templates for use from within Visual Studio.</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#AddNewFile" target="">Adding a File to the Project</a></li><li class="outlineSectionEntry"><a href="#CustomTemplates" target="">Creating Custom Item File Templates</a></li><li class="outlineSectionEntry"><a href="#seeAlsoSection" target="">See Also</a></li></ul></div><a id="AddNewFile"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Adding a File to the Project</div></div><p>To add a new file to a help file builder project, select the project node or the folder within which
+you want to add the new item and then select the <span class="ui">Add New Item</span> option from the <span class="ui">Project</span> main menu
+option or the <span class="ui">Add</span> | <span class="ui">New Item</span> option from the selected item's context menu.  To add an existing
+item, use the <span class="ui">Existing Item</span> option from the project menu or context menu instead.</p><div class="ps_mediaCenter"><img alt="Visual Studio Add New Item dialog" src="./../media/VSAddNewItemDlg.png"></div><p>The <span class="ui">Add New Item</span> dialog box, shown above, groups the item templates into various categories.  The
+parent category shows all item templates from its subcategories.  Pick a subcategory to further filter the available
+selections.  The <span class="ui">Sort by</span> combo box can be used to change the sort order of the items.  The default sort order
+lists the most frequently used file types first followed by the lesser used file types within each subcategory.
+Once you have selected the file template, enter a name for it and click the <span class="ui">Add</span> button to add it to the
+project.</p><a id="CustomTemplates"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Creating Custom Item File Templates</div></div><p>Like the standalone GUI, Visual Studio supports custom item file templates for help file builder
+projects.  However, they are created differently and are stored in a different location from the templates used
+by the standalone GUI.  Follow these steps to create your own custom item file templates.</p><ol><li><p>Create the template file.  Name the file whatever you like and give it an appropriate extension.  The
+content of the template file will be used as the default content for the file when it is added to a project.  An example conceptual
+content template is shown below:</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Tip"> <strong>Tip</strong></th></tr><tr><td>For conceptual content item templates, replace the topic's GUID value with the text "<span class="code">$guid1$</span>".
+This will cause Visual Studio to automatically insert a new GUID value in the topic when it is added to a project.</td></tr></table></div><div id="ID0EAGBCAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EAGBCAAAAA_tabs"><div id="ID0EAGBCAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">Example Template File: BlankTopic.aml</a></div></div><div id="ID0EAGBCAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAGBCAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EAGBCAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EAGBCAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EAGBCAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EAGBCAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EAGBCAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EAGBCAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre>&lt;?xml version=<span class="highlight-literal">"1.0"</span> encoding=<span class="highlight-literal">"utf-8"</span>?&gt;
+&lt;topic id=<span class="highlight-literal">"$guid1$"</span> revisionNumber=<span class="highlight-literal">"1"</span>&gt;
+  &lt;developerConceptualDocument
+    xmlns=<span class="highlight-literal">"http://ddue.schemas.microsoft.com/authoring/2003/5"</span>
+    xmlns:xlink=<span class="highlight-literal">"http://www.w3.org/1999/xlink"</span>&gt;
+
+    &lt;introduction&gt;
+      &lt;para&gt;Required introduction&lt;/para&gt;
+    &lt;/introduction&gt;
+
+&lt;section address=<span class="highlight-literal">"Section1"</span>&gt;
+  &lt;title&gt;Optional section title&lt;/title&gt;
+  &lt;content&gt;
+    &lt;para&gt;Add one or more sections with content&lt;/para&gt;
+  &lt;/content&gt;
+&lt;/section&gt;
+
+    &lt;relatedTopics&gt;
+    &lt;!-- Add related topics --&gt;
+    &lt;/relatedTopics&gt;
+  &lt;/developerConceptualDocument&gt;
+&lt;/topic&gt;</pre></div><div id="ID0EAGBCAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;topic id="$guid1$" revisionNumber="1"&gt;
+  &lt;developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+
+    &lt;introduction&gt;
+      &lt;para&gt;Required introduction&lt;/para&gt;
+    &lt;/introduction&gt;
+
+&lt;section address="Section1"&gt;
+  &lt;title&gt;Optional section title&lt;/title&gt;
+  &lt;content&gt;
+    &lt;para&gt;Add one or more sections with content&lt;/para&gt;
+  &lt;/content&gt;
+&lt;/section&gt;
+
+    &lt;relatedTopics&gt;
+    &lt;!-- Add related topics --&gt;
+    &lt;/relatedTopics&gt;
+  &lt;/developerConceptualDocument&gt;
+&lt;/topic&gt;</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EAGBCAAAAA');</script></li><li><p>In order for Visual Studio to know how to display and use your template file, you must create a
+VSTemplate file to accompany it.  This is an XML file with a <em>.vstemplate</em> extension.  The base
+filename should match the base filename of your template file (i.e. <em>BlankTopic.vstemplate</em> for the
+<em>BlankTopic.aml</em> template file).  An example is shown below:</p><div id="ID0ECFBCAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0ECFBCAAAAA_tabs"><div id="ID0ECFBCAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">Example VSTemplate File: BlankTopic.vstemplate</a></div></div><div id="ID0ECFBCAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0ECFBCAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0ECFBCAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0ECFBCAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0ECFBCAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0ECFBCAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0ECFBCAAAAA','4')" title="Print">Print</a></div></div><div id="ID0ECFBCAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">VSTemplate</span> <span class="highlight-xml-attribute-name">Version</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"3.0.0"</span> <span class="highlight-xml-attribute-name">Type</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Item"</span> 
+  <span class="highlight-xml-attribute-name">xmlns</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"http://schemas.microsoft.com/developer/vstemplate/2005"</span><span class="highlight-xml-bracket">&gt;</span> 
+
+  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">TemplateData</span><span class="highlight-xml-bracket">&gt;</span> 
+    <span class="highlight-xml-comment">&lt;!-- This is the name displayed for the template --&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">Name</span><span class="highlight-xml-bracket">&gt;</span>Blank Topic<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">Name</span><span class="highlight-xml-bracket">&gt;</span> 
+
+    <span class="highlight-xml-comment">&lt;!-- This is the description displayed for the template --&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">Description</span><span class="highlight-xml-bracket">&gt;</span>A blank conceptual topic<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">Description</span><span class="highlight-xml-bracket">&gt;</span> 
+
+    <span class="highlight-xml-comment">&lt;!-- This is the icon displayed for the template.  This example uses
+         an icon from the SHFB project package.  If you want to add your
+         own icon, use an Icon element as shown in the commented out example
+         below instead. --&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">Icon</span> <span class="highlight-xml-attribute-name">Package</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"{c997d569-ee8e-4947-a46f-9a0717ce39a0}"</span> <span class="highlight-xml-attribute-name">ID</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"407"</span> <span class="highlight-xml-bracket">/&gt;</span> 
+
+    <span class="highlight-xml-comment">&lt;!-- &lt;Icon&gt;MyTemplateIcon.ico&lt;/Icon&gt; --&gt;</span> 
+
+    <span class="highlight-xml-comment">&lt;!-- This associates the template with the SHFB package --&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ProjectType</span><span class="highlight-xml-bracket">&gt;</span>SHFBProject<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">ProjectType</span><span class="highlight-xml-bracket">&gt;</span> 
+
+    <span class="highlight-xml-comment">&lt;!-- The default filename to use --&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">DefaultName</span><span class="highlight-xml-bracket">&gt;</span>BlankTopic.aml<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">DefaultName</span><span class="highlight-xml-bracket">&gt;</span> 
+
+    <span class="highlight-xml-comment">&lt;!-- The sort order of the item.  You can adjust this to have the
+         template appear higher or lower in the list when using the
+         default sort order. --&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">SortOrder</span><span class="highlight-xml-bracket">&gt;</span>10<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">SortOrder</span><span class="highlight-xml-bracket">&gt;</span> 
+
+    <span class="highlight-xml-comment">&lt;!-- Adding this element will cause the template to appear in
+         parent categories if they are used.  Adjust the number up if
+         you have more than two parent categories. --&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">NumberOfParentCategoriesToRollUp</span><span class="highlight-xml-bracket">&gt;</span>2<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">NumberOfParentCategoriesToRollUp</span><span class="highlight-xml-bracket">&gt;</span> 
+  <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">TemplateData</span><span class="highlight-xml-bracket">&gt;</span> 
+
+  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">TemplateContent</span><span class="highlight-xml-bracket">&gt;</span> 
+    <span class="highlight-xml-comment">&lt;!-- This defines the project item template file.  The name should
+         match the name of the item template you created.  If it contains
+         replaceable parameters such as "$guid1$", add the
+         ReplaceParameters attribute and set it to "true". --&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ProjectItem</span> <span class="highlight-xml-attribute-name">ReplaceParameters</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"true"</span><span class="highlight-xml-bracket">&gt;</span>BlankTopic.aml<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">ProjectItem</span><span class="highlight-xml-bracket">&gt;</span> 
+  <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">TemplateContent</span><span class="highlight-xml-bracket">&gt;</span> 
+<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">VSTemplate</span><span class="highlight-xml-bracket">&gt;</span></pre></div><div id="ID0ECFBCAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>&lt;VSTemplate Version="3.0.0" Type="Item" 
+  xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"&gt; 
+
+  &lt;TemplateData&gt; 
+    &lt;!-- This is the name displayed for the template --&gt; 
+    &lt;Name&gt;Blank Topic&lt;/Name&gt; 
+
+    &lt;!-- This is the description displayed for the template --&gt; 
+    &lt;Description&gt;A blank conceptual topic&lt;/Description&gt; 
+
+    &lt;!-- This is the icon displayed for the template.  This example uses
+         an icon from the SHFB project package.  If you want to add your
+         own icon, use an Icon element as shown in the commented out example
+         below instead. --&gt; 
+    &lt;Icon Package="{c997d569-ee8e-4947-a46f-9a0717ce39a0}" ID="407" /&gt; 
+
+    &lt;!-- &lt;Icon&gt;MyTemplateIcon.ico&lt;/Icon&gt; --&gt; 
+
+    &lt;!-- This associates the template with the SHFB package --&gt; 
+    &lt;ProjectType&gt;SHFBProject&lt;/ProjectType&gt; 
+
+    &lt;!-- The default filename to use --&gt; 
+    &lt;DefaultName&gt;BlankTopic.aml&lt;/DefaultName&gt; 
+
+    &lt;!-- The sort order of the item.  You can adjust this to have the
+         template appear higher or lower in the list when using the
+         default sort order. --&gt; 
+    &lt;SortOrder&gt;10&lt;/SortOrder&gt; 
+
+    &lt;!-- Adding this element will cause the template to appear in
+         parent categories if they are used.  Adjust the number up if
+         you have more than two parent categories. --&gt; 
+    &lt;NumberOfParentCategoriesToRollUp&gt;2&lt;/NumberOfParentCategoriesToRollUp&gt; 
+  &lt;/TemplateData&gt; 
+
+  &lt;TemplateContent&gt; 
+    &lt;!-- This defines the project item template file.  The name should
+         match the name of the item template you created.  If it contains
+         replaceable parameters such as "$guid1$", add the
+         ReplaceParameters attribute and set it to "true". --&gt; 
+    &lt;ProjectItem ReplaceParameters="true"&gt;BlankTopic.aml&lt;/ProjectItem&gt; 
+  &lt;/TemplateContent&gt; 
+&lt;/VSTemplate&gt;</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0ECFBCAAAAA');</script><p>For the <span class="code">Icon</span> element, you can use the one shown in the
+example above with one of the following ID numbers to use one of the built-in file type icons.  If you
+want to use your own icon, use an element like the commented out example to specify the icon filename.
+The icon file should be placed in the same folder as the template file and the VSTemplate file.</p><div class="tableSection"><table><tr><th>ID Number</th><th>Description</th></tr><tr><td>401</td><td>HTML file</td></tr><tr><td>402</td><td>Image file</td></tr><tr><td>403</td><td>Script file</td></tr><tr><td>404</td><td>Stylesheet</td></tr><tr><td>405</td><td>Text/general file</td></tr><tr><td>406</td><td>XML file</td></tr><tr><td>407</td><td>Conceptual content topic</td></tr><tr><td>408</td><td>Content layout file</td></tr><tr><td>409</td><td>Resource item file</td></tr><tr><td>410</td><td>Token file</td></tr><tr><td>411</td><td>Code snippets file</td></tr></table></div></li><li>Create a <em>.zip</em> archive file containing the template file, the
+VSTemplate XML file, and the icon file if you added your own icon.  Store the files in the archive without
+paths.</li><li>Create the folder <em>[My Documents]\Visual Studio 2010\Templates\ItemTemplates\SHFBProject\</em>
+where "<em>[My Documents]</em>" is the location of your personal documents folder.  This is the root folder for your
+custom help file builder item template files.</li><li>To separate your custom templates from the standard item templates, create a subfolder such
+as <em>.\Custom Templates</em> beneath the root folder created in the prior step.  This will make it easy
+to filter the list to your custom templates.  Additional subfolders can be used to further subcategorize the files as
+needed.  For example, if you want to categorize your templates as conceptual content or other content, create a
+<em>.\Conceptual Content</em> and/or <em>.\Other Content</em> subfolder beneath the
+custom templates folder.</li><li>Place the archive file containing your template in the custom templates folder.</li><li><p>When you open the <span class="ui">Add New Item</span> dialog, you should now see your custom
+templates listed in the appropriate location.  An example is shown below:</p><div class="ps_mediaCenter"><img alt="Custom templates in the Add New Item dialog" src="./../media/VSCustomTemplates.png"></div></li></ol><p>For more information about template files, see the <a class="mtps-external-link" title="VSTemplate information" href="http://msdn.microsoft.com/en-us/library/s365byhx(v=VS.100).aspx" target="_blank">Creating Project and Item Templates</a> MSDN topic.</p><a name="seeAlsoSection"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="b128ad2a-787e-48c7-b946-f6953080c386.htm" target="">Visual Studio Integration Package</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p><a href="http://SHFB.CodePlex.com" target="_blank">[v2014.2.15.0] Copyright © 2006-2014, Eric Woodruff, All rights reserved (http://SHFB.CodePlex.com)</a></p><div class="OH_feedbacklink"><a href="mailto:Eric@EWoodruff.us?subject=Sandcastle+Help+File+Builder+Documentation+Item+File+Templates+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Eric Woodruff.</div></div><script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript">$(document).ready(function () {DocumentReady();});</script></body></html>

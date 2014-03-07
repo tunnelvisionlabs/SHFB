@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="bfa91f36-015d-4a39-89ca-ce4e8d096ccd" Title="SandcastleBuilder.WPF.UserControls Namespace" Url="html/e01f2c15-13b2-e6d5-9f46-cfddd45965b9.htm">
+  <HelpTOCNode Id="fc635fc5-5773-4b2f-b930-cf5901a4b180" Title="BuildLogViewerControl Class" Url="html/73eeca4f-5f19-b7bd-7ae1-49eb3278725e.htm" HasChildren="true" />
+  <HelpTOCNode Id="91f13e4e-c8c2-4181-a260-9021d9836cdc" Title="ContentLayoutEditorControl Class" Url="html/80c2781c-7713-b923-8d49-4f7375e0da7a.htm" HasChildren="true" />
+  <HelpTOCNode Id="6a44ae59-87a3-438f-894d-2f1b645f3c7d" Title="EntityReferencesControl Class" Url="html/e6bfbd16-e065-c24f-64ad-19cf68491351.htm" HasChildren="true" />
+  <HelpTOCNode Id="1984b3e2-e512-4d8d-8cf7-b5a35898aa13" Title="FileContentNeededEventArgs Class" Url="html/59fabe8e-409b-8c99-331c-59db5e0fd294.htm" HasChildren="true" />
+  <HelpTOCNode Id="7a166760-c9ce-461c-8f2b-03bde481a68d" Title="ResourceItemEditorControl Class" Url="html/d9e213da-9ce2-206f-5eff-191c214e7f41.htm" HasChildren="true" />
+  <HelpTOCNode Id="05194db1-911c-47bc-8812-b8f668c94dee" Title="SiteMapEditorControl Class" Url="html/43037e2a-0e8d-73a0-fbe4-860a72c4595a.htm" HasChildren="true" />
+  <HelpTOCNode Id="e7569c00-79e3-46cb-a0ae-f01ffc3aa112" Title="TokenEditorControl Class" Url="html/e3948ccc-f6d7-2ab3-f414-1f6708d3f932.htm" HasChildren="true" />
+  <HelpTOCNode Id="e61a722c-b833-4bdf-a2e0-c9043d26e019" Title="TopicContentNeededEventArgs Class" Url="html/ad3d01b5-c7de-becd-feaa-12648ed52adf.htm" HasChildren="true" />
+  <HelpTOCNode Id="a6bb4a78-b6c0-4123-b6be-de357cd524da" Title="TopicPreviewerControl Class" Url="html/45ecd7aa-10f6-0981-3afd-06128981652b.htm" HasChildren="true" />
+</HelpTOCNode>

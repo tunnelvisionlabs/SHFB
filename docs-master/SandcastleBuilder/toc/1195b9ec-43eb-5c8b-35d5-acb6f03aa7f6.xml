@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="4ba5f5e6-ffd3-4830-8757-d9cf53869699" Title="BasePropertyPage Methods" Url="html/1195b9ec-43eb-5c8b-35d5-acb6f03aa7f6.htm">
+  <HelpTOCNode Title="Apply Method " Url="html/31b9f81d-e624-31c0-7716-3ce16b3f13f8.htm" />
+  <HelpTOCNode Title="BindControlValue Method " Url="html/907166fa-b3c5-8280-2487-ee1e7c44caf0.htm" />
+  <HelpTOCNode Title="BindProperties Method " Url="html/e7c8b613-409d-ea72-ca52-99541a1a8201.htm" />
+  <HelpTOCNode Id="0f241aa0-0e9c-4100-88fc-465b696a3674" Title="Dispose Method " Url="html/aaf32c60-736d-dba7-6aac-515a58fa97f1.htm" HasChildren="true" />
+  <HelpTOCNode Title="Initialize Method " Url="html/734200f6-5d0e-a36c-9b9d-300f29391180.htm" />
+  <HelpTOCNode Title="IsEscapedProperty Method " Url="html/4972c4cb-d0ef-7b1b-3edd-9a75bc567e99.htm" />
+  <HelpTOCNode Title="OnPropertyChanged Method " Url="html/35d7ba02-b82d-b2a4-f3c1-b355a8e169b5.htm" />
+  <HelpTOCNode Title="RefreshControlState Method " Url="html/1aa8fe25-d870-d139-4524-faeb6d88ea39.htm" />
+  <HelpTOCNode Title="SetProject Method " Url="html/1481d411-2c61-c823-b534-6ea8070cc825.htm" />
+  <HelpTOCNode Title="ShowHelp Method " Url="html/95684ab1-f4f1-a4f6-e5bb-e2eb5cd3d3c7.htm" />
+  <HelpTOCNode Title="StoreControlValue Method " Url="html/e8a99057-a7c3-23ec-772f-7f1011f80f19.htm" />
+  <HelpTOCNode Title="StoreProperties Method " Url="html/a311cecb-de11-5b95-7167-185fe24e72c0.htm" />
+</HelpTOCNode>

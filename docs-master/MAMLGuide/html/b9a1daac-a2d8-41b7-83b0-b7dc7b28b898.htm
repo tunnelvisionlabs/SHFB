@@ -1,0 +1,154 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="SHORTCUT ICON" href="./../icons/favicon.ico"><link rel="stylesheet" type="text/css" href="./../styles/branding.css"><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css"><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>autoOutline</title><meta name="Language" content="en-us"><meta name="System.Keywords" content="Miscellaneous Elements, autoOutline"><meta name="Microsoft.Help.Id" content="b9a1daac-a2d8-41b7-83b0-b7dc7b28b898"><meta name="Description" content="The autoOutline element is a special case used by Sandcastle to insert an auto-generated section outline within a topic's introduction or sub-sections."><meta name="Microsoft.Help.ContentType" content="Concepts"><meta name="BrandingAware" content="'true'"><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css"><link type="text/css" rel="stylesheet" href="./../styles/highlight.css"><script type="text/javascript" src="../scripts/highlight.js"><!----></script><meta name="SelfBranded" content="true"></head><body onload="onLoad()" class="primary-mtps-offline-document"><header class="ux-header"><div class="header-top-bar">Sandcastle MAML Guide</div></header><div class="OH_outerDiv" style="padding: 35px 20px 0 20px;"><div class="OH_leftNav" id="LeftNav">
+  <div id="tocnav">
+    <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;"><a class="toc_collapsed" onclick="javascript: Toggle(this);" href="#"></a><a data-tochassubtree="true" href="303c996a-2911-4c08-b492-6496c82b3edb.htm" title="Sandcastle MAML Guide" tocid="roottoc">Sandcastle MAML Guide</a></div><div class="toclevel0" data-toclevel="0" style="padding-left: 0px;"><a class="toc_collapsed" onclick="javascript: Toggle(this);" href="#"></a><a data-tochassubtree="true" href="9d0dc122-7829-4b22-af2e-6685867116f8.htm" title="Miscellaneous Elements" tocid="9d0dc122-7829-4b22-af2e-6685867116f8">Miscellaneous Elements</a></div><div class="toclevel1 current" data-toclevel="1" style="padding-left: 13px;" data-childrenloaded="true"><a class="toc_expanded" onclick="javascript: Toggle(this);" href="#"></a><a data-tochassubtree="true" href="b9a1daac-a2d8-41b7-83b0-b7dc7b28b898.htm" title="autoOutline" tocid="b9a1daac-a2d8-41b7-83b0-b7dc7b28b898">autoOutline</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px; display: block;"><span class="toc_empty"></span><a data-tochassubtree="false" href="1a817894-db7a-4c7f-bd67-cca896affa35.htm" title="autoOutline Rendered Example" tocid="1a817894-db7a-4c7f-bd67-cca896affa35">autoOutline Rendered Example</a></div></div></div><div id="TocResize" class="OH_TocResize"><img id="ResizeImageIncrease" src="../icons/open.gif" onclick="onIncreaseToc()" alt="Expand" title="Expand"><img id="ResizeImageReset" src="../icons/close.gif" style="display:none" onclick="onResetToc()" alt="Minimize" title="Minimize"></div><div class="OH_outerContent" id="OuterContent" style="margin-left: 280px;"><h1 class="title">autoOutline</h1><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><div class="introduction"><p>The <span class="code">autoOutline</span> element is a special case used by Sandcastle to insert
+an auto-generated section outline within a topic's introduction or sub-sections.</p></div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Usage</div></div><p>Place the element within a topic's <span class="code">introduction</span> element to produce an
+outline of the topic's section headings or within a <span class="code">section</span>'s <span class="code">content</span>
+element to produce an outline of the section's sub-sections.  In either case, the outline will be created at the
+location of the auto-outline element.  As such, you can control the placement of the outline within the text.</p><p>Each section must have a <span class="code">title</span> element as that is the text that will be
+used for the outline entry.  In addition, an <span class="code">address</span> attribute must be added to each
+<span class="code">section</span> element to give it a unique ID that can be used as a link.  You can also add an
+optional <span class="code">address</span> attribute to the <span class="code">introduction</span> element so that
+you can link back to it from a sub-section.</p><p>An optional <span class="code">lead</span> attribute can be specified to define the lead-in text
+displayed before the list of links.  If not specified, default lead-in text is used.  If set to the value
+<span class="code">none</span>, the lead-in text will be omitted.</p><p>An optional <span class="code">excludeRelatedTopics</span> attribute can be specified.  If set to
+True, the top-level auto-outline will exclude the <span class="ui">Related Topics</span> link.  This can be useful if you simply
+want to list the main sections of the topic with some alternate lead-in text or no lead-in text at all.</p><p>If a numeric inner text value is specified, the section headings down to the indicated depth will
+be included in the outline.  Zero (0), the default, specifies that only top-level section headings should be
+included in the outline.</p><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Example</div></div><div id="ID0EADAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EADAAAAA_tabs"><div id="ID0EADAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">XML</a></div></div><div id="ID0EADAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EADAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EADAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EADAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EADAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EADAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EADAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EADAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-xml-bracket">&lt;?</span><span class="highlight-xml-tag">xml</span> <span class="highlight-xml-attribute-name">version</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1.0"</span> <span class="highlight-xml-attribute-name">encoding</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"utf-8"</span><span class="highlight-xml-bracket">?&gt;</span> 
+<span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">topic</span> <span class="highlight-xml-attribute-name">id</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1a817894-db7a-4c7f-bd67-cca896affa35"</span> <span class="highlight-xml-attribute-name">revisionNumber</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1"</span><span class="highlight-xml-bracket">&gt;</span> 
+  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">developerConceptualDocument</span> 
+    <span class="highlight-xml-attribute-name">xmlns</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"http://ddue.schemas.microsoft.com/authoring/2003/5"</span> 
+    <span class="highlight-xml-attribute-name">xmlns:xlink</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"http://www.w3.org/1999/xlink"</span><span class="highlight-xml-bracket">&gt;</span> 
+
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">introduction</span> <span class="highlight-xml-attribute-name">address</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Intro"</span><span class="highlight-xml-bracket">&gt;</span> 
+      <span class="highlight-xml-comment">&lt;!-- No depth option so only show top-level sections here --&gt;</span> 
+      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">autoOutline</span> <span class="highlight-xml-bracket">/&gt;</span> 
+      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span>The introduction.  If <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">codeInline</span><span class="highlight-xml-bracket">&gt;</span>&amp;lt;autoOutline /&amp;gt;<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">codeInline</span><span class="highlight-xml-bracket">&gt;</span>
+is included, this paragraph can be omitted.<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span> 
+      <span class="highlight-xml-comment">&lt;!-- Note that placing the autoOutline element here would place
+         the section outline below the intro paragraph. --&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">introduction</span><span class="highlight-xml-bracket">&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">section</span> <span class="highlight-xml-attribute-name">address</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"S1"</span><span class="highlight-xml-bracket">&gt;</span> 
+      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">title</span><span class="highlight-xml-bracket">&gt;</span>Section 1<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">title</span><span class="highlight-xml-bracket">&gt;</span> 
+      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">content</span><span class="highlight-xml-bracket">&gt;</span> 
+        <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span>This is section 1.<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span> 
+        <span class="highlight-xml-comment">&lt;!-- This will include sub-sections in the outline up to three
+           levels down.  It also uses custom lead-in text. --&gt;</span> 
+        <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">autoOutline</span> <span class="highlight-xml-attribute-name">lead</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Select a sub-section:"</span><span class="highlight-xml-bracket">&gt;</span>3<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">autoOutline</span><span class="highlight-xml-bracket">&gt;</span> 
+      <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">content</span><span class="highlight-xml-bracket">&gt;</span> 
+      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">sections</span><span class="highlight-xml-bracket">&gt;</span> 
+        <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">section</span> <span class="highlight-xml-attribute-name">address</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"SS1"</span><span class="highlight-xml-bracket">&gt;</span> 
+          <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">title</span><span class="highlight-xml-bracket">&gt;</span>Sub-section 1<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">title</span><span class="highlight-xml-bracket">&gt;</span> 
+          <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">content</span><span class="highlight-xml-bracket">&gt;</span> 
+            <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span>This is sub-section 1.<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span> 
+          <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">content</span><span class="highlight-xml-bracket">&gt;</span> 
+        <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">section</span><span class="highlight-xml-bracket">&gt;</span> 
+        <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">section</span> <span class="highlight-xml-attribute-name">address</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"SS2"</span><span class="highlight-xml-bracket">&gt;</span> 
+          <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">title</span><span class="highlight-xml-bracket">&gt;</span>Sub-section 2<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">title</span><span class="highlight-xml-bracket">&gt;</span> 
+          <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">content</span><span class="highlight-xml-bracket">&gt;</span> 
+            <span class="highlight-xml-comment">&lt;!-- No &lt;autoOutline /&gt; in here so no outline --&gt;</span> 
+            <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span>This is sub-section 2.<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span> 
+          <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">content</span><span class="highlight-xml-bracket">&gt;</span> 
+          <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">sections</span><span class="highlight-xml-bracket">&gt;</span> 
+            <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">section</span> <span class="highlight-xml-attribute-name">address</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"SSS1"</span><span class="highlight-xml-bracket">&gt;</span> 
+              <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">title</span><span class="highlight-xml-bracket">&gt;</span>Sub-sub-section 1<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">title</span><span class="highlight-xml-bracket">&gt;</span> 
+              <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">content</span><span class="highlight-xml-bracket">&gt;</span> 
+                <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span>This is sub-sub-section 1.<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span> 
+              <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">content</span><span class="highlight-xml-bracket">&gt;</span> 
+            <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">section</span><span class="highlight-xml-bracket">&gt;</span> 
+            <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">section</span> <span class="highlight-xml-attribute-name">address</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"SSS2"</span><span class="highlight-xml-bracket">&gt;</span> 
+              <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">title</span><span class="highlight-xml-bracket">&gt;</span>Sub-sub-section 2<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">title</span><span class="highlight-xml-bracket">&gt;</span> 
+              <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">content</span><span class="highlight-xml-bracket">&gt;</span> 
+                <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span>This is sub-sub-section 2.<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span> 
+                                <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span> 
+                                    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">link</span> <span class="highlight-xml-attribute-name">xlink:href</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"#Intro"</span><span class="highlight-xml-bracket">&gt;</span>Back to the Top<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">link</span><span class="highlight-xml-bracket">&gt;</span> 
+                                <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span> 
+              <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">content</span><span class="highlight-xml-bracket">&gt;</span> 
+            <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">section</span><span class="highlight-xml-bracket">&gt;</span> 
+          <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">sections</span><span class="highlight-xml-bracket">&gt;</span> 
+        <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">section</span><span class="highlight-xml-bracket">&gt;</span> 
+      <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">sections</span><span class="highlight-xml-bracket">&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">section</span><span class="highlight-xml-bracket">&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">section</span> <span class="highlight-xml-attribute-name">address</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"S2"</span><span class="highlight-xml-bracket">&gt;</span> 
+      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">title</span><span class="highlight-xml-bracket">&gt;</span>Section 2<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">title</span><span class="highlight-xml-bracket">&gt;</span> 
+      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">content</span><span class="highlight-xml-bracket">&gt;</span> 
+        <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span>This is section 2.<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span> 
+      <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">content</span><span class="highlight-xml-bracket">&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">section</span><span class="highlight-xml-bracket">&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">relatedTopics</span><span class="highlight-xml-bracket">&gt;</span> 
+      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">link</span> <span class="highlight-xml-attribute-name">xlink:href</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"b9a1daac-a2d8-41b7-83b0-b7dc7b28b898"</span> <span class="highlight-xml-bracket">/&gt;</span> 
+    <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">relatedTopics</span><span class="highlight-xml-bracket">&gt;</span> 
+  <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">developerConceptualDocument</span><span class="highlight-xml-bracket">&gt;</span> 
+<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">topic</span><span class="highlight-xml-bracket">&gt;</span></pre></div><div id="ID0EADAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>&lt;?xml version="1.0" encoding="utf-8"?&gt; 
+&lt;topic id="1a817894-db7a-4c7f-bd67-cca896affa35" revisionNumber="1"&gt; 
+  &lt;developerConceptualDocument 
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"&gt; 
+
+    &lt;introduction address="Intro"&gt; 
+      &lt;!-- No depth option so only show top-level sections here --&gt; 
+      &lt;autoOutline /&gt; 
+      &lt;para&gt;The introduction.  If &lt;codeInline&gt;&amp;lt;autoOutline /&amp;gt;&lt;/codeInline&gt;
+is included, this paragraph can be omitted.&lt;/para&gt; 
+      &lt;!-- Note that placing the autoOutline element here would place
+         the section outline below the intro paragraph. --&gt; 
+    &lt;/introduction&gt; 
+    &lt;section address="S1"&gt; 
+      &lt;title&gt;Section 1&lt;/title&gt; 
+      &lt;content&gt; 
+        &lt;para&gt;This is section 1.&lt;/para&gt; 
+        &lt;!-- This will include sub-sections in the outline up to three
+           levels down.  It also uses custom lead-in text. --&gt; 
+        &lt;autoOutline lead="Select a sub-section:"&gt;3&lt;/autoOutline&gt; 
+      &lt;/content&gt; 
+      &lt;sections&gt; 
+        &lt;section address="SS1"&gt; 
+          &lt;title&gt;Sub-section 1&lt;/title&gt; 
+          &lt;content&gt; 
+            &lt;para&gt;This is sub-section 1.&lt;/para&gt; 
+          &lt;/content&gt; 
+        &lt;/section&gt; 
+        &lt;section address="SS2"&gt; 
+          &lt;title&gt;Sub-section 2&lt;/title&gt; 
+          &lt;content&gt; 
+            &lt;!-- No &lt;autoOutline /&gt; in here so no outline --&gt; 
+            &lt;para&gt;This is sub-section 2.&lt;/para&gt; 
+          &lt;/content&gt; 
+          &lt;sections&gt; 
+            &lt;section address="SSS1"&gt; 
+              &lt;title&gt;Sub-sub-section 1&lt;/title&gt; 
+              &lt;content&gt; 
+                &lt;para&gt;This is sub-sub-section 1.&lt;/para&gt; 
+              &lt;/content&gt; 
+            &lt;/section&gt; 
+            &lt;section address="SSS2"&gt; 
+              &lt;title&gt;Sub-sub-section 2&lt;/title&gt; 
+              &lt;content&gt; 
+                &lt;para&gt;This is sub-sub-section 2.&lt;/para&gt; 
+                                &lt;para&gt; 
+                                    &lt;link xlink:href="#Intro"&gt;Back to the Top&lt;/link&gt; 
+                                &lt;/para&gt; 
+              &lt;/content&gt; 
+            &lt;/section&gt; 
+          &lt;/sections&gt; 
+        &lt;/section&gt; 
+      &lt;/sections&gt; 
+    &lt;/section&gt; 
+    &lt;section address="S2"&gt; 
+      &lt;title&gt;Section 2&lt;/title&gt; 
+      &lt;content&gt; 
+        &lt;para&gt;This is section 2.&lt;/para&gt; 
+      &lt;/content&gt; 
+    &lt;/section&gt; 
+    &lt;relatedTopics&gt; 
+      &lt;link xlink:href="b9a1daac-a2d8-41b7-83b0-b7dc7b28b898" /&gt; 
+    &lt;/relatedTopics&gt; 
+  &lt;/developerConceptualDocument&gt; 
+&lt;/topic&gt;</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EADAAAAA');</script><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Example Output</div></div><p>See <a href="1a817894-db7a-4c7f-bd67-cca896affa35.htm" target="">autoOutline Rendered Example</a></p><a name="seeAlsoSection"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="9d0dc122-7829-4b22-af2e-6685867116f8.htm" target="">Miscellaneous Elements</a></div><div class="seeAlsoStyle"><a href="0f1bdf10-7968-4e17-aaf9-849091479df8.htm" target="">token</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p><a href="http://SHFB.CodePlex.com" target="_blank">[v1.1.0.3] Sandcastle MAML Guide (http://SHFB.CodePlex.com)</a></p><div class="OH_feedbacklink"><a href="mailto:Eric@EWoodruff.us?subject=Sandcastle+MAML+Guide+autoOutline+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Eric Woodruff.</div></div><script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript">$(document).ready(function () {DocumentReady();});</script></body></html>

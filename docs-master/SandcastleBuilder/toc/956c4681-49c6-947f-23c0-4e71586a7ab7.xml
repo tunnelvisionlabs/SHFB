@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="4d678afb-319a-43e9-8b3d-b97740ab3ae2" Title="ResourceItemEditorWindow Methods" Url="html/956c4681-49c6-947f-23c0-4e71586a7ab7.htm">
+  <HelpTOCNode Id="f75d08f6-0e9d-40f9-bb1d-aa8bea246095" Title="Dispose Method " Url="html/f9a35c17-bc9a-70be-71cd-e3607d619518.htm" HasChildren="true" />
+  <HelpTOCNode Title="GetPersistString Method " Url="html/30ea3bec-2785-f559-9420-1704358380f4.htm" />
+  <HelpTOCNode Title="OnClosing Method " Url="html/d5cb63fb-e82a-32d6-5f9c-cb1f2453a8ce.htm" />
+  <HelpTOCNode Id="6303aa83-2870-463b-b962-a1f007d32073" Title="Save Method " Url="html/f28b7b3f-3740-20eb-0fce-2628c659a744.htm" HasChildren="true" />
+  <HelpTOCNode Title="SaveAs Method " Url="html/c64c4960-cb28-c9f2-131b-5eb55b287124.htm" />
+</HelpTOCNode>

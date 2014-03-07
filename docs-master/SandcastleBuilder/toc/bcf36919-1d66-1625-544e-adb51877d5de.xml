@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="ff6ed97b-b6a4-4362-bca8-a3df8444c158" Title="IPlugIn Interface" Url="html/bcf36919-1d66-1625-544e-adb51877d5de.htm">
+  <HelpTOCNode Id="95d0800f-2708-454c-b61e-9fc889082b93" Title="IPlugIn Methods" Url="html/0675e437-7d6a-097a-9080-30248ed145c8.htm" HasChildren="true" />
+  <HelpTOCNode Id="41135760-05f5-4145-8ee7-eaa64d04b1b3" Title="IPlugIn Properties" Url="html/012c3b29-38ab-0416-3529-54faaecbbb4a.htm" HasChildren="true" />
+</HelpTOCNode>

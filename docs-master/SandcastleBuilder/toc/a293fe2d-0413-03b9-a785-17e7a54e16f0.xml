@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="c45cf948-9284-4afc-9fa5-6a6d0f18c562" Title="SandcastleBuilder.MicrosoftHelpViewer Namespace" Url="html/a293fe2d-0413-03b9-a785-17e7a54e16f0.htm">
+  <HelpTOCNode Id="aa379f6c-750b-4cb1-86e5-e5a4b8fec65b" Title="CommandLineArgument Class" Url="html/eb4c836b-456c-be63-8032-aee02300f40c.htm" HasChildren="true" />
+  <HelpTOCNode Id="44c5bbed-6762-45e9-ad42-96bccc419aa3" Title="HelpLibraryManager Class" Url="html/be9c068f-0ed1-e538-1d77-7a44b9c11bf4.htm" HasChildren="true" />
+  <HelpTOCNode Id="d5fa50ee-55df-4575-8532-dfd7b13a24ae" Title="HelpLibraryManagerException Class" Url="html/91c86e0c-2124-2557-a188-8ec59154f274.htm" HasChildren="true" />
+  <HelpTOCNode Id="4bd591b7-3448-4376-8bef-520afcd720db" Title="HelpLibraryManagerLauncher Class" Url="html/1acfa783-d15b-5056-b629-6f75c32ce251.htm" HasChildren="true" />
+  <HelpTOCNode Id="5dd78e49-93c9-4325-9170-d0f8a91b7666" Title="LaunchMSHelpViewerDlg Class" Url="html/2c05529b-142b-dd54-66e4-1770a926d7b4.htm" HasChildren="true" />
+</HelpTOCNode>

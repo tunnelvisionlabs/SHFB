@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="9dbb0fcc-48e9-4b31-bdf1-7789dac0fffe" Title="SandcastleBuilder.Utils.ConceptualContent Namespace" Url="html/966b2fe1-8e51-cbfa-e98d-ed6a9f373fa0.htm">
+  <HelpTOCNode Title="ApiParentMode Enumeration" Url="html/78018be4-7545-c14e-de58-0156215a7c3b.htm" />
+  <HelpTOCNode Id="44536036-1c57-43f8-8e51-5b45ca6602ff" Title="CodeEntityReference Class" Url="html/65129702-86b2-e111-384b-6a884cdaf76c.htm" HasChildren="true" />
+  <HelpTOCNode Id="178b3641-fc20-4e38-bd2c-895aff87aefd" Title="CodeReference Class" Url="html/2173dcf0-d02d-4f5c-4a69-e7cf6f54cfdb.htm" HasChildren="true" />
+  <HelpTOCNode Id="f19ab8ab-57f3-4e86-a0e1-09ee95fd3c9a" Title="CodeSnippetCollection Class" Url="html/672c1c8d-e048-6e4e-eb56-efce22053117.htm" HasChildren="true" />
+  <HelpTOCNode Id="4871f166-4bcb-4403-8a70-016404e2dc4e" Title="ConceptualContentSettings Class" Url="html/a1d7741b-ed33-1832-ebb1-1151cc8f9372.htm" HasChildren="true" />
+  <HelpTOCNode Title="ContentType Enumeration" Url="html/50b6bc22-25f8-97c2-8ffa-716f0dc1491d.htm" />
+  <HelpTOCNode Id="6c439e98-960d-41c6-8758-52f571bb0788" Title="ImageReference Class" Url="html/7208c4d4-a8f9-8ed7-a3f7-c7046882041e.htm" HasChildren="true" />
+  <HelpTOCNode Id="d6a361e8-fc77-46de-8c06-b5a56a8c7274" Title="ImageReferenceCollection Class" Url="html/b34a7d54-3437-789e-d20b-6fd1acfd788b.htm" HasChildren="true" />
+  <HelpTOCNode Id="235402f8-67fb-46ce-9093-2d9d12f16310" Title="ITableOfContents Interface" Url="html/0225f5cd-6992-8dca-bfc0-7172141ae963.htm" HasChildren="true" />
+  <HelpTOCNode Id="b7a51077-c537-4dc5-bd8c-4f4fb2caa3ab" Title="ResourceItem Class" Url="html/863de22c-78f1-92d0-fcc5-b6606a37bcba.htm" HasChildren="true" />
+  <HelpTOCNode Id="c7707f10-d59a-4120-bc0f-48bef3308612" Title="TocEntry Class" Url="html/9d07841f-5243-b6be-abd7-52f0bb764b1a.htm" HasChildren="true" />
+  <HelpTOCNode Id="018d645c-1d82-43ba-8166-c629eae61098" Title="TocEntryCollection Class" Url="html/3733cb89-4e36-dd7e-6a4f-36f3db857068.htm" HasChildren="true" />
+  <HelpTOCNode Id="cd0dd06e-011e-4a42-8d27-21247304a8a5" Title="Token Class" Url="html/d35288a0-3aa5-c43d-940b-0f39cfa97a5d.htm" HasChildren="true" />
+  <HelpTOCNode Id="d05748bd-bbaa-40f9-85ab-4a8c97dbd504" Title="TokenCollection Class" Url="html/30a244b3-e321-2795-3307-e59198e23ed8.htm" HasChildren="true" />
+  <HelpTOCNode Id="e96aae65-4c32-498c-beb3-1b49ad3e808d" Title="Topic Class" Url="html/ad633280-fa06-380b-80f0-9b4188e759de.htm" HasChildren="true" />
+  <HelpTOCNode Id="61e96e39-3fba-4b41-b21d-29c609dbb950" Title="TopicCollection Class" Url="html/279598ac-b624-b8fe-11e7-66aa85220b70.htm" HasChildren="true" />
+  <HelpTOCNode Id="c38d6e08-0cfb-40a7-a831-39277977616b" Title="TopicFile Class" Url="html/d0669001-beb5-9cb7-907a-717fc8d23a90.htm" HasChildren="true" />
+</HelpTOCNode>

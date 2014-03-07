@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="9a247ee5-0e05-4a12-8819-999136953673" Title="ContentLayoutWindow Methods" Url="html/2624b62f-5e61-871b-2d69-de7b02a77927.htm">
+  <HelpTOCNode Id="a8114a45-3506-4d36-ac30-fd7e980c58ee" Title="Dispose Method " Url="html/f1e818e6-5b23-23dc-fecc-52bcff75e7c9.htm" HasChildren="true" />
+  <HelpTOCNode Title="GetPersistString Method " Url="html/f40ae7c7-f106-e580-5113-d85bf53b781b.htm" />
+  <HelpTOCNode Id="6f6753eb-f0e1-4cbd-b6cb-810ce882ed29" Title="Save Method " Url="html/057cbc5c-df48-e2e8-3ef4-85a92a534c6b.htm" HasChildren="true" />
+  <HelpTOCNode Title="SaveAs Method " Url="html/19e08988-4c5c-5012-28a5-ee8df6ec7939.htm" />
+</HelpTOCNode>

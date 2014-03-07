@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="c9fb0ef6-9563-4147-9d2f-dd843e8015ed" Title="BuildProgressEventArgs Properties" Url="html/9039ad91-e62c-fc24-3bca-bd99e8be2c10.htm">
+  <HelpTOCNode Title="BuildStep Property " Url="html/4c489d61-9e8c-89e5-5be2-3b34af5c2f4c.htm" />
+  <HelpTOCNode Title="HasCompleted Property " Url="html/6b4082a1-fa8c-7328-a9f5-f3c51ff267e5.htm" />
+  <HelpTOCNode Title="Message Property " Url="html/8d615593-7966-3b0d-919c-ea4b4ef303cf.htm" />
+</HelpTOCNode>

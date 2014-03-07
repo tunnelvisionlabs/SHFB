@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="bd4c1be0-468f-4aac-ada0-5a82572980f2" Title="GenericClass(T1, T2) Class" Url="html/5dc0b9d5-2981-38a3-3b68-5af49ae1325e.htm">
+  <HelpTOCNode Title="GenericClass(T1, T2) Constructor " Url="html/c958751f-a969-8b9b-6f1c-8fe61d01b9cb.htm" />
+  <HelpTOCNode Id="2c21f338-4cfd-43db-842d-63ec1df97907" Title="GenericClass(T1, T2) Methods" Url="html/fc23341c-d83c-4375-91ff-2a6df4e87f02.htm" HasChildren="true" />
+  <HelpTOCNode Id="65c8fd8f-3fab-4257-ab86-71269a37f913" Title="GenericClass(T1, T2) Properties" Url="html/b1feb6e8-7b42-81ed-fdd3-92af5741c5ec.htm" HasChildren="true" />
+  <HelpTOCNode Id="d39f5e70-36ba-4cb5-802b-994ffa467611" Title="GenericClass(T1, T2) Events" Url="html/6b7ff7f8-6ff2-80e6-09a5-923bee448ec0.htm" HasChildren="true" />
+</HelpTOCNode>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="252c24da-7ab4-45ee-9257-e6445efbb51b" Title="XMLCommentsExamples.DocumentationInheritance Namespace" Url="html/f055bdef-60b4-de86-62d0-3b47c3f6786a.htm">
+  <HelpTOCNode Id="d95415df-af39-42af-8202-e7c9fd3ff4a6" Title="AttachedEventsAndPropertiesTest Class" Url="html/dc704d21-c822-78a7-1dfc-5014938a4416.htm" HasChildren="true" />
+  <HelpTOCNode Id="673205bd-98e4-45be-a943-095f3f0b04f7" Title="BaseInheritDoc Class" Url="html/00fabdf6-a487-7d2a-02bf-43d70679fe70.htm" HasChildren="true" />
+  <HelpTOCNode Id="25af2017-ea69-4d07-ab4e-67be66705052" Title="CustomException Class" Url="html/152686c0-fa17-60a3-7ee4-6aab5ee53fcf.htm" HasChildren="true" />
+  <HelpTOCNode Id="eff0e2fc-dc08-4f1f-9ea9-093cebb5253a" Title="DerivedClassWithInheritedDocs Class" Url="html/57dd2fc3-63a7-35d9-fae9-1a2be46ee064.htm" HasChildren="true" />
+  <HelpTOCNode Id="02878a42-8597-4fb4-b1b9-b338ad61d5c1" Title="ExplicitImplementation Class" Url="html/0e43b39e-89ee-9bbe-137b-6463720584bc.htm" HasChildren="true" />
+  <HelpTOCNode Id="4b0530cc-97c5-4d7e-b5ab-c2d6091f2600" Title="SetDocumentation Structure" Url="html/49e90f9d-a7b0-be7d-d4a5-f16724f15a14.htm" HasChildren="true" />
+</HelpTOCNode>

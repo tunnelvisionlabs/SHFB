@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="auto-outline example" Url="html/1a817894-db7a-4c7f-bd67-cca896affa35.htm" />
+  <HelpKINode Title="Block Elements">
+    <HelpKINode Title="Block Elements" Url="html/b32a73b8-fc26-4c98-912c-d595fc1a17c2.htm" />
+    <HelpKINode Title="alert" Url="html/a8792cd2-e8a1-4e37-bd16-eea84ac463b1.htm" />
+    <HelpKINode Title="code" Url="html/65e7e30a-ba03-4e10-b1f2-763a613b6e27.htm" />
+    <HelpKINode Title="definedTerm" Url="html/cb59e91c-f3cd-4086-a7ea-e2413a626e3d.htm" />
+    <HelpKINode Title="definition" Url="html/cb59e91c-f3cd-4086-a7ea-e2413a626e3d.htm" />
+    <HelpKINode Title="definitionTable" Url="html/cb59e91c-f3cd-4086-a7ea-e2413a626e3d.htm" />
+    <HelpKINode Title="entry" Url="html/ec11472a-8a9c-44e7-9d32-45f671526922.htm" />
+    <HelpKINode Title="introduction" Url="html/97724282-5470-48ca-89c6-541737fafd1f.htm" />
+    <HelpKINode Title="list" Url="html/d6c82cde-f889-4ac9-b3a7-7d45fd6fbffc.htm" />
+    <HelpKINode Title="listItem" Url="html/d6c82cde-f889-4ac9-b3a7-7d45fd6fbffc.htm" />
+    <HelpKINode Title="para" Url="html/77a994ec-637c-43c5-8bea-981eb5fd23af.htm" />
+    <HelpKINode Title="quote" Url="html/96efe90a-65d4-49b2-81de-a8f05560cd60.htm" />
+    <HelpKINode Title="relatedTopics" Url="html/bfdd5115-f594-480d-9e79-af906e599337.htm" />
+    <HelpKINode Title="row" Url="html/ec11472a-8a9c-44e7-9d32-45f671526922.htm" />
+    <HelpKINode Title="table" Url="html/ec11472a-8a9c-44e7-9d32-45f671526922.htm" />
+    <HelpKINode Title="tableHeader" Url="html/ec11472a-8a9c-44e7-9d32-45f671526922.htm" />
+    <HelpKINode Title="title" Url="html/3698dacb-763b-4a45-a051-f34c09e5f862.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Bugs" Url="html/b00070c7-9c5e-4b49-ad5c-f55fa866f062.htm" />
+  <HelpKINode Title="build components">
+    <HelpKINode Title="article on creating components" Url="html/dc4fcc96-283e-4202-9ecc-08a65e0c9313.htm" />
+    <HelpKINode Title="links to third-party components" Url="html/dc4fcc96-283e-4202-9ecc-08a65e0c9313.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Common Inline Elements">
+    <HelpKINode Title="Common Inline Elements" Url="html/b96d95c0-ec3c-4846-998a-4b43548bfa0e.htm" />
+    <HelpKINode Title="application" Url="html/bf552a94-f8b9-460d-bf76-a869430a077e.htm" />
+    <HelpKINode Title="codeInline" Url="html/915392b7-c701-44fd-8ff4-89c34a10f574.htm" />
+    <HelpKINode Title="command" Url="html/02e60906-b8d5-4258-9348-aad70f48861f.htm" />
+    <HelpKINode Title="computerOutputInline" Url="html/b433ede9-8813-4020-b5dd-74b3204ebe0c.htm" />
+    <HelpKINode Title="database" Url="html/28f99529-1e07-4a5e-978f-d2a27c3c7fb1.htm" />
+    <HelpKINode Title="environmentVariable" Url="html/a0424e7f-823c-449c-a2e4-012c1f556674.htm" />
+    <HelpKINode Title="errorInline" Url="html/4cf23985-a97b-46d4-8624-a46b77cca86b.htm" />
+    <HelpKINode Title="fictitiousUri" Url="html/3fad0c13-9dcb-471e-890b-228acf54b574.htm" />
+    <HelpKINode Title="foreignPhrase" Url="html/5389dce5-e592-4ae2-9b35-071627542f07.htm" />
+    <HelpKINode Title="hardware" Url="html/47e7184b-4213-44b2-9602-a0271d93747b.htm" />
+    <HelpKINode Title="legacyBold" Url="html/ca1eccd2-dfa4-4daa-a69b-3bad7e0c4946.htm" />
+    <HelpKINode Title="legacyItalic" Url="html/02096c70-c178-44f9-ac9f-f3d479a2b77a.htm" />
+    <HelpKINode Title="legacyUnderline" Url="html/e90091a9-3959-4718-b109-ea8e75837e62.htm" />
+    <HelpKINode Title="literal" Url="html/d50f98be-cddf-4756-994d-c05431f013a8.htm" />
+    <HelpKINode Title="localUri" Url="html/ecd8ab10-57b5-4094-b195-4c8c5a1ba3d0.htm" />
+    <HelpKINode Title="markup" Url="html/aaaff238-1ab4-4c9e-95d8-60ca4d8d4f8e.htm" />
+    <HelpKINode Title="math" Url="html/5bab8ccb-0ff0-496e-aa15-ae803c210a22.htm" />
+    <HelpKINode Title="newTerm" Url="html/195da602-cc1a-4545-b6f1-1c2e2cfc59ac.htm" />
+    <HelpKINode Title="phrase" Url="html/fead6b84-f844-4669-abd2-26667cd7be6e.htm" />
+    <HelpKINode Title="placeholder" Url="html/d995d093-ce18-4a7e-bd03-82c6c0b4fd72.htm" />
+    <HelpKINode Title="quoteInline" Url="html/c366af27-ac55-44e6-9c62-86cabf3eba77.htm" />
+    <HelpKINode Title="replaceable" Url="html/382fc569-33e4-489a-b0c2-94c11e56ab4a.htm" />
+    <HelpKINode Title="subscript" Url="html/27f10273-2112-47fd-baf4-5ee90e79fba4.htm" />
+    <HelpKINode Title="superscript" Url="html/6a9e1e0c-4e15-43e0-af9f-8ac9c1ab3b0c.htm" />
+    <HelpKINode Title="system" Url="html/f1a0543f-d583-47a7-ac92-5b998326913e.htm" />
+    <HelpKINode Title="ui" Url="html/8b05e77d-04d1-4b60-9d9f-4de4817aa3a9.htm" />
+    <HelpKINode Title="unmanagedCodeEntityReference" Url="html/1f20a093-5394-460b-8526-822fb327fc2c.htm" />
+    <HelpKINode Title="userInput" Url="html/e9ecadad-9cc3-4089-9a91-ef93b3f9400e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="donate" Url="html/847c2d90-c877-4369-a3ab-f7373b6547df.htm" />
+  <HelpKINode Title="extensibility" Url="html/53e9f04f-fbc4-480d-9653-1547046526f1.htm" />
+  <HelpKINode Title="File Types">
+    <HelpKINode Title="Conceptual Content File Types" Url="html/86752a38-eba3-4174-bcbf-79ec8428ecf9.htm" />
+    <HelpKINode Title="code snippets" Url="html/9bef5420-7560-47d9-98ce-0b5d5f46567a.htm" />
+    <HelpKINode Title="companion file" Url="html/cfd9dabf-22f3-4742-8b54-d84404610db1.htm" />
+    <HelpKINode Title="media content" Url="html/3913b321-c875-4bb9-88de-4c65f6363270.htm" />
+    <HelpKINode Title="tokens" Url="html/a7e182e0-8881-41d1-a450-31d439250203.htm" />
+    <HelpKINode Title="topic files" Url="html/c69a248a-bd94-47b2-90d7-5442e9cb567a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Glossary" Url="html/66bf98c7-7179-4940-8767-7085052f2f53.htm" />
+  <HelpKINode Title="History" Url="html/ba47a67c-4825-4fcd-b806-2b2e02d4373a.htm" />
+  <HelpKINode Title="IntelliSense" Url="html/746fc19e-2670-440b-8277-a1ef7dc074d5.htm" />
+  <HelpKINode Title="Issues" Url="html/b00070c7-9c5e-4b49-ad5c-f55fa866f062.htm" />
+  <HelpKINode Title="Link Elements">
+    <HelpKINode Title="Link Elements" Url="html/3be5c58d-d6af-45a4-ac51-f219a75c4c4d.htm" />
+    <HelpKINode Title="codeEntityReference" Url="html/bc490dbf-7d46-432d-a816-3ae16ab6af54.htm" />
+    <HelpKINode Title="externalLink" Url="html/d0c9ce6d-115b-4c70-891c-69b4af944dea.htm" />
+    <HelpKINode Title="link" Url="html/53a2b7c6-a269-4916-9313-bdc301ee9398.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Media Elements">
+    <HelpKINode Title="Media Elements" Url="html/ba6a58eb-3301-4397-8ac5-d174d6dff755.htm" />
+    <HelpKINode Title="mediaLink" Url="html/34c8823f-8395-4d64-9941-8d156083709c.htm" />
+    <HelpKINode Title="mediaLinkInline" Url="html/48314339-e0fe-4d1a-96b0-eba5eca70b66.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Miscellaneous Elements">
+    <HelpKINode Title="Miscellaneous Elements" Url="html/9d0dc122-7829-4b22-af2e-6685867116f8.htm" />
+    <HelpKINode Title="autoOutline" Url="html/b9a1daac-a2d8-41b7-83b0-b7dc7b28b898.htm" />
+    <HelpKINode Title="codeReference" Url="html/91a45341-e368-463e-a9ed-9e05286d2c25.htm" />
+    <HelpKINode Title="token" Url="html/0f1bdf10-7968-4e17-aaf9-849091479df8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="resources" Url="html/dc4fcc96-283e-4202-9ecc-08a65e0c9313.htm" />
+  <HelpKINode Title="Sandcastle MAML Guide" Url="html/80949828-3d04-4572-9340-d6ad3f30f8fa.htm" />
+  <HelpKINode Title="support">
+    <HelpKINode Title="articles" Url="html/dc4fcc96-283e-4202-9ecc-08a65e0c9313.htm" />
+    <HelpKINode Title="donate" Url="html/847c2d90-c877-4369-a3ab-f7373b6547df.htm" />
+    <HelpKINode Title="links to resources" Url="html/dc4fcc96-283e-4202-9ecc-08a65e0c9313.htm" />
+    <HelpKINode Title="third-party build components" Url="html/dc4fcc96-283e-4202-9ecc-08a65e0c9313.htm" />
+    <HelpKINode Title="tools" Url="html/dc4fcc96-283e-4202-9ecc-08a65e0c9313.htm" />
+  </HelpKINode>
+  <HelpKINode Title="topic files">
+    <HelpKINode Title="Conceptual" Url="html/30797814-3a36-4844-b348-9c97b61c74f2.htm" />
+    <HelpKINode Title="Error Message" Url="html/8bf3513b-adb9-4f98-ad0f-1de21042488d.htm" />
+    <HelpKINode Title="Glossary" Url="html/b5d4c819-b4cc-443e-916e-cb8e5a655d0e.htm" />
+    <HelpKINode Title="How-To" Url="html/9b994e89-b582-4224-bad9-2cddfafbec68.htm" />
+    <HelpKINode Title="Orientation" Url="html/d97b482f-155a-443c-b33c-7395ea06012b.htm" />
+    <HelpKINode Title="Reference" Url="html/525076e5-f27d-4df7-9447-a68558a740df.htm" />
+    <HelpKINode Title="Reference With Syntax" Url="html/1a3f0cb3-4ea0-467a-8f53-32daffe3336b.htm" />
+    <HelpKINode Title="Reference Without Syntax" Url="html/6c6f1e3b-2b3c-4157-8cf0-ba5498c8a898.htm" />
+    <HelpKINode Title="Sample" Url="html/ad896389-cb62-4a98-bb27-4047e201ab02.htm" />
+    <HelpKINode Title="SDK Technology Architecture" Url="html/a55e614a-dc90-440b-aae1-b3f5b2b0104f.htm" />
+    <HelpKINode Title="SDK Technology Code Directory" Url="html/7a5600cb-9a9f-416e-b575-446c1b5a432c.htm" />
+    <HelpKINode Title="SDK Technology Orientation" Url="html/03a1ba01-868a-432b-afe7-0a9753ae08d1.htm" />
+    <HelpKINode Title="SDK Technology Scenarios" Url="html/71cf59a5-a37e-49cb-9e8b-adec66f2de7d.htm" />
+    <HelpKINode Title="SDK Technology Summary" Url="html/c221bd00-b9c7-4e49-b7f5-b4f8934f3208.htm" />
+    <HelpKINode Title="Troubleshooting" Url="html/e87ebaad-7085-410b-a445-09c456e94c07.htm" />
+    <HelpKINode Title="User Interface Reference" Url="html/d8c4bffb-c6b8-4357-9aa3-7d14320d7848.htm" />
+    <HelpKINode Title="Walkthrough" Url="html/18be60b7-88fe-4860-84bf-9a541f1e13c0.htm" />
+    <HelpKINode Title="Whitepaper" Url="html/e5d750b6-6bd9-4263-98f2-a3d5d5c268d8.htm" />
+    <HelpKINode Title="XML Reference" Url="html/e411f3f8-e3ec-4617-8ecd-0046e2e9df85.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Version history" Url="html/ba47a67c-4825-4fcd-b806-2b2e02d4373a.htm" />
+  <HelpKINode Title="versions">
+    <HelpKINode Title="1.0.0.0" Url="html/075a7b21-73d8-4fe2-a0c1-2289a575fbe7.htm" />
+    <HelpKINode Title="1.1.0.0" Url="html/e5f49add-f931-4a46-9958-f50eda227479.htm" />
+    <HelpKINode Title="1.1.0.1" Url="html/0ff85a0b-3fed-48dc-87a7-c73d8711ea92.htm" />
+    <HelpKINode Title="1.1.0.2" Url="html/2ac532de-69cc-45c7-9f78-5d668fcb4339.htm" />
+    <HelpKINode Title="1.1.0.3" Url="html/bea57722-4254-47b3-a86c-415af363eb2f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Visual Studio" Url="html/746fc19e-2670-440b-8277-a1ef7dc074d5.htm" />
+  <HelpKINode Title="Welcome" Url="html/303c996a-2911-4c08-b492-6496c82b3edb.htm" />
+</HelpKI>

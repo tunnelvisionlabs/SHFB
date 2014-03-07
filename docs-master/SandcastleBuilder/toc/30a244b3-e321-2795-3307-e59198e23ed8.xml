@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="d05748bd-bbaa-40f9-85ab-4a8c97dbd504" Title="TokenCollection Class" Url="html/30a244b3-e321-2795-3307-e59198e23ed8.htm">
+  <HelpTOCNode Title="TokenCollection Constructor " Url="html/80c3107f-abd2-a845-a284-9f4acb249a3b.htm" />
+  <HelpTOCNode Id="fd88a3c8-9f41-4af8-a101-d14820253c72" Title="TokenCollection Methods" Url="html/a0d9d89c-2b1a-6ee1-4c88-cd1afe10665f.htm" HasChildren="true" />
+  <HelpTOCNode Id="1247ecc7-2d15-4147-b5f1-da5f7d467e86" Title="TokenCollection Properties" Url="html/25af8887-be34-0db2-bddb-03c95f06b26c.htm" HasChildren="true" />
+  <HelpTOCNode Title="TokenCollection Events" Url="html/11e89cc1-e03f-4acd-7914-abfd29b56008.htm" />
+</HelpTOCNode>

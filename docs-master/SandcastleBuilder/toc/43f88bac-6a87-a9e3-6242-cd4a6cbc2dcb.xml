@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="b695e025-f1f8-478b-ad5a-fa347933d806" Title="FileItem Methods" Url="html/43f88bac-6a87-a9e3-6242-cd4a6cbc2dcb.htm">
+  <HelpTOCNode Title="GetAttributes Method " Url="html/159fa701-5594-65a5-dd5f-d8b222535637.htm" />
+  <HelpTOCNode Title="GetClassName Method " Url="html/217080cc-e687-2269-8521-60f757f2cce8.htm" />
+  <HelpTOCNode Title="GetComponentName Method " Url="html/74c2273d-f7fe-407d-d3f2-0a40b1369f55.htm" />
+  <HelpTOCNode Title="GetConverter Method " Url="html/c163c05c-8414-3b60-7748-4083a3f7acb7.htm" />
+  <HelpTOCNode Title="GetDefaultEvent Method " Url="html/a2d6e6d7-48b2-bb61-d698-2ff79b3b0896.htm" />
+  <HelpTOCNode Title="GetDefaultProperty Method " Url="html/57d4a37b-7f9a-a11c-9e9b-01ca1d341398.htm" />
+  <HelpTOCNode Title="GetEditor Method " Url="html/03d2267f-1c37-c4ea-f8d8-5113adc2fdad.htm" />
+  <HelpTOCNode Id="4edb004d-cae6-41f5-821a-05e8a465f744" Title="GetEvents Method " Url="html/bc91ebd2-b554-fd43-5907-b7e58a2f8c47.htm" HasChildren="true" />
+  <HelpTOCNode Id="f346c2ae-5735-4274-a57c-215bfac049a0" Title="GetProperties Method " Url="html/8a210d1f-1eb9-e9d1-a20c-7b3ddd945f33.htm" HasChildren="true" />
+  <HelpTOCNode Title="GetPropertyOwner Method " Url="html/2b7cdcfe-4e34-8461-28ae-0ad1d3607e08.htm" />
+  <HelpTOCNode Title="RefreshPaths Method " Url="html/6ed48a76-8900-3898-80fc-7cf9ea78cf85.htm" />
+</HelpTOCNode>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="74503678-44e5-444d-a08b-d04fbba099a7" Title="FilePathUserControl Methods" Url="html/576a95f2-de27-875d-824f-42cbbb437500.htm">
+  <HelpTOCNode Id="87ddab50-0651-4c0e-a6dc-307da062a7b5" Title="Dispose Method " Url="html/b221ba08-2384-61a5-7021-00e46b2e4396.htm" HasChildren="true" />
+  <HelpTOCNode Title="OnLayout Method " Url="html/b09e9598-7edd-a83f-6788-334a7a11bcb7.htm" />
+  <HelpTOCNode Title="OnPersistablePathChanged Method " Url="html/11c02f74-553a-e311-67b3-8e3421b57737.htm" />
+</HelpTOCNode>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="a8af7009-dbc1-4e5f-9967-0c3d88055a09" Title="FolderPathTypeConverter Methods" Url="html/abdf4ec1-41f2-6a09-bf48-acd7caf5b7e8.htm">
+  <HelpTOCNode Id="31ab1593-9d2f-4011-bfc4-a34f2b65831b" Title="CanConvertFrom Method " Url="html/ce625d0e-2ab3-6e69-3706-1995abc5eb06.htm" HasChildren="true" />
+  <HelpTOCNode Id="1fc077ee-08b2-4312-b963-71288df2f658" Title="ConvertFrom Method " Url="html/ebb7313e-eea0-885f-ca89-7cdc062e0e33.htm" HasChildren="true" />
+  <HelpTOCNode Id="958c7b14-ee55-4296-a63b-ffca6b2e9ba6" Title="ConvertTo Method " Url="html/1a0f192c-7ed3-0ab7-5faa-3333effb03f0.htm" HasChildren="true" />
+</HelpTOCNode>

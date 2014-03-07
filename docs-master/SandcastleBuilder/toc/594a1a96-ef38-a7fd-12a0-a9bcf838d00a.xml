@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="5e6f67e4-eaee-46af-9ad4-414526a7ce01" Title="SandcastleBuilder.Gui.ContentEditors Namespace" Url="html/594a1a96-ef38-a7fd-12a0-a9bcf838d00a.htm">
+  <HelpTOCNode Id="e1456c7c-381c-4634-988c-c46199f0d996" Title="BaseContentEditor Class" Url="html/efe2a660-55ac-5c7f-3e6a-3b8cd8d3aa95.htm" HasChildren="true" />
+  <HelpTOCNode Id="af302ba0-97d5-440e-b4c8-61973d291619" Title="ContentEditorControl Class" Url="html/ca1604e0-7562-4e1a-2c29-fe6a26cd7e9e.htm" HasChildren="true" />
+  <HelpTOCNode Id="cf8c0451-90a2-41d2-a39f-38073c2cadad" Title="ContentLayoutWindow Class" Url="html/ff0fd67f-3be0-e2c3-41b5-3763505f166c.htm" HasChildren="true" />
+  <HelpTOCNode Id="4983cf53-062f-442a-937a-90eeffa37b05" Title="EntityReferenceWindow Class" Url="html/2bdb5c20-dcda-f4d1-aa10-56cefcd082d7.htm" HasChildren="true" />
+  <HelpTOCNode Id="799d5e92-edc7-44e8-b205-61301214a8d1" Title="FileTree Class" Url="html/27b43797-8a3a-5633-ac82-42d086e42842.htm" HasChildren="true" />
+  <HelpTOCNode Id="418c4314-489e-4fce-ad92-d5c1d0f4d659" Title="FindAndReplaceWindow Class" Url="html/334fcf59-bad2-89fc-54ff-7f6deb823124.htm" HasChildren="true" />
+  <HelpTOCNode Id="6e338595-f166-4da2-82cb-75b449484456" Title="GotoLineDlg Class" Url="html/b4dea1b1-0a49-3bae-9a6e-74c90f6de6e0.htm" HasChildren="true" />
+  <HelpTOCNode Id="973eb7d6-8ffd-490c-a102-c4fcfa2caba9" Title="NodeData Class" Url="html/ff229ee6-af1e-3cae-be64-aa6634385759.htm" HasChildren="true" />
+  <HelpTOCNode Title="NodeIcon Enumeration" Url="html/ba089b8e-cfbd-d5ff-20f1-1eafbe062fdf.htm" />
+  <HelpTOCNode Id="4b914bf9-c8b6-42bb-8e0d-9be14d5474af" Title="OutputWindow Class" Url="html/77f3364d-04ba-ab5c-5e01-2b33ea85f174.htm" HasChildren="true" />
+  <HelpTOCNode Id="18861a72-39a9-4d93-92bb-8ebf7f0f5f0f" Title="PreviewTopicWindow Class" Url="html/caa31889-016f-d03a-4150-7577219f6b1a.htm" HasChildren="true" />
+  <HelpTOCNode Id="aacbc806-4561-4132-81fd-088b3083ec41" Title="ProjectExplorerWindow Class" Url="html/9e42ed08-9138-0c86-23bc-50f8f5c7acd0.htm" HasChildren="true" />
+  <HelpTOCNode Id="3a2abc38-0284-435c-86af-c6848cbd3b1c" Title="ProjectPropertiesWindow Class" Url="html/f5a7c238-da37-f5f6-1f89-d3038bb51d87.htm" HasChildren="true" />
+  <HelpTOCNode Id="b0a9a720-3a93-43c8-8575-2fae49af40b1" Title="ResourceItemEditorWindow Class" Url="html/08ac08cf-a41e-98bf-1d24-490e29fd4744.htm" HasChildren="true" />
+  <HelpTOCNode Id="4d541470-a876-4017-a34f-a84a63a145a7" Title="SelectFileTemplateDlg Class" Url="html/486cc713-e01d-5614-f30b-46faa50ecff3.htm" HasChildren="true" />
+  <HelpTOCNode Id="78ff241e-55b8-4fdb-a8ee-059af18ce2fe" Title="SelectGacEntriesDlg Class" Url="html/be834336-f83f-c82f-7814-2f9225b09e9a.htm" HasChildren="true" />
+  <HelpTOCNode Id="b9678c2c-d686-4003-a0f8-e99ecd3fd52a" Title="SiteMapEditorWindow Class" Url="html/1060554b-ea85-0bd7-4a9b-d5a57d09daf6.htm" HasChildren="true" />
+  <HelpTOCNode Id="180b580e-327f-4a35-add0-a8a739fab5ca" Title="SpellCheckWindow Class" Url="html/64ff204e-a3e8-8f4d-22f5-a9004a4c45f4.htm" HasChildren="true" />
+  <HelpTOCNode Id="14ea5759-bdab-42c4-abf7-70f9b73ed147" Title="TokenEditorWindow Class" Url="html/65f22e04-a1cb-1609-db11-5597125e958f.htm" HasChildren="true" />
+  <HelpTOCNode Id="3fcafa2e-1e0f-480b-8cbc-5ba95b17d517" Title="TopicEditorWindow Class" Url="html/caea8cb4-5391-b07b-3ca3-c3d0207b2ba6.htm" HasChildren="true" />
+</HelpTOCNode>

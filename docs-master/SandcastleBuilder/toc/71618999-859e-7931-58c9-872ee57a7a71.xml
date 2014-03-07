@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="d2f0a3a1-a14f-4de7-bcbb-48057311b614" Title="SandcastleBuilder Namespaces" Url="html/71618999-859e-7931-58c9-872ee57a7a71.htm">
+  <HelpTOCNode Id="e06a163a-afd0-44f5-8361-99f3944da0a2" Title="SandcastleBuilder.Components Namespaces" Url="html/9a06c4f0-dbc7-8ca1-1349-34464d3d34f5.htm" HasChildren="true" />
+  <HelpTOCNode Id="d0495d44-f64b-4a6e-8eb1-88b2047d33ea" Title="SandcastleBuilder.Gui Namespace" Url="html/c72fd1c8-e775-8a2f-4aeb-663d5e47ae84.htm" HasChildren="true" />
+  <HelpTOCNode Id="5e6f67e4-eaee-46af-9ad4-414526a7ce01" Title="SandcastleBuilder.Gui.ContentEditors Namespace" Url="html/594a1a96-ef38-a7fd-12a0-a9bcf838d00a.htm" HasChildren="true" />
+  <HelpTOCNode Id="4571330e-7861-44c8-b2a7-4438ba81e8b8" Title="SandcastleBuilder.HtmlExtract Namespace" Url="html/e495c36d-8eae-c56c-7dc5-42dc68123703.htm" HasChildren="true" />
+  <HelpTOCNode Id="392e1911-b749-4692-9caf-665bad8a6505" Title="SandcastleBuilder.InheritedDocumentation Namespace" Url="html/3647b189-0a05-8d7a-2e44-7a473cbbbf62.htm" HasChildren="true" />
+  <HelpTOCNode Id="c45cf948-9284-4afc-9fa5-6a6d0f18c562" Title="SandcastleBuilder.MicrosoftHelpViewer Namespace" Url="html/a293fe2d-0413-03b9-a785-17e7a54e16f0.htm" HasChildren="true" />
+  <HelpTOCNode Id="030067f1-25df-49e6-a4c4-e3f689662a59" Title="SandcastleBuilder.Package.PropertyPages Namespace" Url="html/1afb6f15-9354-5627-4635-0004c6ac8f60.htm" HasChildren="true" />
+  <HelpTOCNode Id="8f1ab515-6540-4137-a650-df3672e6304d" Title="SandcastleBuilder.PlugIns Namespace" Url="html/3c1057c9-0194-7dc9-d92e-dd426ccbb911.htm" HasChildren="true" />
+  <HelpTOCNode Id="6ea3000d-83ef-45ba-b9a6-d67590d99d95" Title="SandcastleBuilder.Utils Namespaces" Url="html/d63bf274-4ea5-68ed-1a7f-47ad9910b5f8.htm" HasChildren="true" />
+  <HelpTOCNode Id="388b4aa6-8613-4bc3-afac-0f6e2d443d1c" Title="SandcastleBuilder.WPF Namespaces" Url="html/5f653537-8bd9-6845-e8c0-9675989f0a4d.htm" HasChildren="true" />
+</HelpTOCNode>

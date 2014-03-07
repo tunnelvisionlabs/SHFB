@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="05b89692-6af3-4143-83ab-e5359774c3b2" Title="WINDOWPLACEMENT Fields" Url="html/29c4eee5-4ed2-f902-6809-ad456a073475.htm">
+  <HelpTOCNode Title="flags Field" Url="html/2c5d493b-f739-1efa-9123-82b6248203a0.htm" />
+  <HelpTOCNode Title="length Field" Url="html/f303d286-802a-d403-a70e-c8974f57d368.htm" />
+  <HelpTOCNode Title="ptMaxPosition_x Field" Url="html/d93569d9-7e8b-15ec-e85b-b33e86675032.htm" />
+  <HelpTOCNode Title="ptMaxPosition_y Field" Url="html/49d54260-ca7a-cf7d-2d4c-0403de25b860.htm" />
+  <HelpTOCNode Title="ptMinPosition_x Field" Url="html/ac164069-76d5-95eb-4269-db0b95c631f6.htm" />
+  <HelpTOCNode Title="ptMinPosition_y Field" Url="html/041f0e33-f2e5-8603-d6a1-891c401419a0.htm" />
+  <HelpTOCNode Title="rcNormalPosition_bottom Field" Url="html/22c57a11-c336-c6f5-c7f0-cd377bd0e1f4.htm" />
+  <HelpTOCNode Title="rcNormalPosition_left Field" Url="html/55ff39f0-3caa-71fa-f390-8c164ab683b6.htm" />
+  <HelpTOCNode Title="rcNormalPosition_right Field" Url="html/a0177c3d-3f3c-c5ef-4087-99767932a08d.htm" />
+  <HelpTOCNode Title="rcNormalPosition_top Field" Url="html/69b070b6-5e32-8f67-e972-7393b9bcba93.htm" />
+  <HelpTOCNode Title="showCmd Field" Url="html/a211e66d-a2f2-9998-6845-b0ce4e91ee1b.htm" />
+</HelpTOCNode>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="69469c69-d7ac-4cd5-9518-16cc8f7c8d47" Title="Common Inline Elements" Url="html/b96d95c0-ec3c-4846-998a-4b43548bfa0e.htm">
+  <HelpTOCNode Title="application" Url="html/bf552a94-f8b9-460d-bf76-a869430a077e.htm" />
+  <HelpTOCNode Title="codeInline" Url="html/915392b7-c701-44fd-8ff4-89c34a10f574.htm" />
+  <HelpTOCNode Title="command" Url="html/02e60906-b8d5-4258-9348-aad70f48861f.htm" />
+  <HelpTOCNode Title="computerOutputInline" Url="html/b433ede9-8813-4020-b5dd-74b3204ebe0c.htm" />
+  <HelpTOCNode Title="database" Url="html/28f99529-1e07-4a5e-978f-d2a27c3c7fb1.htm" />
+  <HelpTOCNode Title="environmentVariable" Url="html/a0424e7f-823c-449c-a2e4-012c1f556674.htm" />
+  <HelpTOCNode Title="errorInline" Url="html/4cf23985-a97b-46d4-8624-a46b77cca86b.htm" />
+  <HelpTOCNode Title="fictitiousUri" Url="html/3fad0c13-9dcb-471e-890b-228acf54b574.htm" />
+  <HelpTOCNode Title="foreignPhrase" Url="html/5389dce5-e592-4ae2-9b35-071627542f07.htm" />
+  <HelpTOCNode Title="hardware" Url="html/47e7184b-4213-44b2-9602-a0271d93747b.htm" />
+  <HelpTOCNode Title="legacyBold" Url="html/ca1eccd2-dfa4-4daa-a69b-3bad7e0c4946.htm" />
+  <HelpTOCNode Title="legacyItalic" Url="html/02096c70-c178-44f9-ac9f-f3d479a2b77a.htm" />
+  <HelpTOCNode Title="legacyUnderline" Url="html/e90091a9-3959-4718-b109-ea8e75837e62.htm" />
+  <HelpTOCNode Title="literal" Url="html/d50f98be-cddf-4756-994d-c05431f013a8.htm" />
+  <HelpTOCNode Title="localUri" Url="html/ecd8ab10-57b5-4094-b195-4c8c5a1ba3d0.htm" />
+  <HelpTOCNode Title="math" Url="html/5bab8ccb-0ff0-496e-aa15-ae803c210a22.htm" />
+  <HelpTOCNode Title="newTerm" Url="html/195da602-cc1a-4545-b6f1-1c2e2cfc59ac.htm" />
+  <HelpTOCNode Title="phrase" Url="html/fead6b84-f844-4669-abd2-26667cd7be6e.htm" />
+  <HelpTOCNode Title="placeholder" Url="html/d995d093-ce18-4a7e-bd03-82c6c0b4fd72.htm" />
+  <HelpTOCNode Title="quoteInline" Url="html/c366af27-ac55-44e6-9c62-86cabf3eba77.htm" />
+  <HelpTOCNode Title="replaceable" Url="html/382fc569-33e4-489a-b0c2-94c11e56ab4a.htm" />
+  <HelpTOCNode Title="subscript" Url="html/27f10273-2112-47fd-baf4-5ee90e79fba4.htm" />
+  <HelpTOCNode Title="superscript" Url="html/6a9e1e0c-4e15-43e0-af9f-8ac9c1ab3b0c.htm" />
+  <HelpTOCNode Title="system" Url="html/f1a0543f-d583-47a7-ac92-5b998326913e.htm" />
+  <HelpTOCNode Title="ui" Url="html/8b05e77d-04d1-4b60-9d9f-4de4817aa3a9.htm" />
+  <HelpTOCNode Title="unmanagedCodeEntityReference" Url="html/1f20a093-5394-460b-8526-822fb327fc2c.htm" />
+  <HelpTOCNode Title="userInput" Url="html/e9ecadad-9cc3-4089-9a91-ef93b3f9400e.htm" />
+</HelpTOCNode>

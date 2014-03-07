@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="182899da-3afb-4ff4-95e2-0a88bb7773b7" Title="BuildProcess Properties" Url="html/c55a942e-112b-68cf-4b46-d96bcf6aded1.htm">
+  <HelpTOCNode Title="ApiTocOrder Property " Url="html/ea02a5bc-3db3-3734-df84-10004a548c47.htm" />
+  <HelpTOCNode Title="ApiTocParentId Property " Url="html/25e10aba-062e-898e-8878-4ba1fdb8b6c0.htm" />
+  <HelpTOCNode Title="BuildApiFilter Property " Url="html/576d8918-bfda-9a63-10e9-b478bf0a13be.htm" />
+  <HelpTOCNode Title="BuildCanceled Property " Url="html/8c5eb92d-f720-a8c8-46ee-4a7a25b9e8e1.htm" />
+  <HelpTOCNode Title="CommentsFiles Property " Url="html/2a5aa3e2-b481-4681-b227-f4b08348045e.htm" />
+  <HelpTOCNode Title="ConceptualContent Property " Url="html/e94a4fa1-6af7-dfad-0da8-6ede5a0e05f9.htm" />
+  <HelpTOCNode Title="CurrentFormat Property " Url="html/d66c5dfc-d078-2272-cff0-c039b108d818.htm" />
+  <HelpTOCNode Title="CurrentProject Property " Url="html/915d8b64-728a-5d32-e69c-cf572db9fc07.htm" />
+  <HelpTOCNode Title="FrameworkSettings Property " Url="html/ba5f842a-dc02-cfe7-e6ef-86c7ef9af4d4.htm" />
+  <HelpTOCNode Title="Help1CompilerFolder Property " Url="html/4a34a5b0-4d5d-bbaf-2f03-978969a44a62.htm" />
+  <HelpTOCNode Title="Help1Files Property " Url="html/5fe3ae9f-3c35-4b9a-94a7-3f0d7fe28ba8.htm" />
+  <HelpTOCNode Title="Help2CompilerFolder Property " Url="html/06111fd2-4c22-3824-5c1f-83d24fd13ae9.htm" />
+  <HelpTOCNode Title="Help2Files Property " Url="html/bce01f20-f5f7-244a-8b47-640739f8e7c2.htm" />
+  <HelpTOCNode Title="HelpFormatOutputFolders Property " Url="html/511277ee-22eb-07ee-edf1-9e5187d48291.htm" />
+  <HelpTOCNode Title="HelpViewerFiles Property " Url="html/b586b592-5aef-a738-eaa2-aa1847bfd661.htm" />
+  <HelpTOCNode Title="LoadedPlugIns Property " Url="html/8a7e35e7-c9ec-851b-4cff-ddbc82aae36d.htm" />
+  <HelpTOCNode Title="LogFilename Property " Url="html/8d79dfe3-3c39-6d51-e91d-a667cb216af0.htm" />
+  <HelpTOCNode Title="MSBuildExePath Property " Url="html/22e7d23a-923c-857c-45a0-294c7f87c85b.htm" />
+  <HelpTOCNode Title="OutputFolder Property " Url="html/4e32fb64-bb13-e34e-85b6-f2714c709b87.htm" />
+  <HelpTOCNode Title="PartialBuildType Property " Url="html/2dfa119c-e4ec-2cd8-1f7e-2019af14983e.htm" />
+  <HelpTOCNode Title="PresentationStyleFolder Property " Url="html/d83caedf-57ce-16c3-55c0-06079431dfb9.htm" />
+  <HelpTOCNode Title="ProjectFilename Property " Url="html/a5179722-1820-058e-3c18-ddcb172c6c93.htm" />
+  <HelpTOCNode Title="ProjectFolder Property " Url="html/2dc9c884-eb9f-e739-334e-86e6cc9682d9.htm" />
+  <HelpTOCNode Title="ReferencedNamespaces Property " Url="html/8c9ee1f9-5df5-3808-bc02-329c1ef38f8b.htm" />
+  <HelpTOCNode Title="ReflectionInfoFilename Property " Url="html/50fbbf9e-968a-679b-0b92-43d5ee285c0a.htm" />
+  <HelpTOCNode Title="ResolvedHtmlHelpName Property " Url="html/671bb414-7fa8-854b-219e-1deba4dd5b68.htm" />
+  <HelpTOCNode Title="RootContentContainerId Property " Url="html/97ad7153-ed6c-1e6c-3634-75b28095f355.htm" />
+  <HelpTOCNode Title="SuppressApiFilter Property " Url="html/37a38739-41b9-d717-0fdd-9aab9a6e25f0.htm" />
+  <HelpTOCNode Title="TemplateFolder Property " Url="html/766f4a12-629c-3e14-2d99-e9e11e994c49.htm" />
+  <HelpTOCNode Title="WebsiteFiles Property " Url="html/3a2410d1-e53a-d0b8-49c9-4332e1ab5be2.htm" />
+  <HelpTOCNode Title="WorkingFolder Property " Url="html/60c020ec-c2c7-979d-4bc7-6b445daf110b.htm" />
+</HelpTOCNode>

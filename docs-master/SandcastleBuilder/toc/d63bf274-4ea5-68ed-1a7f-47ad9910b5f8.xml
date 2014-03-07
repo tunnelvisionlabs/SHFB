@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="6ea3000d-83ef-45ba-b9a6-d67590d99d95" Title="SandcastleBuilder.Utils Namespaces" Url="html/d63bf274-4ea5-68ed-1a7f-47ad9910b5f8.htm">
+  <HelpTOCNode Id="d7c1372a-09aa-4a18-9544-7ed1f6a4a597" Title="SandcastleBuilder.Utils Namespace" Url="html/960ef505-1200-ede5-c807-ab0c912adef4.htm" HasChildren="true" />
+  <HelpTOCNode Id="56bf856c-e5bf-4467-910a-3f0ad8f1471f" Title="SandcastleBuilder.Utils.BuildComponent Namespace" Url="html/2c8415a8-a96a-ef1c-5bb4-976755af6cb3.htm" HasChildren="true" />
+  <HelpTOCNode Id="a462c083-4dd3-4b88-8ed2-47e9f7f2c9aa" Title="SandcastleBuilder.Utils.BuildEngine Namespace" Url="html/c0dcae57-33bd-4938-45fe-79219fb3b0af.htm" HasChildren="true" />
+  <HelpTOCNode Id="9dbb0fcc-48e9-4b31-bdf1-7789dac0fffe" Title="SandcastleBuilder.Utils.ConceptualContent Namespace" Url="html/966b2fe1-8e51-cbfa-e98d-ed6a9f373fa0.htm" HasChildren="true" />
+  <HelpTOCNode Id="0c9dfaa1-a7b9-4b3e-8863-f0721c437ee5" Title="SandcastleBuilder.Utils.Controls Namespace" Url="html/20151a5f-9e6e-9b2b-13f8-fbc607f72a03.htm" HasChildren="true" />
+  <HelpTOCNode Id="40f00adf-29b9-454b-b83d-42f51c35de50" Title="SandcastleBuilder.Utils.Conversion Namespace" Url="html/82a57513-1170-8987-483e-6d14a1b20bbf.htm" HasChildren="true" />
+  <HelpTOCNode Id="fd8a965c-8b0d-451b-b3c6-c266681f196d" Title="SandcastleBuilder.Utils.Design Namespace" Url="html/d901f22b-58c1-ef62-8834-76a88875f6b8.htm" HasChildren="true" />
+  <HelpTOCNode Id="34bfb13b-14e2-4395-8077-78b8d8467d80" Title="SandcastleBuilder.Utils.Gac Namespace" Url="html/c3402f66-1e9b-cb55-fdf3-66d44cfd4829.htm" HasChildren="true" />
+  <HelpTOCNode Id="96fb1d4e-95b6-4dcd-9b3c-a3c01aba46e1" Title="SandcastleBuilder.Utils.InheritedDocumentation Namespace" Url="html/6cc4f669-e2fd-ec28-2864-4d2da7b8dca5.htm" HasChildren="true" />
+  <HelpTOCNode Id="2a337a0a-dcac-421f-8e6e-b0a01edf6b09" Title="SandcastleBuilder.Utils.MSBuild Namespace" Url="html/9b308131-0a59-f3eb-b7ff-431e13f5dc2a.htm" HasChildren="true" />
+  <HelpTOCNode Id="b3caa75d-1009-4111-a5b0-77984eab8adb" Title="SandcastleBuilder.Utils.XPath Namespace" Url="html/9165c2b5-df2b-515c-633d-8bf3422c6ae0.htm" HasChildren="true" />
+</HelpTOCNode>

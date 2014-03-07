@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="b0ce21bb-408b-40c3-ace5-0eb019a3c785" Title="TopicCollection Methods" Url="html/27e039e1-6082-a0ca-bb5c-04e204db4806.htm">
+  <HelpTOCNode Title="AddTopicsFromFolder Method " Url="html/aabecd92-d75a-ab1b-49b4-4e0194271926.htm" />
+  <HelpTOCNode Title="All Method " Url="html/d2ed750f-92a8-2902-0a2e-839dd976e8be.htm" />
+  <HelpTOCNode Title="Find Method " Url="html/56e88fec-ccdc-2943-df79-fa47fb8f9e4f.htm" />
+  <HelpTOCNode Title="GenerateConceptualTopics Method " Url="html/eeb6ac4e-71fe-d818-5e44-63e6215148b3.htm" />
+  <HelpTOCNode Title="GenerateTableOfContents Method " Url="html/8cccfaad-8094-8ba2-bbde-68e8787797fa.htm" />
+  <HelpTOCNode Title="InsertItem Method " Url="html/e4644c00-150e-571c-fe5e-e30adb336215.htm" />
+  <HelpTOCNode Title="Load Method " Url="html/5fb41f61-a13f-8636-50f2-20dad05b8934.htm" />
+  <HelpTOCNode Title="MatchProjectFilesToTopics Method " Url="html/7f6072b2-1a57-d8b9-178c-f101edf67c1b.htm" />
+  <HelpTOCNode Title="RemoveItem Method " Url="html/324055d4-9507-c999-2b96-7f81989fce5b.htm" />
+  <HelpTOCNode Title="Save Method " Url="html/7c2b98b1-10de-3768-0e0e-d084a21a7d06.htm" />
+  <HelpTOCNode Title="SetItem Method " Url="html/fb756266-6623-d9e7-b952-b3ddc765dc71.htm" />
+  <HelpTOCNode Title="Sort Method " Url="html/a5da0c0e-0f37-a485-f8c1-b7ffb40e68fa.htm" />
+</HelpTOCNode>

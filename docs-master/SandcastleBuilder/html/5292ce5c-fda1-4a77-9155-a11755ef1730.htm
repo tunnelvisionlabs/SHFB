@@ -1,0 +1,39 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="SHORTCUT ICON" href="./../icons/favicon.ico"><link rel="stylesheet" type="text/css" href="./../styles/branding.css"><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css"><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Conceptual and Additional Content</title><meta name="Language" content="en-us"><meta name="System.Keywords" content="additional content, general overview"><meta name="System.Keywords" content="conceptual content, general overview"><meta name="Microsoft.Help.Id" content="5292ce5c-fda1-4a77-9155-a11755ef1730"><meta name="Description" content="In versions of the help file builder prior to version 1.7.0."><meta name="Microsoft.Help.ContentType" content="Concepts"><meta name="BrandingAware" content="'true'"><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css"><meta name="SelfBranded" content="true"></head><body onload="onLoad()" class="primary-mtps-offline-document"><header class="ux-header"><div class="header-top-bar">Sandcastle Help File Builder Documentation</div></header><div class="OH_outerDiv" style="padding: 35px 20px 0 20px;"><div class="OH_leftNav" id="LeftNav">
+  <div id="tocnav">
+    <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;"><a class="toc_collapsed" onclick="javascript: Toggle(this);" href="#"></a><a data-tochassubtree="true" href="bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" title="Sandcastle Help File Builder" tocid="roottoc">Sandcastle Help File Builder</a></div><div class="toclevel1 current" data-toclevel="1" style="padding-left: 13px;" data-childrenloaded="true"><a class="toc_expanded" onclick="javascript: Toggle(this);" href="#"></a><a data-tochassubtree="true" href="5292ce5c-fda1-4a77-9155-a11755ef1730.htm" title="Conceptual and Additional Content" tocid="5292ce5c-fda1-4a77-9155-a11755ef1730">Conceptual and Additional Content</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px; display: block;"><a class="toc_collapsed" onclick="javascript: Toggle(this);" href="#"></a><a data-tochassubtree="true" href="3d4edd2d-7883-4508-b9d2-bd7b4d848b0d.htm" title="Conceptual Content" tocid="3d4edd2d-7883-4508-b9d2-bd7b4d848b0d">Conceptual Content</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px; display: block;"><span class="toc_empty"></span><a data-tochassubtree="false" href="ba42b2c2-985d-46f1-ba4c-3d921edcafe3.htm" title="Content Placement Options" tocid="ba42b2c2-985d-46f1-ba4c-3d921edcafe3">Content Placement Options</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px; display: block;"><a class="toc_collapsed" onclick="javascript: Toggle(this);" href="#"></a><a data-tochassubtree="true" href="4fd3b2b6-dfad-4513-983b-5e74d2342ff0.htm" title="Additional Content" tocid="4fd3b2b6-dfad-4513-983b-5e74d2342ff0">Additional Content</a></div></div></div><div id="TocResize" class="OH_TocResize"><img id="ResizeImageIncrease" src="../icons/open.gif" onclick="onIncreaseToc()" alt="Expand" title="Expand"><img id="ResizeImageReset" src="../icons/close.gif" style="display:none" onclick="onResetToc()" alt="Minimize" title="Minimize"></div><div class="OH_outerContent" id="OuterContent" style="margin-left: 280px;"><h1 class="title">Conceptual and Additional Content</h1><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><div class="introduction"><p>In versions of the help file builder prior to version 1.7.0.0,
+the additional content properties were used to add files to the project to
+define additional help content that would appear in the table of contents and
+to add other items such as image files and additional style sheets.  As an
+alternative to basic HTML files, you could also create XML files with a
+<em>.topic</em> extension that would be ran through an XSL
+transformation to give them the basic look and feel of the presentation style
+that was selected.  However, using the basic transformations, the topics lacked
+several features present in the reference content such as collapsible sections
+and the language filter and they could not take advantage of build components
+to resolve links to reference and online content.</p></div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle"></div></div><p>Starting with version 1.7.0.0, the help file builder supports
+conceptual content.  This is similar in nature to additional content in that it
+allows you to add non-reference content to the help file that will appear in
+the table of contents.  However, instead of HTML files or <em>.topic</em>
+files that contain HTML, conceptual content uses topic files that contain
+Microsoft Assistance Markup Language (MAML).  This is basically XML conforming
+to a well defined schema that describes the structure of the conceptual content
+much like XML comments describe the structure of the code comments. There is no
+layout or style information within the MAML files. Instead, they are ran
+through a series of XSL transformations using Sandcastle's
+<strong>BuildAssembler</strong> tool similar to the reference (API)
+content so that they match it in appearance and features.</p><p>MAML is quite different than HTML but it does offer many of the same
+capabilities.  The main difference is that the XSL transformations are
+responsible for applying the style and formatting, not the elements in the
+MAML topics. It does take some getting used to but the end result is well
+worth it.  The look of the conceptual topics is much more consistent with that
+of the reference topics. As such, preference will be given to conceptual
+content when adding features to the help file builder.  While it will continue
+to support the older additional content models, they will not receive any
+further enhancements.</p><a name="seeAlsoSection"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="3d4edd2d-7883-4508-b9d2-bd7b4d848b0d.htm" target="">Conceptual Content</a></div><div class="seeAlsoStyle"><a href="ba42b2c2-985d-46f1-ba4c-3d921edcafe3.htm" target="">Content Placement Options</a></div><div class="seeAlsoStyle"><a href="4fd3b2b6-dfad-4513-983b-5e74d2342ff0.htm" target="">Additional Content</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p><a href="http://SHFB.CodePlex.com" target="_blank">[v2014.2.15.0] Copyright © 2006-2014, Eric Woodruff, All rights reserved (http://SHFB.CodePlex.com)</a></p><div class="OH_feedbacklink"><a href="mailto:Eric@EWoodruff.us?subject=Sandcastle+Help+File+Builder+Documentation+Conceptual+and+Additional+Content+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Eric Woodruff.</div></div><script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript">$(document).ready(function () {DocumentReady();});</script></body></html>

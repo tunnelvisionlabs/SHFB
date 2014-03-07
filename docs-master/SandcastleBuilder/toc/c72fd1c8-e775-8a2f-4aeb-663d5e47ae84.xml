@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="d0495d44-f64b-4a6e-8eb1-88b2047d33ea" Title="SandcastleBuilder.Gui Namespace" Url="html/c72fd1c8-e775-8a2f-4aeb-663d5e47ae84.htm">
+  <HelpTOCNode Id="1250eed4-f5e3-49c9-82a4-4315a813ae14" Title="AboutDlg Class" Url="html/ce9bf649-b798-f453-f2aa-66f74b82ca32.htm" HasChildren="true" />
+  <HelpTOCNode Title="BeforeBuildAction Enumeration" Url="html/b8028a3a-8455-43a4-5524-468085a658ae.htm" />
+  <HelpTOCNode Id="52e75320-85b6-4dde-97ca-f0b8dd665437" Title="MainForm Class" Url="html/4b45cb21-d53d-b326-0c11-808b91a62e02.htm" HasChildren="true" />
+  <HelpTOCNode Id="3e001bf4-fed7-4642-aa49-f0906107a1bb" Title="PromptToSaveDlg Class" Url="html/b119aa08-f2b1-3769-bdda-2f4fd155fb4e.htm" HasChildren="true" />
+  <HelpTOCNode Title="StartUp Class" Url="html/4882165d-318e-af80-bd1f-ab3f6e9823b5.htm" />
+  <HelpTOCNode Id="cd159fd1-7d25-4c72-a1a3-36c515dd9776" Title="UserPreferencesDlg Class" Url="html/5751e18a-2296-fba2-6248-9ed7e55df9e0.htm" HasChildren="true" />
+  <HelpTOCNode Id="6845a1f4-e96d-4a9c-aeff-719dbf49998b" Title="WINDOWPLACEMENT Structure" Url="html/5eda44e5-2f39-f070-d119-df332ee8bb07.htm" HasChildren="true" />
+</HelpTOCNode>

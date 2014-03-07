@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="3b505113-e1b3-4468-8fe6-04e6187b4bce" Title="SandcastleBuilder.Components.Commands Namespace" Url="html/74cba04e-b515-bbec-b6aa-a9b15e63552a.htm">
+  <HelpTOCNode Id="8cf3f190-50db-40da-908d-00fc64771492" Title="ESentIndexedCache Class" Url="html/0809da01-5787-3881-60d8-135e987e56cc.htm" HasChildren="true" />
+  <HelpTOCNode Id="0e1c5b29-4501-4d0e-a51d-b9f8c08c07ea" Title="SqlIndexedCache Class" Url="html/1314591d-c8c9-6920-7e31-70ef4401e605.htm" HasChildren="true" />
+</HelpTOCNode>

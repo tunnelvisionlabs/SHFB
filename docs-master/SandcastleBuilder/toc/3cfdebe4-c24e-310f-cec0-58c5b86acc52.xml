@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="2cac8f8e-cbcd-4327-89ca-39444c0c8fb8" Title="ReferenceItemCollection Methods" Url="html/3cfdebe4-c24e-310f-cec0-58c5b86acc52.htm">
+  <HelpTOCNode Title="AddProjectReference Method " Url="html/9efb6ff1-f8e7-e571-26d0-7d60315b1f41.htm" />
+  <HelpTOCNode Title="AddReference Method " Url="html/c4aba255-fa0c-1894-6414-7ad55150a063.htm" />
+  <HelpTOCNode Title="EnsureCurrent Method " Url="html/0d4a54a3-f430-455d-e9d8-9e96d7cbcab3.htm" />
+  <HelpTOCNode Title="OnListChanged Method " Url="html/4053a0d3-9627-9b3e-3fb0-5c9ad7779187.htm" />
+  <HelpTOCNode Title="RemoveItem Method " Url="html/25d72da3-4fbc-f663-b305-0f6b7fc19851.htm" />
+  <HelpTOCNode Title="Sort Method " Url="html/e787fbff-9176-42c5-bb1b-5cef456c42f9.htm" />
+</HelpTOCNode>

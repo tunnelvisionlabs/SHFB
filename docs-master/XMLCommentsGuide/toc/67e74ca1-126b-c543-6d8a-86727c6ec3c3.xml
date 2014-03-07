@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="e7810851-09a6-49c9-a7d9-40135b11549a" Title="SetDocumentation Methods" Url="html/67e74ca1-126b-c543-6d8a-86727c6ec3c3.htm">
+  <HelpTOCNode Title="ICollection(Int32).Add Method " Url="html/3481f3e2-c9f3-bf8a-620f-e7608f898310.htm" />
+  <HelpTOCNode Title="IEnumerable.GetEnumerator Method " Url="html/6b8daa64-eaf8-0b69-07a0-d35f310cfba8.htm" />
+  <HelpTOCNode Title="Add Method " Url="html/156688ba-9f84-c575-9170-c15dcf8be62d.htm" />
+  <HelpTOCNode Title="Clear Method " Url="html/959d0d1d-10ea-1ae4-6f33-6577f2751cc8.htm" />
+  <HelpTOCNode Title="Contains Method " Url="html/10637874-63e0-6820-8911-95838b89304d.htm" />
+  <HelpTOCNode Title="CopyTo Method " Url="html/1e63910c-d1c6-c6e4-344f-6245898d0f0a.htm" />
+  <HelpTOCNode Title="ExceptWith Method " Url="html/48674f89-86fc-f603-57bf-42b7d2cdff0a.htm" />
+  <HelpTOCNode Title="GetEnumerator Method " Url="html/46123124-bc0f-16bc-eabf-652d36605a51.htm" />
+  <HelpTOCNode Title="IntersectWith Method " Url="html/7d11c976-307d-b03a-625b-00ec7300bfe0.htm" />
+  <HelpTOCNode Title="IsProperSubsetOf Method " Url="html/e1cc07af-f401-b5ba-cb36-fa69d95a2698.htm" />
+  <HelpTOCNode Title="IsProperSupersetOf Method " Url="html/d272ced1-f4a4-e73b-9285-11dcc22b1abe.htm" />
+  <HelpTOCNode Title="IsSubsetOf Method " Url="html/1cad922c-0232-0ad2-bda7-b654e2629e10.htm" />
+  <HelpTOCNode Title="IsSupersetOf Method " Url="html/b63b6e61-91d7-b713-57a3-8ae670d79d7e.htm" />
+  <HelpTOCNode Title="Overlaps Method " Url="html/e8ac13f4-34cb-4205-ea08-5bbc68cdeee9.htm" />
+  <HelpTOCNode Title="Remove Method " Url="html/54b00207-3746-b9c2-8f60-f56fcd56b1f3.htm" />
+  <HelpTOCNode Title="SetEquals Method " Url="html/24a49143-e119-dee3-7d0f-87d917d5be75.htm" />
+  <HelpTOCNode Title="SymmetricExceptWith Method " Url="html/1602d998-be8d-fad0-0b54-77a2695af6fa.htm" />
+  <HelpTOCNode Title="UnionWith Method " Url="html/62c55278-6531-6dac-beb3-0b5d299f4d59.htm" />
+</HelpTOCNode>

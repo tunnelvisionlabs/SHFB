@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="1b5476cc-0c05-413a-ac15-a523614ec347" Title="SiteMapEditorWindow Methods" Url="html/5be03ad7-d2ec-f520-455b-d56accb86c0c.htm">
+  <HelpTOCNode Id="2cb5b6bb-a1e3-446d-afb3-cfe41ecfcdba" Title="Dispose Method " Url="html/4a991ded-c373-1494-03c8-4dfb2af6448c.htm" HasChildren="true" />
+  <HelpTOCNode Title="GetPersistString Method " Url="html/ead9c268-6226-54e1-9c58-0386abb8cd79.htm" />
+  <HelpTOCNode Id="dd43770f-547c-47a6-8fc6-5efb97c8d26c" Title="Save Method " Url="html/f6b32ce5-c21e-61b5-1253-a6575ca4601f.htm" HasChildren="true" />
+  <HelpTOCNode Title="SaveAs Method " Url="html/81dc611c-71a6-6d1e-8eb5-3d6caeeaef9e.htm" />
+</HelpTOCNode>

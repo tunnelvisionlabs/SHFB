@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="99ba0d38-a118-42ed-b87b-c3e72a4b9626" Title="ProjectElement Fields" Url="html/20ff8fac-30e3-9514-6f36-fc11f5f6cfdc.htm">
+  <HelpTOCNode Title="AlternateText Field" Url="html/b10aa1ed-ee3c-db29-db1b-525d95b4d4b0.htm" />
+  <HelpTOCNode Title="BuildAction Field" Url="html/43232666-99b5-40b1-cce4-264123576430.htm" />
+  <HelpTOCNode Title="Configuration Field" Url="html/5f264b5a-866b-a0c9-8d07-795843145917.htm" />
+  <HelpTOCNode Title="CopyToMedia Field" Url="html/f8c7c05e-387d-37f2-36cb-67dd6cda6319.htm" />
+  <HelpTOCNode Title="ExcludeFromToc Field" Url="html/2bec4030-efef-4e11-c128-f90e4acf91e8.htm" />
+  <HelpTOCNode Title="Guid Field" Url="html/edc551fe-4f56-87c4-4d85-4a85fec12300.htm" />
+  <HelpTOCNode Title="HintPath Field" Url="html/dc5c94b3-30b5-0175-ac2b-b5e1a782cc3e.htm" />
+  <HelpTOCNode Title="ImageId Field" Url="html/7d8559f9-72f4-8079-d2ad-843fa286b7c0.htm" />
+  <HelpTOCNode Title="IncludePath Field" Url="html/f1d6320d-e1dc-8ee5-fb9d-38494de15d2d.htm" />
+  <HelpTOCNode Title="LinkPath Field" Url="html/400964fa-edc4-c8c7-03ec-6f7da9d5a212.htm" />
+  <HelpTOCNode Title="Name Field" Url="html/7b03ddaa-a661-7995-0769-0f27bf4fc0e9.htm" />
+  <HelpTOCNode Title="OutDir Field" Url="html/471e9df6-5b65-8919-4c95-7e98470681d3.htm" />
+  <HelpTOCNode Title="Platform Field" Url="html/7c01de55-3211-6d7b-f2ea-551af8625956.htm" />
+  <HelpTOCNode Title="ProjectGuid Field" Url="html/b17e5928-2ef0-38bb-a7b8-19c72cec8373.htm" />
+  <HelpTOCNode Title="ProjectName Field" Url="html/24ebe893-a0f5-3336-4c9d-d4db5e323ed5.htm" />
+  <HelpTOCNode Title="ReferenceOutputAssembly Field" Url="html/20fc3ba6-34e7-79a0-b2d3-484ed0352a82.htm" />
+  <HelpTOCNode Title="SolutionDir Field" Url="html/fad72550-fc42-f61c-c508-c1d7bc746d54.htm" />
+  <HelpTOCNode Title="SolutionExt Field" Url="html/30ac3a2e-e533-0717-c902-d425920c4d18.htm" />
+  <HelpTOCNode Title="SolutionFileName Field" Url="html/299ef1cf-cc5d-7148-2178-8c413cd3cc23.htm" />
+  <HelpTOCNode Title="SolutionName Field" Url="html/7633386d-c1f5-fff2-02e9-0ac4fc93b503.htm" />
+  <HelpTOCNode Title="SolutionPath Field" Url="html/d945cda5-8894-2d08-6351-e4c600956644.htm" />
+  <HelpTOCNode Title="SortOrder Field" Url="html/2e1e92b7-ca73-0249-0402-70b3bf14a89d.htm" />
+  <HelpTOCNode Title="VersionMajor Field" Url="html/13f822ce-94d6-fb8b-040d-63b0f642e575.htm" />
+  <HelpTOCNode Title="VersionMinor Field" Url="html/3b954752-6abc-182b-f91b-fe528a4d8f3e.htm" />
+  <HelpTOCNode Title="WrapperTool Field" Url="html/fada8895-ec5a-a091-b4a8-f9a46478f07a.htm" />
+</HelpTOCNode>

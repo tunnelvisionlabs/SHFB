@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="2a337a0a-dcac-421f-8e6e-b0a01edf6b09" Title="SandcastleBuilder.Utils.MSBuild Namespace" Url="html/9b308131-0a59-f3eb-b7ff-431e13f5dc2a.htm">
+  <HelpTOCNode Id="9b0e158c-32e7-42e7-83de-8386d0279fea" Title="Build1xHelpFile Class" Url="html/1622b09b-6572-d6da-f86a-d0752cc3260c.htm" HasChildren="true" />
+  <HelpTOCNode Id="94bb2173-2060-4cfd-ad5a-2cefde72da9f" Title="Build2xHelpFile Class" Url="html/3669a7db-a22f-51dd-4a50-fed7ed4e2fcd.htm" HasChildren="true" />
+  <HelpTOCNode Id="f12973d3-c1f4-46e2-87af-bd6af909d1d3" Title="BuildHelp Class" Url="html/4553874a-99a0-152f-0bb7-b849de14f770.htm" HasChildren="true" />
+  <HelpTOCNode Id="73c6bba8-4e21-4e70-83f5-46d18e921def" Title="BuildHelpViewerFile Class" Url="html/58628561-ed55-2f58-62ed-8780b50af357.htm" HasChildren="true" />
+  <HelpTOCNode Id="148c2618-e699-4f0d-a23c-9fcc7af028cd" Title="CleanHelp Class" Url="html/0f4eecc2-1ace-2d21-521a-701bf35ba276.htm" HasChildren="true" />
+  <HelpTOCNode Id="3fc9f93a-59c6-437f-a2e9-f1f1b25f6211" Title="MSBuildProject Class" Url="html/80cebf18-a529-9c66-d512-f7f20bf7dd65.htm" HasChildren="true" />
+</HelpTOCNode>

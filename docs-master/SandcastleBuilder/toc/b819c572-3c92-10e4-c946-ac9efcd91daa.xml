@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="b48c0394-1d52-4d33-bac0-9467c8f08df4" Title="TocEntryCollection Methods" Url="html/b819c572-3c92-10e4-c946-ac9efcd91daa.htm">
+  <HelpTOCNode Title="AddTopicsFromFolder Method " Url="html/b101d2d2-485b-74fd-7562-cb4b0b8db035.htm" />
+  <HelpTOCNode Title="All Method " Url="html/f0102222-bb54-3840-3f03-eba71a70e7ba.htm" />
+  <HelpTOCNode Id="d47048bd-6dc8-4b14-8772-a350fc13c0fb" Title="Find Method " Url="html/69504b5c-7ff7-9a28-bc84-d773ad2dfd13.htm" HasChildren="true" />
+  <HelpTOCNode Title="FindDefaultTopic Method " Url="html/b5d02ab2-8cbf-1875-5e94-f12293559073.htm" />
+  <HelpTOCNode Title="GenerateTableOfContents Method " Url="html/626b783c-55f3-426b-83a0-13a8c6ae371c.htm" />
+  <HelpTOCNode Title="InsertItem Method " Url="html/3f6f13e6-7e24-cca2-c146-c9976a57bdef.htm" />
+  <HelpTOCNode Title="Load Method " Url="html/27e1739f-13aa-51eb-8c6d-04c8861c656b.htm" />
+  <HelpTOCNode Title="RemoveExcludedNodes Method " Url="html/e2a7e698-b18c-070d-d9da-62357b35397b.htm" />
+  <HelpTOCNode Title="RemoveItem Method " Url="html/e917fdaa-2f0f-ad2e-65fb-d7707764f19b.htm" />
+  <HelpTOCNode Title="ResetSortOrder Method " Url="html/77e791c8-afaa-ba01-8335-5aba0aabca83.htm" />
+  <HelpTOCNode Title="Save Method " Url="html/4d467c40-b4da-4356-0617-091736ab8457.htm" />
+  <HelpTOCNode Title="SaveToIntermediateTocFile Method " Url="html/7d030578-7afc-2aaf-ecca-067a13b3cc85.htm" />
+  <HelpTOCNode Title="SetItem Method " Url="html/74f3026a-4224-c243-4903-7b98ac57c061.htm" />
+  <HelpTOCNode Title="Sort Method " Url="html/5f0ed466-0771-c1d4-baec-5fa3a65f10ef.htm" />
+  <HelpTOCNode Id="deb6b082-d16e-491d-951a-30dd03b4635d" Title="ToString Method " Url="html/d2e33f73-e122-6c9c-9bd0-a345e19cf5f2.htm" HasChildren="true" />
+</HelpTOCNode>

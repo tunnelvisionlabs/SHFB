@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="fd8a965c-8b0d-451b-b3c6-c266681f196d" Title="SandcastleBuilder.Utils.Design Namespace" Url="html/d901f22b-58c1-ef62-8834-76a88875f6b8.htm">
+  <HelpTOCNode Id="b7a42b63-8e63-48f8-a92c-4a1430558ba7" Title="ApiFilterEditorDlg Class" Url="html/9a646e74-d5ae-a208-46f1-10c14ddbefd6.htm" HasChildren="true" />
+  <HelpTOCNode Id="7b7a83b3-0a18-44fa-85d4-14c6ec5d6f2d" Title="BuildActionEnumConverter Class" Url="html/1b36c7fc-1324-deba-719e-59724e2a321e.htm" HasChildren="true" />
+  <HelpTOCNode Id="9ada82a6-8db2-4c3c-8d47-c4301da99be9" Title="ContentFileEditor Class" Url="html/901b53fb-fff5-f1bd-c327-c02251168a9d.htm" HasChildren="true" />
+  <HelpTOCNode Id="28c692d6-e4ab-4586-b379-a521b6321fea" Title="ContentFileEditorCollection Class" Url="html/c7a3ab8e-f69e-17cf-d48e-c4bb66b50d75.htm" HasChildren="true" />
+  <HelpTOCNode Id="ad9193bb-f947-4b5d-8d05-5e00def3c6f5" Title="DynamicReadOnlyPropertyDescriptor Class" Url="html/e4f11a3d-11a1-d5c9-1313-97c1c312964a.htm" HasChildren="true" />
+  <HelpTOCNode Id="63fc2810-77a1-4cc3-b1cf-235fb17d6773" Title="EscapeValueAttribute Class" Url="html/6dcfc279-cc14-0088-b492-675605b7329e.htm" HasChildren="true" />
+  <HelpTOCNode Id="4381102b-8e84-4990-bc9d-62a7bb05503f" Title="FileDialogAttribute Class" Url="html/fb8f46d2-cc19-68d6-a9c8-4abde664f6e9.htm" HasChildren="true" />
+  <HelpTOCNode Title="FileDialogType Enumeration" Url="html/7034cea6-fc81-f14e-640d-640ecf840d44.htm" />
+  <HelpTOCNode Id="f1be7b01-5b7f-4c70-9a1e-16912247ff7c" Title="FilePathObjectEditor Class" Url="html/b3cf6ebf-090f-fa80-d283-a55da380cf7e.htm" HasChildren="true" />
+  <HelpTOCNode Id="669b90bb-35c9-4516-9970-232582316dca" Title="FilePathStringEditor Class" Url="html/344d6ffc-fd23-3103-f1e5-0d2f4026e72e.htm" HasChildren="true" />
+  <HelpTOCNode Id="ac104319-93c1-45c1-8235-6d5bd60902fc" Title="FilePathTypeConverter Class" Url="html/28a90424-cb18-2475-5e9f-9f40417d066e.htm" HasChildren="true" />
+  <HelpTOCNode Id="a32908aa-fa0d-4515-bc10-c6cff7d03ee9" Title="FlagsEnumEditor Class" Url="html/0c852e4f-58b5-d98a-1e44-fa0a875ae6af.htm" HasChildren="true" />
+  <HelpTOCNode Id="9e189d60-222f-47bf-aaac-04db99285bfb" Title="FolderDialogAttribute Class" Url="html/68c7188b-17b3-577b-22b0-b2ed8b18f0da.htm" HasChildren="true" />
+  <HelpTOCNode Id="be04666e-2ebe-49a1-bf83-34f5e226e63d" Title="FolderPathObjectEditor Class" Url="html/efa91860-669b-da17-6a94-f31b6c0cb5ef.htm" HasChildren="true" />
+  <HelpTOCNode Id="9261003b-31ed-49c4-89c0-0f7c4a19506b" Title="FolderPathStringEditor Class" Url="html/943c0df1-53b0-3bbf-65a4-ff76cf4f3f64.htm" HasChildren="true" />
+  <HelpTOCNode Id="e3008b6f-9c3d-4e0f-b39a-ee729d9845dd" Title="FolderPathTypeConverter Class" Url="html/5d953de8-7287-51ce-7ba3-8a7e152aedca.htm" HasChildren="true" />
+  <HelpTOCNode Id="c3423d23-2cae-4fb5-93d6-ac28e596a42e" Title="LanguageResourceConverter Class" Url="html/06970b18-3b45-785c-6f05-b16142c5045e.htm" HasChildren="true" />
+  <HelpTOCNode Id="53e9a0d2-a903-4550-92e7-549ed09d12ee" Title="NamespaceSummaryItemEditorDlg Class" Url="html/6b2eee45-4b02-f183-0cd7-dcbbe8fbc7a5.htm" HasChildren="true" />
+  <HelpTOCNode Id="ef551cc6-2189-4c0b-92a9-b8bbdce4be97" Title="VersionTypeConverter Class" Url="html/cea991ec-8635-910c-6576-dd71fdaee28c.htm" HasChildren="true" />
+</HelpTOCNode>

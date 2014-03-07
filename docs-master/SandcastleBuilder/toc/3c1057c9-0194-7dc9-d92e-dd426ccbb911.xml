@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="8f1ab515-6540-4137-a650-df3672e6304d" Title="SandcastleBuilder.PlugIns Namespace" Url="html/3c1057c9-0194-7dc9-d92e-dd426ccbb911.htm">
+  <HelpTOCNode Id="7d90d0d6-db08-4d1b-92eb-e7b4622ed743" Title="AdditionalContentOnlyPlugIn Class" Url="html/468bcdff-5f18-71b2-0767-c3135ee6b3c4.htm" HasChildren="true" />
+  <HelpTOCNode Id="8a69e09d-3357-4be8-bf33-1e61e9714a7f" Title="AdditionalReferenceLinksPlugIn Class" Url="html/7be3acf9-0318-4e17-d48a-541ca559932d.htm" HasChildren="true" />
+  <HelpTOCNode Id="fd7d19d0-e691-4120-b40e-37507a6918ee" Title="AjaxDocPlugIn Class" Url="html/0405fb4b-bf6e-9b85-145a-cb24f136a10c.htm" HasChildren="true" />
+  <HelpTOCNode Id="1fbb4887-ce97-43d9-8c98-4a177e3f29bd" Title="BibliographySupportPlugIn Class" Url="html/2fe76f1e-c3f7-c691-7d51-19b0ebc9d4be.htm" HasChildren="true" />
+  <HelpTOCNode Id="e6b7ec1d-adfd-4f0b-b070-4e7283b00cc0" Title="BindingRedirectResolverPlugIn Class" Url="html/eb48047c-964d-d105-161d-b6c7521ea939.htm" HasChildren="true" />
+  <HelpTOCNode Id="2089527b-c89a-4203-899c-f71eeb49f34e" Title="BindingRedirectSettings Class" Url="html/70277ba1-21d3-c423-2afd-8a2db60df994.htm" HasChildren="true" />
+  <HelpTOCNode Id="d32dd37d-8b11-4bf8-846b-11619d4aa832" Title="BindingRedirectSettingsCollection Class" Url="html/d8ba13d0-ab63-0b37-96f6-a21f595c6483.htm" HasChildren="true" />
+  <HelpTOCNode Id="858cc97c-7a4e-4ec4-8c14-153596b71eb2" Title="CompletionNotificationPlugIn Class" Url="html/3c977c39-f695-4e20-8661-90ee88fcc357.htm" HasChildren="true" />
+  <HelpTOCNode Id="62e764d4-6929-431d-814a-d486c1c50863" Title="DbcsFixPlugIn Class" Url="html/3a26555b-fe87-0e00-662c-1fb2d632d158.htm" HasChildren="true" />
+  <HelpTOCNode Id="0caf9c50-8aee-47a7-96bb-90fc75b24b6b" Title="DeploymentLocation Class" Url="html/1c2a9bb7-6d8b-e8ca-b0ac-dfc3ef04d385.htm" HasChildren="true" />
+  <HelpTOCNode Id="803b9258-5a96-47f7-821f-f59e0386fc92" Title="DeploymentPlugIn Class" Url="html/84a22ac1-beb5-01e7-b2f0-7dfba475ad3e.htm" HasChildren="true" />
+  <HelpTOCNode Id="1a974318-1048-457a-9b34-78e4c2be93e2" Title="HierarchicalTocPlugIn Class" Url="html/53a4a005-49d3-4d4c-8aa4-009fb2d5bcc8.htm" HasChildren="true" />
+  <HelpTOCNode Id="aa7a0d75-f94f-4217-94a8-da4345e106aa" Title="LightweightTocPlugIn Class" Url="html/495aa90f-cd16-b720-0d1c-0ff734546ffa.htm" HasChildren="true" />
+  <HelpTOCNode Id="59d02489-478e-4731-85e5-6edac22873e7" Title="ProxyCredentials Class" Url="html/bd507d1e-c67a-6936-3237-8e6e20728624.htm" HasChildren="true" />
+  <HelpTOCNode Id="e2475a35-d0da-49cf-90cc-1446ad938d54" Title="ReferenceLinkSettings Class" Url="html/8a68dd45-288a-4c1d-7a4c-0c9967748111.htm" HasChildren="true" />
+  <HelpTOCNode Id="36930b21-fc04-4d24-b10f-8451a14499b0" Title="ReferenceLinkSettingsCollection Class" Url="html/2be3fb2a-2520-203c-c37e-0c5ad1d6d052.htm" HasChildren="true" />
+  <HelpTOCNode Id="d7b958ce-150b-4b67-bbef-1d87ecac3ea4" Title="ScriptSharpPlugIn Class" Url="html/9b7b5e8d-895b-a1b4-4104-fd6fc400004d.htm" HasChildren="true" />
+  <HelpTOCNode Id="795de943-2961-4c5b-a0ea-2d53f928da39" Title="TocExcludePlugIn Class" Url="html/6eadafc5-03b5-4936-cd83-fec66521cfda.htm" HasChildren="true" />
+  <HelpTOCNode Id="4c3d63b8-5c44-43bd-8ac7-d630165f8557" Title="UserCredentials Class" Url="html/85ef20f0-c469-3183-40b8-01ce876156f3.htm" HasChildren="true" />
+  <HelpTOCNode Id="be5dc645-2c3c-4dd3-8da9-6244acc2984c" Title="VersionBuilderPlugIn Class" Url="html/0cc63134-8eb4-9713-a290-7ef062c158d8.htm" HasChildren="true" />
+  <HelpTOCNode Id="dc9d9356-abb2-434f-b9fe-2cc66d465743" Title="VersionSettings Class" Url="html/4c407824-7326-e27a-b558-1a7bc3983538.htm" HasChildren="true" />
+  <HelpTOCNode Id="e4d27cab-ba4b-4c5e-99c9-b704dc13591c" Title="VersionSettingsCollection Class" Url="html/11a874d0-f5fa-a223-c5ed-b2013dd615e9.htm" HasChildren="true" />
+  <HelpTOCNode Id="3bab7560-a51e-4884-ae08-6464593d93c7" Title="WildcardReferenceSettings Class" Url="html/a5adb88d-fb9a-d0b2-f0e8-a21b73c3fb69.htm" HasChildren="true" />
+  <HelpTOCNode Id="07bff3c8-aae4-42c4-9ef9-c141f504cf4a" Title="WildcardReferenceSettingsCollection Class" Url="html/4b411479-8ba3-aec8-cabc-52d94b813da8.htm" HasChildren="true" />
+  <HelpTOCNode Id="5cf399c8-7f87-4965-885a-12a9b53ac1d6" Title="WildcardReferencesPlugIn Class" Url="html/22b2a71f-32df-c39b-46ff-4fbac321e2ad.htm" HasChildren="true" />
+  <HelpTOCNode Id="78df5a0c-f899-40a5-b660-a67efce7aa66" Title="XPathReflectionFileFilterPlugIn Class" Url="html/d8ae7c4a-6112-efe6-a28f-27a84d943034.htm" HasChildren="true" />
+</HelpTOCNode>

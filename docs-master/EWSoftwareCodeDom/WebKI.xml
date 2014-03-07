@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="CompileAssemblyFromDom method">
+    <HelpKINode Title="CSharpCodeProviderWithDocs.CompileAssemblyFromDom Method " Url="html/3d4a723f-e658-183b-c452-e8bf17918abd.htm" />
+    <HelpKINode Title="VBCodeProviderWithDocs.CompileAssemblyFromDom Method " Url="html/68b376b8-23f2-07b7-d186-bd7fa7a39218.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CompileAssemblyFromFile method">
+    <HelpKINode Title="CSharpCodeProviderWithDocs.CompileAssemblyFromFile Method " Url="html/325348ae-81de-1fc1-c7c5-fc19667a4e9e.htm" />
+    <HelpKINode Title="VBCodeProviderWithDocs.CompileAssemblyFromFile Method " Url="html/ec6dc051-9e56-f325-0255-538308fbe43a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CompileAssemblyFromSource method">
+    <HelpKINode Title="CSharpCodeProviderWithDocs.CompileAssemblyFromSource Method " Url="html/76fcf67f-512e-5391-9221-c4e8582dfa0c.htm" />
+    <HelpKINode Title="VBCodeProviderWithDocs.CompileAssemblyFromSource Method " Url="html/456d1953-0e81-fedf-4a13-978cfe731ee2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CSharpCodeProviderWithDocs class">
+    <HelpKINode Title="CSharpCodeProviderWithDocs Class" Url="html/cbb7bea7-5a2b-73f1-9c37-f0f603e8ad2a.htm" />
+    <HelpKINode Title="about CSharpCodeProviderWithDocs class" Url="html/cbb7bea7-5a2b-73f1-9c37-f0f603e8ad2a.htm" />
+    <HelpKINode Title="constructor" Url="html/f9c9d2ce-396f-06ae-0d4f-7390ce947bb2.htm" />
+    <HelpKINode Title="events" Url="html/60850217-0254-4289-a50d-49af02294eb6.htm" />
+    <HelpKINode Title="methods" Url="html/c910700e-8f38-0f9a-fdc0-a3f3258a997b.htm" />
+    <HelpKINode Title="properties" Url="html/fff8086e-2d98-05b8-fc43-3da35d81b91b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CSharpCodeProviderWithDocs.CompileAssemblyFromDom method" Url="html/3d4a723f-e658-183b-c452-e8bf17918abd.htm" />
+  <HelpKINode Title="CSharpCodeProviderWithDocs.CompileAssemblyFromFile method" Url="html/325348ae-81de-1fc1-c7c5-fc19667a4e9e.htm" />
+  <HelpKINode Title="CSharpCodeProviderWithDocs.CompileAssemblyFromSource method" Url="html/76fcf67f-512e-5391-9221-c4e8582dfa0c.htm" />
+  <HelpKINode Title="CSharpCodeProviderWithDocs.CSharpCodeProviderWithDocs constructor" Url="html/f9c9d2ce-396f-06ae-0d4f-7390ce947bb2.htm" />
+  <HelpKINode Title="Documenting">
+    <HelpKINode Title="web applications" Url="html/40ba6bda-95d6-4a64-834f-f7cedcb589d1.htm" />
+    <HelpKINode Title="websites" Url="html/40ba6bda-95d6-4a64-834f-f7cedcb589d1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EWSoftware.CodeDom namespace" Url="html/b694078f-ce50-2ba9-e58b-82d1e41184da.htm" />
+  <HelpKINode Title="EWSoftware.CodeDom.CSharpCodeProviderWithDocs class" Url="html/cbb7bea7-5a2b-73f1-9c37-f0f603e8ad2a.htm" />
+  <HelpKINode Title="EWSoftware.CodeDom.VBCodeProviderWithDocs class" Url="html/3e4b2bba-c32d-f96a-8e7b-aa7180754aa7.htm" />
+  <HelpKINode Title="History" Url="html/6deb9296-45e0-4200-8330-43fdeae88130.htm" />
+  <HelpKINode Title="Usage Notes" Url="html/40ba6bda-95d6-4a64-834f-f7cedcb589d1.htm" />
+  <HelpKINode Title="VBCodeProviderWithDocs class">
+    <HelpKINode Title="VBCodeProviderWithDocs Class" Url="html/3e4b2bba-c32d-f96a-8e7b-aa7180754aa7.htm" />
+    <HelpKINode Title="about VBCodeProviderWithDocs class" Url="html/3e4b2bba-c32d-f96a-8e7b-aa7180754aa7.htm" />
+    <HelpKINode Title="constructor" Url="html/af27da97-4724-a57e-d7d1-76ab081e76f9.htm" />
+    <HelpKINode Title="events" Url="html/d04920bc-30d3-7244-5c7e-98a6d0716b35.htm" />
+    <HelpKINode Title="methods" Url="html/c27252c1-6d6b-9966-da7d-7e5243251ffa.htm" />
+    <HelpKINode Title="properties" Url="html/014afa8b-5c67-36e5-5b58-29a8b6e4abd2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VBCodeProviderWithDocs.CompileAssemblyFromDom method" Url="html/68b376b8-23f2-07b7-d186-bd7fa7a39218.htm" />
+  <HelpKINode Title="VBCodeProviderWithDocs.CompileAssemblyFromFile method" Url="html/ec6dc051-9e56-f325-0255-538308fbe43a.htm" />
+  <HelpKINode Title="VBCodeProviderWithDocs.CompileAssemblyFromSource method" Url="html/456d1953-0e81-fedf-4a13-978cfe731ee2.htm" />
+  <HelpKINode Title="VBCodeProviderWithDocs.VBCodeProviderWithDocs constructor" Url="html/af27da97-4724-a57e-d7d1-76ab081e76f9.htm" />
+  <HelpKINode Title="Version History" Url="html/6deb9296-45e0-4200-8330-43fdeae88130.htm" />
+  <HelpKINode Title="versions">
+    <HelpKINode Title="1.0.0.0" Url="html/e138d987-3509-4019-bd94-9d920110baf5.htm" />
+    <HelpKINode Title="1.1.0.0" Url="html/750f2c27-4a66-417a-b95a-187410797844.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Web Project Documentation Guide" Url="html/53f05589-e194-401b-83a3-069ea88e6c56.htm" />
+</HelpKI>

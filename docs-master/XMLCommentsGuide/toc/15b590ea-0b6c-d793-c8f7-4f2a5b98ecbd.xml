@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="e0259348-3dfd-4df5-a2bf-1f164f3f3813" Title="CustomException Constructor " Url="html/15b590ea-0b6c-d793-c8f7-4f2a5b98ecbd.htm">
+  <HelpTOCNode Title="CustomException Constructor " Url="html/00fa08f9-3d0c-cdb9-64ba-0214a3f2a90a.htm" />
+  <HelpTOCNode Title="CustomException Constructor (String)" Url="html/8bb09e65-cdca-7261-c266-23ec62e8c88a.htm" />
+  <HelpTOCNode Title="CustomException Constructor (SerializationInfo, StreamingContext)" Url="html/7f356b98-28bc-0c59-ab58-d0f5a2f7416f.htm" />
+  <HelpTOCNode Title="CustomException Constructor (String, Exception)" Url="html/2fbb8825-7ff2-70f9-f801-505057c9ed89.htm" />
+</HelpTOCNode>

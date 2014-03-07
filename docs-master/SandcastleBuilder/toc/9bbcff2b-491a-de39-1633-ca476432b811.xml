@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="3c220f20-61e0-4e45-9590-b137372beb81" Title="IPlugInMetadata Properties" Url="html/9bbcff2b-491a-de39-1633-ca476432b811.htm">
+  <HelpTOCNode Title="Copyright Property " Url="html/466c691e-4bbe-d900-22a5-8323cd463949.htm" />
+  <HelpTOCNode Title="Description Property " Url="html/474ea28b-b9ee-4e9f-8493-6d48417857da.htm" />
+  <HelpTOCNode Title="Id Property " Url="html/032c7f7f-f882-2a00-82ef-84631887a166.htm" />
+  <HelpTOCNode Title="IsConfigurable Property " Url="html/64521e02-287f-f055-daec-4fefdef35756.htm" />
+  <HelpTOCNode Title="RunsInPartialBuild Property " Url="html/ae04fb80-8592-2e0d-f93d-4967d0387773.htm" />
+  <HelpTOCNode Title="Version Property " Url="html/3d89d794-d4ab-2a0b-565b-37a3955067c0.htm" />
+</HelpTOCNode>

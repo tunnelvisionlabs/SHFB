@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="030067f1-25df-49e6-a4c4-e3f689662a59" Title="SandcastleBuilder.Package.PropertyPages Namespace" Url="html/1afb6f15-9354-5627-4635-0004c6ac8f60.htm">
+  <HelpTOCNode Id="321dd227-64ad-487c-8681-27da2e16b92d" Title="BasePropertyPage Class" Url="html/20967795-b59d-6042-6e63-d1821839b135.htm" HasChildren="true" />
+  <HelpTOCNode Id="4995d3a4-cffa-4099-9069-7e2738889208" Title="BuildPropertiesPageControl Class" Url="html/c2aa36b1-ec88-58eb-c563-de4e152dd2cc.htm" HasChildren="true" />
+  <HelpTOCNode Id="4cea7577-7014-4b70-a4fd-509cae54e025" Title="ComponentPropertiesPageControl Class" Url="html/dd9efb51-90ee-23e7-8106-a988ec081bb3.htm" HasChildren="true" />
+  <HelpTOCNode Id="0cc8d137-593f-417b-9f78-ee01adf51e31" Title="Help1WebsitePropertiesPageControl Class" Url="html/40b24507-f5d9-69cc-c71a-ea28df8e1574.htm" HasChildren="true" />
+  <HelpTOCNode Id="d8ffd1c1-4799-49d0-8afd-496951f6b7db" Title="HelpFilePropertiesPageControl Class" Url="html/df25252d-4938-53ae-4064-4c4fbe41808a.htm" HasChildren="true" />
+  <HelpTOCNode Id="bd281184-1540-44ca-9bc3-c50e86439d82" Title="MissingTagPropertiesPageControl Class" Url="html/176e60a9-5058-9f99-7df8-bca9b879c015.htm" HasChildren="true" />
+  <HelpTOCNode Id="10e09bf8-21ad-4d9e-8b60-a9d89d69d5b3" Title="MSHelp2PropertiesPageControl Class" Url="html/57db118a-1377-9d55-806b-3ebc728e62e6.htm" HasChildren="true" />
+  <HelpTOCNode Id="b15f34d1-5ab5-469c-94f5-e17f5b6aea5d" Title="MSHelpViewerPropertiesPageControl Class" Url="html/beb3b6fe-98a5-8ce1-e78f-37ef87a5b163.htm" HasChildren="true" />
+  <HelpTOCNode Id="fd17d732-4310-4235-bd19-02e9a5346595" Title="PathPropertiesPageControl Class" Url="html/6187ac96-104d-e6eb-fea6-a74cc3066272.htm" HasChildren="true" />
+  <HelpTOCNode Id="902e0692-a6e0-4193-bd14-ad2e1a81cdb7" Title="PlugInPropertiesPageControl Class" Url="html/d193a34a-9f92-6772-9c07-ff67d66b2323.htm" HasChildren="true" />
+  <HelpTOCNode Id="29897544-549b-4d8b-b336-3e225ab138b0" Title="SummaryPropertiesPageControl Class" Url="html/e691cbbf-71b4-8369-f612-0f71e14136dc.htm" HasChildren="true" />
+  <HelpTOCNode Id="fcd8e05b-1a44-4e07-99c7-cdb000305f94" Title="TransformArgumentsPageControl Class" Url="html/2e4c3015-f75b-a56f-1772-1974cd2ac085.htm" HasChildren="true" />
+  <HelpTOCNode Id="e08ca847-7a7d-48ad-ab1e-9e8834ef8253" Title="UserDefinedPropertiesPageControl Class" Url="html/9480699d-314c-f832-82b8-7091e93afa56.htm" HasChildren="true" />
+  <HelpTOCNode Id="a28fa956-905f-413e-8628-57ca610568cc" Title="VisibilityPropertiesPageControl Class" Url="html/7c59e00a-32d2-d7dc-7a3d-90f6639d9eac.htm" HasChildren="true" />
+</HelpTOCNode>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="f3e10fa2-5ec6-485b-9a75-1c5d86c0dc5f" Title="MSHelp2PropertiesPageControl Methods" Url="html/8ec7bfa8-2cad-638a-760f-f9ed3be64d27.htm">
+  <HelpTOCNode Title="BindControlValue Method " Url="html/d242e96f-dfd4-b1c5-800e-b31e34a062e2.htm" />
+  <HelpTOCNode Id="81f3ab1b-6e83-4796-b7d6-1e3a61f69dd5" Title="Dispose Method " Url="html/64e97fe4-01db-7acf-dbd8-117c178107b4.htm" HasChildren="true" />
+  <HelpTOCNode Title="IsEscapedProperty Method " Url="html/b46ceeee-10b8-e46e-0f56-27b097f3c80e.htm" />
+  <HelpTOCNode Title="StoreControlValue Method " Url="html/56076b61-613a-889f-a55e-df86ad5e36ad.htm" />
+</HelpTOCNode>

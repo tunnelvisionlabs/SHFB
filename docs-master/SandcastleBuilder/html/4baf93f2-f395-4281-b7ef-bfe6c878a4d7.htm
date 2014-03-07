@@ -1,0 +1,254 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="SHORTCUT ICON" href="./../icons/favicon.ico"><link rel="stylesheet" type="text/css" href="./../styles/branding.css"><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css"><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Deploying an MS Help Viewer File</title><meta name="Language" content="en-us"><meta name="System.Keywords" content="deployment, MS Help Viewer"><meta name="System.Keywords" content="MS Help Viewer"><meta name="System.Keywords" content="MSHA"><meta name="System.Keywords" content="MSHC"><meta name="Microsoft.Help.Id" content="4baf93f2-f395-4281-b7ef-bfe6c878a4d7"><meta name="Description" content="The MS Help Viewer system maintains a catalog of all help packages currently installed on a machine. This catalog determines what books are included in each package as well as maintaining references between the packages."><meta name="Microsoft.Help.ContentType" content="Concepts"><meta name="BrandingAware" content="'true'"><link type="text/css" rel="stylesheet" href="ms-help://Hx/HxRuntime/HxLink.css"><link type="text/css" rel="stylesheet" href="./../styles/highlight.css"><script type="text/javascript" src="../scripts/highlight.js"><!----></script><meta name="SelfBranded" content="true"></head><body onload="onLoad()" class="primary-mtps-offline-document"><header class="ux-header"><div class="header-top-bar">Sandcastle Help File Builder Documentation</div></header><div class="OH_outerDiv" style="padding: 35px 20px 0 20px;"><div class="OH_leftNav" id="LeftNav">
+  <div id="tocnav">
+    <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;"><a class="toc_collapsed" onclick="javascript: Toggle(this);" href="#"></a><a data-tochassubtree="true" href="bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" title="Sandcastle Help File Builder" tocid="roottoc">Sandcastle Help File Builder</a></div><div class="toclevel0" data-toclevel="0" style="padding-left: 0px;"><a class="toc_collapsed" onclick="javascript: Toggle(this);" href="#"></a><a data-tochassubtree="true" href="e32086c6-de17-4e54-a746-1ac80bf0c45a.htm" title="Project Properties Window" tocid="e32086c6-de17-4e54-a746-1ac80bf0c45a">Project Properties Window</a></div><div class="toclevel1" data-toclevel="1" style="padding-left: 13px;" data-childrenloaded="true"><a class="toc_expanded" onclick="javascript: Toggle(this);" href="#"></a><a data-tochassubtree="true" href="5f743a6e-3239-409a-a8c1-0bff4b5375f4.htm" title="MS Help Viewer Category Properties" tocid="5f743a6e-3239-409a-a8c1-0bff4b5375f4">MS Help Viewer Category Properties</a></div><div class="toclevel2 current" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="4baf93f2-f395-4281-b7ef-bfe6c878a4d7.htm" title="Deploying an MS Help Viewer File" tocid="4baf93f2-f395-4281-b7ef-bfe6c878a4d7">Deploying an MS Help Viewer File</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="534c4ff1-3bba-4431-a3a6-76dcb2d374f8.htm" title="Help Library Manager Launcher Utility" tocid="534c4ff1-3bba-4431-a3a6-76dcb2d374f8">Help Library Manager Launcher Utility</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="650e50e7-f174-472a-bbea-f9000dba722c.htm" title="Signing MS Help Viewer Content" tocid="650e50e7-f174-472a-bbea-f9000dba722c">Signing MS Help Viewer Content</a></div></div></div><div id="TocResize" class="OH_TocResize"><img id="ResizeImageIncrease" src="../icons/open.gif" onclick="onIncreaseToc()" alt="Expand" title="Expand"><img id="ResizeImageReset" src="../icons/close.gif" style="display:none" onclick="onResetToc()" alt="Minimize" title="Minimize"></div><div class="OH_outerContent" id="OuterContent" style="margin-left: 280px;"><h1 class="title">Deploying an MS Help Viewer File</h1><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><div class="introduction"><p>The MS Help Viewer system maintains a catalog of all help packages currently installed on a machine.
+This catalog determines what books are included in each package as well as maintaining references between the
+packages.  More information can be found on the <a class="mtps-external-link" title="MS Help Viewer" href="http://www.helpware.net/mshelp3/intro.htm" target="_blank">Introducing MS Help Viewer 1.0</a>  page at the HelpWare Group website.</p></div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle"></div></div><p>Unlike HTML Help 1 (CHM) files, an MS Help Viewer package or book must be installed in order to view
+it. This makes deploying MS Help Viewer documentation more complex than simply delivering a single file and
+creating a shortcut to it.  However, it is much simpler than its predecessor, MS Help 2.</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Tip"> <strong>Tip</strong></th></tr><tr><td>Due to the requirement that MS Help Viewer files be installed before you can view them which can be time
+consuming, it is recommended that you generate one of the other help formats such as Help 1 or website while
+developing and proofreading your help file.</td></tr></table></div><p>When producing an MS Help Viewer file, the help file builder produces a valid help content setup file
+suitable for use by the Help Library Manager.  It also includes a Help Library Manager launcher utility that
+takes care of the standard housekeeping tasks required when installing and removing MS Help Viewer content.  It
+is a command line tool that can be included by scripted installers as well as Windows Installer packages as a
+custom action.  In order to deploy the generated MS Help Viewer file, follow these steps:</p><ol><li>Set the MS Help Viewer <a href="5f743a6e-3239-409a-a8c1-0bff4b5375f4.htm" target="">project properties</a>
+as needed.  At the minimum, you should set the <span class="code">Vendor Name</span> and <span class="code">Product Title</span>
+properties to something other than their default values.</li><li>Build the help project.</li><li><p>In order to install an MS Help Viewer file, a help content setup file is required.  The help file
+builder automatically creates a help content setup file for you named after the help file but with a
+<em>.msha</em> extension.  This allows you to build and deploy multiple MS Help Viewer files to the
+same location.</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_caution.gif" alt="Important note"> <strong>Important</strong></th></tr><tr><td>For MS Help Viewer 1.0, the name of the help content setup file used during installation must be
+<em>HelpContentSetup.msha</em>.  If you only have one help file, you can rename the setup file
+created by the help file builder to <em>HelpContentSetup.msha</em>.  If you have multiple help
+files, you can rename one of the setup files and merge the package information from the others into it.</td></tr></table></div></li><li>Include all of the generated help files (the <em>.mshc</em> files) as well as the
+<em>HelpContentSetup.msha</em> and the <em>HelpLibraryManagerLauncher.exe</em> executable
+in your installer.</li><li>During installation, copy the help files, the help content setup file, and
+<em>HelpLibraryManagerLauncher.exe</em> to their installed location.</li><li><p>Execute the <a href="534c4ff1-3bba-4431-a3a6-76dcb2d374f8.htm" target="">Help Library Manager launcher</a>
+or a script to install the help file.  This step will vary based on whether or not you are using signed cabinet
+files to deploy your help content.  Note that silent installs are only allowed with signed cabinet files.  For
+unsigned files, the Help Library Manager will always appear and confirm the installation.  Below is an example of
+the script that the help file builder creates to install the help file  (lines wrapped for display purposes).</p><div id="ID0EABDCAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EABDCAAAAA_tabs"></div><div id="ID0EABDCAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABDCAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EABDCAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EABDCAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EABDCAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EABDCAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EABDCAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EABDCAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre>@ECHO OFF
+CLS
+
+REM This is an example script to show how to use the Help Library Manager
+REM Launcher to install an MS Help Viewer file.  You can use this as an example
+REM for creating a script to run from your product's installer.
+
+REM NOTE: If not executed from within the same folder as the executable, a full
+REM path is required on the executable and the HelpContentSetup.msha file.
+
+IF "%1%"=="H2" GOTO HelpViewer2
+IF "%1%"=="h2" GOTO HelpViewer2
+IF "%1%"=="H21" GOTO HelpViewer21
+IF "%1%"=="h21" GOTO HelpViewer21
+
+REM Help Viewer 1.0
+REM Uninstall first in case it is already there.  If not, it won't install
+REM below.  We'll ignore any error output by redirecting it to NUL.
+HelpLibraryManagerLauncher.exe /product "VS" /version "100" /locale en-us
+        /uninstall /silent /vendor "EWSoftware"
+        /productName "Sandcastle Help File Builder Example Project"
+        /mediaBookList "Sandcastle Test Case Library" &gt; NUL
+
+REM For Help Viewer 1.0. the setup name must be HelpContentSetup.msha so make
+REM sure we copy the setup file to that name.  SHFB names it after the help
+REM file so that multiple files can be deployed to the same output older at
+REM build time.
+IF EXIST "TestCaseProject.msha" COPY /Y "TestCaseProject.msha" HelpContentSetup.msha
+
+REM Install the new content.
+HelpLibraryManagerLauncher.exe /product "VS" /version "100" /locale en-us
+        /sourceMedia "%CD%\HelpContentSetup.msha"
+
+GOTO Exit
+
+:HelpViewer2
+
+REM Help Viewer 2.0
+REM Uninstall first in case it is already there.  If not, it won't install
+REM below.  We'll ignore any error output by redirecting it to NUL.
+HelpLibraryManagerLauncher.exe /viewerVersion 2.0 /catalogName VisualStudio11
+        /locale en-us /wait 0 /operation uninstall /vendor "EWSoftware"
+        /productName "Sandcastle Help File Builder Example Project"
+        /bookList "Sandcastle Test Case Library" &gt; NUL
+
+REM Install the new content.
+HelpLibraryManagerLauncher.exe /viewerVersion 2.0 /catalogName VisualStudio11
+        /locale en-us /wait 0 /operation install /sourceUri "%CD%\TestCaseProject.msha"
+
+GOTO Exit
+
+:HelpViewer21
+
+REM Help Viewer 2.1
+REM Uninstall first in case it is already there.  If not, it won't install
+REM below.  We'll ignore any error output by redirecting it to NUL.
+HelpLibraryManagerLauncher.exe /viewerVersion 2.1 /catalogName VisualStudio12
+        /locale en-us /wait 0 /operation uninstall /vendor "EWSoftware"
+        /productName "Sandcastle Help File Builder Example Project"
+        /bookList "Sandcastle Test Case Library" &gt; NUL
+
+REM Install the new content.
+HelpLibraryManagerLauncher.exe /viewerVersion 2.1 /catalogName VisualStudio12
+        /locale en-us /wait 0 /operation install /sourceUri "%CD%\TestCaseProject.msha"
+
+:Exit</pre></div><div id="ID0EABDCAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>@ECHO OFF
+CLS
+
+REM This is an example script to show how to use the Help Library Manager
+REM Launcher to install an MS Help Viewer file.  You can use this as an example
+REM for creating a script to run from your product's installer.
+
+REM NOTE: If not executed from within the same folder as the executable, a full
+REM path is required on the executable and the HelpContentSetup.msha file.
+
+IF "%1%"=="H2" GOTO HelpViewer2
+IF "%1%"=="h2" GOTO HelpViewer2
+IF "%1%"=="H21" GOTO HelpViewer21
+IF "%1%"=="h21" GOTO HelpViewer21
+
+REM Help Viewer 1.0
+REM Uninstall first in case it is already there.  If not, it won't install
+REM below.  We'll ignore any error output by redirecting it to NUL.
+HelpLibraryManagerLauncher.exe /product "VS" /version "100" /locale en-us
+        /uninstall /silent /vendor "EWSoftware"
+        /productName "Sandcastle Help File Builder Example Project"
+        /mediaBookList "Sandcastle Test Case Library" &gt; NUL
+
+REM For Help Viewer 1.0. the setup name must be HelpContentSetup.msha so make
+REM sure we copy the setup file to that name.  SHFB names it after the help
+REM file so that multiple files can be deployed to the same output older at
+REM build time.
+IF EXIST "TestCaseProject.msha" COPY /Y "TestCaseProject.msha" HelpContentSetup.msha
+
+REM Install the new content.
+HelpLibraryManagerLauncher.exe /product "VS" /version "100" /locale en-us
+        /sourceMedia "%CD%\HelpContentSetup.msha"
+
+GOTO Exit
+
+:HelpViewer2
+
+REM Help Viewer 2.0
+REM Uninstall first in case it is already there.  If not, it won't install
+REM below.  We'll ignore any error output by redirecting it to NUL.
+HelpLibraryManagerLauncher.exe /viewerVersion 2.0 /catalogName VisualStudio11
+        /locale en-us /wait 0 /operation uninstall /vendor "EWSoftware"
+        /productName "Sandcastle Help File Builder Example Project"
+        /bookList "Sandcastle Test Case Library" &gt; NUL
+
+REM Install the new content.
+HelpLibraryManagerLauncher.exe /viewerVersion 2.0 /catalogName VisualStudio11
+        /locale en-us /wait 0 /operation install /sourceUri "%CD%\TestCaseProject.msha"
+
+GOTO Exit
+
+:HelpViewer21
+
+REM Help Viewer 2.1
+REM Uninstall first in case it is already there.  If not, it won't install
+REM below.  We'll ignore any error output by redirecting it to NUL.
+HelpLibraryManagerLauncher.exe /viewerVersion 2.1 /catalogName VisualStudio12
+        /locale en-us /wait 0 /operation uninstall /vendor "EWSoftware"
+        /productName "Sandcastle Help File Builder Example Project"
+        /bookList "Sandcastle Test Case Library" &gt; NUL
+
+REM Install the new content.
+HelpLibraryManagerLauncher.exe /viewerVersion 2.1 /catalogName VisualStudio12
+        /locale en-us /wait 0 /operation install /sourceUri "%CD%\TestCaseProject.msha"
+
+:Exit</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EABDCAAAAA');</script></li><li><p>During uninstallation, before the help files are removed, execute the Help Library Manager launcher
+to uninstall your help file.  Below is an example of the script that the help file builder creates to remove the
+help file  (lines wrapped for display purposes).</p><div id="ID0EAADCAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EAADCAAAAA_tabs"></div><div id="ID0EAADCAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAADCAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EAADCAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EAADCAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EAADCAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EAADCAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EAADCAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EAADCAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre>@ECHO OFF
+CLS
+
+REM This is an example script to show how to use the Help Library Manager
+REM Launcher to remove an MS Help Viewer file.  You can use this as an example
+REM for creating a script to run from your product's uninstaller.
+
+REM NOTE: If not executed from within the same folder as the executable, a full
+REM path is required on the executable.
+
+IF "%1%"=="H2" GOTO HelpViewer2
+IF "%1%"=="h2" GOTO HelpViewer2
+IF "%1%"=="H21" GOTO HelpViewer21
+IF "%1%"=="h21" GOTO HelpViewer21
+
+REM Help Viewer 1.0
+HelpLibraryManagerLauncher.exe /product "VS" /version "100" /locale en-us
+        /uninstall /silent /vendor "EWSoftware"
+        /productName "Sandcastle Help File Builder Example Project"
+        /mediaBookList "Sandcastle Test Case Library"
+
+GOTO Exit
+
+:HelpViewer2
+
+REM Help Viewer 2.0
+HelpLibraryManagerLauncher.exe /viewerVersion 2.0 /catalogName VisualStudio11
+        /locale en-us /wait 0 /operation uninstall /vendor "EWSoftware"
+        /productName "Sandcastle Help File Builder Example Project"
+        /bookList "Sandcastle Test Case Library" &gt; NUL
+
+GOTO Exit
+
+:HelpViewer21
+
+REM Help Viewer 2.1
+HelpLibraryManagerLauncher.exe /viewerVersion 2.1 /catalogName VisualStudio12
+        /locale en-us /wait 0 /operation uninstall /vendor "EWSoftware"
+        /productName "Sandcastle Help File Builder Example Project"
+        /bookList "Sandcastle Test Case Library" &gt; NUL
+
+:Exit</pre></div><div id="ID0EAADCAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>@ECHO OFF
+CLS
+
+REM This is an example script to show how to use the Help Library Manager
+REM Launcher to remove an MS Help Viewer file.  You can use this as an example
+REM for creating a script to run from your product's uninstaller.
+
+REM NOTE: If not executed from within the same folder as the executable, a full
+REM path is required on the executable.
+
+IF "%1%"=="H2" GOTO HelpViewer2
+IF "%1%"=="h2" GOTO HelpViewer2
+IF "%1%"=="H21" GOTO HelpViewer21
+IF "%1%"=="h21" GOTO HelpViewer21
+
+REM Help Viewer 1.0
+HelpLibraryManagerLauncher.exe /product "VS" /version "100" /locale en-us
+        /uninstall /silent /vendor "EWSoftware"
+        /productName "Sandcastle Help File Builder Example Project"
+        /mediaBookList "Sandcastle Test Case Library"
+
+GOTO Exit
+
+:HelpViewer2
+
+REM Help Viewer 2.0
+HelpLibraryManagerLauncher.exe /viewerVersion 2.0 /catalogName VisualStudio11
+        /locale en-us /wait 0 /operation uninstall /vendor "EWSoftware"
+        /productName "Sandcastle Help File Builder Example Project"
+        /bookList "Sandcastle Test Case Library" &gt; NUL
+
+GOTO Exit
+
+:HelpViewer21
+
+REM Help Viewer 2.1
+HelpLibraryManagerLauncher.exe /viewerVersion 2.1 /catalogName VisualStudio12
+        /locale en-us /wait 0 /operation uninstall /vendor "EWSoftware"
+        /productName "Sandcastle Help File Builder Example Project"
+        /bookList "Sandcastle Test Case Library" &gt; NUL
+
+:Exit</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EAADCAAAAA');</script></li></ol><p>Your product's installer can create a shortcut to open your Help Viewer file by executing the
+following command (lines wrapped for display purposes):</p><div id="ID0EBCAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EBCAAAAA_tabs"></div><div id="ID0EBCAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EBCAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EBCAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EBCAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EBCAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EBCAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EBCAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EBCAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre>"ms-xhelp:///?method=page&amp;id=57301AAE-7D51-4006-A9EF-C82B6C0FF21E&amp;product=vs&amp;
+productversion=100&amp;locale=en-us"</pre></div><div id="ID0EBCAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>"ms-xhelp:///?method=page&amp;id=57301AAE-7D51-4006-A9EF-C82B6C0FF21E&amp;product=vs&amp;
+productversion=100&amp;locale=en-us"</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EBCAAAAA');</script><p>Substitute the ID of a page in your product's help file and adjust the product, version, and locale
+as needed in the example above.  See the <a class="mtps-external-link" title="Install and view MSHV files" href="http://mshcmigrate.helpmvp.com/default/starthere" target="_blank">Getting Started with HV 1.0</a> page at the HelpWare Group website for more information on
+installing help files and viewing help content.  A standalone viewer (<a class="mtps-external-link" title="Optional alternate text" href="http://mshcmigrate.helpmvp.com/viewer" target="_blank">H3Viewer.exe</a>) is also available there.</p><a name="seeAlsoSection"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="534c4ff1-3bba-4431-a3a6-76dcb2d374f8.htm" target="">Help Library Manager Launcher Utility</a></div><div class="seeAlsoStyle"><a href="5f743a6e-3239-409a-a8c1-0bff4b5375f4.htm" target="">MS Help Viewer Category Properties</a></div><div class="seeAlsoStyle"><a href="650e50e7-f174-472a-bbea-f9000dba722c.htm" target="">Signing MS Help Viewer Content</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p><a href="http://SHFB.CodePlex.com" target="_blank">[v2014.2.15.0] Copyright © 2006-2014, Eric Woodruff, All rights reserved (http://SHFB.CodePlex.com)</a></p><div class="OH_feedbacklink"><a href="mailto:Eric@EWoodruff.us?subject=Sandcastle+Help+File+Builder+Documentation+Deploying+an+MS+Help+Viewer+File+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Eric Woodruff.</div></div><script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript">$(document).ready(function () {DocumentReady();});</script></body></html>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="0c1c170d-e587-4965-bb44-f9c4c8758202" Title="MSHelpAttrCollection Methods" Url="html/2461a4da-dd4a-2774-6211-cb794cc819c0.htm">
+  <HelpTOCNode Id="d2e9ff24-860f-453d-a815-d31b7cadd7ab" Title="Add Method " Url="html/5b749f5e-7fe4-0a55-6243-41793edc03f9.htm" HasChildren="true" />
+  <HelpTOCNode Title="MarkAsDirty Method " Url="html/882df4b0-59b4-7e39-f885-6192b123e2ab.htm" />
+  <HelpTOCNode Title="OnListChanged Method " Url="html/fe363b6f-95b9-225b-4a31-39602f1d5b4c.htm" />
+  <HelpTOCNode Title="Sort Method " Url="html/1a3e8b47-77b5-4bc6-f4e3-6937ed7adf55.htm" />
+  <HelpTOCNode Title="ToConfigurationString Method " Url="html/6a3c9e87-8928-93de-9938-df52b7ab1ecd.htm" />
+  <HelpTOCNode Title="WriteXml Method " Url="html/2fa212c2-2948-d9fb-acde-81139cdc73b8.htm" />
+</HelpTOCNode>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="cb2a75ef-c423-4c03-902d-f24e75bb0041" Title="SandcastleProject Methods" Url="html/19386b8c-4999-52cb-1e4e-9400f2c809e7.htm">
+  <HelpTOCNode Title="AddFileToProject Method " Url="html/39e10a9c-de8b-fff5-7764-bc6a07b99fa7.htm" />
+  <HelpTOCNode Title="AddFolderToProject Method " Url="html/079278d0-f8dd-56c6-f040-ff4f7c36235b.htm" />
+  <HelpTOCNode Title="DefaultBuildAction Method " Url="html/5a92fba5-e88e-74d4-3386-df558013e6b0.htm" />
+  <HelpTOCNode Id="4129d6c4-f17b-49f5-aa58-2e741e497bd0" Title="Dispose Method " Url="html/50261324-083c-fe95-e7d4-d97e6b39487b.htm" HasChildren="true" />
+  <HelpTOCNode Title="EnsureProjectIsCurrent Method " Url="html/0f87cb86-c3ab-ffd3-7903-b5c5c454fe53.htm" />
+  <HelpTOCNode Title="Finalize Method " Url="html/db26eb27-d21b-fe02-f937-e55a0bc2b91f.htm" />
+  <HelpTOCNode Title="FindFile Method " Url="html/61baca21-2848-c329-5cf9-8610049b6275.htm" />
+  <HelpTOCNode Title="GetUserDefinedProperties Method " Url="html/aac4040f-bb46-d45b-31b0-f59ad225ae84.htm" />
+  <HelpTOCNode Title="HasItems Method " Url="html/4754430b-b968-fdfe-367c-6f38d1fb961f.htm" />
+  <HelpTOCNode Title="IsValidUserDefinedPropertyName Method " Url="html/f6e0596f-6caf-ebe4-1917-33069d59e7e2.htm" />
+  <HelpTOCNode Title="MarkAsDirty Method " Url="html/bc3d4696-3d9c-6596-08e3-7f42ddbcfba7.htm" />
+  <HelpTOCNode Title="OnDirtyChanged Method " Url="html/0e918f66-c214-3109-bf27-6cc5a904e833.htm" />
+  <HelpTOCNode Title="OnDocumentationSourcesChanged Method " Url="html/68abb577-3e1e-a2bd-6143-968cf5f892d5.htm" />
+  <HelpTOCNode Title="OnProjectPropertyChanged Method " Url="html/278240d9-5aad-a993-ea5c-8bf9e19d2326.htm" />
+  <HelpTOCNode Title="OnQueryEditProjectFile Method " Url="html/fd22d2ea-1462-e34b-d287-408f0b45000b.htm" />
+  <HelpTOCNode Title="RefreshProjectProperties Method " Url="html/5cea793d-24b2-4f66-62dc-4ad05424c684.htm" />
+  <HelpTOCNode Title="ResolvePath Method " Url="html/d7a00d4d-eb9c-6cc0-b3c9-4bebc2c69842.htm" />
+  <HelpTOCNode Title="SaveProject Method " Url="html/df36f273-22bc-9f42-2d5c-7059be2e6265.htm" />
+  <HelpTOCNode Title="UpgradeProjectProperties Method " Url="html/884b345d-7d8e-09f4-5387-314cfaf2dce8.htm" />
+</HelpTOCNode>
