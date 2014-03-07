@@ -233,6 +233,7 @@
     <None Include="Content\GettingStarted\GeneralPreferences.aml" />
     <None Include="Content\GettingStarted\SpellCheckerOptions.aml" />
     <None Include="Content\GettingStarted\XCopyDeployment.aml" />
+    <None Include="Content\MSHelpViewerRoot.aml" />
     <None Include="Content\PropertiesWindow\ComponentConfigs.aml" />
     <None Include="Content\PropertiesWindow\PlugInConfigs.aml" />
     <None Include="Content\PropertiesWindow\SigningContent.aml" />

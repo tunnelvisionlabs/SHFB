@@ -115,6 +115,7 @@
     <ContentLayout Include="ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\MSHelpViewerRoot.aml" />
     <None Include="Content\VersionHistory\v1.0.0.1.aml" />
     <None Include="Content\License.aml" />
     <None Include="Content\CommonReviewIssues.aml" />

@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
+  <Topic id="2d99586c-d141-420c-8d32-e214b45fb48f" visible="False" isMSHVRoot="true" title="HTML to MAML Converter">
+    <HelpKeywords>
+      <HelpKeyword index="K" term="HTML to MAML Converter" />
+    </HelpKeywords>
+  </Topic>
   <Topic id="83b3d408-4e02-42d2-beed-0b13294f23f2" visible="True" isDefault="true">
     <HelpKeywords>
       <HelpKeyword index="K" term="Welcome" />
