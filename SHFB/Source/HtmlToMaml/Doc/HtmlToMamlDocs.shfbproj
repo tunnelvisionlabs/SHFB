@@ -76,7 +76,7 @@
     <HtmlHelp2xCompilerPath />
     <WorkingPath />
     <BuildAssemblerVerbosity>AllMessages</BuildAssemblerVerbosity>
-    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
+    <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
     <IndentHtml>False</IndentHtml>
     <KeepLogFile>True</KeepLogFile>
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>

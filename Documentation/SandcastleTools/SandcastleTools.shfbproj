@@ -92,7 +92,7 @@
     <CopyrightHref>http://SHFB.CodePlex.com</CopyrightHref>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
-    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
+    <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
     <IndentHtml>False</IndentHtml>
     <FrameworkVersion>.NET Framework 4.0</FrameworkVersion>
     <KeepLogFile>True</KeepLogFile>

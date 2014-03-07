@@ -76,7 +76,7 @@
         </configuration>
       </PlugInConfig>
     </PlugInConfigurations>
-    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
+    <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
     <ProductTitle>Sandcastle MAML Guide</ProductTitle>
     <VendorName>EWSoftware</VendorName>
     <TocOrder>9999</TocOrder>
