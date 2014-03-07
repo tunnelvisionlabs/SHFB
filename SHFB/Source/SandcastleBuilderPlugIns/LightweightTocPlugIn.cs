@@ -81,6 +81,12 @@
             XElement tocroot = contentMetadata.XPathSelectElements("/metadata/topic").First();
             XElement defaultTopic = contentMetadata.XPathSelectElements("/metadata/topic[keyword[@index='NamedUrlIndex' and text()='DefaultPage']]").FirstOrDefault();
 
+            // remove the Id attribute from all nodes that contain a Url attribute
+            foreach (XElement element in webtoc.XPathSelectElements("//node()[@Id and @Url]"))
+            {
+                element.Attribute("Id").Remove();
+            }
+
             // generate the TOC fragments
             Directory.CreateDirectory(Path.Combine(_builder.WorkingFolder, "Output", "Website", "toc"));
             List<XElement> elements = new List<XElement>(webtoc.XPathSelectElements("//node()"));
