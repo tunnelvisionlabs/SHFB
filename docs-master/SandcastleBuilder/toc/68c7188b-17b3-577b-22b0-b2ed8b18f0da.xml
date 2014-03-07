@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="9e189d60-222f-47bf-aaac-04db99285bfb" Title="FolderDialogAttribute Class" Url="html/68c7188b-17b3-577b-22b0-b2ed8b18f0da.htm">
-  <HelpTOCNode Id="97d9a1f8-81f5-4b7a-9a0c-bee98cd0f51d" Title="FolderDialogAttribute Constructor " Url="html/0bf3f7df-5c43-5b48-0512-021fd2746480.htm" HasChildren="true" />
+<HelpTOCNode Title="FolderDialogAttribute Class" Url="html/68c7188b-17b3-577b-22b0-b2ed8b18f0da.htm">
+  <HelpTOCNode Title="FolderDialogAttribute Constructor " Url="html/0bf3f7df-5c43-5b48-0512-021fd2746480.htm" HasChildren="true" />
   <HelpTOCNode Title="FolderDialogAttribute Methods" Url="html/9f1864bf-669b-856d-5ff2-76cc7e3eca2e.htm" />
-  <HelpTOCNode Id="5f875b9d-1cd9-428e-b4e4-61573689df50" Title="FolderDialogAttribute Properties" Url="html/7f35fd40-705c-a6b8-cfc2-5b67e11f9f43.htm" HasChildren="true" />
+  <HelpTOCNode Title="FolderDialogAttribute Properties" Url="html/7f35fd40-705c-a6b8-cfc2-5b67e11f9f43.htm" HasChildren="true" />
 </HelpTOCNode>

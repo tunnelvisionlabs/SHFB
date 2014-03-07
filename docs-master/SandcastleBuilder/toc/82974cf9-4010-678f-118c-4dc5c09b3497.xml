@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="cecc8040-176a-40c6-80ca-4ce4fd40cb78" Title="FilePathTypeConverter Methods" Url="html/82974cf9-4010-678f-118c-4dc5c09b3497.htm">
-  <HelpTOCNode Id="481e07e4-8fc2-4e8a-b962-bd200cebc30e" Title="CanConvertFrom Method " Url="html/71fe9ca1-3648-0ae7-8ea8-e69368f33b7d.htm" HasChildren="true" />
-  <HelpTOCNode Id="cb60c5a0-5fcc-4b6e-a306-0fd36d522c59" Title="ConvertFrom Method " Url="html/5ab3aa89-4b14-a7dd-ad31-581b97fe65d5.htm" HasChildren="true" />
-  <HelpTOCNode Id="7b9932ff-3940-442d-9c67-d9ba7e47cf37" Title="ConvertTo Method " Url="html/90d02d59-58aa-44ec-a48e-722028ecdea8.htm" HasChildren="true" />
+<HelpTOCNode Title="FilePathTypeConverter Methods" Url="html/82974cf9-4010-678f-118c-4dc5c09b3497.htm">
+  <HelpTOCNode Title="CanConvertFrom Method " Url="html/71fe9ca1-3648-0ae7-8ea8-e69368f33b7d.htm" HasChildren="true" />
+  <HelpTOCNode Title="ConvertFrom Method " Url="html/5ab3aa89-4b14-a7dd-ad31-581b97fe65d5.htm" HasChildren="true" />
+  <HelpTOCNode Title="ConvertTo Method " Url="html/90d02d59-58aa-44ec-a48e-722028ecdea8.htm" HasChildren="true" />
 </HelpTOCNode>

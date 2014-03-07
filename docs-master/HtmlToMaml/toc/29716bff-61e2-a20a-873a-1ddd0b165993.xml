@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="4cb47830-bddc-4ced-bded-d5e92fab3452" Title="HtmlToMamlConversion Namespace" Url="html/29716bff-61e2-a20a-873a-1ddd0b165993.htm">
-  <HelpTOCNode Id="3d8876ad-156c-430a-8022-a155cc37dda6" Title="ConversionProgressEventArgs Class" Url="html/ae875afc-3fcd-57c2-3f5a-da5d3ca0ebf6.htm" HasChildren="true" />
-  <HelpTOCNode Id="108c8ca8-eccd-4788-abe0-b36a46187bef" Title="ConvertHtmlToMaml Class" Url="html/bfac4855-e05f-6ac0-5687-00c44f4558c7.htm" HasChildren="true" />
-  <HelpTOCNode Id="b1de91aa-e246-408e-a28f-c4cd54221fb0" Title="FileParser Class" Url="html/af412052-b751-6224-cb01-c9a207cf75cf.htm" HasChildren="true" />
-  <HelpTOCNode Id="9f0d816a-502d-471c-ba98-11e0045ca391" Title="HtmlToMaml Class" Url="html/a01c382e-2031-6a02-45cb-79ddf8cb8ed9.htm" HasChildren="true" />
-  <HelpTOCNode Id="f78187f2-0a0f-4464-9947-372b83ec9c78" Title="ImageReference Class" Url="html/3a087036-29b9-61c9-73a2-1f638a026053.htm" HasChildren="true" />
-  <HelpTOCNode Id="33aa45b7-fcd6-47c8-90c1-45a2ce6c6511" Title="ImageReferenceCollection Class" Url="html/d212ecc8-e261-3877-75c6-9536dfe5403e.htm" HasChildren="true" />
-  <HelpTOCNode Id="6e4d32da-cf0c-4afb-ada4-50314fa9d6bf" Title="TagOptions Class" Url="html/5965ca1c-6428-ac4e-5d9c-e80b297057b6.htm" HasChildren="true" />
-  <HelpTOCNode Id="996c3dd7-692a-4c5f-be1b-e931d8f98d5f" Title="Topic Class" Url="html/892644dd-7a45-00ee-71ef-e4b7e2cb5555.htm" HasChildren="true" />
-  <HelpTOCNode Id="8d111349-356f-43cb-82ca-6da447365003" Title="TopicCollection Class" Url="html/4dea1b3f-f33a-26c7-5b37-d0d975061e03.htm" HasChildren="true" />
+<HelpTOCNode Title="HtmlToMamlConversion Namespace" Url="html/29716bff-61e2-a20a-873a-1ddd0b165993.htm">
+  <HelpTOCNode Title="ConversionProgressEventArgs Class" Url="html/ae875afc-3fcd-57c2-3f5a-da5d3ca0ebf6.htm" HasChildren="true" />
+  <HelpTOCNode Title="ConvertHtmlToMaml Class" Url="html/bfac4855-e05f-6ac0-5687-00c44f4558c7.htm" HasChildren="true" />
+  <HelpTOCNode Title="FileParser Class" Url="html/af412052-b751-6224-cb01-c9a207cf75cf.htm" HasChildren="true" />
+  <HelpTOCNode Title="HtmlToMaml Class" Url="html/a01c382e-2031-6a02-45cb-79ddf8cb8ed9.htm" HasChildren="true" />
+  <HelpTOCNode Title="ImageReference Class" Url="html/3a087036-29b9-61c9-73a2-1f638a026053.htm" HasChildren="true" />
+  <HelpTOCNode Title="ImageReferenceCollection Class" Url="html/d212ecc8-e261-3877-75c6-9536dfe5403e.htm" HasChildren="true" />
+  <HelpTOCNode Title="TagOptions Class" Url="html/5965ca1c-6428-ac4e-5d9c-e80b297057b6.htm" HasChildren="true" />
+  <HelpTOCNode Title="Topic Class" Url="html/892644dd-7a45-00ee-71ef-e4b7e2cb5555.htm" HasChildren="true" />
+  <HelpTOCNode Title="TopicCollection Class" Url="html/4dea1b3f-f33a-26c7-5b37-d0d975061e03.htm" HasChildren="true" />
 </HelpTOCNode>

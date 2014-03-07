@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="e745ebcd-7bc0-4ab3-b770-e3f8261b80ba" Title="ConvertFromNDoc Class" Url="html/574b20de-400b-4fb1-e69c-a0dba43a57d2.htm">
-  <HelpTOCNode Id="bd8aa3f9-b27d-480a-a5db-16508be445c0" Title="ConvertFromNDoc Constructor " Url="html/84300203-dab9-396b-b831-cebb39385e39.htm" HasChildren="true" />
-  <HelpTOCNode Id="5e30045a-9513-44d3-9c41-18a0bd9d1d40" Title="ConvertFromNDoc Methods" Url="html/1acc23fd-a069-09ea-4b7c-a80039286b98.htm" HasChildren="true" />
-  <HelpTOCNode Id="2c6a3fdf-d9db-4659-bacd-eaa9fb37d6e0" Title="ConvertFromNDoc Properties" Url="html/a8830c58-784b-93d9-5bb4-688add8a7297.htm" HasChildren="true" />
+<HelpTOCNode Title="ConvertFromNDoc Class" Url="html/574b20de-400b-4fb1-e69c-a0dba43a57d2.htm">
+  <HelpTOCNode Title="ConvertFromNDoc Constructor " Url="html/84300203-dab9-396b-b831-cebb39385e39.htm" HasChildren="true" />
+  <HelpTOCNode Title="ConvertFromNDoc Methods" Url="html/1acc23fd-a069-09ea-4b7c-a80039286b98.htm" HasChildren="true" />
+  <HelpTOCNode Title="ConvertFromNDoc Properties" Url="html/a8830c58-784b-93d9-5bb4-688add8a7297.htm" HasChildren="true" />
 </HelpTOCNode>

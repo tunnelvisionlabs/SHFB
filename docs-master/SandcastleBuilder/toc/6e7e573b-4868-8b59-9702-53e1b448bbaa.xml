@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="098d41f3-c70f-446b-b62b-29de84ce9345" Title="HelpFilePropertiesPageControl Methods" Url="html/6e7e573b-4868-8b59-9702-53e1b448bbaa.htm">
+<HelpTOCNode Title="HelpFilePropertiesPageControl Methods" Url="html/6e7e573b-4868-8b59-9702-53e1b448bbaa.htm">
   <HelpTOCNode Title="BindControlValue Method " Url="html/8626bb5e-c336-17a5-db3d-40d050633a25.htm" />
-  <HelpTOCNode Id="87e71b18-4773-4522-a923-d9807478041d" Title="Dispose Method " Url="html/aa186759-047a-48cc-28b8-824be8de8fdc.htm" HasChildren="true" />
+  <HelpTOCNode Title="Dispose Method " Url="html/aa186759-047a-48cc-28b8-824be8de8fdc.htm" HasChildren="true" />
   <HelpTOCNode Title="IsEscapedProperty Method " Url="html/3182a433-6262-a606-9fa4-f231521ea258.htm" />
   <HelpTOCNode Title="StoreControlValue Method " Url="html/51eeca79-98b5-a038-450c-8dd04913a33f.htm" />
 </HelpTOCNode>

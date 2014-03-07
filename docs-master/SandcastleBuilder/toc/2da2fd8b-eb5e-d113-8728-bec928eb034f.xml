@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="b52a20ba-6a41-4b9d-8153-43318a128e0d" Title="ReferenceItem Methods" Url="html/2da2fd8b-eb5e-d113-8728-bec928eb034f.htm">
+<HelpTOCNode Title="ReferenceItem Methods" Url="html/2da2fd8b-eb5e-d113-8728-bec928eb034f.htm">
   <HelpTOCNode Title="Equals Method " Url="html/57b356c9-de00-1246-8ce1-8d6abcae2ab5.htm" />
   <HelpTOCNode Title="GetAttributes Method " Url="html/c2770033-5c7e-6cd6-a74d-4b297fa1b278.htm" />
   <HelpTOCNode Title="GetClassName Method " Url="html/a2408c32-f09e-9798-422b-61934b40e225.htm" />
@@ -8,9 +8,9 @@
   <HelpTOCNode Title="GetDefaultEvent Method " Url="html/48acf609-7610-65a4-2cc8-c4983caf8c0c.htm" />
   <HelpTOCNode Title="GetDefaultProperty Method " Url="html/226825ef-2556-9686-6814-369181619839.htm" />
   <HelpTOCNode Title="GetEditor Method " Url="html/b692f803-7951-fa1c-e4ca-b2a2bbdc6822.htm" />
-  <HelpTOCNode Id="8210f8b0-751a-4693-b9b5-9a3a41fa6bc7" Title="GetEvents Method " Url="html/d3b96170-dde8-5bc9-ffe1-9551c5c2bf46.htm" HasChildren="true" />
+  <HelpTOCNode Title="GetEvents Method " Url="html/d3b96170-dde8-5bc9-ffe1-9551c5c2bf46.htm" HasChildren="true" />
   <HelpTOCNode Title="GetHashCode Method " Url="html/1b173184-d7f7-fac2-8fe4-48c1ecfa0e0b.htm" />
-  <HelpTOCNode Id="60fffb7c-45d9-471f-924c-cd3708270646" Title="GetProperties Method " Url="html/991da5d0-b7e2-6a12-8613-a0761af0a221.htm" HasChildren="true" />
+  <HelpTOCNode Title="GetProperties Method " Url="html/991da5d0-b7e2-6a12-8613-a0761af0a221.htm" HasChildren="true" />
   <HelpTOCNode Title="GetPropertyOwner Method " Url="html/0af7db35-e7e2-d116-bd0d-4831b2c23384.htm" />
   <HelpTOCNode Title="ToString Method " Url="html/80d6312c-6ef3-1457-941d-f37bff53c6a4.htm" />
 </HelpTOCNode>

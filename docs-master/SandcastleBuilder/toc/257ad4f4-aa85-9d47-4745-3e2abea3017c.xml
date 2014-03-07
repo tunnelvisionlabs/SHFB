@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="f1a41e19-e66a-4c3c-9c2f-012d0e4b8b85" Title="DocumentationSource Class" Url="html/257ad4f4-aa85-9d47-4745-3e2abea3017c.htm">
-  <HelpTOCNode Id="bcd948af-319c-4e76-a0f4-0d207f6d2b45" Title="DocumentationSource Methods" Url="html/4431e36d-517e-f6e8-8189-c41b5e9aec4c.htm" HasChildren="true" />
-  <HelpTOCNode Id="cfe881c2-a168-47fc-88c4-deecddb42a4e" Title="DocumentationSource Properties" Url="html/5fcbeaa2-09a9-d006-a69d-549d5c6cb118.htm" HasChildren="true" />
+<HelpTOCNode Title="DocumentationSource Class" Url="html/257ad4f4-aa85-9d47-4745-3e2abea3017c.htm">
+  <HelpTOCNode Title="DocumentationSource Methods" Url="html/4431e36d-517e-f6e8-8189-c41b5e9aec4c.htm" HasChildren="true" />
+  <HelpTOCNode Title="DocumentationSource Properties" Url="html/5fcbeaa2-09a9-d006-a69d-549d5c6cb118.htm" HasChildren="true" />
 </HelpTOCNode>

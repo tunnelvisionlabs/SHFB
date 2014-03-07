@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="5a199458-45a4-4230-81af-8cca68468440" Title="PreviewTopicWindow Methods" Url="html/070c66fb-15b6-7c57-4b5a-6f8a3454f27e.htm">
-  <HelpTOCNode Id="f7eda4ec-3bdf-48a8-8352-57067f88b92d" Title="Dispose Method " Url="html/f3f23750-c816-f2bb-22b0-8c8bb83d644a.htm" HasChildren="true" />
+<HelpTOCNode Title="PreviewTopicWindow Methods" Url="html/070c66fb-15b6-7c57-4b5a-6f8a3454f27e.htm">
+  <HelpTOCNode Title="Dispose Method " Url="html/f3f23750-c816-f2bb-22b0-8c8bb83d644a.htm" HasChildren="true" />
   <HelpTOCNode Title="OnFormClosing Method " Url="html/58aa8cd9-6419-c89e-0a74-126d2927eca0.htm" />
   <HelpTOCNode Title="PreviewTopic Method " Url="html/5cd961e0-a8b0-ea8a-c677-77fadfc13815.htm" />
 </HelpTOCNode>

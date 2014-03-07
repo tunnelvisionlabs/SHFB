@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="1b7235c2-92cb-47d5-9150-c61c43044d05" Title="XmlCommentsFile Class" Url="html/3fc8408a-6901-c486-e170-b7adbf07b41d.htm">
+<HelpTOCNode Title="XmlCommentsFile Class" Url="html/3fc8408a-6901-c486-e170-b7adbf07b41d.htm">
   <HelpTOCNode Title="XmlCommentsFile Constructor " Url="html/d05b891a-2e51-801d-10a5-fc48c872d368.htm" />
-  <HelpTOCNode Id="a99b66a2-3ce2-47cf-9f84-23b31bdf6943" Title="XmlCommentsFile Methods" Url="html/f1c35a2c-49ea-b1b3-bd63-ecb400e7ff03.htm" HasChildren="true" />
-  <HelpTOCNode Id="08132bf4-ae5c-4f1f-b894-2110a14fca55" Title="XmlCommentsFile Properties" Url="html/0addba83-b274-7de0-dbaf-1d93f0a3ad3c.htm" HasChildren="true" />
+  <HelpTOCNode Title="XmlCommentsFile Methods" Url="html/f1c35a2c-49ea-b1b3-bd63-ecb400e7ff03.htm" HasChildren="true" />
+  <HelpTOCNode Title="XmlCommentsFile Properties" Url="html/0addba83-b274-7de0-dbaf-1d93f0a3ad3c.htm" HasChildren="true" />
 </HelpTOCNode>

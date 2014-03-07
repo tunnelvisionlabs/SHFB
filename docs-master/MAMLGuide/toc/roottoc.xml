@@ -2,16 +2,16 @@
 <HelpTOC>
   <HelpTOCNode Title="Welcome" Url="html/303c996a-2911-4c08-b492-6496c82b3edb.htm" />
   <HelpTOCNode Title="Known Issues and Bugs" Url="html/b00070c7-9c5e-4b49-ad5c-f55fa866f062.htm" />
-  <HelpTOCNode Id="c1b8d95a-e477-4aac-a1cf-5b29602a1f34" Title="Conceptual Content File Types" Url="html/86752a38-eba3-4174-bcbf-79ec8428ecf9.htm" HasChildren="true" />
-  <HelpTOCNode Id="b962138e-acf4-4410-8ff5-a512b379a992" Title="Block Elements" Url="html/b32a73b8-fc26-4c98-912c-d595fc1a17c2.htm" HasChildren="true" />
-  <HelpTOCNode Id="69469c69-d7ac-4cd5-9518-16cc8f7c8d47" Title="Common Inline Elements" Url="html/b96d95c0-ec3c-4846-998a-4b43548bfa0e.htm" HasChildren="true" />
-  <HelpTOCNode Id="ddb4a24a-feb3-4c70-a6a3-8bf870f5b2bc" Title="Media Elements" Url="html/ba6a58eb-3301-4397-8ac5-d174d6dff755.htm" HasChildren="true" />
-  <HelpTOCNode Id="c3e625a5-250c-44e9-a6ea-fda170b4104e" Title="Link Elements" Url="html/3be5c58d-d6af-45a4-ac51-f219a75c4c4d.htm" HasChildren="true" />
-  <HelpTOCNode Id="6f3616a8-f9ea-417a-b362-0fa6e5ccfa5e" Title="Miscellaneous Elements" Url="html/9d0dc122-7829-4b22-af2e-6685867116f8.htm" HasChildren="true" />
+  <HelpTOCNode Title="Conceptual Content File Types" Url="html/86752a38-eba3-4174-bcbf-79ec8428ecf9.htm" HasChildren="true" />
+  <HelpTOCNode Title="Block Elements" Url="html/b32a73b8-fc26-4c98-912c-d595fc1a17c2.htm" HasChildren="true" />
+  <HelpTOCNode Title="Common Inline Elements" Url="html/b96d95c0-ec3c-4846-998a-4b43548bfa0e.htm" HasChildren="true" />
+  <HelpTOCNode Title="Media Elements" Url="html/ba6a58eb-3301-4397-8ac5-d174d6dff755.htm" HasChildren="true" />
+  <HelpTOCNode Title="Link Elements" Url="html/3be5c58d-d6af-45a4-ac51-f219a75c4c4d.htm" HasChildren="true" />
+  <HelpTOCNode Title="Miscellaneous Elements" Url="html/9d0dc122-7829-4b22-af2e-6685867116f8.htm" HasChildren="true" />
   <HelpTOCNode Title="Visual Studio IntelliSense" Url="html/746fc19e-2670-440b-8277-a1ef7dc074d5.htm" />
   <HelpTOCNode Title="Schema Extensibility" Url="html/53e9f04f-fbc4-480d-9653-1547046526f1.htm" />
   <HelpTOCNode Title="Links to Resources" Url="html/dc4fcc96-283e-4202-9ecc-08a65e0c9313.htm" />
   <HelpTOCNode Title="Making a Donation" Url="html/847c2d90-c877-4369-a3ab-f7373b6547df.htm" />
-  <HelpTOCNode Id="95cfb78a-d1b4-4b3f-8fa8-a937bfd042c0" Title="Version History" Url="html/ba47a67c-4825-4fcd-b806-2b2e02d4373a.htm" HasChildren="true" />
+  <HelpTOCNode Title="Version History" Url="html/ba47a67c-4825-4fcd-b806-2b2e02d4373a.htm" HasChildren="true" />
   <HelpTOCNode Title="Glossary" Url="html/66bf98c7-7179-4940-8767-7085052f2f53.htm" />
 </HelpTOC>

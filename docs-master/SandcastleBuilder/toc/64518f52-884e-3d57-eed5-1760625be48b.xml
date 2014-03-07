@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="8a35ae9e-fa5f-4c3e-9f76-026d9b3c32f3" Title="ExecutionPoint Class" Url="html/64518f52-884e-3d57-eed5-1760625be48b.htm">
-  <HelpTOCNode Id="b0eedc8d-bd28-4b0e-9082-2a1cfe06a9c8" Title="ExecutionPoint Constructor " Url="html/c1a1c3d6-0578-c2ee-052b-8826cad496c5.htm" HasChildren="true" />
+<HelpTOCNode Title="ExecutionPoint Class" Url="html/64518f52-884e-3d57-eed5-1760625be48b.htm">
+  <HelpTOCNode Title="ExecutionPoint Constructor " Url="html/c1a1c3d6-0578-c2ee-052b-8826cad496c5.htm" HasChildren="true" />
   <HelpTOCNode Title="ExecutionPoint Methods" Url="html/14631751-6002-b9ab-1c2e-69c2ca3a3a58.htm" />
-  <HelpTOCNode Id="35dc9028-a655-4070-a3ea-c73531bf49b3" Title="ExecutionPoint Properties" Url="html/7bdb87fe-f095-a6a5-4a2e-4982de2b86fa.htm" HasChildren="true" />
+  <HelpTOCNode Title="ExecutionPoint Properties" Url="html/7bdb87fe-f095-a6a5-4a2e-4982de2b86fa.htm" HasChildren="true" />
 </HelpTOCNode>

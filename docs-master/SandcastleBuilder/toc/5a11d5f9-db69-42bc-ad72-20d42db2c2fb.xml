@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="5a11d5f9-db69-42bc-ad72-20d42db2c2fb" Title="Project File Converters">
+  <HelpTOCNode Title="CVT0001: Unable to parse value '[value]' for property '[name]'" Url="html/6c55e03c-0b22-4913-ab2a-f0148309b2b5.htm" />
+  <HelpTOCNode Title="CVT0002: An attempt was made to set an unknown or read-only property" Url="html/4854d16a-93bf-4701-997d-049ce91f82cf.htm" />
+  <HelpTOCNode Title="CVT0003: Invalid or missing schema version" Url="html/07498c61-02a4-4f04-ac76-a89cafedbfec.htm" />
+  <HelpTOCNode Title="CVT0004: Unrecognized schema version" Url="html/6417667f-ea10-421f-839c-647561ed207b.htm" />
+  <HelpTOCNode Title="CVT0005: Error reading project from '[file]'" Url="html/860e4647-cb23-448f-93cb-da45f52c3ec7.htm" />
+  <HelpTOCNode Title="CVT0006: Error converting content layout file" Url="html/e50090cc-d866-4428-9b44-d7d145df5eb7.htm" />
+</HelpTOCNode>

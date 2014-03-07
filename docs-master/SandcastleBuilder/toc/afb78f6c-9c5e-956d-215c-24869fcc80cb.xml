@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="68c6808b-5730-4b59-843a-e39857ffead9" Title="FlagsEnumEditor Methods" Url="html/afb78f6c-9c5e-956d-215c-24869fcc80cb.htm">
-  <HelpTOCNode Id="7099702b-cfde-440f-ad3c-a2b9dcd67c09" Title="EditValue Method " Url="html/5e9edb70-3e8c-46e4-5b4c-208970289735.htm" HasChildren="true" />
-  <HelpTOCNode Id="7c59e4b0-2f9b-4d9e-ab51-1d1519b9c79c" Title="GetEditStyle Method " Url="html/ce512028-1926-4e86-8c27-8b64e8393fcd.htm" HasChildren="true" />
+<HelpTOCNode Title="FlagsEnumEditor Methods" Url="html/afb78f6c-9c5e-956d-215c-24869fcc80cb.htm">
+  <HelpTOCNode Title="EditValue Method " Url="html/5e9edb70-3e8c-46e4-5b4c-208970289735.htm" HasChildren="true" />
+  <HelpTOCNode Title="GetEditStyle Method " Url="html/ce512028-1926-4e86-8c27-8b64e8393fcd.htm" HasChildren="true" />
 </HelpTOCNode>

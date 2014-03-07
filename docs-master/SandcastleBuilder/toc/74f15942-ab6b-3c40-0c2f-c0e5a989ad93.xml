@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="21aacda0-6798-4bfd-8da1-a62c77ae7362" Title="NamespaceSummaryItem Class" Url="html/74f15942-ab6b-3c40-0c2f-c0e5a989ad93.htm">
-  <HelpTOCNode Id="bda38e71-d252-4937-ae95-0e1516cac320" Title="NamespaceSummaryItem Methods" Url="html/53ed4222-45d1-05cf-490a-e9dbbe6b413a.htm" HasChildren="true" />
-  <HelpTOCNode Id="44b140aa-b662-4ca8-8c05-b4970dbdd4d2" Title="NamespaceSummaryItem Properties" Url="html/fc1f1e9b-98b4-2ba5-3bf9-1a1643b271ee.htm" HasChildren="true" />
+<HelpTOCNode Title="NamespaceSummaryItem Class" Url="html/74f15942-ab6b-3c40-0c2f-c0e5a989ad93.htm">
+  <HelpTOCNode Title="NamespaceSummaryItem Methods" Url="html/53ed4222-45d1-05cf-490a-e9dbbe6b413a.htm" HasChildren="true" />
+  <HelpTOCNode Title="NamespaceSummaryItem Properties" Url="html/fc1f1e9b-98b4-2ba5-3bf9-1a1643b271ee.htm" HasChildren="true" />
 </HelpTOCNode>

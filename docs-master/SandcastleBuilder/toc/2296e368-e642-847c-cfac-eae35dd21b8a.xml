@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="864bb32f-9d75-48fa-aaf0-e27ae0560090" Title="ProjectExplorerWindow Methods" Url="html/2296e368-e642-847c-cfac-eae35dd21b8a.htm">
+<HelpTOCNode Title="ProjectExplorerWindow Methods" Url="html/2296e368-e642-847c-cfac-eae35dd21b8a.htm">
   <HelpTOCNode Title="AskToSaveProject Method " Url="html/95850572-a3f8-ed92-2923-eb78c6b692c3.htm" />
   <HelpTOCNode Title="CreateFileEditor Method " Url="html/ff0cbf96-4465-05e0-cc59-190002813d53.htm" />
-  <HelpTOCNode Id="8d62f186-d750-40c4-b8b0-50823a28dee6" Title="Dispose Method " Url="html/d3f6d1d1-0dcd-bf1a-6dd6-a2dcf7ea754c.htm" HasChildren="true" />
+  <HelpTOCNode Title="Dispose Method " Url="html/d3f6d1d1-0dcd-bf1a-6dd6-a2dcf7ea754c.htm" HasChildren="true" />
   <HelpTOCNode Title="RefreshProject Method " Url="html/2cafa3ab-b95b-fe79-021a-adbb85435d9b.htm" />
-  <HelpTOCNode Id="8d9ec0f2-eda8-4ebf-bca2-76cb01a6f10b" Title="Save Method " Url="html/d5893704-1be4-ceb4-a953-eef9a33416fd.htm" HasChildren="true" />
+  <HelpTOCNode Title="Save Method " Url="html/d5893704-1be4-ceb4-a953-eef9a33416fd.htm" HasChildren="true" />
   <HelpTOCNode Title="SaveAs Method " Url="html/276ef7d0-db7f-dfb3-5540-a94127194e74.htm" />
 </HelpTOCNode>

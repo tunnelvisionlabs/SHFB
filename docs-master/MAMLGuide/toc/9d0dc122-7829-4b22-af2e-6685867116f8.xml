@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="6f3616a8-f9ea-417a-b362-0fa6e5ccfa5e" Title="Miscellaneous Elements" Url="html/9d0dc122-7829-4b22-af2e-6685867116f8.htm">
-  <HelpTOCNode Id="af71b399-39dd-4e91-9ea6-2f3c8b18320b" Title="autoOutline" Url="html/b9a1daac-a2d8-41b7-83b0-b7dc7b28b898.htm" HasChildren="true" />
+<HelpTOCNode Title="Miscellaneous Elements" Url="html/9d0dc122-7829-4b22-af2e-6685867116f8.htm">
+  <HelpTOCNode Title="autoOutline" Url="html/b9a1daac-a2d8-41b7-83b0-b7dc7b28b898.htm" HasChildren="true" />
   <HelpTOCNode Title="markup" Url="html/aaaff238-1ab4-4c9e-95d8-60ca4d8d4f8e.htm" />
   <HelpTOCNode Title="token" Url="html/0f1bdf10-7968-4e17-aaf9-849091479df8.htm" />
 </HelpTOCNode>

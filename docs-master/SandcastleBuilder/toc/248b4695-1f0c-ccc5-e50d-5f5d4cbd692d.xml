@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="3d3d1b52-a3a5-4bef-bd36-e8284bacf344" Title="PropertyBasedCollectionItem Class" Url="html/248b4695-1f0c-ccc5-e50d-5f5d4cbd692d.htm">
+<HelpTOCNode Title="PropertyBasedCollectionItem Class" Url="html/248b4695-1f0c-ccc5-e50d-5f5d4cbd692d.htm">
   <HelpTOCNode Title="PropertyBasedCollectionItem Constructor " Url="html/50671abe-2f79-d7f1-85c3-07aa4c551673.htm" />
-  <HelpTOCNode Id="6ebfd3ab-60ac-41ab-9cf4-263018a11ea8" Title="PropertyBasedCollectionItem Methods" Url="html/2156a167-5561-724f-06b7-45f049e86eb8.htm" HasChildren="true" />
-  <HelpTOCNode Id="7d114b98-05c8-4b3a-a2c9-b4a7124943ce" Title="PropertyBasedCollectionItem Properties" Url="html/dfe01cc9-666f-df22-2d89-b43230cf00bd.htm" HasChildren="true" />
+  <HelpTOCNode Title="PropertyBasedCollectionItem Methods" Url="html/2156a167-5561-724f-06b7-45f049e86eb8.htm" HasChildren="true" />
+  <HelpTOCNode Title="PropertyBasedCollectionItem Properties" Url="html/dfe01cc9-666f-df22-2d89-b43230cf00bd.htm" HasChildren="true" />
 </HelpTOCNode>

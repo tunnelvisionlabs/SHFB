@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="b9678c2c-d686-4003-a0f8-e99ecd3fd52a" Title="SiteMapEditorWindow Class" Url="html/1060554b-ea85-0bd7-4a9b-d5a57d09daf6.htm">
+<HelpTOCNode Title="SiteMapEditorWindow Class" Url="html/1060554b-ea85-0bd7-4a9b-d5a57d09daf6.htm">
   <HelpTOCNode Title="SiteMapEditorWindow Constructor " Url="html/246f7e53-9272-4422-f232-cb5852a921d1.htm" />
-  <HelpTOCNode Id="1b5476cc-0c05-413a-ac15-a523614ec347" Title="SiteMapEditorWindow Methods" Url="html/5be03ad7-d2ec-f520-455b-d56accb86c0c.htm" HasChildren="true" />
-  <HelpTOCNode Id="704d239f-52c8-4580-bade-255096db6309" Title="SiteMapEditorWindow Properties" Url="html/8f6ae21e-9ae1-88bc-26f2-35642d6e6604.htm" HasChildren="true" />
+  <HelpTOCNode Title="SiteMapEditorWindow Methods" Url="html/5be03ad7-d2ec-f520-455b-d56accb86c0c.htm" HasChildren="true" />
+  <HelpTOCNode Title="SiteMapEditorWindow Properties" Url="html/8f6ae21e-9ae1-88bc-26f2-35642d6e6604.htm" HasChildren="true" />
   <HelpTOCNode Title="SiteMapEditorWindow Events" Url="html/870c640f-d0c2-70c2-ccbd-6b34b82eb9a0.htm" />
 </HelpTOCNode>

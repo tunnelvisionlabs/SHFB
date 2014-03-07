@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="dadeab08-8fd8-4266-b24d-daa5feb4f63b" Title="DocumentationSourceCollection Methods" Url="html/a4fd9169-cb0f-db1c-96ee-74eb882a8ae7.htm">
-  <HelpTOCNode Id="39f008fe-12e7-49a7-9ac5-5c3dc683f2a6" Title="Add Method " Url="html/5abfbf09-89cb-33bb-a4f5-11036a14534d.htm" HasChildren="true" />
+<HelpTOCNode Title="DocumentationSourceCollection Methods" Url="html/a4fd9169-cb0f-db1c-96ee-74eb882a8ae7.htm">
+  <HelpTOCNode Title="Add Method " Url="html/5abfbf09-89cb-33bb-a4f5-11036a14534d.htm" HasChildren="true" />
   <HelpTOCNode Title="OnListChanged Method " Url="html/a4631e1f-63b2-af90-746a-670ce8a750c8.htm" />
   <HelpTOCNode Title="Sort Method " Url="html/4b719300-e227-a923-1819-e8bb53fd0ba5.htm" />
 </HelpTOCNode>

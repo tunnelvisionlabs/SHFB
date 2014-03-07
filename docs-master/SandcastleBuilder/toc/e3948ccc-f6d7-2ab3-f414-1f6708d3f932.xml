@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="e7569c00-79e3-46cb-a0ae-f01ffc3aa112" Title="TokenEditorControl Class" Url="html/e3948ccc-f6d7-2ab3-f414-1f6708d3f932.htm">
+<HelpTOCNode Title="TokenEditorControl Class" Url="html/e3948ccc-f6d7-2ab3-f414-1f6708d3f932.htm">
   <HelpTOCNode Title="TokenEditorControl Constructor " Url="html/63cca557-757f-1fa7-3db2-4cf3760ed75e.htm" />
-  <HelpTOCNode Id="6e08b998-f008-4820-a10e-122a7cf57774" Title="TokenEditorControl Fields" Url="html/1597a714-de3f-1269-0193-5084e029ce93.htm" HasChildren="true" />
-  <HelpTOCNode Id="3c6dbd4e-f4b0-400c-9e53-90a6a0de6c1c" Title="TokenEditorControl Methods" Url="html/9ac14705-b7de-3908-8fee-cd38434f9416.htm" HasChildren="true" />
-  <HelpTOCNode Id="9e040023-b6d8-403c-8c47-a5cdf37c04df" Title="TokenEditorControl Properties" Url="html/7c03e060-0fb8-1e15-08dd-3df656399ab5.htm" HasChildren="true" />
-  <HelpTOCNode Id="aef21cda-7e6d-42e4-930b-1c9e1be075ae" Title="TokenEditorControl Events" Url="html/c9bbb86e-56b1-a77f-2544-bd0ec6cae027.htm" HasChildren="true" />
+  <HelpTOCNode Title="TokenEditorControl Fields" Url="html/1597a714-de3f-1269-0193-5084e029ce93.htm" HasChildren="true" />
+  <HelpTOCNode Title="TokenEditorControl Methods" Url="html/9ac14705-b7de-3908-8fee-cd38434f9416.htm" HasChildren="true" />
+  <HelpTOCNode Title="TokenEditorControl Properties" Url="html/7c03e060-0fb8-1e15-08dd-3df656399ab5.htm" HasChildren="true" />
+  <HelpTOCNode Title="TokenEditorControl Events" Url="html/c9bbb86e-56b1-a77f-2544-bd0ec6cae027.htm" HasChildren="true" />
 </HelpTOCNode>

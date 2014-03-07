@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="fd17d732-4310-4235-bd19-02e9a5346595" Title="PathPropertiesPageControl Class" Url="html/6187ac96-104d-e6eb-fea6-a74cc3066272.htm">
+<HelpTOCNode Title="PathPropertiesPageControl Class" Url="html/6187ac96-104d-e6eb-fea6-a74cc3066272.htm">
   <HelpTOCNode Title="PathPropertiesPageControl Constructor " Url="html/f1b3d5dc-4ebe-9e41-450c-73c28f835c36.htm" />
-  <HelpTOCNode Id="b548deab-5917-4b91-9801-c4d47898d862" Title="PathPropertiesPageControl Methods" Url="html/7b45f295-58f9-d913-4dad-2def5805dfe9.htm" HasChildren="true" />
-  <HelpTOCNode Id="4bcac881-9a91-4715-9976-63a0b5918fc9" Title="PathPropertiesPageControl Properties" Url="html/58583dbd-a65d-b091-b207-a1e5e108104f.htm" HasChildren="true" />
+  <HelpTOCNode Title="PathPropertiesPageControl Methods" Url="html/7b45f295-58f9-d913-4dad-2def5805dfe9.htm" HasChildren="true" />
+  <HelpTOCNode Title="PathPropertiesPageControl Properties" Url="html/58583dbd-a65d-b091-b207-a1e5e108104f.htm" HasChildren="true" />
   <HelpTOCNode Title="PathPropertiesPageControl Events" Url="html/2dd6c560-8614-f093-bb07-f4f6a98775c9.htm" />
 </HelpTOCNode>

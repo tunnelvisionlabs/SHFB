@@ -5,16 +5,16 @@
   <HelpTOCNode Title="Walkthrough: Enabling and Using XML Comments" Url="html/57C91630-95D6-4E3E-AF24-3415CC569AC8.htm" />
   <HelpTOCNode Title="Usage Notes" Url="html/515d5a54-5047-4d6f-bf51-d47c7c699cc2.htm" />
   <HelpTOCNode Title="Member ID Strings" Url="html/ee5d612e-914f-411f-bd95-23478b15e4de.htm" />
-  <HelpTOCNode Id="cf7478c1-1ed4-4ad7-bd0b-2c4319b191e8" Title="Namespace Comments" Url="html/BD91FAD4-188D-4697-A654-7C07FD47EF31.htm" HasChildren="true" />
-  <HelpTOCNode Id="8d49db66-89bb-4c73-b8bf-8ee24d37a9c9" Title="Section Elements" Url="html/20dc8c5f-9979-4ecd-92ce-cea6ce7acaeb.htm" HasChildren="true" />
-  <HelpTOCNode Id="891de9ca-b81c-4c84-acda-a68fc0283365" Title="Block Elements" Url="html/f8464c0f-f62a-4faf-b11a-9a41173307e8.htm" HasChildren="true" />
-  <HelpTOCNode Id="450084b3-bcff-498c-86a6-07fae333e3a6" Title="Inline Elements" Url="html/d297bc14-33aa-4152-ae36-9f658b15de87.htm" HasChildren="true" />
-  <HelpTOCNode Id="5bacb29b-8e08-44bb-acd2-25f1d504bf73" Title="Miscellaneous Elements" Url="html/9341fdc8-1571-405c-8e61-6a6b9b601b46.htm" HasChildren="true" />
+  <HelpTOCNode Title="Namespace Comments" Url="html/BD91FAD4-188D-4697-A654-7C07FD47EF31.htm" HasChildren="true" />
+  <HelpTOCNode Title="Section Elements" Url="html/20dc8c5f-9979-4ecd-92ce-cea6ce7acaeb.htm" HasChildren="true" />
+  <HelpTOCNode Title="Block Elements" Url="html/f8464c0f-f62a-4faf-b11a-9a41173307e8.htm" HasChildren="true" />
+  <HelpTOCNode Title="Inline Elements" Url="html/d297bc14-33aa-4152-ae36-9f658b15de87.htm" HasChildren="true" />
+  <HelpTOCNode Title="Miscellaneous Elements" Url="html/9341fdc8-1571-405c-8e61-6a6b9b601b46.htm" HasChildren="true" />
   <HelpTOCNode Title="Frequently Asked Questions (FAQ)" Url="html/6C5FE68C-2E66-4B0A-967C-34868220D6EC.htm" />
   <HelpTOCNode Title="Links to Resources" Url="html/7F003236-9AF3-4B6A-8F14-4124FFF0AD7B.htm" />
   <HelpTOCNode Title="Making a Donation" Url="html/BD2B1A8B-275D-4584-9FB1-92759FAF37D7.htm" />
-  <HelpTOCNode Id="c92bc87e-dd0c-411f-aef3-22b4df348b60" Title="Version History" Url="html/0999CAAA-4992-4352-9ED2-965892040176.htm" HasChildren="true" />
+  <HelpTOCNode Title="Version History" Url="html/0999CAAA-4992-4352-9ED2-965892040176.htm" HasChildren="true" />
   <HelpTOCNode Title="Glossary" Url="html/461BBB39-1C25-4B05-BD25-F56FDACF54A5.htm" />
-  <HelpTOCNode Id="d0833587-a53f-49c0-9130-13e7710d5115" Title="XMLCommentsExamples Namespace" Url="html/fcf74513-88fd-0131-225c-098460da0f56.htm" HasChildren="true" />
-  <HelpTOCNode Id="252c24da-7ab4-45ee-9257-e6445efbb51b" Title="XMLCommentsExamples.DocumentationInheritance Namespace" Url="html/f055bdef-60b4-de86-62d0-3b47c3f6786a.htm" HasChildren="true" />
+  <HelpTOCNode Title="XMLCommentsExamples Namespace" Url="html/fcf74513-88fd-0131-225c-098460da0f56.htm" HasChildren="true" />
+  <HelpTOCNode Title="XMLCommentsExamples.DocumentationInheritance Namespace" Url="html/f055bdef-60b4-de86-62d0-3b47c3f6786a.htm" HasChildren="true" />
 </HelpTOC>

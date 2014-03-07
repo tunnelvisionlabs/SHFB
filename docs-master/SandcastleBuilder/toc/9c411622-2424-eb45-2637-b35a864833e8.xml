@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="2038080d-3808-48e0-b9f0-8f5a80d83a1f" Title="FilePath Class" Url="html/9c411622-2424-eb45-2637-b35a864833e8.htm">
-  <HelpTOCNode Id="0b4cfdd4-dbee-4c49-9e8e-94e3016c8cc9" Title="FilePath Constructor " Url="html/86c0b549-3ce5-80d9-8d1d-75d4f9cd3324.htm" HasChildren="true" />
-  <HelpTOCNode Id="e6b1c5da-1978-467b-9008-85663b6137d6" Title="FilePath Methods" Url="html/42fcaa25-eb63-6537-8d39-2f874f3f4a99.htm" HasChildren="true" />
-  <HelpTOCNode Id="8e01c28e-0b89-433f-b5ec-39d5a17c43db" Title="FilePath Operators and Type Conversions" Url="html/943cc194-f0cb-4893-0ee0-7f83996ab257.htm" HasChildren="true" />
-  <HelpTOCNode Id="cde93c5f-bcb7-4079-b10b-fb019ab0956f" Title="FilePath Properties" Url="html/d0b9d30d-c6f7-b788-3deb-4bfd9fe0470a.htm" HasChildren="true" />
-  <HelpTOCNode Id="88c5b006-980f-4273-9940-2a8d86af84b1" Title="FilePath Events" Url="html/7aed6b17-1324-eb9a-f92b-ad73f768f4cc.htm" HasChildren="true" />
+<HelpTOCNode Title="FilePath Class" Url="html/9c411622-2424-eb45-2637-b35a864833e8.htm">
+  <HelpTOCNode Title="FilePath Constructor " Url="html/86c0b549-3ce5-80d9-8d1d-75d4f9cd3324.htm" HasChildren="true" />
+  <HelpTOCNode Title="FilePath Methods" Url="html/42fcaa25-eb63-6537-8d39-2f874f3f4a99.htm" HasChildren="true" />
+  <HelpTOCNode Title="FilePath Operators and Type Conversions" Url="html/943cc194-f0cb-4893-0ee0-7f83996ab257.htm" HasChildren="true" />
+  <HelpTOCNode Title="FilePath Properties" Url="html/d0b9d30d-c6f7-b788-3deb-4bfd9fe0470a.htm" HasChildren="true" />
+  <HelpTOCNode Title="FilePath Events" Url="html/7aed6b17-1324-eb9a-f92b-ad73f768f4cc.htm" HasChildren="true" />
 </HelpTOCNode>

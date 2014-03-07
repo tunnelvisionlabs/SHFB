@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="2eb1ceed-1e86-4f7d-be16-a9aa8d7fb4f7" Title="FileItem Class" Url="html/6f834771-a15f-6dd9-b9cc-a8eb0e193612.htm">
-  <HelpTOCNode Id="b695e025-f1f8-478b-ad5a-fa347933d806" Title="FileItem Methods" Url="html/43f88bac-6a87-a9e3-6242-cd4a6cbc2dcb.htm" HasChildren="true" />
-  <HelpTOCNode Id="4b4f6df6-89d6-4e42-8131-c47e96683d87" Title="FileItem Properties" Url="html/96c838ab-1f3b-d94a-7c60-65749a9e05c2.htm" HasChildren="true" />
+<HelpTOCNode Title="FileItem Class" Url="html/6f834771-a15f-6dd9-b9cc-a8eb0e193612.htm">
+  <HelpTOCNode Title="FileItem Methods" Url="html/43f88bac-6a87-a9e3-6242-cd4a6cbc2dcb.htm" HasChildren="true" />
+  <HelpTOCNode Title="FileItem Properties" Url="html/96c838ab-1f3b-d94a-7c60-65749a9e05c2.htm" HasChildren="true" />
 </HelpTOCNode>

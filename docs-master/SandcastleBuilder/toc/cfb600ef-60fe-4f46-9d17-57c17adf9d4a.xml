@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="783bdba8-a391-4699-b09b-5fe7fd24d0c4" Title="ComponentPropertiesPageControl Methods" Url="html/cfb600ef-60fe-4f46-9d17-57c17adf9d4a.htm">
+<HelpTOCNode Title="ComponentPropertiesPageControl Methods" Url="html/cfb600ef-60fe-4f46-9d17-57c17adf9d4a.htm">
   <HelpTOCNode Title="BindControlValue Method " Url="html/b38c1f8d-7f6c-529e-c599-4e1543549226.htm" />
-  <HelpTOCNode Id="67681824-7d36-4441-b28d-980741dd42af" Title="Dispose Method " Url="html/172bf747-3658-6b86-ccc5-4e770942380d.htm" HasChildren="true" />
+  <HelpTOCNode Title="Dispose Method " Url="html/172bf747-3658-6b86-ccc5-4e770942380d.htm" HasChildren="true" />
   <HelpTOCNode Title="StoreControlValue Method " Url="html/0d0fc6dc-77c7-87a9-d6ab-044abe80e0a4.htm" />
 </HelpTOCNode>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="aacbc806-4561-4132-81fd-088b3083ec41" Title="ProjectExplorerWindow Class" Url="html/9e42ed08-9138-0c86-23bc-50f8f5c7acd0.htm">
+<HelpTOCNode Title="ProjectExplorerWindow Class" Url="html/9e42ed08-9138-0c86-23bc-50f8f5c7acd0.htm">
   <HelpTOCNode Title="ProjectExplorerWindow Constructor " Url="html/417b3915-9cdd-7a79-4a27-1b11a90d1f65.htm" />
-  <HelpTOCNode Id="cb655985-9693-4565-87ad-429328ab90f8" Title="ProjectExplorerWindow Fields" Url="html/e918abaa-6ae2-1f25-db52-d1ec79d7efeb.htm" HasChildren="true" />
-  <HelpTOCNode Id="864bb32f-9d75-48fa-aaf0-e27ae0560090" Title="ProjectExplorerWindow Methods" Url="html/2296e368-e642-847c-cfac-eae35dd21b8a.htm" HasChildren="true" />
-  <HelpTOCNode Id="c6aae1e5-5cb1-4908-8482-9765df438296" Title="ProjectExplorerWindow Properties" Url="html/24db6384-32a9-b91d-badf-75aca5716782.htm" HasChildren="true" />
+  <HelpTOCNode Title="ProjectExplorerWindow Fields" Url="html/e918abaa-6ae2-1f25-db52-d1ec79d7efeb.htm" HasChildren="true" />
+  <HelpTOCNode Title="ProjectExplorerWindow Methods" Url="html/2296e368-e642-847c-cfac-eae35dd21b8a.htm" HasChildren="true" />
+  <HelpTOCNode Title="ProjectExplorerWindow Properties" Url="html/24db6384-32a9-b91d-badf-75aca5716782.htm" HasChildren="true" />
   <HelpTOCNode Title="ProjectExplorerWindow Events" Url="html/bad4cebb-2775-1214-8e42-8bedb7fc455e.htm" />
 </HelpTOCNode>

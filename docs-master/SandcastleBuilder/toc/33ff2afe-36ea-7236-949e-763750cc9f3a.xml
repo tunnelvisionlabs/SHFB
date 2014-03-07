@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="f639109e-7c75-445c-bf7c-da848d573e9d" Title="ConvertToMSBuildFormat Class" Url="html/33ff2afe-36ea-7236-949e-763750cc9f3a.htm">
-  <HelpTOCNode Id="9c72478e-99dd-4c6b-a16b-48b5ceb428b0" Title="ConvertToMSBuildFormat Constructor " Url="html/576da4a2-663e-9d6a-5fd4-9b0dd60b709d.htm" HasChildren="true" />
-  <HelpTOCNode Id="8f1849a1-a0cf-484e-9487-77eb7f36a7be" Title="ConvertToMSBuildFormat Methods" Url="html/896d3adf-cb9b-55f6-1ff6-b85db4fe3714.htm" HasChildren="true" />
-  <HelpTOCNode Id="f9b7b554-b167-4f65-9b70-bbb18cbe15f5" Title="ConvertToMSBuildFormat Properties" Url="html/0080e663-7e6b-4da7-3fda-474649cfb850.htm" HasChildren="true" />
+<HelpTOCNode Title="ConvertToMSBuildFormat Class" Url="html/33ff2afe-36ea-7236-949e-763750cc9f3a.htm">
+  <HelpTOCNode Title="ConvertToMSBuildFormat Constructor " Url="html/576da4a2-663e-9d6a-5fd4-9b0dd60b709d.htm" HasChildren="true" />
+  <HelpTOCNode Title="ConvertToMSBuildFormat Methods" Url="html/896d3adf-cb9b-55f6-1ff6-b85db4fe3714.htm" HasChildren="true" />
+  <HelpTOCNode Title="ConvertToMSBuildFormat Properties" Url="html/0080e663-7e6b-4da7-3fda-474649cfb850.htm" HasChildren="true" />
 </HelpTOCNode>

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="c2f56808-9531-4718-925f-d208ff157292" Title="StatusBarTextProvider Methods" Url="html/0b533299-31c4-9dd5-1310-d6a5796b976e.htm">
+<HelpTOCNode Title="StatusBarTextProvider Methods" Url="html/0b533299-31c4-9dd5-1310-d6a5796b976e.htm">
   <HelpTOCNode Title="CanExtend Method " Url="html/b02a935e-faa2-ff1d-091d-85a0de7f8d50.htm" />
-  <HelpTOCNode Id="b10137c4-c428-400b-8326-a83ecd66b2d0" Title="Dispose Method " Url="html/19d4d5b9-4f47-cba3-169e-b12838409cb8.htm" HasChildren="true" />
+  <HelpTOCNode Title="Dispose Method " Url="html/19d4d5b9-4f47-cba3-169e-b12838409cb8.htm" HasChildren="true" />
   <HelpTOCNode Title="GetShowAsBlank Method " Url="html/24f9ad2e-90ff-3b2c-f7a7-28292dfb9996.htm" />
   <HelpTOCNode Title="GetStatusBarText Method " Url="html/7967a3c0-f920-f234-f57d-3314555d376e.htm" />
-  <HelpTOCNode Id="e6acc642-e847-4856-b0b1-f907219b0cf8" Title="InitializeProgressBar Method " Url="html/f28f122e-c136-031a-ed86-98f935d81dfa.htm" HasChildren="true" />
-  <HelpTOCNode Id="21b325b4-a3eb-4522-917f-39ef8a93a439" Title="ResetProgressBar Method " Url="html/8a40b587-2a3a-6b9b-8a3e-cb5300ea5c23.htm" HasChildren="true" />
+  <HelpTOCNode Title="InitializeProgressBar Method " Url="html/f28f122e-c136-031a-ed86-98f935d81dfa.htm" HasChildren="true" />
+  <HelpTOCNode Title="ResetProgressBar Method " Url="html/8a40b587-2a3a-6b9b-8a3e-cb5300ea5c23.htm" HasChildren="true" />
   <HelpTOCNode Title="SetShowAsBlank Method " Url="html/3160110e-660f-a75e-8c04-d6a79baca5bd.htm" />
   <HelpTOCNode Title="SetStatusBarText Method " Url="html/d1efb581-5ecc-37b8-dd8f-aaab54c32db8.htm" />
-  <HelpTOCNode Id="a6d2fb30-d027-49f4-b67c-e7211c9e735c" Title="UpdateProgress Method " Url="html/867e96bb-bc59-b5c6-1ca5-eb2e4d2dad74.htm" HasChildren="true" />
+  <HelpTOCNode Title="UpdateProgress Method " Url="html/867e96bb-bc59-b5c6-1ca5-eb2e4d2dad74.htm" HasChildren="true" />
 </HelpTOCNode>

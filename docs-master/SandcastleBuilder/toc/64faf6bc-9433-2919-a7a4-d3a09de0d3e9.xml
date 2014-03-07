@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="b171ff75-b6a4-4eb2-8b30-6193830bc139" Title="IPlugInMetadata Interface" Url="html/64faf6bc-9433-2919-a7a4-d3a09de0d3e9.htm">
-  <HelpTOCNode Id="3c220f20-61e0-4e45-9590-b137372beb81" Title="IPlugInMetadata Properties" Url="html/9bbcff2b-491a-de39-1633-ca476432b811.htm" HasChildren="true" />
+<HelpTOCNode Title="IPlugInMetadata Interface" Url="html/64faf6bc-9433-2919-a7a4-d3a09de0d3e9.htm">
+  <HelpTOCNode Title="IPlugInMetadata Properties" Url="html/9bbcff2b-491a-de39-1633-ca476432b811.htm" HasChildren="true" />
 </HelpTOCNode>

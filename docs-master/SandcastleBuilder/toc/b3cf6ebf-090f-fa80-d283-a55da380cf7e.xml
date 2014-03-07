@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="f1be7b01-5b7f-4c70-9a1e-16912247ff7c" Title="FilePathObjectEditor Class" Url="html/b3cf6ebf-090f-fa80-d283-a55da380cf7e.htm">
+<HelpTOCNode Title="FilePathObjectEditor Class" Url="html/b3cf6ebf-090f-fa80-d283-a55da380cf7e.htm">
   <HelpTOCNode Title="FilePathObjectEditor Constructor " Url="html/0b1ecb10-7a3a-f1c5-a8b7-5b0af8236700.htm" />
-  <HelpTOCNode Id="ba076348-20b1-413d-b2fb-c6277cebeb36" Title="FilePathObjectEditor Methods" Url="html/07b9b215-a883-374d-9625-d7cb25dd18c7.htm" HasChildren="true" />
+  <HelpTOCNode Title="FilePathObjectEditor Methods" Url="html/07b9b215-a883-374d-9625-d7cb25dd18c7.htm" HasChildren="true" />
   <HelpTOCNode Title="FilePathObjectEditor Properties" Url="html/bd916379-98ef-c5c1-c380-feaa845bb2fc.htm" />
 </HelpTOCNode>

@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="b3caa75d-1009-4111-a5b0-77984eab8adb" Title="SandcastleBuilder.Utils.XPath Namespace" Url="html/9165c2b5-df2b-515c-633d-8bf3422c6ae0.htm">
-  <HelpTOCNode Id="a143283c-cd84-49eb-ad61-85a1841b9ef2" Title="XPathFunctionContext Class" Url="html/26ead3e0-0337-cb13-ad4d-34bafea419ca.htm" HasChildren="true" />
+<HelpTOCNode Title="SandcastleBuilder.Utils.XPath Namespace" Url="html/9165c2b5-df2b-515c-633d-8bf3422c6ae0.htm">
+  <HelpTOCNode Title="XPathFunctionContext Class" Url="html/26ead3e0-0337-cb13-ad4d-34bafea419ca.htm" HasChildren="true" />
 </HelpTOCNode>

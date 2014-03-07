@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
   <HelpTOCNode Title="Documenting Web Projects" Url="html/40ba6bda-95d6-4a64-834f-f7cedcb589d1.htm" />
-  <HelpTOCNode Id="051075a9-ee08-458e-b33e-9cb69df300d1" Title="Version History" Url="html/6deb9296-45e0-4200-8330-43fdeae88130.htm" HasChildren="true" />
-  <HelpTOCNode Id="f6129a37-0706-4fba-a40b-d84398331ac8" Title="EWSoftware.CodeDom Namespace" Url="html/b694078f-ce50-2ba9-e58b-82d1e41184da.htm" HasChildren="true" />
+  <HelpTOCNode Title="Version History" Url="html/6deb9296-45e0-4200-8330-43fdeae88130.htm" HasChildren="true" />
+  <HelpTOCNode Title="EWSoftware.CodeDom Namespace" Url="html/b694078f-ce50-2ba9-e58b-82d1e41184da.htm" HasChildren="true" />
 </HelpTOC>

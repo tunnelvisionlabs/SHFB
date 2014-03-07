@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="0c9dfaa1-a7b9-4b3e-8863-f0721c437ee5" Title="SandcastleBuilder.Utils.Controls Namespace" Url="html/20151a5f-9e6e-9b2b-13f8-fbc607f72a03.htm">
-  <HelpTOCNode Id="30b3a0e6-46ee-48cd-ada7-da30e933b9e6" Title="CustomPropertyGrid Class" Url="html/05ff2a02-c32f-2a90-7d77-4f32747e699f.htm" HasChildren="true" />
-  <HelpTOCNode Id="032cad5a-1131-4f2e-a2c5-7c6953f426b7" Title="DividerGroupBox Class" Url="html/8cd7f968-eb8a-11f5-cd06-a940943184b9.htm" HasChildren="true" />
-  <HelpTOCNode Id="e4b69c3c-55de-48a4-90d1-96f40807c461" Title="DividerLabel Class" Url="html/b3e66c48-ff4e-4472-0615-5c8ae871ccbd.htm" HasChildren="true" />
-  <HelpTOCNode Id="b570a56c-f9d8-4834-bd0e-8c5225b31251" Title="FilePathUserControl Class" Url="html/05591d42-6771-19bd-cc2a-7c06bbc49168.htm" HasChildren="true" />
-  <HelpTOCNode Id="4591e26b-1d2a-4c69-b9fa-368203211ecb" Title="FolderPathUserControl Class" Url="html/75d6d1e1-9ffc-eba0-8feb-750ec126ccd6.htm" HasChildren="true" />
-  <HelpTOCNode Id="5168a2f5-fae5-4661-b18c-5e119a065d01" Title="RefreshableItemListBox Class" Url="html/21fab599-6bcd-c643-6dc3-a4415db9449f.htm" HasChildren="true" />
-  <HelpTOCNode Id="689c6c7e-086b-46fa-9c16-cd02a90b4647" Title="StatusBarTextProvider Class" Url="html/6c310dba-da65-32a9-083d-22033c32ff1d.htm" HasChildren="true" />
+<HelpTOCNode Title="SandcastleBuilder.Utils.Controls Namespace" Url="html/20151a5f-9e6e-9b2b-13f8-fbc607f72a03.htm">
+  <HelpTOCNode Title="CustomPropertyGrid Class" Url="html/05ff2a02-c32f-2a90-7d77-4f32747e699f.htm" HasChildren="true" />
+  <HelpTOCNode Title="DividerGroupBox Class" Url="html/8cd7f968-eb8a-11f5-cd06-a940943184b9.htm" HasChildren="true" />
+  <HelpTOCNode Title="DividerLabel Class" Url="html/b3e66c48-ff4e-4472-0615-5c8ae871ccbd.htm" HasChildren="true" />
+  <HelpTOCNode Title="FilePathUserControl Class" Url="html/05591d42-6771-19bd-cc2a-7c06bbc49168.htm" HasChildren="true" />
+  <HelpTOCNode Title="FolderPathUserControl Class" Url="html/75d6d1e1-9ffc-eba0-8feb-750ec126ccd6.htm" HasChildren="true" />
+  <HelpTOCNode Title="RefreshableItemListBox Class" Url="html/21fab599-6bcd-c643-6dc3-a4415db9449f.htm" HasChildren="true" />
+  <HelpTOCNode Title="StatusBarTextProvider Class" Url="html/6c310dba-da65-32a9-083d-22033c32ff1d.htm" HasChildren="true" />
 </HelpTOCNode>

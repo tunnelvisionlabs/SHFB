@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="f19ab8ab-57f3-4e86-a0e1-09ee95fd3c9a" Title="CodeSnippetCollection Class" Url="html/672c1c8d-e048-6e4e-eb56-efce22053117.htm">
+<HelpTOCNode Title="CodeSnippetCollection Class" Url="html/672c1c8d-e048-6e4e-eb56-efce22053117.htm">
   <HelpTOCNode Title="CodeSnippetCollection Constructor " Url="html/39f3b76d-74bb-2e48-e025-70cc2f469674.htm" />
-  <HelpTOCNode Id="f38d95ef-d84a-40ec-88d2-11cf79b8dce4" Title="CodeSnippetCollection Methods" Url="html/c37beabb-1128-15d1-76f7-3c4af5ea7b18.htm" HasChildren="true" />
-  <HelpTOCNode Id="0f79cd79-220a-4f62-a8ca-1a92b587f2bd" Title="CodeSnippetCollection Properties" Url="html/15775dc2-f1a2-de00-cfe0-2500e8434ba8.htm" HasChildren="true" />
+  <HelpTOCNode Title="CodeSnippetCollection Methods" Url="html/c37beabb-1128-15d1-76f7-3c4af5ea7b18.htm" HasChildren="true" />
+  <HelpTOCNode Title="CodeSnippetCollection Properties" Url="html/15775dc2-f1a2-de00-cfe0-2500e8434ba8.htm" HasChildren="true" />
   <HelpTOCNode Title="CodeSnippetCollection Events" Url="html/fad03ae1-2ad7-5825-1cc2-a91d02ab9a7e.htm" />
 </HelpTOCNode>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="3fcafa2e-1e0f-480b-8cbc-5ba95b17d517" Title="TopicEditorWindow Class" Url="html/caea8cb4-5391-b07b-3ca3-c3d0207b2ba6.htm">
+<HelpTOCNode Title="TopicEditorWindow Class" Url="html/caea8cb4-5391-b07b-3ca3-c3d0207b2ba6.htm">
   <HelpTOCNode Title="TopicEditorWindow Constructor " Url="html/4597301d-0ead-67b4-de01-9b0d98c196c0.htm" />
-  <HelpTOCNode Id="f994f825-f47b-4b92-bbfb-d12843909fff" Title="TopicEditorWindow Methods" Url="html/86fcd592-edf1-8d3b-ccea-ea6e51b4f558.htm" HasChildren="true" />
-  <HelpTOCNode Id="5458fade-1929-4f36-ae9e-c82fee3b68fd" Title="TopicEditorWindow Properties" Url="html/f972c867-b0c4-1101-17ea-936ad5c72d43.htm" HasChildren="true" />
+  <HelpTOCNode Title="TopicEditorWindow Methods" Url="html/86fcd592-edf1-8d3b-ccea-ea6e51b4f558.htm" HasChildren="true" />
+  <HelpTOCNode Title="TopicEditorWindow Properties" Url="html/f972c867-b0c4-1101-17ea-936ad5c72d43.htm" HasChildren="true" />
   <HelpTOCNode Title="TopicEditorWindow Events" Url="html/9f13d346-2d0a-402d-f756-69df1ff86dd0.htm" />
 </HelpTOCNode>

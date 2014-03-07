@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="df60e5ac-36be-44f7-b2ae-49ab9ce22973" Title="ESentTargetDictionary Methods" Url="html/5d3671e0-e23d-42ed-e944-dc0d7e55b318.htm">
-  <HelpTOCNode Id="096bde53-2619-42cb-bd93-9497ad9ec7cf" Title="Add Method " Url="html/bbcccf55-6203-081d-ac9a-ca429e005d17.htm" HasChildren="true" />
+<HelpTOCNode Title="ESentTargetDictionary Methods" Url="html/5d3671e0-e23d-42ed-e944-dc0d7e55b318.htm">
+  <HelpTOCNode Title="Add Method " Url="html/bbcccf55-6203-081d-ac9a-ca429e005d17.htm" HasChildren="true" />
   <HelpTOCNode Title="Clear Method " Url="html/6f9d6108-4374-0c69-74b4-b4dbcbd64ed7.htm" />
   <HelpTOCNode Title="Contains Method " Url="html/e21f98ac-2c3f-df9b-06f5-6409eb53536b.htm" />
   <HelpTOCNode Title="ContainsKey Method " Url="html/97aa487b-0820-9cc2-1d6a-98ea130c26f8.htm" />

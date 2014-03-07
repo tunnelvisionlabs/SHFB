@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="a462c083-4dd3-4b88-8ed2-47e9f7f2c9aa" Title="SandcastleBuilder.Utils.BuildEngine Namespace" Url="html/c0dcae57-33bd-4938-45fe-79219fb3b0af.htm">
-  <HelpTOCNode Id="5f29395d-7fdd-479b-aeac-c4e263724668" Title="BuildProcess Class" Url="html/6c4dd5b1-16bc-6cc8-25b7-80073d1a7285.htm" HasChildren="true" />
-  <HelpTOCNode Id="284d2c2d-d955-4d2b-b406-46712892994f" Title="BuildProgressEventArgs Class" Url="html/fdde0048-bc94-f986-6db4-fad7dbca8489.htm" HasChildren="true" />
+<HelpTOCNode Title="SandcastleBuilder.Utils.BuildEngine Namespace" Url="html/c0dcae57-33bd-4938-45fe-79219fb3b0af.htm">
+  <HelpTOCNode Title="BuildProcess Class" Url="html/6c4dd5b1-16bc-6cc8-25b7-80073d1a7285.htm" HasChildren="true" />
+  <HelpTOCNode Title="BuildProgressEventArgs Class" Url="html/fdde0048-bc94-f986-6db4-fad7dbca8489.htm" HasChildren="true" />
   <HelpTOCNode Title="BuildStep Enumeration" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
-  <HelpTOCNode Id="247ac2a6-d8d9-4417-8134-b647914183e2" Title="FrameworkCommentsFileLocation Class" Url="html/ce630a7a-74a1-e75c-93ca-98d6dae5c778.htm" HasChildren="true" />
-  <HelpTOCNode Id="561dee8d-e450-4afe-aa2f-1efb0eef53ca" Title="FullTextIndex Class" Url="html/10f51895-4a57-0e9b-4bb4-9512bde0ee1c.htm" HasChildren="true" />
+  <HelpTOCNode Title="FrameworkCommentsFileLocation Class" Url="html/ce630a7a-74a1-e75c-93ca-98d6dae5c778.htm" HasChildren="true" />
+  <HelpTOCNode Title="FullTextIndex Class" Url="html/10f51895-4a57-0e9b-4bb4-9512bde0ee1c.htm" HasChildren="true" />
   <HelpTOCNode Title="PartialBuildType Enumeration" Url="html/c23bef09-0aa4-e635-b4a9-08b0abd47f55.htm" />
-  <HelpTOCNode Id="1b7235c2-92cb-47d5-9150-c61c43044d05" Title="XmlCommentsFile Class" Url="html/3fc8408a-6901-c486-e170-b7adbf07b41d.htm" HasChildren="true" />
-  <HelpTOCNode Id="6d8bd158-57c5-44d7-92cd-6ec9a3d3149b" Title="XmlCommentsFileCollection Class" Url="html/31ca9a9a-061b-ef3d-fb2b-1380d9330176.htm" HasChildren="true" />
+  <HelpTOCNode Title="XmlCommentsFile Class" Url="html/3fc8408a-6901-c486-e170-b7adbf07b41d.htm" HasChildren="true" />
+  <HelpTOCNode Title="XmlCommentsFileCollection Class" Url="html/31ca9a9a-061b-ef3d-fb2b-1380d9330176.htm" HasChildren="true" />
 </HelpTOCNode>

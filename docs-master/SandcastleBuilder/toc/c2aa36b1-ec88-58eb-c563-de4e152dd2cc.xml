@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="4995d3a4-cffa-4099-9069-7e2738889208" Title="BuildPropertiesPageControl Class" Url="html/c2aa36b1-ec88-58eb-c563-de4e152dd2cc.htm">
+<HelpTOCNode Title="BuildPropertiesPageControl Class" Url="html/c2aa36b1-ec88-58eb-c563-de4e152dd2cc.htm">
   <HelpTOCNode Title="BuildPropertiesPageControl Constructor " Url="html/f3709fea-7d78-6326-0680-d74f55decbaa.htm" />
-  <HelpTOCNode Id="6165be0c-1c13-4545-98e8-42cb0b1bea74" Title="BuildPropertiesPageControl Methods" Url="html/3614846c-4883-c195-51a5-ba21d79cc82f.htm" HasChildren="true" />
-  <HelpTOCNode Id="f6193551-a705-4878-808b-c7254786a686" Title="BuildPropertiesPageControl Properties" Url="html/fbc3d40c-df9f-f9dc-3781-fd5108341d9d.htm" HasChildren="true" />
+  <HelpTOCNode Title="BuildPropertiesPageControl Methods" Url="html/3614846c-4883-c195-51a5-ba21d79cc82f.htm" HasChildren="true" />
+  <HelpTOCNode Title="BuildPropertiesPageControl Properties" Url="html/fbc3d40c-df9f-f9dc-3781-fd5108341d9d.htm" HasChildren="true" />
   <HelpTOCNode Title="BuildPropertiesPageControl Events" Url="html/4bd40639-8094-779a-569e-9b1a553fcb93.htm" />
 </HelpTOCNode>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="a28b247b-a6e8-499f-82f2-eab818d19c20" Title="SqlDictionary(TValue) Methods" Url="html/61f60aa2-4a35-cdba-3f39-3563bf8a8ca1.htm">
-  <HelpTOCNode Id="0233e489-e720-4d02-afbd-329554a72680" Title="Add Method " Url="html/f43f07d3-1f36-672e-729a-8db8ea05d4d6.htm" HasChildren="true" />
+<HelpTOCNode Title="SqlDictionary(TValue) Methods" Url="html/61f60aa2-4a35-cdba-3f39-3563bf8a8ca1.htm">
+  <HelpTOCNode Title="Add Method " Url="html/f43f07d3-1f36-672e-729a-8db8ea05d4d6.htm" HasChildren="true" />
   <HelpTOCNode Title="Clear Method " Url="html/2edc140e-debf-71d1-6a83-e24085cf2479.htm" />
   <HelpTOCNode Title="Contains Method " Url="html/5ac7f01e-7f47-d985-c654-fbec0ee3ba1e.htm" />
   <HelpTOCNode Title="ContainsKey Method " Url="html/9aadb7e1-d469-40df-a1ad-ea6d503b2090.htm" />
@@ -8,6 +8,6 @@
   <HelpTOCNode Title="Dispose Method " Url="html/7772682c-212d-2331-0848-23136b668a14.htm" />
   <HelpTOCNode Title="GetEnumerator Method " Url="html/082eda7c-c4b6-f6a1-9e10-ef09d21aec7d.htm" />
   <HelpTOCNode Title="Purge Method " Url="html/22e446d2-4326-ac64-b08a-f2b25992e24b.htm" />
-  <HelpTOCNode Id="aff11ec5-018d-4e6c-8b04-707bc93d1327" Title="Remove Method " Url="html/c2d96383-2e22-8b9c-07be-3a05f7292507.htm" HasChildren="true" />
+  <HelpTOCNode Title="Remove Method " Url="html/c2d96383-2e22-8b9c-07be-3a05f7292507.htm" HasChildren="true" />
   <HelpTOCNode Title="TryGetValue Method " Url="html/2c4add48-6cee-70d4-0f14-7f1fbe64687f.htm" />
 </HelpTOCNode>

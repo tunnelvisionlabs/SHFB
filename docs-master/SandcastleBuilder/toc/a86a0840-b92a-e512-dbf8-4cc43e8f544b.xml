@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="b6f77e44-b23d-4eb4-b4d2-056461cfe6bf" Title="MultiFormatOutputComponent Methods" Url="html/a86a0840-b92a-e512-dbf8-4cc43e8f544b.htm">
+<HelpTOCNode Title="MultiFormatOutputComponent Methods" Url="html/a86a0840-b92a-e512-dbf8-4cc43e8f544b.htm">
   <HelpTOCNode Title="Apply Method " Url="html/e04c3fd0-a264-e5a3-ee64-45fe59055cfb.htm" />
-  <HelpTOCNode Id="fa5acec2-47c4-4641-9f04-6482ea153d34" Title="Dispose Method " Url="html/e5b148bd-e1c8-3762-a1ac-ee046dcfafbf.htm" HasChildren="true" />
+  <HelpTOCNode Title="Dispose Method " Url="html/e5b148bd-e1c8-3762-a1ac-ee046dcfafbf.htm" HasChildren="true" />
   <HelpTOCNode Title="Initialize Method " Url="html/78ff53e1-87fc-a66e-cd61-ba5a89b0dec4.htm" />
 </HelpTOCNode>

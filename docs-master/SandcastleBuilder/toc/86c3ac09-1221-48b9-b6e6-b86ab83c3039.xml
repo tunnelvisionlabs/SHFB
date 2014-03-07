@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="86c3ac09-1221-48b9-b6e6-b86ab83c3039" Title="MSBuild Tasks">
+  <HelpTOCNode Title="B1X0001: A help compiler path must be specified" Url="html/e4b1c387-d296-42ed-9458-7c6b460b5c35.htm" />
+  <HelpTOCNode Title="B1X0002: A help project file must be specified and it must exist" Url="html/c47b9dfb-e27c-4af2-b9e9-68258a8eca01.htm" />
+  <HelpTOCNode Title="B2X0001: A help compiler path must be specified" Url="html/93d73e6e-2b07-4bc4-9535-c706dbf8540a.htm" />
+  <HelpTOCNode Title="B2X0002: An HTML help base name must be specified" Url="html/a707806a-1173-4a0e-a21d-7b2d5a42f7fe.htm" />
+  <HelpTOCNode Title="BHT0001: Unable to get executing project" Url="html/842594b8-d1ba-4baa-9082-de991e376d4f.htm" />
+  <HelpTOCNode Title="BHT0002: Unable to build project '[projectFile]': [error]" Url="html/e8c8417f-ac01-450c-8aef-984a69ecbb93.htm" />
+  <HelpTOCNode Title="BHT0003: The specified project file does not exist: [projectFile]" Url="html/20cf4894-e127-46f7-a0f3-6da7252f3652.htm" />
+  <HelpTOCNode Title="BHT0004: Multiple matching projects were found" Url="html/42262e8b-6aa4-4ca0-85cb-a395cabb96c7.htm" />
+  <HelpTOCNode Title="CT0001: Unable to clean output folder. Reason: [reason]" Url="html/13b7b97f-6a6d-442a-aabf-b00a026b54c0.htm" />
+</HelpTOCNode>

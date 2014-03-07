@@ -3,11 +3,11 @@
   <HelpTOCNode Title="Welcome" Url="html/83b3d408-4e02-42d2-beed-0b13294f23f2.htm" />
   <HelpTOCNode Title="License" Url="html/165a7a7e-b9f0-4fa0-bf96-105f1fdf1163.htm" />
   <HelpTOCNode Title="Using the Converter" Url="html/88706943-3ecb-4435-9107-ee96821ef856.htm" />
-  <HelpTOCNode Id="b92a0026-e564-432e-b94c-db1770da9ed4" Title="The Conversion Process" Url="html/dcded896-51a7-4af4-b1dc-9a41193210cc.htm" HasChildren="true" />
+  <HelpTOCNode Title="The Conversion Process" Url="html/dcded896-51a7-4af4-b1dc-9a41193210cc.htm" HasChildren="true" />
   <HelpTOCNode Title="Common Issues and Solutions" Url="html/40a012a8-5172-4805-a7b0-57a80e99ec5f.htm" />
   <HelpTOCNode Title="Links to Resources" Url="html/c18d6cb6-e4e4-4944-84ee-f867aa6cfb0d.htm" />
   <HelpTOCNode Title="Glossary" Url="html/0da4eb05-808e-4323-9a62-28ba912125ff.htm" />
-  <HelpTOCNode Id="d936c224-8500-417c-bcaa-7f9e58db856a" Title="Version History" Url="html/5ed6a1fd-7d8e-4da6-baa6-60c663218106.htm" HasChildren="true" />
-  <HelpTOCNode Id="4cb47830-bddc-4ced-bded-d5e92fab3452" Title="HtmlToMamlConversion Namespace" Url="html/29716bff-61e2-a20a-873a-1ddd0b165993.htm" HasChildren="true" />
-  <HelpTOCNode Id="aadade88-2dec-45a0-8919-468b8967b4f3" Title="SandcastleBuilder.Utils Namespace" Url="html/960ef505-1200-ede5-c807-ab0c912adef4.htm" HasChildren="true" />
+  <HelpTOCNode Title="Version History" Url="html/5ed6a1fd-7d8e-4da6-baa6-60c663218106.htm" HasChildren="true" />
+  <HelpTOCNode Title="HtmlToMamlConversion Namespace" Url="html/29716bff-61e2-a20a-873a-1ddd0b165993.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Utils Namespace" Url="html/960ef505-1200-ede5-c807-ab0c912adef4.htm" HasChildren="true" />
 </HelpTOC>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="1a974318-1048-457a-9b34-78e4c2be93e2" Title="HierarchicalTocPlugIn Class" Url="html/53a4a005-49d3-4d4c-8aa4-009fb2d5bcc8.htm">
+<HelpTOCNode Title="HierarchicalTocPlugIn Class" Url="html/53a4a005-49d3-4d4c-8aa4-009fb2d5bcc8.htm">
   <HelpTOCNode Title="HierarchicalTocPlugIn Constructor " Url="html/917a03fc-fcde-85ad-1b6f-1607a628046e.htm" />
-  <HelpTOCNode Id="890d5c60-4a63-4871-bbbe-2e8c9e278280" Title="HierarchicalTocPlugIn Methods" Url="html/409e1ef4-c471-d80b-8eec-0373a2fc8b2b.htm" HasChildren="true" />
-  <HelpTOCNode Id="601e351b-cf94-4714-a537-eef9b83740f8" Title="HierarchicalTocPlugIn Properties" Url="html/71510303-c198-895e-5944-4baa35be36d0.htm" HasChildren="true" />
+  <HelpTOCNode Title="HierarchicalTocPlugIn Methods" Url="html/409e1ef4-c471-d80b-8eec-0373a2fc8b2b.htm" HasChildren="true" />
+  <HelpTOCNode Title="HierarchicalTocPlugIn Properties" Url="html/71510303-c198-895e-5944-4baa35be36d0.htm" HasChildren="true" />
 </HelpTOCNode>

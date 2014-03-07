@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="6845a1f4-e96d-4a9c-aeff-719dbf49998b" Title="WINDOWPLACEMENT Structure" Url="html/5eda44e5-2f39-f070-d119-df332ee8bb07.htm">
-  <HelpTOCNode Id="05b89692-6af3-4143-83ab-e5359774c3b2" Title="WINDOWPLACEMENT Fields" Url="html/29c4eee5-4ed2-f902-6809-ad456a073475.htm" HasChildren="true" />
+<HelpTOCNode Title="WINDOWPLACEMENT Structure" Url="html/5eda44e5-2f39-f070-d119-df332ee8bb07.htm">
+  <HelpTOCNode Title="WINDOWPLACEMENT Fields" Url="html/29c4eee5-4ed2-f902-6809-ad456a073475.htm" HasChildren="true" />
   <HelpTOCNode Title="WINDOWPLACEMENT Methods" Url="html/5097ad00-8ded-d354-f6d0-8cc09587ea34.htm" />
 </HelpTOCNode>

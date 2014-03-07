@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="996c3dd7-692a-4c5f-be1b-e931d8f98d5f" Title="Topic Class" Url="html/892644dd-7a45-00ee-71ef-e4b7e2cb5555.htm">
+<HelpTOCNode Title="Topic Class" Url="html/892644dd-7a45-00ee-71ef-e4b7e2cb5555.htm">
   <HelpTOCNode Title="Topic Constructor " Url="html/866ba0c4-b3b6-7602-2d69-a9ad437aa2b6.htm" />
-  <HelpTOCNode Id="cf695f64-7214-486b-98ad-7c99b0247adb" Title="Topic Methods" Url="html/d6728a9e-b69a-cf27-1c53-7bdeeb33ebec.htm" HasChildren="true" />
-  <HelpTOCNode Id="b613384a-e58b-40f2-9862-0797f2b32669" Title="Topic Properties" Url="html/0cf58179-488a-182b-fa61-70fd8140b35d.htm" HasChildren="true" />
+  <HelpTOCNode Title="Topic Methods" Url="html/d6728a9e-b69a-cf27-1c53-7bdeeb33ebec.htm" HasChildren="true" />
+  <HelpTOCNode Title="Topic Properties" Url="html/0cf58179-488a-182b-fa61-70fd8140b35d.htm" HasChildren="true" />
 </HelpTOCNode>

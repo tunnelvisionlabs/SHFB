@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="a143283c-cd84-49eb-ad61-85a1841b9ef2" Title="XPathFunctionContext Class" Url="html/26ead3e0-0337-cb13-ad4d-34bafea419ca.htm">
+<HelpTOCNode Title="XPathFunctionContext Class" Url="html/26ead3e0-0337-cb13-ad4d-34bafea419ca.htm">
   <HelpTOCNode Title="XPathFunctionContext Constructor " Url="html/41434d08-11c3-c861-e8d5-6872915b9df4.htm" />
-  <HelpTOCNode Id="61b9f892-e099-44fc-8f98-6556fd51ea9c" Title="XPathFunctionContext Methods" Url="html/4ff81a46-e355-bea0-c0be-b6a9bae029f7.htm" HasChildren="true" />
-  <HelpTOCNode Id="96a56012-a48b-44a8-8501-6eb0d03fd8ff" Title="XPathFunctionContext Properties" Url="html/07303c96-b0d6-336c-48f3-97103fdf71db.htm" HasChildren="true" />
+  <HelpTOCNode Title="XPathFunctionContext Methods" Url="html/4ff81a46-e355-bea0-c0be-b6a9bae029f7.htm" HasChildren="true" />
+  <HelpTOCNode Title="XPathFunctionContext Properties" Url="html/07303c96-b0d6-336c-48f3-97103fdf71db.htm" HasChildren="true" />
 </HelpTOCNode>

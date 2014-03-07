@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="e3a3f581-ea1b-412d-8c40-dd7df5859d48" Title="FileItemCollection Class" Url="html/498ead1f-af02-df19-5058-9b23e07e38ab.htm">
+<HelpTOCNode Title="FileItemCollection Class" Url="html/498ead1f-af02-df19-5058-9b23e07e38ab.htm">
   <HelpTOCNode Title="FileItemCollection Constructor " Url="html/72ce23a0-357d-d1e1-ba87-f032378a37e7.htm" />
-  <HelpTOCNode Id="f85187ce-7aaa-4f23-be2b-3edb1e18e37b" Title="FileItemCollection Methods" Url="html/88b4bc29-19da-3967-29c9-f5dd68e7047c.htm" HasChildren="true" />
+  <HelpTOCNode Title="FileItemCollection Methods" Url="html/88b4bc29-19da-3967-29c9-f5dd68e7047c.htm" HasChildren="true" />
   <HelpTOCNode Title="FileItemCollection Properties" Url="html/41ed89c9-b770-47a0-5e3a-28b2a964ee01.htm" />
   <HelpTOCNode Title="FileItemCollection Events" Url="html/ad98edae-a5af-4007-ae87-2a162ef04c9e.htm" />
 </HelpTOCNode>

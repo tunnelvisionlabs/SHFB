@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="fc635fc5-5773-4b2f-b930-cf5901a4b180" Title="BuildLogViewerControl Class" Url="html/73eeca4f-5f19-b7bd-7ae1-49eb3278725e.htm">
+<HelpTOCNode Title="BuildLogViewerControl Class" Url="html/73eeca4f-5f19-b7bd-7ae1-49eb3278725e.htm">
   <HelpTOCNode Title="BuildLogViewerControl Constructor " Url="html/b85146ff-cc4e-e4fd-9301-fc16288c5e63.htm" />
-  <HelpTOCNode Id="85718a19-06e4-4ec7-9e7e-5ac0a97c3cd2" Title="BuildLogViewerControl Methods" Url="html/6b186545-40d5-87ef-055d-efb1126d1112.htm" HasChildren="true" />
-  <HelpTOCNode Id="9d3650b9-1364-4862-9f0c-b798502ecca0" Title="BuildLogViewerControl Properties" Url="html/91e1d900-2299-4a37-f5e8-431dd193d94a.htm" HasChildren="true" />
+  <HelpTOCNode Title="BuildLogViewerControl Methods" Url="html/6b186545-40d5-87ef-055d-efb1126d1112.htm" HasChildren="true" />
+  <HelpTOCNode Title="BuildLogViewerControl Properties" Url="html/91e1d900-2299-4a37-f5e8-431dd193d94a.htm" HasChildren="true" />
   <HelpTOCNode Title="BuildLogViewerControl Events" Url="html/9aabc3a6-2ef3-1d21-8578-244d4aebf509.htm" />
 </HelpTOCNode>

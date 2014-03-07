@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="c7707f10-d59a-4120-bc0f-48bef3308612" Title="TocEntry Class" Url="html/9d07841f-5243-b6be-abd7-52f0bb764b1a.htm">
+<HelpTOCNode Title="TocEntry Class" Url="html/9d07841f-5243-b6be-abd7-52f0bb764b1a.htm">
   <HelpTOCNode Title="TocEntry Constructor " Url="html/99bf2ce1-9a39-d3e6-1812-8507768563c8.htm" />
-  <HelpTOCNode Id="8a03d507-cc40-4eb1-bca7-2fe3275a2d3b" Title="TocEntry Methods" Url="html/2e4863ad-6eb1-5fae-9776-34302e3921e4.htm" HasChildren="true" />
-  <HelpTOCNode Id="3dbd6a69-1bcf-4b76-96d9-e70619782fa7" Title="TocEntry Operators" Url="html/cc8a40b6-c76a-6255-262b-8ed91ff7f487.htm" HasChildren="true" />
-  <HelpTOCNode Id="cbc4d0c9-4111-47a4-b4e1-61e1f26ec516" Title="TocEntry Properties" Url="html/9d0699b1-ae25-dfd8-ef61-fa59f17fe839.htm" HasChildren="true" />
-  <HelpTOCNode Id="71bff3da-9bcd-4160-a993-3b1ab6ff09df" Title="TocEntry Events" Url="html/4790290e-8d1c-e018-62cb-a5b45ff24c97.htm" HasChildren="true" />
+  <HelpTOCNode Title="TocEntry Methods" Url="html/2e4863ad-6eb1-5fae-9776-34302e3921e4.htm" HasChildren="true" />
+  <HelpTOCNode Title="TocEntry Operators" Url="html/cc8a40b6-c76a-6255-262b-8ed91ff7f487.htm" HasChildren="true" />
+  <HelpTOCNode Title="TocEntry Properties" Url="html/9d0699b1-ae25-dfd8-ef61-fa59f17fe839.htm" HasChildren="true" />
+  <HelpTOCNode Title="TocEntry Events" Url="html/4790290e-8d1c-e018-62cb-a5b45ff24c97.htm" HasChildren="true" />
 </HelpTOCNode>

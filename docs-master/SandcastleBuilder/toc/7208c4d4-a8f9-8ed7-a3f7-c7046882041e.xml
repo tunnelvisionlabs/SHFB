@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="6c439e98-960d-41c6-8758-52f571bb0788" Title="ImageReference Class" Url="html/7208c4d4-a8f9-8ed7-a3f7-c7046882041e.htm">
+<HelpTOCNode Title="ImageReference Class" Url="html/7208c4d4-a8f9-8ed7-a3f7-c7046882041e.htm">
   <HelpTOCNode Title="ImageReference Constructor " Url="html/26af2a3d-f25b-5570-31bf-501feb2f314c.htm" />
-  <HelpTOCNode Id="98603a12-7750-4d95-bb21-99f8e28f3fa7" Title="ImageReference Methods" Url="html/cbc32448-9b73-ed64-2847-d42076ec96fa.htm" HasChildren="true" />
-  <HelpTOCNode Id="24534bf2-4acf-4342-9fd9-891759a43173" Title="ImageReference Properties" Url="html/69d7f6cf-af25-7747-3317-60ebeea70611.htm" HasChildren="true" />
+  <HelpTOCNode Title="ImageReference Methods" Url="html/cbc32448-9b73-ed64-2847-d42076ec96fa.htm" HasChildren="true" />
+  <HelpTOCNode Title="ImageReference Properties" Url="html/69d7f6cf-af25-7747-3317-60ebeea70611.htm" HasChildren="true" />
 </HelpTOCNode>

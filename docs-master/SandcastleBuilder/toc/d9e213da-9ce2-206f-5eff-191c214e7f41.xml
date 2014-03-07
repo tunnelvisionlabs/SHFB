@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="7a166760-c9ce-461c-8f2b-03bde481a68d" Title="ResourceItemEditorControl Class" Url="html/d9e213da-9ce2-206f-5eff-191c214e7f41.htm">
+<HelpTOCNode Title="ResourceItemEditorControl Class" Url="html/d9e213da-9ce2-206f-5eff-191c214e7f41.htm">
   <HelpTOCNode Title="ResourceItemEditorControl Constructor " Url="html/c90411f6-8db9-6d75-e272-27f987189253.htm" />
-  <HelpTOCNode Id="ef870544-5a7f-42e9-9d93-f0274a4b814d" Title="ResourceItemEditorControl Fields" Url="html/6dbc95cb-72a1-c287-aa77-66f34cfa2dfa.htm" HasChildren="true" />
-  <HelpTOCNode Id="f6a9cd75-a14d-4f10-b975-02ffbeda6fad" Title="ResourceItemEditorControl Methods" Url="html/8c51b709-7713-46d1-8365-651e4299c268.htm" HasChildren="true" />
+  <HelpTOCNode Title="ResourceItemEditorControl Fields" Url="html/6dbc95cb-72a1-c287-aa77-66f34cfa2dfa.htm" HasChildren="true" />
+  <HelpTOCNode Title="ResourceItemEditorControl Methods" Url="html/8c51b709-7713-46d1-8365-651e4299c268.htm" HasChildren="true" />
   <HelpTOCNode Title="ResourceItemEditorControl Properties" Url="html/c45d1525-b55f-d11c-b333-c33a911500fa.htm" />
-  <HelpTOCNode Id="37920dda-4039-4ea6-a592-1e445739c5c2" Title="ResourceItemEditorControl Events" Url="html/1ea58faa-a9a9-c050-5fa5-1eb64818d66e.htm" HasChildren="true" />
+  <HelpTOCNode Title="ResourceItemEditorControl Events" Url="html/1ea58faa-a9a9-c050-5fa5-1eb64818d66e.htm" HasChildren="true" />
 </HelpTOCNode>

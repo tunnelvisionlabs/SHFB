@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="dd5fe6f0-0ff8-4682-aa53-cc8923241b55" Title="IBasePathProvider Interface" Url="html/84f5be97-514d-23a8-3814-b5b2e7fd29d5.htm">
-  <HelpTOCNode Id="7105ef67-9ff8-4fb7-87fd-9dc01f904b07" Title="IBasePathProvider Methods" Url="html/94446b91-a085-4546-c816-062ff46dea6d.htm" HasChildren="true" />
-  <HelpTOCNode Id="6a49daf5-cd0d-431b-8b26-c56ffcf0f1df" Title="IBasePathProvider Properties" Url="html/dd2a8a22-66e6-6b65-1e0b-07ee4a4471d4.htm" HasChildren="true" />
+<HelpTOCNode Title="IBasePathProvider Interface" Url="html/84f5be97-514d-23a8-3814-b5b2e7fd29d5.htm">
+  <HelpTOCNode Title="IBasePathProvider Methods" Url="html/94446b91-a085-4546-c816-062ff46dea6d.htm" HasChildren="true" />
+  <HelpTOCNode Title="IBasePathProvider Properties" Url="html/dd2a8a22-66e6-6b65-1e0b-07ee4a4471d4.htm" HasChildren="true" />
 </HelpTOCNode>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="b82204f8-e447-4058-a74b-7151032c486f" Title="BuildProcess Events" Url="html/83253236-90aa-dec4-6d11-239fa50b39d7.htm">
+<HelpTOCNode Title="BuildProcess Events" Url="html/83253236-90aa-dec4-6d11-239fa50b39d7.htm">
   <HelpTOCNode Title="BuildProgress Event" Url="html/c4552b27-5657-c81e-0656-295e94fa21eb.htm" />
   <HelpTOCNode Title="BuildStepChanged Event" Url="html/20241851-227c-6955-714c-5fc2c268c682.htm" />
 </HelpTOCNode>

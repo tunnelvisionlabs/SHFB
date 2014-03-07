@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="803b9258-5a96-47f7-821f-f59e0386fc92" Title="DeploymentPlugIn Class" Url="html/84a22ac1-beb5-01e7-b2f0-7dfba475ad3e.htm">
+<HelpTOCNode Title="DeploymentPlugIn Class" Url="html/84a22ac1-beb5-01e7-b2f0-7dfba475ad3e.htm">
   <HelpTOCNode Title="DeploymentPlugIn Constructor " Url="html/e4dc7eb0-cb80-13dd-4aed-8560549e8d23.htm" />
-  <HelpTOCNode Id="b302dec0-7515-49c6-b35d-80ad632a4220" Title="DeploymentPlugIn Methods" Url="html/b13ed539-88f7-9962-e34c-b39dff8eff8f.htm" HasChildren="true" />
-  <HelpTOCNode Id="1532f5e4-a168-4c39-b402-d7951674d91b" Title="DeploymentPlugIn Properties" Url="html/99f84dd5-5bf6-6b09-26c8-1144a31b98e3.htm" HasChildren="true" />
+  <HelpTOCNode Title="DeploymentPlugIn Methods" Url="html/b13ed539-88f7-9962-e34c-b39dff8eff8f.htm" HasChildren="true" />
+  <HelpTOCNode Title="DeploymentPlugIn Properties" Url="html/99f84dd5-5bf6-6b09-26c8-1144a31b98e3.htm" HasChildren="true" />
 </HelpTOCNode>

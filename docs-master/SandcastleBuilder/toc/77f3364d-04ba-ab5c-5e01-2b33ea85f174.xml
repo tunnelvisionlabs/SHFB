@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="4b914bf9-c8b6-42bb-8e0d-9be14d5474af" Title="OutputWindow Class" Url="html/77f3364d-04ba-ab5c-5e01-2b33ea85f174.htm">
+<HelpTOCNode Title="OutputWindow Class" Url="html/77f3364d-04ba-ab5c-5e01-2b33ea85f174.htm">
   <HelpTOCNode Title="OutputWindow Constructor " Url="html/b8b968d3-4a0a-e2e8-7b5e-586990469a16.htm" />
-  <HelpTOCNode Id="6e81f51c-c73a-4707-9212-cd342d17679c" Title="OutputWindow Methods" Url="html/8c711e88-1c83-8363-da8d-407c4131b262.htm" HasChildren="true" />
-  <HelpTOCNode Id="f7993cd2-ddc0-40f8-a9ee-ae67888675cb" Title="OutputWindow Properties" Url="html/be55d96d-97ab-c088-0e70-ea37057da7a8.htm" HasChildren="true" />
+  <HelpTOCNode Title="OutputWindow Methods" Url="html/8c711e88-1c83-8363-da8d-407c4131b262.htm" HasChildren="true" />
+  <HelpTOCNode Title="OutputWindow Properties" Url="html/be55d96d-97ab-c088-0e70-ea37057da7a8.htm" HasChildren="true" />
   <HelpTOCNode Title="OutputWindow Events" Url="html/54191cf5-18a5-ecd1-912c-70c29159f89d.htm" />
 </HelpTOCNode>

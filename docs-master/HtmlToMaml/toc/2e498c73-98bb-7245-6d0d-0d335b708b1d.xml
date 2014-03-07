@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="355a1112-9ce2-42b3-b463-88a56111b16d" Title="MSHelpKeyword Class" Url="html/2e498c73-98bb-7245-6d0d-0d335b708b1d.htm">
-  <HelpTOCNode Id="af208d32-ba73-4086-b8b2-03028924c79a" Title="MSHelpKeyword Constructor " Url="html/e334a40e-62b7-401a-d939-d2ec7165a5f8.htm" HasChildren="true" />
-  <HelpTOCNode Id="0299983a-9225-407c-8b2c-85e90334d3cb" Title="MSHelpKeyword Methods" Url="html/3992fb6c-d11d-04a3-6f65-5a47f86a68a6.htm" HasChildren="true" />
-  <HelpTOCNode Id="bca12cbb-a676-4cdd-b9a8-3dca7599f27a" Title="MSHelpKeyword Properties" Url="html/db171552-c29b-d35d-2b19-9c6b9434de77.htm" HasChildren="true" />
+<HelpTOCNode Title="MSHelpKeyword Class" Url="html/2e498c73-98bb-7245-6d0d-0d335b708b1d.htm">
+  <HelpTOCNode Title="MSHelpKeyword Constructor " Url="html/e334a40e-62b7-401a-d939-d2ec7165a5f8.htm" HasChildren="true" />
+  <HelpTOCNode Title="MSHelpKeyword Methods" Url="html/3992fb6c-d11d-04a3-6f65-5a47f86a68a6.htm" HasChildren="true" />
+  <HelpTOCNode Title="MSHelpKeyword Properties" Url="html/db171552-c29b-d35d-2b19-9c6b9434de77.htm" HasChildren="true" />
 </HelpTOCNode>

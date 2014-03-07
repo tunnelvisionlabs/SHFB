@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="902e0692-a6e0-4193-bd14-ad2e1a81cdb7" Title="PlugInPropertiesPageControl Class" Url="html/d193a34a-9f92-6772-9c07-ff67d66b2323.htm">
+<HelpTOCNode Title="PlugInPropertiesPageControl Class" Url="html/d193a34a-9f92-6772-9c07-ff67d66b2323.htm">
   <HelpTOCNode Title="PlugInPropertiesPageControl Constructor " Url="html/6f934c60-1ee6-7282-8c14-64e4ca6a01df.htm" />
-  <HelpTOCNode Id="148a81d2-9804-4dfe-9ad3-b5ad79ded337" Title="PlugInPropertiesPageControl Methods" Url="html/27fc77b3-14cd-68c9-c81b-43dfde4ec831.htm" HasChildren="true" />
+  <HelpTOCNode Title="PlugInPropertiesPageControl Methods" Url="html/27fc77b3-14cd-68c9-c81b-43dfde4ec831.htm" HasChildren="true" />
   <HelpTOCNode Title="PlugInPropertiesPageControl Properties" Url="html/e324f964-730b-82c1-d329-cfe098513c33.htm" />
   <HelpTOCNode Title="PlugInPropertiesPageControl Events" Url="html/29d7e133-48cf-fb6b-1eff-7173dda0e6b0.htm" />
 </HelpTOCNode>

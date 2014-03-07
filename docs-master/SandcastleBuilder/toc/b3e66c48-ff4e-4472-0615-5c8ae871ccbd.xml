@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="e4b69c3c-55de-48a4-90d1-96f40807c461" Title="DividerLabel Class" Url="html/b3e66c48-ff4e-4472-0615-5c8ae871ccbd.htm">
+<HelpTOCNode Title="DividerLabel Class" Url="html/b3e66c48-ff4e-4472-0615-5c8ae871ccbd.htm">
   <HelpTOCNode Title="DividerLabel Constructor " Url="html/7565e3b2-02db-97b8-5d55-8747e135105d.htm" />
-  <HelpTOCNode Id="dc61248d-b9e2-44eb-90c1-4d5601b84e9c" Title="DividerLabel Methods" Url="html/cbdb03f4-b130-e1a4-9efc-6542643de910.htm" HasChildren="true" />
+  <HelpTOCNode Title="DividerLabel Methods" Url="html/cbdb03f4-b130-e1a4-9efc-6542643de910.htm" HasChildren="true" />
   <HelpTOCNode Title="DividerLabel Properties" Url="html/0c03c285-b7bb-b016-0c16-762687bf900e.htm" />
   <HelpTOCNode Title="DividerLabel Events" Url="html/eb0e8939-306c-5ced-b7a1-353ddef404ec.htm" />
 </HelpTOCNode>

@@ -1,9 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="596c84ab-9765-4cb9-ad33-76f68fddcb5a" Title="Project File Converters">
-  <HelpTOCNode Title="CVT0001: Unable to parse value '[value]' for property '[name]'" Url="html/6c55e03c-0b22-4913-ab2a-f0148309b2b5.htm" />
-  <HelpTOCNode Title="CVT0002: An attempt was made to set an unknown or read-only property" Url="html/4854d16a-93bf-4701-997d-049ce91f82cf.htm" />
-  <HelpTOCNode Title="CVT0003: Invalid or missing schema version" Url="html/07498c61-02a4-4f04-ac76-a89cafedbfec.htm" />
-  <HelpTOCNode Title="CVT0004: Unrecognized schema version" Url="html/6417667f-ea10-421f-839c-647561ed207b.htm" />
-  <HelpTOCNode Title="CVT0005: Error reading project from '[file]'" Url="html/860e4647-cb23-448f-93cb-da45f52c3ec7.htm" />
-  <HelpTOCNode Title="CVT0006: Error converting content layout file" Url="html/e50090cc-d866-4428-9b44-d7d145df5eb7.htm" />
-</HelpTOCNode>
+<HelpTOC>
+  <HelpTOCNode Title="Welcome" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
+  <HelpTOCNode Title="License Agreement" Url="html/24504fda-d3ef-4dd9-8335-6db8b25d00f2.htm" />
+  <HelpTOCNode Title="Benefits and Features" Url="html/ac8e467d-c0aa-4a6d-9690-73d148f67bc7.htm" />
+  <HelpTOCNode Title="Known Issues and Limitations" Url="html/21c2a363-6c94-440b-8985-6b224d275463.htm" />
+  <HelpTOCNode Title="Getting Started" Url="html/b772e00e-1705-4062-adb6-774826ce6700.htm" HasChildren="true" />
+  <HelpTOCNode Title="Visual Studio Integration Package" Url="html/b128ad2a-787e-48c7-b946-f6953080c386.htm" HasChildren="true" />
+  <HelpTOCNode Title="Project Explorer Window" Url="html/e12c2b9f-18c7-4718-850b-ac3c2e293672.htm" HasChildren="true" />
+  <HelpTOCNode Title="Project Properties Window" Url="html/e32086c6-de17-4e54-a746-1ac80bf0c45a.htm" HasChildren="true" />
+  <HelpTOCNode Title="Entity References Window" Url="html/e49eea91-a9ef-4aa5-ad8f-16ebd61b798a.htm" />
+  <HelpTOCNode Title="Text Editor Window" Url="html/a76a88ff-d67f-4eb5-9622-90287c786c1b.htm" />
+  <HelpTOCNode Title="Topic Previewer Window" Url="html/d3c7584d-73c0-4725-87f8-51e4ad956694.htm" />
+  <HelpTOCNode Title="Resource File Item Editor Window" Url="html/fcf8e4ac-5b32-4d5f-9bce-2e85c3468fdc.htm" />
+  <HelpTOCNode Title="Conceptual and Additional Content" Url="html/5292ce5c-fda1-4a77-9155-a11755ef1730.htm" HasChildren="true" />
+  <HelpTOCNode Title="Build Process Plug-Ins" Url="html/e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm" HasChildren="true" />
+  <HelpTOCNode Title="Custom Build Components" Url="html/8dcbb69b-7a1a-4049-8e6b-2bf344efbbc9.htm" HasChildren="true" />
+  <HelpTOCNode Title="Errors and Warnings" Url="html/46d1f76e-a97e-4ee6-971c-fdeab725ff09.htm" HasChildren="true" />
+  <HelpTOCNode Title="Localizing Language Resource Files" Url="html/e2ed6222-c3ee-4c6e-b0f9-fa3c86bc3e2c.htm" />
+  <HelpTOCNode Title="Customizing the Header and Footer Text" Url="html/c7378077-fc10-45f9-b52a-c57dda96fe8d.htm" />
+  <HelpTOCNode Title="Customizing the Build Process" Url="html/69d998a7-1af5-4bf5-889b-59cd00b64000.htm" />
+  <HelpTOCNode Title="Creating a Presentation Style Component" Url="html/baf1dcbc-e9cf-4d71-a770-621e6eaf10a7.htm" />
+  <HelpTOCNode Title="Frequently Asked Questions (FAQ)" Url="html/1aea789d-b226-4b39-b534-4c97c256fac8.htm" />
+  <HelpTOCNode Title="Links to Resources" Url="html/c18d6cb6-e4e4-4944-84ee-f867aa6cfb0d.htm" />
+  <HelpTOCNode Title="Making a Donation" Url="html/717ca8cf-1a2f-4e63-a8a9-f836825f3509.htm" />
+  <HelpTOCNode Title="Version History" Url="html/078cc1c7-7995-431e-bf9c-8813becbe8df.htm" HasChildren="true" />
+  <HelpTOCNode Title="Glossary" Url="html/66bf98c7-7179-4940-8767-7085052f2f53.htm" />
+  <HelpTOCNode Title="SandcastleBuilder Namespaces" Url="html/71618999-859e-7931-58c9-872ee57a7a71.htm" HasChildren="true" />
+</HelpTOC>

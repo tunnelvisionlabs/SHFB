@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="d7b958ce-150b-4b67-bbef-1d87ecac3ea4" Title="ScriptSharpPlugIn Class" Url="html/9b7b5e8d-895b-a1b4-4104-fd6fc400004d.htm">
+<HelpTOCNode Title="ScriptSharpPlugIn Class" Url="html/9b7b5e8d-895b-a1b4-4104-fd6fc400004d.htm">
   <HelpTOCNode Title="ScriptSharpPlugIn Constructor " Url="html/d6229f5b-88cf-e82d-3989-ee9dfe5be24d.htm" />
-  <HelpTOCNode Id="47b42be0-3c79-4f51-be22-642ba186c01d" Title="ScriptSharpPlugIn Methods" Url="html/def1ae90-55d2-1768-71ea-6ff20e6c6670.htm" HasChildren="true" />
-  <HelpTOCNode Id="06f63842-9494-4a0a-9484-165fd56c1d1b" Title="ScriptSharpPlugIn Properties" Url="html/a254becb-affc-1946-cdc2-8be4a828dd73.htm" HasChildren="true" />
+  <HelpTOCNode Title="ScriptSharpPlugIn Methods" Url="html/def1ae90-55d2-1768-71ea-6ff20e6c6670.htm" HasChildren="true" />
+  <HelpTOCNode Title="ScriptSharpPlugIn Properties" Url="html/a254becb-affc-1946-cdc2-8be4a828dd73.htm" HasChildren="true" />
 </HelpTOCNode>

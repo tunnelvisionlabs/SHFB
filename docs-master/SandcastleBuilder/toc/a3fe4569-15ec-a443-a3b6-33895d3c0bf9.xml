@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="9db1e3f0-a993-417e-9fce-d9c3754c68f0" Title="ProjectPropertiesWindow Methods" Url="html/a3fe4569-15ec-a443-a3b6-33895d3c0bf9.htm">
+<HelpTOCNode Title="ProjectPropertiesWindow Methods" Url="html/a3fe4569-15ec-a443-a3b6-33895d3c0bf9.htm">
   <HelpTOCNode Title="Apply Method " Url="html/1d195cae-e247-c329-4da4-d6eadac7fd33.htm" />
-  <HelpTOCNode Id="d0bb1142-65b0-44a2-9b81-d9d10ec5e443" Title="Dispose Method " Url="html/162bb1a4-759a-e75a-4cb5-5fe92aed47f3.htm" HasChildren="true" />
+  <HelpTOCNode Title="Dispose Method " Url="html/162bb1a4-759a-e75a-4cb5-5fe92aed47f3.htm" HasChildren="true" />
   <HelpTOCNode Title="OnFormClosing Method " Url="html/68d6f2ed-77f5-2f60-b898-b50b860c6403.htm" />
   <HelpTOCNode Title="ProcessCmdKey Method " Url="html/91347cb7-0deb-75ed-5613-63f770506690.htm" />
   <HelpTOCNode Title="RefreshProperties Method " Url="html/ba9b71fe-0ea5-7f08-b7d5-1c04e373a346.htm" />

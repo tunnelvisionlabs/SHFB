@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="bfb217aa-2d05-4535-b285-8e2bc2987c0c" Title="SandcastleBuilder.Components.Targets Namespace" Url="html/7e42844d-816a-b0a9-0579-22457a0179fd.htm">
-  <HelpTOCNode Id="79bc6597-2b79-488d-a48e-5c2d3b5d5728" Title="ESentTargetDictionary Class" Url="html/7e3c95cc-f81a-ad6f-510d-a8e97d4168ae.htm" HasChildren="true" />
-  <HelpTOCNode Id="d96ad5d4-731a-42b2-b98e-a1c1eeae5319" Title="SqlTargetDictionary Class" Url="html/0024ce9d-8ad4-1cf2-d3f7-dbbcd13d19e2.htm" HasChildren="true" />
+<HelpTOCNode Title="SandcastleBuilder.Components.Targets Namespace" Url="html/7e42844d-816a-b0a9-0579-22457a0179fd.htm">
+  <HelpTOCNode Title="ESentTargetDictionary Class" Url="html/7e3c95cc-f81a-ad6f-510d-a8e97d4168ae.htm" HasChildren="true" />
+  <HelpTOCNode Title="SqlTargetDictionary Class" Url="html/0024ce9d-8ad4-1cf2-d3f7-dbbcd13d19e2.htm" HasChildren="true" />
 </HelpTOCNode>

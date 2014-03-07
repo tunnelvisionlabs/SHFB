@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="7572735a-b35d-4299-8b42-404a14310f2d" Title="Custom Build Components" Url="html/8dcbb69b-7a1a-4049-8e6b-2bf344efbbc9.htm">
+<HelpTOCNode Title="Custom Build Components" Url="html/8dcbb69b-7a1a-4049-8e6b-2bf344efbbc9.htm">
   <HelpTOCNode Title="API Token Resolution Component" Url="html/dcc9f938-0d5e-4010-bbfe-fd64168a443b.htm" />
   <HelpTOCNode Title="Code Block Component" Url="html/7f03ba39-09f8-4320-bdbd-ed31a3bd885f.htm" />
   <HelpTOCNode Title="IntelliSense Component" Url="html/5d546511-6aec-455a-ba09-9daffb124c6d.htm" />
   <HelpTOCNode Title="Multi-Format Output Component" Url="html/92a6e678-48fb-4e6c-a7e5-34f264b01212.htm" />
-  <HelpTOCNode Id="72a76f5e-16c9-4f24-958e-3a2f555e3652" Title="Data Caching Build Components" Url="html/3a1c4bf1-8ecf-4ab3-8010-277bed8d3819.htm" HasChildren="true" />
+  <HelpTOCNode Title="Data Caching Build Components" Url="html/3a1c4bf1-8ecf-4ab3-8010-277bed8d3819.htm" HasChildren="true" />
   <HelpTOCNode Title="Creating a BuildAssembler Build Component" Url="html/e6d18448-2459-46f1-bbdc-a7db415f2bda.htm" />
   <HelpTOCNode Title="Creating a Syntax Filter Generator Component" Url="html/5e80d139-811c-48ed-9b52-dcd8a3f5aef3.htm" />
 </HelpTOCNode>

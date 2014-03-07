@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="bc9e48db-3c1d-4124-ac5d-c98fbb7cc2a3" Title="TokenEditorWindow Methods" Url="html/7286644c-c025-3cf1-995e-14c0b9d6f056.htm">
-  <HelpTOCNode Id="e84056ae-05aa-4e1a-b5b6-027fed1383cf" Title="Dispose Method " Url="html/7f5a9b10-e14c-f7ee-9240-f23dfeecd8a8.htm" HasChildren="true" />
+<HelpTOCNode Title="TokenEditorWindow Methods" Url="html/7286644c-c025-3cf1-995e-14c0b9d6f056.htm">
+  <HelpTOCNode Title="Dispose Method " Url="html/7f5a9b10-e14c-f7ee-9240-f23dfeecd8a8.htm" HasChildren="true" />
   <HelpTOCNode Title="GetPersistString Method " Url="html/1ff09fa4-2c1b-229e-4ae5-cc415d9c7941.htm" />
   <HelpTOCNode Title="OnClosing Method " Url="html/e8928ddf-c403-b5df-b524-4235b7c34e96.htm" />
-  <HelpTOCNode Id="4c68ebfc-f96e-4347-af5b-786419b08e4f" Title="Save Method " Url="html/effb3458-f012-8e20-ea77-0025a23eb93c.htm" HasChildren="true" />
+  <HelpTOCNode Title="Save Method " Url="html/effb3458-f012-8e20-ea77-0025a23eb93c.htm" HasChildren="true" />
   <HelpTOCNode Title="SaveAs Method " Url="html/504b52e2-b91f-076c-20ac-21ef91cdc14a.htm" />
 </HelpTOCNode>

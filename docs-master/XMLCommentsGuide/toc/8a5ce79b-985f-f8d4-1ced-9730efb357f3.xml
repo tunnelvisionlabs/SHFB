@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="60e34ca2-75e9-4441-98c4-1acfec7f4fe6" Title="SampleClass Class" Url="html/8a5ce79b-985f-f8d4-1ced-9730efb357f3.htm">
-  <HelpTOCNode Id="3f03ed55-f14b-4f85-a158-7ea04be07099" Title="SampleClass Methods" Url="html/1917ef9e-4174-1622-5eb8-ef9f2f0d98ed.htm" HasChildren="true" />
-  <HelpTOCNode Id="2aad9b1e-3c15-4ca4-b3c6-0595f77ab373" Title="SampleClass Operators" Url="html/58f2bcca-4700-dcee-b5c3-02ca46b9b05b.htm" HasChildren="true" />
-  <HelpTOCNode Id="66991dde-0fdc-40fc-a866-99a6e2458963" Title="SampleClass Properties" Url="html/e03a670b-e7f6-9d3b-5e7b-59cfa3ef73bb.htm" HasChildren="true" />
-  <HelpTOCNode Id="a7d8c5ee-b4ea-42c8-ac9f-28244d639804" Title="SampleClass Events" Url="html/ae011e32-e8f7-8199-b733-c006ea147a14.htm" HasChildren="true" />
+<HelpTOCNode Title="SampleClass Class" Url="html/8a5ce79b-985f-f8d4-1ced-9730efb357f3.htm">
+  <HelpTOCNode Title="SampleClass Methods" Url="html/1917ef9e-4174-1622-5eb8-ef9f2f0d98ed.htm" HasChildren="true" />
+  <HelpTOCNode Title="SampleClass Operators" Url="html/58f2bcca-4700-dcee-b5c3-02ca46b9b05b.htm" HasChildren="true" />
+  <HelpTOCNode Title="SampleClass Properties" Url="html/e03a670b-e7f6-9d3b-5e7b-59cfa3ef73bb.htm" HasChildren="true" />
+  <HelpTOCNode Title="SampleClass Events" Url="html/ae011e32-e8f7-8199-b733-c006ea147a14.htm" HasChildren="true" />
 </HelpTOCNode>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="062d0d79-6643-4d16-ad45-0f43b75107de" Title="FolderPath Class" Url="html/d95efe10-f0ca-093e-2f94-c72887066393.htm">
-  <HelpTOCNode Id="3e172ea8-7c6b-4f3e-93a6-03f4a172e039" Title="FolderPath Constructor " Url="html/d0976240-b0d1-fc20-5765-ebb27a05c1f7.htm" HasChildren="true" />
-  <HelpTOCNode Id="598eeb9a-89fb-4c03-a453-eaab54f1d92f" Title="FolderPath Methods" Url="html/651f3eb1-f2ea-bfa6-f93f-a05ec875cf47.htm" HasChildren="true" />
-  <HelpTOCNode Id="a8a44780-b8c9-4788-9670-02fabb037239" Title="FolderPath Properties" Url="html/78eef360-b1da-5502-1979-e75b11ec5ffd.htm" HasChildren="true" />
+<HelpTOCNode Title="FolderPath Class" Url="html/d95efe10-f0ca-093e-2f94-c72887066393.htm">
+  <HelpTOCNode Title="FolderPath Constructor " Url="html/d0976240-b0d1-fc20-5765-ebb27a05c1f7.htm" HasChildren="true" />
+  <HelpTOCNode Title="FolderPath Methods" Url="html/651f3eb1-f2ea-bfa6-f93f-a05ec875cf47.htm" HasChildren="true" />
+  <HelpTOCNode Title="FolderPath Properties" Url="html/78eef360-b1da-5502-1979-e75b11ec5ffd.htm" HasChildren="true" />
   <HelpTOCNode Title="FolderPath Events" Url="html/532c5f40-d9c6-fe81-1ab1-54f3ff64d3e6.htm" />
 </HelpTOCNode>

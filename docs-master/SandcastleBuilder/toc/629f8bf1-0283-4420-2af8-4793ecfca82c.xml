@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="6d3cd838-c031-4b16-b65f-ac9dab75142a" Title="SqlIndexedCache Methods" Url="html/629f8bf1-0283-4420-2af8-4793ecfca82c.htm">
+<HelpTOCNode Title="SqlIndexedCache Methods" Url="html/629f8bf1-0283-4420-2af8-4793ecfca82c.htm">
   <HelpTOCNode Title="AddDocuments Method " Url="html/846fde0b-bbbe-b595-f48e-e9aa663f226d.htm" />
-  <HelpTOCNode Id="1b2e28f3-27e8-48dd-97f7-0d4567680557" Title="Dispose Method " Url="html/4447ce74-b834-10c6-5a75-f1030173a108.htm" HasChildren="true" />
+  <HelpTOCNode Title="Dispose Method " Url="html/4447ce74-b834-10c6-5a75-f1030173a108.htm" HasChildren="true" />
   <HelpTOCNode Title="ReportCacheStatistics Method " Url="html/bde0c8e8-24ab-3505-1f46-2cdc3fe20e87.htm" />
 </HelpTOCNode>

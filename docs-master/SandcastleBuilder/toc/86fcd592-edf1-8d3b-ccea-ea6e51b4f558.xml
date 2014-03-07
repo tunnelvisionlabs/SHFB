@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="f994f825-f47b-4b92-bbfb-d12843909fff" Title="TopicEditorWindow Methods" Url="html/86fcd592-edf1-8d3b-ccea-ea6e51b4f558.htm">
-  <HelpTOCNode Id="e5124c16-5999-499f-bcdf-ddd7cc9b1407" Title="Dispose Method " Url="html/c0cf51fe-cd8e-afdf-767d-563ee1b5a48b.htm" HasChildren="true" />
+<HelpTOCNode Title="TopicEditorWindow Methods" Url="html/86fcd592-edf1-8d3b-ccea-ea6e51b4f558.htm">
+  <HelpTOCNode Title="Dispose Method " Url="html/c0cf51fe-cd8e-afdf-767d-563ee1b5a48b.htm" HasChildren="true" />
   <HelpTOCNode Title="FindText Method " Url="html/f26067a7-4b70-c91e-c0b4-d726b504b985.htm" />
   <HelpTOCNode Title="GetAllText Method " Url="html/00f4940b-b305-e1c2-6589-e3af7381c1a0.htm" />
   <HelpTOCNode Title="GetPersistString Method " Url="html/327eb588-4d57-758c-14a5-e8bd1da73ed7.htm" />
@@ -10,7 +10,7 @@
   <HelpTOCNode Title="ReplaceAll Method " Url="html/dd280ede-53b3-a181-607f-bf7afd7cc4ef.htm" />
   <HelpTOCNode Title="ReplaceText Method " Url="html/f0233ce6-c19b-c705-bda7-2f099a31aa9f.htm" />
   <HelpTOCNode Title="ReplaceTextAt Method " Url="html/222bbf5a-5581-5f03-52ed-2c42aa4912ba.htm" />
-  <HelpTOCNode Id="ab1e2073-067a-4918-9b85-50213376c6e4" Title="Save Method " Url="html/9bc008c0-405d-0a87-c470-d644a62bbef4.htm" HasChildren="true" />
+  <HelpTOCNode Title="Save Method " Url="html/9bc008c0-405d-0a87-c470-d644a62bbef4.htm" HasChildren="true" />
   <HelpTOCNode Title="SaveAs Method " Url="html/a4ad0870-bc85-8a16-83e6-bcb45374d57c.htm" />
   <HelpTOCNode Title="UpdateFont Method " Url="html/32173532-862d-3082-b45f-0739cc5d9c71.htm" />
 </HelpTOCNode>

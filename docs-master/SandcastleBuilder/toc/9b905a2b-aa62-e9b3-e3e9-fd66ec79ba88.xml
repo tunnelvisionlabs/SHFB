@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="e7dfb38b-8d0d-4cdc-87aa-a8a98a8653e1" Title="MSHelpAttr Class" Url="html/9b905a2b-aa62-e9b3-e3e9-fd66ec79ba88.htm">
+<HelpTOCNode Title="MSHelpAttr Class" Url="html/9b905a2b-aa62-e9b3-e3e9-fd66ec79ba88.htm">
   <HelpTOCNode Title="MSHelpAttr Constructor " Url="html/f5905707-982d-b299-bc5b-ec667cc37d9a.htm" />
-  <HelpTOCNode Id="e0d70707-16aa-490f-bb80-04e72d9a5565" Title="MSHelpAttr Methods" Url="html/80327f3b-516c-5cd8-0eb5-971ac6e9eee5.htm" HasChildren="true" />
-  <HelpTOCNode Id="1db43183-ba42-49bc-8c43-f8162bb6345b" Title="MSHelpAttr Properties" Url="html/c94b9bfb-7e51-70ef-01fb-af2974a8f050.htm" HasChildren="true" />
-  <HelpTOCNode Id="7013cfad-ee1b-4f86-9c7d-3a64b5abe464" Title="MSHelpAttr Events" Url="html/733a2b95-f0a3-508a-43ca-dca1b30eec7c.htm" HasChildren="true" />
+  <HelpTOCNode Title="MSHelpAttr Methods" Url="html/80327f3b-516c-5cd8-0eb5-971ac6e9eee5.htm" HasChildren="true" />
+  <HelpTOCNode Title="MSHelpAttr Properties" Url="html/c94b9bfb-7e51-70ef-01fb-af2974a8f050.htm" HasChildren="true" />
+  <HelpTOCNode Title="MSHelpAttr Events" Url="html/733a2b95-f0a3-508a-43ca-dca1b30eec7c.htm" HasChildren="true" />
 </HelpTOCNode>

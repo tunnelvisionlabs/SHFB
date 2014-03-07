@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="fcd8e05b-1a44-4e07-99c7-cdb000305f94" Title="TransformArgumentsPageControl Class" Url="html/2e4c3015-f75b-a56f-1772-1974cd2ac085.htm">
+<HelpTOCNode Title="TransformArgumentsPageControl Class" Url="html/2e4c3015-f75b-a56f-1772-1974cd2ac085.htm">
   <HelpTOCNode Title="TransformArgumentsPageControl Constructor " Url="html/8a15f710-36e7-bfc1-1980-9768edd37c5f.htm" />
-  <HelpTOCNode Id="8207d287-0a89-49e9-a3fd-5ce1140ebda0" Title="TransformArgumentsPageControl Methods" Url="html/dba50f43-5599-8721-cf1f-55e0a8a2ab97.htm" HasChildren="true" />
-  <HelpTOCNode Id="84875792-0933-46a7-bdaa-7d9d7e5cdbe0" Title="TransformArgumentsPageControl Properties" Url="html/1a88f7c3-e151-84ac-1c22-aaa490be3847.htm" HasChildren="true" />
+  <HelpTOCNode Title="TransformArgumentsPageControl Methods" Url="html/dba50f43-5599-8721-cf1f-55e0a8a2ab97.htm" HasChildren="true" />
+  <HelpTOCNode Title="TransformArgumentsPageControl Properties" Url="html/1a88f7c3-e151-84ac-1c22-aaa490be3847.htm" HasChildren="true" />
   <HelpTOCNode Title="TransformArgumentsPageControl Events" Url="html/4cbfca7d-3bff-ffdc-01f0-10babe47fc28.htm" />
 </HelpTOCNode>

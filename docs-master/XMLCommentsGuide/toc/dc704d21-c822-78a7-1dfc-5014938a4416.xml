@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="d95415df-af39-42af-8202-e7c9fd3ff4a6" Title="AttachedEventsAndPropertiesTest Class" Url="html/dc704d21-c822-78a7-1dfc-5014938a4416.htm">
-  <HelpTOCNode Id="3e06ccb1-0a9b-4c08-a6c2-11fbe12b3859" Title="AttachedEventsAndPropertiesTest Fields" Url="html/8ad14ec9-36b7-9f01-2e61-2c2d5d0e273a.htm" HasChildren="true" />
-  <HelpTOCNode Id="4b8cefe9-2211-4959-a9b7-9cb4fbed2d78" Title="AttachedEventsAndPropertiesTest Methods" Url="html/24db3af7-d1d7-cd31-e812-c03f6fc54920.htm" HasChildren="true" />
-  <HelpTOCNode Id="3d080154-c628-45f3-a64c-b0947f5c9aef" Title="AttachedEventsAndPropertiesTest Attached Properties" Url="html/179f134a-99eb-f30c-730c-bf1173060b60.htm" HasChildren="true" />
-  <HelpTOCNode Id="b1f7aff1-e2e1-4147-a0dc-4ce442736820" Title="AttachedEventsAndPropertiesTest Attached Events" Url="html/6626efaf-251d-1866-08ae-381861f1799c.htm" HasChildren="true" />
+<HelpTOCNode Title="AttachedEventsAndPropertiesTest Class" Url="html/dc704d21-c822-78a7-1dfc-5014938a4416.htm">
+  <HelpTOCNode Title="AttachedEventsAndPropertiesTest Fields" Url="html/8ad14ec9-36b7-9f01-2e61-2c2d5d0e273a.htm" HasChildren="true" />
+  <HelpTOCNode Title="AttachedEventsAndPropertiesTest Methods" Url="html/24db3af7-d1d7-cd31-e812-c03f6fc54920.htm" HasChildren="true" />
+  <HelpTOCNode Title="AttachedEventsAndPropertiesTest Attached Properties" Url="html/179f134a-99eb-f30c-730c-bf1173060b60.htm" HasChildren="true" />
+  <HelpTOCNode Title="AttachedEventsAndPropertiesTest Attached Events" Url="html/6626efaf-251d-1866-08ae-381861f1799c.htm" HasChildren="true" />
 </HelpTOCNode>

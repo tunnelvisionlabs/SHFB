@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="8b5dcb92-e8af-4e41-8e89-515d2719b64b" Title="SandcastleBuilder.WPF.Maml Namespace" Url="html/8fc9dc76-9def-c113-8779-ebf2202d82bd.htm">
-  <HelpTOCNode Id="c352ebd2-a61f-4bff-b070-0ef90d8cb02c" Title="MamlToFlowDocumentConverter Class" Url="html/7c8e055a-8b45-b2bd-2d6f-fb41b46ee081.htm" HasChildren="true" />
-  <HelpTOCNode Id="1e26a755-4271-49bc-8163-fad60e88b3d0" Title="NamedStyle Class" Url="html/03c8a213-541f-8c63-8463-706f12189c92.htm" HasChildren="true" />
+<HelpTOCNode Title="SandcastleBuilder.WPF.Maml Namespace" Url="html/8fc9dc76-9def-c113-8779-ebf2202d82bd.htm">
+  <HelpTOCNode Title="MamlToFlowDocumentConverter Class" Url="html/7c8e055a-8b45-b2bd-2d6f-fb41b46ee081.htm" HasChildren="true" />
+  <HelpTOCNode Title="NamedStyle Class" Url="html/03c8a213-541f-8c63-8463-706f12189c92.htm" HasChildren="true" />
 </HelpTOCNode>

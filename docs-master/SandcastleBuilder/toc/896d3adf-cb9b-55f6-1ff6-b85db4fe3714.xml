@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="8f1849a1-a0cf-484e-9487-77eb7f36a7be" Title="ConvertToMSBuildFormat Methods" Url="html/896d3adf-cb9b-55f6-1ff6-b85db4fe3714.htm">
+<HelpTOCNode Title="ConvertToMSBuildFormat Methods" Url="html/896d3adf-cb9b-55f6-1ff6-b85db4fe3714.htm">
   <HelpTOCNode Title="ConvertProject Method " Url="html/2eecb4d8-8e41-0e2a-3cb8-20417469473e.htm" />
   <HelpTOCNode Title="CreateFolderItems Method " Url="html/719ba33a-b815-71b3-f5b9-da718d7ce72a.htm" />
-  <HelpTOCNode Id="dda08efe-d4d1-4e90-b9a1-2f5d41e9a0b6" Title="Dispose Method " Url="html/dd1be431-2cd8-5d5f-641c-c40e7f27ca1c.htm" HasChildren="true" />
+  <HelpTOCNode Title="Dispose Method " Url="html/dd1be431-2cd8-5d5f-641c-c40e7f27ca1c.htm" HasChildren="true" />
   <HelpTOCNode Title="ExpandWildcard Method " Url="html/85c16355-51ba-c160-d691-1b7e40060603.htm" />
   <HelpTOCNode Title="Finalize Method " Url="html/e76ae776-3d17-c8ef-6d0f-d6add867ce20.htm" />
   <HelpTOCNode Title="FullPath Method " Url="html/8caa65c6-c692-3330-94e8-83708c781b91.htm" />

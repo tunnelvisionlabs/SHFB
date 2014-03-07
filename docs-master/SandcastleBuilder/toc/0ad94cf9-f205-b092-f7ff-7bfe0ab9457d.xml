@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="992e8037-2886-4cf6-a912-fedd85b5dfec" Title="BuildProcess Methods" Url="html/0ad94cf9-f205-b092-f7ff-7bfe0ab9457d.htm">
+<HelpTOCNode Title="BuildProcess Methods" Url="html/0ad94cf9-f205-b092-f7ff-7bfe0ab9457d.htm">
   <HelpTOCNode Title="ApplyManualApiFilter Method " Url="html/7d634bc2-d418-70ae-7c28-7bfaa880cdb6.htm" />
   <HelpTOCNode Title="ApplyVisibilityProperties Method " Url="html/8449ee96-018f-94f9-db06-ec569d22ec52.htm" />
   <HelpTOCNode Title="Build Method " Url="html/ec734528-f9da-ebb0-0651-d6a1e5733830.htm" />
@@ -13,7 +13,7 @@
   <HelpTOCNode Title="OnBuildProgress Method " Url="html/8611b218-1e91-4621-b1b9-3b4f8e887a68.htm" />
   <HelpTOCNode Title="OnBuildStepChanged Method " Url="html/8e417369-18f7-49de-ad50-017bd956f140.htm" />
   <HelpTOCNode Title="ReadWithEncoding Method " Url="html/8b9a50b6-d13b-3974-42dd-390ffd7e07e8.htm" />
-  <HelpTOCNode Id="a3c4d508-260d-42b3-a0d1-9ffe5be3f889" Title="ReportProgress Method " Url="html/37fa6ed1-2033-31b6-15a9-203368f6c61b.htm" HasChildren="true" />
+  <HelpTOCNode Title="ReportProgress Method " Url="html/37fa6ed1-2033-31b6-15a9-203368f6c61b.htm" HasChildren="true" />
   <HelpTOCNode Title="ReportWarning Method " Url="html/3f7474b3-ba7a-7a70-3d9f-6b0f77d2ec8f.htm" />
   <HelpTOCNode Title="RunProcess Method " Url="html/fcfa42cc-b26d-1716-c3c7-97515b0967ae.htm" />
   <HelpTOCNode Title="TransformTemplate Method " Url="html/85c225d6-d35b-d4b9-b608-8f10315e8e53.htm" />

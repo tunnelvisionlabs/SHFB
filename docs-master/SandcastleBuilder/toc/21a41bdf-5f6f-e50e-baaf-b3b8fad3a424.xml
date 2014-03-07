@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="c47fb1a5-9ca3-43f3-9470-6277b98d535c" Title="SqlTargetDictionary Methods" Url="html/21a41bdf-5f6f-e50e-baaf-b3b8fad3a424.htm">
-  <HelpTOCNode Id="0c7266ed-2a6a-459b-a93b-8f72d86981e1" Title="Add Method " Url="html/69d1c2ec-0f27-72f9-3445-291bd89c7bb4.htm" HasChildren="true" />
+<HelpTOCNode Title="SqlTargetDictionary Methods" Url="html/21a41bdf-5f6f-e50e-baaf-b3b8fad3a424.htm">
+  <HelpTOCNode Title="Add Method " Url="html/69d1c2ec-0f27-72f9-3445-291bd89c7bb4.htm" HasChildren="true" />
   <HelpTOCNode Title="Clear Method " Url="html/96a0a9a7-21ac-78c8-6dfd-8da6d2a44b29.htm" />
   <HelpTOCNode Title="Contains Method " Url="html/37e2d7f2-3ea6-c97a-4721-9769d99e8d8d.htm" />
   <HelpTOCNode Title="ContainsKey Method " Url="html/87101303-fb2e-7600-06a6-0c13035902b8.htm" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="f30716f8-ff7c-4941-84ca-f309e2eec6f6" Title="SandcastleBuilder.WPF.Commands Namespace" Url="html/c02822d3-bddc-aca5-fccc-78334053e01a.htm">
-  <HelpTOCNode Id="8b0cd842-a8ab-482a-84b7-dc176886719f" Title="EditorCommands Class" Url="html/8959de4e-b25b-3fbd-0ac4-e2ea0fb1a1fc.htm" HasChildren="true" />
-  <HelpTOCNode Id="82e9fc91-f42a-469a-84dc-2efbf5663624" Title="ProjectCommands Class" Url="html/91848d27-5e03-6e91-4f5c-3773365618f0.htm" HasChildren="true" />
+<HelpTOCNode Title="SandcastleBuilder.WPF.Commands Namespace" Url="html/c02822d3-bddc-aca5-fccc-78334053e01a.htm">
+  <HelpTOCNode Title="EditorCommands Class" Url="html/8959de4e-b25b-3fbd-0ac4-e2ea0fb1a1fc.htm" HasChildren="true" />
+  <HelpTOCNode Title="ProjectCommands Class" Url="html/91848d27-5e03-6e91-4f5c-3773365618f0.htm" HasChildren="true" />
 </HelpTOCNode>

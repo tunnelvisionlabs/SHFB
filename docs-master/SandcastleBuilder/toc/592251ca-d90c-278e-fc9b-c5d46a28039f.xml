@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="f6d90da6-4ba5-4bea-a2c5-1e98f65a135b" Title="SandcastleBuilder.Components Namespace" Url="html/592251ca-d90c-278e-fc9b-c5d46a28039f.htm">
-  <HelpTOCNode Id="5327aa88-df32-4038-b077-e2c219a9026c" Title="CodeBlockComponent Class" Url="html/644ae5c2-b278-362c-39b8-d12caf6be169.htm" HasChildren="true" />
-  <HelpTOCNode Id="bdf60820-f054-4680-aeb8-eb0c9da6f104" Title="CodeBlockComponent.Factory Class" Url="html/36b9a838-3a21-3c43-7d32-be05007dac10.htm" HasChildren="true" />
-  <HelpTOCNode Id="d44989f2-6d6e-4d7e-a8e4-4b9fb4f8b1b2" Title="ESentCopyFromIndexComponent Class" Url="html/b5b39642-9936-b965-fc7a-5366987f7df9.htm" HasChildren="true" />
-  <HelpTOCNode Id="64a54078-a2af-499e-ade0-9eb6b60e7177" Title="ESentCopyFromIndexComponent.ESentCommentsIndexDataComponentFactory Class" Url="html/daaa6782-ec7a-9586-5f92-b04018f33c45.htm" HasChildren="true" />
-  <HelpTOCNode Id="c44f858f-b542-4f1d-b233-3f13d179cb76" Title="ESentCopyFromIndexComponent.ESentReflectionIndexDataComponentFactory Class" Url="html/43ef2e70-f706-a166-0d3f-d4cdd7f98953.htm" HasChildren="true" />
-  <HelpTOCNode Id="39768a4f-432d-40ae-bdf6-de088ace29f2" Title="ESentResolveReferenceLinksComponent Class" Url="html/2767faf4-fe5e-1f72-4643-b055017ffb7f.htm" HasChildren="true" />
-  <HelpTOCNode Id="f17b8e6c-e02e-4dca-9d6d-858e77c469b0" Title="ESentResolveReferenceLinksComponent.ESentResolveReferenceLinksComponentFactory Class" Url="html/1ac464b4-c8fd-7689-1f57-c5750919b9a4.htm" HasChildren="true" />
-  <HelpTOCNode Id="2a293a60-b7ef-463a-b0af-ccd2da4a5f37" Title="MultiFormatOutputComponent Class" Url="html/c310de59-fa97-eadd-77b7-e17d75cbae78.htm" HasChildren="true" />
-  <HelpTOCNode Id="064af039-7b52-4881-a099-63ee4398ef8b" Title="MultiFormatOutputComponent.Factory Class" Url="html/05d4b2a6-c4ca-ee58-7224-a80ca2a523b4.htm" HasChildren="true" />
-  <HelpTOCNode Id="ad433810-2055-4f96-8159-5de138fe3781" Title="SqlCopyFromIndexComponent Class" Url="html/d986fd64-c6f1-fc89-3d0d-02c1002f4049.htm" HasChildren="true" />
-  <HelpTOCNode Id="1cefdb61-d336-404d-af1b-b548a5c0014e" Title="SqlCopyFromIndexComponent.SqlCommentsIndexDataComponentFactory Class" Url="html/664aa742-5854-72d6-b95a-0807d5d171ce.htm" HasChildren="true" />
-  <HelpTOCNode Id="65d964bd-4082-4363-8215-99b5a4139c74" Title="SqlCopyFromIndexComponent.SqlReflectionIndexDataComponentFactory Class" Url="html/678d9e02-51a6-31d4-bd43-4c4dcb6dbe9b.htm" HasChildren="true" />
-  <HelpTOCNode Id="504de408-1ec3-4217-b1d1-421e218a0017" Title="SqlDictionary(TValue) Class" Url="html/fc8d1cdb-4c0c-dffc-0b0b-efbf9595ec83.htm" HasChildren="true" />
-  <HelpTOCNode Id="4d75763e-8e0a-481d-80a4-bb1667d2e1c4" Title="SqlResolveReferenceLinksComponent Class" Url="html/fb835390-e431-6723-828f-88434057ef50.htm" HasChildren="true" />
-  <HelpTOCNode Id="f10672db-f3f0-47ba-a810-678c0fc9e10f" Title="SqlResolveReferenceLinksComponent.SqlResolveReferenceLinksComponentFactory Class" Url="html/3d526c54-e144-9d9b-a277-19ad9b31b642.htm" HasChildren="true" />
+<HelpTOCNode Title="SandcastleBuilder.Components Namespace" Url="html/592251ca-d90c-278e-fc9b-c5d46a28039f.htm">
+  <HelpTOCNode Title="CodeBlockComponent Class" Url="html/644ae5c2-b278-362c-39b8-d12caf6be169.htm" HasChildren="true" />
+  <HelpTOCNode Title="CodeBlockComponent.Factory Class" Url="html/36b9a838-3a21-3c43-7d32-be05007dac10.htm" HasChildren="true" />
+  <HelpTOCNode Title="ESentCopyFromIndexComponent Class" Url="html/b5b39642-9936-b965-fc7a-5366987f7df9.htm" HasChildren="true" />
+  <HelpTOCNode Title="ESentCopyFromIndexComponent.ESentCommentsIndexDataComponentFactory Class" Url="html/daaa6782-ec7a-9586-5f92-b04018f33c45.htm" HasChildren="true" />
+  <HelpTOCNode Title="ESentCopyFromIndexComponent.ESentReflectionIndexDataComponentFactory Class" Url="html/43ef2e70-f706-a166-0d3f-d4cdd7f98953.htm" HasChildren="true" />
+  <HelpTOCNode Title="ESentResolveReferenceLinksComponent Class" Url="html/2767faf4-fe5e-1f72-4643-b055017ffb7f.htm" HasChildren="true" />
+  <HelpTOCNode Title="ESentResolveReferenceLinksComponent.ESentResolveReferenceLinksComponentFactory Class" Url="html/1ac464b4-c8fd-7689-1f57-c5750919b9a4.htm" HasChildren="true" />
+  <HelpTOCNode Title="MultiFormatOutputComponent Class" Url="html/c310de59-fa97-eadd-77b7-e17d75cbae78.htm" HasChildren="true" />
+  <HelpTOCNode Title="MultiFormatOutputComponent.Factory Class" Url="html/05d4b2a6-c4ca-ee58-7224-a80ca2a523b4.htm" HasChildren="true" />
+  <HelpTOCNode Title="SqlCopyFromIndexComponent Class" Url="html/d986fd64-c6f1-fc89-3d0d-02c1002f4049.htm" HasChildren="true" />
+  <HelpTOCNode Title="SqlCopyFromIndexComponent.SqlCommentsIndexDataComponentFactory Class" Url="html/664aa742-5854-72d6-b95a-0807d5d171ce.htm" HasChildren="true" />
+  <HelpTOCNode Title="SqlCopyFromIndexComponent.SqlReflectionIndexDataComponentFactory Class" Url="html/678d9e02-51a6-31d4-bd43-4c4dcb6dbe9b.htm" HasChildren="true" />
+  <HelpTOCNode Title="SqlDictionary(TValue) Class" Url="html/fc8d1cdb-4c0c-dffc-0b0b-efbf9595ec83.htm" HasChildren="true" />
+  <HelpTOCNode Title="SqlResolveReferenceLinksComponent Class" Url="html/fb835390-e431-6723-828f-88434057ef50.htm" HasChildren="true" />
+  <HelpTOCNode Title="SqlResolveReferenceLinksComponent.SqlResolveReferenceLinksComponentFactory Class" Url="html/3d526c54-e144-9d9b-a277-19ad9b31b642.htm" HasChildren="true" />
 </HelpTOCNode>

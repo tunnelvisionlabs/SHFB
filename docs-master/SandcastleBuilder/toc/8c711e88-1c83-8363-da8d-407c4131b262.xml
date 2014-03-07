@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="6e81f51c-c73a-4707-9212-cd342d17679c" Title="OutputWindow Methods" Url="html/8c711e88-1c83-8363-da8d-407c4131b262.htm">
+<HelpTOCNode Title="OutputWindow Methods" Url="html/8c711e88-1c83-8363-da8d-407c4131b262.htm">
   <HelpTOCNode Title="AppendText Method " Url="html/e16e1750-4472-5277-46ca-510d7369b39e.htm" />
-  <HelpTOCNode Id="3fd278eb-0105-4324-a685-d290b5e84888" Title="Dispose Method " Url="html/332445ad-0b58-9374-48c0-d87d36a8e561.htm" HasChildren="true" />
+  <HelpTOCNode Title="Dispose Method " Url="html/332445ad-0b58-9374-48c0-d87d36a8e561.htm" HasChildren="true" />
   <HelpTOCNode Title="OnFormClosing Method " Url="html/c99961de-44e7-8fba-ab00-564ebfa17b64.htm" />
   <HelpTOCNode Title="OnVisibleChanged Method " Url="html/15bdde0c-422c-10bd-8f67-727a8ce7fe3b.htm" />
   <HelpTOCNode Title="ResetLogViewer Method " Url="html/cf24abb5-6810-2c62-458b-afa10d7db9a5.htm" />

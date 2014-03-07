@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="6e338595-f166-4da2-82cb-75b449484456" Title="GotoLineDlg Class" Url="html/b4dea1b1-0a49-3bae-9a6e-74c90f6de6e0.htm">
+<HelpTOCNode Title="GotoLineDlg Class" Url="html/b4dea1b1-0a49-3bae-9a6e-74c90f6de6e0.htm">
   <HelpTOCNode Title="GotoLineDlg Constructor " Url="html/16dced65-d351-8f4e-bc5a-a043af4c5ad8.htm" />
-  <HelpTOCNode Id="3ada1595-0d47-4486-b940-701c766605a3" Title="GotoLineDlg Methods" Url="html/1445ec50-f467-a04f-f00a-1fd6166c08a9.htm" HasChildren="true" />
-  <HelpTOCNode Id="f9a1e708-77d3-4498-a37b-2fa176e3ea70" Title="GotoLineDlg Properties" Url="html/a3531037-018a-32c0-b93c-68b22b99376a.htm" HasChildren="true" />
+  <HelpTOCNode Title="GotoLineDlg Methods" Url="html/1445ec50-f467-a04f-f00a-1fd6166c08a9.htm" HasChildren="true" />
+  <HelpTOCNode Title="GotoLineDlg Properties" Url="html/a3531037-018a-32c0-b93c-68b22b99376a.htm" HasChildren="true" />
   <HelpTOCNode Title="GotoLineDlg Events" Url="html/2d931c12-40af-69b6-0906-ec42cc33b4da.htm" />
 </HelpTOCNode>

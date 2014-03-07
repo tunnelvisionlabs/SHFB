@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="5168a2f5-fae5-4661-b18c-5e119a065d01" Title="RefreshableItemListBox Class" Url="html/21fab599-6bcd-c643-6dc3-a4415db9449f.htm">
+<HelpTOCNode Title="RefreshableItemListBox Class" Url="html/21fab599-6bcd-c643-6dc3-a4415db9449f.htm">
   <HelpTOCNode Title="RefreshableItemListBox Constructor " Url="html/edbe943d-8b00-dd5e-6696-91cfb93b76ba.htm" />
-  <HelpTOCNode Id="3a4798f0-9c59-4c0b-a672-f29bc30f9d32" Title="RefreshableItemListBox Methods" Url="html/84fb0cd5-3ac7-147f-acb8-ddd6582da423.htm" HasChildren="true" />
+  <HelpTOCNode Title="RefreshableItemListBox Methods" Url="html/84fb0cd5-3ac7-147f-acb8-ddd6582da423.htm" HasChildren="true" />
   <HelpTOCNode Title="RefreshableItemListBox Properties" Url="html/32695ed2-a2ea-f18b-d4c1-c6d8e2f38caf.htm" />
   <HelpTOCNode Title="RefreshableItemListBox Events" Url="html/e2b5869d-8ebf-d0a6-4fe4-e6b7b4f0efe2.htm" />
 </HelpTOCNode>

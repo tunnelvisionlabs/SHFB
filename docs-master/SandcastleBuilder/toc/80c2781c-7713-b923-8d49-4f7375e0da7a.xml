@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="91f13e4e-c8c2-4181-a260-9021d9836cdc" Title="ContentLayoutEditorControl Class" Url="html/80c2781c-7713-b923-8d49-4f7375e0da7a.htm">
+<HelpTOCNode Title="ContentLayoutEditorControl Class" Url="html/80c2781c-7713-b923-8d49-4f7375e0da7a.htm">
   <HelpTOCNode Title="ContentLayoutEditorControl Constructor " Url="html/ad988ce6-ca12-6891-c1d4-67b859650255.htm" />
-  <HelpTOCNode Id="d67d773a-b7cb-4e37-a056-9f575a0fcf82" Title="ContentLayoutEditorControl Fields" Url="html/e06275ea-4ba7-7938-bb28-547491aa76ac.htm" HasChildren="true" />
-  <HelpTOCNode Id="0da60f8d-1cb8-4d15-b1dd-23e08c238057" Title="ContentLayoutEditorControl Methods" Url="html/db6ee2e1-e7d4-5cfe-4045-615d7cdcd7d4.htm" HasChildren="true" />
-  <HelpTOCNode Id="8b592e82-8863-4645-b97a-0f6c00b93a47" Title="ContentLayoutEditorControl Properties" Url="html/96513870-361b-11a8-c4b0-60e319766274.htm" HasChildren="true" />
-  <HelpTOCNode Id="956361cf-9741-4c77-9f6b-be2242b2a2b7" Title="ContentLayoutEditorControl Events" Url="html/c4022af3-c3d9-2259-d2a8-f23c63001c6f.htm" HasChildren="true" />
+  <HelpTOCNode Title="ContentLayoutEditorControl Fields" Url="html/e06275ea-4ba7-7938-bb28-547491aa76ac.htm" HasChildren="true" />
+  <HelpTOCNode Title="ContentLayoutEditorControl Methods" Url="html/db6ee2e1-e7d4-5cfe-4045-615d7cdcd7d4.htm" HasChildren="true" />
+  <HelpTOCNode Title="ContentLayoutEditorControl Properties" Url="html/96513870-361b-11a8-c4b0-60e319766274.htm" HasChildren="true" />
+  <HelpTOCNode Title="ContentLayoutEditorControl Events" Url="html/c4022af3-c3d9-2259-d2a8-f23c63001c6f.htm" HasChildren="true" />
 </HelpTOCNode>

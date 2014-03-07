@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="1984b3e2-e512-4d8d-8cf7-b5a35898aa13" Title="FileContentNeededEventArgs Class" Url="html/59fabe8e-409b-8c99-331c-59db5e0fd294.htm">
+<HelpTOCNode Title="FileContentNeededEventArgs Class" Url="html/59fabe8e-409b-8c99-331c-59db5e0fd294.htm">
   <HelpTOCNode Title="FileContentNeededEventArgs Constructor " Url="html/d2d86fc2-c953-2e89-5f8d-b25be6fb18c3.htm" />
   <HelpTOCNode Title="FileContentNeededEventArgs Methods" Url="html/6aec85e2-3954-0d7e-39d7-5e12f9b7e585.htm" />
-  <HelpTOCNode Id="338e661d-ed10-4292-bf75-1f80a45294ba" Title="FileContentNeededEventArgs Properties" Url="html/51bbd095-291e-0eca-b3cd-648c05908b10.htm" HasChildren="true" />
+  <HelpTOCNode Title="FileContentNeededEventArgs Properties" Url="html/51bbd095-291e-0eca-b3cd-648c05908b10.htm" HasChildren="true" />
 </HelpTOCNode>

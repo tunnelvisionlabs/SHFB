@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="c73c4529-9e1d-451c-9051-a0675caa62cc" Title="Getting Started" Url="html/b772e00e-1705-4062-adb6-774826ce6700.htm">
+<HelpTOCNode Title="Getting Started" Url="html/b772e00e-1705-4062-adb6-774826ce6700.htm">
   <HelpTOCNode Title="Installation Instructions" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
   <HelpTOCNode Title="Sandcastle Help File Builder Overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
   <HelpTOCNode Title="Walkthrough: Enabling and Using XML Comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
   <HelpTOCNode Title="Walkthrough: Creating Your First Project" Url="html/d5dbf017-25f1-48cb-86db-90f76ee8f4d7.htm" />
-  <HelpTOCNode Id="11fc99ff-a4af-468c-a582-fe6da73fa919" Title="Project File Converters" Url="html/f68822d2-97ba-48da-a98b-46747983b4a0.htm" HasChildren="true" />
+  <HelpTOCNode Title="Project File Converters" Url="html/f68822d2-97ba-48da-a98b-46747983b4a0.htm" HasChildren="true" />
   <HelpTOCNode Title="Relative and Absolute Paths" Url="html/576b6a36-0808-4857-bec0-e6eeeae4e36b.htm" />
   <HelpTOCNode Title="The Log File" Url="html/96956ab6-fd5e-4bc7-a577-a18b0ff258ea.htm" />
-  <HelpTOCNode Id="6add0610-914b-4b95-9678-043f8f5b5c94" Title="User Preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" HasChildren="true" />
+  <HelpTOCNode Title="User Preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" HasChildren="true" />
   <HelpTOCNode Title="Special Folder Locations" Url="html/a24489fb-45d6-46f4-9eaa-9a9c4e0919b2.htm" />
   <HelpTOCNode Title="Using the &lt;inheritdoc /&gt; Tag" Url="html/79897974-ffc9-4b84-91a5-e50c66a0221d.htm" />
   <HelpTOCNode Title="Documenting WPF Attached Properties and Events" Url="html/67b9bfab-7cf3-4beb-bd88-85bcff4e8ebd.htm" />

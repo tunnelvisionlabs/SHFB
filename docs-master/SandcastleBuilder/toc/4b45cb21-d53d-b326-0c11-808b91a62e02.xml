@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="52e75320-85b6-4dde-97ca-f0b8dd665437" Title="MainForm Class" Url="html/4b45cb21-d53d-b326-0c11-808b91a62e02.htm">
+<HelpTOCNode Title="MainForm Class" Url="html/4b45cb21-d53d-b326-0c11-808b91a62e02.htm">
   <HelpTOCNode Title="MainForm Constructor " Url="html/7c38a7cb-abba-f53b-f5d2-f38c10b3055e.htm" />
-  <HelpTOCNode Id="045c805b-2a51-4668-943a-3e4e45e5cddf" Title="MainForm Methods" Url="html/8981792a-9598-18f3-2df0-08096647606d.htm" HasChildren="true" />
-  <HelpTOCNode Id="af52d612-2d99-4403-85a0-902559b8c66e" Title="MainForm Properties" Url="html/fde0f9af-15d5-a52b-84c2-c3a27df70c01.htm" HasChildren="true" />
+  <HelpTOCNode Title="MainForm Methods" Url="html/8981792a-9598-18f3-2df0-08096647606d.htm" HasChildren="true" />
+  <HelpTOCNode Title="MainForm Properties" Url="html/fde0f9af-15d5-a52b-84c2-c3a27df70c01.htm" HasChildren="true" />
   <HelpTOCNode Title="MainForm Events" Url="html/70d0de24-3eec-892b-a709-64284dd6e473.htm" />
 </HelpTOCNode>

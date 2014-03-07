@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="418c4314-489e-4fce-ad92-d5c1d0f4d659" Title="FindAndReplaceWindow Class" Url="html/334fcf59-bad2-89fc-54ff-7f6deb823124.htm">
+<HelpTOCNode Title="FindAndReplaceWindow Class" Url="html/334fcf59-bad2-89fc-54ff-7f6deb823124.htm">
   <HelpTOCNode Title="FindAndReplaceWindow Constructor " Url="html/24296650-d27f-3604-255b-a4065fd8b613.htm" />
-  <HelpTOCNode Id="f857388e-93fb-4ce7-9a65-c87f3438fb29" Title="FindAndReplaceWindow Methods" Url="html/1a9a55c9-3bf6-df3e-3fbe-f37f18ef2a3b.htm" HasChildren="true" />
-  <HelpTOCNode Id="b9dfe35b-1ae8-483f-b658-36e838972a00" Title="FindAndReplaceWindow Properties" Url="html/c07f9d21-a2c0-7095-b5d4-0c1b1ef60a21.htm" HasChildren="true" />
+  <HelpTOCNode Title="FindAndReplaceWindow Methods" Url="html/1a9a55c9-3bf6-df3e-3fbe-f37f18ef2a3b.htm" HasChildren="true" />
+  <HelpTOCNode Title="FindAndReplaceWindow Properties" Url="html/c07f9d21-a2c0-7095-b5d4-0c1b1ef60a21.htm" HasChildren="true" />
   <HelpTOCNode Title="FindAndReplaceWindow Events" Url="html/9fc6baf4-2baa-37bf-eb82-68819a945ac3.htm" />
 </HelpTOCNode>

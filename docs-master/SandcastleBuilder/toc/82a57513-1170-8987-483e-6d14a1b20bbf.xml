@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="40f00adf-29b9-454b-b83d-42f51c35de50" Title="SandcastleBuilder.Utils.Conversion Namespace" Url="html/82a57513-1170-8987-483e-6d14a1b20bbf.htm">
-  <HelpTOCNode Id="15815096-edc8-42c0-9005-0cbf704428b1" Title="ConvertConceptualContent Class" Url="html/92a747af-7514-4b6d-171b-b377075b0757.htm" HasChildren="true" />
-  <HelpTOCNode Id="3816a9f0-1c51-4c19-8f03-24b7c5405a08" Title="ConvertFromDocProject Class" Url="html/fe33ce22-dcb0-d676-e05a-5580ffc1a1d6.htm" HasChildren="true" />
-  <HelpTOCNode Id="be36adc1-1bc0-4ead-897d-507995ad4f70" Title="ConvertFromMSExampleGui Class" Url="html/1666c5ca-9477-2c21-c0ee-89298089d9d4.htm" HasChildren="true" />
-  <HelpTOCNode Id="e745ebcd-7bc0-4ab3-b770-e3f8261b80ba" Title="ConvertFromNDoc Class" Url="html/574b20de-400b-4fb1-e69c-a0dba43a57d2.htm" HasChildren="true" />
-  <HelpTOCNode Id="7af54725-b946-4a0d-af86-19e06423ac14" Title="ConvertFromSandcastleGui Class" Url="html/9e4b7318-9fc4-2a22-cea6-a3591ed5582d.htm" HasChildren="true" />
-  <HelpTOCNode Id="be1f98bd-ef75-4fb3-b950-42be4adf9fad" Title="ConvertFromShfbFile Class" Url="html/085059cd-9035-143c-aaf6-6af3e2de689d.htm" HasChildren="true" />
-  <HelpTOCNode Id="f639109e-7c75-445c-bf7c-da848d573e9d" Title="ConvertToMSBuildFormat Class" Url="html/33ff2afe-36ea-7236-949e-763750cc9f3a.htm" HasChildren="true" />
-  <HelpTOCNode Id="62c37005-4c4e-4137-8392-16caa4dafc9e" Title="NewFromOtherFormatDlg Class" Url="html/feffffcf-13b3-d08f-c7e7-7874e40db1e3.htm" HasChildren="true" />
+<HelpTOCNode Title="SandcastleBuilder.Utils.Conversion Namespace" Url="html/82a57513-1170-8987-483e-6d14a1b20bbf.htm">
+  <HelpTOCNode Title="ConvertConceptualContent Class" Url="html/92a747af-7514-4b6d-171b-b377075b0757.htm" HasChildren="true" />
+  <HelpTOCNode Title="ConvertFromDocProject Class" Url="html/fe33ce22-dcb0-d676-e05a-5580ffc1a1d6.htm" HasChildren="true" />
+  <HelpTOCNode Title="ConvertFromMSExampleGui Class" Url="html/1666c5ca-9477-2c21-c0ee-89298089d9d4.htm" HasChildren="true" />
+  <HelpTOCNode Title="ConvertFromNDoc Class" Url="html/574b20de-400b-4fb1-e69c-a0dba43a57d2.htm" HasChildren="true" />
+  <HelpTOCNode Title="ConvertFromSandcastleGui Class" Url="html/9e4b7318-9fc4-2a22-cea6-a3591ed5582d.htm" HasChildren="true" />
+  <HelpTOCNode Title="ConvertFromShfbFile Class" Url="html/085059cd-9035-143c-aaf6-6af3e2de689d.htm" HasChildren="true" />
+  <HelpTOCNode Title="ConvertToMSBuildFormat Class" Url="html/33ff2afe-36ea-7236-949e-763750cc9f3a.htm" HasChildren="true" />
+  <HelpTOCNode Title="NewFromOtherFormatDlg Class" Url="html/feffffcf-13b3-d08f-c7e7-7874e40db1e3.htm" HasChildren="true" />
 </HelpTOCNode>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="284d2c2d-d955-4d2b-b406-46712892994f" Title="BuildProgressEventArgs Class" Url="html/fdde0048-bc94-f986-6db4-fad7dbca8489.htm">
+<HelpTOCNode Title="BuildProgressEventArgs Class" Url="html/fdde0048-bc94-f986-6db4-fad7dbca8489.htm">
   <HelpTOCNode Title="BuildProgressEventArgs Constructor " Url="html/dc10cbef-ca4f-67dc-0fca-5ff3fed42681.htm" />
   <HelpTOCNode Title="BuildProgressEventArgs Methods" Url="html/d260cc38-ada4-3b4d-c732-8f187e182af8.htm" />
-  <HelpTOCNode Id="c9fb0ef6-9563-4147-9d2f-dd843e8015ed" Title="BuildProgressEventArgs Properties" Url="html/9039ad91-e62c-fc24-3bca-bd99e8be2c10.htm" HasChildren="true" />
+  <HelpTOCNode Title="BuildProgressEventArgs Properties" Url="html/9039ad91-e62c-fc24-3bca-bd99e8be2c10.htm" HasChildren="true" />
 </HelpTOCNode>

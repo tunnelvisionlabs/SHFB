@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="4fcb2013-ae26-456e-89ff-f3c5a0470b3b" Title="DerivedClassWithInheritedDocs Methods" Url="html/57a0a07f-333b-547f-a0e5-3a7697d8e5ef.htm">
+<HelpTOCNode Title="DerivedClassWithInheritedDocs Methods" Url="html/57a0a07f-333b-547f-a0e5-3a7697d8e5ef.htm">
   <HelpTOCNode Title="MethodUsingSharedExample Method " Url="html/f17a3324-8924-a19b-6702-2eb50c0e285f.htm" />
   <HelpTOCNode Title="MethodWithExample Method " Url="html/f796665e-e843-4815-cf04-ec60fe45daae.htm" />
   <HelpTOCNode Title="MethodWithLotsOfComments Method " Url="html/d123aba9-ded4-064f-1dba-731b38977bb1.htm" />
   <HelpTOCNode Title="MethodWithTwoExamples Method " Url="html/f998a700-7fed-a18f-9029-51356a0f2aca.htm" />
-  <HelpTOCNode Id="ef1cb359-bb95-4232-8062-4c8f60b24e69" Title="OverloadedMethod Method " Url="html/a5d20b21-467f-39ec-cd38-b7d7d4c01693.htm" HasChildren="true" />
+  <HelpTOCNode Title="OverloadedMethod Method " Url="html/a5d20b21-467f-39ec-cd38-b7d7d4c01693.htm" HasChildren="true" />
   <HelpTOCNode Title="ToString Method " Url="html/f5d8c2cb-098f-a5fd-d316-6ab011d3130b.htm" />
 </HelpTOCNode>

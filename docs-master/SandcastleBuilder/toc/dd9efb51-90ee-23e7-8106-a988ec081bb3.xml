@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="4cea7577-7014-4b70-a4fd-509cae54e025" Title="ComponentPropertiesPageControl Class" Url="html/dd9efb51-90ee-23e7-8106-a988ec081bb3.htm">
+<HelpTOCNode Title="ComponentPropertiesPageControl Class" Url="html/dd9efb51-90ee-23e7-8106-a988ec081bb3.htm">
   <HelpTOCNode Title="ComponentPropertiesPageControl Constructor " Url="html/e7eab092-de47-53d8-96a1-cfd9a5bd98bf.htm" />
-  <HelpTOCNode Id="783bdba8-a391-4699-b09b-5fe7fd24d0c4" Title="ComponentPropertiesPageControl Methods" Url="html/cfb600ef-60fe-4f46-9d17-57c17adf9d4a.htm" HasChildren="true" />
+  <HelpTOCNode Title="ComponentPropertiesPageControl Methods" Url="html/cfb600ef-60fe-4f46-9d17-57c17adf9d4a.htm" HasChildren="true" />
   <HelpTOCNode Title="ComponentPropertiesPageControl Properties" Url="html/c224e13a-3909-df6a-11f2-347d9633f427.htm" />
   <HelpTOCNode Title="ComponentPropertiesPageControl Events" Url="html/337e2b50-8faf-f86c-30be-c227446fc521.htm" />
 </HelpTOCNode>

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="aadade88-2dec-45a0-8919-468b8967b4f3" Title="SandcastleBuilder.Utils Namespace" Url="html/960ef505-1200-ede5-c807-ab0c912adef4.htm">
-  <HelpTOCNode Id="16c17a1a-736c-4a3d-a732-6cfedc517eb0" Title="FilePath Class" Url="html/9c411622-2424-eb45-2637-b35a864833e8.htm" HasChildren="true" />
-  <HelpTOCNode Id="062d0d79-6643-4d16-ad45-0f43b75107de" Title="FolderPath Class" Url="html/d95efe10-f0ca-093e-2f94-c72887066393.htm" HasChildren="true" />
-  <HelpTOCNode Id="23f176e6-8e5f-4632-8aac-a4dbcc3ae1a4" Title="IBasePathProvider Interface" Url="html/84f5be97-514d-23a8-3814-b5b2e7fd29d5.htm" HasChildren="true" />
-  <HelpTOCNode Id="9f0d7d1c-82e2-49fa-962d-aedc35e53fd0" Title="MSHelpAttr Class" Url="html/9b905a2b-aa62-e9b3-e3e9-fd66ec79ba88.htm" HasChildren="true" />
-  <HelpTOCNode Id="1aec16b8-2daf-437f-972b-77006b7f1984" Title="MSHelpAttrCollection Class" Url="html/55b77dd6-a41c-0f1d-6554-74657657e4f7.htm" HasChildren="true" />
-  <HelpTOCNode Id="355a1112-9ce2-42b3-b463-88a56111b16d" Title="MSHelpKeyword Class" Url="html/2e498c73-98bb-7245-6d0d-0d335b708b1d.htm" HasChildren="true" />
-  <HelpTOCNode Id="ee57e7f1-6bc7-437e-a293-ebc8335228a0" Title="MSHelpKeywordCollection Class" Url="html/ff66b01a-31ec-61d6-2a45-248aa44a685c.htm" HasChildren="true" />
+<HelpTOCNode Title="SandcastleBuilder.Utils Namespace" Url="html/960ef505-1200-ede5-c807-ab0c912adef4.htm">
+  <HelpTOCNode Title="FilePath Class" Url="html/9c411622-2424-eb45-2637-b35a864833e8.htm" HasChildren="true" />
+  <HelpTOCNode Title="FolderPath Class" Url="html/d95efe10-f0ca-093e-2f94-c72887066393.htm" HasChildren="true" />
+  <HelpTOCNode Title="IBasePathProvider Interface" Url="html/84f5be97-514d-23a8-3814-b5b2e7fd29d5.htm" HasChildren="true" />
+  <HelpTOCNode Title="MSHelpAttr Class" Url="html/9b905a2b-aa62-e9b3-e3e9-fd66ec79ba88.htm" HasChildren="true" />
+  <HelpTOCNode Title="MSHelpAttrCollection Class" Url="html/55b77dd6-a41c-0f1d-6554-74657657e4f7.htm" HasChildren="true" />
+  <HelpTOCNode Title="MSHelpKeyword Class" Url="html/2e498c73-98bb-7245-6d0d-0d335b708b1d.htm" HasChildren="true" />
+  <HelpTOCNode Title="MSHelpKeywordCollection Class" Url="html/ff66b01a-31ec-61d6-2a45-248aa44a685c.htm" HasChildren="true" />
 </HelpTOCNode>

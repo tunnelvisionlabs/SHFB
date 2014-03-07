@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="4c4d26ef-9257-497d-ba85-6792238d9eb2" Title="SandcastleBuilder.WPF.Behaviors Namespace" Url="html/8ac791b1-2541-3451-4215-6a98f141b715.htm">
-  <HelpTOCNode Id="312171bd-75ec-46f8-969e-75685108ac42" Title="SupportAnimatedGIFBehavior Class" Url="html/09b89744-2d45-b9c6-fe29-da5152fb13a6.htm" HasChildren="true" />
-  <HelpTOCNode Id="a93b943d-c44e-4143-9c8c-e56bd7df64d8" Title="TreeViewItemBehavior Class" Url="html/0c6fce32-df3b-de16-ff6f-19e43ed8bef8.htm" HasChildren="true" />
+<HelpTOCNode Title="SandcastleBuilder.WPF.Behaviors Namespace" Url="html/8ac791b1-2541-3451-4215-6a98f141b715.htm">
+  <HelpTOCNode Title="SupportAnimatedGIFBehavior Class" Url="html/09b89744-2d45-b9c6-fe29-da5152fb13a6.htm" HasChildren="true" />
+  <HelpTOCNode Title="TreeViewItemBehavior Class" Url="html/0c6fce32-df3b-de16-ff6f-19e43ed8bef8.htm" HasChildren="true" />
 </HelpTOCNode>

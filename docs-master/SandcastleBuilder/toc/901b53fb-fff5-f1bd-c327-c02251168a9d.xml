@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="9ada82a6-8db2-4c3c-8d47-c4301da99be9" Title="ContentFileEditor Class" Url="html/901b53fb-fff5-f1bd-c327-c02251168a9d.htm">
+<HelpTOCNode Title="ContentFileEditor Class" Url="html/901b53fb-fff5-f1bd-c327-c02251168a9d.htm">
   <HelpTOCNode Title="ContentFileEditor Constructor " Url="html/a7769bf4-36f2-6e35-8763-d22fcb399570.htm" />
-  <HelpTOCNode Id="7095da5d-5ff7-4992-b3e9-8028fbf88147" Title="ContentFileEditor Methods" Url="html/ba8182a1-7335-1c86-c6c1-cc6c81c01779.htm" HasChildren="true" />
-  <HelpTOCNode Id="4f903512-1692-4707-b059-7abb630ffb51" Title="ContentFileEditor Properties" Url="html/540f8baa-7a46-9723-4942-9bfe6237ae04.htm" HasChildren="true" />
+  <HelpTOCNode Title="ContentFileEditor Methods" Url="html/ba8182a1-7335-1c86-c6c1-cc6c81c01779.htm" HasChildren="true" />
+  <HelpTOCNode Title="ContentFileEditor Properties" Url="html/540f8baa-7a46-9723-4942-9bfe6237ae04.htm" HasChildren="true" />
 </HelpTOCNode>

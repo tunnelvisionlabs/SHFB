@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="018d645c-1d82-43ba-8166-c629eae61098" Title="TocEntryCollection Class" Url="html/3733cb89-4e36-dd7e-6a4f-36f3db857068.htm">
-  <HelpTOCNode Id="b49670e0-8444-4e99-94c6-b018ae4fcb53" Title="TocEntryCollection Constructor " Url="html/f0aff1e3-fc5e-26c3-6d4b-b284f2045b93.htm" HasChildren="true" />
-  <HelpTOCNode Id="b48c0394-1d52-4d33-bac0-9467c8f08df4" Title="TocEntryCollection Methods" Url="html/b819c572-3c92-10e4-c946-ac9efcd91daa.htm" HasChildren="true" />
-  <HelpTOCNode Id="86ee5f72-4dd9-4c57-bc81-ec4dc136bb85" Title="TocEntryCollection Properties" Url="html/9d9e9949-2905-8fdb-b0cd-dc83359a99c0.htm" HasChildren="true" />
+<HelpTOCNode Title="TocEntryCollection Class" Url="html/3733cb89-4e36-dd7e-6a4f-36f3db857068.htm">
+  <HelpTOCNode Title="TocEntryCollection Constructor " Url="html/f0aff1e3-fc5e-26c3-6d4b-b284f2045b93.htm" HasChildren="true" />
+  <HelpTOCNode Title="TocEntryCollection Methods" Url="html/b819c572-3c92-10e4-c946-ac9efcd91daa.htm" HasChildren="true" />
+  <HelpTOCNode Title="TocEntryCollection Properties" Url="html/9d9e9949-2905-8fdb-b0cd-dc83359a99c0.htm" HasChildren="true" />
   <HelpTOCNode Title="TocEntryCollection Events" Url="html/a5d325cf-bab8-8069-32e6-a680f5844211.htm" />
 </HelpTOCNode>

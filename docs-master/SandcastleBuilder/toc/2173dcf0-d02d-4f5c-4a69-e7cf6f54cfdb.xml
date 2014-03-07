@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="178b3641-fc20-4e38-bd2c-895aff87aefd" Title="CodeReference Class" Url="html/2173dcf0-d02d-4f5c-4a69-e7cf6f54cfdb.htm">
+<HelpTOCNode Title="CodeReference Class" Url="html/2173dcf0-d02d-4f5c-4a69-e7cf6f54cfdb.htm">
   <HelpTOCNode Title="CodeReference Constructor " Url="html/1aec4f80-b2ab-2077-40dc-5592e0221c87.htm" />
-  <HelpTOCNode Id="242f26c7-1696-4f7c-84e2-2071391ef488" Title="CodeReference Methods" Url="html/154641e3-67d1-369d-c053-407a36703365.htm" HasChildren="true" />
-  <HelpTOCNode Id="2de07b12-8ab1-4076-8c2d-90667e1adbca" Title="CodeReference Properties" Url="html/9f17428f-a499-0026-3c83-6dd7f71d1662.htm" HasChildren="true" />
+  <HelpTOCNode Title="CodeReference Methods" Url="html/154641e3-67d1-369d-c053-407a36703365.htm" HasChildren="true" />
+  <HelpTOCNode Title="CodeReference Properties" Url="html/9f17428f-a499-0026-3c83-6dd7f71d1662.htm" HasChildren="true" />
 </HelpTOCNode>

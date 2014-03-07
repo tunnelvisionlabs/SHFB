@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="3a2abc38-0284-435c-86af-c6848cbd3b1c" Title="ProjectPropertiesWindow Class" Url="html/f5a7c238-da37-f5f6-1f89-d3038bb51d87.htm">
+<HelpTOCNode Title="ProjectPropertiesWindow Class" Url="html/f5a7c238-da37-f5f6-1f89-d3038bb51d87.htm">
   <HelpTOCNode Title="ProjectPropertiesWindow Constructor " Url="html/f9f6c9aa-81a2-0120-eb53-a09b70131b45.htm" />
-  <HelpTOCNode Id="9db1e3f0-a993-417e-9fce-d9c3754c68f0" Title="ProjectPropertiesWindow Methods" Url="html/a3fe4569-15ec-a443-a3b6-33895d3c0bf9.htm" HasChildren="true" />
-  <HelpTOCNode Id="9ff000ba-ede1-4f1a-ba2b-d845042558da" Title="ProjectPropertiesWindow Properties" Url="html/d837f3f5-352a-be9a-0695-5a8d283f891c.htm" HasChildren="true" />
+  <HelpTOCNode Title="ProjectPropertiesWindow Methods" Url="html/a3fe4569-15ec-a443-a3b6-33895d3c0bf9.htm" HasChildren="true" />
+  <HelpTOCNode Title="ProjectPropertiesWindow Properties" Url="html/d837f3f5-352a-be9a-0695-5a8d283f891c.htm" HasChildren="true" />
   <HelpTOCNode Title="ProjectPropertiesWindow Events" Url="html/75747b4b-c2c6-4a79-c0cb-d968bfdaa419.htm" />
 </HelpTOCNode>

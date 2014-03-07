@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="3816a9f0-1c51-4c19-8f03-24b7c5405a08" Title="ConvertFromDocProject Class" Url="html/fe33ce22-dcb0-d676-e05a-5580ffc1a1d6.htm">
-  <HelpTOCNode Id="294819d5-8d99-4523-a69f-9da02c7d8a6c" Title="ConvertFromDocProject Constructor " Url="html/7442f44b-36a2-9f58-9eba-a680206fe201.htm" HasChildren="true" />
-  <HelpTOCNode Id="f32aa7bb-9628-4f64-8dfd-3870e3b638bc" Title="ConvertFromDocProject Methods" Url="html/c019a0fa-21e5-1584-2d1a-ecf4ac582a93.htm" HasChildren="true" />
-  <HelpTOCNode Id="75666913-4f92-4947-9b1c-d57347fb53c8" Title="ConvertFromDocProject Properties" Url="html/09690511-8f84-c7a4-21d0-6f231f0cb325.htm" HasChildren="true" />
+<HelpTOCNode Title="ConvertFromDocProject Class" Url="html/fe33ce22-dcb0-d676-e05a-5580ffc1a1d6.htm">
+  <HelpTOCNode Title="ConvertFromDocProject Constructor " Url="html/7442f44b-36a2-9f58-9eba-a680206fe201.htm" HasChildren="true" />
+  <HelpTOCNode Title="ConvertFromDocProject Methods" Url="html/c019a0fa-21e5-1584-2d1a-ecf4ac582a93.htm" HasChildren="true" />
+  <HelpTOCNode Title="ConvertFromDocProject Properties" Url="html/09690511-8f84-c7a4-21d0-6f231f0cb325.htm" HasChildren="true" />
 </HelpTOCNode>

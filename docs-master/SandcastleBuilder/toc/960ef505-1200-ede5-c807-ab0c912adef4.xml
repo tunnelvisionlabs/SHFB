@@ -1,43 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="d7c1372a-09aa-4a18-9544-7ed1f6a4a597" Title="SandcastleBuilder.Utils Namespace" Url="html/960ef505-1200-ede5-c807-ab0c912adef4.htm">
+<HelpTOCNode Title="SandcastleBuilder.Utils Namespace" Url="html/960ef505-1200-ede5-c807-ab0c912adef4.htm">
   <HelpTOCNode Title="ApiEntryType Enumeration" Url="html/afa33067-a29a-6512-97ef-5c4859882603.htm" />
-  <HelpTOCNode Id="bf894ed8-72ec-434d-a92c-e596bbc44b63" Title="ApiFilter Class" Url="html/ef015f48-1cf9-6b92-f184-1cfa748c4cee.htm" HasChildren="true" />
-  <HelpTOCNode Id="af7ad1c5-5b60-4c01-acb9-61b0e637ed73" Title="ApiFilterCollection Class" Url="html/5e63b642-9924-0486-4c3d-b0f31cfa0a34.htm" HasChildren="true" />
-  <HelpTOCNode Id="dff3744d-255b-4b3c-85fc-865b3b6f45e0" Title="BaseBuildItem Class" Url="html/64ad0f96-d6e6-4ae4-d3e1-59970944c120.htm" HasChildren="true" />
+  <HelpTOCNode Title="ApiFilter Class" Url="html/ef015f48-1cf9-6b92-f184-1cfa748c4cee.htm" HasChildren="true" />
+  <HelpTOCNode Title="ApiFilterCollection Class" Url="html/5e63b642-9924-0486-4c3d-b0f31cfa0a34.htm" HasChildren="true" />
+  <HelpTOCNode Title="BaseBuildItem Class" Url="html/64ad0f96-d6e6-4ae4-d3e1-59970944c120.htm" HasChildren="true" />
   <HelpTOCNode Title="BuildAction Enumeration" Url="html/7d8746c8-bdd1-a83e-15da-5c3b0c5206a9.htm" />
   <HelpTOCNode Title="BuildAssemblerVerbosity Enumeration" Url="html/ce6d3132-33cc-8e4d-551d-5e4d0dea5f94.htm" />
-  <HelpTOCNode Id="4d7649fe-8a9f-420e-af96-845ce3f6f02e" Title="BuilderException Class" Url="html/7cb71895-3498-5280-da69-c160643b0a34.htm" HasChildren="true" />
+  <HelpTOCNode Title="BuilderException Class" Url="html/7cb71895-3498-5280-da69-c160643b0a34.htm" HasChildren="true" />
   <HelpTOCNode Title="CollectionTocStyle Enumeration" Url="html/fa519b72-86c2-4f67-84ba-19a13426ee6b.htm" />
-  <HelpTOCNode Id="006d8ab6-da60-4750-b0b6-2853c5346e51" Title="COMReferenceItem Class" Url="html/e6bbc9aa-04f5-50f0-8507-871dbfdf7fb7.htm" HasChildren="true" />
+  <HelpTOCNode Title="COMReferenceItem Class" Url="html/e6bbc9aa-04f5-50f0-8507-871dbfdf7fb7.htm" HasChildren="true" />
   <HelpTOCNode Title="ContentPlacement Enumeration" Url="html/216a0f11-0797-6040-9524-660569463a7d.htm" />
-  <HelpTOCNode Id="f1a41e19-e66a-4c3c-9c2f-012d0e4b8b85" Title="DocumentationSource Class" Url="html/257ad4f4-aa85-9d47-4745-3e2abea3017c.htm" HasChildren="true" />
-  <HelpTOCNode Id="e5d93630-a9b1-4318-a5d3-d634bdfa31b1" Title="DocumentationSourceCollection Class" Url="html/65854f16-6bfd-3aeb-619c-2e585112cbbd.htm" HasChildren="true" />
+  <HelpTOCNode Title="DocumentationSource Class" Url="html/257ad4f4-aa85-9d47-4745-3e2abea3017c.htm" HasChildren="true" />
+  <HelpTOCNode Title="DocumentationSourceCollection Class" Url="html/65854f16-6bfd-3aeb-619c-2e585112cbbd.htm" HasChildren="true" />
   <HelpTOCNode Title="DocumentType Enumeration" Url="html/f6f6fc45-af36-82c2-70ff-7130527fd078.htm" />
-  <HelpTOCNode Id="2eb1ceed-1e86-4f7d-be16-a9aa8d7fb4f7" Title="FileItem Class" Url="html/6f834771-a15f-6dd9-b9cc-a8eb0e193612.htm" HasChildren="true" />
-  <HelpTOCNode Id="e3a3f581-ea1b-412d-8c40-dd7df5859d48" Title="FileItemCollection Class" Url="html/498ead1f-af02-df19-5058-9b23e07e38ab.htm" HasChildren="true" />
-  <HelpTOCNode Id="2038080d-3808-48e0-b9f0-8f5a80d83a1f" Title="FilePath Class" Url="html/9c411622-2424-eb45-2637-b35a864833e8.htm" HasChildren="true" />
-  <HelpTOCNode Id="d43b9b3d-dd4d-48d9-a28c-b9ee0e4ef895" Title="FolderPath Class" Url="html/d95efe10-f0ca-093e-2f94-c72887066393.htm" HasChildren="true" />
+  <HelpTOCNode Title="FileItem Class" Url="html/6f834771-a15f-6dd9-b9cc-a8eb0e193612.htm" HasChildren="true" />
+  <HelpTOCNode Title="FileItemCollection Class" Url="html/498ead1f-af02-df19-5058-9b23e07e38ab.htm" HasChildren="true" />
+  <HelpTOCNode Title="FilePath Class" Url="html/9c411622-2424-eb45-2637-b35a864833e8.htm" HasChildren="true" />
+  <HelpTOCNode Title="FolderPath Class" Url="html/d95efe10-f0ca-093e-2f94-c72887066393.htm" HasChildren="true" />
   <HelpTOCNode Title="HtmlSdkLinkType Enumeration" Url="html/f3a176dc-f257-96b2-ac59-d0b37792226b.htm" />
-  <HelpTOCNode Id="dd5fe6f0-0ff8-4682-aa53-cc8923241b55" Title="IBasePathProvider Interface" Url="html/84f5be97-514d-23a8-3814-b5b2e7fd29d5.htm" HasChildren="true" />
+  <HelpTOCNode Title="IBasePathProvider Interface" Url="html/84f5be97-514d-23a8-3814-b5b2e7fd29d5.htm" HasChildren="true" />
   <HelpTOCNode Title="MissingTags Enumeration" Url="html/6a0e130b-eeec-ca1a-bd1f-cf428003cffb.htm" />
   <HelpTOCNode Title="MSHelp2SdkLinkType Enumeration" Url="html/4c9bb320-d440-c9cc-bec6-67903e559686.htm" />
-  <HelpTOCNode Id="e7dfb38b-8d0d-4cdc-87aa-a8a98a8653e1" Title="MSHelpAttr Class" Url="html/9b905a2b-aa62-e9b3-e3e9-fd66ec79ba88.htm" HasChildren="true" />
-  <HelpTOCNode Id="5e8f694d-1101-4f0a-bf90-14d43377fdf9" Title="MSHelpAttrCollection Class" Url="html/55b77dd6-a41c-0f1d-6554-74657657e4f7.htm" HasChildren="true" />
-  <HelpTOCNode Id="ca93b9ed-1035-4365-ac1d-544a86fa5df4" Title="MSHelpKeyword Class" Url="html/2e498c73-98bb-7245-6d0d-0d335b708b1d.htm" HasChildren="true" />
-  <HelpTOCNode Id="16904499-0d8a-4e6a-a105-e2e477d2690f" Title="MSHelpKeywordCollection Class" Url="html/ff66b01a-31ec-61d6-2a45-248aa44a685c.htm" HasChildren="true" />
+  <HelpTOCNode Title="MSHelpAttr Class" Url="html/9b905a2b-aa62-e9b3-e3e9-fd66ec79ba88.htm" HasChildren="true" />
+  <HelpTOCNode Title="MSHelpAttrCollection Class" Url="html/55b77dd6-a41c-0f1d-6554-74657657e4f7.htm" HasChildren="true" />
+  <HelpTOCNode Title="MSHelpKeyword Class" Url="html/2e498c73-98bb-7245-6d0d-0d335b708b1d.htm" HasChildren="true" />
+  <HelpTOCNode Title="MSHelpKeywordCollection Class" Url="html/ff66b01a-31ec-61d6-2a45-248aa44a685c.htm" HasChildren="true" />
   <HelpTOCNode Title="MSHelpViewerSdkLinkType Enumeration" Url="html/3d88d317-8cf3-a37b-ec05-49e3bf69a6d5.htm" />
-  <HelpTOCNode Id="21aacda0-6798-4bfd-8da1-a62c77ae7362" Title="NamespaceSummaryItem Class" Url="html/74f15942-ab6b-3c40-0c2f-c0e5a989ad93.htm" HasChildren="true" />
-  <HelpTOCNode Id="29c385cc-8a3b-4650-b508-49a5dadad4ce" Title="NamespaceSummaryItemCollection Class" Url="html/a92165b3-b78a-581b-263a-df810f0ee237.htm" HasChildren="true" />
+  <HelpTOCNode Title="NamespaceSummaryItem Class" Url="html/74f15942-ab6b-3c40-0c2f-c0e5a989ad93.htm" HasChildren="true" />
+  <HelpTOCNode Title="NamespaceSummaryItemCollection Class" Url="html/a92165b3-b78a-581b-263a-df810f0ee237.htm" HasChildren="true" />
   <HelpTOCNode Title="NamingMethod Enumeration" Url="html/12495300-b19e-6b6d-9346-ddc54cdf2c8c.htm" />
-  <HelpTOCNode Id="1bb11df6-3358-4149-97e3-d9b127038d53" Title="ProjectElement Class" Url="html/fa25ebfa-66b8-3ee3-fc3e-5787c757cf47.htm" HasChildren="true" />
-  <HelpTOCNode Id="f3b5cde1-5bcf-4240-964c-1db93e2e6199" Title="ProjectFileConfiguration Class" Url="html/7ceca073-d815-ca44-6a1a-13f9079f6947.htm" HasChildren="true" />
-  <HelpTOCNode Id="1fc06d9d-074e-4a8a-9866-7dfeb106e71b" Title="ProjectPropertyChangedEventArgs Class" Url="html/41eea965-7276-9f39-841e-e6c6aff68402.htm" HasChildren="true" />
-  <HelpTOCNode Id="3d460ee5-58c5-4fdf-8b72-d4d2cf257bbd" Title="ProjectReferenceItem Class" Url="html/f1d49608-208b-433e-4eb6-57b72bed1d12.htm" HasChildren="true" />
-  <HelpTOCNode Id="3d3d1b52-a3a5-4bef-bd36-e8284bacf344" Title="PropertyBasedCollectionItem Class" Url="html/248b4695-1f0c-ccc5-e50d-5f5d4cbd692d.htm" HasChildren="true" />
-  <HelpTOCNode Id="d5459013-159d-4f84-843f-ccd9c74260db" Title="ReferenceItem Class" Url="html/f3156faf-ddad-a03e-49a2-2d47f7ff3ce1.htm" HasChildren="true" />
-  <HelpTOCNode Id="b42178b9-80d8-4dc7-87cc-12b1704cd473" Title="ReferenceItemCollection Class" Url="html/df546e7c-970a-454f-558d-5478d561d1a7.htm" HasChildren="true" />
-  <HelpTOCNode Id="ad49ac15-1297-4154-9978-e76707bec79d" Title="SandcastleProject Class" Url="html/6db9bc2c-be7b-0d0b-3a46-7994b7836c82.htm" HasChildren="true" />
+  <HelpTOCNode Title="ProjectElement Class" Url="html/fa25ebfa-66b8-3ee3-fc3e-5787c757cf47.htm" HasChildren="true" />
+  <HelpTOCNode Title="ProjectFileConfiguration Class" Url="html/7ceca073-d815-ca44-6a1a-13f9079f6947.htm" HasChildren="true" />
+  <HelpTOCNode Title="ProjectPropertyChangedEventArgs Class" Url="html/41eea965-7276-9f39-841e-e6c6aff68402.htm" HasChildren="true" />
+  <HelpTOCNode Title="ProjectReferenceItem Class" Url="html/f1d49608-208b-433e-4eb6-57b72bed1d12.htm" HasChildren="true" />
+  <HelpTOCNode Title="PropertyBasedCollectionItem Class" Url="html/248b4695-1f0c-ccc5-e50d-5f5d4cbd692d.htm" HasChildren="true" />
+  <HelpTOCNode Title="ReferenceItem Class" Url="html/f3156faf-ddad-a03e-49a2-2d47f7ff3ce1.htm" HasChildren="true" />
+  <HelpTOCNode Title="ReferenceItemCollection Class" Url="html/df546e7c-970a-454f-558d-5478d561d1a7.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleProject Class" Url="html/6db9bc2c-be7b-0d0b-3a46-7994b7836c82.htm" HasChildren="true" />
   <HelpTOCNode Title="SdkLinkTarget Enumeration" Url="html/6720b83a-6c30-8f8f-c0e9-1cf62251011d.htm" />
-  <HelpTOCNode Id="874dd77c-1a52-4c97-8ca9-65a8182b4b6d" Title="Utility Class" Url="html/fa898fec-f6dc-64e4-4bf3-96cbe14ca8b9.htm" HasChildren="true" />
+  <HelpTOCNode Title="Utility Class" Url="html/fa898fec-f6dc-64e4-4bf3-96cbe14ca8b9.htm" HasChildren="true" />
   <HelpTOCNode Title="VisibleItems Enumeration" Url="html/99fcc0ba-7891-78a6-5933-87036f8efee4.htm" />
 </HelpTOCNode>

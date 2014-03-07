@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="56bf856c-e5bf-4467-910a-3f0ad8f1471f" Title="SandcastleBuilder.Utils.BuildComponent Namespace" Url="html/2c8415a8-a96a-ef1c-5bb4-976755af6cb3.htm">
-  <HelpTOCNode Id="3fddcb27-8f28-4f8f-856a-ea50ffca6d2b" Title="BuildComponentConfiguration Class" Url="html/b1967760-889b-962a-b100-dd1a7fc1058b.htm" HasChildren="true" />
-  <HelpTOCNode Id="2c696cd8-d485-4cc2-819e-21231a616684" Title="ComponentConfigurationDictionary Class" Url="html/2710b911-e577-7a0b-631b-9d194f45f3da.htm" HasChildren="true" />
+<HelpTOCNode Title="SandcastleBuilder.Utils.BuildComponent Namespace" Url="html/2c8415a8-a96a-ef1c-5bb4-976755af6cb3.htm">
+  <HelpTOCNode Title="BuildComponentConfiguration Class" Url="html/b1967760-889b-962a-b100-dd1a7fc1058b.htm" HasChildren="true" />
+  <HelpTOCNode Title="ComponentConfigurationDictionary Class" Url="html/2710b911-e577-7a0b-631b-9d194f45f3da.htm" HasChildren="true" />
   <HelpTOCNode Title="ExecutionBehaviors Enumeration" Url="html/2e009b42-525d-b15b-074e-8ac56c335d22.htm" />
-  <HelpTOCNode Id="ac649813-091b-4c8b-8256-95a39297ad5c" Title="ExecutionContext Class" Url="html/46ba727d-2cb2-e0a7-bd60-2c5723785c3f.htm" HasChildren="true" />
-  <HelpTOCNode Id="8a35ae9e-fa5f-4c3e-9f76-026d9b3c32f3" Title="ExecutionPoint Class" Url="html/64518f52-884e-3d57-eed5-1760625be48b.htm" HasChildren="true" />
-  <HelpTOCNode Id="3a8b3c3d-5ca5-416f-acde-4276c34ccde7" Title="HelpFileBuilderPlugInExportAttribute Class" Url="html/a4e1e642-d901-b458-8cf5-a393970e0150.htm" HasChildren="true" />
-  <HelpTOCNode Id="ff6ed97b-b6a4-4362-bca8-a3df8444c158" Title="IPlugIn Interface" Url="html/bcf36919-1d66-1625-544e-adb51877d5de.htm" HasChildren="true" />
-  <HelpTOCNode Id="b171ff75-b6a4-4eb2-8b30-6193830bc139" Title="IPlugInMetadata Interface" Url="html/64faf6bc-9433-2919-a7a4-d3a09de0d3e9.htm" HasChildren="true" />
-  <HelpTOCNode Id="de613bd2-ddaa-4298-bd94-9a760a0a5d20" Title="PlugInConfiguration Class" Url="html/730fd149-5d56-f672-8edb-0dc9898eb2bb.htm" HasChildren="true" />
-  <HelpTOCNode Id="ebe0d8f1-7121-4078-862d-bb8c85eace20" Title="PlugInConfigurationDictionary Class" Url="html/2491bd57-9a7b-1aaa-e01b-0347d8d8158e.htm" HasChildren="true" />
+  <HelpTOCNode Title="ExecutionContext Class" Url="html/46ba727d-2cb2-e0a7-bd60-2c5723785c3f.htm" HasChildren="true" />
+  <HelpTOCNode Title="ExecutionPoint Class" Url="html/64518f52-884e-3d57-eed5-1760625be48b.htm" HasChildren="true" />
+  <HelpTOCNode Title="HelpFileBuilderPlugInExportAttribute Class" Url="html/a4e1e642-d901-b458-8cf5-a393970e0150.htm" HasChildren="true" />
+  <HelpTOCNode Title="IPlugIn Interface" Url="html/bcf36919-1d66-1625-544e-adb51877d5de.htm" HasChildren="true" />
+  <HelpTOCNode Title="IPlugInMetadata Interface" Url="html/64faf6bc-9433-2919-a7a4-d3a09de0d3e9.htm" HasChildren="true" />
+  <HelpTOCNode Title="PlugInConfiguration Class" Url="html/730fd149-5d56-f672-8edb-0dc9898eb2bb.htm" HasChildren="true" />
+  <HelpTOCNode Title="PlugInConfigurationDictionary Class" Url="html/2491bd57-9a7b-1aaa-e01b-0347d8d8158e.htm" HasChildren="true" />
 </HelpTOCNode>

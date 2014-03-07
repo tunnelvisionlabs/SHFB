@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOCNode Id="4b4b1811-737f-42d8-86f1-e3ffd81e08df" Title="Plug-Ins">
+  <HelpTOCNode Title="ACP0001: The Additional Content Only plug-in requires..." Url="html/26e07376-2016-4e02-8ac1-7cc1dd971463.htm" />
+  <HelpTOCNode Title="ARL0001: The Additional Reference Links plug-in has not been configured yet" Url="html/926b78d3-1064-41db-a4c0-09208ea7f104.htm" />
+  <HelpTOCNode Title="ARL0002: At least one target is required for the Additional Reference Links plug-in" Url="html/e10bf048-ccc0-4c30-81c6-7273ecdae052.htm" />
+  <HelpTOCNode Title="ARL0003: Unable to build additional target project: [projectFile]" Url="html/7eb5290e-8d18-4dc7-983d-a01e665063bd.htm" />
+  <HelpTOCNode Title="ARL0004: Unable to locate Reflection Index Data component in [configFile]" Url="html/a6039b1c-e54a-49a6-9527-68a1944d4b75.htm" />
+  <HelpTOCNode Title="ARL0005: Unable to locate Resolve Reference Links component in [configFile]" Url="html/ce4fdb97-f919-4a01-83cd-7df21f9c20bc.htm" />
+  <HelpTOCNode Title="ARL0006: Fatal error, unable to compile project '[projectFile]': [error]" Url="html/77616f29-e121-4175-8874-15e682097c19.htm" />
+  <HelpTOCNode Title="ARL0007: The help file project cannot be blank" Url="html/03e02231-a326-4c6b-9d59-8b005dcd959c.htm" />
+  <HelpTOCNode Title="ADP0001: Placeholder" Url="html/3e4812bb-7bf5-4752-9eaf-5e982312d1f7.htm" />
+</HelpTOCNode>

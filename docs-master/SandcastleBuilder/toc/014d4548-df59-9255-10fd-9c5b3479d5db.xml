@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="e7bd20a4-545f-4728-8efe-9c0556bd9a30" Title="FilePathStringEditor Methods" Url="html/014d4548-df59-9255-10fd-9c5b3479d5db.htm">
-  <HelpTOCNode Id="3328f345-6d01-44ec-8ee8-bec6542cf2d2" Title="EditValue Method " Url="html/098b9a2c-0c22-fe7d-ed51-069eee8f7470.htm" HasChildren="true" />
-  <HelpTOCNode Id="5a52352c-8f4f-4bc6-b7ce-19eb4e2c1728" Title="GetEditStyle Method " Url="html/8ae66362-3980-0443-fa12-86f71695dcb6.htm" HasChildren="true" />
+<HelpTOCNode Title="FilePathStringEditor Methods" Url="html/014d4548-df59-9255-10fd-9c5b3479d5db.htm">
+  <HelpTOCNode Title="EditValue Method " Url="html/098b9a2c-0c22-fe7d-ed51-069eee8f7470.htm" HasChildren="true" />
+  <HelpTOCNode Title="GetEditStyle Method " Url="html/8ae66362-3980-0443-fa12-86f71695dcb6.htm" HasChildren="true" />
 </HelpTOCNode>

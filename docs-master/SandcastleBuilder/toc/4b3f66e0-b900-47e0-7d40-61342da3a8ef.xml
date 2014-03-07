@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="92a4464d-834d-4996-a7af-0d4370a7a5d3" Title="CommandLineArgument Methods" Url="html/4b3f66e0-b900-47e0-7d40-61342da3a8ef.htm">
+<HelpTOCNode Title="CommandLineArgument Methods" Url="html/4b3f66e0-b900-47e0-7d40-61342da3a8ef.htm">
   <HelpTOCNode Title="MatchesSwitch Method " Url="html/e450a6c0-02fc-7271-017a-36c9c2e99c2a.htm" />
   <HelpTOCNode Title="ToCommandLineOption Method " Url="html/9054dd08-0181-93f9-8c6e-deff71669832.htm" />
 </HelpTOCNode>
