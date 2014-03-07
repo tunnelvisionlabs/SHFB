@@ -81,6 +81,12 @@
             XElement tocroot = contentMetadata.XPathSelectElements("/metadata/topic").First();
             XElement defaultTopic = contentMetadata.XPathSelectElements("/metadata/topic[keyword[@index='NamedUrlIndex' and text()='DefaultPage']]").FirstOrDefault();
 
+            // remove the Id attribute from all nodes that contain a Url attribute
+            foreach (XElement element in webtoc.XPathSelectElements("//node()[@Id and @Url]"))
+            {
+                element.Attribute("Id").Remove();
+            }
+
             // generate the TOC fragments
             Directory.CreateDirectory(Path.Combine(_builder.WorkingFolder, "Output", "Website", "toc"));
             List<XElement> elements = new List<XElement>(webtoc.XPathSelectElements("//node()"));
@@ -101,8 +107,12 @@
                 string uri = null;
                 if (copy.Attribute("Url") != null)
                     uri = copy.Attribute("Url").Value;
-                else
+                else if (copy.Attribute("Id") != null)
+                    uri = copy.Attribute("Id").Value;
+                else if (copy.Name.LocalName == "HelpTOC")
                     uri = "roottoc.html";
+                else
+                    throw new NotImplementedException();
 
                 XmlWriterSettings writerSettings = new XmlWriterSettings();
                 writerSettings.Indent = true;
@@ -317,10 +327,20 @@
             string glyphClass = expanded ? "toc_expanded" : "toc_collapsed";
 
             string file;
+            string tocid;
             if (ancestor.Attribute("Url") != null)
+            {
                 file = Path.GetFileName(ancestor.Attribute("Url").Value);
+                tocid = Path.GetFileNameWithoutExtension(file);
+            }
             else
+            {
                 file = "#";
+                if (ancestor.Attribute("Id") != null)
+                    tocid = ancestor.Attribute("Id").Value;
+                else
+                    tocid = Path.GetFileNameWithoutExtension(file);
+            }
 
             string tocTitle = ancestor.Attribute("Title").Value;
 
@@ -337,7 +357,7 @@
                         new XAttribute("data-tochassubtree", "true"),
                         new XAttribute("href", file),
                         new XAttribute("title", tocTitle),
-                        new XAttribute("tocid", Path.GetFileNameWithoutExtension(file)),
+                        new XAttribute("tocid", tocid),
                         new XText(tocTitle)));
 
             if (expanded)
@@ -351,10 +371,20 @@
             int paddingLeft = 13 * level;
 
             string targetId;
+            string targetTocId;
             if (sibling.Attribute("Url") != null)
+            {
                 targetId = sibling.Attribute("Url").Value;
+                targetTocId = Path.GetFileNameWithoutExtension(targetId);
+            }
             else
+            {
                 targetId = "#";
+                if (sibling.Attribute("Id") != null)
+                    targetTocId = sibling.Attribute("Id").Value;
+                else
+                    targetTocId = "#";
+            }
 
             string currentId;
             if (current.Attribute("Url") != null)
@@ -397,7 +427,7 @@
                         new XAttribute("data-tochassubtree", sibling.HasElements),
                         new XAttribute("href", file),
                         new XAttribute("title", tocTitle),
-                        new XAttribute("tocid", Path.GetFileNameWithoutExtension(targetId)),
+                        new XAttribute("tocid", targetTocId),
                         new XText(tocTitle)));
 
             if (sibling.HasElements && targetId == currentId)
@@ -413,10 +443,20 @@
 
             // some items in the TOC do not have actual pages associated with them
             string file;
+            string tocid;
             if (child.Attribute("Url") != null)
+            {
                 file = Path.GetFileName(child.Attribute("Url").Value);
+                tocid = Path.GetFileNameWithoutExtension(file);
+            }
             else
+            {
                 file = "#";
+                if (child.Attribute("Id") != null)
+                    tocid = child.Attribute("Id").Value;
+                else
+                    tocid = "#";
+            }
 
             string tocTitle = child.Attribute("Title").Value;
 
@@ -446,7 +486,7 @@
                         new XAttribute("data-tochassubtree", child.HasElements),
                         new XAttribute("href", file),
                         new XAttribute("title", tocTitle),
-                        new XAttribute("tocid", Path.GetFileNameWithoutExtension(file)),
+                        new XAttribute("tocid", tocid),
                         new XText(tocTitle)));
 
             return new[] { result };
