@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="d19a0743-048e-40d7-af19-07dd527fe5d0" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<introduction>
+			<para>Welcome to the Sandcastle Help File Builder</para>
+		</introduction>
+
+		<section>
+			<content>
+				<para>Select a topic from the table of contents.</para>
+			</content>
+		</section>
+
+		<relatedTopics>
+			<link xlink:href="bd1ddb51-1c4f-434f-bb1a-ce2135d3a909" />
+		</relatedTopics>
+	</developerConceptualDocument>
+</topic>

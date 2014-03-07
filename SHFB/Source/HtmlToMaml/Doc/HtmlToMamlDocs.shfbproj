@@ -32,7 +32,7 @@
     <CopyrightHref>http://Sandcastle.CodePlex.com</CopyrightHref>
     <CopyrightText>Copyright \xA9 2008-2014, Eric Woodruff, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>Eric%40EWoodruff.us</FeedbackEMailAddress>
-    <SyntaxFilters>CSharp, VisualBasic</SyntaxFilters>
+    <SyntaxFilters>Standard</SyntaxFilters>
     <HelpAttributes>
       <HelpAttribute name="DocSet" value="{@HtmlHelpName}" />
       <HelpAttribute name="DocSet" value="NetFramework" />
@@ -67,6 +67,9 @@
           </deploymentLocation>
         </configuration>
       </PlugInConfig>
+      <PlugInConfig id="Lightweight TOC" enabled="True">
+        <configuration />
+      </PlugInConfig>
     </PlugInConfigurations>
     <FrameworkVersion>.NET Framework 4.0</FrameworkVersion>
     <HelpFileVersion>1.0.0.2</HelpFileVersion>
@@ -76,14 +79,14 @@
     <HtmlHelp2xCompilerPath />
     <WorkingPath />
     <BuildAssemblerVerbosity>AllMessages</BuildAssemblerVerbosity>
-    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
+    <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
     <IndentHtml>False</IndentHtml>
     <KeepLogFile>True</KeepLogFile>
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
     <CppCommentsFixup>False</CppCommentsFixup>
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <RootNamespaceContainer>False</RootNamespaceContainer>
-    <PresentationStyle>VS2005</PresentationStyle>
+    <PresentationStyle>VS2013</PresentationStyle>
     <Preliminary>False</Preliminary>
     <NamingMethod>Guid</NamingMethod>
     <Language>en-US</Language>
@@ -112,6 +115,7 @@
     <ContentLayout Include="ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\MSHelpViewerRoot.aml" />
     <None Include="Content\VersionHistory\v1.0.0.1.aml" />
     <None Include="Content\License.aml" />
     <None Include="Content\CommonReviewIssues.aml" />

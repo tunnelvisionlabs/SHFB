@@ -60,6 +60,9 @@
           </deploymentLocation>
         </configuration>
       </PlugInConfig>
+      <PlugInConfig id="Lightweight TOC" enabled="True">
+        <configuration />
+      </PlugInConfig>
     </PlugInConfigurations>
     <BuildLogFile />
     <HtmlHelp1xCompilerPath />
@@ -80,10 +83,10 @@
     <CollectionTocStyle>Hierarchical</CollectionTocStyle>
     <MSHelp2SdkLinkType>Msdn</MSHelp2SdkLinkType>
     <IncludeStopWordList>True</IncludeStopWordList>
-    <SyntaxFilters>CSharp, VisualBasic, CPlusPlus</SyntaxFilters>
+    <SyntaxFilters>Standard</SyntaxFilters>
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <RootNamespaceContainer>False</RootNamespaceContainer>
-    <PresentationStyle>VS2005</PresentationStyle>
+    <PresentationStyle>VS2013</PresentationStyle>
     <Preliminary>False</Preliminary>
     <NamingMethod>Guid</NamingMethod>
     <HelpTitle>Sandcastle Tools</HelpTitle>
@@ -92,7 +95,7 @@
     <CopyrightHref>http://SHFB.CodePlex.com</CopyrightHref>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
-    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
+    <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
     <IndentHtml>False</IndentHtml>
     <FrameworkVersion>.NET Framework 4.0</FrameworkVersion>
     <KeepLogFile>True</KeepLogFile>
@@ -151,6 +154,7 @@
     <None Include="Content\Glossary.aml" />
     <None Include="Content\License.aml" />
     <None Include="Content\LinksToResources.aml" />
+    <None Include="Content\MSHelpViewerRoot.aml" />
     <None Include="Content\SandcastleTools\Architecture.aml" />
     <None Include="Content\SandcastleTools\GeneralInformation.aml" />
     <None Include="Content\SandcastleTools\SandcastleTools.aml" />

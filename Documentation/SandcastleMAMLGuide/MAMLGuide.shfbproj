@@ -34,7 +34,7 @@
     <CopyrightHref>http://SHFB.CodePlex.com</CopyrightHref>
     <CopyrightText>[v{%40HelpFileVersion}] Sandcastle MAML Guide</CopyrightText>
     <FeedbackEMailAddress>Eric%40EWoodruff.us</FeedbackEMailAddress>
-    <PresentationStyle>VS2005</PresentationStyle>
+    <PresentationStyle>VS2013</PresentationStyle>
     <HelpFileVersion>1.1.0.3</HelpFileVersion>
     <ComponentConfigurations>
     </ComponentConfigurations>
@@ -75,8 +75,11 @@
           </deploymentLocation>
         </configuration>
       </PlugInConfig>
+      <PlugInConfig id="Lightweight TOC" enabled="True">
+        <configuration />
+      </PlugInConfig>
     </PlugInConfigurations>
-    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
+    <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
     <ProductTitle>Sandcastle MAML Guide</ProductTitle>
     <VendorName>EWSoftware</VendorName>
     <TocOrder>9999</TocOrder>

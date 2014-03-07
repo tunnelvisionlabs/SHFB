@@ -33,8 +33,8 @@
     <CopyrightHref>http://SHFB.CodePlex.com</CopyrightHref>
     <CopyrightText>[v{%40HelpFileVersion}] Copyright \xA9 2006-2014, Eric Woodruff, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>Eric%40EWoodruff.us</FeedbackEMailAddress>
-    <PresentationStyle>VS2005</PresentationStyle>
-    <SyntaxFilters>CSharp, VisualBasic</SyntaxFilters>
+    <PresentationStyle>VS2013</PresentationStyle>
+    <SyntaxFilters>Standard</SyntaxFilters>
     <HelpFileVersion>2014.2.15.0</HelpFileVersion>
     <ComponentConfigurations>
     </ComponentConfigurations>
@@ -124,6 +124,9 @@
           </deploymentLocation>
         </configuration>
       </PlugInConfig>
+      <PlugInConfig id="Lightweight TOC" enabled="True">
+        <configuration />
+      </PlugInConfig>
     </PlugInConfigurations>
     <Preliminary>False</Preliminary>
     <HelpAttributes>
@@ -137,7 +140,7 @@
     <CollectionTocStyle>Hierarchical</CollectionTocStyle>
     <MSHelp2SdkLinkType>Msdn</MSHelp2SdkLinkType>
     <IncludeStopWordList>True</IncludeStopWordList>
-    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
+    <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
     <IndentHtml>False</IndentHtml>
     <KeepLogFile>True</KeepLogFile>
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
@@ -230,6 +233,7 @@
     <None Include="Content\GettingStarted\GeneralPreferences.aml" />
     <None Include="Content\GettingStarted\SpellCheckerOptions.aml" />
     <None Include="Content\GettingStarted\XCopyDeployment.aml" />
+    <None Include="Content\MSHelpViewerRoot.aml" />
     <None Include="Content\PropertiesWindow\ComponentConfigs.aml" />
     <None Include="Content\PropertiesWindow\PlugInConfigs.aml" />
     <None Include="Content\PropertiesWindow\SigningContent.aml" />
