@@ -101,8 +101,12 @@
                 string uri = null;
                 if (copy.Attribute("Url") != null)
                     uri = copy.Attribute("Url").Value;
-                else
+                else if (copy.Attribute("Id") != null)
+                    uri = copy.Attribute("Id").Value;
+                else if (copy.Name.LocalName == "HelpTOC")
                     uri = "roottoc.html";
+                else
+                    throw new NotImplementedException();
 
                 XmlWriterSettings writerSettings = new XmlWriterSettings();
                 writerSettings.Indent = true;
