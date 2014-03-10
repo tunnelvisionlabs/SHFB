@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="936f1b06-063e-4ffc-8999-0f7c9bd49e03" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <introduction>
+      <para>
+        This plug-in replaces the frames-based HTML Table of Contents in Website output
+        with a "lightweight" table of contents. The files created by other output methods
+        (such as HTML Help output) are not altered.
+      </para>
+      <para>
+        Advantages of the Lightweight TOC
+      </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+            No more use of HTML frames in the documentation, which means the browser's
+            address bar always contains the correct link to the current documentation page.
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Improved page load performance, especially for large documentation sites.
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Proper support for sites that only serve static content. The output of this plugin
+            does not require server-side support for scripting languages such as PHP or ASP.
+          </para>
+        </listItem>
+      </list>
+      <para>
+        Disadvantages of the Lightweight TOC
+      </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+            Switching to the lightweight TOC will break existing links to specific
+            documentation topics from external sites.
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Offline browsing of the HTML output requires special consideration.
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            The Lightweight TOC output does not support the index or search features provided
+            with the frames-based table of contents.
+          </para>
+        </listItem>
+      </list>
+    </introduction>
+
+    <section address="Enabling">
+      <title>Enabling the Lightweight TOC</title>
+      <content>
+        <alert class="important">
+          <para>
+            The lightweight TOC plug-in is not compatible with all presentation styles.
+            Only the <codeInline>VS2013</codeInline> presentation style is known to be
+            fully compatible with the features of this plug-in.
+          </para>
+        </alert>
+      </content>
+    </section>
+
+    <relatedTopics>
+      <link xlink:href="e031b14e-42f0-47e1-af4c-9fed2b88cbc7" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
