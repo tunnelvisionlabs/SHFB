@@ -779,7 +779,7 @@ function BuildChildren(tocDiv, data)
             var childTitle = htmlEncode(elements[i].getAttribute("Title"));
             var expander = "<span class=\"toc_empty\"></span>";
             if (hasChildren) {
-                expander = "<a class=\"toc_collapsed\" onclick=\"javascript: Toggle(this);\" href=\"#\"></a>";
+                expander = "<a class=\"toc_collapsed\" onclick=\"javascript: Toggle(this);\" href=\"#!\"></a>";
             }
             var text = "<div class=\"toclevel" + childTocLevel + "\" data-toclevel=\"" + childLevel + "\" style=\"padding-left: " + (childLevel * 13) + "px;\">" +
             expander + "<a data-tochassubtree=\"" + hasChildren + "\" href=\"" + childId + ".htm\" " +

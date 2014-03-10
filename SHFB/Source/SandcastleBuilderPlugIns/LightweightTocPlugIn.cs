@@ -307,7 +307,7 @@
                     new XElement("a",
                         new XAttribute("class", glyphClass),
                         new XAttribute("onclick", "javascript: Toggle(this);"),
-                        new XAttribute("href", "#")),
+                        new XAttribute("href", "#!")),
                     new XElement("a",
                         new XAttribute("data-tochassubtree", "true"),
                         new XAttribute("href", file),
@@ -335,7 +335,7 @@
             }
             else
             {
-                file = "#";
+                file = "#!";
                 if (ancestor.Attribute("Id") != null)
                     tocid = ancestor.Attribute("Id").Value;
                 else
@@ -352,7 +352,7 @@
                     new XElement("a",
                         new XAttribute("class", glyphClass),
                         new XAttribute("onclick", "javascript: Toggle(this);"),
-                        new XAttribute("href", "#")),
+                        new XAttribute("href", "#!")),
                     new XElement("a",
                         new XAttribute("data-tochassubtree", "true"),
                         new XAttribute("href", file),
@@ -379,18 +379,18 @@
             }
             else
             {
-                targetId = "#";
+                targetId = "#!";
                 if (sibling.Attribute("Id") != null)
                     targetTocId = sibling.Attribute("Id").Value;
                 else
-                    targetTocId = "#";
+                    targetTocId = "#!";
             }
 
             string currentId;
             if (current.Attribute("Url") != null)
                 currentId = current.Attribute("Url").Value;
             else
-                currentId = "#";
+                currentId = "#!";
 
             string file = Path.GetFileName(targetId);
             string tocTitle = sibling.Attribute("Title").Value;
@@ -408,7 +408,7 @@
                     new XElement("a",
                         new XAttribute("class", glyphClass),
                         new XAttribute("onclick", "javascript: Toggle(this);"),
-                        new XAttribute("href", "#"));
+                        new XAttribute("href", "#!"));
             }
             else
             {
@@ -451,11 +451,11 @@
             }
             else
             {
-                file = "#";
+                file = "#!";
                 if (child.Attribute("Id") != null)
                     tocid = child.Attribute("Id").Value;
                 else
-                    tocid = "#";
+                    tocid = "#!";
             }
 
             string tocTitle = child.Attribute("Title").Value;
@@ -467,7 +467,7 @@
                     new XElement("a",
                         new XAttribute("class", "toc_collapsed"),
                         new XAttribute("onclick", "javascript: Toggle(this);"),
-                        new XAttribute("href", "#"));
+                        new XAttribute("href", "#!"));
             }
             else
             {
