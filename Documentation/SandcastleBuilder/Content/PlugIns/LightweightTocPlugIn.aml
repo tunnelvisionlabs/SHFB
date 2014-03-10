@@ -44,7 +44,8 @@
         </listItem>
         <listItem>
           <para>
-            Offline browsing of the HTML output requires special consideration.
+            Offline browsing of the HTML output requires special consideration, as described
+            below.
           </para>
         </listItem>
         <listItem>
@@ -66,6 +67,52 @@
             fully compatible with the features of this plug-in.
           </para>
         </alert>
+      </content>
+    </section>
+
+    <section address="OfflineViewing">
+      <title>Offline Browsing</title>
+      <content>
+        <para>
+          Due to the use of jQuery and AJAX in the Lightweight TOC, offline browsing requires
+          special consideration.
+        </para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              Download a copy of the Website output for the documentation you wish to browse (or
+              use SHFB to build a copy of it locally).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Open Visual Studio. This method is tested with Visual Studio 2005-2013, however
+              Visual Studio 2012 and newer offer improved support for <legacyBold>index.html</legacyBold>
+              files which may save one step in the process.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Select <ui>File</ui> &#x2192; <ui>Open</ui> &#x2192; <ui>Web Site...</ui>. In the <ui>Folder</ui>
+              text box, enter the path to the documentation you wish to browse. This folder should
+              contain the <localUri>index.html</localUri> file created by the Lightweight TOC Plug-In,
+              and have subfolders including <localUri>html</localUri> and <localUri>toc</localUri>
+              which contain the actual content of the site.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              In <ui>Solution Explorer</ui>, right click the folder containing <localUri>index.html</localUri>
+              and select <ui>View in Browser</ui>.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              If a directory listing appears instead of the default page of your site, locate and
+              click <localUri>index.html</localUri> to begin browsing the documentation.
+            </para>
+          </listItem>
+        </list>
       </content>
     </section>
 
