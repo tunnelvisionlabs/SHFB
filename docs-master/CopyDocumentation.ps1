@@ -29,6 +29,18 @@ ForEach ($folder in $folders)
 		New-Item -ItemType directory $target | Out-Null
 	}
 
-	$excludes = @( '*.chm', 'LastBuild.log' )
+	$excludes = @(
+		# Skip server-side scripting features
+		'FillNode.*', 'LoadIndexKeywords.*', 'SearchHelp.*',
+
+		# Data used by server-side scripting features
+		'fti',
+
+		# Working data folder (in case it wasn't removed)
+		'Working',
+
+		# Build log and other output formats
+		'*.chm', 'LastBuild.log'
+	)
 	Copy-Item "$source\*" -Recurse $target -Exclude $excludes -Force
 }
