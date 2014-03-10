@@ -217,7 +217,6 @@
 		<xsl:if test="$self-branded != 'false'">
 			<xsl:copy>
 				<xsl:copy-of select="@*"/>
-				<xsl:comment/>
 			</xsl:copy>
 		</xsl:if>
 	</xsl:template>

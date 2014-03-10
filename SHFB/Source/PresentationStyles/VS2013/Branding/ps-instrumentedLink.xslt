@@ -115,9 +115,6 @@
 				</xsl:attribute>
 			</xsl:if>
 			<xsl:apply-templates select="node()" />
-			<xsl:if test="not(*) and not(text())">
-				<xsl:comment/>
-			</xsl:if>
 		</xsl:copy>
 	</xsl:template>
 

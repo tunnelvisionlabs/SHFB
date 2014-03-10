@@ -48,9 +48,6 @@
         </xsl:attribute>
      </xsl:if>
       <xsl:apply-templates />
-      <xsl:if test="not(*) and not(text())">
-        <xsl:comment/>
-      </xsl:if>
     </xsl:copy>
   </xsl:template>
 
@@ -87,9 +84,6 @@
         </xsl:attribute>
       </xsl:if>
       <xsl:apply-templates mode="self-branding"/>
-      <xsl:if test="not(*) and not(text())">
-        <xsl:comment/>
-      </xsl:if>
     </xsl:copy>
   </xsl:template>
 
