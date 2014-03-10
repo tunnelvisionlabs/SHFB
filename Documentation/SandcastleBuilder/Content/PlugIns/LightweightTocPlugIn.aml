@@ -67,6 +67,12 @@
             fully compatible with the features of this plug-in.
           </para>
         </alert>
+        <para>
+          The title of the root TOC element for the Lightweight TOC is taken from the
+          first page of conceptual content listed in the <legacyBold>.content</legacyBold>
+          file used by the project. For best results, the first node should be a root
+          content container as described in <link xlink:href="ba42b2c2-985d-46f1-ba4c-3d921edcafe3"/>.
+        </para>
       </content>
     </section>
 
