@@ -135,7 +135,6 @@
 			<xsl:attribute name="type">
 				<xsl:value-of select="'text/javascript'"/>
 			</xsl:attribute>
-			<xsl:comment/>
 		</xsl:element>
 	</xsl:template>
 

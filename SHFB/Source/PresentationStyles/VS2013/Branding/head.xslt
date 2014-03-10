@@ -55,7 +55,6 @@
         <xsl:attribute name="type">
           <xsl:value-of select="'text/javascript'"/>
         </xsl:attribute>
-        <xsl:comment/>
       </xsl:element>
 
       <xsl:apply-templates select="@*|node()"/>
@@ -96,7 +95,6 @@
         <xsl:attribute name="type">
           <xsl:value-of select="'text/javascript'"/>
         </xsl:attribute>
-        <xsl:comment/>
       </xsl:element>
 
       <xsl:apply-templates select="@*"/>
@@ -122,7 +120,6 @@
         </xsl:attribute>
       </xsl:if>
       <xsl:apply-templates mode="self-branding"/>
-      <xsl:comment/>
     </xsl:copy>
   </xsl:template>
 </xsl:stylesheet>
