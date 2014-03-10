@@ -18,7 +18,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <!-- These are needed to properly build the project and item templates and include them in the VSIX
-         container ready for installation.  Deployment is suppresssed since we are using VSTemplate files. -->
+         container ready for installation.  Deployment is suppressed since we are using VSTemplate files. -->
     <VsTemplateLanguage>SHFBProject</VsTemplateLanguage>
     <GetVsixSourceItemsDependsOn>$(GetVsixSourceItemsDependsOn);GetVsixTemplateItems</GetVsixSourceItemsDependsOn>
     <DeployVSTemplates>false</DeployVSTemplates>
@@ -322,9 +322,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SandcastleBuilderPackage.vspackage.diagram">
-      <DependentUpon>SandcastleBuilderPackage.vspackage</DependentUpon>
-    </None>
     <None Include="Templates\ReadMe.txt" />
     <!-- Each ZipProject must contain a RootPath element to define the root path used to group the project files
          into the same template archive. -->
@@ -673,56 +670,12 @@
     </ZipItem>
   </ItemGroup>
   <ItemGroup>
-    <None Include="GeneratedCode\Guids.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Guids.cs</LastGenOutput>
-    </None>
-    <None Include="GeneratedCode\Package.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Package.cs</LastGenOutput>
-    </None>
-    <None Include="GeneratedCode\PkgCmdID.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>PkgCmdID.cs</LastGenOutput>
-    </None>
-    <None Include="GeneratedCode\ToolWindowBase.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ToolWindowBase.cs</LastGenOutput>
-    </None>
-    <None Include="GeneratedCode\ToolWindow.tt" />
-    <None Include="GeneratedCode\SandcastleBuilderPackage.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>SandcastleBuilderPackage.vsct</LastGenOutput>
-    </None>
-    <None Include="GeneratedCode\WinFormControl.tt" />
-    <None Include="GeneratedCode\WinFormControlCS.tt" />
-    <None Include="GeneratedCode\WpfControl.tt" />
-    <None Include="GeneratedCode\WpfControlXaml.tt" />
-    <Compile Include="GeneratedCode\Guids.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Guids.tt</DependentUpon>
-    </Compile>
-    <Compile Include="GeneratedCode\Package.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Package.tt</DependentUpon>
-    </Compile>
-    <Compile Include="GeneratedCode\PkgCmdID.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PkgCmdID.tt</DependentUpon>
-    </Compile>
-    <Compile Include="GeneratedCode\ToolWindowBase.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ToolWindowBase.tt</DependentUpon>
-    </Compile>
+    <Compile Include="GeneratedCode\Guids.cs" />
+    <Compile Include="GeneratedCode\Package.cs" />
+    <Compile Include="GeneratedCode\PkgCmdID.cs" />
+    <Compile Include="GeneratedCode\ToolWindowBase.cs" />
     <VSCTCompile Include="GeneratedCode\SandcastleBuilderPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SandcastleBuilderPackage.tt</DependentUpon>
     </VSCTCompile>
   </ItemGroup>
   <ItemGroup>
@@ -819,7 +772,6 @@
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
-    <None Include="SandcastleBuilderPackage.vspackage" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CodeColorizer\ColorizerLibrary\ColorizerLibrary.csproj">
