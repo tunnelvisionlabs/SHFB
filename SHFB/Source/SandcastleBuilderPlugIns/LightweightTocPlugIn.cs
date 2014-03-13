@@ -5,6 +5,7 @@
     using System.Collections.ObjectModel;
     using System.Linq;
     using System.Text;
+    using System.Text.RegularExpressions;
     using System.Windows.Forms;
     using System.Xml;
     using System.Xml.Linq;
@@ -85,6 +86,26 @@
             foreach (XElement element in webtoc.XPathSelectElements("//node()[@Id and @Url]"))
             {
                 element.Attribute("Id").Remove();
+            }
+
+            // modify the text for namespaces in the TOC
+            const string LetterCharacter = @"[\p{Lu}\p{Ll}\p{Lt}\p{Lm}\p{Lo}\p{Nl}]";
+            const string DecimalDigitCharacter = @"\p{Nd}";
+            const string ConnectingCharacter = @"\p{Pc}";
+            const string CombiningCharacter = @"[\p{Mn}\p{Mc}]";
+            const string FormattingCharacter = @"\p{Cf}";
+            const string IdentifierStartCharacter = "(?:" + LetterCharacter + "|_)";
+            const string IdentifierPartCharacter = "(?:" + LetterCharacter + "|" + DecimalDigitCharacter + "|" + ConnectingCharacter + "|" + CombiningCharacter+ "|" + FormattingCharacter + ")";
+            const string Identifier = "(?:" + IdentifierStartCharacter + IdentifierPartCharacter + "*" + ")";
+            Regex pattern = new Regex("^" + Identifier + @"(?:\." + Identifier + ")* Namespace$", RegexOptions.Compiled);
+            foreach (XElement element in webtoc.XPathSelectElements("//HelpTOCNode[@Title]"))
+            {
+                string title = element.Attribute("Title").Value;
+                if (pattern.IsMatch(title))
+                {
+                    title = title.Substring(0, title.Length - " Namespace".Length);
+                    element.SetAttributeValue("Title", title);
+                }
             }
 
             // generate the TOC fragments
