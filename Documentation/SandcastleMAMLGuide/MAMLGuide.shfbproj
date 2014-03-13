@@ -138,7 +138,7 @@
     <Folder Include="Content\MiscElements\" />
     <Folder Include="Media\" />
     <Folder Include="Content\" />
-    <Folder Include="Icons" />
+    <Folder Include="icons\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons\Sandcastle.jpg">
@@ -177,6 +177,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\Donate.aml" />
+    <None Include="Content\License.aml" />
     <None Include="Content\MiscElements\markup.aml" />
     <None Include="Content\VersionHistory\v1.1.0.1.aml" />
     <None Include="Content\MSHelpViewerRoot.aml" />

@@ -211,8 +211,8 @@
     <Folder Include="Content\VersionHistory\" />
     <Folder Include="Content\ProjectExplorer\" />
     <Folder Include="Content\ErrorsAndWarnings\Converters\" />
+    <Folder Include="icons\" />
     <Folder Include="Media\" />
-    <Folder Include="Icons" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\BenefitsAndFeatures.aml" />
@@ -234,6 +234,7 @@
     <None Include="Content\GettingStarted\SpellCheckerOptions.aml" />
     <None Include="Content\GettingStarted\XCopyDeployment.aml" />
     <None Include="Content\MSHelpViewerRoot.aml" />
+    <None Include="Content\OpenXmlFormat.aml" />
     <None Include="Content\PlugIns\LightweightTocPlugIn.aml" />
     <None Include="Content\PropertiesWindow\ComponentConfigs.aml" />
     <None Include="Content\PropertiesWindow\PlugInConfigs.aml" />
