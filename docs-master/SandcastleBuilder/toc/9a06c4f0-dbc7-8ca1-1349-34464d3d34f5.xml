@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOCNode Title="SandcastleBuilder.Components Namespaces" Url="html/9a06c4f0-dbc7-8ca1-1349-34464d3d34f5.htm">
-  <HelpTOCNode Title="SandcastleBuilder.Components Namespace" Url="html/592251ca-d90c-278e-fc9b-c5d46a28039f.htm" HasChildren="true" />
-  <HelpTOCNode Title="SandcastleBuilder.Components.Commands Namespace" Url="html/74cba04e-b515-bbec-b6aa-a9b15e63552a.htm" HasChildren="true" />
-  <HelpTOCNode Title="SandcastleBuilder.Components.Targets Namespace" Url="html/7e42844d-816a-b0a9-0579-22457a0179fd.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Components" Url="html/592251ca-d90c-278e-fc9b-c5d46a28039f.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Components.Commands" Url="html/74cba04e-b515-bbec-b6aa-a9b15e63552a.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Components.Targets" Url="html/7e42844d-816a-b0a9-0579-22457a0179fd.htm" HasChildren="true" />
 </HelpTOCNode>

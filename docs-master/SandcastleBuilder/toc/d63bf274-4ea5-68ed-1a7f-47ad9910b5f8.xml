@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOCNode Title="SandcastleBuilder.Utils Namespaces" Url="html/d63bf274-4ea5-68ed-1a7f-47ad9910b5f8.htm">
-  <HelpTOCNode Title="SandcastleBuilder.Utils Namespace" Url="html/960ef505-1200-ede5-c807-ab0c912adef4.htm" HasChildren="true" />
-  <HelpTOCNode Title="SandcastleBuilder.Utils.BuildComponent Namespace" Url="html/2c8415a8-a96a-ef1c-5bb4-976755af6cb3.htm" HasChildren="true" />
-  <HelpTOCNode Title="SandcastleBuilder.Utils.BuildEngine Namespace" Url="html/c0dcae57-33bd-4938-45fe-79219fb3b0af.htm" HasChildren="true" />
-  <HelpTOCNode Title="SandcastleBuilder.Utils.ConceptualContent Namespace" Url="html/966b2fe1-8e51-cbfa-e98d-ed6a9f373fa0.htm" HasChildren="true" />
-  <HelpTOCNode Title="SandcastleBuilder.Utils.Controls Namespace" Url="html/20151a5f-9e6e-9b2b-13f8-fbc607f72a03.htm" HasChildren="true" />
-  <HelpTOCNode Title="SandcastleBuilder.Utils.Conversion Namespace" Url="html/82a57513-1170-8987-483e-6d14a1b20bbf.htm" HasChildren="true" />
-  <HelpTOCNode Title="SandcastleBuilder.Utils.Design Namespace" Url="html/d901f22b-58c1-ef62-8834-76a88875f6b8.htm" HasChildren="true" />
-  <HelpTOCNode Title="SandcastleBuilder.Utils.Gac Namespace" Url="html/c3402f66-1e9b-cb55-fdf3-66d44cfd4829.htm" HasChildren="true" />
-  <HelpTOCNode Title="SandcastleBuilder.Utils.InheritedDocumentation Namespace" Url="html/6cc4f669-e2fd-ec28-2864-4d2da7b8dca5.htm" HasChildren="true" />
-  <HelpTOCNode Title="SandcastleBuilder.Utils.MSBuild Namespace" Url="html/9b308131-0a59-f3eb-b7ff-431e13f5dc2a.htm" HasChildren="true" />
-  <HelpTOCNode Title="SandcastleBuilder.Utils.XPath Namespace" Url="html/9165c2b5-df2b-515c-633d-8bf3422c6ae0.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Utils" Url="html/960ef505-1200-ede5-c807-ab0c912adef4.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Utils.BuildComponent" Url="html/2c8415a8-a96a-ef1c-5bb4-976755af6cb3.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Utils.BuildEngine" Url="html/c0dcae57-33bd-4938-45fe-79219fb3b0af.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Utils.ConceptualContent" Url="html/966b2fe1-8e51-cbfa-e98d-ed6a9f373fa0.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Utils.Controls" Url="html/20151a5f-9e6e-9b2b-13f8-fbc607f72a03.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Utils.Conversion" Url="html/82a57513-1170-8987-483e-6d14a1b20bbf.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Utils.Design" Url="html/d901f22b-58c1-ef62-8834-76a88875f6b8.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Utils.Gac" Url="html/c3402f66-1e9b-cb55-fdf3-66d44cfd4829.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Utils.InheritedDocumentation" Url="html/6cc4f669-e2fd-ec28-2864-4d2da7b8dca5.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Utils.MSBuild" Url="html/9b308131-0a59-f3eb-b7ff-431e13f5dc2a.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Utils.XPath" Url="html/9165c2b5-df2b-515c-633d-8bf3422c6ae0.htm" HasChildren="true" />
 </HelpTOCNode>

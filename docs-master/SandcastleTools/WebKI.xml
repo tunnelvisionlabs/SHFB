@@ -4,9 +4,9 @@
   <HelpKINode Title="FAQ" Url="html/69c47b63-55bd-4493-ad05-1068bb0d930f.htm" />
   <HelpKINode Title="frequently asked questions" Url="html/69c47b63-55bd-4493-ad05-1068bb0d930f.htm" />
   <HelpKINode Title="Getting started">
+    <HelpKINode Title="enable XML comments" Url="html/1466166B-0BC0-4B0F-ABDC-B5A755EA4ED9.htm" />
     <HelpKINode Title="installation" Url="html/8A556640-5741-4108-AD6E-D1CAE4D91860.htm" />
     <HelpKINode Title="Visual Studio" Url="html/1466166B-0BC0-4B0F-ABDC-B5A755EA4ED9.htm" />
-    <HelpKINode Title="enable XML comments" Url="html/1466166B-0BC0-4B0F-ABDC-B5A755EA4ED9.htm" />
     <HelpKINode Title="Visual Studio projects" Url="html/1466166B-0BC0-4B0F-ABDC-B5A755EA4ED9.htm" />
     <HelpKINode Title="websites and web projects" Url="html/2D292E99-83FF-4978-B1F8-CF70385C3B4F.htm" />
   </HelpKINode>

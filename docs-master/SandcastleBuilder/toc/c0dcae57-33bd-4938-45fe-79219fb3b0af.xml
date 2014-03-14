@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="SandcastleBuilder.Utils.BuildEngine Namespace" Url="html/c0dcae57-33bd-4938-45fe-79219fb3b0af.htm">
+<HelpTOCNode Title="SandcastleBuilder.Utils.BuildEngine" Url="html/c0dcae57-33bd-4938-45fe-79219fb3b0af.htm">
   <HelpTOCNode Title="BuildProcess Class" Url="html/6c4dd5b1-16bc-6cc8-25b7-80073d1a7285.htm" HasChildren="true" />
   <HelpTOCNode Title="BuildProgressEventArgs Class" Url="html/fdde0048-bc94-f986-6db4-fad7dbca8489.htm" HasChildren="true" />
   <HelpTOCNode Title="BuildStep Enumeration" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />

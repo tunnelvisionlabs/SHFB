@@ -11,7 +11,7 @@
   <HelpTOCNode Title="Entity References Window" Url="html/e49eea91-a9ef-4aa5-ad8f-16ebd61b798a.htm" />
   <HelpTOCNode Title="Text Editor Window" Url="html/a76a88ff-d67f-4eb5-9622-90287c786c1b.htm" />
   <HelpTOCNode Title="Topic Previewer Window" Url="html/d3c7584d-73c0-4725-87f8-51e4ad956694.htm" />
-  <HelpTOCNode Title="Resource File Item Editor Window" Url="html/fcf8e4ac-5b32-4d5f-9bce-2e85c3468fdc.htm" />
+  <HelpTOCNode Title="Resource Item File Editor Window" Url="html/fcf8e4ac-5b32-4d5f-9bce-2e85c3468fdc.htm" />
   <HelpTOCNode Title="Conceptual and Additional Content" Url="html/5292ce5c-fda1-4a77-9155-a11755ef1730.htm" HasChildren="true" />
   <HelpTOCNode Title="Build Process Plug-Ins" Url="html/e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm" HasChildren="true" />
   <HelpTOCNode Title="Custom Build Components" Url="html/8dcbb69b-7a1a-4049-8e6b-2bf344efbbc9.htm" HasChildren="true" />
@@ -20,10 +20,20 @@
   <HelpTOCNode Title="Customizing the Header and Footer Text" Url="html/c7378077-fc10-45f9-b52a-c57dda96fe8d.htm" />
   <HelpTOCNode Title="Customizing the Build Process" Url="html/69d998a7-1af5-4bf5-889b-59cd00b64000.htm" />
   <HelpTOCNode Title="Creating a Presentation Style Component" Url="html/baf1dcbc-e9cf-4d71-a770-621e6eaf10a7.htm" />
+  <HelpTOCNode Title="Open XML Document Help File Format" Url="html/c5e7e920-2cb4-4f78-b167-634361d85263.htm" />
   <HelpTOCNode Title="Frequently Asked Questions (FAQ)" Url="html/1aea789d-b226-4b39-b534-4c97c256fac8.htm" />
   <HelpTOCNode Title="Links to Resources" Url="html/c18d6cb6-e4e4-4944-84ee-f867aa6cfb0d.htm" />
   <HelpTOCNode Title="Making a Donation" Url="html/717ca8cf-1a2f-4e63-a8a9-f836825f3509.htm" />
   <HelpTOCNode Title="Version History" Url="html/078cc1c7-7995-431e-bf9c-8813becbe8df.htm" HasChildren="true" />
   <HelpTOCNode Title="Glossary" Url="html/66bf98c7-7179-4940-8767-7085052f2f53.htm" />
-  <HelpTOCNode Title="SandcastleBuilder Namespaces" Url="html/71618999-859e-7931-58c9-872ee57a7a71.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Components Namespaces" Url="html/9a06c4f0-dbc7-8ca1-1349-34464d3d34f5.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Gui" Url="html/c72fd1c8-e775-8a2f-4aeb-663d5e47ae84.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Gui.ContentEditors" Url="html/594a1a96-ef38-a7fd-12a0-a9bcf838d00a.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.HtmlExtract" Url="html/e495c36d-8eae-c56c-7dc5-42dc68123703.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.InheritedDocumentation" Url="html/3647b189-0a05-8d7a-2e44-7a473cbbbf62.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.MicrosoftHelpViewer" Url="html/a293fe2d-0413-03b9-a785-17e7a54e16f0.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Package.PropertyPages" Url="html/1afb6f15-9354-5627-4635-0004c6ac8f60.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.PlugIns" Url="html/3c1057c9-0194-7dc9-d92e-dd426ccbb911.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.Utils Namespaces" Url="html/d63bf274-4ea5-68ed-1a7f-47ad9910b5f8.htm" HasChildren="true" />
+  <HelpTOCNode Title="SandcastleBuilder.WPF Namespaces" Url="html/5f653537-8bd9-6845-e8c0-9675989f0a4d.htm" HasChildren="true" />
 </HelpTOC>
