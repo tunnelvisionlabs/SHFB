@@ -11,11 +11,11 @@
 XCOPY deployment.  As long as the <span class="code">SHFBROOT</span> system environment variable
 points to the location of the help file builder assemblies, it will be able to find everything it needs at build
 time.  In such situations, custom build components, plug-ins, syntax generators, and presentation styles may also
-be copied to the help file builder folder or a sub-folder beneath it.</p></div><a id="XCopyDeployment"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle"></div></div><p>When searching for custom components, the following search order is used:</p><ul><li>If a <span class="code">ComponentPath</span> project property value is set, the folder it refers
+be copied to the help file builder folder or a sub-folder beneath it.</p></div><a id="XCopyDeployment"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle"></div></div><p>When searching for custom components, the following search order is used:</p><ul><li><p>If a <span class="code">ComponentPath</span> project property value is set, the folder it refers
 to is searched first and then the actual project folder is searched.  If the property contains no value, the
-actual project folder is searched first.</li><li>Next, the common application data folders noted in the
-<a href="a24489fb-45d6-46f4-9eaa-9a9c4e0919b2.htm" target="">Special Folder Locations</a> topic are searched.</li><li>Finally, the help file builder installation folder (<span class="code">SHFBROOT</span>)
-is searched.</li></ul><p>If any duplicate components are encountered, the first one loaded based on the above search order
+actual project folder is searched first.</p></li><li><p>Next, the common application data folders noted in the
+<a href="a24489fb-45d6-46f4-9eaa-9a9c4e0919b2.htm" target="">Special Folder Locations</a> topic are searched.</p></li><li><p>Finally, the help file builder installation folder (<span class="code">SHFBROOT</span>)
+is searched.</p></li></ul><p>If any duplicate components are encountered, the first one loaded based on the above search order
 will be used.</p><p>It is possible to build a project without defining the <span class="code">SHFBROOT</span>
 environment variable.  To do this, a conditional <span class="code">SHFBROOT</span> property must be added to each
 help file builder project as a child of the main <span class="code">PropertyGroup</span> element.  An example is

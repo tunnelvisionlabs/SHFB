@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Id="5c614578-a865-4280-95aa-eb52cd2ede07" Title="Build Engine">
+<HelpTOCNode Id="e4d325c8-0d67-44e3-ad99-93b3e963f746" Title="Build Engine">
   <HelpTOCNode Title="BE0001: The PresentationStyle property value of 'XXXX' is not recognized" Url="html/13bf1e14-bf8f-478b-8fe6-932d18922a85.htm" />
   <HelpTOCNode Title="BE0002: Shared builder content for the '[langId]' language could not be found" Url="html/726e79fd-260d-4f9f-96c7-cc62d3c210db.htm" />
   <HelpTOCNode Title="BE0003: Sandcastle shared content for the '[langId]' language could not be found" Url="html/7f4054ff-9490-452e-b842-5b783f31a8af.htm" />

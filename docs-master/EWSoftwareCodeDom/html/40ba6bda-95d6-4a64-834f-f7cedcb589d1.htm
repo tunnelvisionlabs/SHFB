@@ -13,49 +13,49 @@ a <em>web application</em> project and a <em>website</em> project
 (both include a web service and an AJAX-enabled variant of the project type). A web application project is
 the simplest to document as it generates a single assembly with a fixed name much like any other non-web
 project.  A website project, however, requires some extra effort to document and has a number of
-limitations:</p><ul><li>It does not necessarily generate a single assembly.</li><li>It only generates assemblies when you actually publish the project.</li><li>The assembly names may vary from build to build depending on the options you use when
-publishing the website.</li><li>There is no project-level option to produce XML comments files. Instead, you have to add a
-section to the <em>Web.config</em> file to produce them.</li><li><p>Even after adding the option to produce XML comments files, there are limitations:</p><ul><li>If you specify a single comments filename, only the comments from the last assembly
+limitations:</p><ul><li><p>It does not necessarily generate a single assembly.</p></li><li><p>It only generates assemblies when you actually publish the project.</p></li><li><p>The assembly names may vary from build to build depending on the options you use when
+publishing the website.</p></li><li><p>There is no project-level option to produce XML comments files. Instead, you have to add a
+section to the <em>Web.config</em> file to produce them.</p></li><li><p>Even after adding the option to produce XML comments files, there are limitations:</p><ul><li><p>If you specify a single comments filename, only the comments from the last assembly
 compiled will be saved.  The VB.NET compiler has a <span class="code">/doc+</span> option to work around this
 issue.  However, the C# compiler does not so this makes it impossible to fully document a C# website
-project.</li><li>The comments files produced using the VB.NET <span class="code">/doc+</span> option are
+project.</p></li><li><p>The comments files produced using the VB.NET <span class="code">/doc+</span> option are
 not placed in the folder to which the project was published. Instead, they are left in the system's temporary
 ASP.NET folder for the related .NET version (i.e.
 <em>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET files</em> so you must
-locate and retrieve them after each build.</li></ul></li></ul><p>To work around the limitations present when documenting website projects, you can use the
+locate and retrieve them after each build.</p></li></ul></li></ul><p>To work around the limitations present when documenting website projects, you can use the
 supplied custom code providers (one for C# and one for VB.NET).  By using these code providers, you can
 specify a folder to which the XML comments files should be copied.  This saves you from having to locate
 and copy them manually and solves the issue of the C# compiler not being able to output one comments file
 per assembly.  Below are instructions for documenting each type of web project and information about how
-the code providers work.</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Note"> <strong>Note</strong></th></tr><tr><td>The code providers assembly can be found in the <em>.\Extras</em> folder under the
+the code providers work.</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Note"> <strong>Note</strong></th></tr><tr><td><p>The code providers assembly can be found in the <em>.\Extras</em> folder under the
 root help file builder installation folder (typically <em>C:\Program Files (x86)\EWSoftware\Sandcastle
-Help File Builder</em>).</td></tr></table></div></div><a id="DocWebApps"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Documenting Web Application and Web Service Application Projects</div></div><p>As noted, web applications are the easiest to document and do not require the use of the
+Help File Builder</em>).</p></td></tr></table></div></div><a id="DocWebApps"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Documenting Web Application and Web Service Application Projects</div></div><p>As noted, web applications are the easiest to document and do not require the use of the
 custom code providers.  These projects are created in Visual Studio by selecting <strong>File | New |
 Project</strong> and then selecting <strong>ASP.NET Web Application</strong> or
 <strong>ASP.NET Web Service Application</strong> from the <strong>Web</strong> category of
 your preferred language.  Note that these options are only available in Visual Studio 2005 after you install
 Service Pack 1.</p><p>You must enable the XML comments option in your application projects so that an XML comments
-file is produced when the projects are built.  This is done as follows:</p><ol><li>In the Solution Explorer, right click on the project and select
-<strong>Properties</strong>.</li><li>Select the <strong>Build</strong> property page (C#) or the
-<strong>Compile</strong> property page (VB.NET).</li><li>The XML comments filename is a per configuration option.  As such, you can either select
+file is produced when the projects are built.  This is done as follows:</p><ol><li><p>In the Solution Explorer, right click on the project and select
+<strong>Properties</strong>.</p></li><li><p>Select the <strong>Build</strong> property page (C#) or the
+<strong>Compile</strong> property page (VB.NET).</p></li><li><p>The XML comments filename is a per configuration option.  As such, you can either select
 the <strong>All Configurations</strong> option at the top of the page to set the XML comments
 options for all configurations at the same time or select each configuration individually and repeat the
-next step for each one.</li><li><p>For C#, in the <strong>Output</strong> section, check the checkbox next to the
+next step for each one.</p></li><li><p>For C#, in the <strong>Output</strong> section, check the checkbox next to the
 <strong>XML documentation file</strong>  text box and specify a name for the XML comments file.
 Although not required, a common convention is to name the XML comments file after the related assembly
 except with a <em>.xml</em> extension. The assembly name can be found on the
 <strong>Application</strong> property page.</p><p>For VB.NET, just check the <strong>Generate XML documentation file</strong> checkbox.
-It names the file after the assembly automatically.</p></li><li>If you have a solution with multiple web application or web service application projects
+It names the file after the assembly automatically.</p></li><li><p>If you have a solution with multiple web application or web service application projects
 that need to be documented, repeat the above steps for each project in the solution.  If using the
 Sandcastle Help File Builder, be sure to give each project's XML comments file a unique name as they are
 copied to a common location for the build. Identically named files would overwrite each other and the
-documentation in the overwritten files would not appear in the help file.</li></ol><p>Once the above has been done, Visual Studio will create the XML comments file each time the
+documentation in the overwritten files would not appear in the help file.</p></li></ol><p>Once the above has been done, Visual Studio will create the XML comments file each time the
 project is built.  It is placed in the <em>.\bin</em> folder along with the assembly.  These can
 be used in conjunction with your preferred documentation tool to produce a help file.</p><a id="DocWebsites"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Documenting Website and Web Service Website Projects</div></div><p>These projects are created in Visual Studio by selecting <strong>File | New | Web Site</strong>
 and then selecting <strong>ASP.NET Web Site</strong> or <strong>ASP.NET Web Service</strong>
 from the template dialog box.  In order to create XML comments files, you must add the custom code providers
-to the <em>Web.config</em> file and publish the website.  This is done as follows:</p><ol><li>If your project does not yet contain one, add a <em>Web.config</em>
-configuration file.</li><li><p>Add the following <span class="code">&lt;system.codedom&gt;</span> section to the
+to the <em>Web.config</em> file and publish the website.  This is done as follows:</p><ol><li><p>If your project does not yet contain one, add a <em>Web.config</em>
+configuration file.</p></li><li><p>Add the following <span class="code">&lt;system.codedom&gt;</span> section to the
 <span class="code">&lt;configuration&gt;</span> section as shown in the example below.  You only need to add
 the <span class="code">&lt;compiler&gt;</span> element for the language that you are using but it will not
 hurt anything if they are both present.</p><div id="ID0EBBGKAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EBBGKAAAAA_tabs"><div id="ID0EBBGKAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">Example Code Provider Configurations</a></div></div><div id="ID0EBBGKAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EBBGKAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EBBGKAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EBBGKAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EBBGKAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EBBGKAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EBBGKAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EBBGKAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">configuration</span><span class="highlight-xml-bracket">&gt;</span> 
@@ -121,7 +121,7 @@ Solution Explorer, select <strong>Publish Web Site</strong>, set the options, an
 publish it.  When finished, look in the location you specified in the <span class="code">/docpath</span>
 option and you will find one XML comments file for each assembly that was built for your website.  These can
 be used in conjunction with the assemblies and your preferred documentation tool to produce a help file.</p><p>As an alternative to publishing the website, you can use a web deployment project.  Add-ins
-are available at the following locations:</p><ul><li><a class="mtps-external-link" href="http://msdn.microsoft.com/en-us/asp.net/aa336619.aspx" target="_blank">Visual Studio 2005 Web Deployment Add-In</a></li><li><a class="mtps-external-link" href="http://www.microsoft.com/downloads/details.aspx?FamilyId=0AA30AE8-C73B-4BDD-BB1B-FE697256C459&amp;displaylang=en" target="_blank">Visual Studio 2008 Web Deployment Add-In</a></li></ul><p>The <a class="mtps-external-link" href="http://SHFB.CodePlex.com" target="_blank">Sandcastle Help File Builder</a> version 1.8.0.0 and later supports wildcard documentation sources.  As
+are available at the following locations:</p><ul><li><p><a class="mtps-external-link" href="http://msdn.microsoft.com/en-us/asp.net/aa336619.aspx" target="_blank">Visual Studio 2005 Web Deployment Add-In</a></p></li><li><p><a class="mtps-external-link" href="http://www.microsoft.com/downloads/details.aspx?FamilyId=0AA30AE8-C73B-4BDD-BB1B-FE697256C459&amp;displaylang=en" target="_blank">Visual Studio 2008 Web Deployment Add-In</a></p></li></ul><p>The <a class="mtps-external-link" href="http://SHFB.CodePlex.com" target="_blank">Sandcastle Help File Builder</a> version 1.8.0.0 and later supports wildcard documentation sources.  As
 such, just add one entry with the path set to <em>[appPath]\bin\App_*.dll</em> where
 <em>[appPath]</em> is the path to the published website and another entry with the path
 set to <em>[docPath]\App_*.xml</em> where <em>[docPath]</em> is the path to
@@ -145,19 +145,19 @@ replace the <em>Web.config</em> in the published website with one that has had t
 <span class="code">system.codedom</span> section removed, and delete the code provider assembly if it was
 copied locally.  This is left as an exercise for the reader.  The web deployment add-ins noted above
 support post-build events so they may provide better support for such tasks.</p><a id="KnownIssues"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Usage Notes and Known Issues</div></div><p>The following are some known issues and things to be aware of when
-using the custom code providers.</p><ul><li>If any part of the XML comments file path contains spaces, enclose it in
+using the custom code providers.</p><ul><li><p>If any part of the XML comments file path contains spaces, enclose it in
 <span class="code">&amp;quot;</span> entities (i.e.
-<span class="code">compilerOptions="/docpath:&amp;quot;C:\My Path With Spaces&amp;quot;"</span>).</li><li>Do not use a relative path in the <span class="code">/docpath</span> option. Always use a
+<span class="code">compilerOptions="/docpath:&amp;quot;C:\My Path With Spaces&amp;quot;"</span>).</p></li><li><p>Do not use a relative path in the <span class="code">/docpath</span> option. Always use a
 fully qualified path.  When using the project's publish option, the ASP.NET compiler always runs in the .NET
 Framework folder so your XML comments files will end up in a location relative to it rather than your
-project's folder if you do.</li><li>You can specify any folder except one that is under the location to which you publish the
+project's folder if you do.</p></li><li><p>You can specify any folder except one that is under the location to which you publish the
 website.  The act of publishing the website clears the destination folder and, since the comments files are
-produced first, you will lose them if you place them under it.</li><li>The code providers will delete any "App_*.xml" files from the specified folder on the
+produced first, you will lose them if you place them under it.</p></li><li><p>The code providers will delete any "App_*.xml" files from the specified folder on the
 first use.  This prevents lots of files from accumulating in the comments file folder that contain duplicate
 information when not using fixed names.  It also means that you should publish each website's comments files
-to a unique folder so that they are not lost if you are publishing and documenting multiple projects.</li><li>Unless you are using fixed names when publishing, the assembly and comments filenames will
+to a unique folder so that they are not lost if you are publishing and documenting multiple projects.</p></li><li><p>Unless you are using fixed names when publishing, the assembly and comments filenames will
 change each time you publish the website.  As such, use wildcards (App_*.dll and App_*.xml) to specify the
-files to use in your preferred documentation tool.</li><li>When using the VB.NET custom code provider, the commonly imported namespaces such as
+files to use in your preferred documentation tool.</p></li><li><p>When using the VB.NET custom code provider, the commonly imported namespaces such as
 <span class="code">System</span> and <span class="code">Microsoft.VisualBasic</span> are not included
 automatically for some unknown reason.  The custom code provider will add a <span class="code">/imports</span>
 command line option automatically for most of the common namespaces to work around the problem.  If
@@ -168,11 +168,11 @@ cause problems by checking <em>Web.Config</em> for <span class="code">&lt;namesp
 elements in the <span class="code">&lt;pages&gt;</span> configuration section.  See below for a list of the
 common namespaces added automatically by the VB.NET custom code provider. Another workaround to this issue
 is to add <span class="code">Imports</span> statements to the code for each of the required namespaces rather
-than relying on the automatically included references.</li><li>Related to the item above, when the custom code providers are active in the
+than relying on the automatically included references.</p></li><li><p>Related to the item above, when the custom code providers are active in the
 <em>Web.Config</em> file, you may see lots of errors indicated by the red squiggly underline
 related to missing types while viewing VB.NET code. During development, you can comment out the custom code
 providers so that this does not happen.  As noted, the other workaround is to add an <span class="code">Imports</span>
-statement to the code that includes the missing namespace that contains the types.</li></ul><a id="HowTheyWork"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">How The Code Providers Work</div></div><p>The custom code providers are actually quite simple.  Both the C# and VB.NET custom code
+statement to the code that includes the missing namespace that contains the types.</p></li></ul><a id="HowTheyWork"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">How The Code Providers Work</div></div><p>The custom code providers are actually quite simple.  Both the C# and VB.NET custom code
 providers are identical with the exception of their base class and an extra set of compiler options passed
 by the VB.NET version.  The C# version is shown below.</p><div id="ID0EEEAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EEEAAAAA_tabs"><div id="ID0EEEAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">Example Code Provider</a></div></div><div id="ID0EEEAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EEEAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EEEAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EEEAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EEEAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EEEAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EEEAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EEEAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> CSharpCodeProviderWithDocs : CSharpCodeProvider
 {
@@ -330,5 +330,5 @@ output assembly's name and a <em>.xml</em>. extension and replaces the <span cla
 option with a <span class="code">/doc</span> command line option.  If any additional options are passed to
 the method, they are also appended to the command line options.  The VB.NET code provider passes in an extra
 <span class="code">/imports</span> command line option to specify the following default import namespaces to
-work around the issue noted earlier:</p><ul><li>System</li><li>System.Collections</li><li>System.Collections.Generic</li><li>System.Collections.ObjectModel</li><li>System.Configuration</li><li>System.Data</li><li>System.Web</li><li>System.Web.Configuration</li><li>System.Web.UI</li><li>System.Web.UI.HtmlControls</li><li>System.Web.UI.WebControls</li><li>System.Web.Util</li><li>System.Xml</li><li>Microsoft.VisualBasic</li></ul><a id="Conclusion"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Conclusion</div></div><p>By using the custom code providers and the instructions above, you can now easily produce XML
+work around the issue noted earlier:</p><ul><li><p>System</p></li><li><p>System.Collections</p></li><li><p>System.Collections.Generic</p></li><li><p>System.Collections.ObjectModel</p></li><li><p>System.Configuration</p></li><li><p>System.Data</p></li><li><p>System.Web</p></li><li><p>System.Web.Configuration</p></li><li><p>System.Web.UI</p></li><li><p>System.Web.UI.HtmlControls</p></li><li><p>System.Web.UI.WebControls</p></li><li><p>System.Web.Util</p></li><li><p>System.Xml</p></li><li><p>Microsoft.VisualBasic</p></li></ul><a id="Conclusion"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Conclusion</div></div><p>By using the custom code providers and the instructions above, you can now easily produce XML
 comments files for website projects in order to create help files for them.</p><a name="seeAlsoSection"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div></div><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><span sdata="cer" target="T:EWSoftware.CodeDom.CSharpCodeProviderWithDocs"><a href="cbb7bea7-5a2b-73f1-9c37-f0f603e8ad2a.htm" target="">CSharpCodeProviderWithDocs</a></span></div><div class="seeAlsoStyle"><span sdata="cer" target="T:EWSoftware.CodeDom.VBCodeProviderWithDocs"><a href="3e4b2bba-c32d-f96a-8e7b-aa7180754aa7.htm" target="">VBCodeProviderWithDocs</a></span></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a class="mtps-external-link" href="http://SHFB.CodePlex.com" target="_blank">Sandcastle</a></div><div class="seeAlsoStyle"><a class="mtps-external-link" href="http://SHFB.CodePlex.com" target="_blank">Sandcastle Help File Builder</a></div><div class="seeAlsoStyle"><a class="mtps-external-link" href="http://DocProject.CodePlex.com" target="_blank">DocProject</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p><a href="http://Sandcastle.CodePlex.com" target="_blank">Copyright © 2008-2014, Eric Woodruff, All rights reserved (http://Sandcastle.CodePlex.com)</a></p><div class="OH_feedbacklink"><a href="mailto:Eric@EWoodruff.us?subject=EWSoftware.CodeDom+Namespace+Documentation+Documenting+Web+Projects+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Eric@EWoodruff.us.</div></div><script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript">$(document).ready(function () {DocumentReady();});</script></body></html>

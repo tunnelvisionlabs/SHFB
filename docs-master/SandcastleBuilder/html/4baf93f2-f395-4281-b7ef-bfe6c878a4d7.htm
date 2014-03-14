@@ -11,24 +11,24 @@
 This catalog determines what books are included in each package as well as maintaining references between the
 packages.  More information can be found on the <a class="mtps-external-link" title="MS Help Viewer" href="http://www.helpware.net/mshelp3/intro.htm" target="_blank">Introducing MS Help Viewer 1.0</a>  page at the HelpWare Group website.</p></div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle"></div></div><p>Unlike HTML Help 1 (CHM) files, an MS Help Viewer package or book must be installed in order to view
 it. This makes deploying MS Help Viewer documentation more complex than simply delivering a single file and
-creating a shortcut to it.  However, it is much simpler than its predecessor, MS Help 2.</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Tip"> <strong>Tip</strong></th></tr><tr><td>Due to the requirement that MS Help Viewer files be installed before you can view them which can be time
+creating a shortcut to it.  However, it is much simpler than its predecessor, MS Help 2.</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Tip"> <strong>Tip</strong></th></tr><tr><td><p>Due to the requirement that MS Help Viewer files be installed before you can view them which can be time
 consuming, it is recommended that you generate one of the other help formats such as Help 1 or website while
-developing and proofreading your help file.</td></tr></table></div><p>When producing an MS Help Viewer file, the help file builder produces a valid help content setup file
+developing and proofreading your help file.</p></td></tr></table></div><p>When producing an MS Help Viewer file, the help file builder produces a valid help content setup file
 suitable for use by the Help Library Manager.  It also includes a Help Library Manager launcher utility that
 takes care of the standard housekeeping tasks required when installing and removing MS Help Viewer content.  It
 is a command line tool that can be included by scripted installers as well as Windows Installer packages as a
-custom action.  In order to deploy the generated MS Help Viewer file, follow these steps:</p><ol><li>Set the MS Help Viewer <a href="5f743a6e-3239-409a-a8c1-0bff4b5375f4.htm" target="">project properties</a>
+custom action.  In order to deploy the generated MS Help Viewer file, follow these steps:</p><ol><li><p>Set the MS Help Viewer <a href="5f743a6e-3239-409a-a8c1-0bff4b5375f4.htm" target="">project properties</a>
 as needed.  At the minimum, you should set the <span class="code">Vendor Name</span> and <span class="code">Product Title</span>
-properties to something other than their default values.</li><li>Build the help project.</li><li><p>In order to install an MS Help Viewer file, a help content setup file is required.  The help file
+properties to something other than their default values.</p></li><li><p>Build the help project.</p></li><li><p>In order to install an MS Help Viewer file, a help content setup file is required.  The help file
 builder automatically creates a help content setup file for you named after the help file but with a
 <em>.msha</em> extension.  This allows you to build and deploy multiple MS Help Viewer files to the
-same location.</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_caution.gif" alt="Important note"> <strong>Important</strong></th></tr><tr><td>For MS Help Viewer 1.0, the name of the help content setup file used during installation must be
+same location.</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_caution.gif" alt="Important note"> <strong>Important</strong></th></tr><tr><td><p>For MS Help Viewer 1.0, the name of the help content setup file used during installation must be
 <em>HelpContentSetup.msha</em>.  If you only have one help file, you can rename the setup file
 created by the help file builder to <em>HelpContentSetup.msha</em>.  If you have multiple help
-files, you can rename one of the setup files and merge the package information from the others into it.</td></tr></table></div></li><li>Include all of the generated help files (the <em>.mshc</em> files) as well as the
+files, you can rename one of the setup files and merge the package information from the others into it.</p></td></tr></table></div></li><li><p>Include all of the generated help files (the <em>.mshc</em> files) as well as the
 <em>HelpContentSetup.msha</em> and the <em>HelpLibraryManagerLauncher.exe</em> executable
-in your installer.</li><li>During installation, copy the help files, the help content setup file, and
-<em>HelpLibraryManagerLauncher.exe</em> to their installed location.</li><li><p>Execute the <a href="534c4ff1-3bba-4431-a3a6-76dcb2d374f8.htm" target="">Help Library Manager launcher</a>
+in your installer.</p></li><li><p>During installation, copy the help files, the help content setup file, and
+<em>HelpLibraryManagerLauncher.exe</em> to their installed location.</p></li><li><p>Execute the <a href="534c4ff1-3bba-4431-a3a6-76dcb2d374f8.htm" target="">Help Library Manager launcher</a>
 or a script to install the help file.  This step will vary based on whether or not you are using signed cabinet
 files to deploy your help content.  Note that silent installs are only allowed with signed cabinet files.  For
 unsigned files, the Help Library Manager will always appear and confirm the installation.  Below is an example of

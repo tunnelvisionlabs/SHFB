@@ -11,9 +11,9 @@
 				This topic will explain how you can change the MAML schema so that you can use elements from other
 				namespaces as well. This is useful when extending Sandcastle with build components that provide new
 				elements because it still allows you to validate your topic files.
-			</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Tip"> <strong>Tip</strong></th></tr><tr><td>
+			</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Tip"> <strong>Tip</strong></th></tr><tr><td><p>
 					The Sandcastle version of the MAML schema files already contain the necessary changes.
-				</td></tr></table></div></div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">XML Schema Extensibility</div></div><p>
+				</p></td></tr></table></div></div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">XML Schema Extensibility</div></div><p>
 					In general, XML schema provides the <span class="code">any</span> element
 					for declaring extensibility points in your schema. The
 					<span class="code">any</span> element has two attributes that control the
@@ -22,52 +22,52 @@
 					The <span class="code">namespace</span> attribute allows you to either
 					explicitly specify a closed set of namespaces that are allowed or to specify
 					one of these pseudo-URIs:
-				</p><dl class="authored"><dt>##local</dt><dd>
+				</p><dl class="authored"><dt>##local</dt><dd><p>
 							This allows only to use elements that do not reside in any namespace.
 							This is not what we want to use because it forces build component
 							authors to declare all elements in the empty namespace. This could
 							easily lead to name clashes between different build components.
-						</dd><dt>##targetNamespace</dt><dd>
+						</p></dd><dt>##targetNamespace</dt><dd><p>
 							This only allows elements from the target namespace of the declaring
 							schema. For our purposes this is useless because it would only allow
 							elements from the MAML namespace
 							(http://ddue.schemas.microsoft.com/authoring/2003/5).
-						</dd><dt>##any</dt><dd>
+						</p></dd><dt>##any</dt><dd><p>
 							This allows any namespace, including the target namespace of the
 							declaring schema. We do not want to use this because it would also
 							allow to use any element from the
 							MAML namespace
 							(http://ddue.schemas.microsoft.com/authoring/2003/5)
 							itself and hence undermine the schema validation for MAML.
-						</dd><dt>##other</dt><dd>
+						</p></dd><dt>##other</dt><dd><p>
 							This allows any namespaces except the target namespace of the declaring
 							schema. For our purposes this is ideal because it allows only to use
 							elements from any namespace except the MAML namespace
 							(http://ddue.schemas.microsoft.com/authoring/2003/5).
-						</dd></dl><p>
+						</p></dd></dl><p>
 					The <span class="code">processContents</span> attribute allows you to control
 					the validation requirements. It can have one of following values:
-				</p><dl class="authored"><dt>skip</dt><dd>
+				</p><dl class="authored"><dt>skip</dt><dd><p>
 							This is the least restrictive value. It specifies that the schema processor
 							should not try to validate the contents of the new element, even if it is
 							able to find a schema for it.
-						</dd><dt>strict</dt><dd>
+						</p></dd><dt>strict</dt><dd><p>
 							This is the most restrictive setting. It requires the schema processor to
 							always validate the contents of the new element. If it is not able to
 							find such a schema an error is reported during validation.
-						</dd><dt>lax</dt><dd>
+						</p></dd><dt>lax</dt><dd><p>
 							This is a compromise between the settings <span class="code">skip</span> and
 							<span class="code">strict</span>. The schema processor will validate the schema
 							if it is able to find a schema for the new element and will skip it if cannot
 							find such a schema. For our purposes this is ideal because it allows build component
 							authors to provide a schema for validation but does not force them to do so.
-						</dd></dl><p>
+						</p></dd></dl><p>
 					Therefore, our extensibility points will all look like this:
 				</p><div id="ID0EAFAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EAFAAAAA_tabs"><div id="ID0EAFAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">XML</a></div></div><div id="ID0EAFAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAFAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EAFAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EAFAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EAFAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EAFAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EAFAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EAFAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">any</span> <span class="highlight-xml-attribute-name">namespace</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"##other"</span> <span class="highlight-xml-attribute-name">processContents</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"lax"</span> <span class="highlight-xml-bracket">/&gt;</span></pre></div><div id="ID0EAFAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>&lt;any namespace="##other" processContents="lax" /&gt;</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EAFAAAAA');</script><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Extending Inline Text</div></div><p>
 					Build components might add elements that you can use inside a
 					http://ddue.schemas.microsoft.com/authoring/2003/5#E/para
 					element. Examples for such elements are:
-				</p><dl class="authored"><dt>Linking</dt><dd>
+				</p><dl class="authored"><dt>Linking</dt><dd><p>
 							These are elements that allow you to link to other topics. MAML itself already provides
 							several elements for this purpose, such as the
 							http://ddue.schemas.microsoft.com/authoring/2003/5#E/link
@@ -76,7 +76,7 @@
 							element to link to managed code APIs, and the
 							http://ddue.schemas.microsoft.com/authoring/2003/5#E/externalLink
 							element to link to some location in the internet.
-						</dd><dt>Semantics</dt><dd>
+						</p></dd><dt>Semantics</dt><dd><p>
 							This category includes elements that are used to associate pieces of text with semantics.
 							In many cases these semantics are made visible through a consistent formatting, such as italics
 							or bold text. Amongst others MAML itself provides the
@@ -84,7 +84,7 @@
 							element for marking text as representing local paths and the
 							http://ddue.schemas.microsoft.com/authoring/2003/5#E/ui
 							element for marking text as representing elements in your user interface.
-						</dd></dl><p>
+						</p></dd></dl><p>
 					To extend the
 					http://ddue.schemas.microsoft.com/authoring/2003/5#E/para
 					element we will extend the underlying type

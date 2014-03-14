@@ -24,8 +24,8 @@ library or application, such as the actual namespaces, types, members and method
 conceptual documentation to provide instructional information about the overall design and conceptual properties
 of a managed library or application, such as how to accomplish specific usage scenarios and providing an in-depth
 analysis of specifically complex APIs. More distinctions between the two modes can be found in their
-corresponding sections below.</p><div class="ps_mediaCenter"><img alt="Sandcastle Modes" src="./../media/SandcastleModes.jpg"></div><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Note"> <strong>Note</strong></th></tr><tr><td>Although built separately, the outputs from the reference and conceptual builds are compatible
-and are typically combined into a single help file.</td></tr></table></div><a id="ReferenceMode"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Reference Mode</div></div><p>To produce reference documentation, Sandcastle requires managed assemblies as input. The
+corresponding sections below.</p><div class="ps_mediaCenter"><img alt="Sandcastle Modes" src="./../media/SandcastleModes.jpg"></div><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Note"> <strong>Note</strong></th></tr><tr><td><p>Although built separately, the outputs from the reference and conceptual builds are compatible
+and are typically combined into a single help file.</p></td></tr></table></div><a id="ReferenceMode"></a><h4 class="subHeading">Reference Mode</h4><div class="subsection"><p>To produce reference documentation, Sandcastle requires managed assemblies as input. The
 <strong>MRefBuilder</strong> command-line tool is used to analyze the physical properties of the
 assemblies, as well as their dependencies, ultimately producing an XML reflection file that becomes input for the
 next steps of the process. This XML reflection file contains all of the information that is required to document
@@ -42,7 +42,7 @@ e.g., contents of the <span class="code">&lt;summary&gt;</span> elements appear 
 <span class="code">&lt;remarks&gt;</span> contents appear after the syntax section.</p><p>Sandcastle also automatically generates a table of contents (TOC) and a keyword index based on
 the XML reflection file. Each auto-generated API topic also includes appropriate hyperlinks. Typically,
 pseudo-topics are automatically generated as well; e.g., a topic containing a list of all the types in a
-particular namespace, and another topic containing a list of all properties in a particular type, etc.</p><a id="ConceptualMode"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Conceptual Mode</div></div><p>To produce conceptual documentation, Sandcastle depends on a special XML schema called
+particular namespace, and another topic containing a list of all properties in a particular type, etc.</p></div><a id="ConceptualMode"></a><h4 class="subHeading">Conceptual Mode</h4><div class="subsection"><p>To produce conceptual documentation, Sandcastle depends on a special XML schema called
 Microsoft Assistance Markup Language (MAML). The input to Sandcastle in conceptual mode must be a set of XML
 documentation files written against the MAML schema. XML companion files can be provided as input to specify
 metadata for each MAML topic; e.g., index keywords.  Additionally, conceptual mode supports shared inputs of
@@ -55,7 +55,7 @@ to follow. Most, but not all MAML topics also contain a <strong>See Also</strong
 Special MAML document types, such as <strong>Glossary</strong>, use a very different type of
 transformation from the other document types.</p><p>It is up to the author to specify a table of contents (TOC) in conceptual mode. Likewise, a
 keyword index is not automatically generated, so it is the author's responsibility to specify relevant keywords
-for each MAML topic using an XML companion file.</p><a id="PresentationStyles"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Presentation Styles</div></div><p>The presentation styles in Sandcastle contain all of the aesthetic resources that are required to
+for each MAML topic using an XML companion file.</p></div><a id="PresentationStyles"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Presentation Styles</div></div><p>The presentation styles in Sandcastle contain all of the aesthetic resources that are required to
 build HTML documentation in different styles.  Each presentation style includes a set of XSLT files, XML files,
 CSS files, and images.  The set of XSLT files is executed once for each topic that <strong>BuildAssembler</strong>
 processes to produce an individual HTML file as output.  Each presentation style can have a different set of XSLT

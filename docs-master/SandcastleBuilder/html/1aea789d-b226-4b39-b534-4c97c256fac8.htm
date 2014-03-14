@@ -114,9 +114,9 @@ to the <span class="code">References</span> node in the Project Explorer window
 rather than as documentation sources.  See the
 <a href="9309b01b-87bf-4d68-b035-c10ac77d1522.htm" target="">References</a> topic for more
 information.</dd><dt><a id="Generics"></a>How do I specify a generic such as
-IEnumerable&lt;T&gt; in a cref target and/or XML comments?</dt><dd>Use curly braces in <span class="code">cref</span> targets
+IEnumerable&lt;T&gt; in a cref target and/or XML comments?</dt><dd><p>Use curly braces in <span class="code">cref</span> targets
 and HTML entities (&amp;lt; and &amp;gt;) in the general XML comments.  For
-example:<div id="ID0EAMAQAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EAMAQAAAAA_tabs"><div id="ID0EAMAQAAAAA_tab1" class="codeSnippetContainerTabActive" dir="ltr" EnableCopyCode="true"><a href="#" onclick="javascript:ChangeTab('ID0EAMAQAAAAA','C#','1','4');return false;">C#</a></div><div id="ID0EAMAQAAAAA_tab2" class="codeSnippetContainerTabPhantom" dir="ltr" EnableCopyCode="true" disabled="true"><a>C++</a></div><div id="ID0EAMAQAAAAA_tab3" class="codeSnippetContainerTabPhantom" dir="ltr" EnableCopyCode="true" disabled="true"><a>F#</a></div><div id="ID0EAMAQAAAAA_tab4" class="codeSnippetContainerTabPhantom" dir="ltr" EnableCopyCode="true" disabled="true"><a>VB</a></div></div><div id="ID0EAMAQAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAMAQAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EAMAQAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EAMAQAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EAMAQAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EAMAQAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EAMAQAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EAMAQAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-comment">/// &lt;summary&gt;</span> 
+example:</p><div id="ID0EAMAQAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EAMAQAAAAA_tabs"><div id="ID0EAMAQAAAAA_tab1" class="codeSnippetContainerTabActive" dir="ltr" EnableCopyCode="true"><a href="#" onclick="javascript:ChangeTab('ID0EAMAQAAAAA','C#','1','4');return false;">C#</a></div><div id="ID0EAMAQAAAAA_tab2" class="codeSnippetContainerTabPhantom" dir="ltr" EnableCopyCode="true" disabled="true"><a>C++</a></div><div id="ID0EAMAQAAAAA_tab3" class="codeSnippetContainerTabPhantom" dir="ltr" EnableCopyCode="true" disabled="true"><a>F#</a></div><div id="ID0EAMAQAAAAA_tab4" class="codeSnippetContainerTabPhantom" dir="ltr" EnableCopyCode="true" disabled="true"><a>VB</a></div></div><div id="ID0EAMAQAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAMAQAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EAMAQAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EAMAQAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EAMAQAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EAMAQAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EAMAQAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EAMAQAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-comment">/// &lt;summary&gt;</span> 
 <span class="highlight-comment">/// See &lt;see cref="IEnumerable{T}"/&gt; for more information.</span> 
 <span class="highlight-comment">/// &lt;p/&gt;Another reference to IEnumerable&amp;lt;T&amp;gt;.</span> 
 <span class="highlight-comment">/// &lt;/summary&gt;</span></pre></div><div id="ID0EAMAQAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>/// &lt;summary&gt; 
@@ -127,7 +127,7 @@ formatting.  You can also use the <span class="code">img</span> tag to embed an 
 in a namespace element's XML comments.  Since the comments are XML, all HTML
 tags must be specified with a closing tag or as self-closing (i.e
 &lt;p&gt;This is a paragraph&lt;/p&gt; or &lt;p/&gt;New paragraph).</dd><dt><a id="EmbedImage"></a>How can I embed an image in a namespace,
-type, or member's help topic?</dt><dd>Embedding an image in an element's help topic is a two
+type, or member's help topic?</dt><dd><p>Embedding an image in an element's help topic is a two
 step process.  First, you must add the image to the help file builder project
 as a content item (add it using the Project Explorer window and set the
 <span class="code">BuildAction</span> to <span class="code">Content</span>). The
@@ -136,7 +136,7 @@ the <span class="code">img</span> tag.  To embed an image in the project summary
 or namespace comments, add the image tag to the help file builder's
 <span class="code">ProjectSummary</span> property text or to a namespace's
 comments using the <span class="code">NamespaceSummaries</span> project
-property.<p>Below are two examples of embedding an image in the XML comments.
+property.</p><p>Below are two examples of embedding an image in the XML comments.
 Note that all namespace help topics reside in an <em>.\html</em>
 folder so you must use a relative path to go up one level to find the image
 file.  The first example assumes that the image is copied to the root of the
@@ -190,8 +190,8 @@ projects?</dt><dd>Create a standalone XML comments file and add it to the
 project as a documentation source. See the <a href="52aa172a-a310-4f75-b20f-7e2c7d870c65.htm" target="">Sharing Project Summary and Namespace Comments</a>
 help topic for details.</dd><dt><a id="CreateComments"></a>I have an assembly without code and
 without an XML comments file for which I'd like to create documentation and/or
-an Intellisense file.  How can I do that?</dt><dd>Create a blank XML comments file like the following and
-name it after the assembly with a <em>.xml</em> extension:<div id="ID0EDCAQAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EDCAQAAAAA_tabs"><div id="ID0EDCAQAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">Blank XML Comments File</a></div></div><div id="ID0EDCAQAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EDCAQAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EDCAQAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EDCAQAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EDCAQAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EDCAQAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EDCAQAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EDCAQAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-xml-bracket">&lt;?</span><span class="highlight-xml-tag">xml</span> <span class="highlight-xml-attribute-name">version</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1.0"</span><span class="highlight-xml-bracket">?&gt;</span> 
+an Intellisense file.  How can I do that?</dt><dd><p>Create a blank XML comments file like the following and
+name it after the assembly with a <em>.xml</em> extension:</p><div id="ID0EDCAQAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EDCAQAAAAA_tabs"><div id="ID0EDCAQAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">Blank XML Comments File</a></div></div><div id="ID0EDCAQAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EDCAQAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EDCAQAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EDCAQAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EDCAQAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EDCAQAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EDCAQAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EDCAQAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-xml-bracket">&lt;?</span><span class="highlight-xml-tag">xml</span> <span class="highlight-xml-attribute-name">version</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1.0"</span><span class="highlight-xml-bracket">?&gt;</span> 
 <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">doc</span><span class="highlight-xml-bracket">&gt;</span> 
   <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">assembly</span><span class="highlight-xml-bracket">&gt;</span> 
     <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">name</span><span class="highlight-xml-bracket">&gt;</span>YourAssemblyNameHere<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">name</span><span class="highlight-xml-bracket">&gt;</span> 
@@ -234,14 +234,14 @@ example:</p><div id="ID0EBCAQAAAAA" class="codeSnippetContainer"><div class="cod
 &lt;/member&gt;</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EBCAQAAAAA');</script><p>When you are done, replace your original placeholder file with the one
 generated from the build with your edited comments.</p></dd><dt><a id="CommentsOnly"></a>I want to create a help file without
 an assembly.  When I try to build the help file, it stops and tells me I need
-at least one documentation source.  Why?</dt><dd>Sandcastle was designed to document code based on a set
+at least one documentation source.  Why?</dt><dd><p>Sandcastle was designed to document code based on a set
 of XML comments and API information found in a reflection information file.
 As such, it requires at least one assembly in order to produce a help file
 containing API documentation.  If you do not include at least one assembly with
 a namespace containing at least one public class, the help file cannot be
 produced.  To produce help files unrelated to assemblies, you can use some
 other tool such as the HTML Help Workshop or one of the commercial
-equivalents.<p>You can use the <strong>Additional Content Only</strong>
+equivalents.</p><p>You can use the <strong>Additional Content Only</strong>
 plug-in to produce a help file based on conceptual content and/or additional
 content items alone.  To do so, add the plug-in to the project via the
 <span class="code">PlugInConfigurations</span> project option, add conceptual
@@ -278,12 +278,12 @@ the <a href="9309b01b-87bf-4d68-b035-c10ac77d1522.htm" target="">References</a> 
 information on adding reference items.  See the next question as well if you
 are documenting a Compact Framework application.</dd><dt><a id="Compact"></a>Why does my build fail with an
 <strong>Unresolved assembly reference</strong> error when I try to
-document a Compact Framework application?</dt><dd>In order to document Compact Framework applications you
+document a Compact Framework application?</dt><dd><p>In order to document Compact Framework applications you
 also need to add a reference item for the Compact Framework assemblies.  These
 are usually located under the Visual Studio 2005 installation folder.  The
 easiest way to reference them is to add the <a href="96557037-c19e-4183-bcf1-f42d7018de9f.htm" target="">Wildcard References Plug-In</a>
 to the project's <span class="code">PlugInConfigurations</span> property and add
-an entry to its configuration for a path similar to the following:<div id="ID0EBSAOAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EBSAOAAAAA_tabs"></div><div id="ID0EBSAOAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EBSAOAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EBSAOAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EBSAOAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EBSAOAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EBSAOAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EBSAOAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EBSAOAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre>%VS80COMNTOOLS%\..\..\SmartDevices\SDK\CompactFramework\2.0\v2.0\WindowsCE\</pre></div><div id="ID0EBSAOAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>%VS80COMNTOOLS%\..\..\SmartDevices\SDK\CompactFramework\2.0\v2.0\WindowsCE\</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EBSAOAAAAA');</script><p>This will expand the <span class="code">VS80COMNTOOLS</span>
+an entry to its configuration for a path similar to the following:</p><div id="ID0EBSAOAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EBSAOAAAAA_tabs"></div><div id="ID0EBSAOAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EBSAOAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EBSAOAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EBSAOAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EBSAOAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EBSAOAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EBSAOAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EBSAOAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre>%VS80COMNTOOLS%\..\..\SmartDevices\SDK\CompactFramework\2.0\v2.0\WindowsCE\</pre></div><div id="ID0EBSAOAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>%VS80COMNTOOLS%\..\..\SmartDevices\SDK\CompactFramework\2.0\v2.0\WindowsCE\</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EBSAOAAAAA');</script><p>This will expand the <span class="code">VS80COMNTOOLS</span>
 environment variable in order to find the Visual Studio 2005 installation
 location and append the necessary path to find the Compact Framework assemblies.
 See the <a href="9309b01b-87bf-4d68-b035-c10ac77d1522.htm" target="">References</a> topic for
@@ -315,7 +315,7 @@ related to <span class="code">OrcasNamer.WriteType</span>?</dt><dd>The most like
 project's <span class="code">FrameworkVersion</span> property set to .NET 1.0 or
 .NET 1.1 but you are trying to document a .NET 2.0 or later assembly.  Check
 the property to make sure that it is set appropriately for your assembly.</dd><dt><a id="Proxy"></a>My build fails because I am behind a proxy
-server and it cannot connect to the MSDN web service.  How do I fix it?</dt><dd>If the SDK link type project property related to the help file format you are building is set to
+server and it cannot connect to the MSDN web service.  How do I fix it?</dt><dd><p>If the SDK link type project property related to the help file format you are building is set to
 <span class="code">MSDN</span>, <strong>BuildAssembler</strong> will attempt to contact the MSDN web
 service to resolve links to SDK topics.  If you are behind a proxy server, this will most likely fail and will
 abort the build process with an error similar to "<strong>HTTP status 407: Proxy Authentication
@@ -325,7 +325,7 @@ to <span class="code">None</span>, the <span class="code">MsHelp2SdkLinkType</sp
 <span class="code">Index</span>, and the <span class="code">MSHelpViewerSdkLinkType</span> property to
 <span class="code">Id</span>. The downside for the HTML Help 1 and website formats is that you will not get links
 to online SDK content.  For the MS Help 2 and MS Help Viewer formats, the noted value generates links to the
-local help content when merged with the collection.<p>It has been reported that creating a <em>BuildAssembler.exe.config</em> file in the same
+local help content when merged with the collection.</p><p>It has been reported that creating a <em>BuildAssembler.exe.config</em> file in the same
 folder as <strong>BuildAssembler.exe</strong> (the root help file builder installation folder) and
 putting one of the following in it may allow it to work with the proxy server:</p><div id="ID0ECKAOAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0ECKAOAAAAA_tabs"><div id="ID0ECKAOAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">Method 1 (this works most often so try it first):</a></div></div><div id="ID0ECKAOAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0ECKAOAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0ECKAOAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0ECKAOAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0ECKAOAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0ECKAOAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0ECKAOAAAAA','4')" title="Print">Print</a></div></div><div id="ID0ECKAOAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">configuration</span><span class="highlight-xml-bracket">&gt;</span> 
     <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">system.net</span><span class="highlight-xml-bracket">&gt;</span> 
@@ -422,20 +422,20 @@ default.  Be sure to declare at least one class public.  If all classes really
 are supposed to be private and/or internal, set the <span class="code">DocumentPrivates</span>
 and/or <span class="code">DocumentInternals</span> project properties to true.</dd><dt><a id="HHC6003"></a>Why is the help compiler failing with
 <strong>HHC6003</strong> error stating that <em>itircl.dll</em>
-has not been registered?</dt><dd>This error affects a small number of people and is caused
+has not been registered?</dt><dd><p>This error affects a small number of people and is caused
 by one of the help components (<em>ITCC.DLL</em>) either not getting
 installed or not getting registered correctly.  Search your system for the DLL.
 If not found, you can either locate it on another system that has the Help 2
 components or you can search Google for it.  Once you obtain it, you will need
 to copy it to the failing system and register it.  This can be done by running
 the following command from a command prompt.  Adjust the path to the DLL as
-necessary based on its location on your system.<div id="ID0EAAAOAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EAAAOAAAAA_tabs"></div><div id="ID0EAAAOAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAAOAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EAAAOAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EAAAOAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EAAAOAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EAAAOAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EAAAOAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EAAAOAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre>regsvr32 C:\Windows\System\itcc.dll</pre></div><div id="ID0EAAAOAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>regsvr32 C:\Windows\System\itcc.dll</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EAAAOAAAAA');</script></dd></dl><a id="SecHelpIssues"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Help File Issues</div></div><dl class="authored"><dt><a id="NotLoading"></a>Why doesn't my compiled help file load? /
+necessary based on its location on your system.</p><div id="ID0EAAAOAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EAAAOAAAAA_tabs"></div><div id="ID0EAAAOAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAAOAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EAAAOAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EAAAOAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EAAAOAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EAAAOAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EAAAOAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EAAAOAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre>regsvr32 C:\Windows\System\itcc.dll</pre></div><div id="ID0EAAAOAAAAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>regsvr32 C:\Windows\System\itcc.dll</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EAAAOAAAAA');</script></dd></dl><a id="SecHelpIssues"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Help File Issues</div></div><dl class="authored"><dt><a id="NotLoading"></a>Why doesn't my compiled help file load? /
 Why do all of the help file topics display a "Page not found" or "This program
-cannot display the webpage" error?</dt><dd>For an MS Help 2 file (.HxS), you need a separate viewer
+cannot display the webpage" error?</dt><dd><p>For an MS Help 2 file (.HxS), you need a separate viewer
 to load the help file or you need to integrate it into an existing collection.
 See the <a href="c18d6cb6-e4e4-4944-84ee-f867aa6cfb0d.htm" target="">Links to Resources</a> topic for a
 link to a freeware Help 2 viewer and a tool that can help you register your
-help file with a collection.<p>For HTML Help 1 files (.CHM), if the path to the help file contains
+help file with a collection.</p><p>For HTML Help 1 files (.CHM), if the path to the help file contains
 "#", the help file may fail to load.  The apparent reason for this is that the
 help viewer considers the "#" to be an unsafe character and it must be encoded
 for it to use it. Rename the folder to remove the "#" to get the file to load.</p><p>Another cause for the pages not displaying is a security patch that
@@ -450,7 +450,7 @@ importing it into the registry.</p><div id="ID0EBUAMAAAAA" class="codeSnippetCon
 "MaxAllowedZone"=dword:00000001</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EBUAMAAAAA');</script><p>It may also be possible to unblock the file so that it can be viewed
 by right-clicking on it, selecting <span class="ui">Properties</span> and clicking the
 <span class="ui">Unblock</span> button on the <span class="ui">General</span> tab if it is there.</p></dd><dt><a id="EmptyHelp"></a>Why doesn't my help file contain any/all
-of the classes from the assembly?</dt><dd>The most likely cause of an empty help file or one that
+of the classes from the assembly?</dt><dd><p>The most likely cause of an empty help file or one that
 does not contain all of your assembly's classes is that the missing classes are
 not declared public.  By default, when you add a class to a Visual Studio
 project, it does not add the <span class="code">public</span> keyword to it.  As
@@ -458,7 +458,7 @@ such, you must remember to edit the class to make it public if necessary.
 Sandcastle does not document private and internal methods by default either.
 If you really want to see them in the help file, set the
 <span class="code">DocumentPrivates</span> and/or <span class="code">DocumentInternals</span>
-project properties to true.<p>You should also check the project to be sure that it does not have an
+project properties to true.</p><p>You should also check the project to be sure that it does not have an
 <span class="code">ApiFilter</span> defined that is excluding the items in
 question.  An <span class="code">&lt;exclude /&gt;</span> tag in the item's XML
 comments will also cause it to be removed from the documentation.</p><p>Another possible cause of missing classes is compiling a help file
@@ -467,7 +467,7 @@ compile a .NET 2.0 help project with the <span class="code">FrameworkVersion</sp
 project property set to a .NET 1.x version number, you may end up with lots
 of missing classes.  As such, check the property to be sure that it is set
 appropriately.</p></dd><dt><a id="NoComments"></a>The help file is built okay but I don't
-see my comments on the members.  Why not?</dt><dd>You either have not enabled the Visual Studio project
+see my comments on the members.  Why not?</dt><dd><p>You either have not enabled the Visual Studio project
 option to produce an XML comments file for your assembly, it has a name
 different from that of the assembly and the help file builder did not see it
 when you added the assembly to the project, or the XML comments filename is not
@@ -476,7 +476,7 @@ You should see the assembly name and the XML comments filename listed.  If you
 added a solution or project file as a documentation source, check the build log
 to see if it found the correct assembly and XML comments file.  See the
 <a href="c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" target="">Walkthrough: Enabling and Using XML Comments</a> topic
-for information on enabling the XML comments file option in Visual Studio.<p>Be sure to give each project's XML comments file a unique name as
+for information on enabling the XML comments file option in Visual Studio.</p><p>Be sure to give each project's XML comments file a unique name as
 they are copied to a common location for the build.  Identically named files
 may overwrite each other and the documentation in the overwritten files will
 not appear in the help file.  If the comments file options are set correctly,
@@ -492,7 +492,7 @@ documentation" or review the build log file to locate the members in question.
 If you do not care to see these messages, simply alter the project properties
 to turn off the ones that you do not want to see.</dd><dt><a id="CodeSamples"></a>Why are all of my code samples colorized
 as C# code? / Why don't my code samples show up unless I select the C# code
-filter?</dt><dd>The help file builder automatically includes a copy of the
+filter?</dt><dd><p>The help file builder automatically includes a copy of the
 <a href="7f03ba39-09f8-4320-bdbd-ed31a3bd885f.htm" target="">Code Block Component</a> that adds several
 attributes to the <span class="code">&lt;code&gt;</span> tag.  One of these is
 the <span class="code">lang</span> attribute that lets you specify the language
@@ -501,7 +501,7 @@ filter to which the sample should be connected.  If omitted, the component will
 assume that the code is C#.  You can change this behavior by adding a
 <span class="code">lang</span> attribute that specifies a different language.
 You can also specify "none" as a value to disable colorization and the code
-filter for it.<p>If the majority of your code samples are in a language other than C#,
+filter for it.</p><p>If the majority of your code samples are in a language other than C#,
 you can override the default by using the <span class="code">ComponentConfigurations</span>
 project property to add the <strong>Code Block Component</strong> to
 the project and configure it to use a different default setting.</p></dd><dt><a id="DefaultTitle"></a>The language name is showing up as the
@@ -512,16 +512,16 @@ to a title of your choice or to a single space to suppress it
 <span class="code">ComponentConfigurations</span> project option to add the
 <strong>Code Block Component</strong> to the project and edit its
 configuration to turn off the <span class="ui">Use language name as title</span> option.</dd><dt><a id="NoTitle"></a>Why does my help file title not appear when
-I use a language selection other than English?</dt><dd>For non-English HTML Help 1 help files, the help title
+I use a language selection other than English?</dt><dd><p>For non-English HTML Help 1 help files, the help title
 will not appear on the title of the help window unless the system's language
 matches the help file's language exactly.  This is a known issue with the way
-the help viewer compares the language values.<p>To resolve encoding issues, add the <a href="31696f39-8f4e-4c4d-ab08-41a40793df03.htm" target="">DBCS Fix for CHM Builds Plug-In</a>
+the help viewer compares the language values.</p><p>To resolve encoding issues, add the <a href="31696f39-8f4e-4c4d-ab08-41a40793df03.htm" target="">DBCS Fix for CHM Builds Plug-In</a>
 to the project.  See the plug-in documentation for information about its
 configuration.</p></dd><dt><a id="BadChars"></a>Why does the help file title contain
-garbage characters?</dt><dd>The HTML Help 1 compiler does not appear to support
+garbage characters?</dt><dd><p>The HTML Help 1 compiler does not appear to support
 Unicode encoding of its project and table of contents files.  This may cause
 the help title to display incorrectly if it contains extended characters that
-need encoding.<p>To resolve encoding issues, add the <a href="31696f39-8f4e-4c4d-ab08-41a40793df03.htm" target="">DBCS Fix for CHM Builds Plug-In</a>
+need encoding.</p><p>To resolve encoding issues, add the <a href="31696f39-8f4e-4c4d-ab08-41a40793df03.htm" target="">DBCS Fix for CHM Builds Plug-In</a>
 to the project.  See the plug-in documentation for information about its
 configuration.</p></dd><dt><a id="ViewHelp2"></a>How can I view an MS Help 2 file?</dt><dd>For proofreading, you can use a standalone help view such as
 <em>H2Viewer.exe</em>.  See the <a href="c18d6cb6-e4e4-4944-84ee-f867aa6cfb0d.htm" target="">Links to Resources</a>
@@ -564,7 +564,7 @@ When the additional content page is parsed, the <span class="code">&lt;see&gt;</
 tag will be replaced with a link to the namespace element's help topic page.
 See the <a href="3e3772fb-f8d2-49cf-8199-5f61f2d57ce8.htm" target="">Linking to Namespace Content</a> help topic
 for details.</dd><dt><a id="LinkFromComments"></a>How can I create a link to an
-additional content page from a a namespace, type, or member help topic?</dt><dd>Edit the member's XML comments (summary, remarks, etc) to
+additional content page from a a namespace, type, or member help topic?</dt><dd><p>Edit the member's XML comments (summary, remarks, etc) to
 add an anchor (<span class="code">&lt;a&gt;</span>) tag that points to the
 additional content page. To add a link in the Project Summary or Namespace
 comments, add the anchor tag to the help file builder's Project Summary notes
@@ -575,7 +575,7 @@ level to find the additional content file.  The first example assumes that the
 file is copied to the root of the help project.  As such, no additional path
 beyond the relative indicator is required.  The second example assumes that the
 file is copied to a <em>.\Tutorials</em> folder.  In that case, you
-must also specify the folder name.<div id="ID0EACAIAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EACAIAAAAA_tabs"><div id="ID0EACAIAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">Linking to Additional Content</a></div></div><div id="ID0EACAIAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACAIAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EACAIAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EACAIAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EACAIAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EACAIAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EACAIAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EACAIAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-comment">/// &lt;summary&gt;</span> 
+must also specify the folder name.</p><div id="ID0EACAIAAAAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EACAIAAAAA_tabs"><div id="ID0EACAIAAAAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">Linking to Additional Content</a></div></div><div id="ID0EACAIAAAAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACAIAAAAA_ViewColorized" href="#" onclick="javascript:ExchangeTitleContent('ID0EACAIAAAAA','4')" title="View Colorized" style="display: none">View Colorized</a><a id="ID0EACAIAAAAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EACAIAAAAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EACAIAAAAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EACAIAAAAA','4')" title="Print">Print</a></div></div><div id="ID0EACAIAAAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-comment">/// &lt;summary&gt;</span> 
 <span class="highlight-comment">/// A class member.</span> 
 <span class="highlight-comment">/// &lt;/summary&gt;</span> 
 <span class="highlight-comment">/// &lt;remarks&gt;Class usage tutorial:</span> 
@@ -623,8 +623,8 @@ the component from the list in the dialog that appears, and click the
 <span class="ui">Configure</span> button.</dd><dt><a id="CompInfo"></a>Where can I find more information on the
 custom build components supplied with the help file builder?</dt><dd>See the <a href="8dcbb69b-7a1a-4049-8e6b-2bf344efbbc9.htm" target="">Custom
 Build Components</a> help topic for more information and links to details
-about each component.</dd><dt><a id="CreateComp"></a>How can I create my own custom build components?</dt><dd>For information on writing your own custom build components, see the
-<a href="e6d18448-2459-46f1-bbdc-a7db415f2bda.htm" target="">Creating a BuildAssembler Build Component</a> topic.</dd></dl><a id="SecPlugIns"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Build Process Plug-Ins</div></div><dl class="authored"><dt><a id="ConfigPlugIn"></a>How do I configure the plug-ins with
+about each component.</dd><dt><a id="CreateComp"></a>How can I create my own custom build components?</dt><dd><p>For information on writing your own custom build components, see the
+<a href="e6d18448-2459-46f1-bbdc-a7db415f2bda.htm" target="">Creating a BuildAssembler Build Component</a> topic.</p></dd></dl><a id="SecPlugIns"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Build Process Plug-Ins</div></div><dl class="authored"><dt><a id="ConfigPlugIn"></a>How do I configure the plug-ins with
 project-specific settings?</dt><dd>Use the <span class="code">PlugInConfigurations</span> project
 property.  Click the "<span class="ui">...</span>" button to the right of the property, select
 the plug-ins from the list in the dialog that appears, and click the
@@ -635,9 +635,9 @@ about each plug-in.</dd><dt><a id="CreatePlugIn"></a>How can I create my own cus
 <a href="a14e026e-642f-4ce6-9506-341e57cc3d1f.htm" target="">Creating Build Process Plug-Ins</a>
 help topic.</dd></dl><a id="SecGenHelp"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">General Help Topic Questions</div></div><dl class="authored"><dt><a id="NamingMethod"></a>How can I create a link to a namespace
 element's help topic from an external source such as application code or a page
-in an external web site?</dt><dd>Set the project's <span class="code">NamingMethod</span>
+in an external web site?</dt><dd><p>Set the project's <span class="code">NamingMethod</span>
 property based on your preference and see the
 <a href="1b2dff59-92cc-4578-b261-f3849f30c26c.htm#NamingMethod" target="">NamingMethod</a>
 help topic for examples that show how to open specific topics based on the
 selected naming method from application code and how to determine the URL for
-a website link.</dd></dl><a name="seeAlsoSection"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" target="">Installation Instructions</a></div><div class="seeAlsoStyle"><a href="c18d6cb6-e4e4-4944-84ee-f867aa6cfb0d.htm" target="">Links to Resources</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p><a href="http://SHFB.CodePlex.com" target="_blank">[v2014.2.15.0] Copyright © 2006-2014, Eric Woodruff, All rights reserved (http://SHFB.CodePlex.com)</a></p><div class="OH_feedbacklink"><a href="mailto:Eric@EWoodruff.us?subject=Sandcastle+Help+File+Builder+Documentation+Frequently+Asked+Questions+(FAQ)+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Eric Woodruff.</div></div><script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript">$(document).ready(function () {DocumentReady();});</script></body></html>
+a website link.</p></dd></dl><a name="seeAlsoSection"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" target="">Installation Instructions</a></div><div class="seeAlsoStyle"><a href="c18d6cb6-e4e4-4944-84ee-f867aa6cfb0d.htm" target="">Links to Resources</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p><a href="http://SHFB.CodePlex.com" target="_blank">[v2014.2.15.0] Copyright © 2006-2014, Eric Woodruff, All rights reserved (http://SHFB.CodePlex.com)</a></p><div class="OH_feedbacklink"><a href="mailto:Eric@EWoodruff.us?subject=Sandcastle+Help+File+Builder+Documentation+Frequently+Asked+Questions+(FAQ)+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Eric Woodruff.</div></div><script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript">$(document).ready(function () {DocumentReady();});</script></body></html>

@@ -13,30 +13,30 @@
         (such as HTML Help output) are not altered.
       </p><p>
         Advantages of the Lightweight TOC
-      </p><ul><li>
+      </p><ul><li><p>
             No more use of HTML frames in the documentation, which means the browser's
             address bar always contains the correct link to the current documentation page.
-          </li><li>
+          </p></li><li><p>
             Improved page load performance, especially for large documentation sites.
-          </li><li>
+          </p></li><li><p>
             Proper support for sites that only serve static content. The output of this plugin
             does not require server-side support for scripting languages such as PHP or ASP.
-          </li></ul><p>
+          </p></li></ul><p>
         Disadvantages of the Lightweight TOC
-      </p><ul><li>
+      </p><ul><li><p>
             Switching to the lightweight TOC will break existing links to specific
             documentation topics from external sites.
-          </li><li>
+          </p></li><li><p>
             Offline browsing of the HTML output requires special consideration, as described
             below.
-          </li><li>
+          </p></li><li><p>
             The Lightweight TOC output does not support the index or search features provided
             with the frames-based table of contents.
-          </li></ul></div><a id="Enabling"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Enabling the Lightweight TOC</div></div><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_caution.gif" alt="Important note"> <strong>Important</strong></th></tr><tr><td>
+          </p></li></ul></div><a id="Enabling"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Enabling the Lightweight TOC</div></div><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_caution.gif" alt="Important note"> <strong>Important</strong></th></tr><tr><td><p>
             The lightweight TOC plug-in is not compatible with all presentation styles.
             Only the <span class="code">VS2013</span> presentation style is known to be
             fully compatible with the features of this plug-in.
-          </td></tr></table></div><p>
+          </p></td></tr></table></div><p>
           The title of the root TOC element for the Lightweight TOC is taken from the
           first page of conceptual content listed in the <strong>.content</strong>
           file used by the project. For best results, the first node should be a root
@@ -44,23 +44,23 @@
         </p><a id="OfflineViewing"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Offline Browsing</div></div><p>
           Due to the use of jQuery and AJAX in the Lightweight TOC, offline browsing requires
           special consideration.
-        </p><ol><li>
+        </p><ol><li><p>
               Download a copy of the Website output for the documentation you wish to browse (or
               use SHFB to build a copy of it locally).
-            </li><li>
+            </p></li><li><p>
               Open Visual Studio. This method is tested with Visual Studio 2005-2013, however
               Visual Studio 2012 and newer offer improved support for <strong>index.html</strong>
               files which may save one step in the process.
-            </li><li>
+            </p></li><li><p>
               Select <span class="ui">File</span> → <span class="ui">Open</span> → <span class="ui">Web Site...</span>. In the <span class="ui">Folder</span>
               text box, enter the path to the documentation you wish to browse. This folder should
               contain the <em>index.html</em> file created by the Lightweight TOC Plug-In,
               and have subfolders including <em>html</em> and <em>toc</em>
               which contain the actual content of the site.
-            </li><li>
+            </p></li><li><p>
               In <span class="ui">Solution Explorer</span>, right click the folder containing <em>index.html</em>
               and select <span class="ui">View in Browser</span>.
-            </li><li>
+            </p></li><li><p>
               If a directory listing appears instead of the default page of your site, locate and
               click <em>index.html</em> to begin browsing the documentation.
-            </li></ol><a name="seeAlsoSection"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm" target="">Build Process Plug-Ins</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p><a href="http://SHFB.CodePlex.com" target="_blank">[v2014.2.15.0] Copyright © 2006-2014, Eric Woodruff, All rights reserved (http://SHFB.CodePlex.com)</a></p><div class="OH_feedbacklink"><a href="mailto:Eric@EWoodruff.us?subject=Sandcastle+Help+File+Builder+Documentation+Lightweight+Table+of+Contents+Plug-In+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Eric Woodruff.</div></div><script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript">$(document).ready(function () {DocumentReady();});</script></body></html>
+            </p></li></ol><a name="seeAlsoSection"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm" target="">Build Process Plug-Ins</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p><a href="http://SHFB.CodePlex.com" target="_blank">[v2014.2.15.0] Copyright © 2006-2014, Eric Woodruff, All rights reserved (http://SHFB.CodePlex.com)</a></p><div class="OH_feedbacklink"><a href="mailto:Eric@EWoodruff.us?subject=Sandcastle+Help+File+Builder+Documentation+Lightweight+Table+of+Contents+Plug-In+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Eric Woodruff.</div></div><script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript">$(document).ready(function () {DocumentReady();});</script></body></html>

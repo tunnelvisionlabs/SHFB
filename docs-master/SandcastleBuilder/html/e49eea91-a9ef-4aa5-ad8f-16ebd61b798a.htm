@@ -24,35 +24,35 @@ the entered text to match all member IDs found in the project's XML comments fil
 comments files.  Hit Enter or click the <span class="ui">Go</span> button to start the search.  Hit Enter or click
 <span class="ui">Go</span> again to find subsequent matches.</p><p>To insert a reference from the list into a topic, either drag and drop it into the topic or use the
 <span class="ui">Copy</span> option (Ctrl+C) to copy it to the clipboard and then paste it into the topic.  The references
-that can be inserted are as follows:</p><dl class="authored"><dt>Tokens</dt><dd>When this is selected, a list of all tokens grouped by their containing token file is shown.
+that can be inserted are as follows:</p><dl class="authored"><dt>Tokens</dt><dd><p>When this is selected, a list of all tokens grouped by their containing token file is shown.
 In order to be listed, the file must have a <span class="code">BuildAction</span> of <span class="code">Tokens</span>.
-When inserted into a topic, the selected ID is wrapped in a MAML <span class="code">token</span> element.</dd><dt>Images</dt><dd>When this is selected, a list of all conceptual content image files is shown.  To appear, the
+When inserted into a topic, the selected ID is wrapped in a MAML <span class="code">token</span> element.</p></dd><dt>Images</dt><dd><p>When this is selected, a list of all conceptual content image files is shown.  To appear, the
 file must have a <span class="code">BuildAction</span> of <span class="code">Image</span>.  This entity type
 offers a choice of formats.  For MAML conceptual topics, choose either <span class="ui">MAML media link</span>,
 <span class="ui">MAML inline medial link</span>, or <span class="ui">MAML external link</span> depending on the type of link that you
 want to create.  For HTML topics, choose the <span class="ui">HTML image link</span> option.  The HTML option is for
 backward compatibility with the older additional content model and should not be used for MAML conceptual
-content topics.</dd><dt>Table of Contents</dt><dd>When this is selected, all content layout and site map files are merged in the order defined in
+content topics.</p></dd><dt>Table of Contents</dt><dd><p>When this is selected, all content layout and site map files are merged in the order defined in
 their project settings to produce a table of content list that can be used for inserting links to the
 topics.  For their topics to appear, content layout files must have a <span class="code">BuildAction</span>
 of <span class="code">ContentLayout</span> and site map files must have a <span class="code">BuildAction</span>
 of <span class="code">SiteMap</span>.  The expanded/collapsed and the last selected topic state is stored
 within each file.  As such, the topics will appear in the entity references window in the state you last
 used them and the last selected topic in the file will be selected as the default item in the tool window.
-This is helpful when you have the associated content layout file open for editing in the environment.<p>For MAML conceptual topics, choose <span class="ui">MAML link</span> as the type to create.  To insert MAML topic
+This is helpful when you have the associated content layout file open for editing in the environment.</p><p>For MAML conceptual topics, choose <span class="ui">MAML link</span> as the type to create.  To insert MAML topic
 references in XML comments in your source code, choose <span class="ui">XML comments conceptualLink</span> as the type to
 create.  For HTML topics, choose the <span class="ui">HTML anchor link</span> option.  The HTML option is for backward
 compatibility with the older additional content model and should not be used for MAML conceptual content
 topics.  It is not recommended for XML comments either as the link target format may vary based on the help file
-format.</p></dd><dt>Code Snippets</dt><dd>When this is selected, a list of all code snippets grouped by their containing code snippet file
+format.</p></dd><dt>Code Snippets</dt><dd><p>When this is selected, a list of all code snippets grouped by their containing code snippet file
 is shown.  In order to be listed, the file must have a <span class="code">BuildAction</span> of
 <span class="code">CodeSnippets</span>.  When inserted into a topic, the selected ID is wrapped in a MAML
-<span class="code">codeReference</span> element.</dd><dt>Code Entities</dt><dd>When this option is selected for the first time, there is a short delay while all XML comments
+<span class="code">codeReference</span> element.</p></dd><dt>Code Entities</dt><dd><p>When this option is selected for the first time, there is a short delay while all XML comments
 files plus the .NET Framework comments files are indexed to obtain a list of possible API members that can
 be used as code entity references.  Due to the large number of elements, they are not listed.  Instead,
 enter some text or a regular expression in the <span class="ui">Find</span> textbox and hit Enter or the <span class="ui">Go</span> button
 to list all members that match the search text.  The match count is limited to the first 1000 entries found
-to prevent exceedingly long lists of results.<p>The <span class="ui">MAML code entity reference</span> format option allows you to insert references to the
+to prevent exceedingly long lists of results.</p><p>The <span class="ui">MAML code entity reference</span> format option allows you to insert references to the
 selected element in MAML conceptual topic files as <span class="code">codeEntityReference</span> elements.
 When the help file is built, these will be resolved to links that will take you to the help page for that
 item (i.e. the API member help page for your classes or MSDN Online help pages for .NET Framework members).

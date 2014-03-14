@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOCNode Title="Errors and Warnings" Url="html/46d1f76e-a97e-4ee6-971c-fdeab725ff09.htm">
-  <HelpTOCNode Id="5c614578-a865-4280-95aa-eb52cd2ede07" Title="Build Engine" HasChildren="true" />
-  <HelpTOCNode Id="f109b3bc-6219-4e4f-9313-f53aedc3082f" Title="Generate Inherited Documentation" HasChildren="true" />
-  <HelpTOCNode Id="fc7c9bdb-2700-44f4-8e27-c2149c2700ab" Title="HTML Extract" HasChildren="true" />
-  <HelpTOCNode Id="3de1aa97-f0f1-4f3b-a36b-2c50547eae39" Title="MSBuild Tasks" HasChildren="true" />
-  <HelpTOCNode Id="df531e5b-6ed3-4ffc-874a-aad3f79d9ab3" Title="Plug-Ins" HasChildren="true" />
-  <HelpTOCNode Id="6e6ce7dc-6deb-4389-a5cf-ac30e4ff975d" Title="Project File" HasChildren="true" />
-  <HelpTOCNode Id="6301aa70-8588-4ec5-85fc-9504006ced5c" Title="Project File Converters" HasChildren="true" />
+  <HelpTOCNode Id="e4d325c8-0d67-44e3-ad99-93b3e963f746" Title="Build Engine" HasChildren="true" />
+  <HelpTOCNode Id="b1738715-cf42-4c0a-8d46-509155d37eb1" Title="Generate Inherited Documentation" HasChildren="true" />
+  <HelpTOCNode Id="fe8956a0-d537-4b46-b7c6-37d8114b063f" Title="HTML Extract" HasChildren="true" />
+  <HelpTOCNode Id="46ef085d-9de2-492a-a96d-8928e4d9916d" Title="MSBuild Tasks" HasChildren="true" />
+  <HelpTOCNode Id="08a303f1-a768-4289-b820-e0ae9c2b1c55" Title="Plug-Ins" HasChildren="true" />
+  <HelpTOCNode Id="fc7892d2-a747-44fe-b08b-07a3aaeba202" Title="Project File" HasChildren="true" />
+  <HelpTOCNode Id="e923dbe0-a775-4eb3-9bb9-6159b410af05" Title="Project File Converters" HasChildren="true" />
 </HelpTOCNode>

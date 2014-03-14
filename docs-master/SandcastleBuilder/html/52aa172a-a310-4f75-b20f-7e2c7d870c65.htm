@@ -65,23 +65,23 @@ conflict with any other XML comments file in the related projects.</p><div id="I
       &lt;/summary&gt; 
     &lt;/member&gt; 
   &lt;/members&gt; 
-&lt;/doc&gt;</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EECAAAAA');</script><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_caution.gif" alt="Important note"> <strong>Important</strong></th></tr><tr><td>The project summary comments will be placed in the member with the ID starting with
+&lt;/doc&gt;</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EECAAAAA');</script><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_caution.gif" alt="Important note"> <strong>Important</strong></th></tr><tr><td><p>The project summary comments will be placed in the member with the ID starting with
 "<span class="code">R:Project_</span>".  The ID must be suffixed with the value from your project's
 <span class="code">Html Help Name</span> property.  Replace any spaces in the value with underscores.  This is
 required so that the root namespace container has a unique name that will not cause any conflicts when building
 MS Help Viewer output.
-		</td></tr></table></div><p>Next, do one or more of the following:</p><ul><li>To specify shared project summary comments, add them to the <span class="code">&lt;summary&gt;</span>
+		</p></td></tr></table></div><p>Next, do one or more of the following:</p><ul><li><p>To specify shared project summary comments, add them to the <span class="code">&lt;summary&gt;</span>
 tag in the <strong>R:Project_[HtmlHelpName]</strong> node.  As noted above, substitute the value of your
 project's <span class="code">Html Help Name</span> property in the ID.  Any project summary comments in the help file
 projects will be appended to these comments.  If you do not have any shared project summary notes, you may remove
-this node from the file.</li><li>To exclude a namespace from all shared projects, add a <span class="code">&lt;member&gt;</span>
+this node from the file.</p></li><li><p>To exclude a namespace from all shared projects, add a <span class="code">&lt;member&gt;</span>
 node, set it's <span class="code">name</span> attribute to the namespace name prefixed with "<span class="code">N:</span>",
 and place an <span class="code">&lt;exclude /&gt;</span> tag in it.  Any other tags are optional.  The example
 above would exclude the unnamed global namespace and the <span class="code">CustomControls.Internal</span>
-namespace from all projects.</li><li>To specify shared namespace summary comments, add a <span class="code">&lt;member&gt;</span> node,
+namespace from all projects.</p></li><li><p>To specify shared namespace summary comments, add a <span class="code">&lt;member&gt;</span> node,
 set it's <span class="code">name</span> attribute to the namespace name prefixed with "<span class="code">N:</span>",
 and add the comments to the <span class="code">&lt;summary&gt;</span> tag in the node.  Any namespace summary
-comments in the help file projects will be appended to these comments.</li></ul><p>Once you have created the file, open each project that needs to use it, right click on the
+comments in the help file projects will be appended to these comments.</p></li></ul><p>Once you have created the file, open each project that needs to use it, right click on the
 <span class="ui">Documentation Sources</span> node in the Project Explorer window, select the option to add a documentation
 source, and select the shared comments file.  You may now build your project and the shared comments will be
 included in it.</p><a name="seeAlsoSection"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="eb7e1bc7-21c5-4453-bbaf-dec8c62c15bd.htm" target="">Summaries Category Properties</a></div><div class="seeAlsoStyle"><a href="48f5a893-acde-4e50-8c17-72b83d9c3f9d.htm" target="">Using NamespaceDoc Classes</a></div><div class="seeAlsoStyle"><a href="e32086c6-de17-4e54-a746-1ac80bf0c45a.htm" target="">Project Properties Window</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p><a href="http://SHFB.CodePlex.com" target="_blank">[v2014.2.15.0] Copyright © 2006-2014, Eric Woodruff, All rights reserved (http://SHFB.CodePlex.com)</a></p><div class="OH_feedbacklink"><a href="mailto:Eric@EWoodruff.us?subject=Sandcastle+Help+File+Builder+Documentation+Sharing+Project+Summary+and+Namespace+Comments+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to Eric Woodruff.</div></div><script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript">$(document).ready(function () {DocumentReady();});</script></body></html>

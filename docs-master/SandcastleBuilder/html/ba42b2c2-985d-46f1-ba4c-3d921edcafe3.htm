@@ -16,28 +16,28 @@ namespace topics.  If set to <span class="code">Below Namespaces</span>, they wi
 topics.</p><p>In Help 1, Help 2, and Website output, if no conceptual content is present or no topic is marked as
 the default topic, the root namespaces page will be selected as the default topic for the help file.</p><a id="ExplicitPlacement"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Explicit Placement Options</div></div><p>For finer control over the placement of the API content and selection of the default topic, use
 the options available in the <a href="54e3dc97-5125-441e-8e84-7f9303e95f26.htm" target="">content layout file
-editor</a>.</p><ul><li>The <span class="ui">Use as the default topic</span> option can be used to mark a conceptual topic as the
+editor</a>.</p><ul><li><p>The <span class="ui">Use as the default topic</span> option can be used to mark a conceptual topic as the
 default topic for Help 1, Help2, and Website output.  This option has no effect in MS Help Viewer files as there
-is no option to specify a default topic.</li><li>A conceptual topic anywhere within the content layout file can be marked as the API content
+is no option to specify a default topic.</p></li><li><p>A conceptual topic anywhere within the content layout file can be marked as the API content
 insertion point using the <span class="ui">API Content</span> option.  You can choose to insert the API content below the
 selected topic, above the selected topic, or as a child of the selected topic.  When an insertion point is
-defined, the <span class="code">Content Placement</span> project property is ignored.</li></ul><a id="MSHelpViewer"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Microsoft Help Viewer Placement Options</div></div><p>In addition to the above placement options, you have some additional control over how your help
+defined, the <span class="code">Content Placement</span> project property is ignored.</p></li></ul><a id="MSHelpViewer"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Microsoft Help Viewer Placement Options</div></div><p>In addition to the above placement options, you have some additional control over how your help
 file content is parented when using the Microsoft Help Viewer output format.  These options take effect after
-the above options have been applied.</p><ul><li>The <span class="code">TOC Parent Id</span> and <span class="code">TOC Parent Version</span>
+the above options have been applied.</p><ul><li><p>The <span class="code">TOC Parent Id</span> and <span class="code">TOC Parent Version</span>
 properties allow you to specify where your help file content is parented.  If left at their default settings,
 your content will appear in the main table of contents.  If you specify a parent ID and version, you can place
 your content below an existing topic in the help file viewer.  You can find the values to use by going to the
 parent topic in the help viewer, viewing the source for the page, and finding the <span class="code">Microsoft.Help.Id</span>
-and <span class="code">Microsoft.Help.TopicVersion</span> metadata items.</li><li><p>The <span class="code">TOC Order</span> property allows you to specify the sort order for your
+and <span class="code">Microsoft.Help.TopicVersion</span> metadata items.</p></li><li><p>The <span class="code">TOC Order</span> property allows you to specify the sort order for your
 topics within the parent item.  If left set to the default, your topics are given a sort order starting at zero
 and increment by one for each subsequent topic.  If set to a specific value, they will begin numbering from that
 value and increment by one for each subsequent topic.  If parenting your content within an existing topic, you
 can view the page source for its existing sub-topics to find the highest <span class="code">Microsoft.Help.TocOrder</span>
-value.</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Note"> <strong>Note</strong></th></tr><tr><td>If a topic order matches an existing topic in the parent's sub-topics, the topics with the
-duplicate value will be sorted alphabetically.</td></tr></table></div></li></ul><a id="RootContentNode"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Microsoft Help Viewer Root Content Container</div></div><p>By default, the topics in a help viewer file will be listed one after the other at the point they
+value.</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Note"> <strong>Note</strong></th></tr><tr><td><p>If a topic order matches an existing topic in the parent's sub-topics, the topics with the
+duplicate value will be sorted alphabetically.</p></td></tr></table></div></li></ul><a id="RootContentNode"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Microsoft Help Viewer Root Content Container</div></div><p>By default, the topics in a help viewer file will be listed one after the other at the point they
 are parented.  Typically, this is not appropriate and you will want to group the topics beneath a single root
-content container.  To do so, you can do one of the following things to accomplish this task:</p><ul><li>If you are only generating MS Help Viewer output, you can create a topic to serve as the root
-container node and place all other topics as sub-topics of the first topic in the content layout file.</li><li><p>If you are generating multiple help formats from a single help file builder project, the option
+content container.  To do so, you can do one of the following things to accomplish this task:</p><ul><li><p>If you are only generating MS Help Viewer output, you can create a topic to serve as the root
+container node and place all other topics as sub-topics of the first topic in the content layout file.</p></li><li><p>If you are generating multiple help formats from a single help file builder project, the option
 above may not be desirable.  For example, if generating both MS Help Viewer and website output, you may not want
 the website table of content to be grouped beneath a single root content container node.</p><p>To remedy this problem, the content layout file editor will allow you to add a topic and mark
 it as the root content container with the <span class="ui">Use as MS Help Viewer root container</span> option.  The root

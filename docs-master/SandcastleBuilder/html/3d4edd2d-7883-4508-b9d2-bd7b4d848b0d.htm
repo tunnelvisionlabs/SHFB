@@ -15,24 +15,24 @@ conceptual content much like XML comments describe the structure of the code com
 style information within the MAML files. Instead, they are ran through a series of XSL transformations using
 Sandcastle's <strong>BuildAssembler</strong> tool similar to the reference (API) content so that they
 match it in appearance and features.  This allows you to utilize the various build components to alter and extend
-the presentation style of the topics.</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Tip"> <strong>Tip</strong></th></tr><tr><td>A guide to using MAML with Sandcastle is included with the Sandcastle tools installer.  Open it using the
+the presentation style of the topics.</p><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Tip"> <strong>Tip</strong></th></tr><tr><td><p>A guide to using MAML with Sandcastle is included with the Sandcastle tools installer.  Open it using the
 <strong>Sandcastle MAML Guide</strong> link in the <strong>Sandcastle</strong> group of the
-<strong>All Programs</strong> menu after installing Sandcastle.</td></tr></table></div><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Tip"> <strong>Tip</strong></th></tr><tr><td>If you need to convert HTML topics to MAML topics, the <strong>HTML to MAML Converter</strong> is
-also available as part of the Sandcastle tools installer.</td></tr></table></div></div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Conceptual Content Files</div></div><p>Conceptual content is composed of several different file types within a project.  You can use folders
-within the project to group these files as you see fit.</p><ul><li><a href="54e3dc97-5125-441e-8e84-7f9303e95f26.htm" target="">Content layout files</a> define which topics
+<strong>All Programs</strong> menu after installing Sandcastle.</p></td></tr></table></div><div class="alert"><table><tr><th><img class="mtps-img-src" src="./../icons/alert_note.gif" alt="Tip"> <strong>Tip</strong></th></tr><tr><td><p>If you need to convert HTML topics to MAML topics, the <strong>HTML to MAML Converter</strong> is
+also available as part of the Sandcastle tools installer.</p></td></tr></table></div></div><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Conceptual Content Files</div></div><p>Conceptual content is composed of several different file types within a project.  You can use folders
+within the project to group these files as you see fit.</p><ul><li><p><a href="54e3dc97-5125-441e-8e84-7f9303e95f26.htm" target="">Content layout files</a> define which topics
 are included in the help file and how they are arranged in the help file's table of contents.  Content layout
-files have a <span class="code">BuildAction</span> of <span class="code">ContentLayout</span>.</li><li><a href="4b8ab701-2321-4d24-a287-8848de086f68.htm" target="">Topic files</a> contain the MAML that
+files have a <span class="code">BuildAction</span> of <span class="code">ContentLayout</span>.</p></li><li><p><a href="4b8ab701-2321-4d24-a287-8848de086f68.htm" target="">Topic files</a> contain the MAML that
 defines each topic.  These files should have a <span class="code">BuildAction</span> of <span class="code">None</span>.
 The build process handles converting the topics to HTML and adding them to the help file based on a content
-layout file.</li><li><a href="c38461a6-6edd-42cf-9d91-73c4b11cdd70.htm#Image" target="">Image files</a> define image
+layout file.</p></li><li><p><a href="c38461a6-6edd-42cf-9d91-73c4b11cdd70.htm#Image" target="">Image files</a> define image
 resources used in the conceptual content.  These have a <span class="code">BuildAction</span> of
-<span class="code">Image</span>.</li><li><a href="ed6870bb-772d-4596-9fc1-5638ae6d621b.htm" target="">Token files</a> allow the definition of
+<span class="code">Image</span>.</p></li><li><p><a href="ed6870bb-772d-4596-9fc1-5638ae6d621b.htm" target="">Token files</a> allow the definition of
 common MAML snippets or content used in topic files.  These have a <span class="code">BuildAction</span> of
-<span class="code">Tokens</span>.</li><li><a href="c38461a6-6edd-42cf-9d91-73c4b11cdd70.htm#CodeSnippets" target="">Code snippets files</a> allow
+<span class="code">Tokens</span>.</p></li><li><p><a href="c38461a6-6edd-42cf-9d91-73c4b11cdd70.htm#CodeSnippets" target="">Code snippets files</a> allow
 you to define code snippets that will be used in conceptual content topics and are rendered by Sandcastle's
 <span class="code">ExampleComponent</span>.  These have a <span class="code">BuildAction</span> of
 <span class="code">CodeSnippets</span>.  See the MAML Guide for more information on creating code snippets
-files.</li></ul><a id="CustomTemplate"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Custom Template Files</div></div><p>The designer uses template files to create new conceptual topics.  You can create your own templates
+files.</p></li></ul><a id="CustomTemplate"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Custom Template Files</div></div><p>The designer uses template files to create new conceptual topics.  You can create your own templates
 for use in the designer by creating a <em>Conceptual Templates</em> folder in the
 <strong>Local Application Data</strong> folder.  Any MAML (<em>.aml</em>) files found in this
 folder will be added to the <span class="ui">Custom Templates</span> menu option in the <span class="ui">Add Sibling Topic</span> and <span class="ui">Add
