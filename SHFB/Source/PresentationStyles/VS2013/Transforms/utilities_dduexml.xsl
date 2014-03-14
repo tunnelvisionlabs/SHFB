@@ -179,7 +179,7 @@
 				<!-- Don't render the 'Change History' section here; it's handled in the t_writeChangeHistorySection template. -->
 				<xsl:when test="ddue:title = 'Change History'"/>
 
-				<xsl:when test="($total = 0) or ($total = 1)">
+				<xsl:when test="$total = 0">
 					<xsl:call-template name="t_putSection">
 						<xsl:with-param name="p_title">
 							<xsl:apply-templates select="ddue:title"
@@ -871,103 +871,32 @@
 
 	<xsl:template match="ddue:listItem/ddue:para[1]"
 								name="t_ddue_listItemPara1">
-		<xsl:variable name="v_minimalSpacing">
-			<xsl:call-template name="t_checkMinimalSpacing">
-				<xsl:with-param name="p_spacingType"
-												select="'listItem'"/>
-				<xsl:with-param name="p_parentLevel"
-												select="1"/>
-			</xsl:call-template>
-		</xsl:variable>
 		<!--<xsl:comment xml:space="preserve">t_ddue_listItemPara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:choose>
-			<xsl:when test="$v_minimalSpacing='true'">
-				<xsl:apply-templates/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:call-template name="t_ddue_para"/>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="t_ddue_para"/>
 	</xsl:template>
 
 	<xsl:template match="ddue:table/ddue:row/ddue:entry/ddue:para[1]"
 								name="t_ddue_tableRowEntryPara1">
-		<xsl:variable name="v_minimalSpacing">
-			<xsl:call-template name="t_checkMinimalSpacing">
-				<xsl:with-param name="p_spacingType"
-												select="'table'"/>
-				<xsl:with-param name="p_parentLevel"
-												select="2"/>
-			</xsl:call-template>
-		</xsl:variable>
 		<!--<xsl:comment xml:space="preserve">t_ddue_tableRowEntryPara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:choose>
-			<xsl:when test="$v_minimalSpacing='true'">
-				<xsl:apply-templates/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:call-template name="t_ddue_para"/>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="t_ddue_para"/>
 	</xsl:template>
 
 	<xsl:template match="ddue:tableHeader/ddue:row/ddue:entry/ddue:para[1]"
 								name="t_ddue_tableHeaderRowEntryPara1">
-		<xsl:variable name="v_minimalSpacing">
-			<xsl:call-template name="t_checkMinimalSpacing">
-				<xsl:with-param name="p_spacingType"
-												select="'tableHeader'"/>
-				<xsl:with-param name="p_parentLevel"
-												select="2"/>
-			</xsl:call-template>
-		</xsl:variable>
 		<!--<xsl:comment xml:space="preserve">t_ddue_tableHeaderRowEntryPara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:choose>
-			<xsl:when test="$v_minimalSpacing='true'">
-				<xsl:apply-templates/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:call-template name="t_ddue_para"/>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="t_ddue_para"/>
 	</xsl:template>
 
 	<xsl:template match="ddue:definedTerm/ddue:para[1]"
 								name="t_ddue_definedTermPara1">
-		<xsl:variable name="v_minimalSpacing">
-			<xsl:call-template name="t_checkMinimalSpacing">
-				<xsl:with-param name="p_spacingType"
-												select="'definedTerm'"/>
-			</xsl:call-template>
-		</xsl:variable>
 		<!--<xsl:comment xml:space="preserve">t_ddue_definedTermPara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:choose>
-			<xsl:when test="$v_minimalSpacing='true'">
-				<xsl:apply-templates/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:call-template name="t_ddue_para"/>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="t_ddue_para"/>
 	</xsl:template>
 
 	<xsl:template match="ddue:definition/ddue:para[1]"
 								name="t_ddue_definitionPara1">
-		<xsl:variable name="v_minimalSpacing">
-			<xsl:call-template name="t_checkMinimalSpacing">
-				<xsl:with-param name="p_spacingType"
-												select="'definition'"/>
-			</xsl:call-template>
-		</xsl:variable>
 		<!--<xsl:comment xml:space="preserve">t_ddue_definitionPara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:choose>
-			<xsl:when test="$v_minimalSpacing='true'">
-				<xsl:apply-templates/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:call-template name="t_ddue_para"/>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="t_ddue_para"/>
 	</xsl:template>
 
 	<!-- ============================================================================================
@@ -1120,23 +1049,8 @@
 
 	<xsl:template match="ddue:alert/ddue:para[1]"
 								name="t_ddue_alertPara1">
-		<xsl:variable name="v_minimalSpacing">
-			<xsl:call-template name="t_checkMinimalSpacing">
-				<xsl:with-param name="p_spacingType"
-												select="'alert'"/>
-				<xsl:with-param name="p_parentLevel"
-												select="1"/>
-			</xsl:call-template>
-		</xsl:variable>
 		<!--<xsl:comment xml:space="preserve">t_notePara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:choose>
-			<xsl:when test="$v_minimalSpacing='true'">
-				<xsl:apply-templates/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:call-template name="t_ddue_para"/>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="t_ddue_para"/>
 	</xsl:template>
 
 	<!-- ============================================================================================
