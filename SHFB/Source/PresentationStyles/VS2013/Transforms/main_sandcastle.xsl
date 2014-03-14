@@ -990,103 +990,32 @@
 
 	<xsl:template match="item/para[1][ancestor::list[@type!='table' and @type!='definition']]"
 								name="t_listItemPara1">
-		<xsl:variable name="v_minimalSpacing">
-			<xsl:call-template name="t_checkMinimalSpacing">
-				<xsl:with-param name="p_spacingType"
-												select="'listItem'"/>
-				<xsl:with-param name="p_parentLevel"
-												select="1"/>
-			</xsl:call-template>
-		</xsl:variable>
 		<!--<xsl:comment xml:space="preserve">t_listItemPara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:choose>
-			<xsl:when test="$v_minimalSpacing='true'">
-				<xsl:apply-templates/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:call-template name="t_para"/>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="t_para"/>
 	</xsl:template>
 
 	<xsl:template match="item/para[1][ancestor::list[@type='table'] and not(ancestor::listheader)]"
 								name="t_tableItemPara1">
-		<xsl:variable name="v_minimalSpacing">
-			<xsl:call-template name="t_checkMinimalSpacing">
-				<xsl:with-param name="p_spacingType"
-												select="'table'"/>
-				<xsl:with-param name="p_parentLevel"
-												select="1"/>
-			</xsl:call-template>
-		</xsl:variable>
 		<!--<xsl:comment xml:space="preserve">t_tableItemPara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:choose>
-			<xsl:when test="$v_minimalSpacing='true'">
-				<xsl:apply-templates/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:call-template name="t_para"/>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="t_para"/>
 	</xsl:template>
 
 	<xsl:template match="item/para[1][ancestor::list[@type='table'] and ancestor::listheader]"
 								name="t_tableHeaderItemPara1">
-		<xsl:variable name="v_minimalSpacing">
-			<xsl:call-template name="t_checkMinimalSpacing">
-				<xsl:with-param name="p_spacingType"
-												select="'tableHeader'"/>
-				<xsl:with-param name="p_parentLevel"
-												select="1"/>
-			</xsl:call-template>
-		</xsl:variable>
 		<!--<xsl:comment xml:space="preserve">t_tableHeaderItemPara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:choose>
-			<xsl:when test="$v_minimalSpacing='true'">
-				<xsl:apply-templates/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:call-template name="t_para"/>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="t_para"/>
 	</xsl:template>
 
 	<xsl:template match="item/term/para[1]"
 								name="t_listItemTermPara1">
-		<xsl:variable name="v_minimalSpacing">
-			<xsl:call-template name="t_checkMinimalSpacing">
-				<xsl:with-param name="p_spacingType"
-												select="'definedTerm'"/>
-			</xsl:call-template>
-		</xsl:variable>
 		<!--<xsl:comment xml:space="preserve">t_listItemTermPara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:choose>
-			<xsl:when test="$v_minimalSpacing='true'">
-				<xsl:apply-templates/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:call-template name="t_para"/>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="t_para"/>
 	</xsl:template>
 
 	<xsl:template match="item/description/para[1]"
 								name="t_listItemDescriptionPara1">
-		<xsl:variable name="v_minimalSpacing">
-			<xsl:call-template name="t_checkMinimalSpacing">
-				<xsl:with-param name="p_spacingType"
-												select="'definition'"/>
-			</xsl:call-template>
-		</xsl:variable>
 		<!--<xsl:comment xml:space="preserve">t_listItemDescriptionPara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:choose>
-			<xsl:when test="$v_minimalSpacing='true'">
-				<xsl:apply-templates/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:call-template name="t_para"/>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="t_para"/>
 	</xsl:template>
 
 	<!-- ============================================================================================
@@ -1328,23 +1257,8 @@
 
 	<xsl:template match="note/para[1]"
 								name="t_notePara1">
-		<xsl:variable name="v_minimalSpacing">
-			<xsl:call-template name="t_checkMinimalSpacing">
-				<xsl:with-param name="p_spacingType"
-												select="'alert'"/>
-				<xsl:with-param name="p_parentLevel"
-												select="1"/>
-			</xsl:call-template>
-		</xsl:variable>
 		<!--<xsl:comment xml:space="preserve">t_notePara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:choose>
-			<xsl:when test="$v_minimalSpacing='true'">
-				<xsl:apply-templates/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:call-template name="t_para"/>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:call-template name="t_para"/>
 	</xsl:template>
 
 	<!-- ======================================================================================== -->
