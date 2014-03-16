@@ -409,6 +409,12 @@ namespace Microsoft.Ddue.Tools.Reflection
         /// <param name="sb">The string builder to which the name is written</param>
         private static void WriteTemplate(TypeNode eiiType, StringBuilder sb)
         {
+            if (eiiType.Template != null)
+            {
+                WriteTemplate(eiiType.Template, sb);
+                return;
+            }
+
             // !EFW Use this instead of the template name as the type parameter may be different in the user's
             // code (i.e. Collection<TControl> instead of Collection<T>.
             string eiiClean = eiiType.GetFullUnmangledNameWithTypeParameters();
