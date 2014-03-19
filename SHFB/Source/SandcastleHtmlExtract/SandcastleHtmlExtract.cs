@@ -232,7 +232,7 @@ namespace SandcastleBuilder.HtmlExtract
         private static Regex reSubEntry = new Regex(@",([^\)\>]+|([^\<\>]*" +
             @"\<[^\<\>]*\>[^\<\>]*)?|([^\(\)]*\([^\(\)]*\)[^\(\)]*)?)$");
         private static Regex reXmlIsland = new Regex("<xml>.*?</xml>", RegexOptions.Singleline);
-        private static Regex reHxLinkCss = new Regex("<link[^>]*?href=\"ms-help://Hx/HxRuntime/HxLink\\.css\".*?/>",
+        private static Regex reHxLinkCss = new Regex("<link[^>]*?href=\"ms-help://Hx/HxRuntime/HxLink\\.css\".*?>",
             RegexOptions.IgnoreCase);
 
         // Localization support members
