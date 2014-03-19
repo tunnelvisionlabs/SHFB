@@ -275,8 +275,8 @@
         </Component>
       </Directory>
       <Directory Id="dir387AB1E78D22EEAAD61EE29090BDBC2E" Name="Data">
-        <Component Id="cmp431C4CE1F78F86F839656E96CCE8EC7C" Guid="{1B79BF93-34C4-48F3-84C2-40D8AD82F699}">
-          <File Id="filE4C2EC333BF1A800BA58DF45F3EB3B08" KeyPath="yes" Source="$(var.RootFolder)\Data\BuildReflectionData.bat" />
+        <Component Id="cmp353F5D5D0F4B482894AF88570F6FA1BA" Guid="{5D974720-6BDB-41EE-9708-51B0B139594B}">
+          <File Id="filB7ABDD6F81BE4E0294EE9E8384EE16BD" KeyPath="yes" Source="$(var.RootFolder)\Data\BuildReflectionData.ps1" />
         </Component>
         <Component Id="cmpE9BF6920A9C34783F649C62522BF17E0" Guid="{A424EFED-58A8-41D7-929C-97DF9F434854}">
           <File Id="filDF16B4656943092071B7F90F3916CE40" KeyPath="yes" Source="$(var.RootFolder)\Data\BuildReflectionData.proj" />
@@ -5263,7 +5263,7 @@
       <ComponentRef Id="cmpC8F599BF2295C93311D8A4AFFC487E04" />
       <ComponentRef Id="cmp5BFDEE2E4F166C0DD0CD3572FC7CFEF0" />
       <ComponentRef Id="cmpD0723E15CF4BC905978443D27428A818" />
-      <ComponentRef Id="cmp431C4CE1F78F86F839656E96CCE8EC7C" />
+      <ComponentRef Id="cmp353F5D5D0F4B482894AF88570F6FA1BA" />
       <ComponentRef Id="cmpE9BF6920A9C34783F649C62522BF17E0" />
       <ComponentRef Id="cmpBB70CD753B6E4FBC81BE7C7B7F64B9EC" />
       <ComponentRef Id="cmp77DD02BE53F12B7FE3FC033A355B7EB4" />
