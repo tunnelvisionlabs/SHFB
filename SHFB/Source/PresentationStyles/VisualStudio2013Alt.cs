@@ -1,6 +1,6 @@
 ﻿//===============================================================================================================
 // System  : Sandcastle Tools Standard Presentation Styles
-// File    : VisualStudi2013.cs
+// File    : VisualStudi2013Alt.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
 // Updated : 01/11/2014
 // Note    : Copyright 2014, Eric Woodruff, All rights reserved
@@ -30,10 +30,10 @@ namespace Sandcastle.PresentationStyles
     /// <summary>
     /// This contains the definition for the Visual Studio 2013 presentation style
     /// </summary>
-    [PresentationStyleExport("VS2013", "VS2013", Version = AssemblyInfo.ProductVersion,
+    [PresentationStyleExport("VS2013Alt", "VS2013Alt", Version = AssemblyInfo.ProductVersion,
       Copyright = AssemblyInfo.Copyright, Description = "This is the style used by Visual Studio 2013 and " +
       "later in the Microsoft Help Viewer.")]
-    public sealed class VisualStudio2013 : PresentationStyleSettings
+    public sealed class VisualStudio2013Alt : PresentationStyleSettings
     {
         /// <inheritdoc />
         public override string Location
@@ -44,10 +44,10 @@ namespace Sandcastle.PresentationStyles
         /// <summary>
         /// Constructor
         /// </summary>
-        public VisualStudio2013()
+        public VisualStudio2013Alt()
         {
             // The base path of the presentation style files relative to the assembly's location
-            this.BasePath = "VS2013";
+            this.BasePath = "VS2013Alt";
 
             this.SupportedFormats = HelpFileFormats.HtmlHelp1 | HelpFileFormats.MSHelp2 |
                 HelpFileFormats.MSHelpViewer | HelpFileFormats.Website;

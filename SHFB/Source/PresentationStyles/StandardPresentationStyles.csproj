@@ -53,7 +53,7 @@
     <Compile Include="VisualStudio2005.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VisualStudio2010.cs" />
-    <Compile Include="VisualStudio2013.cs" />
+    <Compile Include="VisualStudio2013Alt.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SandcastleCore\Sandcastle.Core.csproj">
@@ -745,295 +745,295 @@
     <Content Include="VS2010\Configuration\sandcastle.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\body.xslt">
+    <Content Include="VS2013Alt\Branding\body.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\codesnippet-cs-CZ.xslt">
+    <Content Include="VS2013Alt\Branding\codesnippet-cs-CZ.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\codesnippet-de-DE.xslt">
+    <Content Include="VS2013Alt\Branding\codesnippet-de-DE.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\codesnippet-en-US.xslt">
+    <Content Include="VS2013Alt\Branding\codesnippet-en-US.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\codesnippet-es-ES.xslt">
+    <Content Include="VS2013Alt\Branding\codesnippet-es-ES.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\codesnippet-fr-FR.xslt">
+    <Content Include="VS2013Alt\Branding\codesnippet-fr-FR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\codesnippet-it-IT.xslt">
+    <Content Include="VS2013Alt\Branding\codesnippet-it-IT.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\codesnippet-ja-JP.xslt">
+    <Content Include="VS2013Alt\Branding\codesnippet-ja-JP.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\codesnippet-ko-KR.xslt">
+    <Content Include="VS2013Alt\Branding\codesnippet-ko-KR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\codesnippet-pl-PL.xslt">
+    <Content Include="VS2013Alt\Branding\codesnippet-pl-PL.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\codesnippet-pt-BR.xslt">
+    <Content Include="VS2013Alt\Branding\codesnippet-pt-BR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\codesnippet-ru-RU.xslt">
+    <Content Include="VS2013Alt\Branding\codesnippet-ru-RU.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\codesnippet-tr-TR.xslt">
+    <Content Include="VS2013Alt\Branding\codesnippet-tr-TR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\codesnippet-zh-CN.xslt">
+    <Content Include="VS2013Alt\Branding\codesnippet-zh-CN.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\codesnippet-zh-TW.xslt">
+    <Content Include="VS2013Alt\Branding\codesnippet-zh-TW.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\CodeSnippet.xslt">
+    <Content Include="VS2013Alt\Branding\CodeSnippet.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\head.xslt">
+    <Content Include="VS2013Alt\Branding\head.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\Identity.xslt">
+    <Content Include="VS2013Alt\Branding\Identity.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\index-cs-CZ.xslt">
+    <Content Include="VS2013Alt\Branding\index-cs-CZ.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\index-de-DE.xslt">
+    <Content Include="VS2013Alt\Branding\index-de-DE.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\index-en-US.xslt">
+    <Content Include="VS2013Alt\Branding\index-en-US.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\index-es-ES.xslt">
+    <Content Include="VS2013Alt\Branding\index-es-ES.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\index-fr-FR.xslt">
+    <Content Include="VS2013Alt\Branding\index-fr-FR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\index-it-IT.xslt">
+    <Content Include="VS2013Alt\Branding\index-it-IT.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\index-ja-JP.xslt">
+    <Content Include="VS2013Alt\Branding\index-ja-JP.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\index-ko-KR.xslt">
+    <Content Include="VS2013Alt\Branding\index-ko-KR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\index-pl-PL.xslt">
+    <Content Include="VS2013Alt\Branding\index-pl-PL.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\index-pt-BR.xslt">
+    <Content Include="VS2013Alt\Branding\index-pt-BR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\index-ru-RU.xslt">
+    <Content Include="VS2013Alt\Branding\index-ru-RU.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\index-tr-TR.xslt">
+    <Content Include="VS2013Alt\Branding\index-tr-TR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\index-zh-CN.xslt">
+    <Content Include="VS2013Alt\Branding\index-zh-CN.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\index-zh-TW.xslt">
+    <Content Include="VS2013Alt\Branding\index-zh-TW.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\index.xslt">
+    <Content Include="VS2013Alt\Branding\index.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\instrumentedlink-cs-CZ.xslt">
+    <Content Include="VS2013Alt\Branding\instrumentedlink-cs-CZ.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\instrumentedlink-de-DE.xslt">
+    <Content Include="VS2013Alt\Branding\instrumentedlink-de-DE.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\instrumentedlink-en-US.xslt">
+    <Content Include="VS2013Alt\Branding\instrumentedlink-en-US.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\instrumentedlink-es-ES.xslt">
+    <Content Include="VS2013Alt\Branding\instrumentedlink-es-ES.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\instrumentedlink-fr-FR.xslt">
+    <Content Include="VS2013Alt\Branding\instrumentedlink-fr-FR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\instrumentedlink-it-IT.xslt">
+    <Content Include="VS2013Alt\Branding\instrumentedlink-it-IT.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\instrumentedlink-ja-JP.xslt">
+    <Content Include="VS2013Alt\Branding\instrumentedlink-ja-JP.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\instrumentedlink-ko-KR.xslt">
+    <Content Include="VS2013Alt\Branding\instrumentedlink-ko-KR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\instrumentedlink-pl-PL.xslt">
+    <Content Include="VS2013Alt\Branding\instrumentedlink-pl-PL.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\instrumentedlink-pt-BR.xslt">
+    <Content Include="VS2013Alt\Branding\instrumentedlink-pt-BR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\instrumentedlink-ru-RU.xslt">
+    <Content Include="VS2013Alt\Branding\instrumentedlink-ru-RU.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\instrumentedlink-tr-TR.xslt">
+    <Content Include="VS2013Alt\Branding\instrumentedlink-tr-TR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\instrumentedlink-zh-CN.xslt">
+    <Content Include="VS2013Alt\Branding\instrumentedlink-zh-CN.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\instrumentedlink-zh-TW.xslt">
+    <Content Include="VS2013Alt\Branding\instrumentedlink-zh-TW.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\InstrumentedLink.xslt">
+    <Content Include="VS2013Alt\Branding\InstrumentedLink.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\LanguageSpecificText.xslt">
+    <Content Include="VS2013Alt\Branding\LanguageSpecificText.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\MultiViewTable-cs-CZ.xslt">
+    <Content Include="VS2013Alt\Branding\MultiViewTable-cs-CZ.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\MultiViewTable-de-DE.xslt">
+    <Content Include="VS2013Alt\Branding\MultiViewTable-de-DE.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\MultiViewTable-en-US.xslt">
+    <Content Include="VS2013Alt\Branding\MultiViewTable-en-US.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\MultiViewTable-es-ES.xslt">
+    <Content Include="VS2013Alt\Branding\MultiViewTable-es-ES.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\MultiViewTable-fr-FR.xslt">
+    <Content Include="VS2013Alt\Branding\MultiViewTable-fr-FR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\MultiViewTable-it-IT.xslt">
+    <Content Include="VS2013Alt\Branding\MultiViewTable-it-IT.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\MultiViewTable-ja-JP.xslt">
+    <Content Include="VS2013Alt\Branding\MultiViewTable-ja-JP.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\MultiViewTable-ko-KR.xslt">
+    <Content Include="VS2013Alt\Branding\MultiViewTable-ko-KR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\MultiViewTable-pl-PL.xslt">
+    <Content Include="VS2013Alt\Branding\MultiViewTable-pl-PL.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\MultiViewTable-pt-BR.xslt">
+    <Content Include="VS2013Alt\Branding\MultiViewTable-pt-BR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\MultiViewTable-ru-RU.xslt">
+    <Content Include="VS2013Alt\Branding\MultiViewTable-ru-RU.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\MultiViewTable-tr-TR.xslt">
+    <Content Include="VS2013Alt\Branding\MultiViewTable-tr-TR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\MultiViewTable-zh-CN.xslt">
+    <Content Include="VS2013Alt\Branding\MultiViewTable-zh-CN.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\MultiViewTable-zh-TW.xslt">
+    <Content Include="VS2013Alt\Branding\MultiViewTable-zh-TW.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\MultiViewTable.xslt">
+    <Content Include="VS2013Alt\Branding\MultiViewTable.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\search-cs-CZ.xslt">
+    <Content Include="VS2013Alt\Branding\search-cs-CZ.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\search-de-DE.xslt">
+    <Content Include="VS2013Alt\Branding\search-de-DE.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\search-en-US.xslt">
+    <Content Include="VS2013Alt\Branding\search-en-US.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\search-es-ES.xslt">
+    <Content Include="VS2013Alt\Branding\search-es-ES.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\search-fr-FR.xslt">
+    <Content Include="VS2013Alt\Branding\search-fr-FR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\search-it-IT.xslt">
+    <Content Include="VS2013Alt\Branding\search-it-IT.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\search-ja-JP.xslt">
+    <Content Include="VS2013Alt\Branding\search-ja-JP.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\search-ko-KR.xslt">
+    <Content Include="VS2013Alt\Branding\search-ko-KR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\search-pl-PL.xslt">
+    <Content Include="VS2013Alt\Branding\search-pl-PL.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\search-pt-BR.xslt">
+    <Content Include="VS2013Alt\Branding\search-pt-BR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\search-ru-RU.xslt">
+    <Content Include="VS2013Alt\Branding\search-ru-RU.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\search-tr-TR.xslt">
+    <Content Include="VS2013Alt\Branding\search-tr-TR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\search-zh-CN.xslt">
+    <Content Include="VS2013Alt\Branding\search-zh-CN.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\search-zh-TW.xslt">
+    <Content Include="VS2013Alt\Branding\search-zh-TW.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\search.xslt">
+    <Content Include="VS2013Alt\Branding\search.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\toc-cs-CZ.xslt">
+    <Content Include="VS2013Alt\Branding\toc-cs-CZ.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\toc-de-DE.xslt">
+    <Content Include="VS2013Alt\Branding\toc-de-DE.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\toc-en-US.xslt">
+    <Content Include="VS2013Alt\Branding\toc-en-US.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\toc-es-ES.xslt">
+    <Content Include="VS2013Alt\Branding\toc-es-ES.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\toc-fr-FR.xslt">
+    <Content Include="VS2013Alt\Branding\toc-fr-FR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\toc-it-IT.xslt">
+    <Content Include="VS2013Alt\Branding\toc-it-IT.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\toc-ja-JP.xslt">
+    <Content Include="VS2013Alt\Branding\toc-ja-JP.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\toc-ko-KR.xslt">
+    <Content Include="VS2013Alt\Branding\toc-ko-KR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\toc-pl-PL.xslt">
+    <Content Include="VS2013Alt\Branding\toc-pl-PL.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\toc-pt-BR.xslt">
+    <Content Include="VS2013Alt\Branding\toc-pt-BR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\toc-ru-RU.xslt">
+    <Content Include="VS2013Alt\Branding\toc-ru-RU.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\toc-tr-TR.xslt">
+    <Content Include="VS2013Alt\Branding\toc-tr-TR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\toc-zh-CN.xslt">
+    <Content Include="VS2013Alt\Branding\toc-zh-CN.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\toc-zh-TW.xslt">
+    <Content Include="VS2013Alt\Branding\toc-zh-TW.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\toc.xslt">
+    <Content Include="VS2013Alt\Branding\toc.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Configuration\conceptual.config">
+    <Content Include="VS2013Alt\Configuration\conceptual.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Configuration\sandcastle-mshc.config">
+    <Content Include="VS2013Alt\Configuration\sandcastle-mshc.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Configuration\sandcastle.config">
+    <Content Include="VS2013Alt\Configuration\sandcastle.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -2529,433 +2529,433 @@
     <Content Include="VS2010\Transforms\xpathFunctions.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding-cs-CZ.xslt">
+    <Content Include="VS2013Alt\Branding\branding-cs-CZ.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding-de-DE.xslt">
+    <Content Include="VS2013Alt\Branding\branding-de-DE.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding-en-US.xslt">
+    <Content Include="VS2013Alt\Branding\branding-en-US.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding-es-ES.xslt">
+    <Content Include="VS2013Alt\Branding\branding-es-ES.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding-fr-FR.xslt">
+    <Content Include="VS2013Alt\Branding\branding-fr-FR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding-it-IT.xslt">
+    <Content Include="VS2013Alt\Branding\branding-it-IT.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding-ja-JP.xslt">
+    <Content Include="VS2013Alt\Branding\branding-ja-JP.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding-ko-KR.xslt">
+    <Content Include="VS2013Alt\Branding\branding-ko-KR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding-pl-PL.xslt">
+    <Content Include="VS2013Alt\Branding\branding-pl-PL.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding-pt-BR.xslt">
+    <Content Include="VS2013Alt\Branding\branding-pt-BR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding-ru-RU.xslt">
+    <Content Include="VS2013Alt\Branding\branding-ru-RU.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding-tr-TR.xslt">
+    <Content Include="VS2013Alt\Branding\branding-tr-TR.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding-zh-CN.xslt">
+    <Content Include="VS2013Alt\Branding\branding-zh-CN.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding-zh-TW.xslt">
+    <Content Include="VS2013Alt\Branding\branding-zh-TW.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding.xml">
+    <Content Include="VS2013Alt\Branding\branding.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\branding.xslt">
+    <Content Include="VS2013Alt\Branding\branding.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\ps-body.xslt">
+    <Content Include="VS2013Alt\Branding\ps-body.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\ps-codesnippet.xslt">
+    <Content Include="VS2013Alt\Branding\ps-codesnippet.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\ps-collapsibleArea.xslt">
+    <Content Include="VS2013Alt\Branding\ps-collapsibleArea.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\ps-foot.xslt">
+    <Content Include="VS2013Alt\Branding\ps-foot.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\ps-head.xslt">
+    <Content Include="VS2013Alt\Branding\ps-head.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\ps-instrumentedLink.xslt">
+    <Content Include="VS2013Alt\Branding\ps-instrumentedLink.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Branding\ps-languageSpecificText.xslt">
+    <Content Include="VS2013Alt\Branding\ps-languageSpecificText.xslt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\conceptual_content.xml">
+    <Content Include="VS2013Alt\Content\conceptual_content.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\de-DE\conceptual_content.xml">
+    <Content Include="VS2013Alt\Content\de-DE\conceptual_content.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\de-DE\feedBack_content.xml">
+    <Content Include="VS2013Alt\Content\de-DE\feedBack_content.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\de-DE\reference_content.xml">
+    <Content Include="VS2013Alt\Content\de-DE\reference_content.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\de-DE\shared_content.xml">
+    <Content Include="VS2013Alt\Content\de-DE\shared_content.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\de-DE\shared_content_mshc.xml">
+    <Content Include="VS2013Alt\Content\de-DE\shared_content_mshc.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\de-DE\syntax_content.xml">
+    <Content Include="VS2013Alt\Content\de-DE\syntax_content.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\feedBack_content.xml">
+    <Content Include="VS2013Alt\Content\feedBack_content.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\reference_content.xml">
+    <Content Include="VS2013Alt\Content\reference_content.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\ru-RU\conceptual_content.xml">
+    <Content Include="VS2013Alt\Content\ru-RU\conceptual_content.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\ru-RU\feedBack_content.xml">
+    <Content Include="VS2013Alt\Content\ru-RU\feedBack_content.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\ru-RU\reference_content.xml">
+    <Content Include="VS2013Alt\Content\ru-RU\reference_content.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\ru-RU\shared_content.xml">
+    <Content Include="VS2013Alt\Content\ru-RU\shared_content.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\ru-RU\shared_content_mshc.xml">
+    <Content Include="VS2013Alt\Content\ru-RU\shared_content_mshc.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\ru-RU\syntax_content.xml">
+    <Content Include="VS2013Alt\Content\ru-RU\syntax_content.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\shared_content.xml">
+    <Content Include="VS2013Alt\Content\shared_content.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\shared_content_mshc.xml">
+    <Content Include="VS2013Alt\Content\shared_content_mshc.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Content\syntax_content.xml">
+    <Content Include="VS2013Alt\Content\syntax_content.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Data\bibliography.xml">
+    <Content Include="VS2013Alt\Data\bibliography.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\1_404_bullet.gif">
+    <Content Include="VS2013Alt\icons\1_404_bullet.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\2_404_bullet.gif">
+    <Content Include="VS2013Alt\icons\2_404_bullet.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\alert_caution.gif">
+    <Content Include="VS2013Alt\icons\alert_caution.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\alert_note.gif">
+    <Content Include="VS2013Alt\icons\alert_note.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\alert_security.gif">
+    <Content Include="VS2013Alt\icons\alert_security.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\CFW.gif">
+    <Content Include="VS2013Alt\icons\CFW.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\close.gif">
+    <Content Include="VS2013Alt\icons\close.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\favicon.ico">
+    <Content Include="VS2013Alt\icons\favicon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\footer_slice.gif">
+    <Content Include="VS2013Alt\icons\footer_slice.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\info_icon.gif">
+    <Content Include="VS2013Alt\icons\info_icon.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\note.gif">
+    <Content Include="VS2013Alt\icons\note.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\online_icon.gif">
+    <Content Include="VS2013Alt\icons\online_icon.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\open.gif">
+    <Content Include="VS2013Alt\icons\open.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\pencil.GIF">
+    <Content Include="VS2013Alt\icons\pencil.GIF">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\privclass.gif">
+    <Content Include="VS2013Alt\icons\privclass.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\privdelegate.gif">
+    <Content Include="VS2013Alt\icons\privdelegate.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\privenumeration.gif">
+    <Content Include="VS2013Alt\icons\privenumeration.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\privevent.gif">
+    <Content Include="VS2013Alt\icons\privevent.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\privextension.gif">
+    <Content Include="VS2013Alt\icons\privextension.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\privfield.gif">
+    <Content Include="VS2013Alt\icons\privfield.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\privinterface.gif">
+    <Content Include="VS2013Alt\icons\privinterface.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\privmethod.gif">
+    <Content Include="VS2013Alt\icons\privmethod.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\privproperty.gif">
+    <Content Include="VS2013Alt\icons\privproperty.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\privstructure.gif">
+    <Content Include="VS2013Alt\icons\privstructure.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\protclass.gif">
+    <Content Include="VS2013Alt\icons\protclass.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\protdelegate.gif">
+    <Content Include="VS2013Alt\icons\protdelegate.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\protenumeration.gif">
+    <Content Include="VS2013Alt\icons\protenumeration.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\protevent.gif">
+    <Content Include="VS2013Alt\icons\protevent.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\protextension.gif">
+    <Content Include="VS2013Alt\icons\protextension.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\protfield.gif">
+    <Content Include="VS2013Alt\icons\protfield.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\protinterface.gif">
+    <Content Include="VS2013Alt\icons\protinterface.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\protmethod.gif">
+    <Content Include="VS2013Alt\icons\protmethod.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\protoperator.gif">
+    <Content Include="VS2013Alt\icons\protoperator.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\protproperty.gif">
+    <Content Include="VS2013Alt\icons\protproperty.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\protstructure.gif">
+    <Content Include="VS2013Alt\icons\protstructure.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\pubclass.gif">
+    <Content Include="VS2013Alt\icons\pubclass.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\pubdelegate.gif">
+    <Content Include="VS2013Alt\icons\pubdelegate.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\pubenumeration.gif">
+    <Content Include="VS2013Alt\icons\pubenumeration.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\pubevent.gif">
+    <Content Include="VS2013Alt\icons\pubevent.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\pubextension.gif">
+    <Content Include="VS2013Alt\icons\pubextension.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\pubfield.gif">
+    <Content Include="VS2013Alt\icons\pubfield.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\pubinterface.gif">
+    <Content Include="VS2013Alt\icons\pubinterface.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\pubmethod.gif">
+    <Content Include="VS2013Alt\icons\pubmethod.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\puboperator.gif">
+    <Content Include="VS2013Alt\icons\puboperator.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\pubproperty.gif">
+    <Content Include="VS2013Alt\icons\pubproperty.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\pubstructure.gif">
+    <Content Include="VS2013Alt\icons\pubstructure.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\search.gif">
+    <Content Include="VS2013Alt\icons\search.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\search_bk.gif">
+    <Content Include="VS2013Alt\icons\search_bk.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\security.gif">
+    <Content Include="VS2013Alt\icons\security.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\slMobile.gif">
+    <Content Include="VS2013Alt\icons\slMobile.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\static.gif">
+    <Content Include="VS2013Alt\icons\static.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\tabLeftBG.gif">
+    <Content Include="VS2013Alt\icons\tabLeftBG.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\tabRightBG.gif">
+    <Content Include="VS2013Alt\icons\tabRightBG.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\ui_om_collapse.gif">
+    <Content Include="VS2013Alt\icons\ui_om_collapse.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\ui_om_expand.gif">
+    <Content Include="VS2013Alt\icons\ui_om_expand.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\icons\xna.gif">
+    <Content Include="VS2013Alt\icons\xna.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\scripts\branding.js">
+    <Content Include="VS2013Alt\scripts\branding.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\SHFBContent\de-DE.xml">
+    <Content Include="VS2013Alt\SHFBContent\de-DE.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\SHFBContent\en-US.xml">
+    <Content Include="VS2013Alt\SHFBContent\en-US.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\SHFBContent\es-ES.xml">
+    <Content Include="VS2013Alt\SHFBContent\es-ES.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\SHFBContent\fr-FR.xml">
+    <Content Include="VS2013Alt\SHFBContent\fr-FR.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\SHFBContent\it-IT.xml">
+    <Content Include="VS2013Alt\SHFBContent\it-IT.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\SHFBContent\ja-JP.xml">
+    <Content Include="VS2013Alt\SHFBContent\ja-JP.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\SHFBContent\ko-KR.xml">
+    <Content Include="VS2013Alt\SHFBContent\ko-KR.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\SHFBContent\pt-BR.xml">
+    <Content Include="VS2013Alt\SHFBContent\pt-BR.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\SHFBContent\ru-RU.xml">
+    <Content Include="VS2013Alt\SHFBContent\ru-RU.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\SHFBContent\zh-CHS.xml">
+    <Content Include="VS2013Alt\SHFBContent\zh-CHS.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\SHFBContent\zh-CN.xml">
+    <Content Include="VS2013Alt\SHFBContent\zh-CN.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\styles\branding-cs-CZ.css">
+    <Content Include="VS2013Alt\styles\branding-cs-CZ.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\styles\branding-de-DE.css">
+    <Content Include="VS2013Alt\styles\branding-de-DE.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\styles\branding-en-US.css">
+    <Content Include="VS2013Alt\styles\branding-en-US.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\styles\branding-es-ES.css">
+    <Content Include="VS2013Alt\styles\branding-es-ES.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\styles\branding-fr-FR.css">
+    <Content Include="VS2013Alt\styles\branding-fr-FR.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\styles\branding-it-IT.css">
+    <Content Include="VS2013Alt\styles\branding-it-IT.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\styles\branding-ja-JP.css">
+    <Content Include="VS2013Alt\styles\branding-ja-JP.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\styles\branding-ko-KR.css">
+    <Content Include="VS2013Alt\styles\branding-ko-KR.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\styles\branding-pl-PL.css">
+    <Content Include="VS2013Alt\styles\branding-pl-PL.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\styles\branding-pt-BR.css">
+    <Content Include="VS2013Alt\styles\branding-pt-BR.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\styles\branding-ru-RU.css">
+    <Content Include="VS2013Alt\styles\branding-ru-RU.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\styles\branding-tr-TR.css">
+    <Content Include="VS2013Alt\styles\branding-tr-TR.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\styles\branding-zh-CN.css">
+    <Content Include="VS2013Alt\styles\branding-zh-CN.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\styles\branding-zh-TW.css">
+    <Content Include="VS2013Alt\styles\branding-zh-TW.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\styles\branding.css">
+    <Content Include="VS2013Alt\styles\branding.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\codeTemplates.xsl">
+    <Content Include="VS2013Alt\Transforms\codeTemplates.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\conceptualMetadataHelp20.xsl">
+    <Content Include="VS2013Alt\Transforms\conceptualMetadataHelp20.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\conceptualMetadataHelp30.xsl">
+    <Content Include="VS2013Alt\Transforms\conceptualMetadataHelp30.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\conceptualTopicTypes.xsl">
+    <Content Include="VS2013Alt\Transforms\conceptualTopicTypes.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\globalTemplates.xsl">
+    <Content Include="VS2013Alt\Transforms\globalTemplates.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\main_conceptual.xsl">
+    <Content Include="VS2013Alt\Transforms\main_conceptual.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\main_sandcastle.xsl">
+    <Content Include="VS2013Alt\Transforms\main_sandcastle.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\metadataHelp20.xsl">
+    <Content Include="VS2013Alt\Transforms\metadataHelp20.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\metadataHelp30.xsl">
+    <Content Include="VS2013Alt\Transforms\metadataHelp30.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\seealso_dduexml.xsl">
+    <Content Include="VS2013Alt\Transforms\seealso_dduexml.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\skeleton.xml">
+    <Content Include="VS2013Alt\Transforms\skeleton.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\skeleton_conceptual.xml">
+    <Content Include="VS2013Alt\Transforms\skeleton_conceptual.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\utilities_bibliography.xsl">
+    <Content Include="VS2013Alt\Transforms\utilities_bibliography.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\utilities_dduexml.xsl">
+    <Content Include="VS2013Alt\Transforms\utilities_dduexml.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\utilities_metadata.xsl">
+    <Content Include="VS2013Alt\Transforms\utilities_metadata.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\utilities_reference.xsl">
+    <Content Include="VS2013Alt\Transforms\utilities_reference.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\xamlSyntax.xsl">
+    <Content Include="VS2013Alt\Transforms\xamlSyntax.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Transforms\xpathFunctions.xsl">
+    <Content Include="VS2013Alt\Transforms\xpathFunctions.xsl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -2994,10 +2994,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="VS2013\Configuration\SHFBConceptual.config">
+    <Content Include="VS2013Alt\Configuration\SHFBConceptual.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS2013\Configuration\SHFBReference.config">
+    <Content Include="VS2013Alt\Configuration\SHFBReference.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
