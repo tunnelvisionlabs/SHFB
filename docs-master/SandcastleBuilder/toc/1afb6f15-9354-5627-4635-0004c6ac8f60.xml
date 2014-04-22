@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOCNode Title="SandcastleBuilder.Package.PropertyPages" Url="html/1afb6f15-9354-5627-4635-0004c6ac8f60.htm">
   <HelpTOCNode Title="BasePropertyPage Class" Url="html/20967795-b59d-6042-6e63-d1821839b135.htm" HasChildren="true" />
+  <HelpTOCNode Title="BuildEventEditorForm Class" Url="html/27e3938d-4f96-b048-053e-36d6d52b0521.htm" HasChildren="true" />
+  <HelpTOCNode Title="BuildEventPropertiesPageControl Class" Url="html/1ccd8de9-dbc7-7b3b-f9e4-a33540ea1636.htm" HasChildren="true" />
   <HelpTOCNode Title="BuildPropertiesPageControl Class" Url="html/c2aa36b1-ec88-58eb-c563-de4e152dd2cc.htm" HasChildren="true" />
   <HelpTOCNode Title="ComponentPropertiesPageControl Class" Url="html/dd9efb51-90ee-23e7-8106-a988ec081bb3.htm" HasChildren="true" />
   <HelpTOCNode Title="Help1WebsitePropertiesPageControl Class" Url="html/40b24507-f5d9-69cc-c71a-ea28df8e1574.htm" HasChildren="true" />
