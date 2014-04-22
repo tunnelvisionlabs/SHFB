@@ -227,6 +227,18 @@
     <Compile Include="IntelliSense\CSharpDocumentationCompletionSource.cs" />
     <Compile Include="IntelliSense\CSharpDocumentationCompletionSourceProvider.cs" />
     <Compile Include="IntelliSense\CustomCompletion.cs" />
+    <Compile Include="PropertyPages\BuildEventEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\BuildEventEditorForm.Designer.cs">
+      <DependentUpon>BuildEventEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\BuildEventPropertiesPageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\BuildEventPropertiesPageControl.Designer.cs">
+      <DependentUpon>BuildEventPropertiesPageControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="PropertyPages\TransformArgumentsPageControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -751,8 +763,14 @@
     <EmbeddedResource Include="PropertyPages\BasePropertyPage.resx">
       <DependentUpon>BasePropertyPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\BuildEventEditorForm.resx">
+      <DependentUpon>BuildEventEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PropertyPages\BuildPropertiesPageControl.resx">
       <DependentUpon>BuildPropertiesPageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\BuildEventPropertiesPageControl.resx">
+      <DependentUpon>BuildEventPropertiesPageControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PropertyPages\SummaryPropertiesPageControl.resx">
       <DependentUpon>SummaryPropertiesPageControl.cs</DependentUpon>
@@ -852,6 +870,7 @@
       <Name>Sandcastle.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Condition="Exists($(VsSdkTargets))" Project="$(VsSdkTargets)" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
