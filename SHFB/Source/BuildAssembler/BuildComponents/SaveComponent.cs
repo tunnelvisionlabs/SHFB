@@ -85,41 +85,6 @@ namespace Microsoft.Ddue.Tools
                 throw new ConfigurationErrorsException("When instantiating a save component, you must specify " +
                     "a the target file using the <save> element.");
 
-            string outputMethodValue = saveNode.GetAttribute("method", String.Empty);
-            XmlOutputMethod? outputMethod = null;
-            switch (outputMethodValue)
-            {
-            case "html":
-                outputMethod = XmlOutputMethod.Html;
-                break;
-
-            case "xml":
-                outputMethod = XmlOutputMethod.Xml;
-                break;
-
-            case "text":
-                outputMethod = XmlOutputMethod.Text;
-                break;
-
-            case "auto":
-                outputMethod = XmlOutputMethod.AutoDetect;
-                break;
-
-            case "":
-            case null:
-                break;
-
-            default:
-                throw new ConfigurationErrorsException("The specified output method is not valid for the " +
-                    "save component.");
-            }
-
-            if (!string.IsNullOrEmpty(outputMethodValue))
-            {
-                var propertyInfo = typeof(XmlWriterSettings).GetProperty("OutputMethod", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
-                propertyInfo.SetValue(settings, outputMethod.Value, null);
-            }
-
             string baseValue = saveNode.GetAttribute("base", String.Empty);
 
             if(!String.IsNullOrWhiteSpace(baseValue))
