@@ -4171,9 +4171,6 @@
         </Directory>
         <Directory Id="dir9519A250907C911BBAF76943CD5F1853" Name="VS2013Alt">
           <Directory Id="dir1AE70F0A61291AC1B73AA7FD42552908" Name="Branding">
-            <Component Id="cmp1EF60653F549D94D4E5FC3B851BA5D32" Guid="{8AE5133C-890A-45FF-BF8D-E27223411EDB}">
-              <File Id="fil40612D4C2F1ED019CB1E7B6E71C2E532" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\body.xslt" />
-            </Component>
             <Component Id="cmpE2B957116200BB5706FB1E796885B9DA" Guid="{F0E45C3E-09B1-4F7B-9507-C005B6FA8248}">
               <File Id="filDC1F8367F8B93264A105E0F5F458F778" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\branding-cs-CZ.xslt" />
             </Component>
@@ -4222,305 +4219,11 @@
             <Component Id="cmpB7B8C2E8CF1924EC75EF61BB0C5BCA50" Guid="{B63BAB73-EF9F-4451-9F1B-B42B363A953B}">
               <File Id="fil029BA3A89F17A1D33827E341AEC086E4" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\branding.xslt" />
             </Component>
-            <Component Id="cmp506FFB48A8DF2945D90AF5577AEC2673" Guid="{EBC9CAFA-96F0-4370-8D89-2BC434920FFE}">
-              <File Id="fil5E0D144C9FC12E0B9FE15E35CF71946E" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\codesnippet-cs-CZ.xslt" />
-            </Component>
-            <Component Id="cmp5D766030BCFE612518AF5C41D3EB3F58" Guid="{C2A3A879-BD19-4379-87C6-297E5193B8C6}">
-              <File Id="fil0EFE1ABE2BE3A3153932284796BEFBC3" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\codesnippet-de-DE.xslt" />
-            </Component>
-            <Component Id="cmp6C416F132801CB1A660D083EA9255BBE" Guid="{C79B485F-3646-4F5B-B9F3-CF7D64D04D52}">
-              <File Id="filA80A16895AB80F4B059004ED1F795533" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\codesnippet-en-US.xslt" />
-            </Component>
-            <Component Id="cmp5323D4C77682726036C0EC659CA839CB" Guid="{0E994DAF-55B6-4CA4-A948-7F9F9F60B6A9}">
-              <File Id="filA708AF941A80332025CE04B82D4A3A7B" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\codesnippet-es-ES.xslt" />
-            </Component>
-            <Component Id="cmp8BBBD6F6792C1E0AF4A3AB3FBD80E71F" Guid="{CCF40335-8BEF-4E31-A36E-1918630C1256}">
-              <File Id="fil1CEBE3FAE9FCFE141BA0C96A0D51150F" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\codesnippet-fr-FR.xslt" />
-            </Component>
-            <Component Id="cmpD0FD1A88EBDE9CAFC55785B0E7F18B53" Guid="{7169E74F-15A9-4AB6-AB87-EE203D3224ED}">
-              <File Id="fil60669E8DEDA3C55948F7EE4F9ABC4C34" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\codesnippet-it-IT.xslt" />
-            </Component>
-            <Component Id="cmpC3B2F058BC4712D051CCBF3D8B7E78AC" Guid="{002D4163-3704-4EAC-95BD-51153E2B6101}">
-              <File Id="filE5039804FF82F079C89028DE086DF1A5" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\codesnippet-ja-JP.xslt" />
-            </Component>
-            <Component Id="cmp6196DFE15391FB6A4B3151E5876F6377" Guid="{309C8D37-755B-406A-A576-49336DFE8CF5}">
-              <File Id="fil03C74971FB75A072D839521BC6545D0A" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\codesnippet-ko-KR.xslt" />
-            </Component>
-            <Component Id="cmp4003A98DCF2388ED5BF8A66E3C95D764" Guid="{D13AED47-F45D-4F48-BD0C-0D947BCE8508}">
-              <File Id="filE5CB1773000E8EC12FCFBB38B72AB71D" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\codesnippet-pl-PL.xslt" />
-            </Component>
-            <Component Id="cmpB4F913D7039B9CF3C9FE99ECC98B704A" Guid="{965DD560-1F8C-442A-B57D-B261C82E9D2A}">
-              <File Id="filC0E122DEABCA1E684F7180834281B921" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\codesnippet-pt-BR.xslt" />
-            </Component>
-            <Component Id="cmp5C0D55C8777EA92E975E35D0E6EB55B2" Guid="{EE8132BA-E56F-481D-A4D9-EF1CE541B6D0}">
-              <File Id="filA8AAEB7BDA0D4D7EDF5C3C4BE05FC777" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\codesnippet-ru-RU.xslt" />
-            </Component>
-            <Component Id="cmp3D13AAF47774DB02067EAF49BA0B2681" Guid="{9B00453C-6604-4D29-B045-D5B5FA065D10}">
-              <File Id="filB6BA8B6493B58667647F23510F06C06E" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\codesnippet-tr-TR.xslt" />
-            </Component>
-            <Component Id="cmpC0995BDE04455207FEE42E96E0153D01" Guid="{EDFCAD90-E91D-4368-A039-19549E8BA12B}">
-              <File Id="fil1BDBD2F02B3C45154A642E2BA1C96EDF" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\codesnippet-zh-CN.xslt" />
-            </Component>
-            <Component Id="cmpF91C8867EA5FA0A60B7A8F13CF0750A5" Guid="{3383709A-B54D-4855-BC76-27821DE2F9F5}">
-              <File Id="filA2817B801F4405A953551F68C04EA6DA" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\codesnippet-zh-TW.xslt" />
-            </Component>
             <Component Id="cmpBC7DA7DB836F866A45420BF7897A0CE8" Guid="{F3D954FC-CA4D-46DE-A1D1-DB7A020BBB12}">
               <File Id="filB8E42DE5F2CDEC4677F57C9F8BE8D616" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\CodeSnippet.xslt" />
             </Component>
-            <Component Id="cmp9F6FC6A59A2E92C54DF841D230ED4184" Guid="{EF7574EE-054C-41E0-994F-0C6B71AF54F8}">
-              <File Id="fil20A4369FEAB0B678F41C497F2E351D63" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\head.xslt" />
-            </Component>
-            <Component Id="cmpB4AFD871E8A774C6B20A5961E2CC8AE1" Guid="{693A91C6-9AB5-4FC3-9575-54F9CD1D0054}">
-              <File Id="fil0DE40C0FDFF63F604DDA4A673205B817" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\Identity.xslt" />
-            </Component>
-            <Component Id="cmp11E4E3885E9AF9FF7E491916C1680912" Guid="{CF1BF2FC-7055-4418-B66F-74D9B04D6199}">
-              <File Id="fil7F5CF0D864CAD0C2FC808CDB4A4865C1" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\index-cs-CZ.xslt" />
-            </Component>
-            <Component Id="cmp42461A8D2B2C02F4BE4094A4E8E4FF49" Guid="{DE34D59A-DD91-4E65-A860-D94181FDB965}">
-              <File Id="fil66B315B5E7678BE530DBDEFBA8B9522D" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\index-de-DE.xslt" />
-            </Component>
-            <Component Id="cmp0D19BE6DCD240E8CB713E85D7B6990B5" Guid="{A1818744-285E-4375-AF89-55189699CCC4}">
-              <File Id="fil7D1E19569C8EA5BEBFB8CBB483434CA0" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\index-en-US.xslt" />
-            </Component>
-            <Component Id="cmp64C0795606DA88B4A2AAD699DB642A48" Guid="{CFAF3FB2-4F90-4893-BB91-48BE9B1A6FF1}">
-              <File Id="fil330BFDDDFF4E85B807F45557A9225670" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\index-es-ES.xslt" />
-            </Component>
-            <Component Id="cmp840D2345E980FE207757F78515176149" Guid="{C8BDFD7C-F968-49BC-9B4A-6C56A4642639}">
-              <File Id="fil8CF576F79FF717E7D69174F6D5593F9F" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\index-fr-FR.xslt" />
-            </Component>
-            <Component Id="cmp639850A295A5B999A88EEFA922B5E68B" Guid="{6435A3EC-1C79-435F-BAFC-F52DD0B40FA7}">
-              <File Id="fil28660B4D1119EB49D67AB5AF045C63CA" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\index-it-IT.xslt" />
-            </Component>
-            <Component Id="cmp7B94CEE3EBEF20CC8673604BA9521802" Guid="{4F9F7F49-007D-40F3-A796-7723E43379CD}">
-              <File Id="filEDA7C0342AECC6BBB647BAC87F1ECA40" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\index-ja-JP.xslt" />
-            </Component>
-            <Component Id="cmpBAA8F246C12DDE53F9E2D4FADB29F974" Guid="{A063D7FB-B78D-493E-97E6-77BD1300FF1D}">
-              <File Id="filB9FAA047EE1F75B728BCE31555470270" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\index-ko-KR.xslt" />
-            </Component>
-            <Component Id="cmpD08D70EDC69B7361FD6EAC52AD745941" Guid="{777A6F22-E3CB-4433-BFB7-8E77FDF931F2}">
-              <File Id="fil8FDF3412CB88D349731422ED1A284779" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\index-pl-PL.xslt" />
-            </Component>
-            <Component Id="cmpC0AE1AA2B3A10DD53572A26E07261575" Guid="{987EEAB4-6A9C-4729-B1DC-1B71EF098AD0}">
-              <File Id="fil2B67089FDC6A335D78E017596F7D7B4B" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\index-pt-BR.xslt" />
-            </Component>
-            <Component Id="cmp16C8A793315D77A0CE9DF753187EDD7F" Guid="{3DDC9BA7-9A85-444E-B703-D85805C46F64}">
-              <File Id="fil4E18D89728C8707BAB6921EB5AAC2219" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\index-ru-RU.xslt" />
-            </Component>
-            <Component Id="cmp66E69B2CD7F17934C0975028D7938F90" Guid="{1A32358C-61E1-470A-8B9E-9BC61E323F7D}">
-              <File Id="fil52B1CD32A3837D7006FFF50C371FF45F" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\index-tr-TR.xslt" />
-            </Component>
-            <Component Id="cmp61A6A44918AD5D4F373F37E5A485D4C4" Guid="{3E9862E4-A57C-4213-AD22-362F957AF7D4}">
-              <File Id="fil11A72D86FFA89C4057DEDECD744C2BCF" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\index-zh-CN.xslt" />
-            </Component>
-            <Component Id="cmp40B6655B6FFC457388E3C9D571A5E30B" Guid="{DC487A2A-5D9C-414E-9175-1838F5201019}">
-              <File Id="fil8E7EFA77900DCED96641680BDC02631D" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\index-zh-TW.xslt" />
-            </Component>
-            <Component Id="cmpEF21DEF3C0B451E147DAC794F2A1FFF8" Guid="{3ECF545C-C152-4E70-8C16-94A17122F100}">
-              <File Id="filDB74E092554C6D3383D3D4D47F6A7A55" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\index.xslt" />
-            </Component>
-            <Component Id="cmpAA4855196E08A74BA0168FFAF575CF24" Guid="{5C2B13CF-7307-432C-9D80-C2F1264A8AB8}">
-              <File Id="fil0F1BEF3C262A9FE686D2783F127B7C1A" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\instrumentedlink-cs-CZ.xslt" />
-            </Component>
-            <Component Id="cmpAC2A2269A72369F4BD8919AEA0BA10F3" Guid="{FDFAFCF1-356C-43FE-8FE9-1B0D6DB4754D}">
-              <File Id="filCE9F68BD781034978D8E87868233F3F3" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\instrumentedlink-de-DE.xslt" />
-            </Component>
-            <Component Id="cmp86D2F2E3FC662E787790AD4C52FD960F" Guid="{8658F3CC-5CCB-4334-BA9D-A46D60B0694A}">
-              <File Id="filD4B3A05D5CCF6226CAE49C814EA90FFB" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\instrumentedlink-en-US.xslt" />
-            </Component>
-            <Component Id="cmp0B1F298C9C85CA604DF9782FC29740BB" Guid="{CBB98F9A-07D5-4496-8D0E-F7F534311334}">
-              <File Id="fil0E7F7D3E1895A9F432CDB2071A4EDF65" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\instrumentedlink-es-ES.xslt" />
-            </Component>
-            <Component Id="cmpA8F8951A88AD257A06D0202BBA396A1E" Guid="{ED61841A-4039-4B84-93ED-B8B6668F3DF6}">
-              <File Id="fil05B4B61BE6D83413D92D1A8E47FE2DB6" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\instrumentedlink-fr-FR.xslt" />
-            </Component>
-            <Component Id="cmp57AF3DAE8943FA1C40732A474066D5B7" Guid="{B59715BD-8751-45B7-8D0E-0A60E4E267FA}">
-              <File Id="filB324322CFDB9479557975017E88E4C95" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\instrumentedlink-it-IT.xslt" />
-            </Component>
-            <Component Id="cmpE2742F58364D51F8737CA0D7E4307F1E" Guid="{88CD32B4-218E-419F-8026-8F30AE1AA599}">
-              <File Id="fil9F6DA282BBC97D54EC75E1FF1E4F16E4" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\instrumentedlink-ja-JP.xslt" />
-            </Component>
-            <Component Id="cmp4EA71367A86A9506C09F37F296BE93EE" Guid="{65B5C45A-25B3-4BB2-B177-F82043EDB056}">
-              <File Id="fil7CB1B6187C0C3748477617C00C40EF00" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\instrumentedlink-ko-KR.xslt" />
-            </Component>
-            <Component Id="cmp60D446BE9AF46C07D311CB016A3D0DA2" Guid="{DF1CCB59-6465-4528-838F-3A9B98012FDB}">
-              <File Id="fil5FE3150E30B0BFA0E217AA7F3BB550CE" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\instrumentedlink-pl-PL.xslt" />
-            </Component>
-            <Component Id="cmp7F0E688C2121F060124340CFE8559896" Guid="{D4221599-743C-4FE5-8F17-ECF7F39AFCF7}">
-              <File Id="fil8C3BBAD32063E7B22660DF48E37628E6" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\instrumentedlink-pt-BR.xslt" />
-            </Component>
-            <Component Id="cmp5BBC7F923F710C32E9CD53916E9C964B" Guid="{C3C7CBAE-50FE-464C-8D2E-22A834FF7441}">
-              <File Id="fil34C47DACD8FFCA1FFA25618850C4C12F" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\instrumentedlink-ru-RU.xslt" />
-            </Component>
-            <Component Id="cmp986AFD79A84C4F43243099C4A7EDEF96" Guid="{6E363B44-60E4-42D8-B90F-56CBEDC51BB0}">
-              <File Id="fil9C3165653680574D5326F957F2345DBD" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\instrumentedlink-tr-TR.xslt" />
-            </Component>
-            <Component Id="cmp8D6D5866BBFE031F43F59DFAFFFC702E" Guid="{C32CFF8B-9EF2-425E-86D2-00C8EDD84FFD}">
-              <File Id="filB0C70C0110626F17823BD6CCA09006F2" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\instrumentedlink-zh-CN.xslt" />
-            </Component>
-            <Component Id="cmpABB101E72D6A8C72A64F49AA84CFA371" Guid="{92EE0C9E-81A7-4623-A2F8-21DFD33F32E2}">
-              <File Id="fil2476AC355A574BB088C7CFBD62124DB3" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\instrumentedlink-zh-TW.xslt" />
-            </Component>
-            <Component Id="cmpD037A5FFF3543237531CA906F9D4909F" Guid="{8F6518C2-C248-4249-B509-37897B930C62}">
-              <File Id="fil0D44AEF471FF3E5BF8E52D707EA89DA8" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\InstrumentedLink.xslt" />
-            </Component>
-            <Component Id="cmp17FF65864501A5338EA2D25D489A0336" Guid="{B8EAD75D-E9F0-49EA-AB45-7D4AA3D7A7D4}">
-              <File Id="fil77D7EBB04CF551FD69CA47CF3ED17374" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\LanguageSpecificText.xslt" />
-            </Component>
-            <Component Id="cmp6D9BDA158D66AF4FB12BB2AED7842EF4" Guid="{60C22DCD-A937-4529-8797-D23A34CB91E7}">
-              <File Id="filE4C35D891477D2596B3697121B628A82" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\MultiViewTable-cs-CZ.xslt" />
-            </Component>
-            <Component Id="cmpDCF1553038924E888C7376998A9FAF75" Guid="{038FB40A-C7FD-4479-AB80-120F894F24CD}">
-              <File Id="fil9250E47184E3BAF04101B4FCD6D7614A" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\MultiViewTable-de-DE.xslt" />
-            </Component>
-            <Component Id="cmp3627D49DC4812867CF732A3F416A46DE" Guid="{290427DA-D2D8-4D4E-A1B5-47D94D2E3CC2}">
-              <File Id="fil14A464E6FB49363E84A0EB19446EB0E8" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\MultiViewTable-en-US.xslt" />
-            </Component>
-            <Component Id="cmp824EAB5372EF0CB6CA04AF99BFDBA2B6" Guid="{B2DBFCEC-4A66-4D1C-90EA-A7C1DA681645}">
-              <File Id="fil19F754E66ECF12C31CBDB4759A8D573F" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\MultiViewTable-es-ES.xslt" />
-            </Component>
-            <Component Id="cmp6F1145919801A7BB14C437BD9D34B402" Guid="{153676E2-74B7-4367-8FFB-EF26CA0EE6B3}">
-              <File Id="fil5641AABDEDF34831ACBF4A4A073C8F3A" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\MultiViewTable-fr-FR.xslt" />
-            </Component>
-            <Component Id="cmpD2B31FE037BC1ABB5BC9E15FC7CFC3E9" Guid="{78854977-79B2-4225-B61E-7D5FAAAF6906}">
-              <File Id="fil6234C532EF363513562C251A10815EDF" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\MultiViewTable-it-IT.xslt" />
-            </Component>
-            <Component Id="cmp7EF29AC30F65F08D7307E5CC8D6DF4AC" Guid="{34090AE3-9AB9-401B-A1F0-8304FB6E4216}">
-              <File Id="fil302731A243E151E730963673642937A8" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\MultiViewTable-ja-JP.xslt" />
-            </Component>
-            <Component Id="cmpC88F3D24699B37A2A245EBBB95068776" Guid="{A22E427D-9D83-40D4-8BA0-E1A057D9CD29}">
-              <File Id="fil0F3C14ECA68E6DC9B57CA7410EB8C9D7" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\MultiViewTable-ko-KR.xslt" />
-            </Component>
-            <Component Id="cmp5599AF337714197822A2D1319006ADA0" Guid="{FB605CB1-EEA8-4528-8642-BDDE3335B086}">
-              <File Id="fil582E7F62C38E2FE2DE62A9FF78CDCD7D" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\MultiViewTable-pl-PL.xslt" />
-            </Component>
-            <Component Id="cmp38B821EE1A56AA07F780F514AFB40B9D" Guid="{8A0E0884-B301-4651-B757-BFB6CF5DF459}">
-              <File Id="filE5070F3FCF59041B5ECF09F0CABC0BA5" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\MultiViewTable-pt-BR.xslt" />
-            </Component>
-            <Component Id="cmpC19802FBAD8CD90A0E8B197123806C6B" Guid="{A4256848-444B-4147-B580-B74BA9F4279F}">
-              <File Id="fil9331BEADFAE533B2B716AD6B58639C43" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\MultiViewTable-ru-RU.xslt" />
-            </Component>
-            <Component Id="cmp644C398FB4406046DF1ADA2BB67A5034" Guid="{B43B80E3-D221-4D2F-9377-6227158E645C}">
-              <File Id="filB2E1A5BA702DBBD63B624208F01F935E" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\MultiViewTable-tr-TR.xslt" />
-            </Component>
-            <Component Id="cmp23F6AEFD6E2DE28FE04E63404BD75A38" Guid="{6277AF11-63A1-477F-A89C-8017E0F1CD6B}">
-              <File Id="filB7429C5FF17ED0B9CCEAF98F15AE9808" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\MultiViewTable-zh-CN.xslt" />
-            </Component>
-            <Component Id="cmpEB1096BDE4E4D206AF9121A8A490901B" Guid="{0594701C-D7F3-4397-9039-EB547F50AE44}">
-              <File Id="fil84C255ED34F37E1D81488700A1F45F83" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\MultiViewTable-zh-TW.xslt" />
-            </Component>
-            <Component Id="cmpB0769630156F2EC7D180CDECDF56B430" Guid="{717EFA35-B7A8-4B20-AB8F-8F6116A2728B}">
-              <File Id="filF91379DE77B97DAB47CE7DA75719C0F4" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\MultiViewTable.xslt" />
-            </Component>
-            <Component Id="cmp5D7C7AB4F9894A91E10D497CD91B695C" Guid="{6347B4C4-21CB-4DE9-804A-E37A5C6F4128}">
-              <File Id="fil4A9A91E584C919B468066E3F54CAD5E0" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\ps-body.xslt" />
-            </Component>
             <Component Id="cmp20AB771F04F64950A30A466A96442E56" Guid="{4DFE8487-3E4F-4A90-B06B-FE167AC8D9CE}">
               <File Id="fil630F6BE30D369964C5EEA0813DB9A6CE" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\ps-codesnippet.xslt" />
-            </Component>
-            <Component Id="cmp648E2BEFCF111976B0363DEC89C339AF" Guid="{72110638-B21C-440D-B28B-AE973F0269D3}">
-              <File Id="fil57FCEDD4793C9E1E6B3BDF786456BC70" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\ps-collapsibleArea.xslt" />
-            </Component>
-            <Component Id="cmp01B18EF7430A329873F27DC398ACD6C0" Guid="{F1CF2DE6-BDC3-4054-A784-8D67E2EB1EC0}">
-              <File Id="filAE90AEC0BA11BAA761C96C9C9C071175" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\ps-foot.xslt" />
-            </Component>
-            <Component Id="cmpBAAE4DFDD4BB6B6DEC87EB5C0AAB4D6B" Guid="{4FD463E7-463A-4641-9FE0-10343C5F204C}">
-              <File Id="fil085EA38E06E9D4A78F4FF3F159934F8E" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\ps-head.xslt" />
-            </Component>
-            <Component Id="cmp1DCF0E56E5E41ACA553DF7828DA856CE" Guid="{B2E1A570-BD1F-43BA-B9B0-99CD01C480C9}">
-              <File Id="filF04A2E104CDE568FE0D8EF1E29E8987F" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\ps-instrumentedLink.xslt" />
-            </Component>
-            <Component Id="cmpE82BF37ECFD88A318824DDC9633D02CA" Guid="{D6BADFC5-B233-4743-9A6F-CAE2A5D13C61}">
-              <File Id="filD0BF5E915295F720DD532C9A40587596" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\ps-languageSpecificText.xslt" />
-            </Component>
-            <Component Id="cmp09E5F20AA8EF3123D43D806AC993A9CE" Guid="{9BF1A1B1-7820-477D-90CA-C056251170C9}">
-              <File Id="fil2332D175C3BCC7E8A7579B2269BDFB57" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\search-cs-CZ.xslt" />
-            </Component>
-            <Component Id="cmpFF454AE80CD26585C61C4312FAB6E369" Guid="{287E2E55-AF0D-487E-9DCA-EB066A1791E6}">
-              <File Id="filD3AF758FC39EB3FDCD7638B3E97A2C84" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\search-de-DE.xslt" />
-            </Component>
-            <Component Id="cmp7B5C9F69FAB738252653447994F1B07F" Guid="{6A3A4394-74DB-4787-9AF4-6BEDBB521D78}">
-              <File Id="filD52ACA910F8518FED194104F67617DE2" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\search-en-US.xslt" />
-            </Component>
-            <Component Id="cmp78F4AE5B604967B91C7F12DFAEB60595" Guid="{9D296756-A47A-4CBA-AB9E-3A8A95520F11}">
-              <File Id="fil2002EBBC2B99AF6BCAFA47D1E62F8064" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\search-es-ES.xslt" />
-            </Component>
-            <Component Id="cmp0EFAC7B93DCB7005110EE90AE9A4E767" Guid="{CF450C4F-B5F2-493E-B701-DF7B42F3860F}">
-              <File Id="fil56808032C9B98AE2BB0059AB144E8E5C" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\search-fr-FR.xslt" />
-            </Component>
-            <Component Id="cmp58A99A6BB9F045B1040B1057C947D141" Guid="{4A22532E-204F-45F2-BE69-CD21AAEC3E04}">
-              <File Id="filF26E9C0797B15690C3063DE3E07B372E" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\search-it-IT.xslt" />
-            </Component>
-            <Component Id="cmp4514F9FA73E676B37626214996AA580C" Guid="{800982B9-2292-418A-8D46-6F35901C9E40}">
-              <File Id="filFFF48A76D2A5E89BF6D289E7B9FC8B00" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\search-ja-JP.xslt" />
-            </Component>
-            <Component Id="cmp2AEF636D25CF3919C21A0BAD5050B4D5" Guid="{DED80A78-9CF8-4FC7-A986-520FCDEB997D}">
-              <File Id="fil3B1227136F00F6885A89432117C729C2" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\search-ko-KR.xslt" />
-            </Component>
-            <Component Id="cmpB7DB5D4B61EED677F53005B2A7ABAA2D" Guid="{42469F66-A0DA-46C6-84F0-90A8F48CD553}">
-              <File Id="filC13FFB998DE9D6BF2876433E44F9B153" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\search-pl-PL.xslt" />
-            </Component>
-            <Component Id="cmpEE7D2BD7F73417F4D5F7677EC975280D" Guid="{46E2F22E-633C-47ED-A77A-603DB25AF6B1}">
-              <File Id="filE1759C777ADA51DB4F97C5C55DF208C5" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\search-pt-BR.xslt" />
-            </Component>
-            <Component Id="cmpEF355EB65EBB08FBB5224A0E3C172550" Guid="{3371CAFA-C2C9-4B7C-BCF0-884D8808C091}">
-              <File Id="fil8D2C7CA93584411BA6808A37EE82A8FB" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\search-ru-RU.xslt" />
-            </Component>
-            <Component Id="cmp5FD54B2FD6C3137E7FB579AEFC817C1D" Guid="{DE120E56-36EE-4048-A3F8-05ABE2F8DC6E}">
-              <File Id="filFDC1E08E2E52EFC58217C5053E04A206" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\search-tr-TR.xslt" />
-            </Component>
-            <Component Id="cmp89CC8455485F87A3794CF44B61AF0D1F" Guid="{796AC8B6-5229-483D-B426-AC9C1C951C49}">
-              <File Id="fil7B5E63173C525FBB082DEF0DD743E7B7" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\search-zh-CN.xslt" />
-            </Component>
-            <Component Id="cmpA85A1C6FEEE722D6F4B9421EC26E845A" Guid="{43C4979F-962F-4031-989E-F57550707A23}">
-              <File Id="fil4942484A17D1CE6F82D674EA1C283FC3" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\search-zh-TW.xslt" />
-            </Component>
-            <Component Id="cmp4B0F4140EBEA696060A57F9227F8F515" Guid="{11A3AB01-703E-4F9A-91C0-6E4252716AA9}">
-              <File Id="fil3B67C1376C950992B14AE8E425080A65" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\search.xslt" />
-            </Component>
-            <Component Id="cmpEBF2883E1C243621ADC35C21441E926F" Guid="{CBCE99BE-3EF8-4D2B-A66D-961A1C814841}">
-              <File Id="filBA2FA73A8EAB1D4342ECFA364BAE2C1E" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\toc-cs-CZ.xslt" />
-            </Component>
-            <Component Id="cmpE9653D2672EB42207F076D1EBCF5A9FC" Guid="{A7A1F3DC-105A-45ED-BF20-EA1CBD0B7888}">
-              <File Id="fil65D505B59DAE3FF70445C41D5C473753" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\toc-de-DE.xslt" />
-            </Component>
-            <Component Id="cmp6307AB4634A6658EEF2282B864AEB0C9" Guid="{9E66664D-0108-494C-83AA-1FCD7318C65C}">
-              <File Id="fil4FF088210AC72557E95FACF4D1ABC44E" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\toc-en-US.xslt" />
-            </Component>
-            <Component Id="cmp7139AC57BFD5CC04473DF33863175A89" Guid="{8CDB744A-D29D-4AE3-9E60-92FAE78ACE5E}">
-              <File Id="fil403908CF29D0092A7693ABA051F2068E" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\toc-es-ES.xslt" />
-            </Component>
-            <Component Id="cmpF1187B682A2E70A447EF7A6105402084" Guid="{340728F3-E18C-404F-AE85-3AB0D4B180A9}">
-              <File Id="filB6A17C24E5B5CFBD7542B621F3E7DC48" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\toc-fr-FR.xslt" />
-            </Component>
-            <Component Id="cmp681168171C203B4807620DAF8D97FD59" Guid="{9BCCB02A-76C0-44B6-AD36-0C5CD709B245}">
-              <File Id="fil96D944021ED2429968E91A157FC12F29" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\toc-it-IT.xslt" />
-            </Component>
-            <Component Id="cmp2BD9AF935680BD6572BD951171D27456" Guid="{B2ED8AAE-0090-40BC-94A2-F4354A2F6BDB}">
-              <File Id="fil084F41716BFAB92E4E3150547EBC1077" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\toc-ja-JP.xslt" />
-            </Component>
-            <Component Id="cmpFDA0C0CA3DEBD94175CA8E6083F53FC8" Guid="{BD040B16-9307-4F93-97D8-B91410DE083B}">
-              <File Id="filB2C1C1400427E83A6E3BB2CFCE3AAACA" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\toc-ko-KR.xslt" />
-            </Component>
-            <Component Id="cmpD5103D7DB6A41D92E9BF834CFD6CB400" Guid="{DDC24412-97B0-4F84-86C7-2C8C1556BE45}">
-              <File Id="fil210CFCEE83FD852D95CEAA7C49D65E56" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\toc-pl-PL.xslt" />
-            </Component>
-            <Component Id="cmp7CC50BEC635B338C362EB99814952CDD" Guid="{191AD163-70B8-4738-BBC8-19698AF98091}">
-              <File Id="fil9405E5AFAE3AAEB69795EB636E22C484" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\toc-pt-BR.xslt" />
-            </Component>
-            <Component Id="cmpDDD2878C77BC4C94CA470D68B1B9E0E5" Guid="{2CA67D77-4739-4190-AC42-C0D7E53C80F3}">
-              <File Id="fil859D7B2B8F731673F9CEB51543459E06" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\toc-ru-RU.xslt" />
-            </Component>
-            <Component Id="cmpCD6810869449DC4CF8D77CBA2C1A7585" Guid="{48A75C2D-BC74-44CD-A82A-7854B8640EA0}">
-              <File Id="filDF7B49DC4B07ABC753197EDC066F173C" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\toc-tr-TR.xslt" />
-            </Component>
-            <Component Id="cmpDD8139326E5F58B7342814B5236250A4" Guid="{11F1556C-C361-4673-A443-148222B467CF}">
-              <File Id="filF7DEEC26F0068664968505A08AE39727" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\toc-zh-CN.xslt" />
-            </Component>
-            <Component Id="cmp63591863185A6220DACAD9CBCBC3ACB6" Guid="{244235F3-7E3F-4D6D-B526-4A145A3C3915}">
-              <File Id="fil63222F94DBE01B453F766B1A7BB88E8F" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\toc-zh-TW.xslt" />
-            </Component>
-            <Component Id="cmpF2B7E44234B0A2F10EFF4426E21C4E14" Guid="{EFC7BC64-3100-4144-870D-1F52BF8BB8BF}">
-              <File Id="fil860508456541D39599E15C41145C0C64" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Branding\toc.xslt" />
             </Component>
           </Directory>
           <Directory Id="dirC96E49EB6F7DDBF4D84FDFE7BDC15795" Name="Configuration">
@@ -4544,9 +4247,6 @@
             <Component Id="cmp02380CAD13822F3E554B3A9F85F12E5E" Guid="{42ACAE94-E058-42F5-A00F-02AB56914688}">
               <File Id="fil332B8969E9BC1091A88EB7E3B5C8AE2D" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Content\conceptual_content.xml" />
             </Component>
-            <Component Id="cmp13D7790E45EF62970507F139550AF3F9" Guid="{914BB5A6-0D4F-4D1F-A25D-B6B146A32B0F}">
-              <File Id="filF4F89CC36F1573E839929C5D850C0C4B" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Content\feedBack_content.xml" />
-            </Component>
             <Component Id="cmpA115308F36ABB47D79F7A21B0BFDAF9B" Guid="{DA526EA9-A31D-4086-B36E-545A3C66FFA8}">
               <File Id="fil7E50D69E6E9EB77543E18D1FF06649DA" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Content\reference_content.xml" />
             </Component>
@@ -4562,9 +4262,6 @@
             <Directory Id="dir2FE4B4C263098D50284D2E2ECB42298B" Name="de-DE">
               <Component Id="cmp12897250E547DF8082B76DA4FB331CA6" Guid="{4C1AB646-0889-40BB-9A22-9DAACF1EB99C}">
                 <File Id="fil0037B7C72D8167F58C196E65BC44F597" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Content\de-DE\conceptual_content.xml" />
-              </Component>
-              <Component Id="cmpA80E12617D0126B455D6D9DE75B37F70" Guid="{D851D5CD-F811-47D9-B367-00D004B36039}">
-                <File Id="filAB00017A77132707DB47E44C5AD4FEF2" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Content\de-DE\feedBack_content.xml" />
               </Component>
               <Component Id="cmpA98BC0D3856B6FB6A142F8E5910D7C12" Guid="{1391A2D9-06D7-452B-BC4D-F7CDEE5B112E}">
                 <File Id="filD870149358443470D784714EB0D46976" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Content\de-DE\reference_content.xml" />
@@ -4582,9 +4279,6 @@
             <Directory Id="dirE88EA186149D1522AE8103807606B1B6" Name="ru-RU">
               <Component Id="cmpA793B1771CC5A88E2D206F0E9B08B1BC" Guid="{CC4E1BA5-DFB7-4832-97D2-1933076F083A}">
                 <File Id="fil53A4F8768B01A535B31EC6B3DAFDF66E" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Content\ru-RU\conceptual_content.xml" />
-              </Component>
-              <Component Id="cmp6724BD0EEFD7A24B108016AB54458190" Guid="{E0022F8D-1E85-44F1-B6E7-BB871911D227}">
-                <File Id="fil073D1C367605B9591BD60CCBF3D55FF1" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Content\ru-RU\feedBack_content.xml" />
               </Component>
               <Component Id="cmpB88B4FFB98E44F8F73A153BD1FDFD691" Guid="{8933CE13-3970-4052-B5B7-CBC542C4E246}">
                 <File Id="filE03A66EF0A6760A92D35A39EBC519C32" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\Content\ru-RU\reference_content.xml" />
@@ -4606,12 +4300,6 @@
             </Component>
           </Directory>
           <Directory Id="dir115385323494EA9A922A60AA7369BF89" Name="icons">
-            <Component Id="cmp589E685FA774190181B3846CF2B6A0A5" Guid="{54253840-7345-4A4E-A9F5-23882B7D0443}">
-              <File Id="fil2A76ED386FA1EA4E54E91BEF1015D270" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\1_404_bullet.gif" />
-            </Component>
-            <Component Id="cmp3E587A3C32B40683B9F3BF6539536CAA" Guid="{C1DA9450-9019-46F5-A15A-6B0721EE50A7}">
-              <File Id="fil1B0DBE0EB7F8C8F5F987A300C0C1B772" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\2_404_bullet.gif" />
-            </Component>
             <Component Id="cmp38E08F1C7034610B1DE4C8CED811DBE2" Guid="{37E548EA-5468-40E4-B5EE-0990CFD8CB23}">
               <File Id="filD80D0977D39A5CE9BCD42504F1900347" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\alert_caution.gif" />
             </Component>
@@ -4633,20 +4321,11 @@
             <Component Id="cmpFD9FA184D634AE471FBA9319CA18A481" Guid="{137BFE7A-DF50-45B8-9D0F-3A2092009037}">
               <File Id="fil4321328B76743291DD3F1DD23C479CD7" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\footer_slice.gif" />
             </Component>
-            <Component Id="cmp56BACB5C61F4D25A6D3FCBE2A4BE111B" Guid="{CFACD087-D83F-40ED-A490-D83BA98F2757}">
-              <File Id="filA0984F3DB6329B12E03E7227B6A417D5" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\info_icon.gif" />
-            </Component>
             <Component Id="cmp83411D8FD5C58F7E5F9BFAF9EA30ECE9" Guid="{55962543-CBE7-4F45-AFF3-F7107FE9B8AF}">
               <File Id="filFA893483D45E7B3C296A86B1618506DC" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\note.gif" />
             </Component>
-            <Component Id="cmpF9B5C08A3A9C6766605E66B709FB452C" Guid="{CC91523A-F446-4134-BE19-30254DEA6F7F}">
-              <File Id="fil553AEA0D07A46A9914546703E3B69DE1" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\online_icon.gif" />
-            </Component>
             <Component Id="cmpC8974E03D36B57376452B886955CABDF" Guid="{FB62B5E6-A3F8-48F9-823F-5B4B80DBE570}">
               <File Id="fil35FAF7FEC99EB3285E2130F53497FA2D" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\open.gif" />
-            </Component>
-            <Component Id="cmpF6F781E264BE261292B1AEE83969AD88" Guid="{0732DCB1-7290-43F0-8C28-19D97C8DE49C}">
-              <File Id="filB7539A47E6D27EAA40C7C2C95F35922B" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\pencil.GIF" />
             </Component>
             <Component Id="cmpEC2EDC41639DFF7432E5355768032E58" Guid="{81C46A73-3425-4BE8-9735-EE6718F9166E}">
               <File Id="fil0A010EED16228795C731E10ABD60B0F1" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\privclass.gif" />
@@ -4744,15 +4423,6 @@
             <Component Id="cmpB6986CD7DDEE63C22F171E20406C7FEB" Guid="{DA626178-C5EB-4095-8295-AF069DC46DCD}">
               <File Id="fil2D1E0C0EAE60F13A1929E1CBE6F83871" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\pubstructure.gif" />
             </Component>
-            <Component Id="cmp801A9E66FF893F078C82AA1CC2E2ECCB" Guid="{F7D7467C-E724-4080-AAA6-D21090606583}">
-              <File Id="filB1261911AB7B159B1CD80A6E78D4BDE1" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\search.gif" />
-            </Component>
-            <Component Id="cmp5D71C73C51EFFCEB3B9509041C88D784" Guid="{969C6A6B-8DB3-4941-9DAE-73FDF7D24401}">
-              <File Id="fil48642BA0A451587DE2B2B37D54738888" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\search_bk.gif" />
-            </Component>
-            <Component Id="cmp0C728E41980C4A99E456DF13DB44CF83" Guid="{A3E7637C-AC73-4D2B-BA7B-3AC7B62F0725}">
-              <File Id="fil10A0AF57F242241F97C537AEE5977FA6" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\security.gif" />
-            </Component>
             <Component Id="cmp5123BEDE35685916AE618E4BF4A4F9A2" Guid="{7C5C18BF-78FB-40EB-9CAA-31F31AA3565A}">
               <File Id="fil6FA307BE7CCF3F0199849773680D22D2" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\slMobile.gif" />
             </Component>
@@ -4764,12 +4434,6 @@
             </Component>
             <Component Id="cmp82B2591FFC0CF016A8A0087BBBC8BD3A" Guid="{4471666A-DD67-4B85-B4D6-26286DF28186}">
               <File Id="filACA3082F259925B06E2233812E20F4D2" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\tabRightBG.gif" />
-            </Component>
-            <Component Id="cmp0ACD79272A51F3E0A5B4677A2B6553CE" Guid="{76580073-E09D-4C06-8AA5-49372B7EF893}">
-              <File Id="filB4C2B5FE54C25927525402BCCB7FAAD4" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\ui_om_collapse.gif" />
-            </Component>
-            <Component Id="cmpBF05AEB768C9ED9E990264DDDCE6AFDF" Guid="{7F39DE8E-0A32-42FE-A955-4CA7FBFAFF5E}">
-              <File Id="filD2E34AC00ADEBAF89FD6B064594234D9" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\ui_om_expand.gif" />
             </Component>
             <Component Id="cmp39A0D53A1130256D7984A5049D51C9C5" Guid="{BD95190A-942E-41D5-8B22-7394A43A8143}">
               <File Id="fil8BE39BA1E1AF8170EFC69C5D71AC405B" KeyPath="yes" Source="$(var.RootFolder)\PresentationStyles\VS2013Alt\icons\xna.gif" />
@@ -6556,7 +6220,6 @@
       <ComponentRef Id="cmp456590A55F13C97CD8B14DAFCD219D47" />
       <ComponentRef Id="cmp797EE819B0CD6DDCB8F4A195CE2AE527" />
       <ComponentRef Id="cmp2A6FF71314F1E7DBAEDCE7FC20E6E376" />
-      <ComponentRef Id="cmp1EF60653F549D94D4E5FC3B851BA5D32" />
       <ComponentRef Id="cmpE2B957116200BB5706FB1E796885B9DA" />
       <ComponentRef Id="cmp76E85AA992FB61AB48D1FBCE7D8FAC93" />
       <ComponentRef Id="cmpF1C6686F6F72AE1B3451E5B70BF67120" />
@@ -6573,132 +6236,29 @@
       <ComponentRef Id="cmpA0132555CDAC9013558234C18CB79519" />
       <ComponentRef Id="cmp4EDDF88613E284740E5F6994E8415678" />
       <ComponentRef Id="cmpB7B8C2E8CF1924EC75EF61BB0C5BCA50" />
-      <ComponentRef Id="cmp506FFB48A8DF2945D90AF5577AEC2673" />
-      <ComponentRef Id="cmp5D766030BCFE612518AF5C41D3EB3F58" />
-      <ComponentRef Id="cmp6C416F132801CB1A660D083EA9255BBE" />
-      <ComponentRef Id="cmp5323D4C77682726036C0EC659CA839CB" />
-      <ComponentRef Id="cmp8BBBD6F6792C1E0AF4A3AB3FBD80E71F" />
-      <ComponentRef Id="cmpD0FD1A88EBDE9CAFC55785B0E7F18B53" />
-      <ComponentRef Id="cmpC3B2F058BC4712D051CCBF3D8B7E78AC" />
-      <ComponentRef Id="cmp6196DFE15391FB6A4B3151E5876F6377" />
-      <ComponentRef Id="cmp4003A98DCF2388ED5BF8A66E3C95D764" />
-      <ComponentRef Id="cmpB4F913D7039B9CF3C9FE99ECC98B704A" />
-      <ComponentRef Id="cmp5C0D55C8777EA92E975E35D0E6EB55B2" />
-      <ComponentRef Id="cmp3D13AAF47774DB02067EAF49BA0B2681" />
-      <ComponentRef Id="cmpC0995BDE04455207FEE42E96E0153D01" />
-      <ComponentRef Id="cmpF91C8867EA5FA0A60B7A8F13CF0750A5" />
       <ComponentRef Id="cmpBC7DA7DB836F866A45420BF7897A0CE8" />
-      <ComponentRef Id="cmp9F6FC6A59A2E92C54DF841D230ED4184" />
-      <ComponentRef Id="cmpB4AFD871E8A774C6B20A5961E2CC8AE1" />
-      <ComponentRef Id="cmp11E4E3885E9AF9FF7E491916C1680912" />
-      <ComponentRef Id="cmp42461A8D2B2C02F4BE4094A4E8E4FF49" />
-      <ComponentRef Id="cmp0D19BE6DCD240E8CB713E85D7B6990B5" />
-      <ComponentRef Id="cmp64C0795606DA88B4A2AAD699DB642A48" />
-      <ComponentRef Id="cmp840D2345E980FE207757F78515176149" />
-      <ComponentRef Id="cmp639850A295A5B999A88EEFA922B5E68B" />
-      <ComponentRef Id="cmp7B94CEE3EBEF20CC8673604BA9521802" />
-      <ComponentRef Id="cmpBAA8F246C12DDE53F9E2D4FADB29F974" />
-      <ComponentRef Id="cmpD08D70EDC69B7361FD6EAC52AD745941" />
-      <ComponentRef Id="cmpC0AE1AA2B3A10DD53572A26E07261575" />
-      <ComponentRef Id="cmp16C8A793315D77A0CE9DF753187EDD7F" />
-      <ComponentRef Id="cmp66E69B2CD7F17934C0975028D7938F90" />
-      <ComponentRef Id="cmp61A6A44918AD5D4F373F37E5A485D4C4" />
-      <ComponentRef Id="cmp40B6655B6FFC457388E3C9D571A5E30B" />
-      <ComponentRef Id="cmpEF21DEF3C0B451E147DAC794F2A1FFF8" />
-      <ComponentRef Id="cmpAA4855196E08A74BA0168FFAF575CF24" />
-      <ComponentRef Id="cmpAC2A2269A72369F4BD8919AEA0BA10F3" />
-      <ComponentRef Id="cmp86D2F2E3FC662E787790AD4C52FD960F" />
-      <ComponentRef Id="cmp0B1F298C9C85CA604DF9782FC29740BB" />
-      <ComponentRef Id="cmpA8F8951A88AD257A06D0202BBA396A1E" />
-      <ComponentRef Id="cmp57AF3DAE8943FA1C40732A474066D5B7" />
-      <ComponentRef Id="cmpE2742F58364D51F8737CA0D7E4307F1E" />
-      <ComponentRef Id="cmp4EA71367A86A9506C09F37F296BE93EE" />
-      <ComponentRef Id="cmp60D446BE9AF46C07D311CB016A3D0DA2" />
-      <ComponentRef Id="cmp7F0E688C2121F060124340CFE8559896" />
-      <ComponentRef Id="cmp5BBC7F923F710C32E9CD53916E9C964B" />
-      <ComponentRef Id="cmp986AFD79A84C4F43243099C4A7EDEF96" />
-      <ComponentRef Id="cmp8D6D5866BBFE031F43F59DFAFFFC702E" />
-      <ComponentRef Id="cmpABB101E72D6A8C72A64F49AA84CFA371" />
-      <ComponentRef Id="cmpD037A5FFF3543237531CA906F9D4909F" />
-      <ComponentRef Id="cmp17FF65864501A5338EA2D25D489A0336" />
-      <ComponentRef Id="cmp6D9BDA158D66AF4FB12BB2AED7842EF4" />
-      <ComponentRef Id="cmpDCF1553038924E888C7376998A9FAF75" />
-      <ComponentRef Id="cmp3627D49DC4812867CF732A3F416A46DE" />
-      <ComponentRef Id="cmp824EAB5372EF0CB6CA04AF99BFDBA2B6" />
-      <ComponentRef Id="cmp6F1145919801A7BB14C437BD9D34B402" />
-      <ComponentRef Id="cmpD2B31FE037BC1ABB5BC9E15FC7CFC3E9" />
-      <ComponentRef Id="cmp7EF29AC30F65F08D7307E5CC8D6DF4AC" />
-      <ComponentRef Id="cmpC88F3D24699B37A2A245EBBB95068776" />
-      <ComponentRef Id="cmp5599AF337714197822A2D1319006ADA0" />
-      <ComponentRef Id="cmp38B821EE1A56AA07F780F514AFB40B9D" />
-      <ComponentRef Id="cmpC19802FBAD8CD90A0E8B197123806C6B" />
-      <ComponentRef Id="cmp644C398FB4406046DF1ADA2BB67A5034" />
-      <ComponentRef Id="cmp23F6AEFD6E2DE28FE04E63404BD75A38" />
-      <ComponentRef Id="cmpEB1096BDE4E4D206AF9121A8A490901B" />
-      <ComponentRef Id="cmpB0769630156F2EC7D180CDECDF56B430" />
-      <ComponentRef Id="cmp5D7C7AB4F9894A91E10D497CD91B695C" />
       <ComponentRef Id="cmp20AB771F04F64950A30A466A96442E56" />
-      <ComponentRef Id="cmp648E2BEFCF111976B0363DEC89C339AF" />
-      <ComponentRef Id="cmp01B18EF7430A329873F27DC398ACD6C0" />
-      <ComponentRef Id="cmpBAAE4DFDD4BB6B6DEC87EB5C0AAB4D6B" />
-      <ComponentRef Id="cmp1DCF0E56E5E41ACA553DF7828DA856CE" />
-      <ComponentRef Id="cmpE82BF37ECFD88A318824DDC9633D02CA" />
-      <ComponentRef Id="cmp09E5F20AA8EF3123D43D806AC993A9CE" />
-      <ComponentRef Id="cmpFF454AE80CD26585C61C4312FAB6E369" />
-      <ComponentRef Id="cmp7B5C9F69FAB738252653447994F1B07F" />
-      <ComponentRef Id="cmp78F4AE5B604967B91C7F12DFAEB60595" />
-      <ComponentRef Id="cmp0EFAC7B93DCB7005110EE90AE9A4E767" />
-      <ComponentRef Id="cmp58A99A6BB9F045B1040B1057C947D141" />
-      <ComponentRef Id="cmp4514F9FA73E676B37626214996AA580C" />
-      <ComponentRef Id="cmp2AEF636D25CF3919C21A0BAD5050B4D5" />
-      <ComponentRef Id="cmpB7DB5D4B61EED677F53005B2A7ABAA2D" />
-      <ComponentRef Id="cmpEE7D2BD7F73417F4D5F7677EC975280D" />
-      <ComponentRef Id="cmpEF355EB65EBB08FBB5224A0E3C172550" />
-      <ComponentRef Id="cmp5FD54B2FD6C3137E7FB579AEFC817C1D" />
-      <ComponentRef Id="cmp89CC8455485F87A3794CF44B61AF0D1F" />
-      <ComponentRef Id="cmpA85A1C6FEEE722D6F4B9421EC26E845A" />
-      <ComponentRef Id="cmp4B0F4140EBEA696060A57F9227F8F515" />
-      <ComponentRef Id="cmpEBF2883E1C243621ADC35C21441E926F" />
-      <ComponentRef Id="cmpE9653D2672EB42207F076D1EBCF5A9FC" />
-      <ComponentRef Id="cmp6307AB4634A6658EEF2282B864AEB0C9" />
-      <ComponentRef Id="cmp7139AC57BFD5CC04473DF33863175A89" />
-      <ComponentRef Id="cmpF1187B682A2E70A447EF7A6105402084" />
-      <ComponentRef Id="cmp681168171C203B4807620DAF8D97FD59" />
-      <ComponentRef Id="cmp2BD9AF935680BD6572BD951171D27456" />
-      <ComponentRef Id="cmpFDA0C0CA3DEBD94175CA8E6083F53FC8" />
-      <ComponentRef Id="cmpD5103D7DB6A41D92E9BF834CFD6CB400" />
-      <ComponentRef Id="cmp7CC50BEC635B338C362EB99814952CDD" />
-      <ComponentRef Id="cmpDDD2878C77BC4C94CA470D68B1B9E0E5" />
-      <ComponentRef Id="cmpCD6810869449DC4CF8D77CBA2C1A7585" />
-      <ComponentRef Id="cmpDD8139326E5F58B7342814B5236250A4" />
-      <ComponentRef Id="cmp63591863185A6220DACAD9CBCBC3ACB6" />
-      <ComponentRef Id="cmpF2B7E44234B0A2F10EFF4426E21C4E14" />
       <ComponentRef Id="cmp2E8319A91EEAC172BA5E446F723448EF" />
       <ComponentRef Id="cmpE95697510FB8C5D48AD21CECDE7CCF51" />
       <ComponentRef Id="cmp0C211369D26211C53F483B68FCB56D76" />
       <ComponentRef Id="cmpAC08D4CB2094B347F8C8E7476446C07D" />
       <ComponentRef Id="cmpF1A4433B131A5A66AB37D0566EC972FF" />
       <ComponentRef Id="cmp02380CAD13822F3E554B3A9F85F12E5E" />
-      <ComponentRef Id="cmp13D7790E45EF62970507F139550AF3F9" />
       <ComponentRef Id="cmpA115308F36ABB47D79F7A21B0BFDAF9B" />
       <ComponentRef Id="cmpF600E50BB26E1C8C9891963A2228DB67" />
       <ComponentRef Id="cmp83AF812C5060923BE1FA5FE9FD330409" />
       <ComponentRef Id="cmp28CDAA3D192436E623070CC90BE7EFE6" />
       <ComponentRef Id="cmp12897250E547DF8082B76DA4FB331CA6" />
-      <ComponentRef Id="cmpA80E12617D0126B455D6D9DE75B37F70" />
       <ComponentRef Id="cmpA98BC0D3856B6FB6A142F8E5910D7C12" />
       <ComponentRef Id="cmpBF1A0C2E80905EDCA009235882DADF73" />
       <ComponentRef Id="cmp751FF06DF0D400E475BFB2E462BD3D70" />
       <ComponentRef Id="cmp0CE13D2F54DFC50B64F2D34B4D638D01" />
       <ComponentRef Id="cmpA793B1771CC5A88E2D206F0E9B08B1BC" />
-      <ComponentRef Id="cmp6724BD0EEFD7A24B108016AB54458190" />
       <ComponentRef Id="cmpB88B4FFB98E44F8F73A153BD1FDFD691" />
       <ComponentRef Id="cmpDD9241CEF53CCFD9095208CDDEA5FDE9" />
       <ComponentRef Id="cmpDEB2422248732703B706F41C08673C09" />
       <ComponentRef Id="cmpC54A7D69C57F5052976E91B37F59D040" />
       <ComponentRef Id="cmp35ADDC1F75B40ED863A99CFC58F212EE" />
-      <ComponentRef Id="cmp589E685FA774190181B3846CF2B6A0A5" />
-      <ComponentRef Id="cmp3E587A3C32B40683B9F3BF6539536CAA" />
       <ComponentRef Id="cmp38E08F1C7034610B1DE4C8CED811DBE2" />
       <ComponentRef Id="cmp80979893F65C20FBAAF56D7302CAF6A1" />
       <ComponentRef Id="cmp42424C9CE008E2C85DCC2F5A9EC22B41" />
@@ -6706,11 +6266,8 @@
       <ComponentRef Id="cmp78D4B9E929A90C2F043A3BEA023ADB25" />
       <ComponentRef Id="cmpD723F074E48757B388F6B77A5657AAE9" />
       <ComponentRef Id="cmpFD9FA184D634AE471FBA9319CA18A481" />
-      <ComponentRef Id="cmp56BACB5C61F4D25A6D3FCBE2A4BE111B" />
       <ComponentRef Id="cmp83411D8FD5C58F7E5F9BFAF9EA30ECE9" />
-      <ComponentRef Id="cmpF9B5C08A3A9C6766605E66B709FB452C" />
       <ComponentRef Id="cmpC8974E03D36B57376452B886955CABDF" />
-      <ComponentRef Id="cmpF6F781E264BE261292B1AEE83969AD88" />
       <ComponentRef Id="cmpEC2EDC41639DFF7432E5355768032E58" />
       <ComponentRef Id="cmpA965C965D2B0EBC8FA6096DDB456D586" />
       <ComponentRef Id="cmp755BFE387F0C70A28649332B330F6F8A" />
@@ -6743,15 +6300,10 @@
       <ComponentRef Id="cmp6CBBDB4CDEB816D7410D98CE5C48653D" />
       <ComponentRef Id="cmpDD82C318A7316AF8A9C269D93042E833" />
       <ComponentRef Id="cmpB6986CD7DDEE63C22F171E20406C7FEB" />
-      <ComponentRef Id="cmp801A9E66FF893F078C82AA1CC2E2ECCB" />
-      <ComponentRef Id="cmp5D71C73C51EFFCEB3B9509041C88D784" />
-      <ComponentRef Id="cmp0C728E41980C4A99E456DF13DB44CF83" />
       <ComponentRef Id="cmp5123BEDE35685916AE618E4BF4A4F9A2" />
       <ComponentRef Id="cmpBC0A0D776242B0876A9B4184AAA51668" />
       <ComponentRef Id="cmp961A1C0A12E15188A103BB797E4D3EB4" />
       <ComponentRef Id="cmp82B2591FFC0CF016A8A0087BBBC8BD3A" />
-      <ComponentRef Id="cmp0ACD79272A51F3E0A5B4677A2B6553CE" />
-      <ComponentRef Id="cmpBF05AEB768C9ED9E990264DDDCE6AFDF" />
       <ComponentRef Id="cmp39A0D53A1130256D7984A5049D51C9C5" />
       <ComponentRef Id="cmpC9EA27C8101225FA058B27349A32E489" />
       <ComponentRef Id="cmpF59F73E8F31359E0F2BD698490798736" />

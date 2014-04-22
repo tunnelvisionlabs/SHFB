@@ -75,6 +75,7 @@ namespace Sandcastle.PresentationStyles
             // Note that UNIX based web servers may be case-sensitive with regard to folder and filenames so
             // match the case of the folder and filenames in the literals to their actual casing on the file
             // system.
+            this.ContentFiles.Add(new ContentFiles(HelpFileFormats.MSHelp2, @"Help2\*.*", @".\styles"));
             this.ContentFiles.Add(new ContentFiles(this.SupportedFormats, @"icons\*.*"));
             this.ContentFiles.Add(new ContentFiles(this.SupportedFormats, @"scripts\*.*"));
             this.ContentFiles.Add(new ContentFiles(this.SupportedFormats, @"styles\*.*"));

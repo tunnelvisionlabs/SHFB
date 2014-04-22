@@ -63,7 +63,7 @@
         <alert class="important">
           <para>
             The lightweight TOC plug-in is not compatible with all presentation styles.
-            Only the <codeInline>VS2013</codeInline> presentation style is known to be
+            Only the <codeInline>VS2013Alt</codeInline> presentation style is known to be
             fully compatible with the features of this plug-in.
           </para>
         </alert>

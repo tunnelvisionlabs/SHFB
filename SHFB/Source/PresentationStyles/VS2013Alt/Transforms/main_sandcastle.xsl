@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 								version="2.0"
-								xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5">
+								xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5"
+>
 	<!-- ======================================================================================== -->
 
 	<xsl:import href="xpathFunctions.xsl"/>
@@ -27,17 +28,15 @@
 	<xsl:variable name="g_abstractSummary" select="/document/comments/summary"/>
 	<xsl:variable name="g_hasSeeAlsoSection"
 		select="boolean((count(/document/comments//seealso[not(ancestor::overloads)] |
-		/document/comments/conceptualLink |
-		/document/reference/elements/element/overloads//seealso) > 0)  or
-    ($g_apiTopicGroup='type' or $g_apiTopicGroup='member' or $g_apiTopicGroup='list'))"/>
+		/document/comments/conceptualLink | /document/reference/elements/element/overloads//seealso) > 0) or
+		($g_apiTopicGroup='type' or $g_apiTopicGroup='member' or $g_apiTopicGroup='list'))"/>
 	<xsl:variable name="g_hasReferenceLinks"
 		select="boolean((count(/document/comments//seealso[not(ancestor::overloads) and not(@href)] |
-		/document/reference/elements/element/overloads//seealso[not(@href)]) > 0)  or
-    ($g_apiTopicGroup='type' or $g_apiTopicGroup='member' or $g_apiTopicGroup='list'))"/>
+		/document/reference/elements/element/overloads//seealso[not(@href)]) > 0) or
+		($g_apiTopicGroup='type' or $g_apiTopicGroup='member' or $g_apiTopicGroup='list'))"/>
 	<xsl:variable name="g_hasOtherResourcesLinks"
 		select="boolean((count(/document/comments//seealso[not(ancestor::overloads) and @href] |
-		/document/comments/conceptualLink |
-		/document/reference/elements/element/overloads//seealso[@href]) > 0))"/>
+		/document/comments/conceptualLink | /document/reference/elements/element/overloads//seealso[@href]) > 0))"/>
 
 	<!-- ============================================================================================
 	Body
@@ -46,7 +45,15 @@
 	<xsl:template name="t_body">
 		<!-- auto-inserted info -->
 		<xsl:apply-templates select="/document/comments/preliminary"/>
+
+		<xsl:if test="/document/reference/attributes/attribute/type[@api='T:System.ObsoleteAttribute']">
+			<p>
+				<include item="boilerplate_obsoleteLong"/>
+			</p>
+		</xsl:if>
+
 		<xsl:apply-templates select="/document/comments/summary"/>
+
 		<xsl:if test="$g_apiTopicSubGroup='overload'">
 			<xsl:apply-templates select="/document/reference/elements" mode="overloadSummary"/>
 		</xsl:if>
@@ -128,9 +135,9 @@
 		<!-- see also -->
 		<xsl:call-template name="t_putSeeAlsoSection"/>
 
-		<!-- inheritance continued -->
-		<xsl:if test="count(/document/reference/family/descendents/type) > 6">
-			<xsl:apply-templates select="/document/reference/family" mode="inheritanceContinued"/>
+		<!-- Add the full inheritance hierarchy if needed -->
+		<xsl:if test="count(/document/reference/family/descendents/type) > 5">
+			<xsl:apply-templates select="/document/reference/family" mode="fullInheritance"/>
 		</xsl:if>
 
 	</xsl:template>
@@ -791,9 +798,7 @@
 									<xsl:if test="@description">
 										<tr style="border-bottom: 0px none;">
 											<td style="border-bottom: 0px none;">
-												<em>
-													<xsl:text>Description: </xsl:text>
-												</em>
+												<em><xsl:text>Description: </xsl:text></em>
 											</td>
 											<td style="border-bottom: 0px none;">
 												<xsl:value-of select="@description"/>
@@ -803,9 +808,7 @@
 									<xsl:if test="@inheritedFrom">
 										<tr style="border-bottom: 0px none;">
 											<td style="border-bottom: 0px none;">
-												<em>
-													<xsl:text>Inherited From: </xsl:text>
-												</em>
+												<em><xsl:text>Inherited From: </xsl:text></em>
 											</td>
 											<td style="border-bottom: 0px none;">
 												<referenceLink target="{@inheritedFrom}">
@@ -817,13 +820,10 @@
 									<xsl:if test="@exception">
 										<tr style="border-bottom: 0px none;">
 											<td style="border-bottom: 0px none;">
-												<em>
-													<xsl:text>Exception: </xsl:text>
-												</em>
+												<em><xsl:text>Exception: </xsl:text></em>
 											</td>
 											<td style="border-bottom: 0px none;">
-												<referenceLink target="{@exception}"
-																			 qualified="true"/>
+												<referenceLink target="{@exception}" qualified="true"/>
 											</td>
 										</tr>
 									</xsl:if>
@@ -849,7 +849,7 @@
 					<xsl:if test="$g_hasReferenceLinks">
 						<xsl:call-template name="t_putSubSection">
 							<xsl:with-param name="p_title">
-								<include item="title_referenceLinks"/>
+								<include item="title_seeAlso_reference"/>
 							</xsl:with-param>
 							<xsl:with-param name="p_content">
 								<xsl:call-template name="t_autogenSeeAlsoLinks"/>
@@ -867,7 +867,7 @@
 					<xsl:if test="$g_hasOtherResourcesLinks">
 						<xsl:call-template name="t_putSubSection">
 							<xsl:with-param name="p_title">
-								<include item="title_otherResources"/>
+								<include item="title_seeAlso_otherResources"/>
 							</xsl:with-param>
 							<xsl:with-param name="p_content">
 								<xsl:for-each select="/document/comments//seealso[not(ancestor::overloads) and @href] | /document/reference/elements/element/overloads//seealso[@href]">
@@ -981,43 +981,6 @@
 		</dl>
 	</xsl:template>
 
-	<xsl:template match="item"
-								mode="definition"
-								name="t_definitionListItem">
-	</xsl:template>
-
-	<!-- ======================================================================================== -->
-
-	<xsl:template match="item/para[1][ancestor::list[@type!='table' and @type!='definition']]"
-								name="t_listItemPara1">
-		<!--<xsl:comment xml:space="preserve">t_listItemPara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:call-template name="t_para"/>
-	</xsl:template>
-
-	<xsl:template match="item/para[1][ancestor::list[@type='table'] and not(ancestor::listheader)]"
-								name="t_tableItemPara1">
-		<!--<xsl:comment xml:space="preserve">t_tableItemPara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:call-template name="t_para"/>
-	</xsl:template>
-
-	<xsl:template match="item/para[1][ancestor::list[@type='table'] and ancestor::listheader]"
-								name="t_tableHeaderItemPara1">
-		<!--<xsl:comment xml:space="preserve">t_tableHeaderItemPara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:call-template name="t_para"/>
-	</xsl:template>
-
-	<xsl:template match="item/term/para[1]"
-								name="t_listItemTermPara1">
-		<!--<xsl:comment xml:space="preserve">t_listItemTermPara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:call-template name="t_para"/>
-	</xsl:template>
-
-	<xsl:template match="item/description/para[1]"
-								name="t_listItemDescriptionPara1">
-		<!--<xsl:comment xml:space="preserve">t_listItemDescriptionPara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:call-template name="t_para"/>
-	</xsl:template>
-
 	<!-- ============================================================================================
 	Inline tags
 	============================================================================================= -->
@@ -1025,14 +988,12 @@
 	<xsl:template match="conceptualLink">
 		<xsl:choose>
 			<xsl:when test="normalize-space(.)">
-				<conceptualLink class="mtps-internal-link"
-												target="{@target}">
+				<conceptualLink target="{@target}">
 					<xsl:apply-templates/>
 				</conceptualLink>
 			</xsl:when>
 			<xsl:otherwise>
-				<conceptualLink class="mtps-internal-link"
-												target="{@target}"/>
+				<conceptualLink target="{@target}"/>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
@@ -1041,10 +1002,8 @@
 								name="t_seeCRef">
 		<xsl:choose>
 			<xsl:when test="starts-with(@cref,'O:')">
-				<referenceLink target="{concat('Overload:',substring(@cref,3))}"
-											 display-target="format"
-											 show-parameters="false"
-											 class="mtps-internal-link">
+				<referenceLink target="{concat('Overload:',substring(@cref,3))}" display-target="format"
+					show-parameters="false">
 					<xsl:choose>
 						<xsl:when test="normalize-space(.)">
 							<xsl:value-of select="." />
@@ -1058,14 +1017,12 @@
 				</referenceLink>
 			</xsl:when>
 			<xsl:when test="normalize-space(.)">
-				<referenceLink target="{@cref}"
-											 class="mtps-internal-link">
+				<referenceLink target="{@cref}">
 					<xsl:apply-templates/>
 				</referenceLink>
 			</xsl:when>
 			<xsl:otherwise>
-				<referenceLink target="{@cref}"
-											 class="mtps-internal-link"/>
+				<referenceLink target="{@cref}" />
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
@@ -1085,63 +1042,61 @@
 	</xsl:template>
 
 	<xsl:template match="see[@langword]">
-		<span sdata="langKeyword" value="{@langword}">
-			<xsl:variable name="v_syntaxKeyword">
-				<xsl:if test="/document/syntax">
-					<xsl:value-of select="'true'"/>
-				</xsl:if>
-			</xsl:variable>
-			<xsl:choose>
-				<xsl:when test="@langword='null' or @langword='Nothing' or @langword='nullptr'">
-					<xsl:call-template name="t_nullKeyword">
-						<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
-					</xsl:call-template>
-				</xsl:when>
-				<xsl:when test="@langword='static' or @langword='Shared'">
-					<xsl:call-template name="t_staticKeyword">
-						<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
-					</xsl:call-template>
-				</xsl:when>
-				<xsl:when test="@langword='virtual' or @langword='Overridable'">
-					<xsl:call-template name="t_virtualKeyword">
-						<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
-					</xsl:call-template>
-				</xsl:when>
-				<xsl:when test="@langword='true' or @langword='True'">
-					<xsl:call-template name="t_trueKeyword">
-						<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
-					</xsl:call-template>
-				</xsl:when>
-				<xsl:when test="@langword='false' or @langword='False'">
-					<xsl:call-template name="t_falseKeyword">
-						<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
-					</xsl:call-template>
-				</xsl:when>
-				<xsl:when test="@langword='abstract' or @langword='MustInherit'">
-					<xsl:call-template name="t_abstractKeyword">
-						<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
-					</xsl:call-template>
-				</xsl:when>
-				<xsl:when test="@langword='async' or @langword='Async'">
-					<xsl:call-template name="t_asyncKeyword">
-						<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
-					</xsl:call-template>
-				</xsl:when>
-				<xsl:when test="@langword='await' or @langword='Await'">
-					<xsl:call-template name="t_awaitKeyword">
-						<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
-					</xsl:call-template>
-				</xsl:when>
-				<xsl:when test="@langword='async/await' or @langword='Async/Await'">
-					<xsl:call-template name="t_asyncAwaitKeyword">
-						<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
-					</xsl:call-template>
-				</xsl:when>
-				<xsl:otherwise>
-					<span class="keyword"><xsl:value-of select="@langword"/></span>
-				</xsl:otherwise>
-			</xsl:choose>
-		</span>
+		<xsl:variable name="v_syntaxKeyword">
+			<xsl:if test="/document/syntax">
+				<xsl:value-of select="'true'"/>
+			</xsl:if>
+		</xsl:variable>
+		<xsl:choose>
+			<xsl:when test="@langword='null' or @langword='Nothing' or @langword='nullptr'">
+				<xsl:call-template name="t_nullKeyword">
+					<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
+				</xsl:call-template>
+			</xsl:when>
+			<xsl:when test="@langword='static' or @langword='Shared'">
+				<xsl:call-template name="t_staticKeyword">
+					<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
+				</xsl:call-template>
+			</xsl:when>
+			<xsl:when test="@langword='virtual' or @langword='Overridable'">
+				<xsl:call-template name="t_virtualKeyword">
+					<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
+				</xsl:call-template>
+			</xsl:when>
+			<xsl:when test="@langword='true' or @langword='True'">
+				<xsl:call-template name="t_trueKeyword">
+					<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
+				</xsl:call-template>
+			</xsl:when>
+			<xsl:when test="@langword='false' or @langword='False'">
+				<xsl:call-template name="t_falseKeyword">
+					<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
+				</xsl:call-template>
+			</xsl:when>
+			<xsl:when test="@langword='abstract' or @langword='MustInherit'">
+				<xsl:call-template name="t_abstractKeyword">
+					<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
+				</xsl:call-template>
+			</xsl:when>
+			<xsl:when test="@langword='async' or @langword='Async'">
+				<xsl:call-template name="t_asyncKeyword">
+					<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
+				</xsl:call-template>
+			</xsl:when>
+			<xsl:when test="@langword='await' or @langword='Await'">
+				<xsl:call-template name="t_awaitKeyword">
+					<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
+				</xsl:call-template>
+			</xsl:when>
+			<xsl:when test="@langword='async/await' or @langword='Async/Await'">
+				<xsl:call-template name="t_asyncAwaitKeyword">
+					<xsl:with-param name="p_syntaxKeyword" select="$v_syntaxKeyword"/>
+				</xsl:call-template>
+			</xsl:when>
+			<xsl:otherwise>
+				<span class="keyword"><xsl:value-of select="@langword"/></span>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="seealso[@href]"
@@ -1167,10 +1122,8 @@
 		<xsl:if test="$displaySeeAlso">
 			<xsl:choose>
 				<xsl:when test="starts-with(@cref,'O:')">
-					<referenceLink target="{concat('Overload:',substring(@cref,3))}"
-												 display-target="format"
-												 show-parameters="false"
-												 class="mtps-internal-link">
+					<referenceLink target="{concat('Overload:',substring(@cref,3))}" display-target="format"
+						show-parameters="false">
 						<xsl:choose>
 							<xsl:when test="normalize-space(.)">
 								<xsl:apply-templates />
@@ -1204,18 +1157,6 @@
 		<xsl:param name="p_alt"/>
 
 		<a>
-			<xsl:choose>
-				<xsl:when test="starts-with($p_href,'ms.help?')">
-					<xsl:attribute name="class">
-						mtps-internal-link
-					</xsl:attribute>
-				</xsl:when>
-				<xsl:when test="starts-with($p_href,'http:')">
-					<xsl:attribute name="class">
-						mtps-external-link
-					</xsl:attribute>
-				</xsl:when>
-			</xsl:choose>
 			<xsl:attribute name="href">
 				<xsl:value-of select="$p_href"/>
 			</xsl:attribute>
@@ -1247,18 +1188,10 @@
 
 	<!-- ======================================================================================== -->
 
-	<xsl:template match="note"
-								name="t_note">
+	<xsl:template match="note" name="t_note">
 		<xsl:call-template name="t_putAlert">
-			<xsl:with-param name="p_alertClass"
-											select="@type"/>
+			<xsl:with-param name="p_alertClass" select="@type"/>
 		</xsl:call-template>
-	</xsl:template>
-
-	<xsl:template match="note/para[1]"
-								name="t_notePara1">
-		<!--<xsl:comment xml:space="preserve">t_notePara1[<xsl:value-of select="$v_minimalSpacing"/>]</xsl:comment>-->
-		<xsl:call-template name="t_para"/>
 	</xsl:template>
 
 	<!-- ======================================================================================== -->

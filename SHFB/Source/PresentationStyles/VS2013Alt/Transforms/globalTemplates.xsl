@@ -1,20 +1,18 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 								version="2.0"
 								xmlns:msxsl="urn:schemas-microsoft-com:xslt"
-								xmlns:MSHelp="http://msdn.microsoft.com/mshelp"
-								xmlns:mshelp="http://msdn.microsoft.com/mshelp"
 								xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5"
 								xmlns:mtps="http://msdn2.microsoft.com/mtps"
 								xmlns:xhtml="http://www.w3.org/1999/xhtml"
 								xmlns:xlink="http://www.w3.org/1999/xlink"
-	>
+								xmlns:MSHelp="http://msdn.microsoft.com/mshelp"
+>
 	<!-- ============================================================================================
 	Parameters
 	============================================================================================= -->
 
 	<xsl:param name="metadata">false</xsl:param>
 	<xsl:param name="languages">false</xsl:param>
-	<xsl:param name="minimal-spacing">code;alert;listItem;table;tableHeader;definedTerm;definition;</xsl:param>
 
 	<!-- Topic header logo parameters -->
 	<xsl:param name="logoFile" />
@@ -375,52 +373,6 @@
 	<xsl:template name="t_insertMetadata">
 		<xsl:element name="xml">
 			<xsl:attribute name="id">BrandingData</xsl:attribute>
-			<string id="BrandingProductTitle">
-				<include item="productTitle"/>
-			</string>
-
-			<string id="BrandingCopyrightText">
-				<include item="copyright_text"/>
-			</string>
-			<string id="BrandingCopyrightLink">
-				<include item="copyright_link"/>
-			</string>
-			<string id="BrandingCopyrightInfo">
-				<include item="copyright_info"/>
-			</string>
-			<string id="BrandingHeader">
-				<include item="boilerplate_pageTitle">
-					<parameter>
-						<xsl:call-template name="t_topicTitleDecorated"/>
-					</parameter>
-				</include>
-			</string>
-
-			<string id="BrandingFooterText">
-				<include item="footer_text"/>
-			</string>
-			<string id="BrandingFeedbackAlias">
-				<include item="fb_alias"/>
-			</string>
-			<string id="BrandingFeedbackSubject">
-				<include item="fb_product"/>
-			</string>
-			<string id="BrandingFeedbackText">
-				<include item="fb_text"/>
-			</string>
-			<string id="BrandingFeedbackFooterTo">
-				<include item="fb_footer_to"/>
-			</string>
-			<string id="BrandingFeedbackFooterText">
-				<include item="fb_footer_text"/>
-			</string>
-			<string id="BrandingFeedbackFooterTextTo">
-				<include item="fb_footer_text_to"/>
-			</string>
-			<string id="BrandingFeedbackBody">
-				<include item="fb_body"/>
-			</string>
-
 			<xsl:if test="$languages/language">
 				<list id="BrandingLanguages">
 					<xsl:for-each select="$languages/language">
@@ -460,8 +412,7 @@
 
 	<xsl:template name="t_insertNoIndexNoFollow">
 		<xsl:if test="/document/metadata/attribute[@name='NoSearch']">
-			<META NAME="ROBOTS"
-						CONTENT="NOINDEX, NOFOLLOW" />
+			<meta name="robots" content="noindex, nofollow" />
 		</xsl:if>
 	</xsl:template>
 
@@ -469,14 +420,15 @@
 	Running header
 	============================================================================================= -->
 
-	<xsl:template name="t_bodyTitle">
-		<xsl:variable name="placementLC" select="translate($logoPlacement, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')"/>
-		<xsl:variable name="alignmentLC" select="translate($logoAlignment, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')"/>
+	<xsl:template name="t_bodyHeader">
 		<header class="ux-header">
 			<div class="header-top-bar">
 				<xsl:call-template name="t_runningHeader" />
 			</div>
 		</header>
+	</xsl:template>
+
+	<xsl:template name="t_bodyTitle">
 		<h1 class="title">
 			<include item="boilerplate_pageTitle">
 				<parameter>
@@ -611,34 +563,24 @@
 	<xsl:template name="t_putSection">
 		<xsl:param name="p_title" />
 		<xsl:param name="p_content" />
-		<xsl:param name="p_toplink"
-							 select="false()" />
+		<xsl:param name="p_toplink" select="false()" />
 
+		<!-- TODO: Add support for true collapsible sections like the VS2005 style -->
 		<xsl:element name="mtps:CollapsibleArea">
-			<xsl:attribute name="runat">
-				<xsl:value-of select="'server'" />
-			</xsl:attribute>
-			<xsl:attribute name="Title">
-				<xsl:value-of select="$p_title" />
-			</xsl:attribute>
-			<xsl:element name="xml">
-				<xsl:element name="string">
-					<xsl:attribute name="id">
-						<xsl:value-of select="'Title'" />
-					</xsl:attribute>
-					<xsl:copy-of select="$p_title" />
-				</xsl:element>
-			</xsl:element>
+			<xsl:if test="normalize-space($p_title)">
+				<div class="OH_CollapsibleAreaRegion">
+					<div class="OH_regiontitle">
+						<xsl:copy-of select="$p_title" />
+					</div>
+				</div>
+			</xsl:if>
 
 			<xsl:copy-of select="$p_content" />
 
 			<xsl:if test="boolean($p_toplink)">
-				<xsl:element name="a">
-					<xsl:attribute name="href">
-						<xsl:value-of select="'#mainBody'" />
-					</xsl:attribute>
+				<a href="#mainBody">
 					<include item="top"/>
-				</xsl:element>
+				</a>
 			</xsl:if>
 		</xsl:element>
 	</xsl:template>
@@ -646,42 +588,30 @@
 	<xsl:template name="t_putSectionInclude">
 		<xsl:param name="p_titleInclude" />
 		<xsl:param name="p_content" />
-		<xsl:param name="p_toplink"
-							 select="false()" />
-		<xsl:param name="p_sectionId" select="''" />
+		<xsl:param name="p_toplink" select="false()" />
+		<xsl:param name="p_id" select="''" />
 
+		<!-- TODO: Add support for true collapsible sections like the VS2005 style -->
 		<xsl:element name="mtps:CollapsibleArea">
-			<xsl:attribute name="runat">
-				<xsl:value-of select="'server'" />
-			</xsl:attribute>
-			<includeAttribute name="Title"
-												item="{$p_titleInclude}"/>
-			<xsl:element name="xml">
-				<xsl:element name="string">
-					<xsl:attribute name="id">
-						<xsl:value-of select="'Title'" />
-					</xsl:attribute>
-					<include item="{$p_titleInclude}"/>
-				</xsl:element>
-				<xsl:if test="normalize-space($p_sectionId) != ''">
-					<xsl:element name="string">
+			<xsl:if test="normalize-space($p_titleInclude)">
+				<div class="OH_CollapsibleAreaRegion">
+					<xsl:if test="normalize-space($p_id)">
 						<xsl:attribute name="id">
-							<xsl:value-of select="'Id'" />
+							<xsl:value-of select="$p_id"/>
 						</xsl:attribute>
-						<xsl:value-of select="$p_sectionId"/>
-					</xsl:element>
-				</xsl:if>
-			</xsl:element>
+					</xsl:if>
+					<div class="OH_regiontitle">
+						<include item="{$p_titleInclude}"/>
+					</div>
+				</div>
+			</xsl:if>
 
 			<xsl:copy-of select="$p_content" />
 
 			<xsl:if test="boolean($p_toplink)">
-				<xsl:element name="a">
-					<xsl:attribute name="href">
-						<xsl:value-of select="'#mainBody'" />
-					</xsl:attribute>
+				<a href="#mainBody">
 					<include item="top"/>
-				</xsl:element>
+				</a>
 			</xsl:if>
 		</xsl:element>
 	</xsl:template>
@@ -820,15 +750,13 @@
 			<table>
 				<tr>
 					<th>
-						<img class="mtps-img-src">
-							<includeAttribute item="iconPath"
-																name="src">
+						<img>
+							<includeAttribute item="iconPath" name="src">
 								<parameter>
 									<xsl:value-of select="$v_noteImg"/>
 								</parameter>
 							</includeAttribute>
-							<includeAttribute name="alt"
-																item="{$v_altTitle}"/>
+							<includeAttribute name="alt" item="{$v_altTitle}"/>
 						</img>
 						<xsl:text>&#160;</xsl:text>
 						<include item="{$v_title}"/>
