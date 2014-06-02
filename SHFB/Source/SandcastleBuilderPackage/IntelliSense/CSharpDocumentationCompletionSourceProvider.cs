@@ -21,6 +21,7 @@
 using System.ComponentModel.Composition;
 
 using Microsoft.VisualStudio.Language.Intellisense;
+using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Utilities;
 
@@ -49,9 +50,20 @@ namespace SandcastleBuilder.Package.IntelliSense
         [Import]
         internal IGlyphService GlyphService { get; private set; }
 
+        /// <summary>
+        /// Gets the global <see cref="SVsServiceProvider"/> provided by the IDE through MEF,
+        /// which provides access to other IDE services.
+        /// </summary>
+        [Import]
+        internal SVsServiceProvider ServiceProvider { get; private set; }
+
         /// <inheritdoc />
         public ICompletionSource TryCreateCompletionSource(ITextBuffer textBuffer)
         {
+            // disable the custom completion source if Roslyn is installed
+            if (RoslynUtilities.IsRoslynInstalled(ServiceProvider) ?? false)
+                return null;
+
             return new CSharpDocumentationCompletionSource(textBuffer, this);
         }
     }
