@@ -37,13 +37,12 @@ function InitializeToc()
 // Increase the TOC width
 function OnIncreaseToc()
 {
-    if(tocWidth < 1)
+    if(tocWidth < 280)
         tocWidth = 280;
+    else if(tocWidth < 380)
+        tocWidth = 380;
     else
-        tocWidth += 100;
-
-    if(tocWidth > 680)
-        tocWidth = 0;
+      tocWidth = 480;
 
     ResizeToc();
     SetCookie("TocWidth", tocWidth);
@@ -76,10 +75,10 @@ function ResizeToc()
         document.getElementById("TocResize").style.left = (tocWidth + leftNavPadding) + "px";
 
         // Hide/show increase TOC width image
-        document.getElementById("ResizeImageIncrease").style.display = (tocWidth >= 680) ? "none" : "";
+        document.getElementById("ResizeImageIncrease").style.display = (tocWidth >= 480) ? "none" : "";
 
         // Hide/show reset TOC width image
-        document.getElementById("ResizeImageReset").style.display = (tocWidth < 680) ? "none" : "";
+        document.getElementById("ResizeImageReset").style.display = (tocWidth < 480) ? "none" : "";
     }
 }
 
@@ -290,8 +289,31 @@ function OnMouseDown(event)
 // Resize the TOC as the sizer is dragged
 function OnMouseMove(event)
 {
-    tocWidth = (event.clientX > 700) ? 700 : (event.clientX < 100) ? 100 : event.clientX;
+    currentTocWidth = tocWidth;
 
+    desiredWidth = event.clientX;
+    movingRight = desiredWidth > currentTocWidth;
+
+    if (movingRight) {
+        increments = Math.floor((desiredWidth - currentTocWidth + 3) / 15.0);
+        if (increments <= 0) {
+            return;
+        }
+
+        desiredWidth = currentTocWidth + 15 * increments;
+    } else {
+        increments = Math.floor((currentTocWidth - desiredWidth + 3) / 15.0);
+        if (increments <= 0) {
+            return;
+        }
+
+        desiredWidth = currentTocWidth - 15 * increments;
+    }
+
+    desiredWidth = desiredWidth > 480 ? 480 : desiredWidth;
+    desiredWidth = desiredWidth < 0 ? 0 : desiredWidth;
+
+    tocWidth = desiredWidth;
     ResizeToc();
 }
 
