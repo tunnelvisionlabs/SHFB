@@ -33,7 +33,7 @@
     <CopyrightHref>http://Sandcastle.CodePlex.com</CopyrightHref>
     <CopyrightText>Copyright \xA9 2008-2014, Eric Woodruff, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>Eric%40EWoodruff.us</FeedbackEMailAddress>
-    <PresentationStyle>VS2013Alt</PresentationStyle>
+    <PresentationStyle>VS2013</PresentationStyle>
     <HelpFileVersion>1.1.0.0</HelpFileVersion>
     <ComponentConfigurations>
     </ComponentConfigurations>
@@ -80,9 +80,6 @@
           </deploymentLocation>
         </configuration>
       </PlugInConfig>
-      <PlugInConfig id="Lightweight TOC" enabled="True">
-        <configuration />
-      </PlugInConfig>
     </PlugInConfigurations>
     <SyntaxFilters>Standard</SyntaxFilters>
     <SdkLinkTarget>Blank</SdkLinkTarget>
@@ -115,7 +112,6 @@
     <Tokens Include="EWSoftwareCodeDom.tokens" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Content\MSHelpViewerRoot.aml" />
     <None Include="Content\VersionHistory\v1.1.0.0.aml" />
     <None Include="Content\VersionHistory\v1.0.0.0.aml" />
     <None Include="Content\VersionHistory\VersionHistory.aml" />

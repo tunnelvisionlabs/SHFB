@@ -1,11 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
-  <Topic id="4be43835-41f2-4fee-9482-f6426d75ab6c" visible="False" isMSHVRoot="true" title="Sandcastle Tools">
-    <HelpKeywords>
-      <HelpKeyword index="K" term="Sandcastle Tools" />
-    </HelpKeywords>
-  </Topic>
-  <Topic id="55798556-c18a-46bd-8bb6-902c45e5ebbc" visible="True" isDefault="true" title="Welcome">
+  <Topic id="55798556-c18a-46bd-8bb6-902c45e5ebbc" visible="True" title="Welcome">
     <HelpKeywords>
       <HelpKeyword index="K" term="Welcome" />
     </HelpKeywords>

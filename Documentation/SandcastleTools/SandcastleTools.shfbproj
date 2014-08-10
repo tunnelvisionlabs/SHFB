@@ -60,9 +60,6 @@
           </deploymentLocation>
         </configuration>
       </PlugInConfig>
-      <PlugInConfig id="Lightweight TOC" enabled="True">
-        <configuration />
-      </PlugInConfig>
     </PlugInConfigurations>
     <BuildLogFile />
     <HtmlHelp1xCompilerPath />
@@ -86,7 +83,7 @@
     <SyntaxFilters>Standard</SyntaxFilters>
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <RootNamespaceContainer>False</RootNamespaceContainer>
-    <PresentationStyle>VS2013Alt</PresentationStyle>
+    <PresentationStyle>VS2013</PresentationStyle>
     <Preliminary>False</Preliminary>
     <NamingMethod>Guid</NamingMethod>
     <HelpTitle>Sandcastle Tools</HelpTitle>
@@ -154,7 +151,6 @@
     <None Include="Content\Glossary.aml" />
     <None Include="Content\License.aml" />
     <None Include="Content\LinksToResources.aml" />
-    <None Include="Content\MSHelpViewerRoot.aml" />
     <None Include="Content\SandcastleTools\Architecture.aml" />
     <None Include="Content\SandcastleTools\GeneralInformation.aml" />
     <None Include="Content\SandcastleTools\SandcastleTools.aml" />
