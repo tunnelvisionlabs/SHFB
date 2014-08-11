@@ -15,7 +15,7 @@
     /// <preliminary/>
     [ComVisible(true)]
     [CLSCompliant(false)]
-    public abstract class TextViewCommandFilter : CommandFilter
+    internal abstract class TextViewCommandFilter : CommandFilter
     {
         /// <summary>
         /// This is the backing field for the <see cref="TextViewAdapter"/> property.
