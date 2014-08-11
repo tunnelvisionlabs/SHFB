@@ -10,7 +10,7 @@
 .tocCollapsed {
 	background: url('../icons/TocCollapsed.gif') no-repeat scroll center;
 	width: 17px;
-	height: 20px;
+	height: 17px;
 	overflow: hidden;
 }
 .tocExpanded {
@@ -54,7 +54,7 @@ div#tocNav > div {
 	margin-bottom: 5px;
 }
 div#leftNav a, div#leftNav a:link, div#leftNav a:visited {
-	color: #1364c4;
+	color: #1382ce;
 	text-decoration: none;
 }
 div#leftNav a:hover {
@@ -66,8 +66,7 @@ div#tocNav > div > a, div#tocNav > div > a:link, div#tocNav > div > a:visited {
 	overflow: hidden;
 }
 div#tocNav > div.current > a, div#tocNav > div.current > a:link, div#tocNav > div.current > a:visited {
-	color: #000;
-	font-weight: bold;
+	color: #333;
 	text-decoration: none;
 }
 div#tocNav > div > a.tocExpanded, div#tocNav > div > a.tocCollapsed {

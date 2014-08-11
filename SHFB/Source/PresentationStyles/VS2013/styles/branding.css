@@ -1,12 +1,12 @@
 /* General styles */
 body {
 	font-family: 'Segoe UI' , 'Lucida Grande' , Verdana, Arial, Helvetica, sans-serif;
-	font-size: 15px;
+	font-size: 0.85em;
 	padding: 0;
 	margin: 0;
 	margin-left: auto;
 	margin-right: auto;
-	color: #000;
+	color: #666;
 }
 h1 {
 	font-family: 'Segoe UI' , 'Lucida Grande' , Verdana, Arial, Helvetica, sans-serif;
@@ -16,7 +16,7 @@ h1 {
 	color: #000;
 }
 h2, h3 {
-	font-family: 'Segoe UI Semibold' , 'Segoe UI' , 'Lucida Grande' , Verdana, Arial, Helvetica, sans-serif;
+	font-family: 'Segoe UI Light' , 'Segoe UI' , 'Lucida Grande' , Verdana, Arial, Helvetica, sans-serif;
 	font-weight: normal;
 	margin: 0;
 	padding-bottom: 5px;
@@ -30,8 +30,8 @@ h3 {
 	font-size: 1.231em;
 }
 h4, .subHeading {
-	font-family: 'Segoe UI Semibold' , 'Segoe UI' , 'Lucida Grande' , Verdana, Arial, Helvetica, sans-serif;
-	font-size: 1.077em;
+	font-family: 'Segoe UI Light' , 'Segoe UI' , 'Lucida Grande' , Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.429em;
 	font-weight: normal;
 	margin: 0;
 	color: #000;
@@ -40,7 +40,7 @@ h4, .subHeading {
 	margin-top: 5px;
 }
 h5, h6 {
-	font-family: 'Segoe UI Semibold' , 'Segoe UI' , 'Lucida Grande' , Verdana, Arial, Helvetica, sans-serif;
+	font-family: 'Segoe UI Light' , 'Segoe UI' , 'Lucida Grande' , Verdana, Arial, Helvetica, sans-serif;
 	font-size: 1em;
 	font-weight: normal;
 	line-height: 130%;
@@ -53,11 +53,11 @@ a, a:link {
 }
 a:visited, a:active {
 	text-decoration: none;
-	color: #03697a;
+	color: #1382ce;
 }
 a:hover {
 	text-decoration: none;
-	color: #3390b1;
+	color: #00bcf2;
 }
 img {
 	border: 0;
@@ -65,8 +65,11 @@ img {
 p {
 	margin-top: 0;
 	margin-bottom: 0;
-	padding-bottom: 15px;
-	line-height: 18px;
+	line-height: 21px;
+	font-size: 14px;
+}
+#TopicContent p {
+	margin-bottom: 14px;
 }
 q {
 	font-style: italic;
@@ -78,7 +81,6 @@ table {
 	border-collapse: collapse;
 	padding: 0;
 	margin-bottom: 15px;
-	font-size: 15px;
 	width: 100%;
 }
 td, th {
@@ -139,18 +141,6 @@ ul ul {
 ul ul ul {
 	list-style-type: square;
 }
-dl {
-	margin-top: 0px;
-	margin-bottom: 10px;
-}
-dt {
-	font-weight: bold;
-	margin-top: 5px;
-}
-dd {
-	margin-left: 20px;
-	margin-bottom: 5px;
-}
 pre {
 	font-family: Consolas, Courier, monospace;
 	overflow: hidden;
@@ -188,12 +178,12 @@ table.titleTable td {
 	border-width: 0px;
 }
 td.titleColumn {
-	font-family: 'Segoe UI' , 'Lucida Grande' , Verdana, Arial, Helvetica, sans-serif;
+	font-family: 'Segoe UI Light' , 'Lucida Grande' , Verdana, Arial, Helvetica, sans-serif;
 	font-size: 2.5em;
 	font-weight: normal;
 	margin-top: 0px;
 	padding-left: 0px;
-	color: #000;
+	color: #333;
 	vertical-align: middle;
 }
 td.logoColumn {
@@ -205,9 +195,6 @@ td.logoColumn {
 td.logoColumnAbove {
 	padding: 0px 10px 0px 0px;
 	vertical-align: middle;
-}
-span.selflink {
-	color: #000066;
 }
 div.preliminary {
 	margin-top: 1em;
@@ -238,17 +225,15 @@ div.caption {
 	padding-right: 5px;
 }
 .collapsibleRegionTitle {
-	font-family: 'Segoe UI Semibold' , 'Segoe UI' , 'Lucida Grande' , Verdana, Arial, Helvetica, sans-serif !important;
+	font-family: 'Segoe UI Light' , 'Segoe UI' , 'Lucida Grande' , Verdana, Arial, Helvetica, sans-serif !important;
 	font-style: normal !important;
 	font-size: 1.769em;
 	margin-top: 9px;
 	margin-bottom: 19px;
-	padding-top: 20px;
-	padding-bottom: 5px;
 	cursor: pointer;
 }
 .collapsibleSection {
-	margin-top: 5px;
+	padding: 0 0 0 20px;
 }
 
 /* Syntax and code snippet styles */
@@ -266,10 +251,10 @@ div.caption {
 	padding: 0px 15px;
 	width: auto;
 	height: 22px;
-	color: #2a2a2a;
 	font-family: "Segoe UI" , "Lucida Grande" , Verdana, Arial, Helvetica, sans-serif !important;
-	font-size: 12px;
+	font-size: 13px;
 	font-style: normal !important;
+	line-height: 17px;
 	vertical-align: baseline;
 	float: left;
 }
@@ -278,10 +263,10 @@ div.caption {
 	padding: 0px 15px;
 	width: auto;
 	height: 22px;
-	color: #000000;
 	font-family: "Segoe UI" , "Lucida Grande" , Verdana, Arial, Helvetica, sans-serif !important;
-	font-size: 12px;
+	font-size: 13px;
 	font-style: normal !important;
+	line-height: 17px;
 	vertical-align: baseline;
 	border-top-color: #939393;
 	border-right-color: #939393;
@@ -299,10 +284,10 @@ div.caption {
 	padding: 0px 15px;
 	width: auto;
 	height: 22px;
-	color: #000000;
 	font-family: "Segoe UI" , "Lucida Grande" , Verdana, Arial, Helvetica, sans-serif !important;
-	font-size: 12px;
+	font-size: 13px;
 	font-style: normal !important;
+	line-height: 17px;
 	vertical-align: baseline;
 	border-top-color: #939393;
 	border-right-color: #939393;
@@ -321,11 +306,11 @@ div.caption {
 	padding: 2px 15px 0px 15px;
 	width: auto;
 	height: 20px;
-	color: #000000;
 	font-family: "Segoe UI" , "Lucida Grande" , Verdana, Arial, Helvetica, sans-serif !important;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: bold;
 	font-style: normal !important;
+	line-height: 17px;
 	vertical-align: baseline;
 	border-top-color: #939393;
 	border-right-color: #939393;
@@ -340,41 +325,23 @@ div.caption {
 }
 .codeSnippetContainerTab a {
 	top: 2px;
-	color: #000000;
 	font-weight: bold;
 	text-decoration: none;
 	position: relative;
-}
-.codeSnippetContainerTab a:link {
-	color: #000000;
-}
-.codeSnippetContainerTab a:hover {
-	color: #136460;
 }
 .codeSnippetContainerTabActive a {
 	top: 2px;
-	color: #000000;
 	font-weight: bold;
 	text-decoration: none;
 	position: relative;
 	cursor: default;
-}
-.codeSnippetContainerTabActive a:link {
-	color: #000000;
-}
-.codeSnippetContainerTabActive a:hover {
-	color: #000000;
 }
 .codeSnippetContainerTabPhantom a {
 	top: 2px;
-	color: #000000;
 	font-weight: bold;
 	text-decoration: none;
 	position: relative;
 	cursor: default;
-}
-.codeSnippetContainerTabPhantom a:link {
-	color: #000000;
 }
 .codeSnippetContainerCodeContainer {
 	border: 1px solid #939393;
@@ -397,7 +364,7 @@ div.caption {
 	position: relative;
 }
 .codeSnippetToolBarText a {
-	color: #1364c4;
+	color: #1382ce;
 	text-decoration: none;
 	padding-left: 8px;
 	padding-right: 8px;
@@ -410,12 +377,13 @@ div.caption {
 	background-color: #ffffff;
 }
 .codeSnippetToolBarText a:link {
-	color: #1364c4;
+	color: #1382ce;
 }
 .codeSnippetContainerCode {
 	margin: 0px;
 	padding: 10px;
 	width: auto;
+	color: #000;
 }
 .codeSnippetContainerCode div {
 	margin: 0px;
@@ -434,7 +402,7 @@ div.caption {
 /* Keyword and phrase styles */
 span.code, span.command {
 	font-family: Consolas, Courier, monospace;
-	color: #000066;
+	color: #006400;
 }
 span.ui {
 	font-weight: bold;
