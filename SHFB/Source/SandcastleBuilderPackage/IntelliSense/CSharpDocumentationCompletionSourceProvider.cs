@@ -24,6 +24,7 @@ using Microsoft.VisualStudio.Language.Intellisense;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Utilities;
+using SandcastleBuilder.Package.IntelliSense.RoslynHacks;
 
 namespace SandcastleBuilder.Package.IntelliSense
 {
