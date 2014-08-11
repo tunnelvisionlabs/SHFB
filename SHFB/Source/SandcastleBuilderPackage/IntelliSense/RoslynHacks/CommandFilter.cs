@@ -18,7 +18,7 @@
     /// <preliminary/>
     [ComVisible(true)]
     [CLSCompliant(false)]
-    public abstract class CommandFilter : IOleCommandTarget, IDisposable
+    internal abstract class CommandFilter : IOleCommandTarget, IDisposable
     {
         /// <summary>
         /// This is the backing field for the <see cref="Enabled"/> property.
