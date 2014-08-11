@@ -14,6 +14,9 @@
 
 	<!-- reference_content.xml overrides -->
 	<item id="topicTitle_root">{@RootNamespaceTitle}</item>
+    <!-- This is used when a title is not specified in the project -->
+    <item id="rootTopicTitleLocalized">Espaços de Nome</item>
+
 	<item id="productTitle">{@HtmlEncHelpTitle}</item>
 	<item id="runningHeaderText">{@HtmlEncHelpTitle}</item>
 
@@ -23,7 +26,7 @@
 
 	<item id="preliminary"><p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[Esta é uma documentação preliminar e está sujeita a alterações.]</p></item>
 
-	<item id="comments"><div class="VS2013_feedbacklink">Envie comentários sobre este tópico para
+	<item id="comments"><div class="feedbackLink">Envie comentários sobre este tópico para
         <a id="HT_MailLink" href="mailto:{@UrlEncFeedbackEMailAddress}?Subject={@UrlEncHelpTitle}">{@HtmlEncFeedbackEMailAddress}</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");

@@ -2,7 +2,7 @@
 // System  : Sandcastle Tools Standard Presentation Styles
 // File    : Prototype.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 01/11/2014
+// Updated : 05/17/2014
 // Note    : Copyright 2014, Eric Woodruff, All rights reserved
 // Compiler: Microsoft Visual C#
 //
@@ -18,6 +18,7 @@
 // 01/04/2014  EFW  Created the code
 //===============================================================================================================
 
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
@@ -30,9 +31,9 @@ namespace Sandcastle.PresentationStyles
     /// <summary>
     /// This contains the definition for the Prototype presentation style
     /// </summary>
-    [PresentationStyleExport("Prototype", "Prototype (Deprecated)", Version = AssemblyInfo.ProductVersion,
-      Copyright = AssemblyInfo.Copyright, Description = "This style has been deprecated and is no longer " +
-      "supported.  It was the first style provided with Sandcastle.")]
+    [PresentationStyleExport("Prototype", "Prototype (Deprecated)", IsDeprecated = true,
+      Version = AssemblyInfo.ProductVersion, Copyright = AssemblyInfo.Copyright, Description = "This style " +
+        "has been deprecated and is no longer supported.  It was the first style provided with Sandcastle.")]
     public sealed class Prototype : PresentationStyleSettings
     {
         /// <inheritdoc />
@@ -81,8 +82,8 @@ namespace Sandcastle.PresentationStyles
             this.ContentFiles.Add(new ContentFiles(this.SupportedFormats, @"icons\*.*"));
             this.ContentFiles.Add(new ContentFiles(this.SupportedFormats, @"scripts\*.*"));
             this.ContentFiles.Add(new ContentFiles(this.SupportedFormats, @"styles\*.*"));
-            this.ContentFiles.Add(new ContentFiles(HelpFileFormats.Website, "%SHFBROOT%", @"Web\*.*", @".\",
-                new[] { ".aspx", ".html", ".htm", ".php" }));
+            this.ContentFiles.Add(new ContentFiles(HelpFileFormats.Website, null, @"..\LegacyWeb\*.*",
+                String.Empty, new[] { ".aspx", ".html", ".htm", ".php" }));
 
             this.TransformComponentArguments.Add(new TransformComponentArgument("logoFile", true, true, null,
                 "An optional logo file to insert into the topic headers.  Specify the filename only, omit " +

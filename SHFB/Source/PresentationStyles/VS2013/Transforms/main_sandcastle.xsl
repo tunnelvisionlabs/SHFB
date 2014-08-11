@@ -127,9 +127,10 @@
 		</xsl:if>
 		<!-- permissions -->
 		<xsl:call-template name="t_permissions"/>
-		<!-- threadsafety -->
+		<!-- thread safety -->
 		<xsl:apply-templates select="/document/comments/threadsafety"/>
-
+		<!-- revisions -->
+		<xsl:call-template name="t_revisionHistory"/>
 		<!-- bibliography -->
 		<xsl:call-template name="t_bibliography"/>
 		<!-- see also -->
@@ -199,8 +200,7 @@
 	Block sections
 	============================================================================================= -->
 
-	<xsl:template match="summary"
-								name="t_summary">
+	<xsl:template match="summary" name="t_summary">
 		<div class="summary">
 			<xsl:apply-templates/>
 		</div>
@@ -263,20 +263,19 @@
 		</xsl:call-template>
 	</xsl:template>
 
-	<xsl:template match="example"
-								name="t_example">
+	<xsl:template match="example" name="t_example">
 		<xsl:call-template name="t_putSectionInclude">
-			<xsl:with-param name="p_titleInclude"
-											select="'title_examples'"/>
+			<xsl:with-param name="p_titleInclude" select="'title_examples'"/>
 			<xsl:with-param name="p_content">
 				<xsl:apply-templates/>
 			</xsl:with-param>
 		</xsl:call-template>
 	</xsl:template>
 
-	<xsl:template match="code"
-								name="t_code">
-		<xsl:call-template name="t_putCodeSection"/>
+	<xsl:template match="codeSnippetGroup" name="t_code">
+		<xsl:call-template name="t_putCodeSections">
+			<xsl:with-param name="p_nodes" select="./code" />
+		</xsl:call-template>
 	</xsl:template>
 
 	<!-- Details (nonstandard) -->
@@ -329,14 +328,11 @@
 			<xsl:call-template name="t_putSectionInclude">
 				<xsl:with-param name="p_titleInclude" select="'title_syntax'"/>
 				<xsl:with-param name="p_content">
-					<div id="snippetGroup_Syntax" class="code">
-						<xsl:call-template name="t_putCodeSections">
-							<xsl:with-param name="p_codeNodes" select="./div[@codeLanguage]"/>
-							<xsl:with-param name="p_nodeCount" select="count(./div[@codeLanguage])"/>
-							<xsl:with-param name="p_codeLangAttr" select="'codeLanguage'"/>
-						</xsl:call-template>
-					</div>
-					<!-- parameters & return value -->
+					<!-- Syntax sections -->
+					<xsl:call-template name="t_putSyntaxSections">
+						<xsl:with-param name="p_nodes" select="./div[@codeLanguage]"/>
+					</xsl:call-template>
+					<!-- Parameters & return value -->
 					<xsl:apply-templates select="/document/reference/parameters"/>
 					<xsl:apply-templates select="/document/reference/templates"/>
 					<xsl:choose>
@@ -351,7 +347,7 @@
 						</xsl:otherwise>
 					</xsl:choose>
 					<xsl:apply-templates select="/document/reference/implements"/>
-					<!-- usage note for extension methods -->
+					<!-- Usage note for extension methods -->
 					<xsl:if test="/document/reference/attributes/attribute/type[@api='T:System.Runtime.CompilerServices.ExtensionAttribute'] and boolean($g_apiSubGroup='method')">
 						<xsl:call-template name="t_putSubSection">
 							<xsl:with-param name="p_title">
@@ -417,9 +413,7 @@
 
 	<!-- ======================================================================================== -->
 
-	<xsl:template match="overloads"
-								mode="summary"
-								name="t_overloadsSummary">
+	<xsl:template match="overloads" mode="summary" name="t_overloadsSummary">
 		<xsl:choose>
 			<xsl:when test="count(summary) > 0">
 				<xsl:apply-templates select="summary"/>
@@ -432,23 +426,20 @@
 		</xsl:choose>
 	</xsl:template>
 
-	<xsl:template match="overloads"
-								mode="sections"
-								name="t_overloadsSections">
+	<xsl:template match="overloads" mode="sections" name="t_overloadsSections">
 		<xsl:apply-templates select="remarks"/>
 		<xsl:apply-templates select="example"/>
 	</xsl:template>
 
-	<xsl:template match="templates"
-								name="t_templates">
-		<xsl:call-template name="t_putSectionInclude">
-			<xsl:with-param name="p_titleInclude"
-											select="'title_templates'"/>
+	<xsl:template match="templates" name="t_templates">
+		<xsl:call-template name="t_putSubSection">
+			<xsl:with-param name="p_title">
+				<include item="title_templates"/>
+			</xsl:with-param>
 			<xsl:with-param name="p_content">
 				<dl>
 					<xsl:for-each select="template">
-						<xsl:variable name="templateName"
-													select="@name"/>
+						<xsl:variable name="templateName" select="@name"/>
 						<dt>
 							<span class="parameter">
 								<xsl:value-of select="$templateName"/>
@@ -506,10 +497,10 @@
 					<div class="tableSection">
 						<table>
 							<tr>
-								<th class="ps_exceptionNameColumn">
+								<th>
 									<include item="header_exceptionName"/>
 								</th>
-								<th class="ps_exceptionConditionColumn">
+								<th>
 									<include item="header_exceptionCondition"/>
 								</th>
 							</tr>
@@ -572,10 +563,10 @@
 					<div class="tableSection">
 						<table>
 							<tr>
-								<th class="ps_permissionNameColumn">
+								<th>
 									<include item="header_permissionName"/>
 								</th>
-								<th class="ps_permissionDescriptionColumn">
+								<th>
 									<include item="header_permissionDescription"/>
 								</th>
 							</tr>
@@ -747,7 +738,7 @@
 						</xsl:if>
 					</div>
 					<!--Contracts link-->
-					<div class="ps_contractsLink">
+					<div>
 						<a>
 							<xsl:attribute name="target">
 								<xsl:text>_blank</xsl:text>
@@ -768,7 +759,7 @@
 		<xsl:param name="p_contracts"/>
 		<table>
 			<tr>
-				<th class="ps_contractsNameColumn">
+				<th>
 					<xsl:copy-of select="$p_title"/>
 				</th>
 			</tr>
@@ -782,12 +773,7 @@
 						<xsl:if test="@description or @inheritedFrom or @exception">
 							<div style="font-size:95%; margin-left: 10pt;
                         margin-bottom: 0pt">
-								<table
-									class="contractaux"
-									width="100%"
-									frame="void"
-									rules="none"
-									border="0">
+								<table>
 									<colgroup>
 										<col width="10%"/>
 										<col width="90%"/>
@@ -837,11 +823,9 @@
 
 	<xsl:template name="t_putSeeAlsoSection">
 		<xsl:if test="$g_hasSeeAlsoSection">
-			<xsl:element name="a">
-				<xsl:attribute name="name">seeAlsoSection</xsl:attribute>
-			</xsl:element>
 			<xsl:call-template name="t_putSectionInclude">
 				<xsl:with-param name="p_titleInclude" select="'title_relatedTopics'"/>
+				<xsl:with-param name="p_id" select="'seeAlsoSection'"/>
 				<xsl:with-param name="p_content">
 					<xsl:if test="$g_hasReferenceLinks">
 						<xsl:call-template name="t_putSubSection">
@@ -966,7 +950,7 @@
 	</xsl:template>
 
 	<xsl:template match="list[@type='definition']" name="t_definitionList">
-		<dl class="authored">
+		<dl>
 			<xsl:for-each select="item">
 				<dt>
 					<xsl:apply-templates select="term"/>
@@ -1195,16 +1179,11 @@
 
 	<xsl:template name="t_codelangAttributes">
 		<xsl:call-template name="t_mshelpCodelangAttributes">
-			<xsl:with-param name="snippets"
-											select="/document/comments/example/code"/>
+			<xsl:with-param name="snippets" select="/document/comments/example//code"/>
 		</xsl:call-template>
 	</xsl:template>
 
 	<!-- ======================================================================================== -->
-
-	<xsl:template name="t_runningHeader">
-		<include item="runningHeaderText"/>
-	</xsl:template>
 
 	<xsl:template name="t_getParameterDescription">
 		<xsl:param name="name"/>
@@ -1221,13 +1200,11 @@
 	</xsl:template>
 
 	<xsl:template name="t_getOverloadSummary">
-		<xsl:apply-templates select="overloads"
-												 mode="summary"/>
+		<xsl:apply-templates select="overloads" mode="summary"/>
 	</xsl:template>
 
 	<xsl:template name="t_getOverloadSections">
-		<xsl:apply-templates select="overloads"
-												 mode="sections"/>
+		<xsl:apply-templates select="overloads" mode="sections"/>
 	</xsl:template>
 
 	<!-- ============================================================================================
@@ -1293,6 +1270,47 @@
 												select="$entry"/>
 			</xsl:call-template>
 		</xsl:for-each>
+	</xsl:template>
+
+	<!-- Revision History information template processing. -->
+	<xsl:template name="t_revisionHistory" match="revisionHistory" >
+		<xsl:if test="boolean(count(/document//revisionHistory) > 0)">
+			<xsl:if test="not(/document//revisionHistory[@visible='false'])">
+				<xsl:call-template name="t_putSectionInclude">
+					<xsl:with-param name="p_titleInclude" select="'title_revisionHistory'"/>
+					<xsl:with-param name="p_content">
+						<table>
+							<tr>
+								<th>
+									<include item="header_revHistoryDate" />
+								</th>
+								<th>
+									<include item="header_revHistoryVersion" />
+								</th>
+								<th>
+									<include item="header_revHistoryDescription" />
+								</th>
+							</tr>
+							<xsl:for-each select="/document//revisionHistory/revision">
+								<xsl:if test="not(@visible='false')">
+									<tr>
+										<td>
+											<xsl:value-of select="@date"/>
+										</td>
+										<td>
+											<xsl:value-of select="@version"/>
+										</td>
+										<td>
+											<xsl:apply-templates />
+										</td>
+									</tr>
+								</xsl:if>
+							</xsl:for-each>
+						</table>
+					</xsl:with-param>
+				</xsl:call-template>
+			</xsl:if>
+		</xsl:if>
 	</xsl:template>
 
 	<!-- Pass through a chunk of markup.  This will allow build components to add HTML or other elements such as

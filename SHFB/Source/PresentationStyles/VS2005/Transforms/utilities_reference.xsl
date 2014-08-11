@@ -969,9 +969,6 @@
 
 		<xsl:call-template name="memberIntro" />
 
-		<!-- TODO: factor out these duplicated Xpaths by a new conditional in memberlistSection:
-         count($members) &gt; 0 -->
-
 		<xsl:if test="$filteredOverloadElements[apidata[@subgroup='constructor']][.//memberdata[@visibility='public' or @visibility='family' or @visibility='family or assembly' or @visibility='assembly'] or (.//memberdata[@visibility='private'] and not(.//proceduredata[@virtual = 'true']))]">
 			<xsl:call-template name="memberlistSection">
 				<xsl:with-param name="headerGroup" select="'constructor'" />
@@ -2091,7 +2088,17 @@
 						<span class="nu">.</span>
 						<span class="fs">.</span>
 					</span>
-					<xsl:value-of select="apidata/@name" />
+					<!-- EFW - If the API element is not present (unresolved type), show the type name from the type element -->
+					<xsl:choose>
+						<xsl:when test="apidata/@name">
+							<xsl:value-of select="apidata/@name" />
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:call-template name="subString">
+								<xsl:with-param name="name" select="@api" />
+							</xsl:call-template>
+						</xsl:otherwise>
+					</xsl:choose>
 					<xsl:apply-templates select="templates" mode="decorated" />
 				</xsl:for-each>
 			</xsl:when>
@@ -2213,7 +2220,17 @@
 								<xsl:call-template name="typeNamePlain" />
 							</xsl:for-each>
 							<xsl:text>.</xsl:text>
-							<xsl:value-of select="apidata/@name" />
+							<!-- EFW - If the API element is not present (unresolved type), show the type name from the type element -->
+							<xsl:choose>
+								<xsl:when test="apidata/@name">
+									<xsl:value-of select="apidata/@name" />
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:call-template name="subString">
+										<xsl:with-param name="name" select="@api" />
+									</xsl:call-template>
+								</xsl:otherwise>
+							</xsl:choose>
 							<xsl:apply-templates select="templates" mode="plain" />
 						</xsl:for-each>
 					</xsl:when>

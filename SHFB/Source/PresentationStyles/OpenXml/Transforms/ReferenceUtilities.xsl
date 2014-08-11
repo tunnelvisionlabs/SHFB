@@ -59,6 +59,16 @@
 	</xsl:variable>
 
 	<xsl:variable name="g_apiSubSubGroup" select="/document/reference/apidata/@subsubgroup"/>
+	<xsl:variable name="g_apiTopicSubSubGroup">
+		<xsl:choose>
+			<xsl:when test="/document/reference/topicdata/@group = 'api'">
+				<xsl:value-of select="/document/reference/apidata/@subsubgroup"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="/document/reference/topicdata/@subsubgroup"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:variable>
 
 	<xsl:variable name="g_namespaceName" select="/document/reference/containers/namespace/apidata/@name"/>
 
@@ -252,7 +262,17 @@
 								<xsl:call-template name="t_typeNamePlain"/>
 							</xsl:for-each>
 							<xsl:text>.</xsl:text>
-							<xsl:value-of select="apidata/@name"/>
+							<!-- EFW - If the API element is not present (unresolved type), show the type name from the type element -->
+							<xsl:choose>
+								<xsl:when test="apidata/@name">
+									<xsl:value-of select="apidata/@name" />
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:call-template name="t_getTrimmedLastPeriod">
+										<xsl:with-param name="p_string" select="@api" />
+									</xsl:call-template>
+								</xsl:otherwise>
+							</xsl:choose>
 							<xsl:apply-templates select="templates" mode="plain"/>
 						</xsl:for-each>
 					</xsl:when>
@@ -455,7 +475,17 @@
 						<xsl:call-template name="t_typeNameDecorated"/>
 					</xsl:for-each>
 					<xsl:text>.</xsl:text>
-					<xsl:value-of select="apidata/@name"/>
+					<!-- EFW - If the API element is not present (unresolved type), show the type name from the type element -->
+					<xsl:choose>
+						<xsl:when test="apidata/@name">
+							<xsl:value-of select="apidata/@name" />
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:call-template name="t_getTrimmedLastPeriod">
+								<xsl:with-param name="p_string" select="@api" />
+							</xsl:call-template>
+						</xsl:otherwise>
+					</xsl:choose>
 					<xsl:apply-templates select="templates" mode="decorated"/>
 				</xsl:for-each>
 			</xsl:when>

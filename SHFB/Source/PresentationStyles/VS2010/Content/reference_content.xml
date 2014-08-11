@@ -169,6 +169,10 @@
   <item id="header_ensuresOnThrowName">EnsuresOnThrow</item>
   <item id="header_invariantsName">Invariants</item>
   
+	<item id="header_revHistoryDate">Date</item>
+	<item id="header_revHistoryVersion">Version</item>
+	<item id="header_revHistoryDescription">Description</item>
+	
   <!-- member list table titles -->
   <item id="tableTitle_namespace">Namespaces</item>
 	<item id="tableTitle_class">Classes</item>
@@ -321,7 +325,8 @@
   <item id="altText_CompactFramework">Supported by the .NET Compact Framework</item>
   <item id="altText_XNAFramework">Supported by the XNA Framework</item>
   <item id="altText_SilverlightMobile">Supported by <include item="silverlight_mobile"/></item>
-  <item id="altText_ExplicitInterface">Explicit interface implemetation</item>
+  <item id="altText_ExplicitInterface">Explicit interface implementation</item>
+  <item id="altText_CodeExample">Code example</item>
 
   <item id="boilerplate_seeAlsoNamespaceLink">{0} Namespace</item>
   <item id="boilerplate_seeAlsoTypeLink">{0} <include item="text_{1}Upper"/></item>

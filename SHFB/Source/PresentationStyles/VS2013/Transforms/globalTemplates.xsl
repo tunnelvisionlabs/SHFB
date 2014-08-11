@@ -2,8 +2,6 @@
 								version="2.0"
 								xmlns:msxsl="urn:schemas-microsoft-com:xslt"
 								xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5"
-								xmlns:mtps="http://msdn2.microsoft.com/mtps"
-								xmlns:xhtml="http://www.w3.org/1999/xhtml"
 								xmlns:xlink="http://www.w3.org/1999/xlink"
 								xmlns:MSHelp="http://msdn.microsoft.com/mshelp"
 	>
@@ -22,16 +20,13 @@
 	<xsl:param name="logoPlacement" />
 	<xsl:param name="logoAlignment" />
 
+	<!-- Default language parameter -->
+	<xsl:param name="defaultLanguage" select="string('cs')" />
+
 	<!-- ============================================================================================
 	Globals
 	============================================================================================= -->
 
-	<xsl:variable name="xhtml"
-								select="'http://www.w3.org/1999/xhtml'"/>
-	<xsl:variable name="ddue"
-								select="'http://ddue.schemas.microsoft.com/authoring/2003/5'"/>
-	<xsl:variable name="mtps"
-								select="'http://msdn2.microsoft.com/mtps'"/>
 	<xsl:variable name="g_allUpperCaseLetters">ABCDEFGHIJKLMNOPQRSTUVWXYZ</xsl:variable>
 	<xsl:variable name="g_allLowerCaseLetters">abcdefghijklmnopqrstuvwxyz</xsl:variable>
 
@@ -119,25 +114,19 @@
 
 	<xsl:template name="t_decoratedNameSep">
 		<span class="languageSpecificText">
-			<span class="cs">.</span>
-			<span class="vb">.</span>
 			<span class="cpp">::</span>
-			<span class="fs">.</span>
 			<span class="nu">.</span>
 		</span>
 	</xsl:template>
 
 	<xsl:template name="t_nullKeyword">
-		<xsl:param name="p_syntaxKeyword"
-							 select="''"/>
+		<xsl:param name="p_syntaxKeyword" select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
 				<span class="keyword">
 					<span class="languageSpecificText">
-						<span class="cs">null</span>
 						<span class="vb">Nothing</span>
 						<span class="cpp">nullptr</span>
-						<span class="fs">null</span>
 						<span class="nu">null</span>
 					</span>
 				</span>
@@ -151,16 +140,12 @@
 	</xsl:template>
 
 	<xsl:template name="t_staticKeyword">
-		<xsl:param name="p_syntaxKeyword"
-							 select="''"/>
+		<xsl:param name="p_syntaxKeyword" select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
 				<span class="keyword">
 					<span class="languageSpecificText">
-						<span class="cs">static</span>
 						<span class="vb">Shared</span>
-						<span class="cpp">static</span>
-						<span class="fs">static</span>
 						<span class="nu">static</span>
 					</span>
 				</span>
@@ -174,16 +159,12 @@
 	</xsl:template>
 
 	<xsl:template name="t_virtualKeyword">
-		<xsl:param name="p_syntaxKeyword"
-							 select="''"/>
+		<xsl:param name="p_syntaxKeyword" select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
 				<span class="keyword">
 					<span class="languageSpecificText">
-						<span class="cs">virtual</span>
 						<span class="vb">Overridable</span>
-						<span class="cpp">virtual</span>
-						<span class="fs">virtual</span>
 						<span class="nu">virtual</span>
 					</span>
 				</span>
@@ -197,16 +178,12 @@
 	</xsl:template>
 
 	<xsl:template name="t_trueKeyword">
-		<xsl:param name="p_syntaxKeyword"
-							 select="''"/>
+		<xsl:param name="p_syntaxKeyword" select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
 				<span class="keyword">
 					<span class="languageSpecificText">
-						<span class="cs">true</span>
 						<span class="vb">True</span>
-						<span class="cpp">true</span>
-						<span class="fs">true</span>
 						<span class="nu">true</span>
 					</span>
 				</span>
@@ -220,16 +197,12 @@
 	</xsl:template>
 
 	<xsl:template name="t_falseKeyword">
-		<xsl:param name="p_syntaxKeyword"
-							 select="''"/>
+		<xsl:param name="p_syntaxKeyword" select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
 				<span class="keyword">
 					<span class="languageSpecificText">
-						<span class="cs">false</span>
 						<span class="vb">False</span>
-						<span class="cpp">false</span>
-						<span class="fs">false</span>
 						<span class="nu">false</span>
 					</span>
 				</span>
@@ -243,16 +216,12 @@
 	</xsl:template>
 
 	<xsl:template name="t_abstractKeyword">
-		<xsl:param name="p_syntaxKeyword"
-							 select="''"/>
+		<xsl:param name="p_syntaxKeyword" select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
 				<span class="keyword">
 					<span class="languageSpecificText">
-						<span class="cs">abstract</span>
 						<span class="vb">MustInherit</span>
-						<span class="cpp">abstract</span>
-						<span class="fs">abstract</span>
 						<span class="nu">abstract</span>
 					</span>
 				</span>
@@ -268,9 +237,7 @@
 	<xsl:template name="t_inKeyword">
 		<span class="keyword">
 			<span class="languageSpecificText">
-				<span class="cs">in</span>
 				<span class="vb">In</span>
-				<span class="cpp">in</span>
 				<span class="fs"></span>
 				<span class="nu">in</span>
 			</span>
@@ -280,9 +247,7 @@
 	<xsl:template name="t_outKeyword">
 		<span class="keyword">
 			<span class="languageSpecificText">
-				<span class="cs">out</span>
 				<span class="vb">Out</span>
-				<span class="cpp">out</span>
 				<span class="fs"></span>
 				<span class="nu">out</span>
 			</span>
@@ -290,16 +255,12 @@
 	</xsl:template>
 
 	<xsl:template name="t_asyncKeyword">
-		<xsl:param name="p_syntaxKeyword"
-							 select="''"/>
+		<xsl:param name="p_syntaxKeyword" select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
 				<span class="keyword">
 					<span class="languageSpecificText">
-						<span class="cs">async</span>
 						<span class="vb">Async</span>
-						<span class="cpp">async</span>
-						<span class="fs">async</span>
 						<span class="nu">async</span>
 					</span>
 				</span>
@@ -313,15 +274,12 @@
 	</xsl:template>
 
 	<xsl:template name="t_awaitKeyword">
-		<xsl:param name="p_syntaxKeyword"
-							 select="''"/>
+		<xsl:param name="p_syntaxKeyword" select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
 				<span class="keyword">
 					<span class="languageSpecificText">
-						<span class="cs">await</span>
 						<span class="vb">Await</span>
-						<span class="cpp">await</span>
 						<span class="fs">let!</span>
 						<span class="nu">await</span>
 					</span>
@@ -336,23 +294,17 @@
 	</xsl:template>
 
 	<xsl:template name="t_asyncAwaitKeyword">
-		<xsl:param name="p_syntaxKeyword"
-							 select="''"/>
+		<xsl:param name="p_syntaxKeyword" select="''"/>
 		<xsl:choose>
 			<xsl:when test="$p_syntaxKeyword">
 				<span class="keyword">
 					<span class="languageSpecificText">
-						<span class="cs">async</span>
 						<span class="vb">Async</span>
-						<span class="cpp">async</span>
-						<span class="fs">async</span>
 						<span class="nu">async</span>
 					</span>
 				</span>/<span class="keyword">
 					<span class="languageSpecificText">
-						<span class="cs">await</span>
 						<span class="vb">Await</span>
-						<span class="cpp">await</span>
 						<span class="fs">let!</span>
 						<span class="nu">await</span>
 					</span>
@@ -370,46 +322,6 @@
 	Common metadata
 	============================================================================================= -->
 
-	<xsl:template name="t_insertMetadata">
-		<xsl:element name="xml">
-			<xsl:attribute name="id">BrandingData</xsl:attribute>
-			<xsl:if test="$languages/language">
-				<list id="BrandingLanguages">
-					<xsl:for-each select="$languages/language">
-						<xsl:variable name="v_devlangId">
-							<xsl:call-template name="t_codeLangTitleId">
-								<xsl:with-param name="p_codeLang"
-																select="@name"/>
-							</xsl:call-template>
-						</xsl:variable>
-						<xsl:if test="$v_devlangId!=''">
-							<xsl:element name="value">
-								<include item="{$v_devlangId}"/>
-							</xsl:element>
-						</xsl:if>
-					</xsl:for-each>
-				</list>
-			</xsl:if>
-			<xsl:if test="/document/syntax/div[@codeLanguage]">
-				<list id="BrandingSyntaxLanguages">
-					<xsl:for-each select="/document/syntax/div[@codeLanguage and not(div[@class='nonXamlAssemblyBoilerplate'])]">
-						<xsl:variable name="v_codeLangId">
-							<xsl:call-template name="t_codeLangTitleId">
-								<xsl:with-param name="p_codeLang"
-																select="@codeLanguage"/>
-							</xsl:call-template>
-						</xsl:variable>
-						<xsl:if test="$v_codeLangId!=''">
-							<xsl:element name="value">
-								<include item="{$v_codeLangId}"/>
-							</xsl:element>
-						</xsl:if>
-					</xsl:for-each>
-				</list>
-			</xsl:if>
-		</xsl:element>
-	</xsl:template>
-
 	<xsl:template name="t_insertNoIndexNoFollow">
 		<xsl:if test="/document/metadata/attribute[@name='NoSearch']">
 			<meta name="robots" content="noindex, nofollow" />
@@ -417,16 +329,16 @@
 	</xsl:template>
 
 	<!-- ============================================================================================
-	Running header
+	Page title and optional logo
 	============================================================================================= -->
 
-	<xsl:template name="t_bodyTitle">
+	<xsl:template name="t_pageTitle">
 		<xsl:variable name="placementLC" select="translate($logoPlacement, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')"/>
 		<xsl:variable name="alignmentLC" select="translate($logoAlignment, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')"/>
-		<table class="TitleTable">
+		<table class="titleTable">
 			<xsl:if test="normalize-space($logoFile) and $placementLC = 'above'">
 				<tr>
-					<td colspan="2" class="VS2013_tdLogoColumnAbove">
+					<td colspan="2" class="logoColumnAbove">
 						<xsl:attribute name="align">
 							<xsl:choose>
 								<xsl:when test="normalize-space($alignmentLC)">
@@ -443,22 +355,19 @@
 			</xsl:if>
 			<tr>
 				<xsl:if test="normalize-space($logoFile) and $placementLC = 'left'">
-					<td class="VS2013_tdLogoColumn">
+					<td class="logoColumn">
 						<xsl:call-template name="logoImage" />
 					</td>
 				</xsl:if>
-				<td class="VS2013_tdTitleColumn">
+				<td class="titleColumn">
 					<include item="boilerplate_pageTitle">
 						<parameter>
 							<xsl:call-template name="t_topicTitleDecorated"/>
 						</parameter>
 					</include>
 				</td>
-				<td class="VS2013_tdRunningTitleColumn">
-					<xsl:call-template name="t_runningHeader" />
-				</td>
 				<xsl:if test="normalize-space($logoFile) and $placementLC = 'right'">
-					<td class="VS2013_tdLogoColumn">
+					<td class="logoColumn">
 						<xsl:call-template name="logoImage" />
 					</td>
 				</xsl:if>
@@ -592,38 +501,41 @@
 		<xsl:param name="p_title" />
 		<xsl:param name="p_content" />
 		<xsl:param name="p_toplink" select="false()" />
+		<xsl:param name="p_id" select="''" />
 
 		<xsl:variable name="togglePrefix" select="generate-id(msxsl:node-set($p_content))" />
 		<xsl:variable name="toggleImage" select="concat($togglePrefix,'Toggle')" />
 		<xsl:variable name="toggleSection" select="concat($togglePrefix,'Section')" />
 
-		<xsl:element name="mtps:CollapsibleArea">
-			<xsl:if test="normalize-space($p_title)">
-				<div class="VS2013_CollapsibleAreaRegion">
-					<span class="VS2013_RegionTitle" onclick="ExpandCollapse('{$togglePrefix}')"
-						onkeypress="ExpandCollapse_CheckKey('{$togglePrefix}', event)" tabindex="0">
-						<img id="{$toggleImage}" class="CollapseToggle">
-							<includeAttribute name="src" item="iconPath">
-								<parameter>Expanded.png</parameter>
-							</includeAttribute>
-						</img>
-
-						<xsl:copy-of select="$p_title" />
-					</span>
-				</div>
-			</xsl:if>
-
-			<div id="{$toggleSection}" class="VS2013_CollapsibleSection">
-				<xsl:copy-of select="$p_content" />
-
-				<xsl:if test="boolean($p_toplink)">
-					<a href="#mainBody">
-						<include item="top"/>
-					</a>
+		<xsl:if test="normalize-space($p_title)">
+			<div class="collapsibleAreaRegion">
+				<xsl:if test="normalize-space($p_id)">
+					<xsl:attribute name="id">
+						<xsl:value-of select="$p_id"/>
+					</xsl:attribute>
 				</xsl:if>
-			</div>
+				<span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('{$togglePrefix}')"
+					onkeypress="SectionExpandCollapse_CheckKey('{$togglePrefix}', event)" tabindex="0">
+					<img id="{$toggleImage}" class="collapseToggle">
+						<includeAttribute name="src" item="iconPath">
+							<parameter>SectionExpanded.png</parameter>
+						</includeAttribute>
+					</img>
 
-		</xsl:element>
+					<xsl:copy-of select="$p_title" />
+				</span>
+			</div>
+		</xsl:if>
+
+		<div id="{$toggleSection}" class="collapsibleSection">
+			<xsl:copy-of select="$p_content" />
+
+			<xsl:if test="boolean($p_toplink)">
+				<a href="#PageHeader">
+					<include item="top"/>
+				</a>
+			</xsl:if>
+		</div>
 	</xsl:template>
 
 	<xsl:template name="t_putSectionInclude">
@@ -636,50 +548,47 @@
 		<xsl:variable name="toggleImage" select="concat($togglePrefix,'Toggle')" />
 		<xsl:variable name="toggleSection" select="concat($togglePrefix,'Section')" />
 
-		<xsl:element name="mtps:CollapsibleArea">
-			<xsl:if test="normalize-space($p_titleInclude)">
-				<div class="VS2013_CollapsibleAreaRegion">
-					<xsl:if test="normalize-space($p_id)">
-						<xsl:attribute name="id">
-							<xsl:value-of select="$p_id"/>
-						</xsl:attribute>
-					</xsl:if>
-					<span class="VS2013_RegionTitle" onclick="ExpandCollapse('{$togglePrefix}')"
-						onkeypress="ExpandCollapse_CheckKey('{$togglePrefix}', event)" tabindex="0">
-						<img id="{$toggleImage}" class="CollapseToggle">
-							<includeAttribute name="src" item="iconPath">
-								<parameter>Expanded.png</parameter>
-							</includeAttribute>
-						</img>
-
-						<include item="{$p_titleInclude}"/>
-					</span>
-				</div>
-			</xsl:if>
-
-			<div id="{$toggleSection}" class="VS2013_CollapsibleSection">
-				<xsl:copy-of select="$p_content" />
-
-				<xsl:if test="boolean($p_toplink)">
-					<a href="#mainBody">
-						<include item="top"/>
-					</a>
+		<xsl:if test="normalize-space($p_titleInclude)">
+			<div class="collapsibleAreaRegion">
+				<xsl:if test="normalize-space($p_id)">
+					<xsl:attribute name="id">
+						<xsl:value-of select="$p_id"/>
+					</xsl:attribute>
 				</xsl:if>
-			</div>
+				<span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('{$togglePrefix}')"
+					onkeypress="SectionExpandCollapse_CheckKey('{$togglePrefix}', event)" tabindex="0">
+					<img id="{$toggleImage}" class="collapseToggle">
+						<includeAttribute name="src" item="iconPath">
+							<parameter>SectionExpanded.png</parameter>
+						</includeAttribute>
+					</img>
 
-		</xsl:element>
+					<include item="{$p_titleInclude}"/>
+				</span>
+			</div>
+		</xsl:if>
+
+		<div id="{$toggleSection}" class="collapsibleSection">
+			<xsl:copy-of select="$p_content" />
+
+			<xsl:if test="boolean($p_toplink)">
+				<a href="#PageHeader">
+					<include item="top"/>
+				</a>
+			</xsl:if>
+		</div>
 	</xsl:template>
 
 	<xsl:template name="t_putSubSection">
 		<xsl:param name="p_title" />
 		<xsl:param name="p_content" />
 
-		<xsl:element name="h4">
+		<h4>
 			<xsl:attribute name="class">
 				<xsl:value-of select="'subHeading'"/>
 			</xsl:attribute>
 			<xsl:copy-of select="$p_title" />
-		</xsl:element>
+		</h4>
 		<xsl:copy-of select="$p_content" />
 	</xsl:template>
 
@@ -772,31 +681,31 @@
 		<xsl:variable name="v_noteImg">
 			<xsl:choose>
 				<xsl:when test="$p_alertClass='note' or $p_alertClass='tip' or $p_alertClass='implement' or $p_alertClass='caller' or $p_alertClass='inherit'">
-					<xsl:text>alert_note.gif</xsl:text>
+					<xsl:text>AlertNote.png</xsl:text>
 				</xsl:when>
 				<xsl:when test="$p_alertClass='caution' or $p_alertClass='warning'">
-					<xsl:text>alert_caution.gif</xsl:text>
+					<xsl:text>AlertCaution.png</xsl:text>
 				</xsl:when>
 				<xsl:when test="$p_alertClass='security' or $p_alertClass='security note'">
-					<xsl:text>alert_security.gif</xsl:text>
+					<xsl:text>AlertSecurity.png</xsl:text>
 				</xsl:when>
 				<xsl:when test="$p_alertClass='important'">
-					<xsl:text>alert_caution.gif</xsl:text>
+					<xsl:text>AlertCaution.png</xsl:text>
 				</xsl:when>
 				<xsl:when test="$p_alertClass='vb' or $p_alertClass='VB' or $p_alertClass='VisualBasic' or $p_alertClass='visual basic note'">
-					<xsl:text>alert_note.gif</xsl:text>
+					<xsl:text>AlertNote.png</xsl:text>
 				</xsl:when>
 				<xsl:when test="$p_alertClass='cs' or $p_alertClass='CSharp' or $p_alertClass='c#' or $p_alertClass='C#' or $p_alertClass='visual c# note'">
-					<xsl:text>alert_note.gif</xsl:text>
+					<xsl:text>AlertNote.png</xsl:text>
 				</xsl:when>
 				<xsl:when test="$p_alertClass='cpp' or $p_alertClass='c++' or $p_alertClass='C++' or $p_alertClass='CPP' or $p_alertClass='visual c++ note'">
-					<xsl:text>alert_note.gif</xsl:text>
+					<xsl:text>AlertNote.png</xsl:text>
 				</xsl:when>
 				<xsl:when test="$p_alertClass='JSharp' or $p_alertClass='j#' or $p_alertClass='J#' or $p_alertClass='visual j# note'">
-					<xsl:text>alert_note.gif</xsl:text>
+					<xsl:text>AlertNote.png</xsl:text>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:text>alert_note.gif</xsl:text>
+					<xsl:text>AlertNote.png</xsl:text>
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>

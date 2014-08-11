@@ -2,7 +2,7 @@
 // System  : Sandcastle Tools Standard Presentation Styles
 // File    : VisualStudio2010.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 04/13/2014
+// Updated : 05/17/2014
 // Note    : Copyright 2014, Eric Woodruff, All rights reserved
 // Compiler: Microsoft Visual C#
 //
@@ -18,6 +18,7 @@
 // 01/04/2014  EFW  Created the code
 //===============================================================================================================
 
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
@@ -31,8 +32,8 @@ namespace Sandcastle.PresentationStyles
     /// This contains the definition for the Visual Studio 2010 presentation style
     /// </summary>
     [PresentationStyleExport("VS2010", "VS2010", Version = AssemblyInfo.ProductVersion,
-      Copyright = AssemblyInfo.Copyright, Description = "This is the style used by Visual Studio 2010 in " +
-      "Microsoft Help Viewer 1.0.")]
+      Copyright = AssemblyInfo.Copyright, Description = "This style is similar to the one use for offline " +
+      "content in Microsoft Help Viewer in Visual Studio 2010 and later.")]
     public sealed class VisualStudio2010 : PresentationStyleSettings
     {
         /// <inheritdoc />
@@ -52,7 +53,7 @@ namespace Sandcastle.PresentationStyles
             this.SupportedFormats = HelpFileFormats.HtmlHelp1 | HelpFileFormats.MSHelp2 |
                 HelpFileFormats.MSHelpViewer | HelpFileFormats.Website;
 
-            this.SupportsNamespaceGrouping = true;
+            this.SupportsNamespaceGrouping = this.SupportsCodeSnippetGrouping = true;
             
             // If relative, these paths are relative to the base path
             this.ResourceItemsPath = "Content";
@@ -75,12 +76,11 @@ namespace Sandcastle.PresentationStyles
             // Note that UNIX based web servers may be case-sensitive with regard to folder and filenames so
             // match the case of the folder and filenames in the literals to their actual casing on the file
             // system.
-            this.ContentFiles.Add(new ContentFiles(HelpFileFormats.MSHelp2, @"Help2\*.*", @".\styles"));
             this.ContentFiles.Add(new ContentFiles(this.SupportedFormats, @"icons\*.*"));
             this.ContentFiles.Add(new ContentFiles(this.SupportedFormats, @"scripts\*.*"));
             this.ContentFiles.Add(new ContentFiles(this.SupportedFormats, @"styles\*.*"));
-            this.ContentFiles.Add(new ContentFiles(HelpFileFormats.Website, "%SHFBROOT%", @"Web\*.*", @".\",
-                new[] { ".aspx", ".html", ".htm", ".php" } ));
+            this.ContentFiles.Add(new ContentFiles(HelpFileFormats.Website, null, @"..\LegacyWeb\*.*",
+                String.Empty, new[] { ".aspx", ".html", ".htm", ".php" }));
 
             this.TransformComponentArguments.Add(new TransformComponentArgument("logoFile", true, true, null,
                 "An optional logo file to insert into the topic headers.  Specify the filename only, omit " +
@@ -104,6 +104,10 @@ namespace Sandcastle.PresentationStyles
                 null, "The maximum number of assembly version parts to show in API member topics.  Set to 2, " +
                 "3, or 4 to limit it to 2, 3, or 4 parts or leave it blank for all parts including the " +
                 "assembly file version value if specified."));
+            this.TransformComponentArguments.Add(new TransformComponentArgument("defaultLanguage", true, true,
+                "cs", "The default language to use for syntax sections, code snippets, and a language-specific " +
+                "text.  This should be set to cs, vb, cpp, fs, or the keyword style ID of a third-party syntax " +
+                "generator if you want to use a non-standard language as the default."));
         }
     }
 }
