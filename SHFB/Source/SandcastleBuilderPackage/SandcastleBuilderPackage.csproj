@@ -361,6 +361,7 @@
     <Resource Include="Button Bitmaps\HtmlEncode.bmp" />
     <Resource Include="Resources\Component.ico" />
     <Resource Include="Button Bitmaps\Docx.bmp" />
+    <Resource Include="Button Bitmaps\ShfbHelp.png" />
     <Content Include="VSIXPreview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
