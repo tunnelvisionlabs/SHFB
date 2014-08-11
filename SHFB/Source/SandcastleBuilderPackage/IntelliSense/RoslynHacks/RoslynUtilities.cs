@@ -17,7 +17,7 @@
 // ==============================================================================================================
 //===============================================================================================================
 
-namespace SandcastleBuilder.Package.IntelliSense
+namespace SandcastleBuilder.Package.IntelliSense.RoslynHacks
 {
     using System;
     using ErrorHandler = Microsoft.VisualStudio.ErrorHandler;
