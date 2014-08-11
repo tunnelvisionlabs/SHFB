@@ -237,17 +237,16 @@ namespace SandcastleBuilder.PlugIns
                 PropertyInfo outputMethod = typeof(XmlWriterSettings).GetProperty("OutputMethod");
                 outputMethod.SetValue(htmlWriterSettings, XmlOutputMethod.Html, null);
 
-                XElement leftNav =
+                XElement resizableBar =
                     new XElement("div",
-                        new XAttribute("class", "leftNav"),
-                        new XAttribute("id", "leftNav"),
-                        tocNav);
+                        new XAttribute("id", "TocResizableEw"),
+                        new XAttribute("class", "tocResizableEw"),
+                        new XAttribute("onmousedown", "OnMouseDown(event);"));
 
                 XElement resizeUi =
                     new XElement("div",
                         new XAttribute("id", "TocResize"),
                         new XAttribute("class", "tocResize"),
-                        new XAttribute("onmousedown", "OnMouseDown(event);"),
                         new XElement("img",
                             new XAttribute("id", "ResizeImageIncrease"),
                             new XAttribute("src", "../icons/TocOpen.gif"),
@@ -262,12 +261,19 @@ namespace SandcastleBuilder.PlugIns
                             new XAttribute("alt", resizeToolTip),
                             new XAttribute("title", resizeToolTip)));
 
+                XElement leftNav =
+                    new XElement("div",
+                        new XAttribute("class", "leftNav"),
+                        new XAttribute("id", "leftNav"),
+                        tocNav,
+                        resizableBar,
+                        resizeUi);
+
                 StringBuilder stringBuilder = new StringBuilder();
 
                 using(XmlWriter writer = XmlWriter.Create(stringBuilder, htmlWriterSettings))
                 {
                     leftNav.WriteTo(writer);
-                    resizeUi.WriteTo(writer);
                 }
 
                 string path = Path.Combine(builder.WorkingFolder, @"Output\Website", current.Attribute("Url").Value);
