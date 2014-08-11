@@ -20,9 +20,6 @@
   <!--This header contains the command ids for the menus provided by the shell. -->
   <Extern href="vsshlids.h"/>
 
-  <!--Definition of some VSCT specific constants. In this sample we use it for the IDs inside the guidOfficeIcon group. -->
-  <Extern href="msobtnid.h"/>
-
   <Extern href="VSDbgCmd.h" />
   <Extern href="VsDebugGuids.h"/>
 
@@ -149,7 +146,7 @@
 		    </Strings>
 	  </Button>
 	  <Button guid="guidSandcastleBuilderPackageCommandSet" id="ViewShfbHelp" priority="0x0100">
-				<Icon guid="guidOfficeIcon" id="msotcidF1Help" />
+				<Icon guid="ShfbHelp.bmpGuid" id="ShfbHelp.bmpId" />
 				<Strings>
             <CommandName>cmdidViewShfbHelp</CommandName>
             <ButtonText>Help on Sandcastle Help File Builder</ButtonText>
@@ -269,6 +266,7 @@
     <Bitmap guid="AspNetWebsite.bmpGuid" href="..\Button Bitmaps\AspNetWebsite.bmp" usedList="AspNetWebsite.bmpId" />
     <Bitmap guid="HtmlWebsite.bmpGuid" href="..\Button Bitmaps\HtmlWebsite.bmp" usedList="HtmlWebsite.bmpId" />
     <Bitmap guid="FAQ.bmpGuid" href="..\Button Bitmaps\FAQ.bmp" usedList="FAQ.bmpId" />
+    <Bitmap guid="ShfbHelp.bmpGuid" href="..\Button Bitmaps\ShfbHelp.png" usedList="ShfbHelp.bmpId" />
     <Bitmap guid="LogFile.bmpGuid" href="..\Button Bitmaps\LogFile.bmp" usedList="LogFile.bmpId" />
     <Bitmap guid="EntityReferences.bmpGuid" href="..\Button Bitmaps\EntityReferences.bmp" usedList="EntityReferences.bmpId" />
     <Bitmap guid="TopicPreview.bmpGuid" href="..\Button Bitmaps\TopicPreview.bmp" usedList="TopicPreview.bmpId" />
@@ -499,6 +497,9 @@
 			</GuidSymbol>
 	     <GuidSymbol name="FAQ.bmpGuid" value="{fadfa626-45cf-4440-a130-d894b2b43556}">
 				<IDSymbol name="FAQ.bmpId" value="1" />
+			</GuidSymbol>
+	     <GuidSymbol name="ShfbHelp.bmpGuid" value="{55a3baf9-bb2c-4d2a-a33f-5c5f2533ed05}">
+				<IDSymbol name="ShfbHelp.bmpId" value="1" />
 			</GuidSymbol>
 	     <GuidSymbol name="LogFile.bmpGuid" value="{335afdff-ab3d-401f-9fe4-fb00149413ff}">
 				<IDSymbol name="LogFile.bmpId" value="1" />
