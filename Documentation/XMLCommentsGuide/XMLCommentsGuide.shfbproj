@@ -76,9 +76,6 @@
           </deploymentLocation>
         </configuration>
       </PlugInConfig>
-      <PlugInConfig id="Lightweight TOC" enabled="True">
-        <configuration />
-      </PlugInConfig>
     </PlugInConfigurations>
     <BuildLogFile />
     <HtmlHelp1xCompilerPath />
@@ -87,7 +84,7 @@
     <SyntaxFilters>Standard</SyntaxFilters>
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <RootNamespaceContainer>False</RootNamespaceContainer>
-    <PresentationStyle>VS2013Alt</PresentationStyle>
+    <PresentationStyle>VS2013</PresentationStyle>
     <Preliminary>False</Preliminary>
     <NamingMethod>Guid</NamingMethod>
     <HelpTitle>Sandcastle XML Comments Guide</HelpTitle>

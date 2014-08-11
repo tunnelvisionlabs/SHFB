@@ -33,7 +33,7 @@
     <CopyrightHref>http://SHFB.CodePlex.com</CopyrightHref>
     <CopyrightText>[v{%40HelpFileVersion}] Copyright \xA9 2006-2014, Eric Woodruff, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>Eric%40EWoodruff.us</FeedbackEMailAddress>
-    <PresentationStyle>VS2013Alt</PresentationStyle>
+    <PresentationStyle>VS2013</PresentationStyle>
     <SyntaxFilters>Standard</SyntaxFilters>
     <HelpFileVersion>2014.4.21.0</HelpFileVersion>
     <ComponentConfigurations>
@@ -123,9 +123,6 @@
             </proxyCredentials>
           </deploymentLocation>
         </configuration>
-      </PlugInConfig>
-      <PlugInConfig id="Lightweight TOC" enabled="True">
-        <configuration />
       </PlugInConfig>
     </PlugInConfigurations>
     <Preliminary>False</Preliminary>
@@ -233,9 +230,7 @@
     <None Include="Content\GettingStarted\GeneralPreferences.aml" />
     <None Include="Content\GettingStarted\SpellCheckerOptions.aml" />
     <None Include="Content\GettingStarted\XCopyDeployment.aml" />
-    <None Include="Content\MSHelpViewerRoot.aml" />
     <None Include="Content\OpenXmlFormat.aml" />
-    <None Include="Content\PlugIns\LightweightTocPlugIn.aml" />
     <None Include="Content\PropertiesWindow\BuildEvents.aml" />
     <None Include="Content\PropertiesWindow\ComponentConfigs.aml" />
     <None Include="Content\PropertiesWindow\PlugInConfigs.aml" />

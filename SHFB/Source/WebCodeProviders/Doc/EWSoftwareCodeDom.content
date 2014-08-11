@@ -1,11 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics defaultTopic="40ba6bda-95d6-4a64-834f-f7cedcb589d1">
-  <Topic id="53f05589-e194-401b-83a3-069ea88e6c56" visible="False" isMSHVRoot="true" title="Web Project Documentation Guide">
-    <HelpKeywords>
-      <HelpKeyword index="K" term="Web Project Documentation Guide" />
-    </HelpKeywords>
-  </Topic>
-  <Topic id="40ba6bda-95d6-4a64-834f-f7cedcb589d1" visible="True" isDefault="true" title="Documenting Web Projects">
+  <Topic id="40ba6bda-95d6-4a64-834f-f7cedcb589d1" visible="True" title="Documenting Web Projects">
     <HelpKeywords>
       <HelpKeyword index="K" term="Documenting, web applications" />
       <HelpKeyword index="K" term="Documenting, websites" />

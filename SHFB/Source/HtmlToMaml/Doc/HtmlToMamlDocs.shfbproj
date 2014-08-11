@@ -67,9 +67,6 @@
           </deploymentLocation>
         </configuration>
       </PlugInConfig>
-      <PlugInConfig id="Lightweight TOC" enabled="True">
-        <configuration />
-      </PlugInConfig>
     </PlugInConfigurations>
     <FrameworkVersion>.NET Framework 4.0</FrameworkVersion>
     <HelpFileVersion>1.0.0.2</HelpFileVersion>
@@ -86,7 +83,7 @@
     <CppCommentsFixup>False</CppCommentsFixup>
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <RootNamespaceContainer>False</RootNamespaceContainer>
-    <PresentationStyle>VS2013Alt</PresentationStyle>
+    <PresentationStyle>VS2013</PresentationStyle>
     <Preliminary>False</Preliminary>
     <NamingMethod>Guid</NamingMethod>
     <Language>en-US</Language>
@@ -115,7 +112,6 @@
     <ContentLayout Include="ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Content\MSHelpViewerRoot.aml" />
     <None Include="Content\VersionHistory\v1.0.0.1.aml" />
     <None Include="Content\License.aml" />
     <None Include="Content\CommonReviewIssues.aml" />

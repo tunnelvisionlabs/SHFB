@@ -1,10 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
-  <Topic id="d19a0743-048e-40d7-af19-07dd527fe5d0" visible="False" isMSHVRoot="true" title="Sandcastle Help File Builder">
-    <HelpKeywords>
-      <HelpKeyword index="K" term="Sandcastle Help File Builder" />
-    </HelpKeywords>
-  </Topic>
   <Topic id="bd1ddb51-1c4f-434f-bb1a-ce2135d3a909" visible="True" isDefault="true" title="Welcome">
     <HelpKeywords>
       <HelpKeyword index="K" term="Welcome" />
@@ -605,12 +600,6 @@
       <HelpKeywords>
         <HelpKeyword index="K" term="plug-ins, hierarchical table of contents plug-in" />
         <HelpKeyword index="K" term="HierarchicalTocPlugIn, configuration options" />
-      </HelpKeywords>
-    </Topic>
-    <Topic id="936f1b06-063e-4ffc-8999-0f7c9bd49e03" visible="True" title="Lightweight Table of Contents Plug-In">
-      <HelpKeywords>
-        <HelpKeyword index="K" term="plug-ins, lightweight table of contents plug-in" />
-        <HelpKeyword index="K" term="LightweightTocPlugIn, configuration options" />
       </HelpKeywords>
     </Topic>
     <Topic id="796d6bbe-5130-4c87-8790-5cceb66219c7" visible="True" title="Output Deployment Plug-In">
