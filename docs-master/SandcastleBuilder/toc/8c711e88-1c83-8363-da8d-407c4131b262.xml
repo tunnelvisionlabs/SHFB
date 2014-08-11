@@ -1,12 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="OutputWindow Methods" Url="html/8c711e88-1c83-8363-da8d-407c4131b262.htm">
-  <HelpTOCNode Title="AppendText Method " Url="html/e16e1750-4472-5277-46ca-510d7369b39e.htm" />
-  <HelpTOCNode Title="Dispose Method " Url="html/332445ad-0b58-9374-48c0-d87d36a8e561.htm" HasChildren="true" />
-  <HelpTOCNode Title="OnFormClosing Method " Url="html/c99961de-44e7-8fba-ab00-564ebfa17b64.htm" />
-  <HelpTOCNode Title="OnVisibleChanged Method " Url="html/15bdde0c-422c-10bd-8f67-727a8ce7fe3b.htm" />
-  <HelpTOCNode Title="ResetLogViewer Method " Url="html/cf24abb5-6810-2c62-458b-afa10d7db9a5.htm" />
-  <HelpTOCNode Title="SetBuildState Method " Url="html/30b21f86-66e4-b4b3-3729-c4ef633d29fd.htm" />
-  <HelpTOCNode Title="UpdateSettings Method " Url="html/c2342a0f-d3d4-f3f7-8039-45f60de913ae.htm" />
-  <HelpTOCNode Title="ViewBuildOutput Method " Url="html/62886604-d154-4db0-46d1-419bee8ddaf3.htm" />
-  <HelpTOCNode Title="ViewLogFile Method " Url="html/ac415fa1-b7b1-142d-5edd-66daddef5124.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="OutputWindow Methods" Url="html/8c711e88-1c83-8363-da8d-407c4131b262.htm"><HelpTOCNode Title="AppendText Method " Url="html/e16e1750-4472-5277-46ca-510d7369b39e.htm" /><HelpTOCNode Title="Dispose Method " Url="html/332445ad-0b58-9374-48c0-d87d36a8e561.htm" HasChildren="true" /><HelpTOCNode Title="OnFormClosing Method " Url="html/c99961de-44e7-8fba-ab00-564ebfa17b64.htm" /><HelpTOCNode Title="OnVisibleChanged Method " Url="html/15bdde0c-422c-10bd-8f67-727a8ce7fe3b.htm" /><HelpTOCNode Title="ResetLogViewer Method " Url="html/cf24abb5-6810-2c62-458b-afa10d7db9a5.htm" /><HelpTOCNode Title="SetBuildState Method " Url="html/30b21f86-66e4-b4b3-3729-c4ef633d29fd.htm" /><HelpTOCNode Title="UpdateSettings Method " Url="html/c2342a0f-d3d4-f3f7-8039-45f60de913ae.htm" /><HelpTOCNode Title="ViewBuildOutput Method " Url="html/62886604-d154-4db0-46d1-419bee8ddaf3.htm" /><HelpTOCNode Title="ViewLogFile Method " Url="html/ac415fa1-b7b1-142d-5edd-66daddef5124.htm" /></HelpTOCNode>

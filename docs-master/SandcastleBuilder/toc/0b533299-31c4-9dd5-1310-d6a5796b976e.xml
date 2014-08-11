@@ -1,12 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="StatusBarTextProvider Methods" Url="html/0b533299-31c4-9dd5-1310-d6a5796b976e.htm">
-  <HelpTOCNode Title="CanExtend Method " Url="html/b02a935e-faa2-ff1d-091d-85a0de7f8d50.htm" />
-  <HelpTOCNode Title="Dispose Method " Url="html/19d4d5b9-4f47-cba3-169e-b12838409cb8.htm" HasChildren="true" />
-  <HelpTOCNode Title="GetShowAsBlank Method " Url="html/24f9ad2e-90ff-3b2c-f7a7-28292dfb9996.htm" />
-  <HelpTOCNode Title="GetStatusBarText Method " Url="html/7967a3c0-f920-f234-f57d-3314555d376e.htm" />
-  <HelpTOCNode Title="InitializeProgressBar Method " Url="html/f28f122e-c136-031a-ed86-98f935d81dfa.htm" HasChildren="true" />
-  <HelpTOCNode Title="ResetProgressBar Method " Url="html/8a40b587-2a3a-6b9b-8a3e-cb5300ea5c23.htm" HasChildren="true" />
-  <HelpTOCNode Title="SetShowAsBlank Method " Url="html/3160110e-660f-a75e-8c04-d6a79baca5bd.htm" />
-  <HelpTOCNode Title="SetStatusBarText Method " Url="html/d1efb581-5ecc-37b8-dd8f-aaab54c32db8.htm" />
-  <HelpTOCNode Title="UpdateProgress Method " Url="html/867e96bb-bc59-b5c6-1ca5-eb2e4d2dad74.htm" HasChildren="true" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="StatusBarTextProvider Methods" Url="html/0b533299-31c4-9dd5-1310-d6a5796b976e.htm"><HelpTOCNode Title="CanExtend Method " Url="html/b02a935e-faa2-ff1d-091d-85a0de7f8d50.htm" /><HelpTOCNode Title="Dispose Method " Url="html/19d4d5b9-4f47-cba3-169e-b12838409cb8.htm" HasChildren="true" /><HelpTOCNode Title="GetShowAsBlank Method " Url="html/24f9ad2e-90ff-3b2c-f7a7-28292dfb9996.htm" /><HelpTOCNode Title="GetStatusBarText Method " Url="html/7967a3c0-f920-f234-f57d-3314555d376e.htm" /><HelpTOCNode Title="InitializeProgressBar Method " Url="html/f28f122e-c136-031a-ed86-98f935d81dfa.htm" HasChildren="true" /><HelpTOCNode Title="ResetProgressBar Method " Url="html/8a40b587-2a3a-6b9b-8a3e-cb5300ea5c23.htm" HasChildren="true" /><HelpTOCNode Title="SetShowAsBlank Method " Url="html/3160110e-660f-a75e-8c04-d6a79baca5bd.htm" /><HelpTOCNode Title="SetStatusBarText Method " Url="html/d1efb581-5ecc-37b8-dd8f-aaab54c32db8.htm" /><HelpTOCNode Title="UpdateProgress Method " Url="html/867e96bb-bc59-b5c6-1ca5-eb2e4d2dad74.htm" HasChildren="true" /></HelpTOCNode>

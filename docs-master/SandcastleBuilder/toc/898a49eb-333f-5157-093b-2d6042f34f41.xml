@@ -1,11 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="FilePathUserControl Properties" Url="html/898a49eb-333f-5157-093b-2d6042f34f41.htm">
-  <HelpTOCNode Title="DefaultFolder Property " Url="html/c4516367-9669-8b49-16fe-13f43e8b6ce9.htm" />
-  <HelpTOCNode Title="File Property " Url="html/3a7c7369-17aa-27f9-6f8f-f4c16621e0e1.htm" />
-  <HelpTOCNode Title="Filter Property " Url="html/f0d474bb-a142-fbe4-db02-5d07e604a3ab.htm" />
-  <HelpTOCNode Title="IsFixedPath Property " Url="html/9fc44d95-b2ab-e015-66a6-0938b8e8e357.htm" />
-  <HelpTOCNode Title="PersistablePath Property " Url="html/5ab878ba-3b9d-8feb-19fc-9f2dc2ca6ca5.htm" />
-  <HelpTOCNode Title="ShowFixedPathOption Property " Url="html/ea591b65-efeb-5167-4d7c-60259b73de37.htm" />
-  <HelpTOCNode Title="Title Property " Url="html/1e79468e-4d68-7f57-f1f8-f95eb297ad25.htm" />
-  <HelpTOCNode Title="UseFileOpenDialog Property " Url="html/862c1d20-2fe1-156c-7696-d25639751f58.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="FilePathUserControl Properties" Url="html/898a49eb-333f-5157-093b-2d6042f34f41.htm"><HelpTOCNode Title="DefaultFolder Property " Url="html/c4516367-9669-8b49-16fe-13f43e8b6ce9.htm" /><HelpTOCNode Title="File Property " Url="html/3a7c7369-17aa-27f9-6f8f-f4c16621e0e1.htm" /><HelpTOCNode Title="Filter Property " Url="html/f0d474bb-a142-fbe4-db02-5d07e604a3ab.htm" /><HelpTOCNode Title="IsFixedPath Property " Url="html/9fc44d95-b2ab-e015-66a6-0938b8e8e357.htm" /><HelpTOCNode Title="PersistablePath Property " Url="html/5ab878ba-3b9d-8feb-19fc-9f2dc2ca6ca5.htm" /><HelpTOCNode Title="ShowFixedPathOption Property " Url="html/ea591b65-efeb-5167-4d7c-60259b73de37.htm" /><HelpTOCNode Title="Title Property " Url="html/1e79468e-4d68-7f57-f1f8-f95eb297ad25.htm" /><HelpTOCNode Title="UseFileOpenDialog Property " Url="html/862c1d20-2fe1-156c-7696-d25639751f58.htm" /></HelpTOCNode>

@@ -1,9 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="NamespaceSummaryItemCollection Methods" Url="html/5f050135-5188-1479-18c7-e495174fb6ff.htm">
-  <HelpTOCNode Title="Add Method " Url="html/dc4efe84-6ece-bde4-0c54-3cca5da1a115.htm" HasChildren="true" />
-  <HelpTOCNode Title="CreateTemporaryItem Method " Url="html/3b2828c2-8bbb-0657-c5a3-5d2e50ef053b.htm" />
-  <HelpTOCNode Title="FromXml Method " Url="html/bea62a02-466a-69c1-8b7b-6fefb72ce7fc.htm" />
-  <HelpTOCNode Title="OnListChanged Method " Url="html/f8ef4f94-d076-8738-877d-e762471250d8.htm" />
-  <HelpTOCNode Title="Sort Method " Url="html/44838fca-5cd3-7668-54fe-a9b4c3cd14e8.htm" />
-  <HelpTOCNode Title="ToXml Method " Url="html/2b417f17-29f4-4e17-2b4d-458ace83132c.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="NamespaceSummaryItemCollection Methods" Url="html/5f050135-5188-1479-18c7-e495174fb6ff.htm"><HelpTOCNode Title="Add Method " Url="html/dc4efe84-6ece-bde4-0c54-3cca5da1a115.htm" HasChildren="true" /><HelpTOCNode Title="CreateTemporaryItem Method " Url="html/3b2828c2-8bbb-0657-c5a3-5d2e50ef053b.htm" /><HelpTOCNode Title="FromXml Method " Url="html/bea62a02-466a-69c1-8b7b-6fefb72ce7fc.htm" /><HelpTOCNode Title="OnListChanged Method " Url="html/f8ef4f94-d076-8738-877d-e762471250d8.htm" /><HelpTOCNode Title="Sort Method " Url="html/44838fca-5cd3-7668-54fe-a9b4c3cd14e8.htm" /><HelpTOCNode Title="ToXml Method " Url="html/2b417f17-29f4-4e17-2b4d-458ace83132c.htm" /></HelpTOCNode>

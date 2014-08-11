@@ -1,8 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="DynamicReadOnlyPropertyDescriptor Methods" Url="html/b0fb3637-6014-ab21-3757-54a9fd752b6f.htm">
-  <HelpTOCNode Title="CanResetValue Method " Url="html/b1ce3399-198c-9934-c1eb-d3e59b3afb26.htm" />
-  <HelpTOCNode Title="GetValue Method " Url="html/16d261a2-b1b6-3825-09ec-7e592441eb67.htm" />
-  <HelpTOCNode Title="ResetValue Method " Url="html/cb38338c-c6c7-2fa8-8bd5-66acc4397ec1.htm" />
-  <HelpTOCNode Title="SetValue Method " Url="html/77804474-922e-f6ee-3e8f-3a78495c5874.htm" />
-  <HelpTOCNode Title="ShouldSerializeValue Method " Url="html/421da4d7-36be-a8f5-d168-97866bacc485.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="DynamicReadOnlyPropertyDescriptor Methods" Url="html/b0fb3637-6014-ab21-3757-54a9fd752b6f.htm"><HelpTOCNode Title="CanResetValue Method " Url="html/b1ce3399-198c-9934-c1eb-d3e59b3afb26.htm" /><HelpTOCNode Title="GetValue Method " Url="html/16d261a2-b1b6-3825-09ec-7e592441eb67.htm" /><HelpTOCNode Title="ResetValue Method " Url="html/cb38338c-c6c7-2fa8-8bd5-66acc4397ec1.htm" /><HelpTOCNode Title="SetValue Method " Url="html/77804474-922e-f6ee-3e8f-3a78495c5874.htm" /><HelpTOCNode Title="ShouldSerializeValue Method " Url="html/421da4d7-36be-a8f5-d168-97866bacc485.htm" /></HelpTOCNode>

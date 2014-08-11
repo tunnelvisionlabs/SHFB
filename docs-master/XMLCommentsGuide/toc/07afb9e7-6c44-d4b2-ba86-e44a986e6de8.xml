@@ -1,6 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="ExplicitImplementation Properties" Url="html/07afb9e7-6c44-d4b2-ba86-e44a986e6de8.htm">
-  <HelpTOCNode Title="ICollection.Count Property " Url="html/e833d80a-fb7b-36b1-7360-935a9f9047bf.htm" />
-  <HelpTOCNode Title="ICollection.IsSynchronized Property " Url="html/307aeec1-4dc1-1bd1-f7be-aeba52ab3970.htm" />
-  <HelpTOCNode Title="ICollection.SyncRoot Property " Url="html/6b11f0d3-3320-5f8f-4977-9b39ada5a272.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="ExplicitImplementation Properties" Url="html/07afb9e7-6c44-d4b2-ba86-e44a986e6de8.htm"><HelpTOCNode Title="ICollection.Count Property " Url="html/e833d80a-fb7b-36b1-7360-935a9f9047bf.htm" /><HelpTOCNode Title="ICollection.IsSynchronized Property " Url="html/307aeec1-4dc1-1bd1-f7be-aeba52ab3970.htm" /><HelpTOCNode Title="ICollection.SyncRoot Property " Url="html/6b11f0d3-3320-5f8f-4977-9b39ada5a272.htm" /></HelpTOCNode>

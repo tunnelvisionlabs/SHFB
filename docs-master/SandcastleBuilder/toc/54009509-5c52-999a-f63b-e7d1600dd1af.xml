@@ -1,11 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="StatusBarTextProvider Properties" Url="html/54009509-5c52-999a-f63b-e7d1600dd1af.htm">
-  <HelpTOCNode Title="ApplicationDefaultText Property " Url="html/2c88b0cd-276d-8164-c806-910e6235f9dc.htm" />
-  <HelpTOCNode Title="ApplicationDisplayPanel Property " Url="html/243450f3-1782-583a-61f9-7e3897cf6a6c.htm" />
-  <HelpTOCNode Title="ApplicationStatusBar Property " Url="html/d222ef27-cbbd-cf1d-a074-643318250d19.htm" />
-  <HelpTOCNode Title="InstanceDefaultText Property " Url="html/aff5163b-3f76-c12e-d58c-b4366ef9a3ca.htm" />
-  <HelpTOCNode Title="InstanceDisplayPanel Property " Url="html/41e12a4d-346a-65c4-5884-3814bfdd0306.htm" />
-  <HelpTOCNode Title="InstanceStatusBar Property " Url="html/e4cfd5d6-faa5-37b4-f499-3b69599ac82c.htm" />
-  <HelpTOCNode Title="ProgressBar Property " Url="html/75923f4c-5acc-5620-6411-72f4d9a90fe2.htm" />
-  <HelpTOCNode Title="StatusLabel Property " Url="html/c8ca75eb-0a32-1237-044d-6f76ee0228f2.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="StatusBarTextProvider Properties" Url="html/54009509-5c52-999a-f63b-e7d1600dd1af.htm"><HelpTOCNode Title="ApplicationDefaultText Property " Url="html/2c88b0cd-276d-8164-c806-910e6235f9dc.htm" /><HelpTOCNode Title="ApplicationDisplayPanel Property " Url="html/243450f3-1782-583a-61f9-7e3897cf6a6c.htm" /><HelpTOCNode Title="ApplicationStatusBar Property " Url="html/d222ef27-cbbd-cf1d-a074-643318250d19.htm" /><HelpTOCNode Title="InstanceDefaultText Property " Url="html/aff5163b-3f76-c12e-d58c-b4366ef9a3ca.htm" /><HelpTOCNode Title="InstanceDisplayPanel Property " Url="html/41e12a4d-346a-65c4-5884-3814bfdd0306.htm" /><HelpTOCNode Title="InstanceStatusBar Property " Url="html/e4cfd5d6-faa5-37b4-f499-3b69599ac82c.htm" /><HelpTOCNode Title="ProgressBar Property " Url="html/75923f4c-5acc-5620-6411-72f4d9a90fe2.htm" /><HelpTOCNode Title="StatusLabel Property " Url="html/c8ca75eb-0a32-1237-044d-6f76ee0228f2.htm" /></HelpTOCNode>

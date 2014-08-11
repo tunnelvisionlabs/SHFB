@@ -1,9 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="HelpFileBuilderPlugInExportAttribute Properties" Url="html/8b3abf9d-3f43-aefd-e626-63c06381f550.htm">
-  <HelpTOCNode Title="Copyright Property " Url="html/f2319435-d3e7-434d-35f7-9b7db46e1498.htm" />
-  <HelpTOCNode Title="Description Property " Url="html/e7b74aa8-63cf-8015-7204-16eef7fc32d4.htm" />
-  <HelpTOCNode Title="Id Property " Url="html/7dfd8250-0cae-f936-a2fe-60538df018ca.htm" />
-  <HelpTOCNode Title="IsConfigurable Property " Url="html/2d9ba88b-b6a1-5d9e-f4d1-aa78d2801291.htm" />
-  <HelpTOCNode Title="RunsInPartialBuild Property " Url="html/99e24fe2-dedd-0b08-5f86-a517d9b36f90.htm" />
-  <HelpTOCNode Title="Version Property " Url="html/f564451c-714f-46f7-f6a8-9bdfb6d26658.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="HelpFileBuilderPlugInExportAttribute Properties" Url="html/8b3abf9d-3f43-aefd-e626-63c06381f550.htm"><HelpTOCNode Title="Copyright Property " Url="html/f2319435-d3e7-434d-35f7-9b7db46e1498.htm" /><HelpTOCNode Title="Description Property " Url="html/e7b74aa8-63cf-8015-7204-16eef7fc32d4.htm" /><HelpTOCNode Title="Id Property " Url="html/7dfd8250-0cae-f936-a2fe-60538df018ca.htm" /><HelpTOCNode Title="IsConfigurable Property " Url="html/2d9ba88b-b6a1-5d9e-f4d1-aa78d2801291.htm" /><HelpTOCNode Title="IsHidden Property " Url="html/74f07aa2-10b5-2603-dcf6-e2da7742dd56.htm" /><HelpTOCNode Title="RunsInPartialBuild Property " Url="html/99e24fe2-dedd-0b08-5f86-a517d9b36f90.htm" /><HelpTOCNode Title="Version Property " Url="html/f564451c-714f-46f7-f6a8-9bdfb6d26658.htm" /></HelpTOCNode>

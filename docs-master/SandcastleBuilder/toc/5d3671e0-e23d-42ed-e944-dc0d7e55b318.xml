@@ -1,11 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="ESentTargetDictionary Methods" Url="html/5d3671e0-e23d-42ed-e944-dc0d7e55b318.htm">
-  <HelpTOCNode Title="Add Method " Url="html/bbcccf55-6203-081d-ac9a-ca429e005d17.htm" HasChildren="true" />
-  <HelpTOCNode Title="Clear Method " Url="html/6f9d6108-4374-0c69-74b4-b4dbcbd64ed7.htm" />
-  <HelpTOCNode Title="Contains Method " Url="html/e21f98ac-2c3f-df9b-06f5-6409eb53536b.htm" />
-  <HelpTOCNode Title="ContainsKey Method " Url="html/97aa487b-0820-9cc2-1d6a-98ea130c26f8.htm" />
-  <HelpTOCNode Title="CopyTo Method " Url="html/fcc22cbf-792f-2bef-503e-3bca2a1bdf03.htm" />
-  <HelpTOCNode Title="GetEnumerator Method " Url="html/036c2f0e-06c8-f55f-4dde-825391936dcf.htm" />
-  <HelpTOCNode Title="ReportCacheStatistics Method " Url="html/665afb84-2a13-0627-448e-affcc881e2f2.htm" />
-  <HelpTOCNode Title="TryGetValue Method " Url="html/6cb52984-8ce6-1a06-27d7-2676d1f12a9b.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="ESentTargetDictionary Methods" Url="html/5d3671e0-e23d-42ed-e944-dc0d7e55b318.htm"><HelpTOCNode Title="Add Method " Url="html/bbcccf55-6203-081d-ac9a-ca429e005d17.htm" HasChildren="true" /><HelpTOCNode Title="Clear Method " Url="html/6f9d6108-4374-0c69-74b4-b4dbcbd64ed7.htm" /><HelpTOCNode Title="Contains Method " Url="html/e21f98ac-2c3f-df9b-06f5-6409eb53536b.htm" /><HelpTOCNode Title="ContainsKey Method " Url="html/97aa487b-0820-9cc2-1d6a-98ea130c26f8.htm" /><HelpTOCNode Title="CopyTo Method " Url="html/fcc22cbf-792f-2bef-503e-3bca2a1bdf03.htm" /><HelpTOCNode Title="GetEnumerator Method " Url="html/036c2f0e-06c8-f55f-4dde-825391936dcf.htm" /><HelpTOCNode Title="ReportCacheStatistics Method " Url="html/665afb84-2a13-0627-448e-affcc881e2f2.htm" /><HelpTOCNode Title="TryGetValue Method " Url="html/6cb52984-8ce6-1a06-27d7-2676d1f12a9b.htm" /></HelpTOCNode>

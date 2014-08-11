@@ -1,9 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="ProjectElement Methods" Url="html/a875770e-07ff-d4bd-943a-acd57717e697.htm">
-  <HelpTOCNode Title="Equals Method " Url="html/6491cfe3-c62e-e6ad-14f3-6c653cbe63f2.htm" />
-  <HelpTOCNode Title="GetHashCode Method " Url="html/372e34c4-d718-6a6e-347d-a741204152a2.htm" />
-  <HelpTOCNode Title="GetMetadata Method " Url="html/6405fb7a-9f17-3304-d7fb-b07b3057ff24.htm" />
-  <HelpTOCNode Title="HasMetadata Method " Url="html/b1583316-4629-a98c-34aa-f373834dd628.htm" />
-  <HelpTOCNode Title="RemoveFromProjectFile Method " Url="html/543e00a2-6275-581c-b5eb-a06fe33d5fed.htm" />
-  <HelpTOCNode Title="SetMetadata Method " Url="html/58f9216a-3bea-0929-2da6-bddcba9774b5.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="ProjectElement Methods" Url="html/a875770e-07ff-d4bd-943a-acd57717e697.htm"><HelpTOCNode Title="Equals Method " Url="html/6491cfe3-c62e-e6ad-14f3-6c653cbe63f2.htm" /><HelpTOCNode Title="GetHashCode Method " Url="html/372e34c4-d718-6a6e-347d-a741204152a2.htm" /><HelpTOCNode Title="GetMetadata Method " Url="html/6405fb7a-9f17-3304-d7fb-b07b3057ff24.htm" /><HelpTOCNode Title="HasMetadata Method " Url="html/b1583316-4629-a98c-34aa-f373834dd628.htm" /><HelpTOCNode Title="RemoveFromProjectFile Method " Url="html/543e00a2-6275-581c-b5eb-a06fe33d5fed.htm" /><HelpTOCNode Title="SetMetadata Method " Url="html/58f9216a-3bea-0929-2da6-bddcba9774b5.htm" /></HelpTOCNode>

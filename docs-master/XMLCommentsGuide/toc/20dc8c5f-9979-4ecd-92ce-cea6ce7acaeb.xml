@@ -1,16 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="Section Elements" Url="html/20dc8c5f-9979-4ecd-92ce-cea6ce7acaeb.htm">
-  <HelpTOCNode Title="event" Url="html/81bf7ad3-45dc-452f-90d5-87ce2494a182.htm" />
-  <HelpTOCNode Title="example" Url="html/1bef716a-235b-4d96-a23e-f43b8dcf9abd.htm" />
-  <HelpTOCNode Title="exception" Url="html/bbd1e65d-c87c-4b46-9a1a-259d3c5cd936.htm" />
-  <HelpTOCNode Title="param" Url="html/e54dcff7-f8f3-4a11-9d17-1cf7decd880e.htm" />
-  <HelpTOCNode Title="permission" Url="html/4af64f3f-a9a3-42d7-a95c-bc0a40951286.htm" />
-  <HelpTOCNode Title="preliminary" Url="html/c16bece7-694e-48ca-802d-cf3ae9205c55.htm" />
-  <HelpTOCNode Title="remarks" Url="html/3671b61e-0695-4f0f-bcb5-7cf9108dd642.htm" />
-  <HelpTOCNode Title="returns" Url="html/fa97c10b-a683-4d10-a01c-5787dbdd42d3.htm" />
-  <HelpTOCNode Title="seealso" Url="html/16cdb957-a35b-4c17-bf5e-ea511b0218e3.htm" />
-  <HelpTOCNode Title="summary" Url="html/c3743eaf-9ef2-4d35-8f59-876f1e48a6a8.htm" />
-  <HelpTOCNode Title="threadsafety" Url="html/fb4625cb-52d0-428e-9c7c-7a0d88e1b692.htm" />
-  <HelpTOCNode Title="typeparam" Url="html/163cae15-9020-4095-9b9c-da134b5b496c.htm" />
-  <HelpTOCNode Title="value" Url="html/f512d714-e100-4296-916c-99a46e572e9d.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="Section Elements" Url="html/20dc8c5f-9979-4ecd-92ce-cea6ce7acaeb.htm"><HelpTOCNode Title="event" Url="html/81bf7ad3-45dc-452f-90d5-87ce2494a182.htm" /><HelpTOCNode Title="example" Url="html/1bef716a-235b-4d96-a23e-f43b8dcf9abd.htm" /><HelpTOCNode Title="exception" Url="html/bbd1e65d-c87c-4b46-9a1a-259d3c5cd936.htm" /><HelpTOCNode Title="param" Url="html/e54dcff7-f8f3-4a11-9d17-1cf7decd880e.htm" /><HelpTOCNode Title="permission" Url="html/4af64f3f-a9a3-42d7-a95c-bc0a40951286.htm" /><HelpTOCNode Title="preliminary" Url="html/c16bece7-694e-48ca-802d-cf3ae9205c55.htm" /><HelpTOCNode Title="remarks" Url="html/3671b61e-0695-4f0f-bcb5-7cf9108dd642.htm" /><HelpTOCNode Title="returns" Url="html/fa97c10b-a683-4d10-a01c-5787dbdd42d3.htm" /><HelpTOCNode Title="revisionHistory" Url="html/2a973959-9c9a-4b3b-abcb-48bb30382400.htm" /><HelpTOCNode Title="seealso" Url="html/16cdb957-a35b-4c17-bf5e-ea511b0218e3.htm" /><HelpTOCNode Title="summary" Url="html/c3743eaf-9ef2-4d35-8f59-876f1e48a6a8.htm" /><HelpTOCNode Title="threadsafety" Url="html/fb4625cb-52d0-428e-9c7c-7a0d88e1b692.htm" /><HelpTOCNode Title="typeparam" Url="html/163cae15-9020-4095-9b9c-da134b5b496c.htm" /><HelpTOCNode Title="value" Url="html/f512d714-e100-4296-916c-99a46e572e9d.htm" /></HelpTOCNode>

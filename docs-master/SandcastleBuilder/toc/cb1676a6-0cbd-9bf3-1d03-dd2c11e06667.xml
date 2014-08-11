@@ -1,8 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="Build1xHelpFile Methods" Url="html/cb1676a6-0cbd-9bf3-1d03-dd2c11e06667.htm">
-  <HelpTOCNode Title="Execute Method " Url="html/79eed1e1-90d0-a593-8e3e-63ecafb88310.htm" />
-  <HelpTOCNode Title="GenerateCommandLineCommands Method " Url="html/1f86f0b6-4ed2-56f9-2e83-148a3b51fa23.htm" />
-  <HelpTOCNode Title="GenerateFullPathToTool Method " Url="html/f1159b28-8c30-4648-e956-b9b0fe355f16.htm" />
-  <HelpTOCNode Title="HandleTaskExecutionErrors Method " Url="html/9b39fe0f-a373-ca65-080f-e2bddfb2c74e.htm" />
-  <HelpTOCNode Title="ValidateParameters Method " Url="html/df3bd7b4-cc15-e7d4-a65d-4d950a96a65d.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="Build1xHelpFile Methods" Url="html/cb1676a6-0cbd-9bf3-1d03-dd2c11e06667.htm"><HelpTOCNode Title="Execute Method " Url="html/79eed1e1-90d0-a593-8e3e-63ecafb88310.htm" /><HelpTOCNode Title="GenerateCommandLineCommands Method " Url="html/1f86f0b6-4ed2-56f9-2e83-148a3b51fa23.htm" /><HelpTOCNode Title="GenerateFullPathToTool Method " Url="html/f1159b28-8c30-4648-e956-b9b0fe355f16.htm" /><HelpTOCNode Title="HandleTaskExecutionErrors Method " Url="html/9b39fe0f-a373-ca65-080f-e2bddfb2c74e.htm" /><HelpTOCNode Title="ValidateParameters Method " Url="html/df3bd7b4-cc15-e7d4-a65d-4d950a96a65d.htm" /></HelpTOCNode>

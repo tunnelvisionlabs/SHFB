@@ -1,12 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="HtmlToMamlConversion" Url="html/29716bff-61e2-a20a-873a-1ddd0b165993.htm">
-  <HelpTOCNode Title="ConversionProgressEventArgs Class" Url="html/ae875afc-3fcd-57c2-3f5a-da5d3ca0ebf6.htm" HasChildren="true" />
-  <HelpTOCNode Title="ConvertHtmlToMaml Class" Url="html/bfac4855-e05f-6ac0-5687-00c44f4558c7.htm" HasChildren="true" />
-  <HelpTOCNode Title="FileParser Class" Url="html/af412052-b751-6224-cb01-c9a207cf75cf.htm" HasChildren="true" />
-  <HelpTOCNode Title="HtmlToMaml Class" Url="html/a01c382e-2031-6a02-45cb-79ddf8cb8ed9.htm" HasChildren="true" />
-  <HelpTOCNode Title="ImageReference Class" Url="html/3a087036-29b9-61c9-73a2-1f638a026053.htm" HasChildren="true" />
-  <HelpTOCNode Title="ImageReferenceCollection Class" Url="html/d212ecc8-e261-3877-75c6-9536dfe5403e.htm" HasChildren="true" />
-  <HelpTOCNode Title="TagOptions Class" Url="html/5965ca1c-6428-ac4e-5d9c-e80b297057b6.htm" HasChildren="true" />
-  <HelpTOCNode Title="Topic Class" Url="html/892644dd-7a45-00ee-71ef-e4b7e2cb5555.htm" HasChildren="true" />
-  <HelpTOCNode Title="TopicCollection Class" Url="html/4dea1b3f-f33a-26c7-5b37-d0d975061e03.htm" HasChildren="true" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="HtmlToMamlConversion" Url="html/29716bff-61e2-a20a-873a-1ddd0b165993.htm"><HelpTOCNode Title="ConversionProgressEventArgs Class" Url="html/ae875afc-3fcd-57c2-3f5a-da5d3ca0ebf6.htm" HasChildren="true" /><HelpTOCNode Title="ConvertHtmlToMaml Class" Url="html/bfac4855-e05f-6ac0-5687-00c44f4558c7.htm" HasChildren="true" /><HelpTOCNode Title="FileParser Class" Url="html/af412052-b751-6224-cb01-c9a207cf75cf.htm" HasChildren="true" /><HelpTOCNode Title="HtmlToMaml Class" Url="html/a01c382e-2031-6a02-45cb-79ddf8cb8ed9.htm" HasChildren="true" /><HelpTOCNode Title="ImageReference Class" Url="html/3a087036-29b9-61c9-73a2-1f638a026053.htm" HasChildren="true" /><HelpTOCNode Title="ImageReferenceCollection Class" Url="html/d212ecc8-e261-3877-75c6-9536dfe5403e.htm" HasChildren="true" /><HelpTOCNode Title="TagOptions Class" Url="html/5965ca1c-6428-ac4e-5d9c-e80b297057b6.htm" HasChildren="true" /><HelpTOCNode Title="Topic Class" Url="html/892644dd-7a45-00ee-71ef-e4b7e2cb5555.htm" HasChildren="true" /><HelpTOCNode Title="TopicCollection Class" Url="html/4dea1b3f-f33a-26c7-5b37-d0d975061e03.htm" HasChildren="true" /></HelpTOCNode>

@@ -1,11 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="SandcastleBuilder.Utils.Conversion" Url="html/82a57513-1170-8987-483e-6d14a1b20bbf.htm">
-  <HelpTOCNode Title="ConvertConceptualContent Class" Url="html/92a747af-7514-4b6d-171b-b377075b0757.htm" HasChildren="true" />
-  <HelpTOCNode Title="ConvertFromDocProject Class" Url="html/fe33ce22-dcb0-d676-e05a-5580ffc1a1d6.htm" HasChildren="true" />
-  <HelpTOCNode Title="ConvertFromMSExampleGui Class" Url="html/1666c5ca-9477-2c21-c0ee-89298089d9d4.htm" HasChildren="true" />
-  <HelpTOCNode Title="ConvertFromNDoc Class" Url="html/574b20de-400b-4fb1-e69c-a0dba43a57d2.htm" HasChildren="true" />
-  <HelpTOCNode Title="ConvertFromSandcastleGui Class" Url="html/9e4b7318-9fc4-2a22-cea6-a3591ed5582d.htm" HasChildren="true" />
-  <HelpTOCNode Title="ConvertFromShfbFile Class" Url="html/085059cd-9035-143c-aaf6-6af3e2de689d.htm" HasChildren="true" />
-  <HelpTOCNode Title="ConvertToMSBuildFormat Class" Url="html/33ff2afe-36ea-7236-949e-763750cc9f3a.htm" HasChildren="true" />
-  <HelpTOCNode Title="NewFromOtherFormatDlg Class" Url="html/feffffcf-13b3-d08f-c7e7-7874e40db1e3.htm" HasChildren="true" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="SandcastleBuilder.Utils.Conversion" Url="html/82a57513-1170-8987-483e-6d14a1b20bbf.htm"><HelpTOCNode Title="ConvertConceptualContent Class" Url="html/92a747af-7514-4b6d-171b-b377075b0757.htm" HasChildren="true" /><HelpTOCNode Title="ConvertFromDocProject Class" Url="html/fe33ce22-dcb0-d676-e05a-5580ffc1a1d6.htm" HasChildren="true" /><HelpTOCNode Title="ConvertFromMSExampleGui Class" Url="html/1666c5ca-9477-2c21-c0ee-89298089d9d4.htm" HasChildren="true" /><HelpTOCNode Title="ConvertFromNDoc Class" Url="html/574b20de-400b-4fb1-e69c-a0dba43a57d2.htm" HasChildren="true" /><HelpTOCNode Title="ConvertFromSandcastleGui Class" Url="html/9e4b7318-9fc4-2a22-cea6-a3591ed5582d.htm" HasChildren="true" /><HelpTOCNode Title="ConvertFromShfbFile Class" Url="html/085059cd-9035-143c-aaf6-6af3e2de689d.htm" HasChildren="true" /><HelpTOCNode Title="ConvertToMSBuildFormat Class" Url="html/33ff2afe-36ea-7236-949e-763750cc9f3a.htm" HasChildren="true" /><HelpTOCNode Title="NewFromOtherFormatDlg Class" Url="html/feffffcf-13b3-d08f-c7e7-7874e40db1e3.htm" HasChildren="true" /></HelpTOCNode>

@@ -75,6 +75,7 @@
     <HelpKINode Title="section" Url="html/20dc8c5f-9979-4ecd-92ce-cea6ce7acaeb.htm" />
   </HelpKINode>
   <HelpKINode Title="enable XML comments" Url="html/57C91630-95D6-4E3E-AF24-3415CC569AC8.htm" />
+  <HelpKINode Title="ExampleMethod method" Url="html/8d9ecef2-8a95-3ba1-afde-f773154a610e.htm" />
   <HelpKINode Title="ExceptWith method" Url="html/48674f89-86fc-f603-57bf-42b7d2cdff0a.htm" />
   <HelpKINode Title="ExplicitImplementation class">
     <HelpKINode Title="ExplicitImplementation Class" Url="html/0e43b39e-89ee-9bbe-137b-6463720584bc.htm" />
@@ -211,6 +212,17 @@
   <HelpKINode Title="Property property" Url="html/c76f72f0-2c7c-64f8-8b11-269c365e6d92.htm" />
   <HelpKINode Title="Remove method" Url="html/54b00207-3746-b9c2-8f60-f56fcd56b1f3.htm" />
   <HelpKINode Title="RemoveItemActivateHandler method" Url="html/de0032e0-f269-4c06-8250-00a757bac060.htm" />
+  <HelpKINode Title="Revision property" Url="html/e9694b66-33be-315f-301a-c22d9723b5bf.htm" />
+  <HelpKINode Title="RevisionHistoryClass class">
+    <HelpKINode Title="RevisionHistoryClass Class" Url="html/a079a764-51d5-1e86-2ccf-a34eaae47146.htm" />
+    <HelpKINode Title="about RevisionHistoryClass class" Url="html/a079a764-51d5-1e86-2ccf-a34eaae47146.htm" />
+    <HelpKINode Title="constructor" Url="html/b6190381-3c94-de0c-3751-d5c550df6b2c.htm" />
+    <HelpKINode Title="methods" Url="html/218c8baa-3893-4174-3645-db61233aa542.htm" />
+    <HelpKINode Title="properties" Url="html/1124d58f-d601-3d5a-e909-0ca05b7a12d3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RevisionHistoryClass.ExampleMethod method" Url="html/8d9ecef2-8a95-3ba1-afde-f773154a610e.htm" />
+  <HelpKINode Title="RevisionHistoryClass.Revision property" Url="html/e9694b66-33be-315f-301a-c22d9723b5bf.htm" />
+  <HelpKINode Title="RevisionHistoryClass.RevisionHistoryClass constructor" Url="html/b6190381-3c94-de0c-3751-d5c550df6b2c.htm" />
   <HelpKINode Title="SampleClass class">
     <HelpKINode Title="SampleClass Class" Url="html/8a5ce79b-985f-f8d4-1ced-9730efb357f3.htm" />
     <HelpKINode Title="about SampleClass class" Url="html/8a5ce79b-985f-f8d4-1ced-9730efb357f3.htm" />
@@ -256,6 +268,7 @@
     <HelpKINode Title="preliminary" Url="html/c16bece7-694e-48ca-802d-cf3ae9205c55.htm" />
     <HelpKINode Title="remarks" Url="html/3671b61e-0695-4f0f-bcb5-7cf9108dd642.htm" />
     <HelpKINode Title="returns" Url="html/fa97c10b-a683-4d10-a01c-5787dbdd42d3.htm" />
+    <HelpKINode Title="revisionHistory" Url="html/2a973959-9c9a-4b3b-abcb-48bb30382400.htm" />
     <HelpKINode Title="seealso" Url="html/16cdb957-a35b-4c17-bf5e-ea511b0218e3.htm" />
     <HelpKINode Title="summary" Url="html/c3743eaf-9ef2-4d35-8f59-876f1e48a6a8.htm" />
     <HelpKINode Title="threadsafety" Url="html/fb4625cb-52d0-428e-9c7c-7a0d88e1b692.htm" />
@@ -327,6 +340,7 @@
   <HelpKINode Title="versions">
     <HelpKINode Title="1.0.0.0" Url="html/40c5a184-aae2-4296-bc55-949e65e9909a.htm" />
     <HelpKINode Title="2014.1.26.0" Url="html/a5108a60-fdf8-412a-bd74-c182cd2832ec.htm" />
+    <HelpKINode Title="2014.5.31.0" Url="html/2be51e6c-c457-44ee-9031-b0b0c1d03e6b.htm" />
   </HelpKINode>
   <HelpKINode Title="Visual Studio" Url="html/57C91630-95D6-4E3E-AF24-3415CC569AC8.htm" />
   <HelpKINode Title="Visual Studio projects" Url="html/57C91630-95D6-4E3E-AF24-3415CC569AC8.htm" />
@@ -342,6 +356,7 @@
   <HelpKINode Title="XMLCommentsExamples.DocumentationInheritance.SetDocumentation structure" Url="html/49e90f9d-a7b0-be7d-d4a5-f16724f15a14.htm" />
   <HelpKINode Title="XMLCommentsExamples.GenericClass(Of T1, T2) class" Url="html/5dc0b9d5-2981-38a3-3b68-5af49ae1325e.htm" />
   <HelpKINode Title="XMLCommentsExamples.GenericClass&lt;T1, T2&gt; class" Url="html/5dc0b9d5-2981-38a3-3b68-5af49ae1325e.htm" />
+  <HelpKINode Title="XMLCommentsExamples.RevisionHistoryClass class" Url="html/a079a764-51d5-1e86-2ccf-a34eaae47146.htm" />
   <HelpKINode Title="XMLCommentsExamples.SampleClass class" Url="html/8a5ce79b-985f-f8d4-1ced-9730efb357f3.htm" />
   <HelpKINode Title="XMLCommentsExamples.ThreadSafetyClass class" Url="html/21bb248b-45a6-5daf-6080-5f402cc1ff3e.htm" />
 </HelpKI>

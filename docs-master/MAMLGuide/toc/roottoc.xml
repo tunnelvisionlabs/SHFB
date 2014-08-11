@@ -1,18 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOC>
-  <HelpTOCNode Title="Welcome" Url="html/303c996a-2911-4c08-b492-6496c82b3edb.htm" />
-  <HelpTOCNode Title="License Agreement" Url="html/aa8250ea-dfe4-46c0-b2eb-b4e975f0db1e.htm" />
-  <HelpTOCNode Title="Known Issues and Bugs" Url="html/b00070c7-9c5e-4b49-ad5c-f55fa866f062.htm" />
-  <HelpTOCNode Title="Conceptual Content File Types" Url="html/86752a38-eba3-4174-bcbf-79ec8428ecf9.htm" HasChildren="true" />
-  <HelpTOCNode Title="Block Elements" Url="html/b32a73b8-fc26-4c98-912c-d595fc1a17c2.htm" HasChildren="true" />
-  <HelpTOCNode Title="Common Inline Elements" Url="html/b96d95c0-ec3c-4846-998a-4b43548bfa0e.htm" HasChildren="true" />
-  <HelpTOCNode Title="Media Elements" Url="html/ba6a58eb-3301-4397-8ac5-d174d6dff755.htm" HasChildren="true" />
-  <HelpTOCNode Title="Link Elements" Url="html/3be5c58d-d6af-45a4-ac51-f219a75c4c4d.htm" HasChildren="true" />
-  <HelpTOCNode Title="Miscellaneous Elements" Url="html/9d0dc122-7829-4b22-af2e-6685867116f8.htm" HasChildren="true" />
-  <HelpTOCNode Title="Visual Studio IntelliSense" Url="html/746fc19e-2670-440b-8277-a1ef7dc074d5.htm" />
-  <HelpTOCNode Title="Schema Extensibility" Url="html/53e9f04f-fbc4-480d-9653-1547046526f1.htm" />
-  <HelpTOCNode Title="Links to Resources" Url="html/dc4fcc96-283e-4202-9ecc-08a65e0c9313.htm" />
-  <HelpTOCNode Title="Making a Donation" Url="html/847c2d90-c877-4369-a3ab-f7373b6547df.htm" />
-  <HelpTOCNode Title="Version History" Url="html/ba47a67c-4825-4fcd-b806-2b2e02d4373a.htm" HasChildren="true" />
-  <HelpTOCNode Title="Glossary" Url="html/66bf98c7-7179-4940-8767-7085052f2f53.htm" />
-</HelpTOC>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOC><HelpTOCNode Title="Welcome" Url="html/303c996a-2911-4c08-b492-6496c82b3edb.htm" /><HelpTOCNode Title="License Agreement" Url="html/aa8250ea-dfe4-46c0-b2eb-b4e975f0db1e.htm" /><HelpTOCNode Title="Known Issues and Bugs" Url="html/b00070c7-9c5e-4b49-ad5c-f55fa866f062.htm" /><HelpTOCNode Title="Conceptual Content File Types" Url="html/86752a38-eba3-4174-bcbf-79ec8428ecf9.htm" HasChildren="true" /><HelpTOCNode Title="Block Elements" Url="html/b32a73b8-fc26-4c98-912c-d595fc1a17c2.htm" HasChildren="true" /><HelpTOCNode Title="Common Inline Elements" Url="html/b96d95c0-ec3c-4846-998a-4b43548bfa0e.htm" HasChildren="true" /><HelpTOCNode Title="Media Elements" Url="html/ba6a58eb-3301-4397-8ac5-d174d6dff755.htm" HasChildren="true" /><HelpTOCNode Title="Link Elements" Url="html/3be5c58d-d6af-45a4-ac51-f219a75c4c4d.htm" HasChildren="true" /><HelpTOCNode Title="Miscellaneous Elements" Url="html/9d0dc122-7829-4b22-af2e-6685867116f8.htm" HasChildren="true" /><HelpTOCNode Title="Visual Studio IntelliSense" Url="html/746fc19e-2670-440b-8277-a1ef7dc074d5.htm" /><HelpTOCNode Title="Schema Extensibility" Url="html/53e9f04f-fbc4-480d-9653-1547046526f1.htm" /><HelpTOCNode Title="Links to Resources" Url="html/dc4fcc96-283e-4202-9ecc-08a65e0c9313.htm" /><HelpTOCNode Title="Making a Donation" Url="html/847c2d90-c877-4369-a3ab-f7373b6547df.htm" /><HelpTOCNode Title="Version History" Url="html/ba47a67c-4825-4fcd-b806-2b2e02d4373a.htm" HasChildren="true" /><HelpTOCNode Title="Glossary" Url="html/66bf98c7-7179-4940-8767-7085052f2f53.htm" /></HelpTOC>

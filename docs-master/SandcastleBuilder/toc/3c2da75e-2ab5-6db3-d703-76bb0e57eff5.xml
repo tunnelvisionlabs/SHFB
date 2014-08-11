@@ -1,10 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="ControlExtensions Methods" Url="html/3c2da75e-2ab5-6db3-d703-76bb0e57eff5.htm">
-  <HelpTOCNode Title="AutoScrollIfNeeded Method " Url="html/6ff3a7be-2efb-eb32-18be-7806c217b429.htm" />
-  <HelpTOCNode Title="AutoSizeTableColumns Method " Url="html/fa2aefc0-4971-d508-49c1-9968d082f513.htm" />
-  <HelpTOCNode Title="CommitChanges Method " Url="html/b367b466-4855-1913-acb8-27d2a042741f.htm" />
-  <HelpTOCNode Title="Find(T) Method " Url="html/889eedb2-8ed8-8542-376e-40122409b5d7.htm" />
-  <HelpTOCNode Title="FindByName Method " Url="html/d3218ef8-30df-65e5-4ff9-11861bbb9136.htm" />
-  <HelpTOCNode Title="Flatten Method " Url="html/6fd4ca56-0fdc-94d9-5793-4ee3b34aaba6.htm" />
-  <HelpTOCNode Title="ParentElementOfType(T) Method " Url="html/ed963e74-25d1-b06c-d9fc-a43ad4ea2dc9.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="ControlExtensions Methods" Url="html/3c2da75e-2ab5-6db3-d703-76bb0e57eff5.htm"><HelpTOCNode Title="AutoScrollIfNeeded Method " Url="html/6ff3a7be-2efb-eb32-18be-7806c217b429.htm" /><HelpTOCNode Title="AutoSizeTableColumns Method " Url="html/fa2aefc0-4971-d508-49c1-9968d082f513.htm" /><HelpTOCNode Title="CommitChanges Method " Url="html/b367b466-4855-1913-acb8-27d2a042741f.htm" /><HelpTOCNode Title="Find(T) Method " Url="html/889eedb2-8ed8-8542-376e-40122409b5d7.htm" /><HelpTOCNode Title="FindByName Method " Url="html/d3218ef8-30df-65e5-4ff9-11861bbb9136.htm" /><HelpTOCNode Title="Flatten Method " Url="html/6fd4ca56-0fdc-94d9-5793-4ee3b34aaba6.htm" /><HelpTOCNode Title="ParentElementOfType(T) Method " Url="html/ed963e74-25d1-b06c-d9fc-a43ad4ea2dc9.htm" /></HelpTOCNode>

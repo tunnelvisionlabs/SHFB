@@ -1,7 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="SqlResolveReferenceLinksComponent Methods" Url="html/a2adc5ad-e2d2-850b-80a4-4d92a953f0e7.htm">
-  <HelpTOCNode Title="CreateMsdnResolver Method " Url="html/74923b97-900e-1ba6-bc2d-ae4c25e31110.htm" />
-  <HelpTOCNode Title="CreateTargetDictionary Method " Url="html/93233a65-61e6-2455-2629-e72716c2347d.htm" />
-  <HelpTOCNode Title="Initialize Method " Url="html/71e9426a-1cf6-f4c6-20ad-85ad9f519505.htm" />
-  <HelpTOCNode Title="UpdateMsdnContentIdCache Method " Url="html/f89ffad8-31be-c104-7d0f-13c79e9cf411.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="SqlResolveReferenceLinksComponent Methods" Url="html/a2adc5ad-e2d2-850b-80a4-4d92a953f0e7.htm"><HelpTOCNode Title="CreateMsdnResolver Method " Url="html/74923b97-900e-1ba6-bc2d-ae4c25e31110.htm" /><HelpTOCNode Title="CreateTargetDictionary Method " Url="html/93233a65-61e6-2455-2629-e72716c2347d.htm" /><HelpTOCNode Title="Initialize Method " Url="html/71e9426a-1cf6-f4c6-20ad-85ad9f519505.htm" /><HelpTOCNode Title="UpdateMsdnContentIdCache Method " Url="html/f89ffad8-31be-c104-7d0f-13c79e9cf411.htm" /></HelpTOCNode>

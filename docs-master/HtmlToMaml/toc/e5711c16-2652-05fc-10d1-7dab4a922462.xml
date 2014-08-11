@@ -1,15 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="FileParser Properties" Url="html/e5711c16-2652-05fc-10d1-7dab4a922462.htm">
-  <HelpTOCNode Title="Body Property " Url="html/2bd15e5e-45df-2c0a-422d-9a89b097c4ba.htm" />
-  <HelpTOCNode Title="BodyExtractExpression Property " Url="html/c5862137-8c0d-fc49-1382-da19d88809d5.htm" />
-  <HelpTOCNode Title="HelpAttributes Property " Url="html/f06397cb-0508-c537-97e3-ac01ec00c515.htm" />
-  <HelpTOCNode Title="HelpKeywords Property " Url="html/a6a57abf-fe91-33e4-e804-3e08b789c9e2.htm" />
-  <HelpTOCNode Title="IsDefaultTopic Property " Url="html/c5d48b5a-b125-20c9-b28e-3d0c6db73d32.htm" />
-  <HelpTOCNode Title="RevisionNumber Property " Url="html/1029afb9-f723-3a62-4d24-826b238e29a9.htm" />
-  <HelpTOCNode Title="SortOrder Property " Url="html/51fc009a-53fa-c72c-d341-d153d08c8c3c.htm" />
-  <HelpTOCNode Title="SplitToc Property " Url="html/02b55692-09e5-820c-e346-497077b8d169.htm" />
-  <HelpTOCNode Title="Title Property " Url="html/49156662-ce04-e598-8809-7a03087f433f.htm" />
-  <HelpTOCNode Title="TocExclude Property " Url="html/bcedaf8e-8602-9540-3385-670fe7d1da7c.htm" />
-  <HelpTOCNode Title="TopicAbstract Property " Url="html/36c06861-16fc-ddd4-a52c-b1eedcdc89c2.htm" />
-  <HelpTOCNode Title="TopicId Property " Url="html/54832236-0c58-c086-7606-f607a6d94dd4.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="FileParser Properties" Url="html/e5711c16-2652-05fc-10d1-7dab4a922462.htm"><HelpTOCNode Title="Body Property " Url="html/2bd15e5e-45df-2c0a-422d-9a89b097c4ba.htm" /><HelpTOCNode Title="BodyExtractExpression Property " Url="html/c5862137-8c0d-fc49-1382-da19d88809d5.htm" /><HelpTOCNode Title="HelpAttributes Property " Url="html/f06397cb-0508-c537-97e3-ac01ec00c515.htm" /><HelpTOCNode Title="HelpKeywords Property " Url="html/a6a57abf-fe91-33e4-e804-3e08b789c9e2.htm" /><HelpTOCNode Title="IsDefaultTopic Property " Url="html/c5d48b5a-b125-20c9-b28e-3d0c6db73d32.htm" /><HelpTOCNode Title="RevisionNumber Property " Url="html/1029afb9-f723-3a62-4d24-826b238e29a9.htm" /><HelpTOCNode Title="SortOrder Property " Url="html/51fc009a-53fa-c72c-d341-d153d08c8c3c.htm" /><HelpTOCNode Title="SplitToc Property " Url="html/02b55692-09e5-820c-e346-497077b8d169.htm" /><HelpTOCNode Title="Title Property " Url="html/49156662-ce04-e598-8809-7a03087f433f.htm" /><HelpTOCNode Title="TocExclude Property " Url="html/bcedaf8e-8602-9540-3385-670fe7d1da7c.htm" /><HelpTOCNode Title="TopicAbstract Property " Url="html/36c06861-16fc-ddd4-a52c-b1eedcdc89c2.htm" /><HelpTOCNode Title="TopicId Property " Url="html/54832236-0c58-c086-7606-f607a6d94dd4.htm" /></HelpTOCNode>

@@ -1,16 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="BuildHelp Properties" Url="html/d0207f88-8300-ae21-c66f-8ac681c918de.htm">
-  <HelpTOCNode Title="AllHelpFiles Property " Url="html/25729925-69d2-3c99-d0f4-037556c389cc.htm" />
-  <HelpTOCNode Title="AlwaysLoadProject Property " Url="html/94126fb3-c542-bbd3-25ca-0f785bc59cad.htm" />
-  <HelpTOCNode Title="Configuration Property " Url="html/68d11f59-e182-7d18-1304-9ded0aa4394a.htm" />
-  <HelpTOCNode Title="DumpLogOnFailure Property " Url="html/e0877712-da19-99f2-4919-883bf4a245ac.htm" />
-  <HelpTOCNode Title="Help1Files Property " Url="html/ed3adb68-751e-7ee9-d7fb-ad49e91728b5.htm" />
-  <HelpTOCNode Title="Help2Files Property " Url="html/e63cacdf-2045-c70a-cea1-e60a69b22e80.htm" />
-  <HelpTOCNode Title="HelpViewerFiles Property " Url="html/44189206-c626-413e-eff7-7f65ae12b40f.htm" />
-  <HelpTOCNode Title="OpenXmlFiles Property " Url="html/e53dbfa7-759a-d8a8-7bb2-92fc01bfdb55.htm" />
-  <HelpTOCNode Title="OutDir Property " Url="html/88a43519-81d0-0d80-110f-f4262a2d84d6.htm" />
-  <HelpTOCNode Title="Platform Property " Url="html/492a718b-6668-e3e5-8e28-44a45b8367fd.htm" />
-  <HelpTOCNode Title="ProjectFile Property " Url="html/b7d1c2c4-04a9-d3d0-d433-87ad9d3fc0de.htm" />
-  <HelpTOCNode Title="Verbose Property " Url="html/304c91dc-6db1-1078-05c8-2d01a4c2f93b.htm" />
-  <HelpTOCNode Title="WebsiteFiles Property " Url="html/69d2fd03-d131-1547-3587-7775ccee3ecb.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="BuildHelp Properties" Url="html/d0207f88-8300-ae21-c66f-8ac681c918de.htm"><HelpTOCNode Title="AllHelpFiles Property " Url="html/25729925-69d2-3c99-d0f4-037556c389cc.htm" /><HelpTOCNode Title="AlwaysLoadProject Property " Url="html/94126fb3-c542-bbd3-25ca-0f785bc59cad.htm" /><HelpTOCNode Title="Configuration Property " Url="html/68d11f59-e182-7d18-1304-9ded0aa4394a.htm" /><HelpTOCNode Title="DumpLogOnFailure Property " Url="html/e0877712-da19-99f2-4919-883bf4a245ac.htm" /><HelpTOCNode Title="Help1Files Property " Url="html/ed3adb68-751e-7ee9-d7fb-ad49e91728b5.htm" /><HelpTOCNode Title="Help2Files Property " Url="html/e63cacdf-2045-c70a-cea1-e60a69b22e80.htm" /><HelpTOCNode Title="HelpViewerFiles Property " Url="html/44189206-c626-413e-eff7-7f65ae12b40f.htm" /><HelpTOCNode Title="OpenXmlFiles Property " Url="html/e53dbfa7-759a-d8a8-7bb2-92fc01bfdb55.htm" /><HelpTOCNode Title="OutDir Property " Url="html/88a43519-81d0-0d80-110f-f4262a2d84d6.htm" /><HelpTOCNode Title="Platform Property " Url="html/492a718b-6668-e3e5-8e28-44a45b8367fd.htm" /><HelpTOCNode Title="ProjectFile Property " Url="html/b7d1c2c4-04a9-d3d0-d433-87ad9d3fc0de.htm" /><HelpTOCNode Title="Verbose Property " Url="html/304c91dc-6db1-1078-05c8-2d01a4c2f93b.htm" /><HelpTOCNode Title="WebsiteFiles Property " Url="html/69d2fd03-d131-1547-3587-7775ccee3ecb.htm" /></HelpTOCNode>

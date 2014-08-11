@@ -1,6 +1,4 @@
-﻿<html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="shortcut icon" href="../icons/favicon.ico"><link rel="stylesheet" type="text/css" href="../styles/branding.css"><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css"><script type="text/javascript" src="../scripts/branding.js"></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Documenting Web Projects</title><meta name="Language" content="en-us"><meta name="System.Keywords" content="Getting started, websites and web projects"><meta name="Microsoft.Help.Id" content="2D292E99-83FF-4978-B1F8-CF70385C3B4F"><meta name="Description" content="A question that comes up with some regularity is how to produce a help file from the XML comments in the code for a web project using Sandcastle."><meta name="Microsoft.Help.ContentType" content="Concepts"><meta name="BrandingAware" content="'true'"><link type="text/css" rel="stylesheet" href="../styles/highlight.css"><script type="text/javascript" src="../scripts/highlight.js"></script><meta name="SelfBranded" content="true"></head><body onload="onLoad()"><header class="ux-header"><div class="header-top-bar">Sandcastle Tools</div></header><div class="OH_outerDiv" style="padding: 35px 20px 0 20px;"><div class="OH_leftNav" id="LeftNav">
-  <div id="tocnav">
-    <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;"><a class="toc_collapsed" onclick="javascript: Toggle(this);" href="#!"></a><a data-tochassubtree="true" href="55798556-c18a-46bd-8bb6-902c45e5ebbc.htm" title="Sandcastle Tools" tocid="roottoc">Sandcastle Tools</a></div><div class="toclevel1" data-toclevel="1" style="padding-left: 13px;" data-childrenloaded="true"><a class="toc_expanded" onclick="javascript: Toggle(this);" href="#!"></a><a data-tochassubtree="true" href="6D925E85-3DEA-422D-8F4B-F5995C33BD0F.htm" title="Getting Started" tocid="6D925E85-3DEA-422D-8F4B-F5995C33BD0F">Getting Started</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="8A556640-5741-4108-AD6E-D1CAE4D91860.htm" title="Installation Instructions" tocid="8A556640-5741-4108-AD6E-D1CAE4D91860">Installation Instructions</a></div><div class="toclevel2" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="1466166B-0BC0-4B0F-ABDC-B5A755EA4ED9.htm" title="Walkthrough: Enabling and Using XML Comments" tocid="1466166B-0BC0-4B0F-ABDC-B5A755EA4ED9">Walkthrough: Enabling and Using XML Comments</a></div><div class="toclevel2 current" data-toclevel="2" style="padding-left: 26px;"><span class="toc_empty"></span><a data-tochassubtree="false" href="2D292E99-83FF-4978-B1F8-CF70385C3B4F.htm" title="Documenting Web Projects" tocid="2D292E99-83FF-4978-B1F8-CF70385C3B4F">Documenting Web Projects</a></div></div></div><div id="TocResize" class="OH_TocResize"><img id="ResizeImageIncrease" src="../icons/open.gif" onclick="onIncreaseToc()" alt="Expand" title="Expand"><img id="ResizeImageReset" src="../icons/close.gif" style="display:none" onclick="onResetToc()" alt="Minimize" title="Minimize"></div><div class="OH_outerContent" id="OuterContent" style="margin-left: 280px;"><h1 class="title">Documenting Web Projects</h1><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><div class="introduction"><p>This topic contains the following sections.</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#DocWebApps">Documenting Web Application and Web Service Application Projects</a></li><li class="outlineSectionEntry"><a href="#DocWebsites">Documenting Website and Web Service Website Projects</a></li><li class="outlineSectionEntry"><a href="#Automation">Automating the Process</a></li><li class="outlineSectionEntry"><a href="#KnownIssues">Usage Notes and Known Issues</a></li><li class="outlineSectionEntry"><a href="#HowTheyWork">How The Code Providers Work</a></li><li class="outlineSectionEntry"><a href="#Conclusion">Conclusion</a></li><li class="outlineSectionEntry"><a href="#seeAlsoSection">See Also</a></li></ul><p>A question that comes up with some regularity is how to produce a help file from the XML comments in
+﻿<!DOCTYPE html ><html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><meta charset="utf-8"><link rel="shortcut icon" href="../icons/favicon.ico"><link rel="stylesheet" type="text/css" href="../styles/branding.css"><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css"><script type="text/javascript" src="../scripts/branding.js"> </script><title>Documenting Web Projects</title><meta name="Language" content="en-us"><meta name="System.Keywords" content="Getting started, websites and web projects"><meta name="Microsoft.Help.Id" content="2D292E99-83FF-4978-B1F8-CF70385C3B4F"><meta name="Description" content="A question that comes up with some regularity is how to produce a help file from the XML comments in the code for a web project using Sandcastle."><meta name="Microsoft.Help.ContentType" content="Concepts"><meta name="BrandingAware" content="true"><link type="text/css" rel="stylesheet" href="../styles/highlight.css"><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css"><script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle"><div class="pageHeader" id="PageHeader">Sandcastle Tools<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!"></a><a data-tochassubtree="true" href="55798556-c18a-46bd-8bb6-902c45e5ebbc.htm" title="Sandcastle Tools" tocid="roottoc">Sandcastle Tools</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!"></a><a data-tochassubtree="true" href="6D925E85-3DEA-422D-8F4B-F5995C33BD0F.htm" title="Getting Started" tocid="6D925E85-3DEA-422D-8F4B-F5995C33BD0F">Getting Started</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="8A556640-5741-4108-AD6E-D1CAE4D91860.htm" title="Installation Instructions" tocid="8A556640-5741-4108-AD6E-D1CAE4D91860">Installation Instructions</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="1466166B-0BC0-4B0F-ABDC-B5A755EA4ED9.htm" title="Walkthrough: Enabling and Using XML Comments" tocid="1466166B-0BC0-4B0F-ABDC-B5A755EA4ED9">Walkthrough: Enabling and Using XML Comments</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="2D292E99-83FF-4978-B1F8-CF70385C3B4F.htm" title="Documenting Web Projects" tocid="2D292E99-83FF-4978-B1F8-CF70385C3B4F">Documenting Web Projects</a></div></div><div id="TocResizableEw" class="tocResizableEw" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize"><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize"></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img alt="Sandcastle Tools" src="../icons/Sandcastle.jpg"></td><td class="titleColumn">Documenting Web Projects</td></tr></table><span class="introStyle"></span><div class="introduction"><p>This topic contains the following sections.</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#DocWebApps">Documenting Web Application and Web Service Application Projects</a></li><li class="outlineSectionEntry"><a href="#DocWebsites">Documenting Website and Web Service Website Projects</a></li><li class="outlineSectionEntry"><a href="#Automation">Automating the Process</a></li><li class="outlineSectionEntry"><a href="#KnownIssues">Usage Notes and Known Issues</a></li><li class="outlineSectionEntry"><a href="#HowTheyWork">How The Code Providers Work</a></li><li class="outlineSectionEntry"><a href="#Conclusion">Conclusion</a></li><li class="outlineSectionEntry"><a href="#seeAlsoSection">See Also</a></li></ul><p>A question that comes up with some regularity is how to produce a help file from the XML comments in
 the code for a web project using Sandcastle. There are two types of web project: a <em>web
 application</em> project and a <em>website</em> project (both include a web service
 and an AJAX-enabled variant of the project type). A web application project is the simplest to document as it
@@ -17,7 +15,7 @@ providers made available with the Sandcastle tools installer (one for C# and one
 code providers, you can specify a folder to which the XML comments files should be copied.  This saves you from
 having to locate and copy them manually and solves the issue of the C# compiler not being able to output one
 comments file per assembly.  Below are instructions for documenting each type of web project and information
-about how the code providers work.</p></div><a id="DocWebApps"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Documenting Web Application and Web Service Application Projects</div></div><p>As noted, web applications are the easiest to document and do not require the use of the custom code
+about how the code providers work.</p></div><div class="collapsibleAreaRegion" id="DocWebApps"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png">Documenting Web Application and Web Service Application Projects</span></div><div id="ID0RBSection" class="collapsibleSection"><p>As noted, web applications are the easiest to document and do not require the use of the custom code
 providers.  These projects are created in Visual Studio by selecting <strong>File | New | Project</strong>
 and then selecting <strong>ASP.NET Web Application</strong> or <strong>ASP.NET Web Service Application</strong>
 from the <strong>Web</strong> category of your preferred language.  Note that these options are only
@@ -36,61 +34,37 @@ Builder, be sure to give each project's XML comments file a unique name as they 
 for the build. Identically named files would overwrite each other and the documentation in the overwritten files
 would not appear in the help file.</p></li></ol><p>Once the above has been done, Visual Studio will create the XML comments file each time the project is
 built.  It is placed in the <em>.\bin</em> folder along with the assembly.  These can be used in
-conjunction with your preferred documentation tool to produce a help file.</p><a id="DocWebsites"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Documenting Website and Web Service Website Projects</div></div><p>These projects are created in Visual Studio by selecting <strong>File | New | Web Site</strong>
+conjunction with your preferred documentation tool to produce a help file.</p></div><div class="collapsibleAreaRegion" id="DocWebsites"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png">Documenting Website and Web Service Website Projects</span></div><div id="ID2RBSection" class="collapsibleSection"><p>These projects are created in Visual Studio by selecting <strong>File | New | Web Site</strong>
 and then selecting <strong>ASP.NET Web Site</strong> or <strong>ASP.NET Web Service</strong> from
 the template dialog box.  In order to create XML comments files, you must add the custom code providers to the
 <em>Web.config</em> file and publish the website.  This is done as follows:</p><ol><li><p>If your project does not yet contain one, add a <em>Web.config</em> configuration file.</p></li><li><p>Add the following <span class="code">&lt;system.codedom&gt;</span> section to the
 <span class="code">&lt;configuration&gt;</span> section as shown in the example below.  You only need to add the
 <span class="code">&lt;compiler&gt;</span> element for the language that you are using but it will not hurt
-anything if they are both present.</p><div id="ID0EBBFKAAABAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EBBFKAAABAA_tabs"><div id="ID0EBBFKAAABAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">Example Code Provider Configurations</a></div></div><div id="ID0EBBFKAAABAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EBBFKAAABAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EBBFKAAABAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EBBFKAAABAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EBBFKAAABAA','4')" title="Print">Print</a></div></div><div id="ID0EBBFKAAABAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">configuration</span><span class="highlight-xml-bracket">&gt;</span> 
-  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">system.codedom</span><span class="highlight-xml-bracket">&gt;</span> 
-    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">compilers</span><span class="highlight-xml-bracket">&gt;</span> 
-      <span class="highlight-xml-comment">&lt;!-- For C# --&gt;</span> 
-      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">compiler</span> <span class="highlight-xml-attribute-name">language</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"c#;cs;csharp"</span> <span class="highlight-xml-attribute-name">extension</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">".cs"</span> 
-        <span class="highlight-xml-attribute-name">compilerOptions</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"/docpath:C:\Publish\Docs"</span> 
-        <span class="highlight-xml-attribute-name">type</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"EWSoftware.CodeDom.CSharpCodeProviderWithDocs,
+anything if they are both present.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABBFAFAAA_tab1" class="codeSnippetContainerTabSingle">Example Code Provider Configurations</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABBFAFAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABBFAFAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABBFAFAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">configuration</span><span class="highlight-xml-bracket">&gt;</span>
+  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">system.codedom</span><span class="highlight-xml-bracket">&gt;</span>
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">compilers</span><span class="highlight-xml-bracket">&gt;</span>
+      <span class="highlight-xml-comment">&lt;!-- For C# --&gt;</span>
+      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">compiler</span> <span class="highlight-xml-attribute-name">language</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"c#;cs;csharp"</span> <span class="highlight-xml-attribute-name">extension</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">".cs"</span>
+        <span class="highlight-xml-attribute-name">compilerOptions</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"/docpath:C:\Publish\Docs"</span>
+        <span class="highlight-xml-attribute-name">type</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"EWSoftware.CodeDom.CSharpCodeProviderWithDocs,
               EWSoftware.CodeDom, Version=1.1.0.0, Culture=neutral,
-              PublicKeyToken=d633d7d5b41cbb65"</span><span class="highlight-xml-bracket">&gt;</span> 
-        <span class="highlight-xml-comment">&lt;!-- NOTE: Change value to "v3.5" for .NET 3.5 projects --&gt;</span> 
-        <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">providerOption</span> <span class="highlight-xml-attribute-name">name</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"CompilerVersion"</span> <span class="highlight-xml-attribute-name">value</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"v2.0"</span><span class="highlight-xml-bracket">/&gt;</span> 
-      <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">compiler</span><span class="highlight-xml-bracket">&gt;</span> 
+              PublicKeyToken=d633d7d5b41cbb65"</span><span class="highlight-xml-bracket">&gt;</span>
+        <span class="highlight-xml-comment">&lt;!-- NOTE: Change value to "v3.5" for .NET 3.5 projects --&gt;</span>
+        <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">providerOption</span> <span class="highlight-xml-attribute-name">name</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"CompilerVersion"</span> <span class="highlight-xml-attribute-name">value</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"v2.0"</span><span class="highlight-xml-bracket">/&gt;</span>
+      <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">compiler</span><span class="highlight-xml-bracket">&gt;</span>
 
-      <span class="highlight-xml-comment">&lt;!-- For VB.NET --&gt;</span> 
-      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">compiler</span> <span class="highlight-xml-attribute-name">language</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"vb;vbs;visualbasic;vbscript"</span> <span class="highlight-xml-attribute-name">extension</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">".vb"</span> 
-        <span class="highlight-xml-attribute-name">compilerOptions</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"/docpath:C:\Publish\Docs"</span> 
-        <span class="highlight-xml-attribute-name">type</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"EWSoftware.CodeDom.VBCodeProviderWithDocs,
+      <span class="highlight-xml-comment">&lt;!-- For VB.NET --&gt;</span>
+      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">compiler</span> <span class="highlight-xml-attribute-name">language</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"vb;vbs;visualbasic;vbscript"</span> <span class="highlight-xml-attribute-name">extension</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">".vb"</span>
+        <span class="highlight-xml-attribute-name">compilerOptions</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"/docpath:C:\Publish\Docs"</span>
+        <span class="highlight-xml-attribute-name">type</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"EWSoftware.CodeDom.VBCodeProviderWithDocs,
               EWSoftware.CodeDom, Version=1.1.0.0, Culture=neutral,
-              PublicKeyToken=d633d7d5b41cbb65"</span><span class="highlight-xml-bracket">&gt;</span> 
-        <span class="highlight-xml-comment">&lt;!-- NOTE: Change value to "v3.5" for .NET 3.5 projects --&gt;</span> 
-        <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">providerOption</span> <span class="highlight-xml-attribute-name">name</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"CompilerVersion"</span> <span class="highlight-xml-attribute-name">value</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"v2.0"</span><span class="highlight-xml-bracket">/&gt;</span> 
-      <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">compiler</span><span class="highlight-xml-bracket">&gt;</span> 
-    <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">compilers</span><span class="highlight-xml-bracket">&gt;</span> 
-  <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">system.codedom</span><span class="highlight-xml-bracket">&gt;</span> 
-<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">configuration</span><span class="highlight-xml-bracket">&gt;</span></pre></div><div id="ID0EBBFKAAABAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>&lt;configuration&gt; 
-  &lt;system.codedom&gt; 
-    &lt;compilers&gt; 
-      &lt;!-- For C# --&gt; 
-      &lt;compiler language="c#;cs;csharp" extension=".cs" 
-        compilerOptions="/docpath:C:\Publish\Docs" 
-        type="EWSoftware.CodeDom.CSharpCodeProviderWithDocs,
-              EWSoftware.CodeDom, Version=1.1.0.0, Culture=neutral,
-              PublicKeyToken=d633d7d5b41cbb65"&gt; 
-        &lt;!-- NOTE: Change value to "v3.5" for .NET 3.5 projects --&gt; 
-        &lt;providerOption name="CompilerVersion" value="v2.0"/&gt; 
-      &lt;/compiler&gt; 
-
-      &lt;!-- For VB.NET --&gt; 
-      &lt;compiler language="vb;vbs;visualbasic;vbscript" extension=".vb" 
-        compilerOptions="/docpath:C:\Publish\Docs" 
-        type="EWSoftware.CodeDom.VBCodeProviderWithDocs,
-              EWSoftware.CodeDom, Version=1.1.0.0, Culture=neutral,
-              PublicKeyToken=d633d7d5b41cbb65"&gt; 
-        &lt;!-- NOTE: Change value to "v3.5" for .NET 3.5 projects --&gt; 
-        &lt;providerOption name="CompilerVersion" value="v2.0"/&gt; 
-      &lt;/compiler&gt; 
-    &lt;/compilers&gt; 
-  &lt;/system.codedom&gt; 
-&lt;/configuration&gt;</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EBBFKAAABAA');</script><p>Instead of a <span class="code">/doc</span> option, the custom code providers use a custom
+              PublicKeyToken=d633d7d5b41cbb65"</span><span class="highlight-xml-bracket">&gt;</span>
+        <span class="highlight-xml-comment">&lt;!-- NOTE: Change value to "v3.5" for .NET 3.5 projects --&gt;</span>
+        <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">providerOption</span> <span class="highlight-xml-attribute-name">name</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"CompilerVersion"</span> <span class="highlight-xml-attribute-name">value</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"v2.0"</span><span class="highlight-xml-bracket">/&gt;</span>
+      <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">compiler</span><span class="highlight-xml-bracket">&gt;</span>
+    <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">compilers</span><span class="highlight-xml-bracket">&gt;</span>
+  <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">system.codedom</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">configuration</span><span class="highlight-xml-bracket">&gt;</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABBFAFAAA");</script><p>Instead of a <span class="code">/doc</span> option, the custom code providers use a custom
 <span class="code">/docpath</span> option in the <span class="code">compilerOptions</span> attribute that specifies
 the fully qualified folder name into which the XML comments files are placed.  The folder will be created by the
 code provider if it does not exist.  Any other compiler options that you might need can also be specified in the
@@ -98,8 +72,8 @@ attribute value separated by a space.</p></li><li><p>In order to use the code pr
 copy the <strong>EWSoftware.CodeDom.dll</strong> assembly into your project's <em>.\bin</em>
 folder or you can register it in the Global Assembly Cache (GAC) so that it is available to any project. To do
 so, use the <strong>gacutil</strong> command line tool as follows replacing the path to the assembly to
-match the installed location on your system:</p><div id="ID0EDAFKAAABAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EDAFKAAABAA_tabs"></div><div id="ID0EDAFKAAABAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EDAFKAAABAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EDAFKAAABAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EDAFKAAABAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EDAFKAAABAA','4')" title="Print">Print</a></div></div><div id="ID0EDAFKAAABAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre>gacutil -i \DotNet\Web\WebCodeProviders\Bin\Release\EWSoftware.CodeDom.dll</pre></div><div id="ID0EDAFKAAABAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>gacutil -i \DotNet\Web\WebCodeProviders\Bin\Release\EWSoftware.CodeDom.dll</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EDAFKAAABAA');</script><p>To remove the assembly from the Global Assembly Cache, use the <strong>gacutil</strong>
-command line tool as follows:</p><div id="ID0EBAFKAAABAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EBAFKAAABAA_tabs"></div><div id="ID0EBAFKAAABAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EBAFKAAABAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EBAFKAAABAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EBAFKAAABAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EBAFKAAABAA','4')" title="Print">Print</a></div></div><div id="ID0EBAFKAAABAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre>gacutil -u EWSoftware.CodeDom</pre></div><div id="ID0EBAFKAAABAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>gacutil -u EWSoftware.CodeDom</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EBAFKAAABAA');</script><p>You can find a copy of the tool in the Visual Studio installation folder in the
+match the installed location on your system:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EADAFAFAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EADAFAFAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EADAFAFAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">gacutil -i \DotNet\Web\WebCodeProviders\Bin\Release\EWSoftware.CodeDom.dll</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EADAFAFAAA");</script><p>To remove the assembly from the Global Assembly Cache, use the <strong>gacutil</strong>
+command line tool as follows:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABAFAFAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABAFAFAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABAFAFAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">gacutil -u EWSoftware.CodeDom</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABAFAFAAA");</script><p>You can find a copy of the tool in the Visual Studio installation folder in the
 <em>.\SDK\v2.0\bin</em> subfolder.</p></li></ol><p>Once the above has been done, you can publish your website.  Right click on the project in the Solution
 Explorer, select <strong>Publish Web Site</strong>, set the options, and click OK to publish it.  When
 finished, look in the location you specified in the <span class="code">/docpath</span> option and you will find
@@ -111,14 +85,12 @@ just add one entry with the path set to <em>[appPath]\bin\App_*.dll</em> where
 to <em>[docPath]\App_*.xml</em> where <em>[docPath]</em> is the path to the XML
 comments files.</p><p>Since the code providers are not needed after the website is published, you can delete the
 <span class="code">system.codedom</span> section from the published <em>Web.Config</em> file and
-delete the assembly from the <em>.\bin</em> folder if you added it to the project for publishing.</p><a id="Automation"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Automating the Process</div></div><p>Using the <strong>aspnet_compiler</strong> tool, it is possible to automate the publishing of
+delete the assembly from the <em>.\bin</em> folder if you added it to the project for publishing.</p></div><div class="collapsibleAreaRegion" id="Automation"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png">Automating the Process</span></div><div id="ID3RBSection" class="collapsibleSection"><p>Using the <strong>aspnet_compiler</strong> tool, it is possible to automate the publishing of
 a website project.  The tool is located in the .NET Framework folder.  For .NET 2.0 through 3.5, this is usually
 <em>C:\Windows\Microsoft.NET\Framework\v2.0.50727</em>.  To run it, issue a command similar to the
-following (lines wrapped for display purposes):</p><div id="ID0EBIAAABAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EBIAAABAA_tabs"></div><div id="ID0EBIAAABAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EBIAAABAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EBIAAABAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EBIAAABAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EBIAAABAA','4')" title="Print">Print</a></div></div><div id="ID0EBIAAABAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre>C:\Windows\Microsoft.NET\Framework\v2.0.50727\aspnet_compiler
+following (lines wrapped for display purposes):</p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABAEAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">C:\Windows\Microsoft.NET\Framework\v2.0.50727\aspnet_compiler
     -f -v /MyWebSite
-    -p C:\Path\To\MyWebsite C:\Publish\MyWebSite</pre></div><div id="ID0EBIAAABAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>C:\Windows\Microsoft.NET\Framework\v2.0.50727\aspnet_compiler
-    -f -v /MyWebSite
-    -p C:\Path\To\MyWebsite C:\Publish\MyWebSite</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EBIAAABAA');</script><p>The <span class="code">-f</span> option tells it to delete any existing content in the target folder
+    -p C:\Path\To\MyWebsite C:\Publish\MyWebSite</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABAEAAA");</script><p>The <span class="code">-f</span> option tells it to delete any existing content in the target folder
 (<em>C:\Publish\MyWebsite</em> in the example above).  The <span class="code">-v [path]</span> option
 tells it the virtual path of the website to compile (i.e. the path you use to load it in the web browser).  The
 <span class="code">-p [path]</span> option tells it the physical location of the website related to the virtual
@@ -126,7 +98,7 @@ path to compile. Using a script, you could for example publish the website, buil
 <em>Web.config</em> in the published website with one that has had the <span class="code">system.codedom</span>
 section removed, and delete the code provider assembly if it was copied locally.  This is left as an exercise for
 the reader.  The web deployment add-ins noted above support post-build events so they may provide better support
-for such tasks.</p><a id="KnownIssues"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Usage Notes and Known Issues</div></div><p>The following are some known issues and things to be aware of when
+for such tasks.</p></div><div class="collapsibleAreaRegion" id="KnownIssues"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png">Usage Notes and Known Issues</span></div><div id="ID4RBSection" class="collapsibleSection"><p>The following are some known issues and things to be aware of when
 using the custom code providers.</p><ul><li><p>If any part of the XML comments file path contains spaces, enclose it in
 <span class="code">&amp;quot;</span> entities (i.e. <span class="code">compilerOptions="/docpath:&amp;quot;C:\My Path With
 Spaces&amp;quot;"</span>).</p></li><li><p>Do not use a relative path in the <span class="code">/docpath</span> option. Always use a fully
@@ -153,68 +125,44 @@ the required namespaces rather than relying on the automatically included refere
 <em>Web.Config</em> file, you may see lots of errors indicated by the red squiggly underline related
 to missing types while viewing VB.NET code. During development, you can comment out the custom code providers so
 that this does not happen.  As noted, the other workaround is to add an <span class="code">Imports</span>
-statement to the code that includes the missing namespace that contains the types.</p></li></ul><a id="HowTheyWork"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">How The Code Providers Work</div></div><p>The custom code providers are actually quite simple.  Both the C# and VB.NET custom code providers
+statement to the code that includes the missing namespace that contains the types.</p></li></ul></div><div class="collapsibleAreaRegion" id="HowTheyWork"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png">How The Code Providers Work</span></div><div id="ID5RBSection" class="collapsibleSection"><p>The custom code providers are actually quite simple.  Both the C# and VB.NET custom code providers
 are identical with the exception of their base class and an extra set of compiler options passed by the VB.NET
-version.  The C# version is shown below.</p><div id="ID0EEEAAABAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0EEEAAABAA_tabs"><div id="ID0EEEAAABAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">Example Code Provider</a></div></div><div id="ID0EEEAAABAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EEEAAABAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0EEEAAABAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0EEEAAABAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0EEEAAABAA','4')" title="Print">Print</a></div></div><div id="ID0EEEAAABAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> CSharpCodeProviderWithDocs : CSharpCodeProvider
+version.  The C# version is shown below.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAEACAAA_tab1" class="codeSnippetContainerTabSingle">Example Code Provider</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAEACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAEACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAEACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> CSharpCodeProviderWithDocs : CSharpCodeProvider
 {
-    <span class="highlight-keyword">public</span> <span class="highlight-keyword">override</span> CompilerResults CompileAssemblyFromDom(
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">override</span> CompilerResults CompileAssemblyFromDom(
       CompilerParameters options,
       <span class="highlight-keyword">params</span> CodeCompileUnit[] compilationUnits)
     {
         CodeProviderHelper.ReplaceDocPathOption(options, <span class="highlight-keyword">null</span>);
-        <span class="highlight-keyword">return</span> <span class="highlight-keyword">base</span>.CompileAssemblyFromDom(options,
+        <span class="highlight-keyword">return</span> <span class="highlight-keyword">base</span>.CompileAssemblyFromDom(options,
             compilationUnits);
     }
 
-    <span class="highlight-keyword">public</span> <span class="highlight-keyword">override</span> CompilerResults CompileAssemblyFromFile(
-      CompilerParameters options, <span class="highlight-keyword">params</span> <span class="highlight-keyword">string</span>[] fileNames)
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">override</span> CompilerResults CompileAssemblyFromFile(
+      CompilerParameters options, <span class="highlight-keyword">params</span> <span class="highlight-keyword">string</span>[] fileNames)
     {
         CodeProviderHelper.ReplaceDocPathOption(options, <span class="highlight-keyword">null</span>);
-        <span class="highlight-keyword">return</span> <span class="highlight-keyword">base</span>.CompileAssemblyFromFile(options, fileNames);
+        <span class="highlight-keyword">return</span> <span class="highlight-keyword">base</span>.CompileAssemblyFromFile(options, fileNames);
     }
 
-    <span class="highlight-keyword">public</span> <span class="highlight-keyword">override</span> CompilerResults CompileAssemblyFromSource(
-      CompilerParameters options, <span class="highlight-keyword">params</span> <span class="highlight-keyword">string</span>[] sources)
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">override</span> CompilerResults CompileAssemblyFromSource(
+      CompilerParameters options, <span class="highlight-keyword">params</span> <span class="highlight-keyword">string</span>[] sources)
     {
         CodeProviderHelper.ReplaceDocPathOption(options, <span class="highlight-keyword">null</span>);
-        <span class="highlight-keyword">return</span> <span class="highlight-keyword">base</span>.CompileAssemblyFromSource(options, sources);
+        <span class="highlight-keyword">return</span> <span class="highlight-keyword">base</span>.CompileAssemblyFromSource(options, sources);
     }
-}</pre></div><div id="ID0EEEAAABAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>public class CSharpCodeProviderWithDocs : CSharpCodeProvider
-{
-    public override CompilerResults CompileAssemblyFromDom(
-      CompilerParameters options,
-      params CodeCompileUnit[] compilationUnits)
-    {
-        CodeProviderHelper.ReplaceDocPathOption(options, null);
-        return base.CompileAssemblyFromDom(options,
-            compilationUnits);
-    }
-
-    public override CompilerResults CompileAssemblyFromFile(
-      CompilerParameters options, params string[] fileNames)
-    {
-        CodeProviderHelper.ReplaceDocPathOption(options, null);
-        return base.CompileAssemblyFromFile(options, fileNames);
-    }
-
-    public override CompilerResults CompileAssemblyFromSource(
-      CompilerParameters options, params string[] sources)
-    {
-        CodeProviderHelper.ReplaceDocPathOption(options, null);
-        return base.CompileAssemblyFromSource(options, sources);
-    }
-}</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0EEEAAABAA');</script><p>The derived version simply overrides three key methods and, prior to calling the base implementation,
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAEACAAA");</script><p>The derived version simply overrides three key methods and, prior to calling the base implementation,
 calls the <span class="code">CodeProviderHelper.ReplaceDocPathOption</span> method which takes care of updating
 the compiler options to produce a unique XML comments file for the assembly in the specified folder.  It is shown
-below.</p><div id="ID0ECEAAABAA" class="codeSnippetContainer"><div class="codeSnippetContainerTabs" id="ID0ECEAAABAA_tabs"><div id="ID0ECEAAABAA_tab1" class="codeSnippetContainerTabSingle" dir="ltr" EnableCopyCode="true"><a xmlns="">Replace Doc Path Option Method</a></div></div><div id="ID0ECEAAABAA_codecollection" class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0ECEAAABAA_copycode" href="#" onclick="javascript:CopyToClipboard('ID0ECEAAABAA','4')" title="Copy to Clipboard">Copy to Clipboard</a><a id="ID0ECEAAABAA_PrintText" class="OH_PrintText" href="#" onclick="javascript:Print('ID0ECEAAABAA','4')" title="Print">Print</a></div></div><div id="ID0ECEAAABAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre><span class="highlight-keyword">internal</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> ReplaceDocPathOption(
+below.</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EACACAAA_tab1" class="codeSnippetContainerTabSingle">Replace Doc Path Option Method</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EACACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EACACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EACACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">internal</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> ReplaceDocPathOption(
   CompilerParameters options,
   <span class="highlight-keyword">string</span>[] additionalOptions)
 {
     Match m;
     <span class="highlight-keyword">string</span> docPath, docFile;
 
-    <span class="highlight-comment">// Replace /docpath with /doc</span> 
-    <span class="highlight-keyword">if</span>(!String.IsNullOrEmpty(options.CompilerOptions))
+    <span class="highlight-comment">// Replace /docpath with /doc</span>
+    <span class="highlight-keyword">if</span>(!String.IsNullOrEmpty(options.CompilerOptions))
     {
         m = reDocPathOpt.Match(options.CompilerOptions);
 
@@ -228,12 +176,12 @@ below.</p><div id="ID0ECEAAABAA" class="codeSnippetContainer"><div class="codeSn
                 Directory.CreateDirectory(docPath);
                 docFilesPurged = <span class="highlight-keyword">true</span>;
             }
-            <span class="highlight-keyword">else</span> 
-                <span class="highlight-keyword">if</span>(!docFilesPurged)
+            <span class="highlight-keyword">else</span>
+                <span class="highlight-keyword">if</span>(!docFilesPurged)
                 {
-                    <span class="highlight-comment">// Purge the comments files from the folder</span> 
-                    <span class="highlight-comment">// on the first call.</span> 
-                    <span class="highlight-keyword">foreach</span>(<span class="highlight-keyword">string</span> file <span class="highlight-keyword">in</span> Directory.GetFiles(
+                    <span class="highlight-comment">// Purge the comments files from the folder</span>
+                    <span class="highlight-comment">// on the first call.</span>
+                    <span class="highlight-keyword">foreach</span>(<span class="highlight-keyword">string</span> file <span class="highlight-keyword">in</span> Directory.GetFiles(
                       docPath, <span class="highlight-literal">"App_*.xml"</span>))
                         File.Delete(file);
 
@@ -250,71 +198,22 @@ below.</p><div id="ID0ECEAAABAA" class="codeSnippetContainer"><div class="codeSn
         }
     }
 
-    <span class="highlight-comment">// Append the other options</span> 
-    <span class="highlight-keyword">if</span>(additionalOptions != <span class="highlight-keyword">null</span> &amp;&amp; additionalOptions.Length != <span class="highlight-number">0</span>)
+    <span class="highlight-comment">// Append the other options</span>
+    <span class="highlight-keyword">if</span>(additionalOptions != <span class="highlight-keyword">null</span> &amp;&amp; additionalOptions.Length != <span class="highlight-number">0</span>)
         options.CompilerOptions = String.Concat(
             options.CompilerOptions, <span class="highlight-literal">" "</span>, String.Join(<span class="highlight-literal">" "</span>,
             additionalOptions));
-}</pre></div><div id="ID0ECEAAABAA_code_Plain_Div1" class="codeSnippetContainerCode" style="display: none"><pre>internal static void ReplaceDocPathOption(
-  CompilerParameters options,
-  string[] additionalOptions)
-{
-    Match m;
-    string docPath, docFile;
-
-    // Replace /docpath with /doc 
-    if(!String.IsNullOrEmpty(options.CompilerOptions))
-    {
-        m = reDocPathOpt.Match(options.CompilerOptions);
-
-        if(m.Success)
-        {
-            docPath = m.Groups[1].Value.Replace("\"",
-                String.Empty);
-
-            if(!Directory.Exists(docPath))
-            {
-                Directory.CreateDirectory(docPath);
-                docFilesPurged = true;
-            }
-            else 
-                if(!docFilesPurged)
-                {
-                    // Purge the comments files from the folder 
-                    // on the first call. 
-                    foreach(string file in Directory.GetFiles(
-                      docPath, "App_*.xml"))
-                        File.Delete(file);
-
-                    docFilesPurged = true;
-                }
-
-            docFile = Path.Combine(docPath, Path.GetFileName(
-                Path.ChangeExtension(options.OutputAssembly,
-                ".xml")));
-
-            options.CompilerOptions = String.Format(
-                "{0} /doc:\"{1}\"", reDocPathOpt.Replace(
-                options.CompilerOptions, String.Empty), docFile);
-        }
-    }
-
-    // Append the other options 
-    if(additionalOptions != null &amp;&amp; additionalOptions.Length != 0)
-        options.CompilerOptions = String.Concat(
-            options.CompilerOptions, " ", String.Join(" ",
-            additionalOptions));
-}</pre></div></div></div><script>addSpecificTextLanguageTagSet('ID0ECEAAABAA');</script><p>A regular expression is used to locate the <span class="code">/docpath</span> option. If found, it
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EACACAAA");</script><p>A regular expression is used to locate the <span class="code">/docpath</span> option. If found, it
 extracts the folder name and either creates it if it does not exist or deletes all existing <em>App_*.xml</em>
 files in it the first time it is called.  It then combines the path with the output assembly's name and a
 <em>.xml</em> extension and replaces the <span class="code">/docpath</span> option with a
 <span class="code">/doc</span> command line option.  If any additional options are passed to the method, they are
 also appended to the command line options.  The VB.NET code provider passes in an extra <span class="code">/imports</span>
-command line option to specify the following default import namespaces to work around the issue noted earlier:</p><ul><li><p>System</p></li><li><p>System.Collections</p></li><li><p>System.Collections.Generic</p></li><li><p>System.Collections.ObjectModel</p></li><li><p>System.Configuration</p></li><li><p>System.Data</p></li><li><p>System.Web</p></li><li><p>System.Web.Configuration</p></li><li><p>System.Web.UI</p></li><li><p>System.Web.UI.HtmlControls</p></li><li><p>System.Web.UI.WebControls</p></li><li><p>System.Web.Util</p></li><li><p>System.Xml</p></li><li><p>Microsoft.VisualBasic</p></li></ul><a id="Conclusion"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Conclusion</div></div><p>By using the custom code providers and the instructions above, you can now easily produce XML
-comments files for website projects in order to create help files for them.</p><a name="seeAlsoSection"></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="6D925E85-3DEA-422D-8F4B-F5995C33BD0F.htm">Getting Started</a></div><div class="seeAlsoStyle"><a href="1466166B-0BC0-4B0F-ABDC-B5A755EA4ED9.htm">Walkthrough: Enabling and Using XML Comments</a></div><div class="seeAlsoStyle"><a href="http://SHFB.CodePlex.com" target="_blank">Sandcastle Help File Builder</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p><a href="http://SHFB.CodePlex.com" target="_blank">[v2014.4.21.0] Sandcastle Tools</a></p><div class="OH_feedbacklink">Send comments on this topic to
+command line option to specify the following default import namespaces to work around the issue noted earlier:</p><ul><li><p>System</p></li><li><p>System.Collections</p></li><li><p>System.Collections.Generic</p></li><li><p>System.Collections.ObjectModel</p></li><li><p>System.Configuration</p></li><li><p>System.Data</p></li><li><p>System.Web</p></li><li><p>System.Web.Configuration</p></li><li><p>System.Web.UI</p></li><li><p>System.Web.UI.HtmlControls</p></li><li><p>System.Web.UI.WebControls</p></li><li><p>System.Web.Util</p></li><li><p>System.Xml</p></li><li><p>Microsoft.VisualBasic</p></li></ul></div><div class="collapsibleAreaRegion" id="Conclusion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png">Conclusion</span></div><div id="ID6RBSection" class="collapsibleSection"><p>By using the custom code providers and the instructions above, you can now easily produce XML
+comments files for website projects in order to create help files for them.</p></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png">See Also</span></div><div id="ID7RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="6D925E85-3DEA-422D-8F4B-F5995C33BD0F.htm">Getting Started</a></div><div class="seeAlsoStyle"><a href="1466166B-0BC0-4B0F-ABDC-B5A755EA4ED9.htm">Walkthrough: Enabling and Using XML Comments</a></div><div class="seeAlsoStyle"><a href="http://SHFB.CodePlex.com" target="_blank">Sandcastle Help File Builder</a></div></div></div></div><div id="pageFooter" class="pageFooter"><p><a href="http://SHFB.CodePlex.com" target="_blank">[v2014.4.22.0] Sandcastle Tools</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:Eric%40EWoodruff.us?Subject=Sandcastle Tools">Eric@EWoodruff.us</a></div><script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
         var HT_mailLinkText = HT_mailLink.innerHTML;
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
         HT_mailLink.innerHTML = HT_mailLinkText;
-        </script></div><script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript">$(document).ready(function () {DocumentReady();});</script></body></html>
+        </script></div></body></html>

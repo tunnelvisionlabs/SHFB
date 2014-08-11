@@ -1,13 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="FileItem Properties" Url="html/96c838ab-1f3b-d94a-7c60-65749a9e05c2.htm">
-  <HelpTOCNode Title="AlternateText Property " Url="html/9e9f6e82-9210-0693-106b-a56094fcb02c.htm" />
-  <HelpTOCNode Title="BuildAction Property " Url="html/6e10fe6c-30ed-ebd9-53a2-217fa9651fdd.htm" />
-  <HelpTOCNode Title="CopyToMedia Property " Url="html/4f56757f-e09c-7e18-08a9-29ac95809ec8.htm" />
-  <HelpTOCNode Title="ExcludeFromToc Property " Url="html/7ae2e313-3bb9-aaec-3542-89f4a0eb5bc5.htm" />
-  <HelpTOCNode Title="FullPath Property " Url="html/07355f12-2c89-5f9c-1044-d4d6f305c678.htm" />
-  <HelpTOCNode Title="ImageId Property " Url="html/19976915-53b7-4497-18dc-c2b18eb44d3d.htm" />
-  <HelpTOCNode Title="Include Property " Url="html/a529e0ef-cddf-ddc2-3921-47f78c32b55d.htm" />
-  <HelpTOCNode Title="Link Property " Url="html/e82ab531-3856-699e-e0dd-e1a68273fb5c.htm" />
-  <HelpTOCNode Title="Name Property " Url="html/31f3ab0f-a7c8-d923-4128-7a1a04ad8418.htm" />
-  <HelpTOCNode Title="SortOrder Property " Url="html/a36ebd73-d34c-f720-0fdd-bdaf00956915.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="FileItem Properties" Url="html/96c838ab-1f3b-d94a-7c60-65749a9e05c2.htm"><HelpTOCNode Title="AlternateText Property " Url="html/9e9f6e82-9210-0693-106b-a56094fcb02c.htm" /><HelpTOCNode Title="BuildAction Property " Url="html/6e10fe6c-30ed-ebd9-53a2-217fa9651fdd.htm" /><HelpTOCNode Title="CopyToMedia Property " Url="html/4f56757f-e09c-7e18-08a9-29ac95809ec8.htm" /><HelpTOCNode Title="ExcludeFromToc Property " Url="html/7ae2e313-3bb9-aaec-3542-89f4a0eb5bc5.htm" /><HelpTOCNode Title="FullPath Property " Url="html/07355f12-2c89-5f9c-1044-d4d6f305c678.htm" /><HelpTOCNode Title="ImageId Property " Url="html/19976915-53b7-4497-18dc-c2b18eb44d3d.htm" /><HelpTOCNode Title="Include Property " Url="html/a529e0ef-cddf-ddc2-3921-47f78c32b55d.htm" /><HelpTOCNode Title="Link Property " Url="html/e82ab531-3856-699e-e0dd-e1a68273fb5c.htm" /><HelpTOCNode Title="Name Property " Url="html/31f3ab0f-a7c8-d923-4128-7a1a04ad8418.htm" /><HelpTOCNode Title="SortOrder Property " Url="html/a36ebd73-d34c-f720-0fdd-bdaf00956915.htm" /></HelpTOCNode>

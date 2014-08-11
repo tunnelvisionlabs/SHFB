@@ -1,9 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="TopicCollection Properties" Url="html/f9870941-e7ca-52ad-3147-444829502b4b.htm">
-  <HelpTOCNode Title="ApiContentInsertionPoint Property " Url="html/85d90b6f-6a95-c430-8a02-a097c8339909.htm" />
-  <HelpTOCNode Title="ContentLayoutFile Property " Url="html/8d01474a-aa5f-fd61-c661-58b820835e40.htm" />
-  <HelpTOCNode Title="DefaultTopic Property " Url="html/103b6e24-0088-9ab8-0c6b-133c8f05be80.htm" />
-  <HelpTOCNode Title="FileItem Property " Url="html/fa8f2259-45ee-654f-75df-7512d4e57981.htm" />
-  <HelpTOCNode Title="Item Property " Url="html/47d7055b-d526-1d2b-8b8a-a5609724059c.htm" HasChildren="true" />
-  <HelpTOCNode Title="MSHVRootContentContainer Property " Url="html/72aada1b-1cea-9112-adcb-9caa8a762d9a.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="TopicCollection Properties" Url="html/f9870941-e7ca-52ad-3147-444829502b4b.htm"><HelpTOCNode Title="ApiContentInsertionPoint Property " Url="html/85d90b6f-6a95-c430-8a02-a097c8339909.htm" /><HelpTOCNode Title="ContentLayoutFile Property " Url="html/8d01474a-aa5f-fd61-c661-58b820835e40.htm" /><HelpTOCNode Title="DefaultTopic Property " Url="html/103b6e24-0088-9ab8-0c6b-133c8f05be80.htm" /><HelpTOCNode Title="FileItem Property " Url="html/fa8f2259-45ee-654f-75df-7512d4e57981.htm" /><HelpTOCNode Title="Item Property " Url="html/47d7055b-d526-1d2b-8b8a-a5609724059c.htm" HasChildren="true" /><HelpTOCNode Title="MSHVRootContentContainer Property " Url="html/72aada1b-1cea-9112-adcb-9caa8a762d9a.htm" /></HelpTOCNode>

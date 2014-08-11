@@ -1,7 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="SandcastleProject Events" Url="html/b74a65d2-0a70-518c-beee-93c142d0eb01.htm">
-  <HelpTOCNode Title="DirtyChanged Event" Url="html/a4c74fb7-09f1-1c67-0c46-01d1066db637.htm" />
-  <HelpTOCNode Title="DocumentationSourcesChanged Event" Url="html/134898fc-f1f5-cd3c-bd76-06ee376e3362.htm" />
-  <HelpTOCNode Title="ProjectPropertyChanged Event" Url="html/864d5b8a-b0af-f13a-4f59-7989f2f17c80.htm" />
-  <HelpTOCNode Title="QueryEditProjectFile Event" Url="html/319494f8-ec9b-d7e0-4ace-4bdfabf56be8.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="SandcastleProject Events" Url="html/b74a65d2-0a70-518c-beee-93c142d0eb01.htm"><HelpTOCNode Title="DirtyChanged Event" Url="html/a4c74fb7-09f1-1c67-0c46-01d1066db637.htm" /><HelpTOCNode Title="DocumentationSourcesChanged Event" Url="html/134898fc-f1f5-cd3c-bd76-06ee376e3362.htm" /><HelpTOCNode Title="ProjectPropertyChanged Event" Url="html/864d5b8a-b0af-f13a-4f59-7989f2f17c80.htm" /><HelpTOCNode Title="QueryEditProjectFile Event" Url="html/319494f8-ec9b-d7e0-4ace-4bdfabf56be8.htm" /></HelpTOCNode>

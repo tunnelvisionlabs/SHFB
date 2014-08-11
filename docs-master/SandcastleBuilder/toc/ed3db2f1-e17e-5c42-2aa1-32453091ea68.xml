@@ -1,13 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="EditorCommands Properties" Url="html/ed3db2f1-e17e-5c42-2aa1-32453091ea68.htm">
-  <HelpTOCNode Title="AddItem Property " Url="html/550b787d-26ad-a20d-ef25-f81195dab578.htm" />
-  <HelpTOCNode Title="CollapseAll Property " Url="html/f5284bd5-a177-9349-e2cc-36e8802cdba9.htm" />
-  <HelpTOCNode Title="CollapseCurrent Property " Url="html/f6eda0b3-2f96-9571-c2c9-cfa965d79ad0.htm" />
-  <HelpTOCNode Title="Edit Property " Url="html/3f7c0237-3c1c-2340-3e57-11c57466e4df.htm" />
-  <HelpTOCNode Title="ExpandAll Property " Url="html/b8087e6c-68cf-bea5-cf27-a9ce155337ec.htm" />
-  <HelpTOCNode Title="ExpandCurrent Property " Url="html/c2dce35c-be4e-55b2-8f3d-88eea1d90245.htm" />
-  <HelpTOCNode Title="MoveDown Property " Url="html/3eac89c9-b89a-5a9a-4a06-b6969c06c1d3.htm" />
-  <HelpTOCNode Title="MoveUp Property " Url="html/ff6eb217-ceff-35d0-3493-35a6cfe0d7ff.htm" />
-  <HelpTOCNode Title="PasteAsChild Property " Url="html/c45f9450-41dc-f87f-81ef-def729fc6f5a.htm" />
-  <HelpTOCNode Title="Sort Property " Url="html/365568c4-c032-5eb6-1ada-0fcb8153aa75.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="EditorCommands Properties" Url="html/ed3db2f1-e17e-5c42-2aa1-32453091ea68.htm"><HelpTOCNode Title="AddItem Property " Url="html/550b787d-26ad-a20d-ef25-f81195dab578.htm" /><HelpTOCNode Title="CollapseAll Property " Url="html/f5284bd5-a177-9349-e2cc-36e8802cdba9.htm" /><HelpTOCNode Title="CollapseCurrent Property " Url="html/f6eda0b3-2f96-9571-c2c9-cfa965d79ad0.htm" /><HelpTOCNode Title="Edit Property " Url="html/3f7c0237-3c1c-2340-3e57-11c57466e4df.htm" /><HelpTOCNode Title="ExpandAll Property " Url="html/b8087e6c-68cf-bea5-cf27-a9ce155337ec.htm" /><HelpTOCNode Title="ExpandCurrent Property " Url="html/c2dce35c-be4e-55b2-8f3d-88eea1d90245.htm" /><HelpTOCNode Title="MoveDown Property " Url="html/3eac89c9-b89a-5a9a-4a06-b6969c06c1d3.htm" /><HelpTOCNode Title="MoveUp Property " Url="html/ff6eb217-ceff-35d0-3493-35a6cfe0d7ff.htm" /><HelpTOCNode Title="PasteAsChild Property " Url="html/c45f9450-41dc-f87f-81ef-def729fc6f5a.htm" /><HelpTOCNode Title="Sort Property " Url="html/365568c4-c032-5eb6-1ada-0fcb8153aa75.htm" /></HelpTOCNode>

@@ -1,13 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="SqlDictionary(TValue) Properties" Url="html/42ab3743-643a-7851-a434-75eca41f3f27.htm">
-  <HelpTOCNode Title="Count Property " Url="html/c347a090-7bb0-9c3a-93d8-ce208c5a334f.htm" />
-  <HelpTOCNode Title="CurrentLocalCacheCount Property " Url="html/a8751a56-b1fc-6905-997a-2217a764b82b.htm" />
-  <HelpTOCNode Title="GroupId Property " Url="html/d03a2fc8-a8e3-b10d-19ac-5159e64d4438.htm" />
-  <HelpTOCNode Title="IsDisposed Property " Url="html/0d3fa8d9-5453-3056-254c-f028ecda0e9d.htm" />
-  <HelpTOCNode Title="IsReadOnly Property " Url="html/35dd446c-e7e1-dc5d-86aa-7505fef38b27.htm" />
-  <HelpTOCNode Title="Item Property " Url="html/155b4231-597f-5a2e-ebac-65b07aa60ad2.htm" />
-  <HelpTOCNode Title="Keys Property " Url="html/0d6f5f64-acbe-b33e-dcea-5ca8662e1d6e.htm" />
-  <HelpTOCNode Title="LocalCacheFlushCount Property " Url="html/914715e9-94e9-aef9-34da-a33802f27aab.htm" />
-  <HelpTOCNode Title="LocalCacheSize Property " Url="html/39134da6-0caa-38c7-ce19-b6310ba8900d.htm" />
-  <HelpTOCNode Title="Values Property " Url="html/f673e2b9-04f4-26eb-4c4f-b63ad7df6eae.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="SqlDictionary(TValue) Properties" Url="html/42ab3743-643a-7851-a434-75eca41f3f27.htm"><HelpTOCNode Title="Count Property " Url="html/c347a090-7bb0-9c3a-93d8-ce208c5a334f.htm" /><HelpTOCNode Title="CurrentLocalCacheCount Property " Url="html/a8751a56-b1fc-6905-997a-2217a764b82b.htm" /><HelpTOCNode Title="GroupId Property " Url="html/d03a2fc8-a8e3-b10d-19ac-5159e64d4438.htm" /><HelpTOCNode Title="IsDisposed Property " Url="html/0d3fa8d9-5453-3056-254c-f028ecda0e9d.htm" /><HelpTOCNode Title="IsReadOnly Property " Url="html/35dd446c-e7e1-dc5d-86aa-7505fef38b27.htm" /><HelpTOCNode Title="Item Property " Url="html/155b4231-597f-5a2e-ebac-65b07aa60ad2.htm" /><HelpTOCNode Title="Keys Property " Url="html/0d6f5f64-acbe-b33e-dcea-5ca8662e1d6e.htm" /><HelpTOCNode Title="LocalCacheFlushCount Property " Url="html/914715e9-94e9-aef9-34da-a33802f27aab.htm" /><HelpTOCNode Title="LocalCacheSize Property " Url="html/39134da6-0caa-38c7-ce19-b6310ba8900d.htm" /><HelpTOCNode Title="Values Property " Url="html/f673e2b9-04f4-26eb-4c4f-b63ad7df6eae.htm" /></HelpTOCNode>

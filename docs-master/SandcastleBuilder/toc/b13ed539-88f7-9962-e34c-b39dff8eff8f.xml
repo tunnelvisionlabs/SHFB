@@ -1,7 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="DeploymentPlugIn Methods" Url="html/b13ed539-88f7-9962-e34c-b39dff8eff8f.htm">
-  <HelpTOCNode Title="ConfigurePlugIn Method " Url="html/59218a82-132b-aac6-7714-a3cbfa1a168f.htm" />
-  <HelpTOCNode Title="Dispose Method " Url="html/a34325c3-f159-bbd5-b008-d3b6ae3bf771.htm" />
-  <HelpTOCNode Title="Execute Method " Url="html/525116f4-5a21-8a7d-77ad-e50c7282a486.htm" />
-  <HelpTOCNode Title="Initialize Method " Url="html/c87fb691-44ae-c719-680e-343be47f1842.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="DeploymentPlugIn Methods" Url="html/b13ed539-88f7-9962-e34c-b39dff8eff8f.htm"><HelpTOCNode Title="ConfigurePlugIn Method " Url="html/59218a82-132b-aac6-7714-a3cbfa1a168f.htm" /><HelpTOCNode Title="Dispose Method " Url="html/a34325c3-f159-bbd5-b008-d3b6ae3bf771.htm" /><HelpTOCNode Title="Execute Method " Url="html/525116f4-5a21-8a7d-77ad-e50c7282a486.htm" /><HelpTOCNode Title="Initialize Method " Url="html/c87fb691-44ae-c719-680e-343be47f1842.htm" /></HelpTOCNode>

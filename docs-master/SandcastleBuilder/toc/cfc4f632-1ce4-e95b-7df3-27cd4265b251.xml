@@ -1,7 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="MSBuildProject Methods" Url="html/cfc4f632-1ce4-e95b-7df3-27cd4265b251.htm">
-  <HelpTOCNode Title="Dispose Method " Url="html/ca186c7d-a53e-6414-e25e-d2c831f677da.htm" HasChildren="true" />
-  <HelpTOCNode Title="Finalize Method " Url="html/148b9f31-e0ea-f80f-beed-205f2c110743.htm" />
-  <HelpTOCNode Title="SetConfiguration Method " Url="html/588515dc-0e8b-13ce-6d63-e6c6ffedd533.htm" />
-  <HelpTOCNode Title="SetSolutionMacros Method " Url="html/b6b4f84f-e538-3461-4994-5d8e428cd348.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="MSBuildProject Methods" Url="html/cfc4f632-1ce4-e95b-7df3-27cd4265b251.htm"><HelpTOCNode Title="Dispose Method " Url="html/ca186c7d-a53e-6414-e25e-d2c831f677da.htm" HasChildren="true" /><HelpTOCNode Title="Finalize Method " Url="html/148b9f31-e0ea-f80f-beed-205f2c110743.htm" /><HelpTOCNode Title="SetConfiguration Method " Url="html/588515dc-0e8b-13ce-6d63-e6c6ffedd533.htm" /><HelpTOCNode Title="SetSolutionMacros Method " Url="html/b6b4f84f-e538-3461-4994-5d8e428cd348.htm" /></HelpTOCNode>

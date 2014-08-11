@@ -1,11 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<HelpTOCNode Title="FolderPathUserControl Properties" Url="html/ced60adb-a358-f2d9-3cf9-d0dd90069ec5.htm">
-  <HelpTOCNode Title="DefaultFolder Property " Url="html/5699a242-c89d-ffd1-fbbd-a858590f55c8.htm" />
-  <HelpTOCNode Title="Folder Property " Url="html/40c78a7c-38cb-783b-e393-1c813207f69a.htm" />
-  <HelpTOCNode Title="IsFixedPath Property " Url="html/ab8d541c-b899-ebd3-7965-5b4f86ec9846.htm" />
-  <HelpTOCNode Title="PersistablePath Property " Url="html/9649f7bc-4a20-9bd4-f33d-fb98dff8cd0b.htm" />
-  <HelpTOCNode Title="RootFolder Property " Url="html/9b60b558-28eb-5aeb-d228-dadc691285a8.htm" />
-  <HelpTOCNode Title="ShowFixedPathOption Property " Url="html/3996f91d-7e62-7fa5-5476-66bdb8c0e183.htm" />
-  <HelpTOCNode Title="ShowNewFolderButton Property " Url="html/a53e0b19-26da-d14b-09ef-57f3bb92df01.htm" />
-  <HelpTOCNode Title="Title Property " Url="html/aa6fa474-b19c-0fb6-f7ab-a84a1270788a.htm" />
-</HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="FolderPathUserControl Properties" Url="html/ced60adb-a358-f2d9-3cf9-d0dd90069ec5.htm"><HelpTOCNode Title="DefaultFolder Property " Url="html/5699a242-c89d-ffd1-fbbd-a858590f55c8.htm" /><HelpTOCNode Title="Folder Property " Url="html/40c78a7c-38cb-783b-e393-1c813207f69a.htm" /><HelpTOCNode Title="IsFixedPath Property " Url="html/ab8d541c-b899-ebd3-7965-5b4f86ec9846.htm" /><HelpTOCNode Title="PersistablePath Property " Url="html/9649f7bc-4a20-9bd4-f33d-fb98dff8cd0b.htm" /><HelpTOCNode Title="RootFolder Property " Url="html/9b60b558-28eb-5aeb-d228-dadc691285a8.htm" /><HelpTOCNode Title="ShowFixedPathOption Property " Url="html/3996f91d-7e62-7fa5-5476-66bdb8c0e183.htm" /><HelpTOCNode Title="ShowNewFolderButton Property " Url="html/a53e0b19-26da-d14b-09ef-57f3bb92df01.htm" /><HelpTOCNode Title="Title Property " Url="html/aa6fa474-b19c-0fb6-f7ab-a84a1270788a.htm" /></HelpTOCNode>

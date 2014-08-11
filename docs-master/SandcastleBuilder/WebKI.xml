@@ -396,6 +396,7 @@
     <HelpKINode Title="overview" Url="html/8dcbb69b-7a1a-4049-8e6b-2bf344efbbc9.htm" />
     <HelpKINode Title="presentation style template class" Url="html/baf1dcbc-e9cf-4d71-a770-621e6eaf10a7.htm" />
     <HelpKINode Title="SQL caching" Url="html/0f0cc654-6ddf-4673-a001-b29885ca0310.htm" />
+    <HelpKINode Title="syntax component" Url="html/3127217a-9b11-424e-aeb4-b88ca4569bad.htm" />
     <HelpKINode Title="syntax filter" Url="html/8dcbb69b-7a1a-4049-8e6b-2bf344efbbc9.htm" />
     <HelpKINode Title="syntax generator template class" Url="html/5e80d139-811c-48ed-9b52-dcd8a3f5aef3.htm" />
   </HelpKINode>
@@ -584,6 +585,7 @@
   <HelpKINode Title="BuildProcess.ConceptualContent property" Url="html/e94a4fa1-6af7-dfad-0da8-6ede5a0e05f9.htm" />
   <HelpKINode Title="BuildProcess.CurrentFormat property" Url="html/d66c5dfc-d078-2272-cff0-c039b108d818.htm" />
   <HelpKINode Title="BuildProcess.CurrentProject property" Url="html/915d8b64-728a-5d32-e69c-cf572db9fc07.htm" />
+  <HelpKINode Title="BuildProcess.DefaultTopicFile property" Url="html/6cd56510-e37d-f119-8b37-9ee4ac31de9c.htm" />
   <HelpKINode Title="BuildProcess.EnsureOutputFoldersExist method" Url="html/e9ad216a-e442-c2a2-a80a-6753abf1587e.htm" />
   <HelpKINode Title="BuildProcess.ExecuteAfterStepPlugIns method" Url="html/dc79407c-a2be-eec9-9523-f73e384e0e6a.htm" />
   <HelpKINode Title="BuildProcess.ExecuteBeforeStepPlugIns method" Url="html/a9cb2f26-d086-0d83-aa5d-829350e2a2ce.htm" />
@@ -607,6 +609,7 @@
   <HelpKINode Title="BuildProcess.OutputFolder property" Url="html/4e32fb64-bb13-e34e-85b6-f2714c709b87.htm" />
   <HelpKINode Title="BuildProcess.PartialBuildType property" Url="html/2dfa119c-e4ec-2cd8-1f7e-2019af14983e.htm" />
   <HelpKINode Title="BuildProcess.PresentationStyleFolder property" Url="html/d83caedf-57ce-16c3-55c0-06079431dfb9.htm" />
+  <HelpKINode Title="BuildProcess.PresentationStyleResourceItemsFolder property" Url="html/30919b5c-1627-17a9-8762-024935c666b1.htm" />
   <HelpKINode Title="BuildProcess.ProjectFilename property" Url="html/a5179722-1820-058e-3c18-ddcb172c6c93.htm" />
   <HelpKINode Title="BuildProcess.ProjectFolder property" Url="html/2dc9c884-eb9f-e739-334e-86e6cc9682d9.htm" />
   <HelpKINode Title="BuildProcess.ReadWithEncoding method" Url="html/8b9a50b6-d13b-3974-42dd-390ffd7e07e8.htm" />
@@ -614,6 +617,7 @@
   <HelpKINode Title="BuildProcess.ReflectionInfoFilename property" Url="html/50fbbf9e-968a-679b-0b92-43d5ee285c0a.htm" />
   <HelpKINode Title="BuildProcess.ReportProgress method" Url="html/37fa6ed1-2033-31b6-15a9-203368f6c61b.htm" />
   <HelpKINode Title="BuildProcess.ReportWarning method" Url="html/3f7474b3-ba7a-7a70-3d9f-6b0f77d2ec8f.htm" />
+  <HelpKINode Title="BuildProcess.ResolvedHelpTitle property" Url="html/04b4604c-8e0a-b53f-0299-642f42b6a789.htm" />
   <HelpKINode Title="BuildProcess.ResolvedHtmlHelpName property" Url="html/671bb414-7fa8-854b-219e-1deba4dd5b68.htm" />
   <HelpKINode Title="BuildProcess.RootContentContainerId property" Url="html/97ad7153-ed6c-1e6c-3634-75b28095f355.htm" />
   <HelpKINode Title="BuildProcess.RunProcess method" Url="html/fcfa42cc-b26d-1716-c3c7-97515b0967ae.htm" />
@@ -953,7 +957,7 @@
     <HelpKINode Title="DeploymentPlugIn.ConfigurePlugIn Method " Url="html/59218a82-132b-aac6-7714-a3cbfa1a168f.htm" />
     <HelpKINode Title="HierarchicalTocPlugIn.ConfigurePlugIn Method " Url="html/d4346d03-b6a5-2f55-5813-b2b813be4cfe.htm" />
     <HelpKINode Title="IPlugIn.ConfigurePlugIn Method " Url="html/eea70a95-956e-3709-bebe-d93c42b7a7bf.htm" />
-    <HelpKINode Title="LightweightTocPlugIn.ConfigurePlugIn Method " Url="html/878919ff-2abc-4909-db01-8781121a4925.htm" />
+    <HelpKINode Title="LightweightWebsiteStylePlugIn.ConfigurePlugIn Method " Url="html/829fd798-4274-e78e-6999-78c55a176705.htm" />
     <HelpKINode Title="ScriptSharpPlugIn.ConfigurePlugIn Method " Url="html/7427f2ec-b90d-655a-2236-46e11590beb5.htm" />
     <HelpKINode Title="TocExcludePlugIn.ConfigurePlugIn Method " Url="html/fec1edad-8a80-fd60-e1cb-5d5374b32b1d.htm" />
     <HelpKINode Title="VersionBuilderPlugIn.ConfigurePlugIn Method " Url="html/c5e02296-72ec-dda0-53dd-fb45e3072cc2.htm" />
@@ -1350,6 +1354,7 @@
     <HelpKINode Title="TocEntryCollection.DefaultTopic Property " Url="html/c3ab0c58-6bdf-ef70-3fa6-8982974c715c.htm" />
     <HelpKINode Title="TopicCollection.DefaultTopic Property " Url="html/103b6e24-0088-9ab8-0c6b-133c8f05be80.htm" />
   </HelpKINode>
+  <HelpKINode Title="DefaultTopicFile property" Url="html/6cd56510-e37d-f119-8b37-9ee4ac31de9c.htm" />
   <HelpKINode Title="DefinedTerm field" Url="html/a2d82924-7ed6-3721-4e1b-8fd480f9b741.htm" />
   <HelpKINode Title="Definition field" Url="html/4fb950e2-d7b7-2391-d43e-df8371ba4de3.htm" />
   <HelpKINode Title="Delegate enumeration member" Url="html/afa33067-a29a-6512-97ef-5c4859882603.htm" />
@@ -1452,7 +1457,7 @@
     <HelpKINode Title="HelpFilePropertiesPageControl.Dispose Method " Url="html/aa186759-047a-48cc-28b8-824be8de8fdc.htm" />
     <HelpKINode Title="HierarchicalTocPlugIn.Dispose Method " Url="html/440e76b9-9b0f-7d86-e37d-d27574537802.htm" />
     <HelpKINode Title="LaunchMSHelpViewerDlg.Dispose Method " Url="html/d9f3cab5-d08b-78a0-76a4-c29dab02be89.htm" />
-    <HelpKINode Title="LightweightTocPlugIn.Dispose Method " Url="html/57990b2a-8a3b-46e5-0a85-603b402b3e1e.htm" />
+    <HelpKINode Title="LightweightWebsiteStylePlugIn.Dispose Method " Url="html/b0e59aa4-ab09-cbbe-925a-146784546e4e.htm" />
     <HelpKINode Title="MainForm.Dispose Method " Url="html/64204c25-45cc-c182-b5cd-e07911398f38.htm" />
     <HelpKINode Title="MissingTagPropertiesPageControl.Dispose Method " Url="html/d476dd36-cd43-848d-45b4-44064aeb7e19.htm" />
     <HelpKINode Title="MSBuildProject.Dispose Method " Url="html/ca186c7d-a53e-6414-e25e-d2c831f677da.htm" />
@@ -1937,7 +1942,7 @@
     <HelpKINode Title="GenerateInheritedDocs.Execute Method " Url="html/df9dbe17-29af-8a76-56bb-1129d07d9677.htm" />
     <HelpKINode Title="HierarchicalTocPlugIn.Execute Method " Url="html/fbb6b533-4f69-b476-5622-5af68dab79a2.htm" />
     <HelpKINode Title="IPlugIn.Execute Method " Url="html/c9ef56da-a092-3b14-11bf-f607b1775b2a.htm" />
-    <HelpKINode Title="LightweightTocPlugIn.Execute Method " Url="html/eb0829b3-6fd9-a140-d503-a8292668500b.htm" />
+    <HelpKINode Title="LightweightWebsiteStylePlugIn.Execute Method " Url="html/9990480b-8608-4aa8-b9d5-475a1e1146e2.htm" />
     <HelpKINode Title="SandcastleHtmlExtract.Execute Method " Url="html/8786f3ae-4ef9-0276-7ad6-3fc8e8fa889d.htm" />
     <HelpKINode Title="ScriptSharpPlugIn.Execute Method " Url="html/baf9f6f6-d9bf-0c9f-2052-87c67de14e9e.htm" />
     <HelpKINode Title="TocExcludePlugIn.Execute Method " Url="html/c8d93c3d-a7e3-3651-4fe9-f09baf185693.htm" />
@@ -1980,7 +1985,7 @@
     <HelpKINode Title="DeploymentPlugIn.ExecutionPoints Property " Url="html/2343125c-f941-de7d-4abb-64a03a0fdbc2.htm" />
     <HelpKINode Title="HierarchicalTocPlugIn.ExecutionPoints Property " Url="html/2ef719a6-cecc-b9c1-d280-59875567a133.htm" />
     <HelpKINode Title="IPlugIn.ExecutionPoints Property " Url="html/3993f5e2-7858-f926-2038-90aff476ef4e.htm" />
-    <HelpKINode Title="LightweightTocPlugIn.ExecutionPoints Property " Url="html/4f57b85c-55fd-8b15-c2e2-6f59c8af8eed.htm" />
+    <HelpKINode Title="LightweightWebsiteStylePlugIn.ExecutionPoints Property " Url="html/83cb13d0-1042-1f19-76df-1d0b487f4929.htm" />
     <HelpKINode Title="ScriptSharpPlugIn.ExecutionPoints Property " Url="html/1e272492-6774-b837-b2a9-0acea553c2e6.htm" />
     <HelpKINode Title="TocExcludePlugIn.ExecutionPoints Property " Url="html/25a3d630-2b4d-19a0-35a8-1480ab85401f.htm" />
     <HelpKINode Title="VersionBuilderPlugIn.ExecutionPoints Property " Url="html/17393ed7-59e9-6821-88f9-9380b183e262.htm" />
@@ -1999,8 +2004,8 @@
   <HelpKINode Title="Extensions property" Url="html/c07e8add-4295-2813-d270-77b107eef39d.htm" />
   <HelpKINode Title="ExtractingHtmlInfo enumeration member" Url="html/15b1ab7a-6438-34c6-e592-a46320ab5e97.htm" />
   <HelpKINode Title="Factory class">
-    <HelpKINode Title="methods" Url="html/df432301-24ad-3f6c-fc18-323d14fd1452.htm" />
     <HelpKINode Title="methods" Url="html/c5bfb37a-481e-96b8-30f3-cdbed5239de2.htm" />
+    <HelpKINode Title="methods" Url="html/df432301-24ad-3f6c-fc18-323d14fd1452.htm" />
     <HelpKINode Title="properties" Url="html/dc793f24-3806-8152-6ff1-1f5b0c5b9e21.htm" />
     <HelpKINode Title="properties" Url="html/699a0392-120e-976a-70b9-8be64d281ce3.htm" />
   </HelpKINode>
@@ -2532,20 +2537,20 @@
   <HelpKINode Title="GetStatusBarText method" Url="html/7967a3c0-f920-f234-f57d-3314555d376e.htm" />
   <HelpKINode Title="GetSupportAnimatedGif method" Url="html/653424c4-3aca-9032-76a6-07d630fae8a2.htm" />
   <HelpKINode Title="Getting started">
-    <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
-    <HelpKINode Title="Visual Studio projects" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
-    <HelpKINode Title="user preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" />
     <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
-    <HelpKINode Title="overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
-    <HelpKINode Title="absolute and relative paths" Url="html/576b6a36-0808-4857-bec0-e6eeeae4e36b.htm" />
-    <HelpKINode Title="user preferences - general" Url="html/6a35198a-3713-4eb7-929d-555fddc0ccb6.htm" />
-    <HelpKINode Title="&lt;inheritdoc /&gt;" Url="html/79897974-ffc9-4b84-91a5-e50c66a0221d.htm" />
     <HelpKINode Title="create a new project" Url="html/d5dbf017-25f1-48cb-86db-90f76ee8f4d7.htm" />
+    <HelpKINode Title="&lt;inheritdoc /&gt;" Url="html/79897974-ffc9-4b84-91a5-e50c66a0221d.htm" />
+    <HelpKINode Title="absolute and relative paths" Url="html/576b6a36-0808-4857-bec0-e6eeeae4e36b.htm" />
     <HelpKINode Title="installation" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
+    <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
+    <HelpKINode Title="user preferences - general" Url="html/6a35198a-3713-4eb7-929d-555fddc0ccb6.htm" />
+    <HelpKINode Title="overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
+    <HelpKINode Title="user preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" />
     <HelpKINode Title="user preferences - spell checking" Url="html/836847bc-d780-468b-ae23-f014f0829a0f.htm" />
     <HelpKINode Title="Visual Studio" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
-    <HelpKINode Title="Welcome" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
+    <HelpKINode Title="Visual Studio projects" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="websites and web projects" Url="html/94c7f744-9b90-4254-93ab-9b15f47d9f42.htm" />
+    <HelpKINode Title="Welcome" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
   </HelpKINode>
   <HelpKINode Title="Getting Started">
     <HelpKINode Title="attached events" Url="html/67b9bfab-7cf3-4beb-bd88-85bcff4e8ebd.htm" />
@@ -2635,6 +2640,7 @@
   <HelpKINode Title="HelpFileBuilderPlugInExportAttribute.HelpFileBuilderPlugInExportAttribute constructor" Url="html/55a0a8e3-fedd-00c6-4555-e6bf3b781e52.htm" />
   <HelpKINode Title="HelpFileBuilderPlugInExportAttribute.Id property" Url="html/7dfd8250-0cae-f936-a2fe-60538df018ca.htm" />
   <HelpKINode Title="HelpFileBuilderPlugInExportAttribute.IsConfigurable property" Url="html/2d9ba88b-b6a1-5d9e-f4d1-aa78d2801291.htm" />
+  <HelpKINode Title="HelpFileBuilderPlugInExportAttribute.IsHidden property" Url="html/74f07aa2-10b5-2603-dcf6-e2da7742dd56.htm" />
   <HelpKINode Title="HelpFileBuilderPlugInExportAttribute.RunsInPartialBuild property" Url="html/99e24fe2-dedd-0b08-5f86-a517d9b36f90.htm" />
   <HelpKINode Title="HelpFileBuilderPlugInExportAttribute.Version property" Url="html/f564451c-714f-46f7-f6a8-9bdfb6d26658.htm" />
   <HelpKINode Title="HelpFileFormat property" Url="html/942f50c7-25ed-f5c0-e95b-672c4accf65e.htm" />
@@ -2926,7 +2932,7 @@
     <HelpKINode Title="ESentResolveReferenceLinksComponent.Initialize Method " Url="html/23f86cd9-c114-998f-825f-57b02cadae60.htm" />
     <HelpKINode Title="HierarchicalTocPlugIn.Initialize Method " Url="html/9cc33d85-7ec3-78ea-2565-3079a064770f.htm" />
     <HelpKINode Title="IPlugIn.Initialize Method " Url="html/9497a7e4-d888-c424-25f8-463a893d2aa9.htm" />
-    <HelpKINode Title="LightweightTocPlugIn.Initialize Method " Url="html/e3307cad-1c81-a012-66be-b7e28c291ed9.htm" />
+    <HelpKINode Title="LightweightWebsiteStylePlugIn.Initialize Method " Url="html/20f4a16a-c9b4-b398-9a25-d370698e4eb0.htm" />
     <HelpKINode Title="MultiFormatOutputComponent.Initialize Method " Url="html/78ff53e1-87fc-a66e-cd61-ba5a89b0dec4.htm" />
     <HelpKINode Title="PathPropertiesPageControl.Initialize Method " Url="html/7fbce4e9-6c10-0425-1272-73100d389557.htm" />
     <HelpKINode Title="ScriptSharpPlugIn.Initialize Method " Url="html/b3249a75-85be-a930-a47f-f751328fe02f.htm" />
@@ -2990,6 +2996,7 @@
   <HelpKINode Title="IPlugInMetadata.Description property" Url="html/474ea28b-b9ee-4e9f-8493-6d48417857da.htm" />
   <HelpKINode Title="IPlugInMetadata.Id property" Url="html/032c7f7f-f882-2a00-82ef-84631887a166.htm" />
   <HelpKINode Title="IPlugInMetadata.IsConfigurable property" Url="html/64521e02-287f-f055-daec-4fefdef35756.htm" />
+  <HelpKINode Title="IPlugInMetadata.IsHidden property" Url="html/a9e2a9df-6544-d57d-d2cf-c6ee555d0bfb.htm" />
   <HelpKINode Title="IPlugInMetadata.RunsInPartialBuild property" Url="html/ae04fb80-8592-2e0d-f93d-4967d0387773.htm" />
   <HelpKINode Title="IPlugInMetadata.Version property" Url="html/3d89d794-d4ab-2a0b-565b-37a3955067c0.htm" />
   <HelpKINode Title="IsBinding property" Url="html/6a3131ec-d9fb-03c5-9965-13314128d377.htm" />
@@ -3046,6 +3053,10 @@
     <HelpKINode Title="FolderPathUserControl.IsFixedPath Property " Url="html/ab8d541c-b899-ebd3-7965-5b4f86ec9846.htm" />
   </HelpKINode>
   <HelpKINode Title="IsGroup property" Url="html/e662beac-be13-3db2-cbba-a107ec8e1f22.htm" />
+  <HelpKINode Title="IsHidden property">
+    <HelpKINode Title="HelpFileBuilderPlugInExportAttribute.IsHidden Property " Url="html/74f07aa2-10b5-2603-dcf6-e2da7742dd56.htm" />
+    <HelpKINode Title="IPlugInMetadata.IsHidden Property " Url="html/a9e2a9df-6544-d57d-d2cf-c6ee555d0bfb.htm" />
+  </HelpKINode>
   <HelpKINode Title="IsMSHVRootContentContainer property" Url="html/a92b0f58-33b9-bc78-c884-bd5fb65690fc.htm" />
   <HelpKINode Title="IsOverridden property" Url="html/5cc39fc0-01dd-cd07-696f-36e3216e8e18.htm" />
   <HelpKINode Title="IsPathTerminated method" Url="html/22f26cee-4ad2-81cf-fa00-a85fd8cd36da.htm" />
@@ -3137,22 +3148,19 @@
   <HelpKINode Title="LessThan operator" Url="html/f16f9d3a-fad6-b13f-3c16-617cb6061b97.htm" />
   <HelpKINode Title="Level property" Url="html/7cc5339f-6f51-16a1-b2cb-f903f8340c00.htm" />
   <HelpKINode Title="License agreement" Url="html/24504fda-d3ef-4dd9-8335-6db8b25d00f2.htm" />
-  <HelpKINode Title="LightweightTocPlugIn">
-    <HelpKINode Title="configuration options" Url="html/936f1b06-063e-4ffc-8999-0f7c9bd49e03.htm" />
+  <HelpKINode Title="LightweightWebsiteStylePlugIn class">
+    <HelpKINode Title="LightweightWebsiteStylePlugIn Class" Url="html/f97e1001-5dbb-94c5-caaf-d5f3abb39cad.htm" />
+    <HelpKINode Title="about LightweightWebsiteStylePlugIn class" Url="html/f97e1001-5dbb-94c5-caaf-d5f3abb39cad.htm" />
+    <HelpKINode Title="constructor" Url="html/b2085d43-e30b-d786-12d6-933bbabdd925.htm" />
+    <HelpKINode Title="methods" Url="html/c897cab5-4754-16a7-c289-d7a1e1184d09.htm" />
+    <HelpKINode Title="properties" Url="html/a47eec8a-9b1c-b211-e0cf-e85dea31daa1.htm" />
   </HelpKINode>
-  <HelpKINode Title="LightweightTocPlugIn class">
-    <HelpKINode Title="LightweightTocPlugIn Class" Url="html/495aa90f-cd16-b720-0d1c-0ff734546ffa.htm" />
-    <HelpKINode Title="about LightweightTocPlugIn class" Url="html/495aa90f-cd16-b720-0d1c-0ff734546ffa.htm" />
-    <HelpKINode Title="constructor" Url="html/4ff81fb4-4611-2f76-5c89-45bc294fe0a6.htm" />
-    <HelpKINode Title="methods" Url="html/e439d7fb-d45c-b544-83c0-21c36e39b63e.htm" />
-    <HelpKINode Title="properties" Url="html/4d6d3971-e3a1-39b4-9c91-ab7ef7d22153.htm" />
-  </HelpKINode>
-  <HelpKINode Title="LightweightTocPlugIn.ConfigurePlugIn method" Url="html/878919ff-2abc-4909-db01-8781121a4925.htm" />
-  <HelpKINode Title="LightweightTocPlugIn.Dispose method" Url="html/57990b2a-8a3b-46e5-0a85-603b402b3e1e.htm" />
-  <HelpKINode Title="LightweightTocPlugIn.Execute method" Url="html/eb0829b3-6fd9-a140-d503-a8292668500b.htm" />
-  <HelpKINode Title="LightweightTocPlugIn.ExecutionPoints property" Url="html/4f57b85c-55fd-8b15-c2e2-6f59c8af8eed.htm" />
-  <HelpKINode Title="LightweightTocPlugIn.Initialize method" Url="html/e3307cad-1c81-a012-66be-b7e28c291ed9.htm" />
-  <HelpKINode Title="LightweightTocPlugIn.LightweightTocPlugIn constructor" Url="html/4ff81fb4-4611-2f76-5c89-45bc294fe0a6.htm" />
+  <HelpKINode Title="LightweightWebsiteStylePlugIn.ConfigurePlugIn method" Url="html/829fd798-4274-e78e-6999-78c55a176705.htm" />
+  <HelpKINode Title="LightweightWebsiteStylePlugIn.Dispose method" Url="html/b0e59aa4-ab09-cbbe-925a-146784546e4e.htm" />
+  <HelpKINode Title="LightweightWebsiteStylePlugIn.Execute method" Url="html/9990480b-8608-4aa8-b9d5-475a1e1146e2.htm" />
+  <HelpKINode Title="LightweightWebsiteStylePlugIn.ExecutionPoints property" Url="html/83cb13d0-1042-1f19-76df-1d0b487f4929.htm" />
+  <HelpKINode Title="LightweightWebsiteStylePlugIn.Initialize method" Url="html/20f4a16a-c9b4-b398-9a25-d370698e4eb0.htm" />
+  <HelpKINode Title="LightweightWebsiteStylePlugIn.LightweightWebsiteStylePlugIn constructor" Url="html/b2085d43-e30b-d786-12d6-933bbabdd925.htm" />
   <HelpKINode Title="LineNumber property" Url="html/a4b57c72-d7a5-78e1-defe-59bdf430b1f1.htm" />
   <HelpKINode Title="Link property" Url="html/e82ab531-3856-699e-e0dd-e1a68273fb5c.htm" />
   <HelpKINode Title="LinkPath field" Url="html/400964fa-edc4-c8c7-03ec-6f7da9d5a212.htm" />
@@ -3765,7 +3773,7 @@
     <HelpKINode Title="DBCS fix for CHM builds plug-in" Url="html/31696f39-8f4e-4c4d-ab08-41a40793df03.htm" />
     <HelpKINode Title="execution notes" Url="html/a14e026e-642f-4ce6-9506-341e57cc3d1f.htm" />
     <HelpKINode Title="hierarchical table of contents plug-in" Url="html/aa7bcd07-1a86-42dc-9f1d-49bd4afeb5d2.htm" />
-    <HelpKINode Title="lightweight table of contents plug-in" Url="html/936f1b06-063e-4ffc-8999-0f7c9bd49e03.htm" />
+    <HelpKINode Title="lightweight website style plug-in" Url="html/0acf46fe-e7c3-4f3f-a4ca-df86f3630286.htm" />
     <HelpKINode Title="links to third-party plug-ins" Url="html/c18d6cb6-e4e4-4944-84ee-f867aa6cfb0d.htm" />
     <HelpKINode Title="output deployment plug-in" Url="html/796d6bbe-5130-4c87-8790-5cceb66219c7.htm" />
     <HelpKINode Title="overview" Url="html/e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm" />
@@ -3817,6 +3825,7 @@
   <HelpKINode Title="prerequisites" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
   <HelpKINode Title="PresentationStyle property" Url="html/46dd95dc-5da7-2ba6-c124-22616595134a.htm" />
   <HelpKINode Title="PresentationStyleFolder property" Url="html/d83caedf-57ce-16c3-55c0-06079431dfb9.htm" />
+  <HelpKINode Title="PresentationStyleResourceItemsFolder property" Url="html/30919b5c-1627-17a9-8762-024935c666b1.htm" />
   <HelpKINode Title="PreserveWhitespace method" Url="html/d2040893-301c-cfac-fe77-29063001eb40.htm" />
   <HelpKINode Title="PreviewerTitle property" Url="html/a6217d6b-f392-e8f6-3f90-b01963b88e6b.htm" />
   <HelpKINode Title="PreviewTopic method" Url="html/5cd961e0-a8b0-ea8a-c677-77fadfc13815.htm" />
@@ -3949,8 +3958,8 @@
   <HelpKINode Title="ProjectFileConfiguration.Platform property" Url="html/e875b06f-63f3-5043-7a4e-00e5ad70bb18.htm" />
   <HelpKINode Title="ProjectFileConfiguration.ProjectFileConfiguration constructor" Url="html/a1bd6596-d326-8e92-f34a-6340539ea9b2.htm" />
   <HelpKINode Title="ProjectFileConfiguration.ProjectFileName property" Url="html/761debd3-04ff-2870-020f-8f471349c40b.htm" />
-  <HelpKINode Title="ProjectFileName property" Url="html/761debd3-04ff-2870-020f-8f471349c40b.htm" />
   <HelpKINode Title="ProjectFilename property" Url="html/a5179722-1820-058e-3c18-ddcb172c6c93.htm" />
+  <HelpKINode Title="ProjectFileName property" Url="html/761debd3-04ff-2870-020f-8f471349c40b.htm" />
   <HelpKINode Title="ProjectFolder property">
     <HelpKINode Title="BuildProcess.ProjectFolder Property " Url="html/2dc9c884-eb9f-e739-334e-86e6cc9682d9.htm" />
     <HelpKINode Title="ConvertToMSBuildFormat.ProjectFolder Property " Url="html/3f885b83-6361-4f70-07b3-3f280becb856.htm" />
@@ -4329,6 +4338,7 @@
     <HelpKINode Title="TocEntryCollection.ResetSortOrder Method " Url="html/77e791c8-afaa-ba01-8335-5aba0aabca83.htm" />
   </HelpKINode>
   <HelpKINode Title="ResetValue method" Url="html/cb38338c-c6c7-2fa8-8bd5-66acc4397ec1.htm" />
+  <HelpKINode Title="ResolvedHelpTitle property" Url="html/04b4604c-8e0a-b53f-0299-642f42b6a789.htm" />
   <HelpKINode Title="ResolvedHtmlHelpName property" Url="html/671bb414-7fa8-854b-219e-1deba4dd5b68.htm" />
   <HelpKINode Title="ResolveFunction method" Url="html/41f6006b-8467-cdcd-f3d4-5f58e30cc8c2.htm" />
   <HelpKINode Title="ResolvePath method">
@@ -4408,7 +4418,6 @@
     <HelpKINode Title="HelpFileBuilderPlugInExportAttribute.RunsInPartialBuild Property " Url="html/99e24fe2-dedd-0b08-5f86-a517d9b36f90.htm" />
     <HelpKINode Title="IPlugInMetadata.RunsInPartialBuild Property " Url="html/ae04fb80-8592-2e0d-f93d-4967d0387773.htm" />
   </HelpKINode>
-  <HelpKINode Title="Sandcastle Help File Builder" Url="html/d19a0743-048e-40d7-af19-07dd527fe5d0.htm" />
   <HelpKINode Title="SandcastleBuilder.Components namespace" Url="html/592251ca-d90c-278e-fc9b-c5d46a28039f.htm" />
   <HelpKINode Title="SandcastleBuilder.Components.CodeBlockComponent class" Url="html/644ae5c2-b278-362c-39b8-d12caf6be169.htm" />
   <HelpKINode Title="SandcastleBuilder.Components.CodeBlockComponent.Factory class" Url="html/36b9a838-3a21-3c43-7d32-be05007dac10.htm" />
@@ -4503,7 +4512,7 @@
   <HelpKINode Title="SandcastleBuilder.PlugIns.DeploymentLocation class" Url="html/1c2a9bb7-6d8b-e8ca-b0ac-dfc3ef04d385.htm" />
   <HelpKINode Title="SandcastleBuilder.PlugIns.DeploymentPlugIn class" Url="html/84a22ac1-beb5-01e7-b2f0-7dfba475ad3e.htm" />
   <HelpKINode Title="SandcastleBuilder.PlugIns.HierarchicalTocPlugIn class" Url="html/53a4a005-49d3-4d4c-8aa4-009fb2d5bcc8.htm" />
-  <HelpKINode Title="SandcastleBuilder.PlugIns.LightweightTocPlugIn class" Url="html/495aa90f-cd16-b720-0d1c-0ff734546ffa.htm" />
+  <HelpKINode Title="SandcastleBuilder.PlugIns.LightweightWebsiteStylePlugIn class" Url="html/f97e1001-5dbb-94c5-caaf-d5f3abb39cad.htm" />
   <HelpKINode Title="SandcastleBuilder.PlugIns.ProxyCredentials class" Url="html/bd507d1e-c67a-6936-3237-8e6e20728624.htm" />
   <HelpKINode Title="SandcastleBuilder.PlugIns.ReferenceLinkSettings class" Url="html/8a68dd45-288a-4c1d-7a4c-0c9967748111.htm" />
   <HelpKINode Title="SandcastleBuilder.PlugIns.ReferenceLinkSettingsCollection class" Url="html/2be3fb2a-2520-203c-c37e-0c5ad1d6d052.htm" />
@@ -5313,6 +5322,9 @@
   <HelpKINode Title="SupportAnimatedGifProperty field" Url="html/b6feb45f-9165-88b0-fd32-84f125472ed2.htm" />
   <HelpKINode Title="SuppressApiFilter property" Url="html/37a38739-41b9-d717-0fdd-9aab9a6e25f0.htm" />
   <HelpKINode Title="syntax filter generator" Url="html/8dcbb69b-7a1a-4049-8e6b-2bf344efbbc9.htm" />
+  <HelpKINode Title="SyntaxComponent">
+    <HelpKINode Title="configuration" Url="html/3127217a-9b11-424e-aeb4-b88ca4569bad.htm" />
+  </HelpKINode>
   <HelpKINode Title="SyntaxFilters property" Url="html/005aaf28-14b9-c767-480d-6cc71fb3e36a.htm" />
   <HelpKINode Title="TableHeaderRow field" Url="html/81b92c71-694a-0539-ca13-d5ab4968e228.htm" />
   <HelpKINode Title="TableTitle field" Url="html/89ea82e0-dc40-3a64-935d-b61f5650e988.htm" />
@@ -5925,7 +5937,8 @@
     <HelpKINode Title="1.9.8.0" Url="html/f4c5d176-8da1-4500-b070-e3b1e9e2c65c.htm" />
     <HelpKINode Title="2014.1.26.0 Beta" Url="html/1139ca15-af64-48a2-9187-ccc1aec389d4.htm" />
     <HelpKINode Title="2014.2.15.0 Beta" Url="html/8f7fa83f-c989-426f-b8b1-c42c333a4d0a.htm" />
-    <HelpKINode Title="2014.4.21.0" Url="html/81b04099-bcd7-4caa-8a21-13624d9e290d.htm" />
+    <HelpKINode Title="2014.4.22.0" Url="html/81b04099-bcd7-4caa-8a21-13624d9e290d.htm" />
+    <HelpKINode Title="2014.5.31.0" Url="html/3405263f-a9eb-4ce4-b90f-87c31ab76d85.htm" />
     <HelpKINode Title="known issues" Url="html/21c2a363-6c94-440b-8985-6b224d275463.htm" />
   </HelpKINode>
   <HelpKINode Title="VersionSettings class">
