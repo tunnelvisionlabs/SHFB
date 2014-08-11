@@ -704,9 +704,7 @@ namespace SandcastleBuilder.Package.Nodes
         public override ProjectElement AddFileToMSBuild(string file)
         {
             SandcastleBuildAction buildAction = SandcastleProject.DefaultBuildAction(file);
-            string itemPath = PackageUtilities.MakeRelative(base.FileName, file);
-
-            ProjectElement newItem = this.CreateMSBuildFileItem(itemPath, buildAction.ToString());
+            ProjectElement newItem = AddFileToMSBuild(file, buildAction.ToString(), null);
 
             // Set the default ID and alternate text if it is an Image element
             if(buildAction == SandcastleBuildAction.Image)
