@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.ObjectModel;
+    using System.Runtime.InteropServices;
     using Microsoft.VisualStudio;
     using Microsoft.VisualStudio.Language.Intellisense;
     using Microsoft.VisualStudio.Text.Editor;
@@ -34,6 +35,7 @@
                 {
                 case VSConstants.VSStd2KCmdID.RETURN:
                 case VSConstants.VSStd2KCmdID.TAB:
+                case VSConstants.VSStd2KCmdID.TYPECHAR:
                     if (!_completionBroker.IsCompletionActive(_textView))
                         return 0;
 
@@ -59,6 +61,10 @@
                 case VSConstants.VSStd2KCmdID.TAB:
                     return HandleTab();
 
+                case VSConstants.VSStd2KCmdID.TYPECHAR:
+                    char typedChar = Convert.ToChar(Marshal.GetObjectForNativeVariant(pvaIn));
+                    return HandleTypeChar(typedChar);
+
                 default:
                     break;
                 }
@@ -75,6 +81,19 @@
         private bool HandleTab()
         {
             return HandleCompletion();
+        }
+
+        private bool HandleTypeChar(char typedChar)
+        {
+            switch (typedChar)
+            {
+            case '/':
+            case '>':
+                return HandleCompletion();
+
+            default:
+                return false;
+            }
         }
 
         private bool HandleCompletion()
