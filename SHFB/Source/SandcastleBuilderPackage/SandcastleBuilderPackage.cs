@@ -224,12 +224,15 @@ namespace SandcastleBuilder.Package
         /// <inheritdoc />
         protected override void Dispose(bool disposing)
         {
-            SandcastleBuilderPackage.Instance = null;
-
-            if(buildCompletedListener != null)
+            if (disposing)
             {
-                buildCompletedListener.Dispose();
-                buildCompletedListener = null;
+                SandcastleBuilderPackage.Instance = null;
+
+                if(buildCompletedListener != null)
+                {
+                    buildCompletedListener.Dispose();
+                    buildCompletedListener = null;
+                }
             }
 
             base.Dispose(disposing);

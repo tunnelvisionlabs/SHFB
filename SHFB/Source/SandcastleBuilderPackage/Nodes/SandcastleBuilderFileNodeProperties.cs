@@ -252,7 +252,7 @@ namespace SandcastleBuilder.Package.Nodes
         //=====================================================================
 
         /// <summary>
-        /// This is used to filter the properties based on the <see cref="BuildAction" />
+        /// This is used to filter the properties based on the <see cref="Utils.BuildAction" />
         /// </summary>
         /// <param name="pdc">The property descriptor collection to filter</param>
         /// <returns>The filtered property descriptor collection</returns>
