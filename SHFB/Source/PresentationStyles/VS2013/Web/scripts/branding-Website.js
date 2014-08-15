@@ -32,6 +32,18 @@ function InitializeToc()
 {
     tocWidth = parseInt(GetCookie("TocWidth", "280"));
     ResizeToc();
+    $(window).resize(SetNavHeight)
+}
+
+function SetNavHeight()
+{
+    $leftNav = $("#leftNav")
+    $topicContent = $("#TopicContent")
+    leftNavPadding = $leftNav.outerHeight() - $leftNav.height()
+    contentPadding = $topicContent.outerHeight() - $topicContent.height()
+    // want outer height of left navigation div to match outer height of content
+    leftNavHeight = $topicContent.outerHeight() - leftNavPadding
+    $leftNav.css("min-height", leftNavHeight + "px")
 }
 
 // Increase the TOC width
@@ -80,6 +92,8 @@ function ResizeToc()
         // Hide/show reset TOC width image
         document.getElementById("ResizeImageReset").style.display = (tocWidth < 480) ? "none" : "";
     }
+
+    SetNavHeight()
 }
 
 // Toggle a TOC entry between its collapsed and expanded state
