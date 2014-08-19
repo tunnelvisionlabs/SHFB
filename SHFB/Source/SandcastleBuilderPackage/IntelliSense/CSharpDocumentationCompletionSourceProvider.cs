@@ -39,6 +39,7 @@ namespace SandcastleBuilder.Package.IntelliSense
     [Export(typeof(ICompletionSourceProvider))]
     [ContentType("CSharp")]
     [Order(After = "default")]
+    [Order(After = "Roslyn Completion Presenter")]
     [Name("Sandcastle XML Comments Completion Source Provider")]
     internal sealed class CSharpDocumentationCompletionSourceProvider : ICompletionSourceProvider
     {
