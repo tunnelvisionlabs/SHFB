@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Xml;
 using System.Xml.XPath;
 
@@ -68,10 +69,10 @@ namespace Microsoft.Ddue.Tools
                 return 1;
             }
 
-            bool flag = true;
+            bool rip = true;
 
             if(result.Options["rip"].IsPresent && !((bool)result.Options["rip"].Value))
-                flag = false;
+                rip = false;
 
             string uri = (string)result.Options["config"].Value;
 
@@ -96,7 +97,7 @@ namespace Microsoft.Ddue.Tools
 
             XPathNavigator navigator = document.CreateNavigator().SelectSingleNode("versions");
             XPathExpression expr = XPathExpression.Compile("string(ancestor::versions/@name)");
-            List<VersionInfo> list = new List<VersionInfo>();
+            List<VersionInfo> allVersions = new List<VersionInfo>();
             List<string> latestVersions = new List<string>();
 
             foreach(XPathNavigator navigator2 in document.CreateNavigator().Select("versions//version[@file]"))
@@ -112,19 +113,24 @@ namespace Microsoft.Ddue.Tools
                 if(String.IsNullOrEmpty(attribute))
                     ConsoleApplication.WriteMessage(LogLevel.Error, "Every version element must have a file attribute.");
 
+                string ripOldString = navigator2.GetAttribute("ripOldApis", String.Empty);
+                bool ripOld = ripOldString == "1" || String.Equals("true", ripOldString, StringComparison.OrdinalIgnoreCase);
+
                 name = Environment.ExpandEnvironmentVariables(name);
-                VersionInfo item = new VersionInfo(attribute, group, name);
-                list.Add(item);
+                VersionInfo item = new VersionInfo(attribute, group, name, ripOld);
+                allVersions.Add(item);
             }
 
             string str5 = String.Empty;
 
-            foreach(VersionInfo info2 in list)
-                if(info2.Group != str5)
+            foreach(VersionInfo info2 in allVersions)
+                if(!info2.RipOldApis && (!rip || info2.Group != str5))
                 {
                     latestVersions.Add(info2.Name);
                     str5 = info2.Group;
                 }
+
+            bool ripAny = rip || allVersions.Any(i => i.RipOldApis);
 
             if(Cancel)
             {
@@ -156,7 +162,7 @@ namespace Microsoft.Ddue.Tools
             XPathExpression expression6 = XPathExpression.Compile("boolean(argument[type[@api='T:System.Boolean'] and value[.='True']])");
             XPathExpression apiChild = XPathExpression.Compile("./api");
 
-            foreach(VersionInfo info3 in list)
+            foreach(VersionInfo info3 in allVersions)
             {
                 if(Cancel)
                 {
@@ -289,11 +295,11 @@ namespace Microsoft.Ddue.Tools
                 }
             }
 
-            if(flag)
+            if(ripAny)
                 RemoveOldApis(versionIndex, latestVersions);
 
             ConsoleApplication.WriteMessage(LogLevel.Info, String.Format(CultureInfo.CurrentCulture,
-                "Indexed {0} entities in {1} versions.", versionIndex.Count, list.Count));
+                "Indexed {0} entities in {1} versions.", versionIndex.Count, allVersions.Count));
 
             try
             {
@@ -311,7 +317,7 @@ namespace Microsoft.Ddue.Tools
                     writer.WriteStartElement("assemblies");
                     Dictionary<string, object> dictionary4 = new Dictionary<string, object>();
 
-                    foreach(VersionInfo info5 in list)
+                    foreach(VersionInfo info5 in allVersions)
                     {
                         if(Cancel)
                         {
@@ -342,7 +348,7 @@ namespace Microsoft.Ddue.Tools
                     writer.WriteStartElement("apis");
                     var readElements = new HashSet<String>();
 
-                    foreach(VersionInfo info6 in list)
+                    foreach(VersionInfo info6 in allVersions)
                     {
                         if(Cancel)
                         {
@@ -416,7 +422,7 @@ namespace Microsoft.Ddue.Tools
                                                 {
                                                     foreach(string str13 in dictionary5.Keys)
                                                     {
-                                                        if(dictionary6.ContainsKey(str13) || (flag && !IsLatestElement(dictionary5[str13].Versions.Values, latestVersions)))
+                                                        if(dictionary6.ContainsKey(str13) || (ripAny && !IsLatestElement(dictionary5[str13].Versions.Values, latestVersions)))
                                                         {
                                                             continue;
                                                         }
