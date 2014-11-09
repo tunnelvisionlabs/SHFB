@@ -2,7 +2,7 @@
 // System  : Sandcastle Help File Builder Plug-Ins
 // File    : LightweightWebsiteStylePlugIn.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)  Based on code by Sam Harwell
-// Updated : 05/30/2014
+// Updated : 08/19/2014
 // Note    : Copyright 2014, Eric Woodruff, All rights reserved.
 //           Portions Copyright 2014, Sam Harwell, All rights reserved.
 // Compiler: Microsoft Visual C#
@@ -138,6 +138,12 @@ namespace SandcastleBuilder.PlugIns
             Directory.CreateDirectory(Path.Combine(builder.WorkingFolder, "Output", "Website", "toc"));
             List<XElement> elements = new List<XElement>(webtoc.XPathSelectElements("//node()"));
 
+            // Work around the problem of the root node only showing one type if there are no conceptual topics
+            // or they are listed after the namespaces.  In such cases, expand the root node so that all
+            // namespaces are listed on the default page.  This avoids confusion caused by only seeing one
+            // namespace when the root node is collapsed by default.
+            bool expandRootNode = webtoc.Root.Elements().First().HasElements;
+
             foreach(XElement element in elements)
             {
                 XDocument pageChildren = new XDocument(new XDeclaration("1.0", "utf-8", null));
@@ -239,8 +245,7 @@ namespace SandcastleBuilder.PlugIns
 
                 XElement resizableBar =
                     new XElement("div",
-                        new XAttribute("id", "TocResizableEw"),
-                        new XAttribute("class", "tocResizableEw"),
+                        new XAttribute("id", "tocResizableEW"),
                         new XAttribute("onmousedown", "OnMouseDown(event);"));
 
                 XElement resizeUi =
@@ -299,6 +304,21 @@ namespace SandcastleBuilder.PlugIns
 
                 if(pos != -1)
                     outputFile = outputFile.Insert(pos, stringBuilder.ToString());
+
+                if(expandRootNode)
+                {
+                    expandRootNode = false;
+
+                    outputFile = outputFile.Replace("</html>", @"<script type=""text/javascript"">
+<!--
+    var tocNav = document.getElementById(""tocNav"");
+    var anchor = tocNav.children[0].children[0];
+    Toggle(anchor);
+    tocNav.children[0].className += "" current"";
+-->
+</script>
+</html>");
+                }
 
                 File.WriteAllText(path, outputFile, Encoding.UTF8);
             }

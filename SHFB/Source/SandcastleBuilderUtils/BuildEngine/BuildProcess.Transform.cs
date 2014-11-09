@@ -2,7 +2,7 @@
 // System  : Sandcastle Help File Builder Utilities
 // File    : BuildProcess.Transform.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 05/07/2014
+// Updated : 08/24/2014
 // Note    : Copyright 2006-2014, Eric Woodruff, All rights reserved
 // Compiler: Microsoft Visual C#
 //
@@ -47,6 +47,7 @@
 //                           namespace grouping based on changes submitted by Stazzz.
 //          12/17/2013  EFW  Removed the SandcastlePath property and all references to it
 //          12/26/2013  EFW  Updated to use MEF to load BuildAssembler build components
+//          08/05/2014  EFW  Added support for getting a list of syntax generator resource item files
 //===============================================================================================================
 
 using System;
@@ -897,8 +898,19 @@ namespace SandcastleBuilder.Utils.BuildEngine
 
                     fileItems = new FileItemCollection(project, BuildAction.ResourceItems);
 
-                    // Files are copied and transformed as they may contain
-                    // substitution tags.
+                    // Add syntax generator resource item files.  All languages are included regardless of the
+                    // project filter settings since code examples can be in any language.  Files are copied and
+                    // transformed as they may contain substitution tags
+                    foreach(string itemFile in ComponentUtilities.SyntaxGeneratorResourceItemFiles(
+                      componentContainer, project.Language))
+                    {
+                        sb.AppendFormat("<content file=\"{0}\" />\r\n", Path.GetFileName(itemFile));
+
+                        this.TransformTemplate(Path.GetFileName(itemFile), Path.GetDirectoryName(itemFile),
+                            workingFolder);
+                    }
+
+                    // Add project resource item files last so that they override all other files
                     foreach(FileItem file in fileItems)
                     {
                         sb.AppendFormat("<content file=\"{0}\" />\r\n", Path.GetFileName(file.FullPath));
@@ -1107,13 +1119,13 @@ namespace SandcastleBuilder.Utils.BuildEngine
         /// <returns>The list of framework comments file sources in the appropriate format.</returns>
         private string FrameworkCommentList(string listType)
         {
-            FrameworkSettings frameworkSettings = FrameworkDictionary.AllFrameworks.GetFrameworkWithRedirect(
+            FrameworkSettings settings = FrameworkDictionary.AllFrameworks.GetFrameworkWithRedirect(
                 project.FrameworkVersion);
             StringBuilder sb = new StringBuilder(1024);
             string folder, wildcard;
 
             // Build the list based on the type and what actually exists
-            foreach(var location in frameworkSettings.CommentsFileLocations(project.Language))
+            foreach(var location in settings.CommentsFileLocations(project.Language))
             {
                 folder = Path.GetDirectoryName(location);
                 wildcard = Path.GetFileName(location);
@@ -1124,7 +1136,7 @@ namespace SandcastleBuilder.Utils.BuildEngine
                     // used by caching components to identify the cache and its location.
                     sb.AppendFormat(CultureInfo.InvariantCulture, "<data base=\"{0}\" files=\"{1}\" " +
                         "recurse=\"false\" duplicateWarning=\"false\" groupId=\"{2}_{3}_{4:X}\" />\r\n",
-                        folder, wildcard, frameworkSettings.Platform, frameworkSettings.Version,
+                        folder, wildcard, settings.Platform, settings.Version,
                         location.GetHashCode());
                 }
                 else    // importframeworkcommentlist
@@ -1457,13 +1469,13 @@ namespace SandcastleBuilder.Utils.BuildEngine
         /// <summary>
         /// This is used to get an enumerable list of unique namespaces from the given reflection data file
         /// </summary>
-        /// <param name="reflectionFile">The reflection data file to search for namespaces</param>
+        /// <param name="reflectionInfoFile">The reflection data file to search for namespaces</param>
         /// <param name="validNamespaces">An enumerable list of valid namespaces</param>
         /// <returns>An enumerable list of unique namespaces</returns>
-        public IEnumerable<string> GetReferencedNamespaces(string reflectionFile,
+        public IEnumerable<string> GetReferencedNamespaces(string reflectionInfoFile,
           IEnumerable<string> validNamespaces)
         {
-            XPathDocument doc = new XPathDocument(reflectionFile);
+            XPathDocument doc = new XPathDocument(reflectionInfoFile);
             XPathNavigator nav = doc.CreateNavigator();
             HashSet<string> seenNamespaces = new HashSet<string>();
             string ns;
