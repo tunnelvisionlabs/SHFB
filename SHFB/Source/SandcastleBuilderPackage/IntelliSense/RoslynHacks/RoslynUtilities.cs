@@ -63,6 +63,12 @@ namespace SandcastleBuilder.Package.IntelliSense.RoslynHacks
             if (roslynInstalled.HasValue)
                 return roslynInstalled;
 
+            if (IsFinalRoslyn)
+            {
+                roslynInstalled = true;
+                return true;
+            }
+
             if (serviceProvider == null)
                 return null;
 
