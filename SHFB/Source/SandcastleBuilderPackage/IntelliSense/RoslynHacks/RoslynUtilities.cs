@@ -20,6 +20,7 @@
 namespace SandcastleBuilder.Package.IntelliSense.RoslynHacks
 {
     using System;
+    using Microsoft.VisualStudio.Text;
     using ErrorHandler = Microsoft.VisualStudio.ErrorHandler;
     using IVsShell = Microsoft.VisualStudio.Shell.Interop.IVsShell;
     using SVsShell = Microsoft.VisualStudio.Shell.Interop.SVsShell;
@@ -31,6 +32,17 @@ namespace SandcastleBuilder.Package.IntelliSense.RoslynHacks
         /// Caches the result of <see cref="IsRoslynInstalled"/>.
         /// </summary>
         private static bool? roslynInstalled;
+
+        /// <summary>
+        /// Determines whether or not the IDE uses a "final" build of the .NET Compiler Platform.
+        /// </summary>
+        public static bool IsFinalRoslyn
+        {
+            get
+            {
+                return typeof(ITextBuffer).Assembly.GetName().Version.Major >= 14;
+            }
+        }
 
         /// <summary>
         /// Determines if the Roslyn extensions for Visual Studio are installed.
