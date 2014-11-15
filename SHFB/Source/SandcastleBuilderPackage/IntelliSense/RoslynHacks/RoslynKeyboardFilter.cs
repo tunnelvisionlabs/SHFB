@@ -108,7 +108,7 @@
 
             CompletionSet completionSet = completionSession.SelectedCompletionSet;
             CompletionSelectionStatus selectionStatus = completionSet.SelectionStatus;
-            if (selectionStatus.Completion.GetType().FullName == "Microsoft.CodeAnalysis.Editor.Implementation.Completion.Presentation.CustomCommitCompletion")
+            if (selectionStatus.Completion.GetType().Name == "CustomCommitCompletion")
             {
                 // let Roslyn handle its own completions
                 return false;

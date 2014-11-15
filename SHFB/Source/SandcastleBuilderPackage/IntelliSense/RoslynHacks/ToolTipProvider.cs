@@ -25,6 +25,12 @@
 
         public UIElement GetUIElement(Completion itemToRender, ICompletionSession context, UIElementType elementType)
         {
+            if (RoslynUtilities.IsFinalRoslyn)
+            {
+                // The bug which requires this provider has been fixed
+                return null;
+            }
+
             // only hook when necessary
             if (!RoslynUtilities.IsRoslynInstalled(_serviceProvider) ?? true)
                 return null;
