@@ -198,6 +198,7 @@
     <HelpKINode Title="external comments files" Url="html/B597E874-6D7C-4E05-B8F7-5B530C656B70.htm" />
     <HelpKINode Title="managing" Url="html/BD91FAD4-188D-4697-A654-7C07FD47EF31.htm" />
     <HelpKINode Title="NamespaceDoc class" Url="html/41B2D835-DB0D-4828-8D9E-0E423EDA4590.htm" />
+    <HelpKINode Title="NamespaceGroupDoc class" Url="html/41B2D835-DB0D-4828-8D9E-0E423EDA4590.htm" />
   </HelpKINode>
   <HelpKINode Title="OnSomethingHappened method">
     <HelpKINode Title="GenericClass(T1, T2).OnSomethingHappened Method " Url="html/c360dfe4-91a0-caad-9cac-43c309526921.htm" />
@@ -340,6 +341,7 @@
   <HelpKINode Title="versions">
     <HelpKINode Title="1.0.0.0" Url="html/40c5a184-aae2-4296-bc55-949e65e9909a.htm" />
     <HelpKINode Title="2014.1.26.0" Url="html/a5108a60-fdf8-412a-bd74-c182cd2832ec.htm" />
+    <HelpKINode Title="2014.11.22.0" Url="html/bd1918e3-1af8-49e7-b26b-bfedb0574a19.htm" />
     <HelpKINode Title="2014.5.31.0" Url="html/2be51e6c-c457-44ee-9031-b0b0c1d03e6b.htm" />
   </HelpKINode>
   <HelpKINode Title="Visual Studio" Url="html/57C91630-95D6-4E3E-AF24-3415CC569AC8.htm" />

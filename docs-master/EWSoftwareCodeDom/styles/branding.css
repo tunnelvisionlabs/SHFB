@@ -102,8 +102,8 @@ td {
 	color: #2a2a2a;
 	vertical-align: top;
 }
-table p:last-child {
-	padding-bottom: 0;
+td p {
+	margin-bottom: 0 !important;
 }
 table.members {
 	width: 100%;
@@ -398,6 +398,10 @@ div.caption {
 	font-weight: normal;
 	-ms-word-wrap: normal;
 }
+.codeSnippetContainerCode .keyword {
+	color: #0000ff;
+	font-weight: normal;
+}
 
 /* Keyword and phrase styles */
 span.code, span.command {
@@ -431,7 +435,7 @@ span.typeparameter {
 span.identifier {
 }
 span.keyword {
-	color: #0000ff;
+	font-weight: bold;
 }
 span.parameter {
 	font-style: italic;

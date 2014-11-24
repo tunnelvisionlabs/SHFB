@@ -608,6 +608,7 @@
   <HelpKINode Title="BuildProcess.OpenXmlFiles property" Url="html/f5f9c52c-e733-338e-2963-6890af2accd7.htm" />
   <HelpKINode Title="BuildProcess.OutputFolder property" Url="html/4e32fb64-bb13-e34e-85b6-f2714c709b87.htm" />
   <HelpKINode Title="BuildProcess.PartialBuildType property" Url="html/2dfa119c-e4ec-2cd8-1f7e-2019af14983e.htm" />
+  <HelpKINode Title="BuildProcess.PresentationStyle property" Url="html/7c1701c9-e7d1-e8ff-39c2-794209180ad9.htm" />
   <HelpKINode Title="BuildProcess.PresentationStyleFolder property" Url="html/d83caedf-57ce-16c3-55c0-06079431dfb9.htm" />
   <HelpKINode Title="BuildProcess.PresentationStyleResourceItemsFolder property" Url="html/30919b5c-1627-17a9-8762-024935c666b1.htm" />
   <HelpKINode Title="BuildProcess.ProjectFilename property" Url="html/a5179722-1820-058e-3c18-ddcb172c6c93.htm" />
@@ -956,8 +957,10 @@
     <HelpKINode Title="DbcsFixPlugIn.ConfigurePlugIn Method " Url="html/877032f9-8ae5-307b-9634-5085de9802bc.htm" />
     <HelpKINode Title="DeploymentPlugIn.ConfigurePlugIn Method " Url="html/59218a82-132b-aac6-7714-a3cbfa1a168f.htm" />
     <HelpKINode Title="HierarchicalTocPlugIn.ConfigurePlugIn Method " Url="html/d4346d03-b6a5-2f55-5813-b2b813be4cfe.htm" />
+    <HelpKINode Title="IntelliSenseOnlyPlugIn.ConfigurePlugIn Method " Url="html/4ae97228-a2ee-4a82-38cc-4db20beba056.htm" />
     <HelpKINode Title="IPlugIn.ConfigurePlugIn Method " Url="html/eea70a95-956e-3709-bebe-d93c42b7a7bf.htm" />
     <HelpKINode Title="LightweightWebsiteStylePlugIn.ConfigurePlugIn Method " Url="html/829fd798-4274-e78e-6999-78c55a176705.htm" />
+    <HelpKINode Title="MemberIdFixUpPlugIn.ConfigurePlugIn Method " Url="html/efe1de51-cdce-07e6-a63d-7dea7ebf5e36.htm" />
     <HelpKINode Title="ScriptSharpPlugIn.ConfigurePlugIn Method " Url="html/7427f2ec-b90d-655a-2236-46e11590beb5.htm" />
     <HelpKINode Title="TocExcludePlugIn.ConfigurePlugIn Method " Url="html/fec1edad-8a80-fd60-e1cb-5d5374b32b1d.htm" />
     <HelpKINode Title="VersionBuilderPlugIn.ConfigurePlugIn Method " Url="html/c5e02296-72ec-dda0-53dd-fb45e3072cc2.htm" />
@@ -1363,6 +1366,7 @@
     <HelpKINode Title="Help Library Manager Launcher" Url="html/534c4ff1-3bba-4431-a3a6-76dcb2d374f8.htm" />
     <HelpKINode Title="MS Help 2" Url="html/68a2fa4e-c6de-47ed-a9a6-60cc6ef01df4.htm" />
     <HelpKINode Title="MS Help Viewer" Url="html/4baf93f2-f395-4281-b7ef-bfe6c878a4d7.htm" />
+    <HelpKINode Title="NuGet" Url="html/50ad2c8c-5004-4b4c-a77f-97b8c403c9f2.htm" />
     <HelpKINode Title="signing content" Url="html/650e50e7-f174-472a-bbea-f9000dba722c.htm" />
     <HelpKINode Title="xcopy" Url="html/50ad2c8c-5004-4b4c-a77f-97b8c403c9f2.htm" />
   </HelpKINode>
@@ -1456,9 +1460,11 @@
     <HelpKINode Title="Help1WebsitePropertiesPageControl.Dispose Method " Url="html/2413619f-3c57-ad85-8e00-da59c71aca98.htm" />
     <HelpKINode Title="HelpFilePropertiesPageControl.Dispose Method " Url="html/aa186759-047a-48cc-28b8-824be8de8fdc.htm" />
     <HelpKINode Title="HierarchicalTocPlugIn.Dispose Method " Url="html/440e76b9-9b0f-7d86-e37d-d27574537802.htm" />
+    <HelpKINode Title="IntelliSenseOnlyPlugIn.Dispose Method " Url="html/7bcd2ea0-06ad-cb4f-abc7-e720014b7182.htm" />
     <HelpKINode Title="LaunchMSHelpViewerDlg.Dispose Method " Url="html/d9f3cab5-d08b-78a0-76a4-c29dab02be89.htm" />
     <HelpKINode Title="LightweightWebsiteStylePlugIn.Dispose Method " Url="html/b0e59aa4-ab09-cbbe-925a-146784546e4e.htm" />
     <HelpKINode Title="MainForm.Dispose Method " Url="html/64204c25-45cc-c182-b5cd-e07911398f38.htm" />
+    <HelpKINode Title="MemberIdFixUpPlugIn.Dispose Method " Url="html/49e9fd89-dcd2-dfa6-ac87-b57a9514176c.htm" />
     <HelpKINode Title="MissingTagPropertiesPageControl.Dispose Method " Url="html/d476dd36-cd43-848d-45b4-44064aeb7e19.htm" />
     <HelpKINode Title="MSBuildProject.Dispose Method " Url="html/ca186c7d-a53e-6414-e25e-d2c831f677da.htm" />
     <HelpKINode Title="MSHelp2PropertiesPageControl.Dispose Method " Url="html/64e97fe4-01db-7acf-dbd8-117c178107b4.htm" />
@@ -1478,6 +1484,7 @@
     <HelpKINode Title="ScriptSharpPlugIn.Dispose Method " Url="html/5ced0a4b-0693-026a-233c-3ce7361e17f7.htm" />
     <HelpKINode Title="SelectFileTemplateDlg.Dispose Method " Url="html/635d7005-6c4a-61f2-d2fb-2a1ba1a40132.htm" />
     <HelpKINode Title="SelectGacEntriesDlg.Dispose Method " Url="html/7e1c3126-0e2b-2830-10de-7c19b0f6a411.htm" />
+    <HelpKINode Title="SelectProjectsDlg.Dispose Method " Url="html/f87c65e4-6dc4-ffa0-4429-6fe959cdf392.htm" />
     <HelpKINode Title="SiteMapEditorWindow.Dispose Method " Url="html/4a991ded-c373-1494-03c8-4dfb2af6448c.htm" />
     <HelpKINode Title="SpellCheckWindow.Dispose Method " Url="html/92f61f5f-b329-bf2a-4cc7-01274f9aa873.htm" />
     <HelpKINode Title="SqlDictionary(TValue).Dispose Method " Url="html/7772682c-212d-2331-0848-23136b668a14.htm" />
@@ -1533,6 +1540,7 @@
   <HelpKINode Title="DocumentationSource.IncludeSubFolders property" Url="html/b158681d-8209-ceb3-b7e5-10e2a5806c51.htm" />
   <HelpKINode Title="DocumentationSource.Platform property" Url="html/42d7ab3e-07d8-1ee9-0340-2bb866f84773.htm" />
   <HelpKINode Title="DocumentationSource.Projects method" Url="html/9721a374-d84a-a170-bb6a-18da5f2d3369.htm" />
+  <HelpKINode Title="DocumentationSource.ProjectsIn method" Url="html/eb9a413a-4c9c-5a10-264a-0cc173b7e2b0.htm" />
   <HelpKINode Title="DocumentationSource.SourceDescription property" Url="html/1ff0ccb6-93ce-d5fc-e362-f085a7b62230.htm" />
   <HelpKINode Title="DocumentationSource.SourceFile property" Url="html/5d555ba8-8804-6cdf-62ee-efc62087f220.htm" />
   <HelpKINode Title="DocumentationSource.ToString method" Url="html/4db7d438-94b4-a394-bb8f-0da3951d71bb.htm" />
@@ -1656,6 +1664,7 @@
     <HelpKINode Title="BuildComponentConfiguration.Enabled Property " Url="html/310f04bd-266d-4245-e2c2-c96724efc5ae.htm" />
     <HelpKINode Title="PlugInConfiguration.Enabled Property " Url="html/2d030d0a-7fe0-5eb7-5969-4c5e5762cc9d.htm" />
   </HelpKINode>
+  <HelpKINode Title="Encoding property" Url="html/0b8197a9-4d9a-8647-630b-4165947066c8.htm" />
   <HelpKINode Title="EnsureCurrent method" Url="html/0d4a54a3-f430-455d-e9d8-9e96d7cbcab3.htm" />
   <HelpKINode Title="EnsureOutputFoldersExist method" Url="html/e9ad216a-e442-c2a2-a80a-6753abf1587e.htm" />
   <HelpKINode Title="EnsureProjectIsCurrent method" Url="html/0f87cb86-c3ab-ffd3-7903-b5c5c454fe53.htm" />
@@ -1941,8 +1950,10 @@
     <HelpKINode Title="DeploymentPlugIn.Execute Method " Url="html/525116f4-5a21-8a7d-77ad-e50c7282a486.htm" />
     <HelpKINode Title="GenerateInheritedDocs.Execute Method " Url="html/df9dbe17-29af-8a76-56bb-1129d07d9677.htm" />
     <HelpKINode Title="HierarchicalTocPlugIn.Execute Method " Url="html/fbb6b533-4f69-b476-5622-5af68dab79a2.htm" />
+    <HelpKINode Title="IntelliSenseOnlyPlugIn.Execute Method " Url="html/fa71c72e-7e3b-65cc-bf58-b04b46968f8d.htm" />
     <HelpKINode Title="IPlugIn.Execute Method " Url="html/c9ef56da-a092-3b14-11bf-f607b1775b2a.htm" />
     <HelpKINode Title="LightweightWebsiteStylePlugIn.Execute Method " Url="html/9990480b-8608-4aa8-b9d5-475a1e1146e2.htm" />
+    <HelpKINode Title="MemberIdFixUpPlugIn.Execute Method " Url="html/cf5a69e0-2287-5700-a7e1-fd9ca0bae3d8.htm" />
     <HelpKINode Title="SandcastleHtmlExtract.Execute Method " Url="html/8786f3ae-4ef9-0276-7ad6-3fc8e8fa889d.htm" />
     <HelpKINode Title="ScriptSharpPlugIn.Execute Method " Url="html/baf9f6f6-d9bf-0c9f-2052-87c67de14e9e.htm" />
     <HelpKINode Title="TocExcludePlugIn.Execute Method " Url="html/c8d93c3d-a7e3-3651-4fe9-f09baf185693.htm" />
@@ -1984,8 +1995,10 @@
     <HelpKINode Title="DbcsFixPlugIn.ExecutionPoints Property " Url="html/644ee9e7-2213-c99a-1c0b-761813137dd7.htm" />
     <HelpKINode Title="DeploymentPlugIn.ExecutionPoints Property " Url="html/2343125c-f941-de7d-4abb-64a03a0fdbc2.htm" />
     <HelpKINode Title="HierarchicalTocPlugIn.ExecutionPoints Property " Url="html/2ef719a6-cecc-b9c1-d280-59875567a133.htm" />
+    <HelpKINode Title="IntelliSenseOnlyPlugIn.ExecutionPoints Property " Url="html/0de39180-95fb-047a-3b10-268052ddcff9.htm" />
     <HelpKINode Title="IPlugIn.ExecutionPoints Property " Url="html/3993f5e2-7858-f926-2038-90aff476ef4e.htm" />
     <HelpKINode Title="LightweightWebsiteStylePlugIn.ExecutionPoints Property " Url="html/83cb13d0-1042-1f19-76df-1d0b487f4929.htm" />
+    <HelpKINode Title="MemberIdFixUpPlugIn.ExecutionPoints Property " Url="html/d5c25c48-c9f2-fc25-5873-219ae4fe4ca3.htm" />
     <HelpKINode Title="ScriptSharpPlugIn.ExecutionPoints Property " Url="html/1e272492-6774-b837-b2a9-0acea553c2e6.htm" />
     <HelpKINode Title="TocExcludePlugIn.ExecutionPoints Property " Url="html/25a3d630-2b4d-19a0-35a8-1480ab85401f.htm" />
     <HelpKINode Title="VersionBuilderPlugIn.ExecutionPoints Property " Url="html/17393ed7-59e9-6821-88f9-9380b183e262.htm" />
@@ -2349,6 +2362,7 @@
   <HelpKINode Title="FolderPathUserControl.ShowNewFolderButton property" Url="html/a53e0b19-26da-d14b-09ef-57f3bb92df01.htm" />
   <HelpKINode Title="FolderPathUserControl.Title property" Url="html/aa6fa474-b19c-0fb6-f7ab-a84a1270788a.htm" />
   <HelpKINode Title="FooterText property" Url="html/0ed5e36c-68cf-7f07-739d-d2a3f5ab614d.htm" />
+  <HelpKINode Title="ForceReload method" Url="html/640d9de1-8473-59ba-f8f7-a85fc3c07ef6.htm" />
   <HelpKINode Title="FrameworkCommentsFileLocation class">
     <HelpKINode Title="FrameworkCommentsFileLocation Class" Url="html/ce630a7a-74a1-e75c-93ca-98d6dae5c778.htm" />
     <HelpKINode Title="about FrameworkCommentsFileLocation class" Url="html/ce630a7a-74a1-e75c-93ca-98d6dae5c778.htm" />
@@ -2536,26 +2550,26 @@
   </HelpKINode>
   <HelpKINode Title="GetStatusBarText method" Url="html/7967a3c0-f920-f234-f57d-3314555d376e.htm" />
   <HelpKINode Title="GetSupportAnimatedGif method" Url="html/653424c4-3aca-9032-76a6-07d630fae8a2.htm" />
+  <HelpKINode Title="Getting Started">
+    <HelpKINode Title="attached events" Url="html/67b9bfab-7cf3-4beb-bd88-85bcff4e8ebd.htm" />
+    <HelpKINode Title="attached properties" Url="html/67b9bfab-7cf3-4beb-bd88-85bcff4e8ebd.htm" />
+    <HelpKINode Title="Getting Started" Url="html/b772e00e-1705-4062-adb6-774826ce6700.htm" />
+  </HelpKINode>
   <HelpKINode Title="Getting started">
-    <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
-    <HelpKINode Title="create a new project" Url="html/d5dbf017-25f1-48cb-86db-90f76ee8f4d7.htm" />
     <HelpKINode Title="&lt;inheritdoc /&gt;" Url="html/79897974-ffc9-4b84-91a5-e50c66a0221d.htm" />
     <HelpKINode Title="absolute and relative paths" Url="html/576b6a36-0808-4857-bec0-e6eeeae4e36b.htm" />
+    <HelpKINode Title="create a new project" Url="html/d5dbf017-25f1-48cb-86db-90f76ee8f4d7.htm" />
+    <HelpKINode Title="enable XML comments" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="installation" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
-    <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
-    <HelpKINode Title="user preferences - general" Url="html/6a35198a-3713-4eb7-929d-555fddc0ccb6.htm" />
     <HelpKINode Title="overview" Url="html/8e3f8757-0ef3-4772-bb2f-5d7ae57e50da.htm" />
     <HelpKINode Title="user preferences" Url="html/2152ed96-bf69-4b9b-b1a7-4fffc71b3095.htm" />
+    <HelpKINode Title="user preferences - general" Url="html/6a35198a-3713-4eb7-929d-555fddc0ccb6.htm" />
+    <HelpKINode Title="user preferences - content file editors" Url="html/2e4f207e-45d1-411b-83b1-24965d8eef2c.htm" />
     <HelpKINode Title="user preferences - spell checking" Url="html/836847bc-d780-468b-ae23-f014f0829a0f.htm" />
     <HelpKINode Title="Visual Studio" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="Visual Studio projects" Url="html/c47d9242-b3a8-4153-aa9e-ae8cb41cefe2.htm" />
     <HelpKINode Title="websites and web projects" Url="html/94c7f744-9b90-4254-93ab-9b15f47d9f42.htm" />
     <HelpKINode Title="Welcome" Url="html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm" />
-  </HelpKINode>
-  <HelpKINode Title="Getting Started">
-    <HelpKINode Title="attached events" Url="html/67b9bfab-7cf3-4beb-bd88-85bcff4e8ebd.htm" />
-    <HelpKINode Title="Getting Started" Url="html/b772e00e-1705-4062-adb6-774826ce6700.htm" />
-    <HelpKINode Title="attached properties" Url="html/67b9bfab-7cf3-4beb-bd88-85bcff4e8ebd.htm" />
   </HelpKINode>
   <HelpKINode Title="getting started">
     <HelpKINode Title="special folder locations" Url="html/a24489fb-45d6-46f4-9eaa-9a9c4e0919b2.htm" />
@@ -2931,8 +2945,10 @@
     <HelpKINode Title="ESentCopyFromIndexComponent.Initialize Method " Url="html/01f5a385-31d8-0541-1add-341fdf85837e.htm" />
     <HelpKINode Title="ESentResolveReferenceLinksComponent.Initialize Method " Url="html/23f86cd9-c114-998f-825f-57b02cadae60.htm" />
     <HelpKINode Title="HierarchicalTocPlugIn.Initialize Method " Url="html/9cc33d85-7ec3-78ea-2565-3079a064770f.htm" />
+    <HelpKINode Title="IntelliSenseOnlyPlugIn.Initialize Method " Url="html/dc58ed8a-0c83-df74-b7a4-3f27e8ca3da3.htm" />
     <HelpKINode Title="IPlugIn.Initialize Method " Url="html/9497a7e4-d888-c424-25f8-463a893d2aa9.htm" />
     <HelpKINode Title="LightweightWebsiteStylePlugIn.Initialize Method " Url="html/20f4a16a-c9b4-b398-9a25-d370698e4eb0.htm" />
+    <HelpKINode Title="MemberIdFixUpPlugIn.Initialize Method " Url="html/51db5e8d-d541-5e41-7e56-f10e60336815.htm" />
     <HelpKINode Title="MultiFormatOutputComponent.Initialize Method " Url="html/78ff53e1-87fc-a66e-cd61-ba5a89b0dec4.htm" />
     <HelpKINode Title="PathPropertiesPageControl.Initialize Method " Url="html/7fbce4e9-6c10-0425-1272-73100d389557.htm" />
     <HelpKINode Title="ScriptSharpPlugIn.Initialize Method " Url="html/b3249a75-85be-a930-a47f-f751328fe02f.htm" />
@@ -2971,6 +2987,19 @@
   <HelpKINode Title="IntelliSenseComponent">
     <HelpKINode Title="configuration options" Url="html/5d546511-6aec-455a-ba09-9daffb124c6d.htm" />
   </HelpKINode>
+  <HelpKINode Title="IntelliSenseOnlyPlugIn class">
+    <HelpKINode Title="IntelliSenseOnlyPlugIn Class" Url="html/f58c98d5-1f7f-1cf1-b4a4-36e5f3b8bc44.htm" />
+    <HelpKINode Title="about IntelliSenseOnlyPlugIn class" Url="html/f58c98d5-1f7f-1cf1-b4a4-36e5f3b8bc44.htm" />
+    <HelpKINode Title="constructor" Url="html/9d43634e-285f-d259-5d59-f301164da93a.htm" />
+    <HelpKINode Title="methods" Url="html/8dd08be8-5f82-1d26-f159-7c68781c0bc2.htm" />
+    <HelpKINode Title="properties" Url="html/3aa26d97-8542-130d-e9d0-e3fa654b8c71.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IntelliSenseOnlyPlugIn.ConfigurePlugIn method" Url="html/4ae97228-a2ee-4a82-38cc-4db20beba056.htm" />
+  <HelpKINode Title="IntelliSenseOnlyPlugIn.Dispose method" Url="html/7bcd2ea0-06ad-cb4f-abc7-e720014b7182.htm" />
+  <HelpKINode Title="IntelliSenseOnlyPlugIn.Execute method" Url="html/fa71c72e-7e3b-65cc-bf58-b04b46968f8d.htm" />
+  <HelpKINode Title="IntelliSenseOnlyPlugIn.ExecutionPoints property" Url="html/0de39180-95fb-047a-3b10-268052ddcff9.htm" />
+  <HelpKINode Title="IntelliSenseOnlyPlugIn.Initialize method" Url="html/dc58ed8a-0c83-df74-b7a4-3f27e8ca3da3.htm" />
+  <HelpKINode Title="IntelliSenseOnlyPlugIn.IntelliSenseOnlyPlugIn constructor" Url="html/9d43634e-285f-d259-5d59-f301164da93a.htm" />
   <HelpKINode Title="Interface enumeration member" Url="html/afa33067-a29a-6512-97ef-5c4859882603.htm" />
   <HelpKINode Title="Internals enumeration member" Url="html/99fcc0ba-7891-78a6-5933-87036f8efee4.htm" />
   <HelpKINode Title="Invalid enumeration member" Url="html/f6f6fc45-af36-82c2-70ff-7130527fd078.htm" />
@@ -3185,6 +3214,7 @@
   <HelpKINode Title="LoadResourceItemsFile method" Url="html/bbf57917-5ea5-5bbe-b14a-d94a50a59f78.htm" />
   <HelpKINode Title="LoadSiteMapFile method" Url="html/6f7d9263-dc9e-ac2a-b6d1-63e5d11221b5.htm" />
   <HelpKINode Title="LoadSiteMapNode method" Url="html/8570fcb0-ad50-8b53-907f-1794290103e6.htm" />
+  <HelpKINode Title="LoadSolutionProjectNames method" Url="html/3bee2133-cd84-bf32-3951-c34d644644bc.htm" />
   <HelpKINode Title="LoadTokenFile method" Url="html/8447c4e8-5ad3-9697-b51a-fbffb7ad7e67.htm" />
   <HelpKINode Title="LoadTree method" Url="html/37e5fe2c-4333-b525-d947-12db99156c85.htm" />
   <HelpKINode Title="LocalCacheFlushCount property" Url="html/914715e9-94e9-aef9-34da-a33802f27aab.htm" />
@@ -3255,11 +3285,39 @@
     <HelpKINode Title="MSHelpKeywordCollection.MarkAsDirty Method " Url="html/67191e63-4188-f1e7-615d-aa13b20e4cc9.htm" />
     <HelpKINode Title="SandcastleProject.MarkAsDirty Method " Url="html/bc3d4696-3d9c-6596-08e3-7f42ddbcfba7.htm" />
   </HelpKINode>
+  <HelpKINode Title="MatchAsRegEx property" Url="html/1e0891ee-75b0-3ee0-cf25-7ec8e2808bb2.htm" />
   <HelpKINode Title="MatchesSwitch method" Url="html/e450a6c0-02fc-7271-017a-36c9c2e99c2a.htm" />
+  <HelpKINode Title="MatchExpression property" Url="html/0694da05-b4f7-7e84-5854-b76cf8b28cc2.htm" />
   <HelpKINode Title="MatchProjectFilesToTopics method" Url="html/7f6072b2-1a57-d8b9-178c-f101edf67c1b.htm" />
   <HelpKINode Title="Math field" Url="html/afb92584-cd66-d7d1-ed3a-2ccb2acb0915.htm" />
+  <HelpKINode Title="MaxDegreeOfParallelism property" Url="html/86b3e8cc-fe31-5787-9730-94a4d3f3b2a8.htm" />
   <HelpKINode Title="MaximumGroupParts property" Url="html/fc2f9973-b2bb-b55b-61e4-11f6382af369.htm" />
   <HelpKINode Title="MediaFiles property" Url="html/23fe4bae-9aed-07ea-edf9-86a7ad36b956.htm" />
+  <HelpKINode Title="MemberIdFixUpPlugIn class">
+    <HelpKINode Title="MemberIdFixUpPlugIn Class" Url="html/ef414221-ecd8-63c2-23e8-6092348ccffd.htm" />
+    <HelpKINode Title="about MemberIdFixUpPlugIn class" Url="html/ef414221-ecd8-63c2-23e8-6092348ccffd.htm" />
+    <HelpKINode Title="constructor" Url="html/97ff1e63-92cd-7a29-9c61-a28480f9e0df.htm" />
+    <HelpKINode Title="methods" Url="html/cb0fd147-2380-6cfa-9c13-8d4346d948a7.htm" />
+    <HelpKINode Title="properties" Url="html/c8172dd8-6f9d-ab6a-9ff2-bcd7c51b5b0c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MemberIdFixUpPlugIn.ConfigurePlugIn method" Url="html/efe1de51-cdce-07e6-a63d-7dea7ebf5e36.htm" />
+  <HelpKINode Title="MemberIdFixUpPlugIn.Dispose method" Url="html/49e9fd89-dcd2-dfa6-ac87-b57a9514176c.htm" />
+  <HelpKINode Title="MemberIdFixUpPlugIn.Execute method" Url="html/cf5a69e0-2287-5700-a7e1-fd9ca0bae3d8.htm" />
+  <HelpKINode Title="MemberIdFixUpPlugIn.ExecutionPoints property" Url="html/d5c25c48-c9f2-fc25-5873-219ae4fe4ca3.htm" />
+  <HelpKINode Title="MemberIdFixUpPlugIn.Initialize method" Url="html/51db5e8d-d541-5e41-7e56-f10e60336815.htm" />
+  <HelpKINode Title="MemberIdFixUpPlugIn.MemberIdFixUpPlugIn constructor" Url="html/97ff1e63-92cd-7a29-9c61-a28480f9e0df.htm" />
+  <HelpKINode Title="MemberIdMatchExpression class">
+    <HelpKINode Title="MemberIdMatchExpression Class" Url="html/660c42a0-d61d-ca4c-8182-54ac9d01ee6c.htm" />
+    <HelpKINode Title="about MemberIdMatchExpression class" Url="html/660c42a0-d61d-ca4c-8182-54ac9d01ee6c.htm" />
+    <HelpKINode Title="constructor" Url="html/7a029df3-ee03-a74b-6ca7-9fa0de4e29e0.htm" />
+    <HelpKINode Title="methods" Url="html/6ed3bc51-84b4-193f-14f3-fdfa1833361a.htm" />
+    <HelpKINode Title="properties" Url="html/c59314ba-fc45-13dc-6106-03bc4037c06c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MemberIdMatchExpression.MatchAsRegEx property" Url="html/1e0891ee-75b0-3ee0-cf25-7ec8e2808bb2.htm" />
+  <HelpKINode Title="MemberIdMatchExpression.MatchExpression property" Url="html/0694da05-b4f7-7e84-5854-b76cf8b28cc2.htm" />
+  <HelpKINode Title="MemberIdMatchExpression.MemberIdMatchExpression constructor" Url="html/7a029df3-ee03-a74b-6ca7-9fa0de4e29e0.htm" />
+  <HelpKINode Title="MemberIdMatchExpression.RegularExpression property" Url="html/a4c41575-1614-1de3-d0cb-d0f3f5ebf8e7.htm" />
+  <HelpKINode Title="MemberIdMatchExpression.ReplacementValue property" Url="html/04e02871-c7ea-8756-0103-57b9aef22a48.htm" />
   <HelpKINode Title="MemberName enumeration member" Url="html/12495300-b19e-6b6d-9346-ddc54cdf2c8c.htm" />
   <HelpKINode Title="Members property" Url="html/9ebe34fe-e55c-fcab-414b-9e7bde349abe.htm" />
   <HelpKINode Title="MergeContentFrom method" Url="html/7d3a3d4d-3d45-1802-627e-fb9e5dcc4b09.htm" />
@@ -3492,6 +3550,7 @@
     <HelpKINode Title="MissingTags Enumeration" Url="html/6a0e130b-eeec-ca1a-bd1f-cf428003cffb.htm" />
   </HelpKINode>
   <HelpKINode Title="NamespaceDoc classes" Url="html/48f5a893-acde-4e50-8c17-72b83d9c3f9d.htm" />
+  <HelpKINode Title="NamespaceGroupDoc classes" Url="html/48f5a893-acde-4e50-8c17-72b83d9c3f9d.htm" />
   <HelpKINode Title="NamespaceGrouping property" Url="html/33c8f013-857e-979e-2fe9-3ff5bd2f5459.htm" />
   <HelpKINode Title="NamespaceSummaries property" Url="html/d30de540-316a-3af9-7418-372df019dd6a.htm" />
   <HelpKINode Title="NamespaceSummaryItem class">
@@ -3773,8 +3832,10 @@
     <HelpKINode Title="DBCS fix for CHM builds plug-in" Url="html/31696f39-8f4e-4c4d-ab08-41a40793df03.htm" />
     <HelpKINode Title="execution notes" Url="html/a14e026e-642f-4ce6-9506-341e57cc3d1f.htm" />
     <HelpKINode Title="hierarchical table of contents plug-in" Url="html/aa7bcd07-1a86-42dc-9f1d-49bd4afeb5d2.htm" />
+    <HelpKINode Title="IntelliSense only plug-in" Url="html/1fcdf9d3-06fb-4a7b-a584-f55b6ea5baae.htm" />
     <HelpKINode Title="lightweight website style plug-in" Url="html/0acf46fe-e7c3-4f3f-a4ca-df86f3630286.htm" />
     <HelpKINode Title="links to third-party plug-ins" Url="html/c18d6cb6-e4e4-4944-84ee-f867aa6cfb0d.htm" />
+    <HelpKINode Title="member ID fix-ups plug-in" Url="html/17d977a6-e3dc-4ef4-9bbf-718ef4823854.htm" />
     <HelpKINode Title="output deployment plug-in" Url="html/796d6bbe-5130-4c87-8790-5cceb66219c7.htm" />
     <HelpKINode Title="overview" Url="html/e031b14e-42f0-47e1-af4c-9fed2b88cbc7.htm" />
     <HelpKINode Title="plug-in assembly location" Url="html/a24489fb-45d6-46f4-9eaa-9a9c4e0919b2.htm" />
@@ -3823,7 +3884,10 @@
   <HelpKINode Title="PlugInPropertiesPageControl.StoreControlValue method" Url="html/ae0fa998-34ee-baba-7d6b-fac8dbe8cc62.htm" />
   <HelpKINode Title="Preliminary property" Url="html/7f07cae6-dfca-6606-07aa-552fdcfa7cc1.htm" />
   <HelpKINode Title="prerequisites" Url="html/8c0c97d0-c968-4c15-9fe9-e8f3a443c50a.htm" />
-  <HelpKINode Title="PresentationStyle property" Url="html/46dd95dc-5da7-2ba6-c124-22616595134a.htm" />
+  <HelpKINode Title="PresentationStyle property">
+    <HelpKINode Title="BuildProcess.PresentationStyle Property " Url="html/7c1701c9-e7d1-e8ff-39c2-794209180ad9.htm" />
+    <HelpKINode Title="SandcastleProject.PresentationStyle Property " Url="html/46dd95dc-5da7-2ba6-c124-22616595134a.htm" />
+  </HelpKINode>
   <HelpKINode Title="PresentationStyleFolder property" Url="html/d83caedf-57ce-16c3-55c0-06079431dfb9.htm" />
   <HelpKINode Title="PresentationStyleResourceItemsFolder property" Url="html/30919b5c-1627-17a9-8762-024935c666b1.htm" />
   <HelpKINode Title="PreserveWhitespace method" Url="html/d2040893-301c-cfac-fe77-29063001eb40.htm" />
@@ -3958,8 +4022,8 @@
   <HelpKINode Title="ProjectFileConfiguration.Platform property" Url="html/e875b06f-63f3-5043-7a4e-00e5ad70bb18.htm" />
   <HelpKINode Title="ProjectFileConfiguration.ProjectFileConfiguration constructor" Url="html/a1bd6596-d326-8e92-f34a-6340539ea9b2.htm" />
   <HelpKINode Title="ProjectFileConfiguration.ProjectFileName property" Url="html/761debd3-04ff-2870-020f-8f471349c40b.htm" />
-  <HelpKINode Title="ProjectFilename property" Url="html/a5179722-1820-058e-3c18-ddcb172c6c93.htm" />
   <HelpKINode Title="ProjectFileName property" Url="html/761debd3-04ff-2870-020f-8f471349c40b.htm" />
+  <HelpKINode Title="ProjectFilename property" Url="html/a5179722-1820-058e-3c18-ddcb172c6c93.htm" />
   <HelpKINode Title="ProjectFolder property">
     <HelpKINode Title="BuildProcess.ProjectFolder Property " Url="html/2dc9c884-eb9f-e739-334e-86e6cc9682d9.htm" />
     <HelpKINode Title="ConvertToMSBuildFormat.ProjectFolder Property " Url="html/3f885b83-6361-4f70-07b3-3f280becb856.htm" />
@@ -4017,6 +4081,7 @@
   <HelpKINode Title="ProjectReferenceItem.Reference property" Url="html/d5a73f58-250f-64cf-3da8-f55e129c34ad.htm" />
   <HelpKINode Title="ProjectReferenceItem.ReferenceOutputAssembly property" Url="html/f28889ba-9b84-d6eb-3518-4357d1055733.htm" />
   <HelpKINode Title="Projects method" Url="html/9721a374-d84a-a170-bb6a-18da5f2d3369.htm" />
+  <HelpKINode Title="ProjectsIn method" Url="html/eb9a413a-4c9c-5a10-264a-0cc173b7e2b0.htm" />
   <HelpKINode Title="ProjectSummary property" Url="html/d8c1c24e-086d-d15a-7e48-bfd97d01c663.htm" />
   <HelpKINode Title="PromptToSaveAll enumeration member" Url="html/b8028a3a-8455-43a4-5524-468085a658ae.htm" />
   <HelpKINode Title="PromptToSaveDlg class">
@@ -4304,6 +4369,7 @@
   <HelpKINode Title="RefreshProject method" Url="html/2cafa3ab-b95b-fe79-021a-adbb85435d9b.htm" />
   <HelpKINode Title="RefreshProjectProperties method" Url="html/5cea793d-24b2-4f66-62dc-4ad05424c684.htm" />
   <HelpKINode Title="RefreshProperties method" Url="html/ba9b71fe-0ea5-7f08-b7d5-1c04e373a346.htm" />
+  <HelpKINode Title="RegularExpression property" Url="html/a4c41575-1614-1de3-d0cb-d0f3f5ebf8e7.htm" />
   <HelpKINode Title="RelatedTopicTitle field" Url="html/3d99c9aa-327b-507b-7ea8-666c8d266888.htm" />
   <HelpKINode Title="RelativeToAbsolutePath method" Url="html/36d4a607-ca48-8758-60ad-d829a68b27fd.htm" />
   <HelpKINode Title="Remarks enumeration member" Url="html/6a0e130b-eeec-ca1a-bd1f-cf428003cffb.htm" />
@@ -4317,6 +4383,7 @@
   </HelpKINode>
   <HelpKINode Title="RemoveNode method" Url="html/ff48b6ba-9215-0d60-cad5-9627d74359a0.htm" />
   <HelpKINode Title="ReplaceAll method" Url="html/dd280ede-53b3-a181-607f-bf7afd7cc4ef.htm" />
+  <HelpKINode Title="ReplacementValue property" Url="html/04e02871-c7ea-8756-0103-57b9aef22a48.htm" />
   <HelpKINode Title="ReplaceNamespaceDocEntries method" Url="html/5e01740e-8fac-82eb-93ec-a5fc286c3076.htm" />
   <HelpKINode Title="ReplaceText method" Url="html/f0233ce6-c19b-c705-bda7-2f099a31aa9f.htm" />
   <HelpKINode Title="ReplaceTextAt method" Url="html/222bbf5a-5581-5f03-52ed-2c42aa4912ba.htm" />
@@ -4403,6 +4470,7 @@
     <HelpKINode Title="Topic.RevisionNumber Property " Url="html/54dbddd5-3627-01c9-30ef-b910e2938cd1.htm" />
     <HelpKINode Title="TopicFile.RevisionNumber Property " Url="html/5e3ec30f-7e74-3fea-a494-66d3f4d296c4.htm" />
   </HelpKINode>
+  <HelpKINode Title="RipOldApis property" Url="html/1cf3d2e8-ed3a-5818-ea94-d3305751b02e.htm" />
   <HelpKINode Title="RootContentContainerId property" Url="html/97ad7153-ed6c-1e6c-3634-75b28095f355.htm" />
   <HelpKINode Title="RootFolder property">
     <HelpKINode Title="FolderDialogAttribute.RootFolder Property " Url="html/4b3eff7c-a8ac-5e28-0164-aa0749773235.htm" />
@@ -4512,7 +4580,10 @@
   <HelpKINode Title="SandcastleBuilder.PlugIns.DeploymentLocation class" Url="html/1c2a9bb7-6d8b-e8ca-b0ac-dfc3ef04d385.htm" />
   <HelpKINode Title="SandcastleBuilder.PlugIns.DeploymentPlugIn class" Url="html/84a22ac1-beb5-01e7-b2f0-7dfba475ad3e.htm" />
   <HelpKINode Title="SandcastleBuilder.PlugIns.HierarchicalTocPlugIn class" Url="html/53a4a005-49d3-4d4c-8aa4-009fb2d5bcc8.htm" />
+  <HelpKINode Title="SandcastleBuilder.PlugIns.IntelliSenseOnlyPlugIn class" Url="html/f58c98d5-1f7f-1cf1-b4a4-36e5f3b8bc44.htm" />
   <HelpKINode Title="SandcastleBuilder.PlugIns.LightweightWebsiteStylePlugIn class" Url="html/f97e1001-5dbb-94c5-caaf-d5f3abb39cad.htm" />
+  <HelpKINode Title="SandcastleBuilder.PlugIns.MemberIdFixUpPlugIn class" Url="html/ef414221-ecd8-63c2-23e8-6092348ccffd.htm" />
+  <HelpKINode Title="SandcastleBuilder.PlugIns.MemberIdMatchExpression class" Url="html/660c42a0-d61d-ca4c-8182-54ac9d01ee6c.htm" />
   <HelpKINode Title="SandcastleBuilder.PlugIns.ProxyCredentials class" Url="html/bd507d1e-c67a-6936-3237-8e6e20728624.htm" />
   <HelpKINode Title="SandcastleBuilder.PlugIns.ReferenceLinkSettings class" Url="html/8a68dd45-288a-4c1d-7a4c-0c9967748111.htm" />
   <HelpKINode Title="SandcastleBuilder.PlugIns.ReferenceLinkSettingsCollection class" Url="html/2be3fb2a-2520-203c-c37e-0c5ad1d6d052.htm" />
@@ -4637,6 +4708,7 @@
   <HelpKINode Title="SandcastleBuilder.Utils.MSBuild.CleanHelp class" Url="html/0f4eecc2-1ace-2d21-521a-701bf35ba276.htm" />
   <HelpKINode Title="SandcastleBuilder.Utils.MSBuild.MSBuildProject class" Url="html/80cebf18-a529-9c66-d512-f7f20bf7dd65.htm" />
   <HelpKINode Title="SandcastleBuilder.Utils.MSBuild.NumberingStyle class" Url="html/02af4848-2e14-1f9e-0490-6b642540d65c.htm" />
+  <HelpKINode Title="SandcastleBuilder.Utils.MSBuild.SelectProjectsDlg class" Url="html/41158184-0a19-c67e-3a7b-e5f915a976b1.htm" />
   <HelpKINode Title="SandcastleBuilder.Utils.MSHelp2SdkLinkType enumeration" Url="html/4c9bb320-d440-c9cc-bec6-67903e559686.htm" />
   <HelpKINode Title="SandcastleBuilder.Utils.MSHelpAttr class" Url="html/9b905a2b-aa62-e9b3-e3e9-fd66ec79ba88.htm" />
   <HelpKINode Title="SandcastleBuilder.Utils.MSHelpAttrCollection class" Url="html/55b77dd6-a41c-0f1d-6554-74657657e4f7.htm" />
@@ -4695,6 +4767,7 @@
   <HelpKINode Title="SandcastleHtmlExtract.LanguageId property" Url="html/ba200b61-c891-9223-990e-4ffecbcb7629.htm" />
   <HelpKINode Title="SandcastleHtmlExtract.LocalizedFolder property" Url="html/38e13026-e7e9-b20d-99fd-9d0f10edb378.htm" />
   <HelpKINode Title="SandcastleHtmlExtract.Main method" Url="html/09ba3d69-326c-6be0-b514-b9e01aeef616.htm" />
+  <HelpKINode Title="SandcastleHtmlExtract.MaxDegreeOfParallelism property" Url="html/86b3e8cc-fe31-5787-9730-94a4d3f3b2a8.htm" />
   <HelpKINode Title="SandcastleHtmlExtract.OutputFolder property" Url="html/41689a0e-7499-53db-72bd-3d76b10d0d45.htm" />
   <HelpKINode Title="SandcastleHtmlExtract.ProjectName property" Url="html/065026cc-60df-1c04-0a81-654ae62f67c3.htm" />
   <HelpKINode Title="SandcastleHtmlExtract.SandcastleHtmlExtract constructor" Url="html/6685c758-ca08-e64a-5e15-6e7fff7eab3c.htm" />
@@ -4911,7 +4984,21 @@
   <HelpKINode Title="SelectGacEntriesDlg.Dispose method" Url="html/7e1c3126-0e2b-2830-10de-7c19b0f6a411.htm" />
   <HelpKINode Title="SelectGacEntriesDlg.SelectedEntries property" Url="html/902afff1-3907-2b18-0f17-ea0e978909d6.htm" />
   <HelpKINode Title="SelectGacEntriesDlg.SelectGacEntriesDlg constructor" Url="html/157d2101-f5de-9658-a859-0d5baf4cdd22.htm" />
+  <HelpKINode Title="SelectProjectsDlg class">
+    <HelpKINode Title="SelectProjectsDlg Class" Url="html/41158184-0a19-c67e-3a7b-e5f915a976b1.htm" />
+    <HelpKINode Title="about SelectProjectsDlg class" Url="html/41158184-0a19-c67e-3a7b-e5f915a976b1.htm" />
+    <HelpKINode Title="constructor" Url="html/3ec200d5-0477-a47b-72a3-c3158fdce976.htm" />
+    <HelpKINode Title="events" Url="html/305f0a36-8800-9f34-fcca-f8000bc59301.htm" />
+    <HelpKINode Title="methods" Url="html/000594d1-5e7e-c22e-a361-09573bf7561a.htm" />
+    <HelpKINode Title="properties" Url="html/84ab1503-5283-9531-d999-1dca43c80564.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SelectProjectsDlg.Dispose method" Url="html/f87c65e4-6dc4-ffa0-4429-6fe959cdf392.htm" />
+  <HelpKINode Title="SelectProjectsDlg.LoadSolutionProjectNames method" Url="html/3bee2133-cd84-bf32-3951-c34d644644bc.htm" />
+  <HelpKINode Title="SelectProjectsDlg.SelectProjectsDlg constructor" Url="html/3ec200d5-0477-a47b-72a3-c3158fdce976.htm" />
+  <HelpKINode Title="SelectProjectsDlg.SelectSolutionOrProjects method" Url="html/caf8fbd2-0ab8-cb31-905c-738f71da22e1.htm" />
+  <HelpKINode Title="SelectProjectsDlg.SolutionOrProjectNames property" Url="html/e9fb6f2e-1261-a5c3-e56c-7a00b1f61924.htm" />
   <HelpKINode Title="SelectSingleNode method" Url="html/932cd9e0-7a19-68b7-f69a-3efa03d6eb24.htm" />
+  <HelpKINode Title="SelectSolutionOrProjects method" Url="html/caf8fbd2-0ab8-cb31-905c-738f71da22e1.htm" />
   <HelpKINode Title="Self enumeration member" Url="html/6720b83a-6c30-8f8f-c0e9-1cf62251011d.htm" />
   <HelpKINode Title="SetBuildState method" Url="html/30b21f86-66e4-b4b3-3729-c4ef633d29fd.htm" />
   <HelpKINode Title="SetConfiguration method" Url="html/588515dc-0e8b-13ce-6d63-e6c6ffedd533.htm" />
@@ -4997,6 +5084,7 @@
   <HelpKINode Title="SolutionExt field" Url="html/30ac3a2e-e533-0717-c902-d425920c4d18.htm" />
   <HelpKINode Title="SolutionFileName field" Url="html/299ef1cf-cc5d-7148-2178-8c413cd3cc23.htm" />
   <HelpKINode Title="SolutionName field" Url="html/7633386d-c1f5-fff2-02e9-0ac4fc93b503.htm" />
+  <HelpKINode Title="SolutionOrProjectNames property" Url="html/e9fb6f2e-1261-a5c3-e56c-7a00b1f61924.htm" />
   <HelpKINode Title="SolutionPath field" Url="html/d945cda5-8894-2d08-6351-e4c600956644.htm" />
   <HelpKINode Title="Sort method">
     <HelpKINode Title="ApiFilterCollection.Sort Method " Url="html/a02e603b-b09a-c9b5-78b8-ce235ffdbc2d.htm" />
@@ -5936,6 +6024,7 @@
     <HelpKINode Title="1.9.7.0" Url="html/fef9e0ed-864b-42f9-8747-af4d156a7c0e.htm" />
     <HelpKINode Title="1.9.8.0" Url="html/f4c5d176-8da1-4500-b070-e3b1e9e2c65c.htm" />
     <HelpKINode Title="2014.1.26.0 Beta" Url="html/1139ca15-af64-48a2-9187-ccc1aec389d4.htm" />
+    <HelpKINode Title="2014.11.22.0" Url="html/7238a41e-1375-4038-8bf1-d699f4dae668.htm" />
     <HelpKINode Title="2014.2.15.0 Beta" Url="html/8f7fa83f-c989-426f-b8b1-c42c333a4d0a.htm" />
     <HelpKINode Title="2014.4.22.0" Url="html/81b04099-bcd7-4caa-8a21-13624d9e290d.htm" />
     <HelpKINode Title="2014.5.31.0" Url="html/3405263f-a9eb-4ce4-b90f-87c31ab76d85.htm" />
@@ -5953,6 +6042,7 @@
   <HelpKINode Title="VersionSettings.GetHashCode method" Url="html/d0e0e8d8-be1e-bf71-62fb-6b8408599aa0.htm" />
   <HelpKINode Title="VersionSettings.HelpFileProject property" Url="html/433fb401-f345-7ec4-127d-beb3637658d7.htm" />
   <HelpKINode Title="VersionSettings.ListDescription property" Url="html/b4c749fb-0747-a2e5-c585-838cfe66b9aa.htm" />
+  <HelpKINode Title="VersionSettings.RipOldApis property" Url="html/1cf3d2e8-ed3a-5818-ea94-d3305751b02e.htm" />
   <HelpKINode Title="VersionSettings.ToXml method" Url="html/8974353b-e972-cd5c-ee02-23b33314be6f.htm" />
   <HelpKINode Title="VersionSettings.Version property" Url="html/d9fffa53-1518-9ac0-6b21-17855b1f0f36.htm" />
   <HelpKINode Title="VersionSettings.VersionSettings constructor" Url="html/935433e5-7fa9-1e9f-8492-7ec536fe0e12.htm" />
@@ -6140,7 +6230,9 @@
   </HelpKINode>
   <HelpKINode Title="XmlCommentsFile property" Url="html/b14eaa2e-6ea9-5f9d-6052-6bb79ec9ed37.htm" />
   <HelpKINode Title="XmlCommentsFile.Comments property" Url="html/157840a3-486b-e89e-4c3a-1365cbe897c6.htm" />
+  <HelpKINode Title="XmlCommentsFile.Encoding property" Url="html/0b8197a9-4d9a-8647-630b-4165947066c8.htm" />
   <HelpKINode Title="XmlCommentsFile.FixupComments method" Url="html/227c9d08-e309-85a0-72bc-43929aae63a7.htm" />
+  <HelpKINode Title="XmlCommentsFile.ForceReload method" Url="html/640d9de1-8473-59ba-f8f7-a85fc3c07ef6.htm" />
   <HelpKINode Title="XmlCommentsFile.Members property" Url="html/9ebe34fe-e55c-fcab-414b-9e7bde349abe.htm" />
   <HelpKINode Title="XmlCommentsFile.Save method" Url="html/5126f25e-dc4b-38e1-26c7-19c6c8531831.htm" />
   <HelpKINode Title="XmlCommentsFile.SourcePath property" Url="html/1c7186da-9dd6-4591-f207-8c1f8638f3a9.htm" />
