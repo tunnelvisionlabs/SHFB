@@ -26,6 +26,7 @@ StyleCop.Cache
 /SHFB/Deploy/ProductionTransforms/
 /SHFB/Deploy/SharedContent/
 /SHFB/Deploy/Spelling/
+/SHFB/Deploy/SyntaxContent/
 /SHFB/Deploy/Templates/
 /SHFB/Deploy/Web/
 /Deployment/InstallResources/
