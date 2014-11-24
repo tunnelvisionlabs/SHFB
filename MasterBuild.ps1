@@ -47,9 +47,11 @@ $CommandDir = Split-Path -Parent $PSCommandPath
 
 $env:SHFBROOT = "$CommandDir\SHFB\Deploy\"
 $msbuild = "$env:windir\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe"
+$nuget = "$CommandDir\SHFB\Source\.nuget\NuGet.exe"
 
 cd "$CommandDir\SHFB\Source"
 
+&$nuget 'restore' 'SandcastleTools.sln'
 &$msbuild '/nologo' '/v:m' '/m' 'SandcastleTools.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
 If ($LASTEXITCODE -ne 0) {
 	echo 'Failed to build SandcastleTools.sln, aborting!'
@@ -73,6 +75,7 @@ If ($BuildReflectionData) {
 
 cd "$CommandDir\SHFB\Source"
 
+&$nuget 'restore' 'SandcastleBuilder.sln'
 &$msbuild '/nologo' '/v:m' '/m' 'SandcastleBuilder.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
 If ($LASTEXITCODE -ne 0) {
 	echo 'Failed to build SandcastleBuilder.sln, aborting!'
@@ -80,6 +83,7 @@ If ($LASTEXITCODE -ne 0) {
 	exit $LASTEXITCODE
 }
 
+&$nuget 'restore' 'SandcastleBuilderPackage.sln'
 &$msbuild '/nologo' '/v:m' '/m' 'SandcastleBuilderPackage.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
 If ($LASTEXITCODE -ne 0) {
 	echo 'Failed to build SandcastleBuilderPackage.sln, aborting!'
@@ -89,6 +93,7 @@ If ($LASTEXITCODE -ne 0) {
 
 cd "$CommandDir\Documentation"
 
+&$nuget 'restore' 'AllDocumentation.sln'
 &$msbuild '/nologo' '/v:m' '/m' 'AllDocumentation.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
 If ($LASTEXITCODE -ne 0) {
 	echo 'Failed to build AllDocumentation.sln, aborting!'
@@ -98,6 +103,7 @@ If ($LASTEXITCODE -ne 0) {
 
 cd "$CommandDir\SHFB\Source"
 
+&$nuget 'restore' 'SHFBSetup.sln'
 &$msbuild '/nologo' '/v:m' '/m' 'SHFBSetup.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
 If ($LASTEXITCODE -ne 0) {
 	echo 'Failed to build SHFBSetup.sln, aborting!'
