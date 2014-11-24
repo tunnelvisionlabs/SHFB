@@ -33,6 +33,7 @@ using System.Runtime.InteropServices;
 using EnvDTE;
 
 using Microsoft.VisualStudio;
+using Microsoft.VisualStudio.Project;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 
@@ -116,6 +117,10 @@ namespace SandcastleBuilder.Package
         //=====================================================================
 
         private BuildCompletedEventListener buildCompletedListener;
+
+        private SingleFileGeneratorNodeExtenderProvider _singleFileGeneratorNodeExtenderProvider;
+        private int _singleFileGeneratorNodeExtenderCookie;
+
         #endregion
 
         #region Properties
@@ -226,6 +231,9 @@ namespace SandcastleBuilder.Package
         {
             if (disposing)
             {
+                ObjectExtenders objectExtenders = (ObjectExtenders)GetService(typeof(ObjectExtenders));
+                objectExtenders.UnregisterExtenderProvider(_singleFileGeneratorNodeExtenderCookie);
+
                 SandcastleBuilderPackage.Instance = null;
 
                 if(buildCompletedListener != null)
@@ -263,6 +271,13 @@ namespace SandcastleBuilder.Package
 
             // Create the update solution event listener for build completed events
             buildCompletedListener = new BuildCompletedEventListener(this);
+
+            ObjectExtenders objectExtenders = (ObjectExtenders)GetService(typeof(ObjectExtenders));
+            _singleFileGeneratorNodeExtenderProvider = new SingleFileGeneratorNodeExtenderProvider();
+            string extenderCatId = typeof(SandcastleBuilderFileNodeProperties).GUID.ToString("B");
+            string extenderName = SingleFileGeneratorNodeExtenderProvider.Name;
+            string localizedName = extenderName;
+            _singleFileGeneratorNodeExtenderCookie = objectExtenders.RegisterExtenderProvider(extenderCatId, extenderName, _singleFileGeneratorNodeExtenderProvider, localizedName);
         }
         #endregion
 
@@ -311,7 +326,7 @@ namespace SandcastleBuilder.Package
                               StringComparison.OrdinalIgnoreCase))
                             {
                                 SandcastleBuilderProjectNode pn = (SandcastleBuilderProjectNode)p.Object;
-                                string projectHelpFormat = (pn.GetProjectProperty("HelpFileFormat") ??
+                                string projectHelpFormat = (pn.GetProjectProperty("HelpFileFormat", _PersistStorageType.PST_PROJECT_FILE) ??
                                     HelpFileFormats.HtmlHelp1.ToString());
 
                                 enabled = (!pn.BuildInProgress && (format == null || projectHelpFormat.IndexOf(
