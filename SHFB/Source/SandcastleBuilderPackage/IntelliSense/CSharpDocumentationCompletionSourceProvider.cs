@@ -2,7 +2,7 @@
 // System  : Sandcastle Help File Builder Visual Studio Package
 // File    : CSharpDocumentationCompletionSourceProvider.cs
 // Author  : Sam Harwell  (sam@tunnelvisionlabs.com)
-// Updated : 06/20/2014
+// Updated : 09/05/2014
 // Note    : Copyright 2014, Sam Harwell, All rights reserved
 // Compiler: Microsoft Visual C#
 //

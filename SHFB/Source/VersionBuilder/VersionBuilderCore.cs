@@ -625,6 +625,7 @@ namespace Microsoft.Ddue.Tools
                         {
                             writer.WriteStartElement("version");
                             writer.WriteAttributeString("name", attribute);
+
                             if(!String.IsNullOrEmpty(pair.Value))
                                 writer.WriteAttributeString("obsolete", pair.Value);
 
