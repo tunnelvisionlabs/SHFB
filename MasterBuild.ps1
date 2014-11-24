@@ -111,4 +111,8 @@ If ($LASTEXITCODE -ne 0) {
 	exit $LASTEXITCODE
 }
 
+CD "$CommandDir\NuGet"
+
+.\BuildNuGet.ps1
+
 cd $CommandDir
