@@ -198,6 +198,11 @@
         <HelpKeyword index="K" term="Visual Studio, HTML encoding text" />
       </HelpKeywords>
     </Topic>
+    <Topic id="ba11d6d5-2f99-4b26-b384-21324ef1b49a" visible="True" title="Go To Definition Support">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Visual Studio, Go To Definition" />
+      </HelpKeywords>
+    </Topic>
   </Topic>
   <Topic id="e12c2b9f-18c7-4718-850b-ac3c2e293672" visible="True" title="Project Explorer Window">
     <HelpKeywords>
@@ -225,7 +230,7 @@
       </HelpKeywords>
     </Topic>
   </Topic>
-  <Topic id="e32086c6-de17-4e54-a746-1ac80bf0c45a" visible="True" isExpanded="true" title="Project Properties Window">
+  <Topic id="e32086c6-de17-4e54-a746-1ac80bf0c45a" visible="True" title="Project Properties Window">
     <HelpKeywords>
       <HelpKeyword index="K" term="property categories, Overview" />
     </HelpKeywords>
@@ -347,7 +352,7 @@
         <HelpKeyword index="K" term="properties, ProjectSummary" />
         <HelpKeyword index="K" term="property categories, Summaries" />
       </HelpKeywords>
-      <Topic id="48f5a893-acde-4e50-8c17-72b83d9c3f9d" visible="True" isSelected="true" title="Using NamespaceDoc and NamespaceGroupDoc Classes">
+      <Topic id="48f5a893-acde-4e50-8c17-72b83d9c3f9d" visible="True" title="Using NamespaceDoc and NamespaceGroupDoc Classes">
         <HelpKeywords>
           <HelpKeyword index="K" term="NamespaceDoc classes" />
           <HelpKeyword index="K" term="NamespaceGroupDoc classes" />
@@ -1387,6 +1392,11 @@
       <HelpKeyword index="K" term="History" />
       <HelpKeyword index="K" term="Version History" />
     </HelpKeywords>
+    <Topic id="063f61e1-2040-431f-b53c-91b826027ac6" visible="True" isSelected="true" title="Version 2014.12.20.0">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="versions, 2014.12.20.0" />
+      </HelpKeywords>
+    </Topic>
     <Topic id="7238a41e-1375-4038-8bf1-d699f4dae668" visible="True" title="Version 2014.11.22.0">
       <HelpKeywords>
         <HelpKeyword index="K" term="versions, 2014.11.22.0" />

@@ -2,7 +2,7 @@
 // System  : Sandcastle Help File Builder Utilities
 // File    : BuildProcess.Transform.cs
 // Author  : Eric Woodruff  (Eric@EWoodruff.us)
-// Updated : 08/24/2014
+// Updated : 12/03/2014
 // Note    : Copyright 2006-2014, Eric Woodruff, All rights reserved
 // Compiler: Microsoft Visual C#
 //
@@ -945,10 +945,10 @@ namespace SandcastleBuilder.Utils.BuildEngine
                         replaceWith = String.Empty;
                     else
                         replaceWith = String.Format(CultureInfo.InvariantCulture, "<location folder=\"{0}\" />\r\n",
-                            project.ComponentPath);
+                            HttpUtility.HtmlEncode(project.ComponentPath));
 
                     replaceWith += String.Format(CultureInfo.InvariantCulture, "<location folder=\"{0}\" />",
-                        Path.GetDirectoryName(project.Filename));
+                        HttpUtility.HtmlEncode(Path.GetDirectoryName(project.Filename)));
                     break;
 
                 case "helpfileformat":
@@ -1032,7 +1032,7 @@ namespace SandcastleBuilder.Utils.BuildEngine
                 case "addxamlsyntaxdata":
                     // If the XAML syntax generator is present, add XAML syntax data to the reflection file
                     if(ComponentUtilities.SyntaxFiltersFrom(syntaxGenerators, project.SyntaxFilters).Any(
-                      s => s.Id == "XamlUsage"))
+                      s => s.Id == "XAML Usage"))
                         replaceWith = @";~\ProductionTransforms\AddXamlSyntaxData.xsl";
                     else
                         replaceWith = String.Empty;

@@ -34,19 +34,10 @@ Try {
 	$msbuild = "$env:windir\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe"
 
 	$Framework = "$($FrameworkPlatform)_$($FrameworkVersion)"
-	If ($Framework -eq '.NETPortable_4.6') {
-		# Parsing the .NETPortable 4.6 assemblies causes a stack overflow due to type forwarding which MRefBuilder
-		# doesn't appear to handle in this case.
-		echo '*** The .NETPortable 4.6 Framework assemblies cannot be parsed.  Use another framework type.'
-		echo '*'
-		echo '* Build failed!'
-		echo '*'
-		exit 1
-	}
 
-	If (!($NoClean) -and (Test-Path "$CommandDir\Reflection")) {
-		Write-Host "Removing files from existing output path: Reflection"
-		Remove-Item "$CommandDir\Reflection" -Recurse
+	If (!($NoClean) -and (Test-Path "$CommandDir\$FrameworkPlatform")) {
+		Write-Host "Removing files from existing output path: $FrameworkPlatform"
+		Remove-Item "$CommandDir\$FrameworkPlatform" -Recurse
 	}
 
 	If (!($NoClean) -and (Test-Path "$CommandDir\$Framework")) {
@@ -54,10 +45,9 @@ Try {
 		Remove-Item "$CommandDir\$Framework" -Recurse
 	}
 
-	If (!(Test-Path "$CommandDir\Reflection"))
-	{
-		Write-Host "Creating target folder: Reflection"
-		New-Item -ItemType directory "$CommandDir\Reflection" | Out-Null
+	If (!(Test-Path "$CommandDir\$FrameworkPlatform")) {
+		Write-Host "Creating target folder: $FrameworkPlatform"
+		New-Item -ItemType directory "$CommandDir\$FrameworkPlatform" | Out-Null
 	}
 
 	&$msbuild 'BuildReflectionData.proj'
@@ -68,7 +58,7 @@ Try {
 		exit $LASTEXITCODE
 	}
 
-	Copy-Item "$CommandDir\$Framework\*.xml" -Recurse "$CommandDir\Reflection" -Force
+	Copy-Item "$CommandDir\$Framework\*.xml" -Recurse "$CommandDir\$FrameworkPlatform" -Force
 
 	echo '*'
 	echo '* The reflection data has been built successfully'

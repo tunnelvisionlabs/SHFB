@@ -33,6 +33,7 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btnSelectMSHCViewer = new System.Windows.Forms.Button();
             this.btnSelectHxSViewer = new System.Windows.Forms.Button();
+            this.lnkSHFBInfo = new System.Windows.Forms.LinkLabel();
             this.txtMSHelpViewerPath = new System.Windows.Forms.TextBox();
             this.lblMSHelpViewer = new System.Windows.Forms.Label();
             this.chkOpenHelpAfterBuild = new System.Windows.Forms.CheckBox();
@@ -43,7 +44,10 @@
             this.lblHelp2Viewer = new System.Windows.Forms.Label();
             this.chkUseExternalBrowser = new System.Windows.Forms.CheckBox();
             this.chkOpenLogViewerOnFailure = new System.Windows.Forms.CheckBox();
-            this.lnkSHFBInfo = new System.Windows.Forms.LinkLabel();
+            this.chkEnableExtendedXmlComments = new System.Windows.Forms.CheckBox();
+            this.chkEnableGoToDefinition = new System.Windows.Forms.CheckBox();
+            this.lblSetColorNote = new System.Windows.Forms.Label();
+            this.chkEnableGoToDefinitionInCRef = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.epErrors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.udcASPNetDevServerPort)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +58,7 @@
             // 
             // btnSelectMSHCViewer
             // 
-            this.btnSelectMSHCViewer.Location = new System.Drawing.Point(382, 88);
+            this.btnSelectMSHCViewer.Location = new System.Drawing.Point(376, 88);
             this.btnSelectMSHCViewer.Name = "btnSelectMSHCViewer";
             this.btnSelectMSHCViewer.Size = new System.Drawing.Size(32, 27);
             this.btnSelectMSHCViewer.TabIndex = 5;
@@ -65,7 +69,7 @@
             // 
             // btnSelectHxSViewer
             // 
-            this.btnSelectHxSViewer.Location = new System.Drawing.Point(381, 32);
+            this.btnSelectHxSViewer.Location = new System.Drawing.Point(375, 32);
             this.btnSelectHxSViewer.Name = "btnSelectHxSViewer";
             this.btnSelectHxSViewer.Size = new System.Drawing.Size(32, 27);
             this.btnSelectHxSViewer.TabIndex = 2;
@@ -74,16 +78,28 @@
             this.btnSelectHxSViewer.UseVisualStyleBackColor = true;
             this.btnSelectHxSViewer.Click += new System.EventHandler(this.btnSelectViewer_Click);
             // 
+            // lnkSHFBInfo
+            // 
+            this.lnkSHFBInfo.AutoSize = true;
+            this.lnkSHFBInfo.Location = new System.Drawing.Point(4, 441);
+            this.lnkSHFBInfo.Name = "lnkSHFBInfo";
+            this.lnkSHFBInfo.Size = new System.Drawing.Size(239, 20);
+            this.lnkSHFBInfo.TabIndex = 15;
+            this.lnkSHFBInfo.TabStop = true;
+            this.lnkSHFBInfo.Text = "About Sandcastle Help File Builder";
+            this.toolTip1.SetToolTip(this.lnkSHFBInfo, "SHFB version and contact information");
+            this.lnkSHFBInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSHFBInfo_LinkClicked);
+            // 
             // txtMSHelpViewerPath
             // 
-            this.txtMSHelpViewerPath.Location = new System.Drawing.Point(18, 88);
+            this.txtMSHelpViewerPath.Location = new System.Drawing.Point(8, 88);
             this.txtMSHelpViewerPath.Name = "txtMSHelpViewerPath";
             this.txtMSHelpViewerPath.Size = new System.Drawing.Size(358, 27);
             this.txtMSHelpViewerPath.TabIndex = 4;
             // 
             // lblMSHelpViewer
             // 
-            this.lblMSHelpViewer.Location = new System.Drawing.Point(14, 62);
+            this.lblMSHelpViewer.Location = new System.Drawing.Point(4, 62);
             this.lblMSHelpViewer.Name = "lblMSHelpViewer";
             this.lblMSHelpViewer.Size = new System.Drawing.Size(359, 23);
             this.lblMSHelpViewer.TabIndex = 3;
@@ -93,7 +109,7 @@
             // chkOpenHelpAfterBuild
             // 
             this.chkOpenHelpAfterBuild.AutoSize = true;
-            this.chkOpenHelpAfterBuild.Location = new System.Drawing.Point(44, 229);
+            this.chkOpenHelpAfterBuild.Location = new System.Drawing.Point(34, 229);
             this.chkOpenHelpAfterBuild.Name = "chkOpenHelpAfterBuild";
             this.chkOpenHelpAfterBuild.Size = new System.Drawing.Size(267, 24);
             this.chkOpenHelpAfterBuild.TabIndex = 10;
@@ -102,14 +118,14 @@
             // 
             // txtHxSViewerPath
             // 
-            this.txtHxSViewerPath.Location = new System.Drawing.Point(17, 32);
+            this.txtHxSViewerPath.Location = new System.Drawing.Point(7, 32);
             this.txtHxSViewerPath.Name = "txtHxSViewerPath";
             this.txtHxSViewerPath.Size = new System.Drawing.Size(358, 27);
             this.txtHxSViewerPath.TabIndex = 1;
             // 
             // udcASPNetDevServerPort
             // 
-            this.udcASPNetDevServerPort.Location = new System.Drawing.Point(303, 130);
+            this.udcASPNetDevServerPort.Location = new System.Drawing.Point(293, 130);
             this.udcASPNetDevServerPort.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -133,7 +149,7 @@
             // chkVerboseLogging
             // 
             this.chkVerboseLogging.AutoSize = true;
-            this.chkVerboseLogging.Location = new System.Drawing.Point(44, 169);
+            this.chkVerboseLogging.Location = new System.Drawing.Point(34, 169);
             this.chkVerboseLogging.Name = "chkVerboseLogging";
             this.chkVerboseLogging.Size = new System.Drawing.Size(283, 24);
             this.chkVerboseLogging.TabIndex = 8;
@@ -142,7 +158,7 @@
             // 
             // lblASPPort
             // 
-            this.lblASPPort.Location = new System.Drawing.Point(13, 131);
+            this.lblASPPort.Location = new System.Drawing.Point(3, 131);
             this.lblASPPort.Name = "lblASPPort";
             this.lblASPPort.Size = new System.Drawing.Size(284, 23);
             this.lblASPPort.TabIndex = 6;
@@ -151,7 +167,7 @@
             // 
             // lblHelp2Viewer
             // 
-            this.lblHelp2Viewer.Location = new System.Drawing.Point(14, 6);
+            this.lblHelp2Viewer.Location = new System.Drawing.Point(4, 6);
             this.lblHelp2Viewer.Name = "lblHelp2Viewer";
             this.lblHelp2Viewer.Size = new System.Drawing.Size(344, 23);
             this.lblHelp2Viewer.TabIndex = 0;
@@ -161,7 +177,7 @@
             // chkUseExternalBrowser
             // 
             this.chkUseExternalBrowser.AutoSize = true;
-            this.chkUseExternalBrowser.Location = new System.Drawing.Point(44, 259);
+            this.chkUseExternalBrowser.Location = new System.Drawing.Point(34, 259);
             this.chkUseExternalBrowser.Name = "chkUseExternalBrowser";
             this.chkUseExternalBrowser.Size = new System.Drawing.Size(347, 24);
             this.chkUseExternalBrowser.TabIndex = 11;
@@ -171,28 +187,58 @@
             // chkOpenLogViewerOnFailure
             // 
             this.chkOpenLogViewerOnFailure.AutoSize = true;
-            this.chkOpenLogViewerOnFailure.Location = new System.Drawing.Point(44, 199);
+            this.chkOpenLogViewerOnFailure.Location = new System.Drawing.Point(34, 199);
             this.chkOpenLogViewerOnFailure.Name = "chkOpenLogViewerOnFailure";
             this.chkOpenLogViewerOnFailure.Size = new System.Drawing.Size(279, 24);
             this.chkOpenLogViewerOnFailure.TabIndex = 9;
             this.chkOpenLogViewerOnFailure.Text = "Open b&uild log viewer on failed build";
             this.chkOpenLogViewerOnFailure.UseVisualStyleBackColor = true;
             // 
-            // lnkSHFBInfo
+            // chkEnableExtendedXmlComments
             // 
-            this.lnkSHFBInfo.AutoSize = true;
-            this.lnkSHFBInfo.Location = new System.Drawing.Point(14, 300);
-            this.lnkSHFBInfo.Name = "lnkSHFBInfo";
-            this.lnkSHFBInfo.Size = new System.Drawing.Size(239, 20);
-            this.lnkSHFBInfo.TabIndex = 12;
-            this.lnkSHFBInfo.TabStop = true;
-            this.lnkSHFBInfo.Text = "About Sandcastle Help File Builder";
-            this.toolTip1.SetToolTip(this.lnkSHFBInfo, "SHFB version and contact information");
-            this.lnkSHFBInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSHFBInfo_LinkClicked);
+            this.chkEnableExtendedXmlComments.AutoSize = true;
+            this.chkEnableExtendedXmlComments.Location = new System.Drawing.Point(34, 301);
+            this.chkEnableExtendedXmlComments.Name = "chkEnableExtendedXmlComments";
+            this.chkEnableExtendedXmlComments.Size = new System.Drawing.Size(382, 24);
+            this.chkEnableExtendedXmlComments.TabIndex = 12;
+            this.chkEnableExtendedXmlComments.Text = "Enable extended XML comments completion options";
+            this.chkEnableExtendedXmlComments.UseVisualStyleBackColor = true;
+            // 
+            // chkEnableGoToDefinition
+            // 
+            this.chkEnableGoToDefinition.AutoSize = true;
+            this.chkEnableGoToDefinition.Location = new System.Drawing.Point(34, 331);
+            this.chkEnableGoToDefinition.Name = "chkEnableGoToDefinition";
+            this.chkEnableGoToDefinition.Size = new System.Drawing.Size(345, 24);
+            this.chkEnableGoToDefinition.TabIndex = 13;
+            this.chkEnableGoToDefinition.Text = "Enable MAML/XML comments Go To Definition";
+            this.chkEnableGoToDefinition.UseVisualStyleBackColor = true;
+            this.chkEnableGoToDefinition.CheckedChanged += new System.EventHandler(this.chkEnableGoToDefinition_CheckedChanged);
+            // 
+            // lblSetColorNote
+            // 
+            this.lblSetColorNote.Location = new System.Drawing.Point(52, 388);
+            this.lblSetColorNote.Name = "lblSetColorNote";
+            this.lblSetColorNote.Size = new System.Drawing.Size(372, 23);
+            this.lblSetColorNote.TabIndex = 14;
+            this.lblSetColorNote.Text = "(Set color with MAML/XML Comments Link Underline)";
+            this.lblSetColorNote.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // chkEnableGoToDefinitionInCRef
+            // 
+            this.chkEnableGoToDefinitionInCRef.AutoSize = true;
+            this.chkEnableGoToDefinitionInCRef.Location = new System.Drawing.Point(56, 361);
+            this.chkEnableGoToDefinitionInCRef.Name = "chkEnableGoToDefinitionInCRef";
+            this.chkEnableGoToDefinitionInCRef.Size = new System.Drawing.Size(279, 24);
+            this.chkEnableGoToDefinitionInCRef.TabIndex = 16;
+            this.chkEnableGoToDefinitionInCRef.Text = "Enable for XML comments cref values";
+            this.chkEnableGoToDefinitionInCRef.UseVisualStyleBackColor = true;
             // 
             // GeneralOptionsControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoScroll = true;
+            this.Controls.Add(this.chkEnableGoToDefinitionInCRef);
             this.Controls.Add(this.lblHelp2Viewer);
             this.Controls.Add(this.txtHxSViewerPath);
             this.Controls.Add(this.btnSelectHxSViewer);
@@ -205,11 +251,14 @@
             this.Controls.Add(this.chkOpenLogViewerOnFailure);
             this.Controls.Add(this.chkOpenHelpAfterBuild);
             this.Controls.Add(this.chkUseExternalBrowser);
+            this.Controls.Add(this.chkEnableExtendedXmlComments);
+            this.Controls.Add(this.chkEnableGoToDefinition);
+            this.Controls.Add(this.lblSetColorNote);
             this.Controls.Add(this.lnkSHFBInfo);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MinimumSize = new System.Drawing.Size(435, 305);
+            this.MinimumSize = new System.Drawing.Size(430, 100);
             this.Name = "GeneralOptionsControl";
-            this.Size = new System.Drawing.Size(435, 335);
+            this.Size = new System.Drawing.Size(435, 479);
             ((System.ComponentModel.ISupportInitialize)(this.epErrors)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.udcASPNetDevServerPort)).EndInit();
             this.ResumeLayout(false);
@@ -234,5 +283,9 @@
         private System.Windows.Forms.CheckBox chkUseExternalBrowser;
         private System.Windows.Forms.CheckBox chkOpenLogViewerOnFailure;
         private System.Windows.Forms.LinkLabel lnkSHFBInfo;
+        private System.Windows.Forms.CheckBox chkEnableGoToDefinition;
+        private System.Windows.Forms.CheckBox chkEnableExtendedXmlComments;
+        private System.Windows.Forms.Label lblSetColorNote;
+        private System.Windows.Forms.CheckBox chkEnableGoToDefinitionInCRef;
     }
 }

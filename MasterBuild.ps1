@@ -14,21 +14,13 @@
 .PARAMETER Debug
 	When specified, the Debug configuration is built instead of the standard Release configuration.
 
-.PARAMETER FrameworkPlatform
-	Specifies the framework platform for the reflection data. The default is ".NETFramework". This parameter is only used when building the reference reflection data.
-
-.PARAMETER FrameworkVersion
-	Specifies the framework version for the reflection data. The default is "4.5". This parameter is only used when building the reference reflection data.
-
 .NOTES
 	Author: Sam Harwell
 #>
 param (
 	[switch]$BuildReflectionData,
 	[switch]$NoClean,
-	[switch]$Debug,
-	[string]$FrameworkPlatform = '.NETFramework',
-	[string]$FrameworkVersion = '4.5'
+	[switch]$Debug
 )
 
 if ($NoClean) {
@@ -59,17 +51,30 @@ If ($LASTEXITCODE -ne 0) {
 	exit $LASTEXITCODE
 }
 
-If (!(Test-Path "$CommandDir\SHFB\Deploy\Data\Reflection\System.xml")) {
-	$BuildReflectionData = $true
+$FrameworkVersions = @{
+	'.NETCore' = '4.5.1'
+	'.NETFramework' = '4.5.1'
+	'.NETMicroFramework' = '4.3'
+	'.NETPortable' = '4.6'
+	'Silverlight' = '5.0'
+	'WindowsPhone' = '8.1'
+	'WindowsPhoneApp' = '8.1'
 }
 
-If ($BuildReflectionData) {
-	cd "$CommandDir\SHFB\Deploy\Data"
-	.\BuildReflectionData.ps1 $FrameworkPlatform $FrameworkVersion
-	If ($LASTEXITCODE -ne 0) {
-		echo 'Failed to build the reflection data, aborting!'
-		cd $CommandDir
-		exit $LASTEXITCODE
+ForEach ($pair In $FrameworkVersions.GetEnumerator()) {
+	$BuildCurrent = $BuildReflectionData
+	If (!(Test-Path "$CommandDir\SHFB\Deploy\Data\$($pair.Key)\System.xml")) {
+		$BuildCurrent = $true
+	}
+
+	If ($BuildCurrent) {
+		cd "$CommandDir\SHFB\Deploy\Data"
+		.\BuildReflectionData.ps1 $pair.Key $pair.Value
+		If ($LASTEXITCODE -ne 0) {
+			echo 'Failed to build the reflection data, aborting!'
+			cd $CommandDir
+			exit $LASTEXITCODE
+		}
 	}
 }
 

@@ -19,7 +19,13 @@ StyleCop.Cache
 /SHFB/Deploy/*.presentation
 /SHFB/Deploy/Colorizer/
 /SHFB/Deploy/ConceptualTemplates/
-/SHFB/Deploy/Data/Reflection/
+/SHFB/Deploy/Data/.NETCore*/
+/SHFB/Deploy/Data/.NETFramework*/
+/SHFB/Deploy/Data/.NETMicroFramework*/
+/SHFB/Deploy/Data/.NETPortable*/
+/SHFB/Deploy/Data/Silverlight*/
+/SHFB/Deploy/Data/WindowsPhone*/
+/SHFB/Deploy/Data/WindowsPhoneApp*/
 /SHFB/Deploy/Extras/
 /SHFB/Deploy/ItemTemplates/
 /SHFB/Deploy/PresentationStyles/
