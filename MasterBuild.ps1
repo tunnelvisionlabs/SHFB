@@ -45,7 +45,7 @@ cd "$CommandDir\SHFB\Source"
 
 &$nuget 'restore' 'SandcastleTools.sln'
 &$msbuild '/nologo' '/v:m' '/m' 'SandcastleTools.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
-If ($LASTEXITCODE -ne 0) {
+If (-not $?) {
 	echo 'Failed to build SandcastleTools.sln, aborting!'
 	cd $CommandDir
 	exit $LASTEXITCODE
@@ -70,7 +70,7 @@ ForEach ($pair In $FrameworkVersions.GetEnumerator()) {
 	If ($BuildCurrent) {
 		cd "$CommandDir\SHFB\Deploy\Data"
 		.\BuildReflectionData.ps1 $pair.Key $pair.Value
-		If ($LASTEXITCODE -ne 0) {
+		If (-not $?) {
 			echo 'Failed to build the reflection data, aborting!'
 			cd $CommandDir
 			exit $LASTEXITCODE
@@ -82,7 +82,7 @@ cd "$CommandDir\SHFB\Source"
 
 &$nuget 'restore' 'SandcastleBuilder.sln'
 &$msbuild '/nologo' '/v:m' '/m' 'SandcastleBuilder.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
-If ($LASTEXITCODE -ne 0) {
+If (-not $?) {
 	echo 'Failed to build SandcastleBuilder.sln, aborting!'
 	cd $CommandDir
 	exit $LASTEXITCODE
@@ -90,7 +90,7 @@ If ($LASTEXITCODE -ne 0) {
 
 &$nuget 'restore' 'SandcastleBuilderPackage.sln'
 &$msbuild '/nologo' '/v:m' '/m' 'SandcastleBuilderPackage.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
-If ($LASTEXITCODE -ne 0) {
+If (-not $?) {
 	echo 'Failed to build SandcastleBuilderPackage.sln, aborting!'
 	cd $CommandDir
 	exit $LASTEXITCODE
@@ -100,7 +100,7 @@ cd "$CommandDir\Documentation"
 
 &$nuget 'restore' 'AllDocumentation.sln'
 &$msbuild '/nologo' '/v:m' '/m' 'AllDocumentation.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
-If ($LASTEXITCODE -ne 0) {
+If (-not $?) {
 	echo 'Failed to build AllDocumentation.sln, aborting!'
 	cd $CommandDir
 	exit $LASTEXITCODE
@@ -110,7 +110,7 @@ cd "$CommandDir\SHFB\Source"
 
 &$nuget 'restore' 'SHFBSetup.sln'
 &$msbuild '/nologo' '/v:m' '/m' 'SHFBSetup.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
-If ($LASTEXITCODE -ne 0) {
+If (-not $?) {
 	echo 'Failed to build SHFBSetup.sln, aborting!'
 	cd $CommandDir
 	exit $LASTEXITCODE

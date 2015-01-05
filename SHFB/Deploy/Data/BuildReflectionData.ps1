@@ -51,7 +51,7 @@ Try {
 	}
 
 	&$msbuild 'BuildReflectionData.proj'
-	if ($LASTEXITCODE -ne 0) {
+	if (-not $?) {
 		echo '*'
 		echo '* Build failed!'
 		echo '*'
