@@ -45,6 +45,9 @@ namespace SandcastleBuilder.Package.GoToDefinition
         [Import]
         internal IClassificationTypeRegistryService ClassificationRegistry = null;
 
+        [Import]
+        internal MefProviderOptions MefProviderOptions { get; private set; }
+
         [Export(typeof(ClassificationTypeDefinition))]
         [Name(UnderlineClassifier.UnderlineClassifierType)]
         internal static ClassificationTypeDefinition underlineClassificationType = null;

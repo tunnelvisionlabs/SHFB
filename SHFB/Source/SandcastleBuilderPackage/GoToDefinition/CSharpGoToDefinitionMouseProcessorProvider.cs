@@ -49,6 +49,9 @@ namespace SandcastleBuilder.Package.GoToDefinition
         [Import]
         private SVsServiceProvider GlobalServiceProvider = null;
 
+        [Import]
+        private MefProviderOptions MefProviderOptions { get; set; }
+
         /// <inheritdoc />
         public IMouseProcessor GetAssociatedProcessor(IWpfTextView view)
         {
@@ -57,7 +60,7 @@ namespace SandcastleBuilder.Package.GoToDefinition
 
             var buffer = view.TextBuffer;
 
-            return new CSharpGoToDefinitionMouseProcessor(view, GlobalServiceProvider, AggregatorFactory.GetClassifier(buffer),
+            return new CSharpGoToDefinitionMouseProcessor(MefProviderOptions, view, GlobalServiceProvider, AggregatorFactory.GetClassifier(buffer),
                 NavigatorService.GetTextStructureNavigator(buffer), CtrlKeyState.GetStateForView(view));
         }
     }

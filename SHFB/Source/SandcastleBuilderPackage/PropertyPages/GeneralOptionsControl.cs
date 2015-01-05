@@ -25,6 +25,8 @@ using System.ComponentModel;
 using System.IO;
 using System.Windows.Forms;
 
+using Microsoft.VisualStudio.ComponentModelHost;
+using Microsoft.VisualStudio.Shell;
 using SandcastleBuilder.Package.UI;
 
 namespace SandcastleBuilder.Package.PropertyPages
@@ -119,9 +121,10 @@ namespace SandcastleBuilder.Package.PropertyPages
 
             // MEF provider options are stored separately to avoid loading the entire package just to access
             // these options.
-            chkEnableExtendedXmlComments.Checked = MefProviderOptions.EnableExtendedXmlCommentsCompletion;
-            chkEnableGoToDefinition.Checked = MefProviderOptions.EnableGoToDefinition;
-            chkEnableGoToDefinitionInCRef.Checked = MefProviderOptions.EnableGoToDefinitionInCRef;
+            MefProviderOptions mefProviderOptions = GetMefProviderOptions(optionsPage.Site);
+            chkEnableExtendedXmlComments.Checked = mefProviderOptions.EnableExtendedXmlCommentsCompletion;
+            chkEnableGoToDefinition.Checked = mefProviderOptions.EnableGoToDefinition;
+            chkEnableGoToDefinitionInCRef.Checked = mefProviderOptions.EnableGoToDefinitionInCRef;
         }
 
         /// <summary>
@@ -142,11 +145,12 @@ namespace SandcastleBuilder.Package.PropertyPages
 
                 // MEF provider options are stored separately to avoid loading the entire package just to access
                 // these options.
-                MefProviderOptions.EnableExtendedXmlCommentsCompletion = chkEnableExtendedXmlComments.Checked;
-                MefProviderOptions.EnableGoToDefinition = chkEnableGoToDefinition.Checked;
-                MefProviderOptions.EnableGoToDefinitionInCRef = chkEnableGoToDefinitionInCRef.Checked;
+                MefProviderOptions mefProviderOptions = GetMefProviderOptions(optionsPage.Site);
+                mefProviderOptions.EnableExtendedXmlCommentsCompletion = chkEnableExtendedXmlComments.Checked;
+                mefProviderOptions.EnableGoToDefinition = chkEnableGoToDefinition.Checked;
+                mefProviderOptions.EnableGoToDefinitionInCRef = chkEnableGoToDefinitionInCRef.Checked;
 
-                MefProviderOptions.SaveConfiguration();
+                mefProviderOptions.SaveConfiguration();
             }
         }
         #endregion
@@ -203,5 +207,15 @@ namespace SandcastleBuilder.Package.PropertyPages
             chkEnableGoToDefinitionInCRef.Enabled = chkEnableGoToDefinition.Checked;
         }
         #endregion
+
+        private static MefProviderOptions GetMefProviderOptions(IServiceProvider serviceProvider)
+        {
+            if (serviceProvider == null)
+                throw new ArgumentNullException("serviceProvider");
+
+            var componentModel = (IComponentModel)serviceProvider.GetService(typeof(SComponentModel));
+            var exportProvider = componentModel.DefaultExportProvider;
+            return exportProvider.GetExportedValue<MefProviderOptions>();
+        }
     }
 }

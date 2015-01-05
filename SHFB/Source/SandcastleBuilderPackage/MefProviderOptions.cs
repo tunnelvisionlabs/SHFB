@@ -19,37 +19,36 @@
 //===============================================================================================================
 
 using System;
-using System.IO;
-using System.Xml.Linq;
+using System.ComponentModel.Composition;
+
+using Microsoft.VisualStudio.Settings;
+using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Shell.Settings;
 
 namespace SandcastleBuilder.Package
 {
     /// <summary>
     /// This class is used to contain the MEF provider configuration options
     /// </summary>
-    /// <remarks>Settings are stored in an XML file in the user's local application data folder and will be used
-    /// by all versions of Visual Studio in which the package is installed.  These are separate from the main
-    /// package options but are editable using the package options page.  Since these are not directly related to
+    /// <remarks>Settings are stored in the Visual Studio settings for the current user.  These are separate from the
+    /// main package options but are editable using the package options page.  Since these are not directly related to
     /// the package, we don't want to force it to load just to access these few settings.</remarks>
-    internal static class MefProviderOptions
+    [Export]
+    internal sealed class MefProviderOptions
     {
+        private readonly SVsServiceProvider _serviceProvider;
+
         #region Properties
         //=====================================================================
 
         /// <summary>
-        /// This read-only property returns the configuration file path
+        /// This read-only property returns the settings collection path
         /// </summary>
-        public static string ConfigurationFilePath
+        private string CollectionPath
         {
             get
             {
-                string configPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                    @"EWSoftware\Sandcastle Help File Builder");
-
-                if(!Directory.Exists(configPath))
-                    Directory.CreateDirectory(configPath);
-
-                return configPath;
+                return @"SHFB\MEF Provider\IntelliSense Features";
             }
         }
 
@@ -58,33 +57,36 @@ namespace SandcastleBuilder.Package
         /// enabled.
         /// </summary>
         /// <value>This is true by default</value>
-        public static bool EnableExtendedXmlCommentsCompletion{ get; set; }
+        public bool EnableExtendedXmlCommentsCompletion{ get; set; }
 
         /// <summary>
         /// This is used to get or set whether or not the MAML and XML comments element Go To Definition and tool
         /// tip option is enabled.
         /// </summary>
         /// <value>This is true by default</value>
-        public static bool EnableGoToDefinition { get; set; }
+        public bool EnableGoToDefinition { get; set; }
 
         /// <summary>
         /// Related to the above, if enabled, any XML comments <c>cref</c> attribute value will allow Go To
         /// Definition and tool tip info.
         /// </summary>
-        /// <value>True by default.  This can be disabled in Visual Studio 2015 since it provides tool tip and
-        /// Go To Definition support for <c>cref</c> attribute values already.</value>
-        public static bool EnableGoToDefinitionInCRef { get; set; }
+        /// <value>True by default, except in Visual Studio 2015 (which provides tool tip and
+        /// Go To Definition support for <c>cref</c> attribute values already).</value>
+        public bool EnableGoToDefinitionInCRef { get; set; }
 
         #endregion
 
         #region Constructor
         //=====================================================================
 
-        /// <summary>
-        /// Static constructor
-        /// </summary>
-        static MefProviderOptions()
+        [ImportingConstructor]
+        public MefProviderOptions(SVsServiceProvider serviceProvider)
         {
+            if (serviceProvider == null)
+                throw new ArgumentNullException("serviceProvider");
+
+            _serviceProvider = serviceProvider;
+
             if(!LoadConfiguration())
                 ResetConfiguration(false);
         }
@@ -96,86 +98,53 @@ namespace SandcastleBuilder.Package
         /// <summary>
         /// This is used to load the MEF provider configuration settings
         /// </summary>
-        /// <returns>True if loaded successfully or false if the file does not exist or could not be loaded</returns>
-        /// <remarks>The settings are loaded from <strong>MefProviderOptions.config</strong> in the
-        /// <see cref="ConfigurationFilePath"/> folder.</remarks>
-        private static bool LoadConfiguration()
+        /// <returns>True if loaded successfully or false if the settings collection does not exist</returns>
+        /// <remarks>The settings are loaded using the <see cref="ShellSettingsManager"/> from the
+        /// <see cref="CollectionPath"/> collection.</remarks>
+        private bool LoadConfiguration()
         {
-            string filename = Path.Combine(ConfigurationFilePath, "MefProviderOptions.config");
-            bool success = true;
+            ShellSettingsManager settingsManager = new ShellSettingsManager(_serviceProvider);
+            SettingsStore settingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.UserSettings);
+            if (!settingsStore.CollectionExists(CollectionPath))
+                return false;
 
-            try
-            {
-                if(!File.Exists(filename))
-                    return false;
-
-                var root = XDocument.Load(filename).Root;
-
-                EnableExtendedXmlCommentsCompletion = (root.Element("EnableExtendedXmlCommentsCompletion") != null);
-                EnableGoToDefinition = (root.Element("EnableGoToDefinition") != null);
-                EnableGoToDefinitionInCRef = (root.Element("EnableGoToDefinitionInCRef") != null);
-            }
-            catch(Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex);
-                success = false;
-            }
-
-            return success;
+            EnableExtendedXmlCommentsCompletion = settingsStore.GetBoolean(CollectionPath, "EnableExtendedXmlCommentsCompletion", true);
+            EnableGoToDefinition = settingsStore.GetBoolean(CollectionPath, "EnableGoToDefinition", true);
+            EnableGoToDefinitionInCRef = settingsStore.GetBoolean(CollectionPath, "EnableGoToDefinitionInCRef", true);
+            return true;
         }
 
         /// <summary>
         /// This is used to save the MEF provider configuration settings
         /// </summary>
-        /// <remarks>The settings are saved to <strong>MefProviderOptions.config</strong> in the
-        /// <see cref="ConfigurationFilePath"/> folder.</remarks>
-        public static bool SaveConfiguration()
+        /// <remarks>The settings are saved using the <see cref="ShellSettingsManager"/> to the
+        /// <see cref="CollectionPath"/> collection.</remarks>
+        public bool SaveConfiguration()
         {
-            string filename = Path.Combine(ConfigurationFilePath, "MefProviderOptions.config");
-            bool success = true;
+            ShellSettingsManager settingsManager = new ShellSettingsManager(_serviceProvider);
+            WritableSettingsStore settingsStore = settingsManager.GetWritableSettingsStore(SettingsScope.UserSettings);
+            if (!settingsStore.CollectionExists(CollectionPath))
+                settingsStore.CreateCollection(CollectionPath);
 
-            try
-            {
-                XElement root = new XElement("MefProviderOptions",
-                    EnableExtendedXmlCommentsCompletion ? new XElement("EnableExtendedXmlCommentsCompletion") : null,
-                    EnableGoToDefinition ? new XElement("EnableGoToDefinition") : null,
-                    EnableGoToDefinitionInCRef ? new XElement("EnableGoToDefinitionInCRef") : null);
-
-                root.Save(filename);
-            }
-            catch(Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex);
-                success = false;
-            }
-
-            return success;
+            settingsStore.SetBoolean(CollectionPath, "EnableExtendedXmlCommentsCompletion", EnableExtendedXmlCommentsCompletion);
+            settingsStore.SetBoolean(CollectionPath, "EnableGoToDefinition", EnableGoToDefinition);
+            settingsStore.SetBoolean(CollectionPath, "EnableGoToDefinitionInCRef", EnableGoToDefinitionInCRef);
+            return true;
         }
 
         /// <summary>
         /// This is used to reset the configuration to its default state
         /// </summary>
-        /// <param name="deleteConfigurationFile">True to delete the configuration file if it exists, false to
-        /// just set the default values</param>
-        public static void ResetConfiguration(bool deleteConfigurationFile)
+        /// <param name="deleteConfigurationFile">True to delete the configuration settings collection if it exists,
+        /// false to just set the default values</param>
+        public void ResetConfiguration(bool deleteConfigurationFile)
         {
             EnableExtendedXmlCommentsCompletion = EnableGoToDefinition = EnableGoToDefinitionInCRef = true;
 
-            if(deleteConfigurationFile)
-            {
-                string filename = Path.Combine(ConfigurationFilePath, "MefProviderOptions.config");
-
-                try
-                {
-                    if(File.Exists(filename))
-                        File.Delete(filename);
-                }
-                catch(Exception ex)
-                {
-                    // Ignore exception encountered while trying to delete the configuration file
-                    System.Diagnostics.Debug.WriteLine(ex);
-                }
-            }
+            ShellSettingsManager settingsManager = new ShellSettingsManager(_serviceProvider);
+            WritableSettingsStore settingsStore = settingsManager.GetWritableSettingsStore(SettingsScope.UserSettings);
+            if (deleteConfigurationFile && settingsStore.CollectionExists(CollectionPath))
+                settingsStore.DeleteCollection(CollectionPath);
         }
         #endregion
     }

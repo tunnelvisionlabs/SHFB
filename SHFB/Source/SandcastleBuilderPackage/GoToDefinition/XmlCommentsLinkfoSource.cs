@@ -109,7 +109,7 @@ namespace SandcastleBuilder.Package.GoToDefinition
                             attrName = tagSpan.GetText();
 
                             // If it contains "cref", tne next XML doc attribute value will be the target
-                            if(attrName.IndexOf("cref=") != -1 && MefProviderOptions.EnableGoToDefinitionInCRef)
+                            if(attrName.IndexOf("cref=") != -1 && provider.MefProviderOptions.EnableGoToDefinitionInCRef)
                                 attrName = "cref";
 
                             // As above, for conceptualLink, the next XML doc attribute will be the target
@@ -169,7 +169,7 @@ namespace SandcastleBuilder.Package.GoToDefinition
                             attrName = tagSpan.GetText().Trim();
                             identifier = null;
 
-                            if(attrName == "cref" && !MefProviderOptions.EnableGoToDefinitionInCRef)
+                            if(attrName == "cref" && !provider.MefProviderOptions.EnableGoToDefinitionInCRef)
                                 attrName = null;
                             break;
 

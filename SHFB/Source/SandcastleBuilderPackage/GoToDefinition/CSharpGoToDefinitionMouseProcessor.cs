@@ -38,14 +38,17 @@ namespace SandcastleBuilder.Package.GoToDefinition
     /// </summary>
     internal sealed class CSharpGoToDefinitionMouseProcessor : GoToDefinitionMouseProcessor
     {
+        private readonly MefProviderOptions _mefProviderOptions;
+
         #region Constructor
         //=====================================================================
 
-        /// <inheritdoc />
-        public CSharpGoToDefinitionMouseProcessor(IWpfTextView textView, SVsServiceProvider serviceProvider,
+        /// <inheritdoc cref="GoToDefinitionMouseProcessor(IWpfTextView, SVsServiceProvider, IClassifier, ITextStructureNavigator, CtrlKeyState)" />
+        public CSharpGoToDefinitionMouseProcessor(MefProviderOptions mefProviderOptions, IWpfTextView textView, SVsServiceProvider serviceProvider,
           IClassifier aggregator, ITextStructureNavigator navigator, CtrlKeyState state) :
             base(textView, serviceProvider, aggregator, navigator, state)
         {
+            _mefProviderOptions = mefProviderOptions;
         }
         #endregion
 
@@ -78,7 +81,7 @@ namespace SandcastleBuilder.Package.GoToDefinition
                         attrName = classification.Span.GetText();
 
                         // If it contains "cref", tne next XML doc attribute value will be the target
-                        if(attrName.IndexOf("cref=") != -1 && MefProviderOptions.EnableGoToDefinitionInCRef)
+                        if(attrName.IndexOf("cref=") != -1 && _mefProviderOptions.EnableGoToDefinitionInCRef)
                             attrName = "cref";
 
                         // As above, for conceptualLink, the next XML doc attribute will be the target
@@ -121,7 +124,7 @@ namespace SandcastleBuilder.Package.GoToDefinition
                         attrName = classification.Span.GetText().Trim();
                         identifier = null;
 
-                        if(attrName == "cref" && !MefProviderOptions.EnableGoToDefinitionInCRef)
+                        if(attrName == "cref" && !_mefProviderOptions.EnableGoToDefinitionInCRef)
                             attrName = null;
                         break;
 

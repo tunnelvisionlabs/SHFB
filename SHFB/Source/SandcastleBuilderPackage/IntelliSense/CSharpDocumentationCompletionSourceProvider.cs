@@ -49,6 +49,9 @@ namespace SandcastleBuilder.Package.IntelliSense
         [Import]
         internal IGlyphService GlyphService { get; private set; }
 
+        [Import]
+        internal MefProviderOptions MefProviderOptions { get; private set; }
+
         /// <inheritdoc />
         public ICompletionSource TryCreateCompletionSource(ITextBuffer textBuffer)
         {
