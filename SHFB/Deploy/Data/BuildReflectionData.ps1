@@ -50,7 +50,7 @@ Try {
 		New-Item -ItemType directory "$CommandDir\$FrameworkPlatform" | Out-Null
 	}
 
-	&$msbuild 'BuildReflectionData.proj'
+	&$msbuild '/nr:false' 'BuildReflectionData.proj'
 	if (-not $?) {
 		echo '*'
 		echo '* Build failed!'

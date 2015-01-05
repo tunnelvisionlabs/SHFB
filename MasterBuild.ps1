@@ -44,7 +44,7 @@ $nuget = "$CommandDir\SHFB\Source\.nuget\NuGet.exe"
 cd "$CommandDir\SHFB\Source"
 
 &$nuget 'restore' 'SandcastleTools.sln'
-&$msbuild '/nologo' '/v:m' '/m' 'SandcastleTools.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
+&$msbuild '/nologo' '/v:m' '/m' '/nr:false' 'SandcastleTools.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
 If (-not $?) {
 	echo 'Failed to build SandcastleTools.sln, aborting!'
 	cd $CommandDir
@@ -81,7 +81,7 @@ ForEach ($pair In $FrameworkVersions.GetEnumerator()) {
 cd "$CommandDir\SHFB\Source"
 
 &$nuget 'restore' 'SandcastleBuilder.sln'
-&$msbuild '/nologo' '/v:m' '/m' 'SandcastleBuilder.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
+&$msbuild '/nologo' '/v:m' '/m' '/nr:false' 'SandcastleBuilder.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
 If (-not $?) {
 	echo 'Failed to build SandcastleBuilder.sln, aborting!'
 	cd $CommandDir
@@ -89,7 +89,7 @@ If (-not $?) {
 }
 
 &$nuget 'restore' 'SandcastleBuilderPackage.sln'
-&$msbuild '/nologo' '/v:m' '/m' 'SandcastleBuilderPackage.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
+&$msbuild '/nologo' '/v:m' '/m' '/nr:false' 'SandcastleBuilderPackage.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
 If (-not $?) {
 	echo 'Failed to build SandcastleBuilderPackage.sln, aborting!'
 	cd $CommandDir
@@ -99,7 +99,7 @@ If (-not $?) {
 cd "$CommandDir\Documentation"
 
 &$nuget 'restore' 'AllDocumentation.sln'
-&$msbuild '/nologo' '/v:m' '/m' 'AllDocumentation.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
+&$msbuild '/nologo' '/v:m' '/m' '/nr:false' 'AllDocumentation.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
 If (-not $?) {
 	echo 'Failed to build AllDocumentation.sln, aborting!'
 	cd $CommandDir
@@ -109,7 +109,7 @@ If (-not $?) {
 cd "$CommandDir\SHFB\Source"
 
 &$nuget 'restore' 'SHFBSetup.sln'
-&$msbuild '/nologo' '/v:m' '/m' 'SHFBSetup.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
+&$msbuild '/nologo' '/v:m' '/m' '/nr:false' 'SHFBSetup.sln' "/t:$BuildTargets" "/p:Configuration=$BuildConfig;Platform=Any CPU"
 If (-not $?) {
 	echo 'Failed to build SHFBSetup.sln, aborting!'
 	cd $CommandDir
