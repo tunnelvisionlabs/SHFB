@@ -246,8 +246,8 @@
     <Compile Include="GoToDefinition\UnderlineClassifier.cs" />
     <Compile Include="GoToDefinition\UnderlineClassifierProvider.cs" />
     <Compile Include="GoToDefinition\UnderlineFormatDefinition.cs" />
-    <Compile Include="GoToDefinition\XmlCommentsLinkfoSource.cs" />
-    <Compile Include="GoToDefinition\XmlCommentsLinkfoSourceProvider.cs" />
+    <Compile Include="GoToDefinition\XmlCommentsLinkQuickInfoSource.cs" />
+    <Compile Include="GoToDefinition\XmlCommentsLinkQuickInfoSourceProvider.cs" />
     <Compile Include="GoToDefinition\XmlGoToDefinitionMouseProcessor.cs" />
     <Compile Include="GoToDefinition\XmlGoToDefinitionMouseProcessorProvider.cs" />
     <Compile Include="IntelliSense\AugmentedCompletionSet.cs" />
