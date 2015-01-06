@@ -43,6 +43,9 @@ namespace SandcastleBuilder.Package.GoToDefinition
         [Import]
         internal IViewTagAggregatorFactoryService AggregatorFactory { get; set; }
 
+        [Import]
+        internal MefProviderOptions MefProviderOptions { get; private set; }
+
         /// <inheritdoc />
         public IQuickInfoSource TryCreateQuickInfoSource(ITextBuffer textBuffer)
         {

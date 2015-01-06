@@ -18,6 +18,7 @@
 // 12/01/2014  EFW  Created the code
 //===============================================================================================================
 
+using System;
 using System.ComponentModel.Composition;
 
 using Microsoft.VisualStudio.Text.Editor;
@@ -39,9 +40,20 @@ namespace SandcastleBuilder.Package.GoToDefinition
     [Order(Before = "VisualStudioKeyboardProcessor")]
     internal sealed class GoToDefinitionKeyProcessorProvider : IKeyProcessorProvider
     {
+        private readonly MefProviderOptions _mefProviderOptions;
+
+        [ImportingConstructor]
+        public GoToDefinitionKeyProcessorProvider(MefProviderOptions mefProviderOptions)
+        {
+            if (mefProviderOptions == null)
+                throw new ArgumentNullException("mefProviderOptions");
+
+            _mefProviderOptions = mefProviderOptions;
+        }
+
         public KeyProcessor GetAssociatedProcessor(IWpfTextView view)
         {
-            if(!MefProviderOptions.EnableGoToDefinition)
+            if(!_mefProviderOptions.EnableGoToDefinition)
                 return null;
 
             return view.Properties.GetOrCreateSingletonProperty(typeof(GoToDefinitionKeyProcessor),

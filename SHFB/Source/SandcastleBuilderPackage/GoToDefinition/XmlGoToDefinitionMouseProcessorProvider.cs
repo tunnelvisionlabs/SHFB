@@ -50,6 +50,9 @@ namespace SandcastleBuilder.Package.GoToDefinition
         [Import]
         private SVsServiceProvider GlobalServiceProvider = null;
 
+        [Import]
+        private MefProviderOptions MefProviderOptions { get; set; }
+
         /// <inheritdoc />
         public IMouseProcessor GetAssociatedProcessor(IWpfTextView view)
         {

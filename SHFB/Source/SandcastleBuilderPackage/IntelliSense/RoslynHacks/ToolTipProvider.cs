@@ -16,11 +16,13 @@
     internal class ToolTipProvider : IUIElementProvider<Completion, ICompletionSession>
     {
         private readonly SVsServiceProvider _serviceProvider;
+        private readonly MefProviderOptions _mefProviderOptions;
 
         [ImportingConstructor]
-        public ToolTipProvider(SVsServiceProvider serviceProvider)
+        public ToolTipProvider(SVsServiceProvider serviceProvider, MefProviderOptions mefProviderOptions)
         {
             _serviceProvider = serviceProvider;
+            _mefProviderOptions = mefProviderOptions;
         }
 
         public UIElement GetUIElement(Completion itemToRender, ICompletionSession context, UIElementType elementType)
@@ -32,7 +34,7 @@
             }
 
             // only hook when necessary
-            if((!RoslynUtilities.IsRoslynInstalled(_serviceProvider) ?? true) || !MefProviderOptions.EnableExtendedXmlCommentsCompletion)
+            if((!RoslynUtilities.IsRoslynInstalled(_serviceProvider) ?? true) || !_mefProviderOptions.EnableExtendedXmlCommentsCompletion)
                 return null;
 
             if(itemToRender != null && itemToRender.GetType().FullName != "Microsoft.CodeAnalysis.Editor.Implementation.Completion.Presentation.CustomCommitCompletion")
