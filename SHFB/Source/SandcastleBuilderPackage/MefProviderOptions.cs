@@ -74,6 +74,26 @@ namespace SandcastleBuilder.Package
         /// Go To Definition support for <c>cref</c> attribute values already).</value>
         public bool EnableGoToDefinitionInCRef { get; set; }
 
+        /// <summary>
+        /// Gets the default value for the <see cref="EnableGoToDefinitionInCRef"/> setting for the current version of
+        /// Visual Studio.
+        /// </summary>
+        /// <value>
+        /// <para><see langword="true"/> if Roslyn is installed (which supports this feature natively).</para>
+        /// <para>-or-</para>
+        /// <para><see langword="false"/> if Roslyn is not installed, so this extension must provide the feature.</para>
+        /// </value>
+        private bool DefaultEnableGoToDefinitionInCRef
+        {
+            get
+            {
+                if (IntelliSense.RoslynHacks.RoslynUtilities.IsRoslynInstalled(_serviceProvider) ?? false)
+                    return false;
+
+                return true;
+            }
+        }
+
         #endregion
 
         #region Constructor
@@ -110,7 +130,7 @@ namespace SandcastleBuilder.Package
 
             EnableExtendedXmlCommentsCompletion = settingsStore.GetBoolean(CollectionPath, "EnableExtendedXmlCommentsCompletion", true);
             EnableGoToDefinition = settingsStore.GetBoolean(CollectionPath, "EnableGoToDefinition", true);
-            EnableGoToDefinitionInCRef = settingsStore.GetBoolean(CollectionPath, "EnableGoToDefinitionInCRef", true);
+            EnableGoToDefinitionInCRef = settingsStore.GetBoolean(CollectionPath, "EnableGoToDefinitionInCRef", DefaultEnableGoToDefinitionInCRef);
             return true;
         }
 
@@ -139,7 +159,8 @@ namespace SandcastleBuilder.Package
         /// false to just set the default values</param>
         public void ResetConfiguration(bool deleteConfigurationFile)
         {
-            EnableExtendedXmlCommentsCompletion = EnableGoToDefinition = EnableGoToDefinitionInCRef = true;
+            EnableExtendedXmlCommentsCompletion = EnableGoToDefinition = true;
+            EnableGoToDefinitionInCRef = DefaultEnableGoToDefinitionInCRef;
 
             ShellSettingsManager settingsManager = new ShellSettingsManager(_serviceProvider);
             WritableSettingsStore settingsStore = settingsManager.GetWritableSettingsStore(SettingsScope.UserSettings);
