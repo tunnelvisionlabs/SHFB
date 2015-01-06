@@ -236,9 +236,11 @@
     <Compile Include="GoToDefinition\CSharpGoToDefinitionMouseProcessor.cs" />
     <Compile Include="GoToDefinition\CSharpGoToDefinitionMouseProcessorProvider.cs" />
     <Compile Include="GoToDefinition\CtrlKeyState.cs" />
+    <Compile Include="GoToDefinition\GoToDefinitionCommandFilter.cs" />
     <Compile Include="GoToDefinition\GoToDefinitionKeyProcessor.cs" />
     <Compile Include="GoToDefinition\GoToDefinitionKeyProcessorProvider.cs" />
     <Compile Include="GoToDefinition\GoToDefinitionMouseProcessor.cs" />
+    <Compile Include="GoToDefinition\GoToDefinitionTextViewCreationListener.cs" />
     <Compile Include="GoToDefinition\MamlLinkQuickInfoSource.cs" />
     <Compile Include="GoToDefinition\MamlLinkQuickInfoSourceProvider.cs" />
     <Compile Include="GoToDefinition\ProjectFileSearcher.cs" />
