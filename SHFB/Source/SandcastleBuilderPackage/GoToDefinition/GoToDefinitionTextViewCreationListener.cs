@@ -12,12 +12,13 @@ using Microsoft.VisualStudio.Utilities;
 namespace SandcastleBuilder.Package.GoToDefinition
 {
     [Export(typeof(IVsTextViewCreationListener))]
+    [ContentType("Roslyn Languages")]
+    [ContentType("csharp")]
     [ContentType("xml")]
     [TextViewRole(PredefinedTextViewRoles.Document)]
     internal sealed class GoToDefinitionTextViewCreationListener : IVsTextViewCreationListener
     {
         private readonly IVsEditorAdaptersFactoryService _editorAdaptersFactoryService;
-        private readonly MefProviderOptions _mefProviderOptions;
 
         [ImportingConstructor]
         public GoToDefinitionTextViewCreationListener(SVsServiceProvider serviceProvider, IVsEditorAdaptersFactoryService editorAdaptersFactoryService, ITextStructureNavigatorSelectorService textStructureNavigatorSelectorService, IClassifierAggregatorService classifierAggregatorService, MefProviderOptions mefProviderOptions)
@@ -37,7 +38,7 @@ namespace SandcastleBuilder.Package.GoToDefinition
             _editorAdaptersFactoryService = editorAdaptersFactoryService;
             TextStructureNavigatorSelectorService = textStructureNavigatorSelectorService;
             ClassifierAggregatorService = classifierAggregatorService;
-            _mefProviderOptions = mefProviderOptions;
+            MefProviderOptions = mefProviderOptions;
         }
 
         public SVsServiceProvider ServiceProvider
@@ -58,10 +59,16 @@ namespace SandcastleBuilder.Package.GoToDefinition
             private set;
         }
 
+        public MefProviderOptions MefProviderOptions
+        {
+            get;
+            private set;
+        }
+
         public void VsTextViewCreated(IVsTextView textViewAdapter)
         {
             // only hook when necessary
-            if (!_mefProviderOptions.EnableGoToDefinition)
+            if (!MefProviderOptions.EnableGoToDefinition)
                 return;
 
             ITextView textView = _editorAdaptersFactoryService.GetWpfTextView(textViewAdapter);

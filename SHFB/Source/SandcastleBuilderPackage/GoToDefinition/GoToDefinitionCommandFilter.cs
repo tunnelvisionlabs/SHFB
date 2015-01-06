@@ -91,7 +91,7 @@ namespace SandcastleBuilder.Package.GoToDefinition
 
         private SnapshotSpan? ProcessSpans(SnapshotPoint caretPosition, IList<ClassificationSpan> spans, out string definitionType)
         {
-            string elementName = null, attrName = null, spanText;
+            string elementName = null, attrName = null, identifier = null, spanText;
 
             foreach(var classification in spans)
             {
@@ -185,6 +185,110 @@ namespace SandcastleBuilder.Package.GoToDefinition
                         }
                         break;
 
+                    case "xml doc tag":
+                        // Track the last seen element or attribute.  The classifier in VS2013 and earlier does
+                        // not break up the XML comments into elements and attributes so we may get a mix of text
+                        // in the "tag".
+                        attrName = classification.Span.GetText();
+
+                        // If it contains "cref", tne next XML doc attribute value will be the target
+                        if(attrName.IndexOf("cref=") != -1 && _provider.MefProviderOptions.EnableGoToDefinitionInCRef)
+                            attrName = "cref";
+
+                        // As above, for conceptualLink, the next XML doc attribute will be the target
+                        if(attrName.StartsWith("<conceptualLink", StringComparison.Ordinal))
+                            attrName = "conceptualLink";
+
+                        // For token, the next XML doc comment will contain the token name
+                        if(attrName == "<token>")
+                            attrName = "token";
+                        break;
+
+                    case "xml doc attribute":
+                        if((attrName == "cref" || attrName == "conceptualLink") &&
+                          classification.Span.Contains(caretPosition) && classification.Span.Length > 2)
+                        {
+                            // Drop the quotes from the span
+                            var span = new SnapshotSpan(classification.Span.Snapshot, classification.Span.Start + 1,
+                                classification.Span.Length - 2);
+
+                            definitionType = (attrName == "cref") ? "codeEntityReference" : "link";
+                            return span;
+                        }
+                        break;
+
+                    case "xml doc comment":
+                        if(attrName == "token" && classification.Span.Contains(caretPosition) &&
+                          classification.Span.Length > 1)
+                        {
+                            definitionType = "token";
+                            return classification.Span;
+                        }
+                        break;
+
+                    // VS2015 is more specific in its classifications
+                    case "xml doc comment - name":
+                        elementName = classification.Span.GetText().Trim();
+                        break;
+
+                    case "xml doc comment - attribute name":
+                        attrName = classification.Span.GetText().Trim();
+                        identifier = null;
+
+                        if(attrName == "cref" && !_provider.MefProviderOptions.EnableGoToDefinitionInCRef)
+                            attrName = null;
+                        break;
+
+                    case "xml doc comment - attribute value":
+                        if((attrName == "cref" || (elementName == "conceptualLink" && attrName == "target")) &&
+                          classification.Span.Contains(caretPosition) && classification.Span.Length > 1)
+                        {
+                            definitionType = (attrName == "cref") ? "codeEntityReference" : "link";
+                            return classification.Span;
+                        }
+                        break;
+
+                    case "identifier":
+                    case "keyword":
+                    case "operator":
+                        if(attrName != null)
+                        {
+                            identifier += classification.Span.GetText();
+
+                            if(name == "keyword")
+                                identifier += " ";
+                        }
+                        break;
+
+                    case "punctuation":
+                        if(identifier != null)
+                            identifier += classification.Span.GetText();
+                        break;
+
+                    case "xml doc comment - attribute quotes":
+                        if(identifier != null)
+                        {
+                            // Set the span to that of the identifier
+                            var span = new SnapshotSpan(classification.Span.Snapshot,
+                                classification.Span.Start - identifier.Length, identifier.Length);
+
+                            if(span.Contains(caretPosition) && span.Length > 1)
+                            {
+                                definitionType = "codeEntityReference";
+                                return span;
+                            }
+                        }
+                        break;
+
+                    case "xml doc comment - text":
+                        if(elementName == "token" && classification.Span.Contains(caretPosition) &&
+                          classification.Span.Length > 1)
+                        {
+                            definitionType = "token";
+                            return classification.Span;
+                        }
+                        break;
+
                     default:
                         break;
                 }
@@ -233,6 +337,9 @@ namespace SandcastleBuilder.Package.GoToDefinition
 
                     if(!projectFileSearcher.OpenFileFor(idType, id))
                     {
+                        if(idType == ProjectFileSearcher.IdType.Link)
+                            definitionType = "conceptualLink";
+
                         Guid clsid = Guid.Empty;
                         int result;
                         var uiShell = _provider.ServiceProvider.GetService(typeof(SVsUIShell)) as IVsUIShell;
