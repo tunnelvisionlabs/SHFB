@@ -228,19 +228,12 @@ namespace SandcastleBuilder.Package.GoToDefinition
                         new Run(relativePath)
                     });
 
-                    if(elementName != "topic" && found)
-                        textBlock.Inlines.AddRange(new Inline[] {
-                            new LineBreak(),
-                            new Run("Ctrl+Click to open the file")
-                        });
                     break;
 
                 case "codeEntityReference":
-                    textBlock.Inlines.Add(new Run("Ctrl+Click to go to definition (within solution only)"));
                     break;
 
                 default:
-                    textBlock.Inlines.Add(new Run("Ctrl+Click to open the containing file"));
                     break;
             }
 

@@ -290,22 +290,12 @@ namespace SandcastleBuilder.Package.GoToDefinition
                         new Run(relativePath)
                     });
 
-                    if(found)
-                        textBlock.Inlines.AddRange(new Inline[] {
-                            new LineBreak(),
-                            new Run("Ctrl+Click to open the file")
-                        });
                     break;
 
                 case "cref":
-                    if(!IntelliSense.RoslynHacks.RoslynUtilities.IsFinalRoslyn)
-                        textBlock.Inlines.Add(new Run("Ctrl+Click to go to definition (within solution only)"));
-                    else
-                        textBlock.Inlines.Add(new Run("Ctrl+Click to go to definition"));
                     break;
 
                 default:
-                    textBlock.Inlines.Add(new Run("Ctrl+Click to open the containing file"));
                     break;
             }
 
